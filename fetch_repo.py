@@ -17,12 +17,14 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
 import urllib.request
-from dataclasses import asdict, dataclass
-from typing import Dict, List
+from dataclasses import asdict, dataclass, field
+from datetime import datetime, timezone
+from typing import Dict, List, Optional, Tuple
 
 
 KEYWORDS = [
@@ -44,6 +46,7 @@ KEYWORDS = [
 ]
 
 GITHUB_SEARCH_URL = "https://api.github.com/search/repositories"
+GITHUB_API_ROOT = "https://api.github.com"
 
 
 @dataclass
@@ -57,6 +60,17 @@ class RepoResult:
     forks_count: int
     language: str | None
     updated_at: str
+    # Enriched metadata (populated by a follow-up round of API calls).
+    created_at: str | None = None
+    repo_age_days: int | None = None
+    open_issues_count: int | None = None
+    watchers_count: int | None = None
+    subscribers_count: int | None = None
+    contributors_count: int | None = None
+    releases_count: int | None = None
+    commits_count: int | None = None
+    pull_requests_count: int | None = None
+    issues_count: int | None = None
 
 
 class GitHubSearchError(Exception):
@@ -64,6 +78,10 @@ class GitHubSearchError(Exception):
 
 
 class GitHubAuthError(GitHubSearchError):
+    pass
+
+
+class GitHubNotFoundError(GitHubSearchError):
     pass
 
 
@@ -88,6 +106,13 @@ def load_dotenv(dotenv_path: str = ".env") -> None:
 
 
 def github_request(url: str, token: str | None) -> dict:
+    data, _headers = github_request_with_headers(url, token)
+    return data
+
+
+def github_request_with_headers(
+    url: str, token: str | None
+) -> Tuple[dict, Dict[str, str]]:
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "fetch-repo",
@@ -99,14 +124,127 @@ def github_request(url: str, token: str | None) -> dict:
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             payload = resp.read().decode("utf-8")
-            return json.loads(payload)
+            resp_headers = dict(resp.headers.items())
+            return json.loads(payload), resp_headers
     except urllib.error.HTTPError as exc:
         details = exc.read().decode("utf-8", errors="replace")
         if exc.code == 401:
             raise GitHubAuthError(f"GitHub API HTTP 401: {details}") from exc
+        if exc.code == 404:
+            raise GitHubNotFoundError(f"GitHub API HTTP 404: {details}") from exc
         raise GitHubSearchError(f"GitHub API HTTP {exc.code}: {details}") from exc
     except urllib.error.URLError as exc:
         raise GitHubSearchError(f"Network error: {exc}") from exc
+
+
+_LAST_PAGE_RE = re.compile(r'[?&]page=(\d+)[^>]*>;\s*rel="last"')
+
+
+def _count_via_last_page(url: str, token: str | None) -> Optional[int]:
+    """Get a total count from a paginated list endpoint using per_page=1
+    and the `Link: rel="last"` header, which avoids downloading every page.
+    """
+    paged_url = f"{url}{'&' if '?' in url else '?'}per_page=1"
+    try:
+        data, headers = github_request_with_headers(paged_url, token)
+    except GitHubNotFoundError:
+        return None
+    except GitHubSearchError:
+        return None
+
+    link_header = headers.get("Link") or headers.get("link")
+    if link_header:
+        match = _LAST_PAGE_RE.search(link_header)
+        if match:
+            return int(match.group(1))
+
+    # No pagination needed: 0 or 1 items total.
+    if isinstance(data, list):
+        return len(data)
+    return None
+
+
+def fetch_repo_details(full_name: str, token: str | None) -> Optional[dict]:
+    url = f"{GITHUB_API_ROOT}/repos/{full_name}"
+    try:
+        return github_request(url, token)
+    except GitHubNotFoundError:
+        return None
+
+
+def fetch_search_total_count(query: str, token: str | None) -> Optional[int]:
+    url = f"{GITHUB_API_ROOT}/search/issues?{urllib.parse.urlencode({'q': query, 'per_page': 1})}"
+    try:
+        data = github_request(url, token)
+    except GitHubSearchError:
+        return None
+    return data.get("total_count")
+
+
+def compute_repo_age_days(created_at: str | None) -> Optional[int]:
+    if not created_at:
+        return None
+    try:
+        created = datetime.strptime(created_at, "%Y-%m-%dT%H:%M:%SZ").replace(
+            tzinfo=timezone.utc
+        )
+    except ValueError:
+        return None
+    return (datetime.now(timezone.utc) - created).days
+
+
+def enrich_repo(
+    repo: RepoResult,
+    token: str | None,
+    delay_seconds: float,
+) -> RepoResult:
+    """Populate contributors/releases/commits/PRs/issues/age metadata for a
+    single repository via several follow-up GitHub API calls.
+    """
+    details = fetch_repo_details(repo.full_name, token)
+    if delay_seconds > 0:
+        time.sleep(delay_seconds)
+
+    if details:
+        repo.created_at = details.get("created_at")
+        repo.open_issues_count = details.get("open_issues_count")
+        repo.watchers_count = details.get("subscribers_count", details.get("watchers_count"))
+        repo.subscribers_count = details.get("subscribers_count")
+        repo.stargazers_count = details.get("stargazers_count", repo.stargazers_count)
+        repo.forks_count = details.get("forks_count", repo.forks_count)
+        repo.repo_age_days = compute_repo_age_days(repo.created_at)
+
+    repo.contributors_count = _count_via_last_page(
+        f"{GITHUB_API_ROOT}/repos/{repo.full_name}/contributors?anon=true", token
+    )
+    if delay_seconds > 0:
+        time.sleep(delay_seconds)
+
+    repo.releases_count = _count_via_last_page(
+        f"{GITHUB_API_ROOT}/repos/{repo.full_name}/releases", token
+    )
+    if delay_seconds > 0:
+        time.sleep(delay_seconds)
+
+    repo.commits_count = _count_via_last_page(
+        f"{GITHUB_API_ROOT}/repos/{repo.full_name}/commits", token
+    )
+    if delay_seconds > 0:
+        time.sleep(delay_seconds)
+
+    repo.pull_requests_count = fetch_search_total_count(
+        f"repo:{repo.full_name} is:pr", token
+    )
+    if delay_seconds > 0:
+        time.sleep(delay_seconds)
+
+    repo.issues_count = fetch_search_total_count(
+        f"repo:{repo.full_name} is:issue", token
+    )
+    if delay_seconds > 0:
+        time.sleep(delay_seconds)
+
+    return repo
 
 
 def search_repositories_for_keyword(
@@ -232,7 +370,43 @@ def parse_args() -> argparse.Namespace:
         default=1,
         help="Minimum number of matched filter terms to keep a repo.",
     )
+    parser.add_argument(
+        "--no-enrich",
+        action="store_true",
+        help="Skip fetching extra metadata (stars/forks are still included).",
+    )
+    parser.add_argument(
+        "--enrich-delay",
+        type=float,
+        default=0.3,
+        help="Seconds to sleep between enrichment API calls (avoids rate limits).",
+    )
+    parser.add_argument(
+        "--force-reenrich",
+        action="store_true",
+        help="Re-fetch enrichment metadata even for repos already cached in --output.",
+    )
     return parser.parse_args()
+
+
+def load_cached_enrichment(output_path: str) -> Dict[str, dict]:
+    """Load previously enriched repo data from an existing output file, keyed
+    by full_name, so re-runs don't need to re-fetch unchanged metadata.
+    """
+    if not os.path.exists(output_path):
+        return {}
+    try:
+        with open(output_path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+    cache: Dict[str, dict] = {}
+    for repo in payload.get("repositories", []):
+        full_name = repo.get("full_name")
+        if full_name and repo.get("contributors_count") is not None:
+            cache[full_name] = repo
+    return cache
 
 
 def main() -> int:
@@ -304,6 +478,41 @@ def main() -> int:
             terms=filter_terms,
             min_matches=args.min_matches,
         )
+
+    if not args.no_enrich:
+        cache = {} if args.force_reenrich else load_cached_enrichment(args.output)
+        total = len(final_repos)
+        for idx, repo in enumerate(final_repos, start=1):
+            cached = cache.get(repo.full_name)
+            if cached and cached.get("updated_at") == repo.updated_at:
+                repo.created_at = cached.get("created_at")
+                repo.repo_age_days = cached.get("repo_age_days")
+                repo.open_issues_count = cached.get("open_issues_count")
+                repo.watchers_count = cached.get("watchers_count")
+                repo.subscribers_count = cached.get("subscribers_count")
+                repo.contributors_count = cached.get("contributors_count")
+                repo.releases_count = cached.get("releases_count")
+                repo.commits_count = cached.get("commits_count")
+                repo.pull_requests_count = cached.get("pull_requests_count")
+                repo.issues_count = cached.get("issues_count")
+                print(f"[{idx}/{total}] Cached: {repo.full_name}")
+                continue
+
+            print(f"[{idx}/{total}] Enriching: {repo.full_name}")
+            try:
+                enrich_repo(repo, token, args.enrich_delay)
+            except GitHubAuthError as exc:
+                print(
+                    "Warning: GITHUB_TOKEN became invalid during enrichment; "
+                    "continuing without a token (lower rate limits apply).",
+                    file=sys.stderr,
+                )
+                token = None
+            except GitHubSearchError as exc:
+                print(
+                    f"Warning: enrichment failed for '{repo.full_name}': {exc}",
+                    file=sys.stderr,
+                )
 
     output_payload = {
         "keywords": KEYWORDS,
