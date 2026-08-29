@@ -6,7 +6,7 @@ This version removes primary/secondary filtering and uses one optional
 post-filter list of terms.
 
 Output file default:
-  github_repos.json
+  repo_search_results.json
 
 Optional:
   Set GITHUB_TOKEN in environment or .env for higher GitHub API rate limits.
@@ -352,7 +352,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--order", default="desc", choices=["asc", "desc"])
     parser.add_argument("--delay", type=float, default=0.2)
-    parser.add_argument("--output", default="github_repos.json")
+    parser.add_argument("--output", default="repo_search_results.json")
     parser.add_argument("--print-top", type=int, default=15)
     parser.add_argument(
         "--disable-filter",
