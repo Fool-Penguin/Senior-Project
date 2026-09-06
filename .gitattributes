@@ -1,3 +1,2 @@
-documentation_files.jsonl filter=lfs diff=lfs merge=lfs -text
 *.jsonl filter=lfs diff=lfs merge=lfs -text
 *.bak filter=lfs diff=lfs merge=lfs -text
