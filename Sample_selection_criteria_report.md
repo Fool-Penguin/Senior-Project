@@ -2,7 +2,7 @@
 
 **Project Title:** Empirical Evaluation of Software Quality and Ecosystem Sustainability in Open-Source Agentic AI Systems  
 **Date:** 9 September 2026  
-**Final Dataset Artifact:** [`Repos_Final_Sample.csv`](175 Repositories)
+**Final Dataset Artifact:** [`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/Repos_Final_Sample.csv) (175 Repositories)
 
 ---
 
@@ -198,25 +198,50 @@ $$\mathbf{\text{Final Master Sample (175)}} = \underbrace{58}_{\text{Stream 1: R
 
 ---
 
-## 7. Summary Statistics of the Final Sample (`Repos_Final_Sample.csv`)
+## 7. Repository Characteristics & Summary Statistics
 
-| Metric | Minimum | Median | Mean | Maximum |
-| :--- | :---: | :---: | :---: | :---: |
-| **GitHub Stars** | 108 | 13,653 | 42,891 | 387,625 |
-| **Pull Requests (PRs)** | 50 | 1,480 | 6,312 | 78,596 |
-| **Issues** | 2 | 1,240 | 5,189 | 86,937 |
-| **Repository Age (Days)** | 67 | 482 | 894 | 5,285 |
+A dedicated enriched dataset containing deep repository characteristics has been generated:  
+📁 **[`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/Repos_Final_Sample_Characteristics.csv)**
 
-### Integrity Verification
-* **Total Records:** Exactly **175 unique repositories**.
-* **Deduplication:** 0 duplicate repository names.
-* **Metadata Completeness:** Full commit history, contributor metrics, issue/PR activity, guidance file flags, and descriptions are attached to every row.
+### 7.1 Numerical Repository Characteristics (Min, Median, Mean, Max)
+
+| Characteristic | Minimum | Median | Mean | Maximum | Description / Impact on RQs |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Repository Age (Days)** | 27 | 732 | 1,003.5 | 5,285 | Shows evolution from nascent agents to mature multi-year ecosystems. |
+| **GitHub Stars** | 1,164 | 27,020 | 43,381.6 | 387,625 | Confirms high popularity and active developer adoption. |
+| **Forks** | 39 | 3,036 | 6,953.6 | 108,918 | Measures external developer engagement and ecosystem reach. |
+| **Contributors Count** | 1 | 110 | 312.4 | 6,948 | Indicates community involvement in codebase maintenance. |
+| **Pull Requests (PRs)** | 50 | 1,649 | 5,293.5 | 78,596 | Ample PR integration history for calculating **RQ2** (MTTM). |
+| **Issues** | 2 | 1,111 | 3,594.5 | 86,937 | Robust issue tracking data for analyzing **RQ2** (MTTR) & **RQ3** (churn). |
 
 ---
 
-## 8. Next Steps for RQ Execution
+### 7.2 Categorical Characteristics & Ecosystem Distributions
 
-With [`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/Repos_Final_Sample.csv) established as the ground-truth empirical sample:
-1. **RQ1 (Code Complexity & Modularity):** Clone codebases to compute Cyclomatic Complexity, Maintainability Index, and Coupling/Cohesion modularity metrics.
-2. **RQ2 (Maintenance Efficiency):** Mine GitHub REST/GraphQL API to compute Mean Time to Resolution (MTTR) for closed issues and Mean Time to Merge (MTTM) for pull requests.
-3. **RQ3 (Issue Churn & Regression):** Extract issue event logs to identify reopen events (`reopened`), cross-referencing commit histories for regression bug fixes.
+#### A. Functional Domains Breakdown
+* **Coding Agents (46 repos, 26.3%):** e.g., `openclaw`, `opencode`, `claude-code`, `codex`, `cline`, `OpenHands`, `pi`.
+* **Workflow & Automation Platforms (41 repos, 23.4%):** e.g., `n8n`, `dify`, `langflow`, `activepieces`, `symphony`.
+* **General Task & Personal Assistants (40 repos, 22.9%):** e.g., `AutoGPT`, `hermes-agent`, `anything-llm`, `khoj`, `AstrBot`.
+* **Research & Information Retrieval (23 repos, 13.1%):** e.g., `gpt-researcher`, `DocsGPT`, `ragflow`, `cognee`.
+* **Finance & Trading (8 repos, 4.6%):** e.g., `nofx`, `Vibe-Trading`, `TradingAgents`.
+* **Browser & Web Automation (6 repos, 3.4%):** e.g., `browser-use`, `agent-browser`, `crawlee`.
+* **Productivity & Domain Utility (4 repos, 2.3%):** e.g., `inbox-zero`, `cc-switch`, `MoneyPrinterTurbo`.
+* **Multi-Agent Systems & Collaboration (4 repos, 2.3%):** e.g., `MetaGPT`, `agency-agents`, `SuperAGI`.
+* **Cybersecurity & Security (3 repos, 1.7%):** e.g., `pentagi`, `hexstrike-ai`.
+
+#### B. Repository Maintenance Status
+* **Active (175 repos, 100%):** All 175 repositories are actively maintained and updated within the recent ecosystem cycle.
+
+#### C. Primary Programming Languages (Code Complexity Foundation for RQ1)
+* **Python (71 repos, 40.6%):** Dominant language for AI logic, orchestration, and LLM backends.
+* **TypeScript / JavaScript (62 repos, 35.4%):** Dominant for desktop agents, VS Code extensions, and web canvases.
+* **Rust (12 repos, 6.9%):** High-performance CLI agents and secure harnesses (e.g. `claw-code`).
+* **Go (10 repos, 5.7%):** Cloud/terminal agents and runtime gateways.
+* **Java / Kotlin / C++ (20 repos, 11.4%):** Enterprise and native desktop frameworks.
+
+#### D. LLM Providers & Agent Frameworks Supported
+* **LLM Providers:** Majority feature **Multi-Provider / BYOK** support (OpenAI, Anthropic Claude, Google Gemini, DeepSeek, and Local Ollama/LLaMA).
+* **Agent Frameworks:** Driven by **Custom Native Agent Harnesses / Loops** alongside rising integration of **Model Context Protocol (MCP)**, **AutoGen**, and **Letta/MemGPT**.
+
+---
+
