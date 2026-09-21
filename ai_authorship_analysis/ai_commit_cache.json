@@ -16,7 +16,8 @@
       "Cursor": 3,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 4
-    }
+    },
+    "total_commits": 1458
   },
   "1Panel-dev/1Panel": {
     "bots": [
@@ -35,7 +36,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 6
-    }
+    },
+    "total_commits": 5557
   },
   "1Panel-dev/MaxKB": {
     "bots": [
@@ -54,7 +56,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 4
-    }
+    },
+    "total_commits": 7493
   },
   "AgriciDaniel/claude-obsidian": {
     "bots": [],
@@ -64,7 +67,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 2
-    }
+    },
+    "total_commits": 282
   },
   "Alpha-Dojo/DojoAgents": {
     "bots": [],
@@ -74,7 +78,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 468
   },
   "AstrBotDevs/AstrBot": {
     "bots": [
@@ -97,7 +102,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 56
-    }
+    },
+    "total_commits": 5282
   },
   "Avaiga/taipy": {
     "bots": [
@@ -116,7 +122,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 6
-    }
+    },
+    "total_commits": 7595
   },
   "BlockRunAI/ClawRouter": {
     "bots": [
@@ -131,7 +138,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 1074
   },
   "Budibase/budibase": {
     "bots": [
@@ -158,7 +166,8 @@
       "Cursor": 22,
       "Generic_AI_Marker": 60,
       "GitHub_Copilot": 10
-    }
+    },
+    "total_commits": 59963
   },
   "CaviraOSS/OpenMemory": {
     "bots": [
@@ -177,7 +186,8 @@
       "Cursor": null,
       "Generic_AI_Marker": null,
       "GitHub_Copilot": null
-    }
+    },
+    "total_commits": 391
   },
   "CherryHQ/cherry-studio": {
     "bots": [
@@ -200,7 +210,8 @@
       "Cursor": 8,
       "Generic_AI_Marker": 156,
       "GitHub_Copilot": 76
-    }
+    },
+    "total_commits": 9177
   },
   "CopilotKit/CopilotKit": {
     "bots": [
@@ -231,7 +242,8 @@
       "Cursor": 8,
       "Generic_AI_Marker": 538,
       "GitHub_Copilot": 4
-    }
+    },
+    "total_commits": 17016
   },
   "CoplayDev/unity-mcp": {
     "bots": [
@@ -246,7 +258,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 22,
       "GitHub_Copilot": 11
-    }
+    },
+    "total_commits": 1813
   },
   "CopyTranslator/CopyTranslator": {
     "bots": [
@@ -265,7 +278,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 822
   },
   "Fosowl/agenticSeek": {
     "bots": [
@@ -280,7 +294,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 7
-    }
+    },
+    "total_commits": 992
   },
   "FoundationAgents/MetaGPT": {
     "bots": [],
@@ -290,7 +305,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 6367
   },
   "HKUDS/OpenHarness": {
     "bots": [
@@ -305,7 +321,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 19
-    }
+    },
+    "total_commits": 429
   },
   "HKUDS/Vibe-Trading": {
     "bots": [
@@ -320,7 +337,8 @@
       "Cursor": 4,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 7
-    }
+    },
+    "total_commits": 2336
   },
   "HKUDS/nanobot": {
     "bots": [
@@ -335,7 +353,8 @@
       "Cursor": 76,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 24
-    }
+    },
+    "total_commits": 4502
   },
   "IceWhaleTech/CasaOS": {
     "bots": [
@@ -350,7 +369,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 688
   },
   "JCodesMore/ai-website-cloner-template": {
     "bots": [],
@@ -360,7 +380,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 73
   },
   "Kilo-Org/kilocode": {
     "bots": [
@@ -387,7 +408,8 @@
       "Cursor": 5,
       "Generic_AI_Marker": 75,
       "GitHub_Copilot": 47
-    }
+    },
+    "total_commits": 31732
   },
   "LAION-AI/Open-Assistant": {
     "bots": [
@@ -402,7 +424,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 3477
   },
   "MaaAssistantArknights/MaaAssistantArknights": {
     "bots": [
@@ -429,7 +452,8 @@
       "Cursor": 4,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 56
-    }
+    },
+    "total_commits": 20374
   },
   "MagicMirrorOrg/MagicMirror": {
     "bots": [
@@ -444,7 +468,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 4925
   },
   "MervinPraison/PraisonAI": {
     "bots": [
@@ -479,7 +504,8 @@
       "Cursor": 152,
       "Generic_AI_Marker": 541,
       "GitHub_Copilot": 89
-    }
+    },
+    "total_commits": 9429
   },
   "Mintplex-Labs/anything-llm": {
     "bots": [],
@@ -489,7 +515,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 2397
   },
   "Mirix-AI/MIRIX": {
     "bots": [],
@@ -499,7 +526,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 383
   },
   "NVIDIA/OpenShell": {
     "bots": [
@@ -514,7 +542,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 2
-    }
+    },
+    "total_commits": 1445
   },
   "NevaMind-AI/memU": {
     "bots": [
@@ -529,7 +558,8 @@
       "Cursor": 17,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 4
-    }
+    },
+    "total_commits": 457
   },
   "NoFxAiOS/nofx": {
     "bots": [],
@@ -539,7 +569,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 50,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 1217
   },
   "NousResearch/hermes-agent": {
     "bots": [
@@ -558,7 +589,8 @@
       "Cursor": 74,
       "Generic_AI_Marker": 6,
       "GitHub_Copilot": 66
-    }
+    },
+    "total_commits": 39651
   },
   "OpenBB-finance/OpenBB": {
     "bots": [],
@@ -568,7 +600,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 6863
   },
   "OpenBMB/AgentVerse": {
     "bots": [],
@@ -578,7 +611,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 361
   },
   "OpenHands/OpenHands": {
     "bots": [
@@ -597,7 +631,8 @@
       "Cursor": 35,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 5
-    }
+    },
+    "total_commits": 8274
   },
   "Panniantong/Agent-Reach": {
     "bots": [],
@@ -607,7 +642,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 376
   },
   "PostHog/posthog": {
     "bots": [
@@ -638,7 +674,8 @@
       "Cursor": 172,
       "Generic_AI_Marker": 30,
       "GitHub_Copilot": 174
-    }
+    },
+    "total_commits": 61968
   },
   "PrimeIntellect-ai/prime-agent": {
     "bots": [
@@ -657,7 +694,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 31
-    }
+    },
+    "total_commits": 4796
   },
   "Project-N-E-K-O/N.E.K.O": {
     "bots": [
@@ -672,7 +710,8 @@
       "Cursor": 29,
       "Generic_AI_Marker": 4,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 3125
   },
   "RTGS2017/NagaAgent": {
     "bots": [],
@@ -682,7 +721,8 @@
       "Cursor": 52,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 848
   },
   "RasaHQ/rasa": {
     "bots": [
@@ -701,7 +741,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 32386
   },
   "SigNoz/signoz": {
     "bots": [
@@ -720,7 +761,8 @@
       "Cursor": 2,
       "Generic_AI_Marker": 9,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 7019
   },
   "Significant-Gravitas/AutoGPT": {
     "bots": [
@@ -743,7 +785,8 @@
       "Cursor": 18,
       "Generic_AI_Marker": 349,
       "GitHub_Copilot": 52
-    }
+    },
+    "total_commits": 9300
   },
   "Skyvern-AI/skyvern": {
     "bots": [
@@ -766,7 +809,8 @@
       "Cursor": 4,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 6794
   },
   "Sylinko/Everywhere": {
     "bots": [],
@@ -776,7 +820,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 1931
   },
   "TEN-framework/ten-framework": {
     "bots": [],
@@ -786,7 +831,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 5
-    }
+    },
+    "total_commits": 2079
   },
   "TaskingAI/TaskingAI": {
     "bots": [
@@ -801,7 +847,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 414
   },
   "TencentCloud/TencentDB-Agent-Memory": {
     "bots": [],
@@ -811,7 +858,8 @@
       "Cursor": 3,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 45
   },
   "ThinkInAIXYZ/deepchat": {
     "bots": [
@@ -834,7 +882,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 15,
       "GitHub_Copilot": 15
-    }
+    },
+    "total_commits": 4116
   },
   "ToolJet/ToolJet": {
     "bots": [
@@ -857,7 +906,8 @@
       "Cursor": 3,
       "Generic_AI_Marker": 31,
       "GitHub_Copilot": 53
-    }
+    },
+    "total_commits": 17834
   },
   "TransformerOptimus/SuperAGI": {
     "bots": [],
@@ -867,7 +917,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 2342
   },
   "Untrivial-ai/agent-orchestrator": {
     "bots": [
@@ -886,7 +937,8 @@
       "Cursor": 104,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 16
-    }
+    },
+    "total_commits": 2857
   },
   "Upsonic/Upsonic": {
     "bots": [
@@ -909,7 +961,8 @@
       "Cursor": 3,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 1896
   },
   "XiaoMi/ha_xiaomi_home": {
     "bots": [],
@@ -919,7 +972,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 268
   },
   "Zackriya-Solutions/meetily": {
     "bots": [],
@@ -929,7 +983,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 3,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 661
   },
   "aaif-goose/goose": {
     "bots": [
@@ -948,7 +1003,8 @@
       "Cursor": 13,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 85
-    }
+    },
+    "total_commits": 5703
   },
   "activepieces/activepieces": {
     "bots": [
@@ -971,7 +1027,8 @@
       "Cursor": 5,
       "Generic_AI_Marker": 3,
       "GitHub_Copilot": 14
-    }
+    },
+    "total_commits": 60894
   },
   "affaan-m/ECC": {
     "bots": [
@@ -998,7 +1055,8 @@
       "Cursor": 10,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 2804
   },
   "agent0ai/agent-zero": {
     "bots": [],
@@ -1008,7 +1066,8 @@
       "Cursor": 2,
       "Generic_AI_Marker": 5,
       "GitHub_Copilot": 10
-    }
+    },
+    "total_commits": 2809
   },
   "agentscope-ai/QwenPaw": {
     "bots": [],
@@ -1018,7 +1077,8 @@
       "Cursor": 2,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 2
-    }
+    },
+    "total_commits": 2454
   },
   "agno-agi/agno": {
     "bots": [],
@@ -1028,7 +1088,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 109,
       "GitHub_Copilot": 9
-    }
+    },
+    "total_commits": 6093
   },
   "alibaba/nacos": {
     "bots": [
@@ -1043,7 +1104,8 @@
       "Cursor": 8,
       "Generic_AI_Marker": 19,
       "GitHub_Copilot": 4
-    }
+    },
+    "total_commits": 6327
   },
   "alibaba/spring-ai-alibaba": {
     "bots": [],
@@ -1053,7 +1115,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 29
-    }
+    },
+    "total_commits": 3250
   },
   "anomalyco/opencode": {
     "bots": [
@@ -1072,7 +1135,8 @@
       "Cursor": 3,
       "Generic_AI_Marker": 75,
       "GitHub_Copilot": 35
-    }
+    },
+    "total_commits": 15768
   },
   "ansible/ansible": {
     "bots": [],
@@ -1082,7 +1146,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 55559
   },
   "anthropics/claude-code": {
     "bots": [
@@ -1097,7 +1162,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 62,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 862
   },
   "apache/airflow": {
     "bots": [
@@ -1112,7 +1178,8 @@
       "Cursor": 21,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 52
-    }
+    },
+    "total_commits": 41262
   },
   "arc53/DocsGPT": {
     "bots": [
@@ -1135,7 +1202,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 3,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 5490
   },
   "areal-project/AReaL": {
     "bots": [],
@@ -1145,7 +1213,8 @@
       "Cursor": 2,
       "Generic_AI_Marker": 10,
       "GitHub_Copilot": 9
-    }
+    },
+    "total_commits": 1088
   },
   "assafelovic/gpt-researcher": {
     "bots": [
@@ -1164,7 +1233,8 @@
       "Cursor": 7,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 8
-    }
+    },
+    "total_commits": 3109
   },
   "babalae/better-genshin-impact": {
     "bots": [],
@@ -1174,7 +1244,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 3541
   },
   "browser-use/browser-use": {
     "bots": [
@@ -1193,7 +1264,8 @@
       "Cursor": 2,
       "Generic_AI_Marker": 50,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 10295
   },
   "bytedance/deer-flow": {
     "bots": [
@@ -1212,7 +1284,8 @@
       "Cursor": 103,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 175
-    }
+    },
+    "total_commits": 3402
   },
   "calesthio/Crucix": {
     "bots": [],
@@ -1222,7 +1295,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 120
   },
   "calesthio/OpenMontage": {
     "bots": [],
@@ -1232,7 +1306,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 449
   },
   "camel-ai/camel": {
     "bots": [
@@ -1251,7 +1326,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 8
-    }
+    },
+    "total_commits": 2308
   },
   "chatboxai/chatbox": {
     "bots": [
@@ -1266,7 +1342,8 @@
       "Cursor": 33,
       "Generic_AI_Marker": 15,
       "GitHub_Copilot": 4
-    }
+    },
+    "total_commits": 1550
   },
   "chenhg5/cc-connect": {
     "bots": [],
@@ -1276,7 +1353,8 @@
       "Cursor": 83,
       "Generic_AI_Marker": 18,
       "GitHub_Copilot": 5
-    }
+    },
+    "total_commits": 1237
   },
   "cline/cline": {
     "bots": [
@@ -1307,7 +1385,8 @@
       "Cursor": 41,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 53
-    }
+    },
+    "total_commits": 7369
   },
   "cloudwego/eino": {
     "bots": [],
@@ -1317,7 +1396,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 467
   },
   "code-yeongyu/oh-my-openagent": {
     "bots": [
@@ -1332,7 +1412,8 @@
       "Cursor": 50,
       "Generic_AI_Marker": 648,
       "GitHub_Copilot": 65
-    }
+    },
+    "total_commits": 17090
   },
   "coleam00/Archon": {
     "bots": [
@@ -1355,7 +1436,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 25,
       "GitHub_Copilot": 15
-    }
+    },
+    "total_commits": 3214
   },
   "crewAIInc/crewAI": {
     "bots": [
@@ -1374,7 +1456,8 @@
       "Cursor": 20,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 11
-    }
+    },
+    "total_commits": 2898
   },
   "dataelement/bisheng": {
     "bots": [
@@ -1389,7 +1472,8 @@
       "Cursor": 15,
       "Generic_AI_Marker": 10,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 9442
   },
   "earendil-works/pi": {
     "bots": [
@@ -1404,7 +1488,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 38
-    }
+    },
+    "total_commits": 6466
   },
   "elie222/inbox-zero": {
     "bots": [
@@ -1423,7 +1508,8 @@
       "Cursor": 179,
       "Generic_AI_Marker": 28,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 11212
   },
   "elizaOS/eliza": {
     "bots": [
@@ -1442,7 +1528,8 @@
       "Cursor": 98,
       "Generic_AI_Marker": 6,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 22844
   },
   "eosphoros-ai/DB-GPT": {
     "bots": [
@@ -1457,7 +1544,8 @@
       "Cursor": 3,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 3411
   },
   "farion1231/cc-switch": {
     "bots": [
@@ -1472,7 +1560,8 @@
       "Cursor": 2,
       "Generic_AI_Marker": 13,
       "GitHub_Copilot": 18
-    }
+    },
+    "total_commits": 2448
   },
   "feder-cr/Jobs_Applier_AI_Agent_AIHawk": {
     "bots": [],
@@ -1482,7 +1571,8 @@
       "Cursor": null,
       "Generic_AI_Marker": null,
       "GitHub_Copilot": null
-    }
+    },
+    "total_commits": 333
   },
   "fossasia/susi_server": {
     "bots": [],
@@ -1492,7 +1582,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 3860
   },
   "getmaxun/maxun": {
     "bots": [],
@@ -1502,7 +1593,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 7620
   },
   "google-gemini/gemini-cli": {
     "bots": [
@@ -1517,7 +1609,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 6427
   },
   "googleworkspace/cli": {
     "bots": [
@@ -1532,7 +1625,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 283
   },
   "gsd-build/gsd-2": {
     "bots": [
@@ -1559,7 +1653,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 42
-    }
+    },
+    "total_commits": 6829
   },
   "hangwin/mcp-chrome": {
     "bots": [],
@@ -1569,7 +1664,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 5,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 192
   },
   "harry0703/MoneyPrinterTurbo": {
     "bots": [
@@ -1584,7 +1680,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 924
   },
   "heygen-com/hyperframes": {
     "bots": [
@@ -1607,7 +1704,8 @@
       "Cursor": 11,
       "Generic_AI_Marker": 105,
       "GitHub_Copilot": 4
-    }
+    },
+    "total_commits": 4580
   },
   "hiyouga/LlamaFactory": {
     "bots": [
@@ -1622,7 +1720,8 @@
       "Cursor": 2,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 5
-    }
+    },
+    "total_commits": 3103
   },
   "huggingface/speech-to-speech": {
     "bots": [
@@ -1645,7 +1744,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 1075
   },
   "iOfficeAI/AionUi": {
     "bots": [],
@@ -1655,7 +1755,8 @@
       "Cursor": 9,
       "Generic_AI_Marker": 53,
       "GitHub_Copilot": 7
-    }
+    },
+    "total_commits": 5988
   },
   "infiniflow/ragflow": {
     "bots": [
@@ -1670,7 +1771,8 @@
       "Cursor": 40,
       "Generic_AI_Marker": 59,
       "GitHub_Copilot": 19
-    }
+    },
+    "total_commits": 9519
   },
   "jeecgboot/JeecgBoot": {
     "bots": [],
@@ -1680,7 +1782,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 5
-    }
+    },
+    "total_commits": 2363
   },
   "jlcodes99/cockpit-tools": {
     "bots": [
@@ -1695,7 +1798,8 @@
       "Cursor": 3,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 6
-    }
+    },
+    "total_commits": 1435
   },
   "khoj-ai/khoj": {
     "bots": [],
@@ -1705,7 +1809,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 5180
   },
   "koala73/worldmonitor": {
     "bots": [
@@ -1728,7 +1833,8 @@
       "Cursor": 191,
       "Generic_AI_Marker": 106,
       "GitHub_Copilot": 4
-    }
+    },
+    "total_commits": 7632
   },
   "labring/FastGPT": {
     "bots": [
@@ -1755,7 +1861,8 @@
       "Cursor": 6,
       "Generic_AI_Marker": 2,
       "GitHub_Copilot": 18
-    }
+    },
+    "total_commits": 3476
   },
   "langbot-app/LangBot": {
     "bots": [
@@ -1782,7 +1889,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 11,
       "GitHub_Copilot": 58
-    }
+    },
+    "total_commits": 3929
   },
   "langchain4j/langchain4j": {
     "bots": [
@@ -1805,7 +1913,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 2,
       "GitHub_Copilot": 12
-    }
+    },
+    "total_commits": 4081
   },
   "langflow-ai/langflow": {
     "bots": [
@@ -1832,7 +1941,8 @@
       "Cursor": 11,
       "Generic_AI_Marker": 23,
       "GitHub_Copilot": 36
-    }
+    },
+    "total_commits": 19066
   },
   "langgenius/dify": {
     "bots": [
@@ -1851,7 +1961,8 @@
       "Cursor": 11,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 251
-    }
+    },
+    "total_commits": 13478
   },
   "leon-ai/leon": {
     "bots": [
@@ -1870,7 +1981,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 2754
   },
   "letta-ai/letta": {
     "bots": [
@@ -1889,7 +2001,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 110,
       "GitHub_Copilot": 2
-    }
+    },
+    "total_commits": 7474
   },
   "liliMozi/openhanako": {
     "bots": [],
@@ -1899,7 +2012,8 @@
       "Cursor": 14,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 3466
   },
   "livekit/agents": {
     "bots": [
@@ -1922,7 +2036,8 @@
       "Cursor": 17,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 4
-    }
+    },
+    "total_commits": 4048
   },
   "lobehub/lobehub": {
     "bots": [
@@ -1945,7 +2060,8 @@
       "Cursor": 6,
       "Generic_AI_Marker": 153,
       "GitHub_Copilot": 27
-    }
+    },
+    "total_commits": 13905
   },
   "mastra-ai/mastra": {
     "bots": [
@@ -1992,7 +2108,8 @@
       "Cursor": 26,
       "Generic_AI_Marker": 215,
       "GitHub_Copilot": 34
-    }
+    },
+    "total_commits": 19701
   },
   "matthiasn/lotti": {
     "bots": [
@@ -2011,7 +2128,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 10536
   },
   "mcp-use/mcp-use": {
     "bots": [
@@ -2042,7 +2160,8 @@
       "Cursor": 21,
       "Generic_AI_Marker": 4,
       "GitHub_Copilot": 30
-    }
+    },
+    "total_commits": 1617
   },
   "medusajs/medusa": {
     "bots": [
@@ -2061,7 +2180,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 5,
       "GitHub_Copilot": 12
-    }
+    },
+    "total_commits": 10820
   },
   "mem0ai/mem0": {
     "bots": [
@@ -2076,7 +2196,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 2640
   },
   "micro/go-micro": {
     "bots": [
@@ -2095,7 +2216,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 28
-    }
+    },
+    "total_commits": 4978
   },
   "microsoft/agent-framework": {
     "bots": [
@@ -2114,7 +2236,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 3,
       "GitHub_Copilot": 1021
-    }
+    },
+    "total_commits": 3212
   },
   "microsoft/autogen": {
     "bots": [
@@ -2137,7 +2260,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 33
-    }
+    },
+    "total_commits": 3782
   },
   "microsoft/qlib": {
     "bots": [
@@ -2152,7 +2276,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 2068
   },
   "mksglu/context-mode": {
     "bots": [
@@ -2171,7 +2296,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 9
-    }
+    },
+    "total_commits": 2192
   },
   "mlflow/mlflow": {
     "bots": [
@@ -2194,7 +2320,8 @@
       "Cursor": 19,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 1311
-    }
+    },
+    "total_commits": 13499
   },
   "msitarzewski/agency-agents": {
     "bots": [],
@@ -2204,7 +2331,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 5
-    }
+    },
+    "total_commits": 419
   },
   "mukul975/Anthropic-Cybersecurity-Skills": {
     "bots": [
@@ -2219,7 +2347,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 2
-    }
+    },
+    "total_commits": 245
   },
   "n8n-io/n8n": {
     "bots": [
@@ -2246,7 +2375,8 @@
       "Cursor": 329,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 12
-    }
+    },
+    "total_commits": 24546
   },
   "nexu-io/open-design": {
     "bots": [
@@ -2277,7 +2407,8 @@
       "Cursor": 99,
       "Generic_AI_Marker": 2,
       "GitHub_Copilot": 8
-    }
+    },
+    "total_commits": 3676
   },
   "nrwl/nx": {
     "bots": [
@@ -2308,7 +2439,8 @@
       "Cursor": 2,
       "Generic_AI_Marker": 56,
       "GitHub_Copilot": 27
-    }
+    },
+    "total_commits": 18443
   },
   "nullclaw/nullclaw": {
     "bots": [
@@ -2327,7 +2459,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 3,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 2735
   },
   "nullclaw/nullhub": {
     "bots": [],
@@ -2337,7 +2470,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 453
   },
   "open-jarvis/OpenJarvis": {
     "bots": [
@@ -2356,7 +2490,8 @@
       "Cursor": 2,
       "Generic_AI_Marker": 2,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 1146
   },
   "open-metadata/OpenMetadata": {
     "bots": [
@@ -2383,7 +2518,8 @@
       "Cursor": 9,
       "Generic_AI_Marker": 33,
       "GitHub_Copilot": 198
-    }
+    },
+    "total_commits": 18956
   },
   "openai/codex": {
     "bots": [
@@ -2402,7 +2538,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 2,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 11083
   },
   "openai/openai-agents-python": {
     "bots": [
@@ -2421,7 +2558,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 2330
   },
   "openai/symphony": {
     "bots": [],
@@ -2431,7 +2569,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 47
   },
   "openclaw/openclaw": {
     "bots": [
@@ -2458,7 +2597,8 @@
       "Cursor": 135,
       "Generic_AI_Marker": 33,
       "GitHub_Copilot": 199
-    }
+    },
+    "total_commits": 97715
   },
   "opendatalab/MinerU": {
     "bots": [
@@ -2477,7 +2617,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 63
-    }
+    },
+    "total_commits": 6788
   },
   "osaurus-ai/osaurus": {
     "bots": [
@@ -2496,7 +2637,8 @@
       "Cursor": 17,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 2
-    }
+    },
+    "total_commits": 3785
   },
   "paperclipai/paperclip": {
     "bots": [
@@ -2515,7 +2657,8 @@
       "Cursor": 8,
       "Generic_AI_Marker": 88,
       "GitHub_Copilot": 2
-    }
+    },
+    "total_commits": 4495
   },
   "pestphp/pest": {
     "bots": [
@@ -2530,7 +2673,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 3096
   },
   "pipecat-ai/pipecat": {
     "bots": [
@@ -2553,7 +2697,8 @@
       "Cursor": 8,
       "Generic_AI_Marker": 3,
       "GitHub_Copilot": 9
-    }
+    },
+    "total_commits": 13164
   },
   "reworkd/AgentGPT": {
     "bots": [
@@ -2568,7 +2713,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 1500
   },
   "ruvnet/ruflo": {
     "bots": [
@@ -2583,7 +2729,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 2300,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 7508
   },
   "shanraisshan/claude-code-best-practice": {
     "bots": [
@@ -2598,7 +2745,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 2219
   },
   "siddsachar/row-bot": {
     "bots": [
@@ -2613,7 +2761,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 537
   },
   "simstudioai/sim": {
     "bots": [
@@ -2628,7 +2777,8 @@
       "Cursor": 37,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 7400
   },
   "snarktank/ralph": {
     "bots": [],
@@ -2638,7 +2788,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 20
   },
   "spinabot/brigade": {
     "bots": [
@@ -2657,7 +2808,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 4
-    }
+    },
+    "total_commits": 632
   },
   "sukeesh/Jarvis": {
     "bots": [],
@@ -2667,7 +2819,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 1815
   },
   "superagent-ai/superagent": {
     "bots": [],
@@ -2677,7 +2830,8 @@
       "Cursor": 15,
       "Generic_AI_Marker": 13,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 159
   },
   "the-open-agent/openagent": {
     "bots": [
@@ -2696,7 +2850,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 2450
   },
   "thedotmack/claude-mem": {
     "bots": [
@@ -2723,7 +2878,8 @@
       "Cursor": 62,
       "Generic_AI_Marker": 348,
       "GitHub_Copilot": 20
-    }
+    },
+    "total_commits": 2704
   },
   "timescale/pgai": {
     "bots": [
@@ -2742,7 +2898,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 1,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 1028
   },
   "tinyhumansai/openhuman": {
     "bots": [
@@ -2757,7 +2914,8 @@
       "Cursor": 29,
       "Generic_AI_Marker": 108,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 21329
   },
   "topoteretes/cognee": {
     "bots": [
@@ -2776,7 +2934,8 @@
       "Cursor": 22,
       "Generic_AI_Marker": 344,
       "GitHub_Copilot": 13
-    }
+    },
+    "total_commits": 10743
   },
   "tradesdontlie/tradingview-mcp": {
     "bots": [],
@@ -2786,7 +2945,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 97
   },
   "triggerdotdev/trigger.dev": {
     "bots": [
@@ -2817,7 +2977,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 47,
       "GitHub_Copilot": 15
-    }
+    },
+    "total_commits": 8172
   },
   "ultraworkers/claw-code": {
     "bots": [],
@@ -2827,7 +2988,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 1690
   },
   "vercel-labs/agent-browser": {
     "bots": [
@@ -2850,7 +3012,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 3
-    }
+    },
+    "total_commits": 682
   },
   "vercel/ai": {
     "bots": [
@@ -2881,7 +3044,8 @@
       "Cursor": 49,
       "Generic_AI_Marker": 41,
       "GitHub_Copilot": 28
-    }
+    },
+    "total_commits": 8578
   },
   "virattt/dexter": {
     "bots": [],
@@ -2891,7 +3055,8 @@
       "Cursor": 22,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 487
   },
   "vxcontrol/pentagi": {
     "bots": [
@@ -2906,7 +3071,8 @@
       "Cursor": 25,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 1
-    }
+    },
+    "total_commits": 938
   },
   "xbtlin/ai-berkshire": {
     "bots": [],
@@ -2916,7 +3082,8 @@
       "Cursor": 0,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 1506
   },
   "yc-software/qm": {
     "bots": [
@@ -2931,7 +3098,8 @@
       "Cursor": 1,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 561
   },
   "zeroclaw-labs/zeroclaw": {
     "bots": [
@@ -2946,7 +3114,8 @@
       "Cursor": 3,
       "Generic_AI_Marker": 13,
       "GitHub_Copilot": 80
-    }
+    },
+    "total_commits": 5340
   },
   "zhayujie/CowAgent": {
     "bots": [],
@@ -2956,6 +3125,7 @@
       "Cursor": 38,
       "Generic_AI_Marker": 0,
       "GitHub_Copilot": 0
-    }
+    },
+    "total_commits": 2971
   }
 }

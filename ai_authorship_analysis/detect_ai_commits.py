@@ -29,6 +29,7 @@ import argparse
 import csv
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -104,6 +105,36 @@ def search_commit_count(full_name: str, query: str, token: str | None) -> int | 
         raise
     except RuntimeError:
         return None
+
+
+_LAST_PAGE_RE = re.compile(r'[?&]page=(\d+)[^>]*>;\s*rel="last"')
+
+
+def fetch_total_commit_count(full_name: str, token: str | None) -> int | None:
+    """Get the total commit count on the default branch via the Link header's
+    rel="last" page number (per_page=1), avoiding downloading every commit."""
+    url = f"{API_ROOT}/repos/{urllib.parse.quote(full_name, safe='/')}/commits?per_page=1"
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "ai-commit-detector"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    request = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            link_header = response.headers.get("Link") or response.headers.get("link")
+            data = json.loads(response.read(200_000).decode("utf-8", errors="replace"))
+    except urllib.error.HTTPError as exc:
+        if exc.code in (403, 404, 409):  # 409 = empty repo
+            return None
+        raise GitHubApiError(exc.code, "") from exc
+    except Exception:
+        return None
+
+    if link_header:
+        match = _LAST_PAGE_RE.search(link_header)
+        if match:
+            return int(match.group(1))
+    # No pagination needed: repo has 0 or 1 commits total.
+    return len(data) if isinstance(data, list) else None
 
 
 def fetch_bot_contributors(full_name: str, token: str | None) -> list[dict[str, Any]]:
@@ -192,18 +223,38 @@ def main() -> int:
     for index, row in enumerate(sample_rows, start=1):
         full_name = row["_full_name"]
 
-        if full_name in cache and not (args.retry_gaps and any(
-            v is None for v in cache[full_name].get("signatures", {}).values()
-        )):
+        needs_signature_retry = args.retry_gaps and any(
+            v is None for v in cache.get(full_name, {}).get("signatures", {}).values()
+        )
+        needs_commit_count = full_name in cache and "total_commits" not in cache[full_name]
+
+        if full_name in cache and not needs_signature_retry and not needs_commit_count:
             print(f"[{index}/{total}] Cached: {full_name}")
             result = cache[full_name]
+        elif full_name in cache and needs_commit_count and not needs_signature_retry:
+            # Backward-compat: cache predates the total_commits field. Only
+            # fetch the one missing piece, reuse everything else already cached.
+            print(f"[{index}/{total}] Fetching missing commit count: {full_name}")
+            result = cache[full_name]
+            try:
+                result["total_commits"] = fetch_total_commit_count(full_name, token)
+            except GitHubApiError as exc:
+                print(f"Warning: commit-count fetch failed for {full_name}: {exc}", file=sys.stderr)
+                result["total_commits"] = None
+            cache[full_name] = result
+            save_cache(cache_path, cache)
         else:
             print(f"[{index}/{total}] Fetching: {full_name}")
-            result = {"signatures": {}, "bots": []}
+            result = {"signatures": {}, "bots": [], "total_commits": None}
             for sig_name, query in AI_SIGNATURES.items():
                 count = search_commit_count(full_name, query, next_search_token())
                 result["signatures"][sig_name] = count
                 time.sleep(args.delay)
+
+            try:
+                result["total_commits"] = fetch_total_commit_count(full_name, token)
+            except GitHubApiError as exc:
+                print(f"Warning: commit-count fetch failed for {full_name}: {exc}", file=sys.stderr)
 
             try:
                 bots = fetch_bot_contributors(full_name, token)
@@ -226,6 +277,19 @@ def main() -> int:
         bots = result.get("bots", [])
         bot_names = ", ".join(b["login"] for b in bots)
         bot_total_contributions = sum(b.get("contributions", 0) or 0 for b in bots)
+        total_commits = result.get("total_commits")
+
+        # Combined estimate: AI-signed commits + bot-account commits, as a
+        # share of the repo's total commit count. This is an UPPER-BOUND
+        # estimate, not exact -- a single commit could in principle count
+        # under both categories (e.g. a bot account whose commit also
+        # happens to carry an AI signature), and we only have aggregate
+        # counts, not per-commit identity, so we cannot de-duplicate that
+        # overlap. Treat this as "at most X%", not a precise figure.
+        if isinstance(total_commits, int) and total_commits > 0:
+            combined_pct = round((total_ai_signed + bot_total_contributions) / total_commits * 100, 2)
+        else:
+            combined_pct = ""
 
         out_row = {
             "Repo_Name": row["Repo_Name"],
@@ -238,6 +302,8 @@ def main() -> int:
         out_row["Bot_Contributor_Accounts"] = bot_names
         out_row["Bot_Contributor_Count"] = len(bots)
         out_row["Bot_Total_Contributions"] = bot_total_contributions
+        out_row["Total_Commits_In_Repo"] = total_commits if total_commits is not None else ""
+        out_row["Combined_AI_Plus_Bot_Pct_Of_Commits"] = combined_pct
         rows_out.append(out_row)
 
     fieldnames = list(rows_out[0].keys()) if rows_out else []
