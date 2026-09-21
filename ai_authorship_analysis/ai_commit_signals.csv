@@ -1,0 +1,171 @@
+﻿Repo_Name,Repo_URL,PRs_Total,Commits_With_Claude_Code_Signature,Commits_With_Cursor_Signature,Commits_With_GitHub_Copilot_Signature,Commits_With_Codex_Signature,Commits_With_Generic_AI_Marker_Signature,Total_AI_Signed_Commits_Any_Signature,Bot_Contributor_Accounts,Bot_Contributor_Count,Bot_Total_Contributions
+eliza,https://github.com/elizaOS/eliza,21771,6434,98,0,13,6,6551,"dependabot[bot], github-actions[bot]",2,139
+ruflo,https://github.com/ruvnet/ruflo,1329,3121,0,1,0,2300,5422,dependabot[bot],1,6
+posthog,https://github.com/PostHog/posthog,77853,4380,172,174,1,30,4757,"posthog[bot], mendral-app[bot], posthog-js-upgrader[bot], scheduled-actions-posthog[bot], posthog-contributions-bot[bot]",5,2607
+mlflow,https://github.com/mlflow/mlflow,19014,1835,19,1311,3,1,3169,"Copilot, mlflow-app[bot], dependabot[bot]",3,1524
+n8n,https://github.com/n8n-io/n8n,26695,2464,329,12,6,0,2811,"n8n-cat-bot[bot], github-actions[bot], n8n-assistant[bot], n8n-release-tag-merge[bot]",4,693
+CopilotKit,https://github.com/CopilotKit/CopilotKit,5329,1518,8,4,0,538,2068,"github-actions[bot], copilotkit-qa-bot[bot], renovate[bot], dependabot[bot], copilotkit-bot[bot]",5,1020
+lobehub,https://github.com/lobehub/lobehub,10568,1860,6,27,2,153,2048,"renovate[bot], gru-agent[bot], dependabot[bot]",3,335
+claude-code-best-practice,https://github.com/shanraisshan/claude-code-best-practice,138,1728,0,0,0,0,1728,claude[bot],1,4
+claude-mem,https://github.com/thedotmack/claude-mem,1501,1261,62,20,0,348,1691,"Copilot, posthog[bot], github-actions[bot], cursor[bot]",4,85
+OpenMetadata,https://github.com/open-metadata/OpenMetadata,20940,1377,9,198,1,33,1618,"dependabot[bot], Copilot, detail-app[bot], github-actions[bot]",4,290
+cognee,https://github.com/topoteretes/cognee,3520,1129,22,13,0,344,1508,"dependabot[bot], pensarapp[bot]",2,16
+openclaw,https://github.com/openclaw/openclaw,78596,1041,135,199,19,33,1427,"github-actions[bot], openclaw-mantis[bot], clawsweeper[bot], openclaw-clownfish[bot]",4,1677
+gsd-2,https://github.com/gsd-build/gsd-2,3525,1248,0,42,0,0,1290,"github-actions[bot], Copilot, coderabbitai[bot], blacksmith-sh[bot]",4,113
+oh-my-openagent,https://github.com/code-yeongyu/oh-my-openagent,4606,464,50,65,2,648,1229,github-actions[bot],1,776
+cherry-studio,https://github.com/CherryHQ/cherry-studio,7190,988,8,76,0,156,1228,"github-actions[bot], dependabot[bot], Copilot",3,95
+PraisonAI,https://github.com/MervinPraison/PraisonAI,2551,422,152,89,0,541,1204,"praisonai-triage-agent[bot], github-actions[bot], claude[bot], Copilot, cursor[bot], dependabot[bot]",6,3947
+AutoGPT,https://github.com/Significant-Gravitas/AutoGPT,8681,708,18,52,0,349,1127,"dependabot[bot], seer-by-sentry[bot], Copilot",3,228
+N.E.K.O,https://github.com/Project-N-E-K-O/N.E.K.O,2758,1070,29,3,3,4,1109,coderabbitai[bot],1,1
+agent-framework,https://github.com/microsoft/agent-framework,4209,23,1,1021,0,3,1048,"dependabot[bot], Copilot",2,367
+hyperframes,https://github.com/heygen-com/hyperframes,3147,923,11,4,2,105,1045,"heygengenesis[bot], renovate[bot], github-actions[bot]",3,23
+agent-orchestrator,https://github.com/Untrivial-ai/agent-orchestrator,2882,889,104,16,0,0,1009,"github-actions[bot], Copilot",2,10
+mastra,https://github.com/mastra-ai/mastra,16256,725,26,34,0,215,1000,"dane-ai-mastra[bot], mastra-platform[bot], devin-ai-integration[bot], github-actions[bot], renovate[bot], dependabot[bot], starslingdev[bot], detail-app[bot], aikido-autofix[bot]",9,3339
+paperclip,https://github.com/paperclipai/paperclip,9037,814,8,2,7,88,919,"dependabot[bot], github-actions[bot]",2,240
+inbox-zero,https://github.com/elie222/inbox-zero,3136,685,179,0,0,28,892,"cursor[bot], github-actions[bot]",2,73
+go-micro,https://github.com/micro/go-micro,2605,217,0,28,643,0,888,"Copilot, dependabot[bot]",2,33
+hermes-agent,https://github.com/NousResearch/hermes-agent,70647,679,74,66,4,6,829,"hermes-seaeye[bot], dependabot[bot]",2,333
+bisheng,https://github.com/dataelement/bisheng,1955,803,15,0,0,10,828,github-actions[bot],1,11
+zeroclaw,https://github.com/zeroclaw-labs/zeroclaw,6796,675,3,80,3,13,774,dependabot[bot],1,63
+openhuman,https://github.com/tinyhumansai/openhuman,3564,628,29,3,1,108,769,github-actions[bot],1,669
+cc-connect,https://github.com/chenhg5/cc-connect,1088,536,83,5,0,18,642,,0,0
+worldmonitor,https://github.com/koala73/worldmonitor,5333,317,191,4,0,106,618,"dependabot[bot], mintlify[bot], cursor[bot]",3,62
+context-mode,https://github.com/mksglu/context-mode,535,575,0,9,6,0,590,"github-actions[bot], Copilot",2,519
+deer-flow,https://github.com/bytedance/deer-flow,2955,305,103,175,2,0,585,"dependabot[bot], Copilot",2,90
+pentagi,https://github.com/vxcontrol/pentagi,253,557,25,1,0,0,583,dependabot[bot],1,4
+OpenJarvis,https://github.com/open-jarvis/OpenJarvis,622,518,2,1,0,2,523,"github-actions[bot], dependabot[bot]",2,180
+Archon,https://github.com/coleam00/Archon,1350,418,0,15,0,25,458,"github-actions[bot], the-archon-bot[bot], Copilot",3,24
+dify,https://github.com/langgenius/dify,17467,193,11,251,0,1,456,"dependabot[bot], github-actions[bot]",2,479
+sim,https://github.com/simstudioai/sim,6574,388,37,1,0,1,427,dependabot[bot],1,13
+agno,https://github.com/agno-agi/agno,5950,245,1,9,4,109,368,,0,0
+codex,https://github.com/openai/codex,15311,10,0,3,351,2,366,"dependabot[bot], github-actions[bot]",2,141
+activepieces,https://github.com/activepieces/activepieces,10926,322,5,14,0,3,344,"allcontributors[bot], dependabot[bot], craftspace-bot[bot]",3,692
+ToolJet,https://github.com/ToolJet/ToolJet,11998,228,3,53,0,31,315,"dependabot[bot], github-actions[bot], Copilot",3,26
+nx,https://github.com/nrwl/nx,19513,230,2,27,0,56,315,"github-actions[bot], polygraph-snapshot-app[bot], Copilot, polygraph-app[bot], claude[bot]",5,109
+ai,https://github.com/vercel/ai,14060,185,49,28,0,41,303,"github-actions[bot], ai-sdk-factory[bot], dependabot[bot], Copilot, renovate[bot]",5,1460
+skyvern,https://github.com/Skyvern-AI/skyvern,7827,278,4,3,1,0,286,"dependabot[bot], mintlify[bot], devsy-bot[bot]",3,49
+goose,https://github.com/aaif-goose/goose,8357,183,13,85,0,0,281,"dependabot[bot], github-actions[bot]",2,349
+ragflow,https://github.com/infiniflow/ragflow,10301,132,40,19,2,59,252,dependabot[bot],1,62
+NagaAgent,https://github.com/RTGS2017/NagaAgent,262,196,52,0,0,0,248,,0,0
+open-design,https://github.com/nexu-io/open-design,4543,111,99,8,9,2,229,"open-design-crew[bot], open-design-bot[bot], github-actions[bot], open-design-release-bot[bot], rebel-nexu-zero[bot]",5,271
+nanobot,https://github.com/HKUDS/nanobot,3737,106,76,24,0,1,207,Copilot,1,9
+langflow,https://github.com/langflow-ai/langflow,10538,136,11,36,0,23,206,"dependabot[bot], github-actions[bot], autofix-ci[bot], codeflash-ai[bot]",4,183
+airflow,https://github.com/apache/airflow,46631,129,21,52,0,0,202,dependabot[bot],1,594
+AionUi,https://github.com/iOfficeAI/AionUi,2537,112,9,7,4,53,185,,0,0
+chatbox,https://github.com/chatboxai/chatbox,274,132,33,4,0,15,184,dependabot[bot],1,4
+kilocode,https://github.com/Kilo-Org/kilocode,7732,53,5,47,0,75,180,"opencode-agent[bot], kilo-code-bot[bot], kilo-maintainer[bot], github-actions[bot]",4,3085
+trigger.dev,https://github.com/triggerdotdev/trigger.dev,3734,116,1,15,0,47,179,"github-actions[bot], claude[bot], devin-ai-integration[bot], mintlify[bot], dependabot[bot]",5,323
+browser-use,https://github.com/browser-use/browser-use,3519,119,2,3,0,50,174,"claude[bot], codebeaver-ai[bot]",2,26
+budibase,https://github.com/Budibase/budibase,7941,80,22,10,0,60,172,"dependabot[bot], github-actions[bot], allcontributors[bot], devin-ai-integration[bot]",4,309
+ai-berkshire,https://github.com/xbtlin/ai-berkshire,49,172,0,0,0,0,172,,0,0
+ECC,https://github.com/affaan-m/ECC,2022,154,10,3,0,0,167,"dependabot[bot], Copilot, Claude, devin-ai-integration[bot]",4,97
+cline,https://github.com/cline/cline,7369,70,41,53,0,1,165,"github-actions[bot], dependabot[bot], cline-cloud[bot], aikido-autofix[bot], mintlify[bot]",5,187
+unity-mcp,https://github.com/CoplayDev/unity-mcp,825,122,1,11,1,22,157,github-actions[bot],1,211
+MinerU,https://github.com/opendatalab/MinerU,1793,88,0,63,0,0,151,"github-actions[bot], Copilot",2,56
+opencode,https://github.com/anomalyco/opencode,19600,34,3,35,0,75,147,"opencode-agent[bot], github-actions[bot]",2,1678
+OpenHands,https://github.com/OpenHands/OpenHands,11325,102,35,5,5,0,147,"dependabot[bot], openhands-release-bot[bot]",2,1091
+crewAI,https://github.com/crewAIInc/crewAI,4536,108,20,11,0,1,140,"devin-ai-integration[bot], dependabot[bot]",2,52
+agents,https://github.com/livekit/agents,4859,114,17,4,0,0,135,"github-actions[bot], detail-app[bot], renovate[bot]",3,162
+LangBot,https://github.com/langbot-app/LangBot,923,62,1,58,0,11,132,"Copilot, github-actions[bot], dependabot[bot], devin-ai-integration[bot]",4,119
+claude-code,https://github.com/anthropics/claude-code,1276,67,0,0,0,62,129,claude[bot],1,1
+letta,https://github.com/letta-ai/letta,2025,14,1,2,0,110,127,"github-actions[bot], letta-integration[bot]",2,43
+agency-agents,https://github.com/msitarzewski/agency-agents,538,112,0,5,0,0,117,,0,0
+memU,https://github.com/NevaMind-AI/memU,434,93,17,4,2,0,116,github-actions[bot],1,18
+claude-obsidian,https://github.com/AgriciDaniel/claude-obsidian,98,112,0,2,0,0,114,,0,0
+pipecat,https://github.com/pipecat-ai/pipecat,4134,76,8,9,0,3,96,"github-actions[bot], claude[bot], detail-app[bot]",3,132
+mem0,https://github.com/mem0ai/mem0,4700,89,1,0,0,0,90,mintlify[bot],1,12
+cc-switch,https://github.com/farion1231/cc-switch,1755,55,2,18,1,13,89,dependabot[bot],1,9
+Vibe-Trading,https://github.com/HKUDS/Vibe-Trading,861,73,4,7,0,0,84,dependabot[bot],1,36
+signoz,https://github.com/SigNoz/signoz,7832,69,2,3,0,9,83,"primus-bot[bot], dependabot[bot]",2,150
+AstrBot,https://github.com/AstrBotDevs/AstrBot,2810,21,0,56,0,0,77,"dependabot[bot], pre-commit-ci[bot], Copilot",3,88
+mcp-use,https://github.com/mcp-use/mcp-use,1802,21,21,30,1,4,77,"github-actions[bot], cubic-dev-ai[bot], claude[bot], dependabot[bot], Copilot",5,271
+nofx,https://github.com/NoFxAiOS/nofx,752,25,0,0,1,50,76,,0,0
+MaaAssistantArknights,https://github.com/MaaAssistantArknights/MaaAssistantArknights,5573,9,4,56,0,0,69,"github-actions[bot], pre-commit-ci[bot], dependabot[bot], Copilot",4,1483
+AReaL,https://github.com/areal-project/AReaL,1233,48,2,9,0,10,69,,0,0
+tradingview-mcp,https://github.com/tradesdontlie/tradingview-mcp,369,57,0,0,0,0,57,,0,0
+nullclaw,https://github.com/nullclaw/nullclaw,631,47,0,0,6,3,56,"Copilot, dependabot[bot]",2,3
+ClawRouter,https://github.com/BlockRunAI/ClawRouter,111,55,0,0,0,0,55,dependabot[bot],1,8
+pi,https://github.com/earendil-works/pi,2932,13,1,38,0,1,53,github-actions[bot],1,188
+agent-browser,https://github.com/vercel-labs/agent-browser,1130,50,0,3,0,0,53,"github-actions[bot], vercel[bot], Copilot",3,71
+CowAgent,https://github.com/zhayujie/CowAgent,676,14,38,0,0,0,52,,0,0
+prime-agent,https://github.com/PrimeIntellect-ai/prime-agent,1252,17,0,31,0,1,49,"github-actions[bot], dependabot[bot]",2,126
+Agent-Reach,https://github.com/Panniantong/Agent-Reach,424,47,0,0,0,0,47,,0,0
+qm,https://github.com/yc-software/qm,531,44,1,0,2,0,47,dependabot[bot],1,2
+langchain4j,https://github.com/langchain4j/langchain4j,3286,32,1,12,0,2,47,"renovate[bot], dependabot[bot], github-actions[bot]",3,265
+deepchat,https://github.com/ThinkInAIXYZ/deepchat,1454,17,0,15,0,15,47,"Copilot, google-labs-jules[bot], dependabot[bot]",3,7
+nacos,https://github.com/alibaba/nacos,5360,10,8,4,0,19,41,dependabot[bot],1,22
+gpt-researcher,https://github.com/assafelovic/gpt-researcher,1123,26,7,8,0,0,41,"dependabot[bot], google-labs-jules[bot]",2,36
+superagent,https://github.com/superagent-ai/superagent,693,13,15,0,0,13,41,,0,0
+OpenHarness,https://github.com/HKUDS/OpenHarness,190,21,0,19,0,0,40,Copilot,1,3
+FastGPT,https://github.com/labring/FastGPT,3992,13,6,18,0,2,39,"dependabot[bot], gru-agent[bot], imgbot[bot], Copilot",4,105
+osaurus,https://github.com/osaurus-ai/osaurus,2074,18,17,2,0,1,38,"github-actions[bot], sentry[bot]",2,479
+spring-ai-alibaba,https://github.com/alibaba/spring-ai-alibaba,2142,8,0,29,0,0,37,,0,0
+DB-GPT,https://github.com/eosphoros-ai/DB-GPT,1383,30,3,3,0,0,36,Copilot,1,2
+autogen,https://github.com/microsoft/autogen,3733,2,0,33,0,0,35,"dependabot[bot], Copilot, startrightprod[bot]",3,49
+agent-zero,https://github.com/agent0ai/agent-zero,893,18,2,10,0,5,35,,0,0
+medusa,https://github.com/medusajs/medusa,11341,17,0,12,0,5,34,"github-actions[bot], dependabot[bot]",2,660
+dexter,https://github.com/virattt/dexter,189,10,22,0,0,0,32,,0,0
+OpenMontage,https://github.com/calesthio/OpenMontage,358,31,0,0,0,0,31,,0,0
+MoneyPrinterTurbo,https://github.com/harry0703/MoneyPrinterTurbo,413,25,0,0,0,0,25,Copilot,1,3
+openhanako,https://github.com/liliMozi/openhanako,0,11,14,0,0,0,25,,0,0
+lotti,https://github.com/matthiasn/lotti,3830,24,0,0,0,0,24,"dependabot[bot], dependabot-preview[bot]",2,35
+camel,https://github.com/camel-ai/camel,2651,12,0,8,0,0,20,"dependabot[bot], Copilot",2,30
+LlamaFactory,https://github.com/hiyouga/LlamaFactory,1506,12,2,5,0,0,19,Copilot,1,5
+rig,https://github.com/0xPlaygrounds/rig,1498,11,3,4,0,1,19,"github-actions[bot], dependabot[bot]",2,102
+Upsonic,https://github.com/Upsonic/Upsonic,422,15,3,0,0,1,19,"github-actions[bot], deepsource-autofix[bot], deepsource-io[bot]",3,16
+claw-code,https://github.com/ultraworkers/claw-code,385,15,0,0,0,0,15,,0,0
+ten-framework,https://github.com/TEN-framework/ten-framework,1733,8,0,5,0,0,13,,0,0
+JeecgBoot,https://github.com/jeecgboot/JeecgBoot,521,7,0,5,0,0,12,,0,0
+agenticSeek,https://github.com/Fosowl/agenticSeek,276,4,0,7,0,0,11,google-labs-jules[bot],1,1
+DocsGPT,https://github.com/arc53/DocsGPT,2004,5,0,3,0,3,11,"dependabot[bot], github-actions[bot], Copilot",3,385
+symphony,https://github.com/openai/symphony,78,0,0,0,10,0,10,,0,0
+cockpit-tools,https://github.com/jlcodes99/cockpit-tools,520,1,3,6,0,0,10,github-actions[bot],1,212
+mcp-chrome,https://github.com/hangwin/mcp-chrome,89,5,0,0,0,5,10,,0,0
+ai-website-cloner-template,https://github.com/JCodesMore/ai-website-cloner-template,76,8,0,1,0,0,9,,0,0
+pest,https://github.com/pestphp/pest,671,8,0,1,0,0,9,dependabot[bot],1,6
+1Panel,https://github.com/1Panel-dev/1Panel,5747,2,0,6,0,0,8,"dependabot[bot], Copilot",2,27
+meetily,https://github.com/Zackriya-Solutions/meetily,350,5,0,0,0,3,8,,0,0
+speech-to-speech,https://github.com/huggingface/speech-to-speech,345,6,1,1,0,0,8,"dependabot[bot], github-actions[bot], hf-dependantbot-rollout[bot]",3,12
+Crucix,https://github.com/calesthio/Crucix,87,8,0,0,0,0,8,,0,0
+MIRIX,https://github.com/Mirix-AI/MIRIX,69,8,0,0,0,0,8,,0,0
+Anthropic-Cybersecurity-Skills,https://github.com/mukul975/Anthropic-Cybersecurity-Skills,73,5,0,2,0,0,7,claude[bot],1,1
+maxun,https://github.com/getmaxun/maxun,859,7,0,0,0,0,7,,0,0
+anything-llm,https://github.com/Mintplex-Labs/anything-llm,2186,5,1,0,0,0,6,,0,0
+QwenPaw,https://github.com/agentscope-ai/QwenPaw,3493,2,2,2,0,0,6,,0,0
+cli,https://github.com/googleworkspace/cli,565,6,0,0,0,0,6,github-actions[bot],1,12
+taipy,https://github.com/Avaiga/taipy,1628,0,0,6,0,0,6,"github-actions[bot], dependabot[bot]",2,36
+OpenShell,https://github.com/NVIDIA/OpenShell,1660,3,1,2,0,0,6,dependabot[bot],1,40
+MaxKB,https://github.com/1Panel-dev/MaxKB,3549,1,0,4,0,0,5,"dependabot[bot], Copilot",2,57
+better-genshin-impact,https://github.com/babalae/better-genshin-impact,1058,3,1,1,0,0,5,,0,0
+eino,https://github.com/cloudwego/eino,812,5,0,0,0,0,5,,0,0
+brigade,https://github.com/spinabot/brigade,132,0,0,4,0,0,4,"github-actions[bot], dependabot[bot]",2,79
+OpenBB,https://github.com/OpenBB-finance/OpenBB,5023,1,1,1,0,0,3,,0,0
+ansible,https://github.com/ansible/ansible,52888,3,0,0,0,0,3,,0,0
+TencentDB-Agent-Memory,https://github.com/TencentCloud/TencentDB-Agent-Memory,833,0,3,0,0,0,3,,0,0
+Everywhere,https://github.com/Sylinko/Everywhere,200,0,0,3,0,0,3,,0,0
+openai-agents-python,https://github.com/openai/openai-agents-python,3127,0,0,0,2,0,2,"github-actions[bot], dependabot[bot]",2,243
+pgai,https://github.com/timescale/pgai,818,1,0,0,0,1,2,"github-actions[bot], dependabot[bot]",2,27
+nullhub,https://github.com/nullclaw/nullhub,61,2,0,0,0,0,2,,0,0
+gemini-cli,https://github.com/google-gemini/gemini-cli,12660,0,0,1,0,0,1,dependabot[bot],1,14
+qlib,https://github.com/microsoft/qlib,1239,0,0,1,0,0,1,dependabot[bot],1,19
+MagicMirror,https://github.com/MagicMirrorOrg/MagicMirror,2434,1,0,0,0,0,1,dependabot[bot],1,5
+ralph,https://github.com/snarktank/ralph,117,1,0,0,0,0,1,,0,0
+DojoAgents,https://github.com/Alpha-Dojo/DojoAgents,132,1,0,0,0,0,1,,0,0
+row-bot,https://github.com/siddsachar/row-bot,257,1,0,0,0,0,1,dependabot[bot],1,11
+MetaGPT,https://github.com/FoundationAgents/MetaGPT,1080,0,0,0,0,0,0,,0,0
+Open-Assistant,https://github.com/LAION-AI/Open-Assistant,1960,0,0,0,0,0,0,dependabot[bot],1,58
+CasaOS,https://github.com/IceWhaleTech/CasaOS,327,0,0,0,0,0,0,allcontributors[bot],1,15
+khoj,https://github.com/khoj-ai/khoj,644,0,0,0,0,0,0,,0,0
+AgentGPT,https://github.com/reworkd/AgentGPT,1081,0,0,0,0,0,0,dependabot[bot],1,64
+Jobs_Applier_AI_Agent_AIHawk,https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk,327,,,,,,0,,0,0
+ha_xiaomi_home,https://github.com/XiaoMi/ha_xiaomi_home,282,0,0,0,0,0,0,,0,0
+rasa,https://github.com/RasaHQ/rasa,6457,0,0,0,0,0,0,"dependabot[bot], dependabot-preview[bot]",2,203
+CopyTranslator,https://github.com/CopyTranslator/CopyTranslator,101,0,0,0,0,0,0,"allcontributors[bot], dependabot[bot]",2,15
+SuperAGI,https://github.com/TransformerOptimus/SuperAGI,1006,0,0,0,0,0,0,,0,0
+leon,https://github.com/leon-ai/leon,240,0,0,0,0,0,0,"dependabot[bot], github-actions[bot]",2,38
+openagent,https://github.com/the-open-agent/openagent,1649,0,0,0,0,0,0,"Copilot, github-actions[bot]",2,105
+TaskingAI,https://github.com/TaskingAI/TaskingAI,277,0,0,0,0,0,0,dependabot[bot],1,5
+AgentVerse,https://github.com/OpenBMB/AgentVerse,66,0,0,0,0,0,0,,0,0
+OpenMemory,https://github.com/CaviraOSS/OpenMemory,113,,,,,,0,"github-actions[bot], Copilot",2,30
+Jarvis,https://github.com/sukeesh/Jarvis,728,0,0,0,0,0,0,,0,0
+susi_server,https://github.com/fossasia/susi_server,647,0,0,0,0,0,0,,0,0

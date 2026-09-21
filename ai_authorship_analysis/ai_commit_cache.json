@@ -1,0 +1,2961 @@
+{
+  "0xPlaygrounds/rig": {
+    "bots": [
+      {
+        "contributions": 56,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 46,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 11,
+      "Codex": 0,
+      "Cursor": 3,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 4
+    }
+  },
+  "1Panel-dev/1Panel": {
+    "bots": [
+      {
+        "contributions": 26,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 2,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 6
+    }
+  },
+  "1Panel-dev/MaxKB": {
+    "bots": [
+      {
+        "contributions": 56,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 4
+    }
+  },
+  "AgriciDaniel/claude-obsidian": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 112,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 2
+    }
+  },
+  "Alpha-Dojo/DojoAgents": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "AstrBotDevs/AstrBot": {
+    "bots": [
+      {
+        "contributions": 35,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 30,
+        "login": "pre-commit-ci[bot]"
+      },
+      {
+        "contributions": 23,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 21,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 56
+    }
+  },
+  "Avaiga/taipy": {
+    "bots": [
+      {
+        "contributions": 29,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 6
+    }
+  },
+  "BlockRunAI/ClawRouter": {
+    "bots": [
+      {
+        "contributions": 8,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 55,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "Budibase/budibase": {
+    "bots": [
+      {
+        "contributions": 283,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 11,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 8,
+        "login": "allcontributors[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "devin-ai-integration[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 80,
+      "Codex": 0,
+      "Cursor": 22,
+      "Generic_AI_Marker": 60,
+      "GitHub_Copilot": 10
+    }
+  },
+  "CaviraOSS/OpenMemory": {
+    "bots": [
+      {
+        "contributions": 28,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": null,
+      "Codex": null,
+      "Cursor": null,
+      "Generic_AI_Marker": null,
+      "GitHub_Copilot": null
+    }
+  },
+  "CherryHQ/cherry-studio": {
+    "bots": [
+      {
+        "contributions": 48,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 33,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 14,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 988,
+      "Codex": 0,
+      "Cursor": 8,
+      "Generic_AI_Marker": 156,
+      "GitHub_Copilot": 76
+    }
+  },
+  "CopilotKit/CopilotKit": {
+    "bots": [
+      {
+        "contributions": 757,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 126,
+        "login": "copilotkit-qa-bot[bot]"
+      },
+      {
+        "contributions": 120,
+        "login": "renovate[bot]"
+      },
+      {
+        "contributions": 13,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 4,
+        "login": "copilotkit-bot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1518,
+      "Codex": 0,
+      "Cursor": 8,
+      "Generic_AI_Marker": 538,
+      "GitHub_Copilot": 4
+    }
+  },
+  "CoplayDev/unity-mcp": {
+    "bots": [
+      {
+        "contributions": 211,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 122,
+      "Codex": 1,
+      "Cursor": 1,
+      "Generic_AI_Marker": 22,
+      "GitHub_Copilot": 11
+    }
+  },
+  "CopyTranslator/CopyTranslator": {
+    "bots": [
+      {
+        "contributions": 12,
+        "login": "allcontributors[bot]"
+      },
+      {
+        "contributions": 3,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "Fosowl/agenticSeek": {
+    "bots": [
+      {
+        "contributions": 1,
+        "login": "google-labs-jules[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 4,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 7
+    }
+  },
+  "FoundationAgents/MetaGPT": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "HKUDS/OpenHarness": {
+    "bots": [
+      {
+        "contributions": 3,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 21,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 19
+    }
+  },
+  "HKUDS/Vibe-Trading": {
+    "bots": [
+      {
+        "contributions": 36,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 73,
+      "Codex": 0,
+      "Cursor": 4,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 7
+    }
+  },
+  "HKUDS/nanobot": {
+    "bots": [
+      {
+        "contributions": 9,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 106,
+      "Codex": 0,
+      "Cursor": 76,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 24
+    }
+  },
+  "IceWhaleTech/CasaOS": {
+    "bots": [
+      {
+        "contributions": 15,
+        "login": "allcontributors[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "JCodesMore/ai-website-cloner-template": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 8,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 1
+    }
+  },
+  "Kilo-Org/kilocode": {
+    "bots": [
+      {
+        "contributions": 1496,
+        "login": "opencode-agent[bot]"
+      },
+      {
+        "contributions": 780,
+        "login": "kilo-code-bot[bot]"
+      },
+      {
+        "contributions": 580,
+        "login": "kilo-maintainer[bot]"
+      },
+      {
+        "contributions": 229,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 53,
+      "Codex": 0,
+      "Cursor": 5,
+      "Generic_AI_Marker": 75,
+      "GitHub_Copilot": 47
+    }
+  },
+  "LAION-AI/Open-Assistant": {
+    "bots": [
+      {
+        "contributions": 58,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "MaaAssistantArknights/MaaAssistantArknights": {
+    "bots": [
+      {
+        "contributions": 1390,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 49,
+        "login": "pre-commit-ci[bot]"
+      },
+      {
+        "contributions": 37,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 9,
+      "Codex": 0,
+      "Cursor": 4,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 56
+    }
+  },
+  "MagicMirrorOrg/MagicMirror": {
+    "bots": [
+      {
+        "contributions": 5,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "MervinPraison/PraisonAI": {
+    "bots": [
+      {
+        "contributions": 3374,
+        "login": "praisonai-triage-agent[bot]"
+      },
+      {
+        "contributions": 277,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 219,
+        "login": "claude[bot]"
+      },
+      {
+        "contributions": 48,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 28,
+        "login": "cursor[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 422,
+      "Codex": 0,
+      "Cursor": 152,
+      "Generic_AI_Marker": 541,
+      "GitHub_Copilot": 89
+    }
+  },
+  "Mintplex-Labs/anything-llm": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 5,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "Mirix-AI/MIRIX": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 8,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "NVIDIA/OpenShell": {
+    "bots": [
+      {
+        "contributions": 40,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 3,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 2
+    }
+  },
+  "NevaMind-AI/memU": {
+    "bots": [
+      {
+        "contributions": 18,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 93,
+      "Codex": 2,
+      "Cursor": 17,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 4
+    }
+  },
+  "NoFxAiOS/nofx": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 25,
+      "Codex": 1,
+      "Cursor": 0,
+      "Generic_AI_Marker": 50,
+      "GitHub_Copilot": 0
+    }
+  },
+  "NousResearch/hermes-agent": {
+    "bots": [
+      {
+        "contributions": 313,
+        "login": "hermes-seaeye[bot]"
+      },
+      {
+        "contributions": 20,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 679,
+      "Codex": 4,
+      "Cursor": 74,
+      "Generic_AI_Marker": 6,
+      "GitHub_Copilot": 66
+    }
+  },
+  "OpenBB-finance/OpenBB": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 1,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 1
+    }
+  },
+  "OpenBMB/AgentVerse": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "OpenHands/OpenHands": {
+    "bots": [
+      {
+        "contributions": 1047,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 44,
+        "login": "openhands-release-bot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 102,
+      "Codex": 5,
+      "Cursor": 35,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 5
+    }
+  },
+  "Panniantong/Agent-Reach": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 47,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "PostHog/posthog": {
+    "bots": [
+      {
+        "contributions": 1438,
+        "login": "posthog[bot]"
+      },
+      {
+        "contributions": 430,
+        "login": "mendral-app[bot]"
+      },
+      {
+        "contributions": 297,
+        "login": "posthog-js-upgrader[bot]"
+      },
+      {
+        "contributions": 275,
+        "login": "scheduled-actions-posthog[bot]"
+      },
+      {
+        "contributions": 167,
+        "login": "posthog-contributions-bot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 4380,
+      "Codex": 1,
+      "Cursor": 172,
+      "Generic_AI_Marker": 30,
+      "GitHub_Copilot": 174
+    }
+  },
+  "PrimeIntellect-ai/prime-agent": {
+    "bots": [
+      {
+        "contributions": 91,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 35,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 17,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 31
+    }
+  },
+  "Project-N-E-K-O/N.E.K.O": {
+    "bots": [
+      {
+        "contributions": 1,
+        "login": "coderabbitai[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1070,
+      "Codex": 3,
+      "Cursor": 29,
+      "Generic_AI_Marker": 4,
+      "GitHub_Copilot": 3
+    }
+  },
+  "RTGS2017/NagaAgent": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 196,
+      "Codex": 0,
+      "Cursor": 52,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "RasaHQ/rasa": {
+    "bots": [
+      {
+        "contributions": 167,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 36,
+        "login": "dependabot-preview[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "SigNoz/signoz": {
+    "bots": [
+      {
+        "contributions": 96,
+        "login": "primus-bot[bot]"
+      },
+      {
+        "contributions": 54,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 69,
+      "Codex": 0,
+      "Cursor": 2,
+      "Generic_AI_Marker": 9,
+      "GitHub_Copilot": 3
+    }
+  },
+  "Significant-Gravitas/AutoGPT": {
+    "bots": [
+      {
+        "contributions": 190,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 31,
+        "login": "seer-by-sentry[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 708,
+      "Codex": 0,
+      "Cursor": 18,
+      "Generic_AI_Marker": 349,
+      "GitHub_Copilot": 52
+    }
+  },
+  "Skyvern-AI/skyvern": {
+    "bots": [
+      {
+        "contributions": 40,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "mintlify[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "devsy-bot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 278,
+      "Codex": 1,
+      "Cursor": 4,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 3
+    }
+  },
+  "Sylinko/Everywhere": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 3
+    }
+  },
+  "TEN-framework/ten-framework": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 8,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 5
+    }
+  },
+  "TaskingAI/TaskingAI": {
+    "bots": [
+      {
+        "contributions": 5,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "TencentCloud/TencentDB-Agent-Memory": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 3,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "ThinkInAIXYZ/deepchat": {
+    "bots": [
+      {
+        "contributions": 3,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 3,
+        "login": "google-labs-jules[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 17,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 15,
+      "GitHub_Copilot": 15
+    }
+  },
+  "ToolJet/ToolJet": {
+    "bots": [
+      {
+        "contributions": 18,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 4,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 4,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 228,
+      "Codex": 0,
+      "Cursor": 3,
+      "Generic_AI_Marker": 31,
+      "GitHub_Copilot": 53
+    }
+  },
+  "TransformerOptimus/SuperAGI": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "Untrivial-ai/agent-orchestrator": {
+    "bots": [
+      {
+        "contributions": 8,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 889,
+      "Codex": 0,
+      "Cursor": 104,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 16
+    }
+  },
+  "Upsonic/Upsonic": {
+    "bots": [
+      {
+        "contributions": 8,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "deepsource-autofix[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "deepsource-io[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 15,
+      "Codex": 0,
+      "Cursor": 3,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 0
+    }
+  },
+  "XiaoMi/ha_xiaomi_home": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "Zackriya-Solutions/meetily": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 5,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 3,
+      "GitHub_Copilot": 0
+    }
+  },
+  "aaif-goose/goose": {
+    "bots": [
+      {
+        "contributions": 303,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 46,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 183,
+      "Codex": 0,
+      "Cursor": 13,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 85
+    }
+  },
+  "activepieces/activepieces": {
+    "bots": [
+      {
+        "contributions": 507,
+        "login": "allcontributors[bot]"
+      },
+      {
+        "contributions": 114,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 71,
+        "login": "craftspace-bot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 322,
+      "Codex": 0,
+      "Cursor": 5,
+      "Generic_AI_Marker": 3,
+      "GitHub_Copilot": 14
+    }
+  },
+  "affaan-m/ECC": {
+    "bots": [
+      {
+        "contributions": 64,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 22,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 6,
+        "login": "Claude"
+      },
+      {
+        "contributions": 5,
+        "login": "devin-ai-integration[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 154,
+      "Codex": 0,
+      "Cursor": 10,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 3
+    }
+  },
+  "agent0ai/agent-zero": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 18,
+      "Codex": 0,
+      "Cursor": 2,
+      "Generic_AI_Marker": 5,
+      "GitHub_Copilot": 10
+    }
+  },
+  "agentscope-ai/QwenPaw": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 2,
+      "Codex": 0,
+      "Cursor": 2,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 2
+    }
+  },
+  "agno-agi/agno": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 245,
+      "Codex": 4,
+      "Cursor": 1,
+      "Generic_AI_Marker": 109,
+      "GitHub_Copilot": 9
+    }
+  },
+  "alibaba/nacos": {
+    "bots": [
+      {
+        "contributions": 22,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 10,
+      "Codex": 0,
+      "Cursor": 8,
+      "Generic_AI_Marker": 19,
+      "GitHub_Copilot": 4
+    }
+  },
+  "alibaba/spring-ai-alibaba": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 8,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 29
+    }
+  },
+  "anomalyco/opencode": {
+    "bots": [
+      {
+        "contributions": 1659,
+        "login": "opencode-agent[bot]"
+      },
+      {
+        "contributions": 19,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 34,
+      "Codex": 0,
+      "Cursor": 3,
+      "Generic_AI_Marker": 75,
+      "GitHub_Copilot": 35
+    }
+  },
+  "ansible/ansible": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 3,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "anthropics/claude-code": {
+    "bots": [
+      {
+        "contributions": 1,
+        "login": "claude[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 67,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 62,
+      "GitHub_Copilot": 0
+    }
+  },
+  "apache/airflow": {
+    "bots": [
+      {
+        "contributions": 594,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 129,
+      "Codex": 0,
+      "Cursor": 21,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 52
+    }
+  },
+  "arc53/DocsGPT": {
+    "bots": [
+      {
+        "contributions": 379,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 3,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 3,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 5,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 3,
+      "GitHub_Copilot": 3
+    }
+  },
+  "areal-project/AReaL": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 48,
+      "Codex": 0,
+      "Cursor": 2,
+      "Generic_AI_Marker": 10,
+      "GitHub_Copilot": 9
+    }
+  },
+  "assafelovic/gpt-researcher": {
+    "bots": [
+      {
+        "contributions": 33,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 3,
+        "login": "google-labs-jules[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 26,
+      "Codex": 0,
+      "Cursor": 7,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 8
+    }
+  },
+  "babalae/better-genshin-impact": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 3,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 1
+    }
+  },
+  "browser-use/browser-use": {
+    "bots": [
+      {
+        "contributions": 18,
+        "login": "claude[bot]"
+      },
+      {
+        "contributions": 8,
+        "login": "codebeaver-ai[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 119,
+      "Codex": 0,
+      "Cursor": 2,
+      "Generic_AI_Marker": 50,
+      "GitHub_Copilot": 3
+    }
+  },
+  "bytedance/deer-flow": {
+    "bots": [
+      {
+        "contributions": 82,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 8,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 305,
+      "Codex": 2,
+      "Cursor": 103,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 175
+    }
+  },
+  "calesthio/Crucix": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 8,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "calesthio/OpenMontage": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 31,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "camel-ai/camel": {
+    "bots": [
+      {
+        "contributions": 26,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 4,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 12,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 8
+    }
+  },
+  "chatboxai/chatbox": {
+    "bots": [
+      {
+        "contributions": 4,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 132,
+      "Codex": 0,
+      "Cursor": 33,
+      "Generic_AI_Marker": 15,
+      "GitHub_Copilot": 4
+    }
+  },
+  "chenhg5/cc-connect": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 536,
+      "Codex": 0,
+      "Cursor": 83,
+      "Generic_AI_Marker": 18,
+      "GitHub_Copilot": 5
+    }
+  },
+  "cline/cline": {
+    "bots": [
+      {
+        "contributions": 147,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 25,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "cline-cloud[bot]"
+      },
+      {
+        "contributions": 6,
+        "login": "aikido-autofix[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "mintlify[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 70,
+      "Codex": 0,
+      "Cursor": 41,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 53
+    }
+  },
+  "cloudwego/eino": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 5,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "code-yeongyu/oh-my-openagent": {
+    "bots": [
+      {
+        "contributions": 776,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 464,
+      "Codex": 2,
+      "Cursor": 50,
+      "Generic_AI_Marker": 648,
+      "GitHub_Copilot": 65
+    }
+  },
+  "coleam00/Archon": {
+    "bots": [
+      {
+        "contributions": 21,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "the-archon-bot[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 418,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 25,
+      "GitHub_Copilot": 15
+    }
+  },
+  "crewAIInc/crewAI": {
+    "bots": [
+      {
+        "contributions": 46,
+        "login": "devin-ai-integration[bot]"
+      },
+      {
+        "contributions": 6,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 108,
+      "Codex": 0,
+      "Cursor": 20,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 11
+    }
+  },
+  "dataelement/bisheng": {
+    "bots": [
+      {
+        "contributions": 11,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 803,
+      "Codex": 0,
+      "Cursor": 15,
+      "Generic_AI_Marker": 10,
+      "GitHub_Copilot": 0
+    }
+  },
+  "earendil-works/pi": {
+    "bots": [
+      {
+        "contributions": 188,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 13,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 38
+    }
+  },
+  "elie222/inbox-zero": {
+    "bots": [
+      {
+        "contributions": 67,
+        "login": "cursor[bot]"
+      },
+      {
+        "contributions": 6,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 685,
+      "Codex": 0,
+      "Cursor": 179,
+      "Generic_AI_Marker": 28,
+      "GitHub_Copilot": 0
+    }
+  },
+  "elizaOS/eliza": {
+    "bots": [
+      {
+        "contributions": 132,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 6434,
+      "Codex": 13,
+      "Cursor": 98,
+      "Generic_AI_Marker": 6,
+      "GitHub_Copilot": 0
+    }
+  },
+  "eosphoros-ai/DB-GPT": {
+    "bots": [
+      {
+        "contributions": 2,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 30,
+      "Codex": 0,
+      "Cursor": 3,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 3
+    }
+  },
+  "farion1231/cc-switch": {
+    "bots": [
+      {
+        "contributions": 9,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 55,
+      "Codex": 1,
+      "Cursor": 2,
+      "Generic_AI_Marker": 13,
+      "GitHub_Copilot": 18
+    }
+  },
+  "feder-cr/Jobs_Applier_AI_Agent_AIHawk": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": null,
+      "Codex": null,
+      "Cursor": null,
+      "Generic_AI_Marker": null,
+      "GitHub_Copilot": null
+    }
+  },
+  "fossasia/susi_server": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "getmaxun/maxun": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 7,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "google-gemini/gemini-cli": {
+    "bots": [
+      {
+        "contributions": 14,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 1
+    }
+  },
+  "googleworkspace/cli": {
+    "bots": [
+      {
+        "contributions": 12,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 6,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "gsd-build/gsd-2": {
+    "bots": [
+      {
+        "contributions": 67,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 41,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 4,
+        "login": "coderabbitai[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "blacksmith-sh[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1248,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 42
+    }
+  },
+  "hangwin/mcp-chrome": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 5,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 5,
+      "GitHub_Copilot": 0
+    }
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "bots": [
+      {
+        "contributions": 3,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 25,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "heygen-com/hyperframes": {
+    "bots": [
+      {
+        "contributions": 14,
+        "login": "heygengenesis[bot]"
+      },
+      {
+        "contributions": 5,
+        "login": "renovate[bot]"
+      },
+      {
+        "contributions": 4,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 923,
+      "Codex": 2,
+      "Cursor": 11,
+      "Generic_AI_Marker": 105,
+      "GitHub_Copilot": 4
+    }
+  },
+  "hiyouga/LlamaFactory": {
+    "bots": [
+      {
+        "contributions": 5,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 12,
+      "Codex": 0,
+      "Cursor": 2,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 5
+    }
+  },
+  "huggingface/speech-to-speech": {
+    "bots": [
+      {
+        "contributions": 9,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "hf-dependantbot-rollout[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 6,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 1
+    }
+  },
+  "iOfficeAI/AionUi": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 112,
+      "Codex": 4,
+      "Cursor": 9,
+      "Generic_AI_Marker": 53,
+      "GitHub_Copilot": 7
+    }
+  },
+  "infiniflow/ragflow": {
+    "bots": [
+      {
+        "contributions": 62,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 132,
+      "Codex": 2,
+      "Cursor": 40,
+      "Generic_AI_Marker": 59,
+      "GitHub_Copilot": 19
+    }
+  },
+  "jeecgboot/JeecgBoot": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 7,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 5
+    }
+  },
+  "jlcodes99/cockpit-tools": {
+    "bots": [
+      {
+        "contributions": 212,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1,
+      "Codex": 0,
+      "Cursor": 3,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 6
+    }
+  },
+  "khoj-ai/khoj": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "koala73/worldmonitor": {
+    "bots": [
+      {
+        "contributions": 40,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 13,
+        "login": "mintlify[bot]"
+      },
+      {
+        "contributions": 9,
+        "login": "cursor[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 317,
+      "Codex": 0,
+      "Cursor": 191,
+      "Generic_AI_Marker": 106,
+      "GitHub_Copilot": 4
+    }
+  },
+  "labring/FastGPT": {
+    "bots": [
+      {
+        "contributions": 79,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 18,
+        "login": "gru-agent[bot]"
+      },
+      {
+        "contributions": 6,
+        "login": "imgbot[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 13,
+      "Codex": 0,
+      "Cursor": 6,
+      "Generic_AI_Marker": 2,
+      "GitHub_Copilot": 18
+    }
+  },
+  "langbot-app/LangBot": {
+    "bots": [
+      {
+        "contributions": 47,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 29,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 23,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 20,
+        "login": "devin-ai-integration[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 62,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 11,
+      "GitHub_Copilot": 58
+    }
+  },
+  "langchain4j/langchain4j": {
+    "bots": [
+      {
+        "contributions": 152,
+        "login": "renovate[bot]"
+      },
+      {
+        "contributions": 73,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 40,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 32,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 2,
+      "GitHub_Copilot": 12
+    }
+  },
+  "langflow-ai/langflow": {
+    "bots": [
+      {
+        "contributions": 80,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 78,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 20,
+        "login": "autofix-ci[bot]"
+      },
+      {
+        "contributions": 5,
+        "login": "codeflash-ai[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 136,
+      "Codex": 0,
+      "Cursor": 11,
+      "Generic_AI_Marker": 23,
+      "GitHub_Copilot": 36
+    }
+  },
+  "langgenius/dify": {
+    "bots": [
+      {
+        "contributions": 325,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 154,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 193,
+      "Codex": 0,
+      "Cursor": 11,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 251
+    }
+  },
+  "leon-ai/leon": {
+    "bots": [
+      {
+        "contributions": 22,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 16,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "letta-ai/letta": {
+    "bots": [
+      {
+        "contributions": 39,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 4,
+        "login": "letta-integration[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 14,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 110,
+      "GitHub_Copilot": 2
+    }
+  },
+  "liliMozi/openhanako": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 11,
+      "Codex": 0,
+      "Cursor": 14,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "livekit/agents": {
+    "bots": [
+      {
+        "contributions": 125,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 20,
+        "login": "detail-app[bot]"
+      },
+      {
+        "contributions": 17,
+        "login": "renovate[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 114,
+      "Codex": 0,
+      "Cursor": 17,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 4
+    }
+  },
+  "lobehub/lobehub": {
+    "bots": [
+      {
+        "contributions": 259,
+        "login": "renovate[bot]"
+      },
+      {
+        "contributions": 42,
+        "login": "gru-agent[bot]"
+      },
+      {
+        "contributions": 34,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1860,
+      "Codex": 2,
+      "Cursor": 6,
+      "Generic_AI_Marker": 153,
+      "GitHub_Copilot": 27
+    }
+  },
+  "mastra-ai/mastra": {
+    "bots": [
+      {
+        "contributions": 2235,
+        "login": "dane-ai-mastra[bot]"
+      },
+      {
+        "contributions": 443,
+        "login": "mastra-platform[bot]"
+      },
+      {
+        "contributions": 275,
+        "login": "devin-ai-integration[bot]"
+      },
+      {
+        "contributions": 254,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 56,
+        "login": "renovate[bot]"
+      },
+      {
+        "contributions": 34,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 18,
+        "login": "starslingdev[bot]"
+      },
+      {
+        "contributions": 17,
+        "login": "detail-app[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "aikido-autofix[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 725,
+      "Codex": 0,
+      "Cursor": 26,
+      "Generic_AI_Marker": 215,
+      "GitHub_Copilot": 34
+    }
+  },
+  "matthiasn/lotti": {
+    "bots": [
+      {
+        "contributions": 32,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 3,
+        "login": "dependabot-preview[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 24,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "mcp-use/mcp-use": {
+    "bots": [
+      {
+        "contributions": 261,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 7,
+        "login": "cubic-dev-ai[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "claude[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 21,
+      "Codex": 1,
+      "Cursor": 21,
+      "Generic_AI_Marker": 4,
+      "GitHub_Copilot": 30
+    }
+  },
+  "medusajs/medusa": {
+    "bots": [
+      {
+        "contributions": 608,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 52,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 17,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 5,
+      "GitHub_Copilot": 12
+    }
+  },
+  "mem0ai/mem0": {
+    "bots": [
+      {
+        "contributions": 12,
+        "login": "mintlify[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 89,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "micro/go-micro": {
+    "bots": [
+      {
+        "contributions": 25,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 8,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 217,
+      "Codex": 643,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 28
+    }
+  },
+  "microsoft/agent-framework": {
+    "bots": [
+      {
+        "contributions": 257,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 110,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 23,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 3,
+      "GitHub_Copilot": 1021
+    }
+  },
+  "microsoft/autogen": {
+    "bots": [
+      {
+        "contributions": 29,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 16,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 4,
+        "login": "startrightprod[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 2,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 33
+    }
+  },
+  "microsoft/qlib": {
+    "bots": [
+      {
+        "contributions": 19,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 1
+    }
+  },
+  "mksglu/context-mode": {
+    "bots": [
+      {
+        "contributions": 508,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 11,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 575,
+      "Codex": 6,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 9
+    }
+  },
+  "mlflow/mlflow": {
+    "bots": [
+      {
+        "contributions": 1238,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 268,
+        "login": "mlflow-app[bot]"
+      },
+      {
+        "contributions": 18,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1835,
+      "Codex": 3,
+      "Cursor": 19,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 1311
+    }
+  },
+  "msitarzewski/agency-agents": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 112,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 5
+    }
+  },
+  "mukul975/Anthropic-Cybersecurity-Skills": {
+    "bots": [
+      {
+        "contributions": 1,
+        "login": "claude[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 5,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 2
+    }
+  },
+  "n8n-io/n8n": {
+    "bots": [
+      {
+        "contributions": 367,
+        "login": "n8n-cat-bot[bot]"
+      },
+      {
+        "contributions": 165,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 135,
+        "login": "n8n-assistant[bot]"
+      },
+      {
+        "contributions": 26,
+        "login": "n8n-release-tag-merge[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 2464,
+      "Codex": 6,
+      "Cursor": 329,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 12
+    }
+  },
+  "nexu-io/open-design": {
+    "bots": [
+      {
+        "contributions": 165,
+        "login": "open-design-crew[bot]"
+      },
+      {
+        "contributions": 45,
+        "login": "open-design-bot[bot]"
+      },
+      {
+        "contributions": 30,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 27,
+        "login": "open-design-release-bot[bot]"
+      },
+      {
+        "contributions": 4,
+        "login": "rebel-nexu-zero[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 111,
+      "Codex": 9,
+      "Cursor": 99,
+      "Generic_AI_Marker": 2,
+      "GitHub_Copilot": 8
+    }
+  },
+  "nrwl/nx": {
+    "bots": [
+      {
+        "contributions": 40,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 33,
+        "login": "polygraph-snapshot-app[bot]"
+      },
+      {
+        "contributions": 22,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 9,
+        "login": "polygraph-app[bot]"
+      },
+      {
+        "contributions": 5,
+        "login": "claude[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 230,
+      "Codex": 0,
+      "Cursor": 2,
+      "Generic_AI_Marker": 56,
+      "GitHub_Copilot": 27
+    }
+  },
+  "nullclaw/nullclaw": {
+    "bots": [
+      {
+        "contributions": 2,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 1,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 47,
+      "Codex": 6,
+      "Cursor": 0,
+      "Generic_AI_Marker": 3,
+      "GitHub_Copilot": 0
+    }
+  },
+  "nullclaw/nullhub": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 2,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "open-jarvis/OpenJarvis": {
+    "bots": [
+      {
+        "contributions": 163,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 17,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 518,
+      "Codex": 0,
+      "Cursor": 2,
+      "Generic_AI_Marker": 2,
+      "GitHub_Copilot": 1
+    }
+  },
+  "open-metadata/OpenMetadata": {
+    "bots": [
+      {
+        "contributions": 141,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 85,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 56,
+        "login": "detail-app[bot]"
+      },
+      {
+        "contributions": 8,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1377,
+      "Codex": 1,
+      "Cursor": 9,
+      "Generic_AI_Marker": 33,
+      "GitHub_Copilot": 198
+    }
+  },
+  "openai/codex": {
+    "bots": [
+      {
+        "contributions": 126,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 15,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 10,
+      "Codex": 351,
+      "Cursor": 0,
+      "Generic_AI_Marker": 2,
+      "GitHub_Copilot": 3
+    }
+  },
+  "openai/openai-agents-python": {
+    "bots": [
+      {
+        "contributions": 203,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 40,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 2,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "openai/symphony": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 10,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "openclaw/openclaw": {
+    "bots": [
+      {
+        "contributions": 1051,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 318,
+        "login": "openclaw-mantis[bot]"
+      },
+      {
+        "contributions": 253,
+        "login": "clawsweeper[bot]"
+      },
+      {
+        "contributions": 55,
+        "login": "openclaw-clownfish[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1041,
+      "Codex": 19,
+      "Cursor": 135,
+      "Generic_AI_Marker": 33,
+      "GitHub_Copilot": 199
+    }
+  },
+  "opendatalab/MinerU": {
+    "bots": [
+      {
+        "contributions": 53,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 3,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 88,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 63
+    }
+  },
+  "osaurus-ai/osaurus": {
+    "bots": [
+      {
+        "contributions": 475,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 4,
+        "login": "sentry[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 18,
+      "Codex": 0,
+      "Cursor": 17,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 2
+    }
+  },
+  "paperclipai/paperclip": {
+    "bots": [
+      {
+        "contributions": 177,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 63,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 814,
+      "Codex": 7,
+      "Cursor": 8,
+      "Generic_AI_Marker": 88,
+      "GitHub_Copilot": 2
+    }
+  },
+  "pestphp/pest": {
+    "bots": [
+      {
+        "contributions": 6,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 8,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 1
+    }
+  },
+  "pipecat-ai/pipecat": {
+    "bots": [
+      {
+        "contributions": 85,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 41,
+        "login": "claude[bot]"
+      },
+      {
+        "contributions": 6,
+        "login": "detail-app[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 76,
+      "Codex": 0,
+      "Cursor": 8,
+      "Generic_AI_Marker": 3,
+      "GitHub_Copilot": 9
+    }
+  },
+  "reworkd/AgentGPT": {
+    "bots": [
+      {
+        "contributions": 64,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "ruvnet/ruflo": {
+    "bots": [
+      {
+        "contributions": 6,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 3121,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 2300,
+      "GitHub_Copilot": 1
+    }
+  },
+  "shanraisshan/claude-code-best-practice": {
+    "bots": [
+      {
+        "contributions": 4,
+        "login": "claude[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1728,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "siddsachar/row-bot": {
+    "bots": [
+      {
+        "contributions": 11,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "simstudioai/sim": {
+    "bots": [
+      {
+        "contributions": 13,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 388,
+      "Codex": 0,
+      "Cursor": 37,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 1
+    }
+  },
+  "snarktank/ralph": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "spinabot/brigade": {
+    "bots": [
+      {
+        "contributions": 77,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 4
+    }
+  },
+  "sukeesh/Jarvis": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "superagent-ai/superagent": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 13,
+      "Codex": 0,
+      "Cursor": 15,
+      "Generic_AI_Marker": 13,
+      "GitHub_Copilot": 0
+    }
+  },
+  "the-open-agent/openagent": {
+    "bots": [
+      {
+        "contributions": 103,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 2,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "thedotmack/claude-mem": {
+    "bots": [
+      {
+        "contributions": 58,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 15,
+        "login": "posthog[bot]"
+      },
+      {
+        "contributions": 8,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 4,
+        "login": "cursor[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1261,
+      "Codex": 0,
+      "Cursor": 62,
+      "Generic_AI_Marker": 348,
+      "GitHub_Copilot": 20
+    }
+  },
+  "timescale/pgai": {
+    "bots": [
+      {
+        "contributions": 22,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 5,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 1,
+      "GitHub_Copilot": 0
+    }
+  },
+  "tinyhumansai/openhuman": {
+    "bots": [
+      {
+        "contributions": 669,
+        "login": "github-actions[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 628,
+      "Codex": 1,
+      "Cursor": 29,
+      "Generic_AI_Marker": 108,
+      "GitHub_Copilot": 3
+    }
+  },
+  "topoteretes/cognee": {
+    "bots": [
+      {
+        "contributions": 14,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "pensarapp[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 1129,
+      "Codex": 0,
+      "Cursor": 22,
+      "Generic_AI_Marker": 344,
+      "GitHub_Copilot": 13
+    }
+  },
+  "tradesdontlie/tradingview-mcp": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 57,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "triggerdotdev/trigger.dev": {
+    "bots": [
+      {
+        "contributions": 273,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 37,
+        "login": "claude[bot]"
+      },
+      {
+        "contributions": 6,
+        "login": "devin-ai-integration[bot]"
+      },
+      {
+        "contributions": 4,
+        "login": "mintlify[bot]"
+      },
+      {
+        "contributions": 3,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 116,
+      "Codex": 0,
+      "Cursor": 1,
+      "Generic_AI_Marker": 47,
+      "GitHub_Copilot": 15
+    }
+  },
+  "ultraworkers/claw-code": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 15,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "vercel-labs/agent-browser": {
+    "bots": [
+      {
+        "contributions": 68,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 2,
+        "login": "vercel[bot]"
+      },
+      {
+        "contributions": 1,
+        "login": "Copilot"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 50,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 3
+    }
+  },
+  "vercel/ai": {
+    "bots": [
+      {
+        "contributions": 1042,
+        "login": "github-actions[bot]"
+      },
+      {
+        "contributions": 308,
+        "login": "ai-sdk-factory[bot]"
+      },
+      {
+        "contributions": 95,
+        "login": "dependabot[bot]"
+      },
+      {
+        "contributions": 8,
+        "login": "Copilot"
+      },
+      {
+        "contributions": 7,
+        "login": "renovate[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 185,
+      "Codex": 0,
+      "Cursor": 49,
+      "Generic_AI_Marker": 41,
+      "GitHub_Copilot": 28
+    }
+  },
+  "virattt/dexter": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 10,
+      "Codex": 0,
+      "Cursor": 22,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "vxcontrol/pentagi": {
+    "bots": [
+      {
+        "contributions": 4,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 557,
+      "Codex": 0,
+      "Cursor": 25,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 1
+    }
+  },
+  "xbtlin/ai-berkshire": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 172,
+      "Codex": 0,
+      "Cursor": 0,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "yc-software/qm": {
+    "bots": [
+      {
+        "contributions": 2,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 44,
+      "Codex": 2,
+      "Cursor": 1,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  },
+  "zeroclaw-labs/zeroclaw": {
+    "bots": [
+      {
+        "contributions": 63,
+        "login": "dependabot[bot]"
+      }
+    ],
+    "signatures": {
+      "Claude_Code": 675,
+      "Codex": 3,
+      "Cursor": 3,
+      "Generic_AI_Marker": 13,
+      "GitHub_Copilot": 80
+    }
+  },
+  "zhayujie/CowAgent": {
+    "bots": [],
+    "signatures": {
+      "Claude_Code": 14,
+      "Codex": 0,
+      "Cursor": 38,
+      "Generic_AI_Marker": 0,
+      "GitHub_Copilot": 0
+    }
+  }
+}
