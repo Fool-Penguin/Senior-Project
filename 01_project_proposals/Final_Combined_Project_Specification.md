@@ -8,6 +8,25 @@
 
 ---
 
+## Problem Statement & Research Motivation
+
+As software development increasingly incorporates AI coding assistants (Copilot, Cursor) and connects to external APIs, LLMs, and autonomous tools, software engineering faces a dual crisis of **uncontrolled cognitive complexity** and **critical security vulnerabilities**:
+
+### 1. The Cognitive Debt Crisis (Code Quality & Maintainability)
+* **The "AI Bloat" Dilemma:** AI assistants drastically accelerate code synthesis. However, they frequently generate sprawling, deeply nested conditional structures, bloated parameter lists, and monolithic "God functions". Developers accept working diffs without refactoring, accumulating massive hidden **Cognitive Debt** that degrades codebase maintainability.
+* **Delayed Feedback from Heavyweight CI Scanners:** Industry-standard analyzers like SonarQube run as slow, server-side CI/CD pipeline scans. Developers receive quality feedback minutes or hours after writing code, when their mental context has already shifted.
+* **Passive Linters with No Complexity Guarantees:** Passive tools like SonarLint only display static squiggly lines without offering on-demand function-level inspection, while generic LLM chats (ChatGPT, Copilot Chat) often suggest refactorings that break semantics or make code *more* convoluted, lacking any mathematical guarantee that complexity actually decreases.
+
+### 2. The Vulnerability Gap in Modern & AI-Integrated Code (Security)
+* **Emergence of Dangerous Attack Vectors:** Modern applications increasingly interface with external tools, command runners, and LLM reasoning loops. This exposes critical vulnerabilities categorized under **MITRE CWE Top 25** and **OWASP Top 10** (such as **CWE-78** OS Command Injection, **CWE-89** SQL Injection, **CWE-20** Improper Input Validation, **CWE-862** Missing Authorization, and prompt injection in tool execution).
+* **The Disconnect Between Linters and Actionable Fixes:** Traditional static security tools (Bandit, ESLint Security, Flake8) output cryptic rule codes (e.g. `B602: subprocess call with shell=True`) without explaining the real exploit scenario or providing safe, drop-in remediation templates.
+* **Missing Standards Grounding:** Developers lack immediate in-editor visibility into standardized severity metrics (such as **NIST NVD CVSS v3.1** scores) and contextual precedents showing how a vulnerability was historically exploited.
+
+### 3. The Need for a Unified In-Editor Solution
+Developers are forced to juggle fragmented, heavyweight tools across separate CI dashboards. There is no single, lightweight tool that operates **interactively at the function level inside the IDE** to simultaneously safeguard code against cognitive complexity creep and detect/patch critical CWE vulnerabilities.
+
+---
+
 ## 1. Executive Summary & Core Pillars
 
 This project unites two complementary developer tools into a single, high-impact VS Code extension:
