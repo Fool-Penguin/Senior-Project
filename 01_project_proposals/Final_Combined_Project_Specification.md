@@ -36,35 +36,25 @@ This project unites two complementary developer tools into a single, high-impact
 ```mermaid
 flowchart TD
     subgraph Editor ["VS Code Active Editor (Python & TypeScript/JavaScript)"]
-        direction TB
-        F1["Function Definition (Active Cursor Context)"]
+        F1["Function Definition (Active Cursor)"]
     end
 
-    subgraph FastLocalEngine ["Phase 1: Fast Local Deterministic Engine (< 20ms, Zero Cost)"]
-        direction TB
+    subgraph FastLocalEngine ["Fast Local Deterministic Engine (< 20ms, Zero API Cost)"]
         F1 -->|"Tree-sitter AST Walker"| Q1["Quality Lens: Cognitive Complexity, CC, LOC, LCOM"]
         F1 -->|"Semgrep OSS / Local Linters"| S1["Security Lens: CWE, NVD & OWASP Pattern Matching"]
     end
 
-    subgraph InEditorDisplay ["Phase 2 & 3: Dual In-Editor Presentation Layer"]
-        direction TB
-        Q1 --> UI_Core["VS Code Telemetry & Diagnostics Core"]
-        S1 --> UI_Core
-        UI_Core --> UI1["CodeLens Badge: '🟢 Quality: 6 | ⚠️ Security: 1 Issue (CWE-78)'"]
-        UI_Core --> UI2["Native Squigglies, Tooltips & QuickFix Menu"]
+    subgraph InEditorDisplay ["Dual In-Editor UI (Native Hover + CodeLens & Sidebar)"]
+        Q1 & S1 --> UI1["CodeLens Badge: '🟢 Quality: 6 | ⚠️ Security: 1 Issue (CWE-78 / CVE Linked)'"]
+        Q1 & S1 --> UI2["Native Hover Tooltips & Lightbulb QuickFix"]
     end
 
-    subgraph OnDemandLLM ["Phase 4: On-Demand LLM Generation Engine (User Triggered)"]
-        direction TB
-        UI2 -->|"1-Click Refactor"| LLM1["Intelligent Refactoring: Decomposes function & proves ΔComplexity > 0"]
-        UI2 -->|"1-Click Explain"| LLM2["Security Explainer: Plain-English attack scenario + NVD/CWE context"]
-        UI2 -->|"1-Click Patch"| LLM3["Defensive Guardrail Patch: Pydantic schemas & safe sinks"]
+    subgraph OnDemandLLM ["On-Demand LLM Generation Engine (Triggered on Click)"]
+        UI1 & UI2 -->|"Click 'Apply Verified Refactor'"| LLM1["Intelligent Refactoring: Decomposes function & proves Delta-Complexity > 0"]
+        UI1 & UI2 -->|"Click 'Explain Vulnerability'"| LLM2["Security Explainer: Plain-English attack scenario + NVD/CWE context"]
+        UI1 & UI2 -->|"Click 'Inject Security Guardrail'"| LLM3["Defensive Guardrail Patch: Pydantic schemas, validation, safe sinks"]
     end
 ```
-
-<p align="center">
-  <img src="Flow_Image/LLM Security Vulnerability-2026-09-23-144723.png" alt="Executive Architecture Overview" width="850"/>
-</p>
 
 ### Confirmed Design Choices:
 1. **Scope:** **Dual-Lens Assistant** combining Code Quality/Complexity (Cognitive Complexity, Cyclomatic Complexity, LOC) and Security Flaw Detection (MITRE CWE Top 25, NIST NVD CVEs, CVSS v3.1, OWASP Top 10, OWASP LLM) in a single unified VS Code extension.
@@ -179,94 +169,47 @@ The system operates across a 5-phase deterministic and generative pipeline:
 
 ```mermaid
 flowchart TD
-    %% Phase 1: Local Deterministic Analysis
-    subgraph Phase1 ["Phase 1: Local Deterministic Analysis (< 20ms)"]
-        direction TB
-        P1_Buffer["Active File Buffer<br/>(Python / TypeScript)"]
-        P1_TreeSitter["Tree-sitter Incremental AST Parser"]
+    subgraph Phase1 ["Phase 1: Local AST & Rule Extraction (< 20ms)"]
+        P1A["Active File Buffer (Python / TS)"] --> P1B["Tree-sitter Incremental AST Parser"]
+        P1B --> P1C["Cognitive Complexity Walker (Campbell Spec)"]
+        P1B --> P1D["McCabe CC Calculator (CFG Edges/Nodes)"]
+        P1B --> P1E["Semgrep OSS Local Engine (CWE/OWASP Sink Scan)"]
+    end
+
+    subgraph Phase2 ["Phase 2: Security & Vulnerability Mapping"]
+        P1E --> P2A["Match Flagged Sinks to MITRE CWE Top 25"]
+        P2A --> P2B["Query NVD Knowledge Base (CVE ID + CVSS v3.1 Score)"]
+        P2A --> P2C["Cross-reference Dependencies via CPE 2.3"]
+        P2A --> P2D["Map to OWASP 2021 & OWASP LLM 2025"]
+    end
+
+    subgraph Phase3 ["Phase 3: Dual-Mode In-Editor Presentation"]
+        P1C & P1D & P2A --> P3A["Render In-Editor Diagnostics (Squigglies & Gutter Icons)"]
+        P1C & P1D & P2A --> P3B["Render CodeLens Line: '🟢 Quality: 4 | ⚠️ Security: CWE-78 (CVSS 9.8)'"]
+        P3A --> P3C["Provide Lightbulb QuickFix Actions"]
+        P3B --> P3D["Interactive Webview Side Panel (Full Telemetry & Charts)"]
+    end
+
+    subgraph Phase4 ["Phase 4: On-Demand LLM Generation Engine"]
+        P3C & P3D -->|"Click 'Apply Verified Refactor'"| P4A["Extract AST Function Scope Window"]
+        P4A --> P4B["LLM Structural Refactoring Prompt"]
+        P4B --> P4C["Re-parse Candidate Diff with Tree-sitter"]
+        P4C --> P4D{"Verify: Delta-Complexity > 0 and Syntax Valid?"}
+        P4D -->|"Yes"| P4E["Display Side-by-Side Split Diff to Developer"]
+        P4D -->|"No"| P4F["Discard / Self-Correct Candidate Patch"]
         
-        P1_CompAST["Cognitive & McCabe CC<br/>AST Walker"]
-        P1_Semgrep["Semgrep OSS Local<br/>Pattern Scanner"]
-        
-        P1_Buffer --> P1_TreeSitter
-        P1_TreeSitter -->|"AST Function Node"| P1_CompAST
-        P1_TreeSitter -->|"Sink Invocations"| P1_Semgrep
+        P3C & P3D -->|"Click 'Inject Security Guardrail'"| P4G["LLM Vulnerability Explanation & Guardrail Generator"]
+        P4G --> P4H["Inject Drop-in Defensive Schema (Pydantic / Parameterized Sink)"]
     end
 
-    %% Phase 2: Metric Aggregation & Security Mapping
-    subgraph Phase2 ["Phase 2: Metric Aggregation & Security Enrichment"]
-        direction TB
-        P2_Metrics["Complexity Debt Aggregator<br/>• Campbell Cognitive Score<br/>• McCabe CC & LCOM-4"]
-        P2_Taxonomy["Security Taxonomy Mapper<br/>• MITRE CWE Top 25<br/>• NIST NVD (CVE & CVSS v3.1)<br/>• OWASP Top 10 & LLM 2025"]
-
-        P1_CompAST --> P2_Metrics
-        P1_Semgrep --> P2_Taxonomy
+    subgraph Phase5 ["Phase 5: Empirical Evaluation & Validation"]
+        P5A["Benchmark Testing: Juliet v1.3 + OWASP Benchmark + CodeComplex"]
+        P5B["Real-World Testing: Commit-Level Delta-Complexity on 170 Repos"]
     end
 
-    %% Phase 3: Dual-Mode In-Editor Presentation
-    subgraph Phase3 ["Phase 3: Dual-Mode In-Editor Presentation (VS Code)"]
-        direction TB
-        P3_Telemetry["Unified Telemetry & Diagnostics Core"]
-        
-        P2_Metrics --> P3_Telemetry
-        P2_Taxonomy --> P3_Telemetry
-
-        P3_CodeLens["Inline CodeLens Badges<br/>'🟢 Quality: 4 | ⚠️ Security: CWE-78 (CVSS 9.8)'"]
-        P3_Diagnostics["In-Editor Diagnostics<br/>(Squigglies & Gutter Badges)"]
-        P3_SidePanel["Webview Side Panel<br/>(Telemetry Radar & Trends)"]
-        P3_QuickFix["QuickFix Lightbulb Actions<br/>('Apply Refactor' / 'Inject Guardrail')"]
-
-        P3_Telemetry --> P3_CodeLens
-        P3_Telemetry --> P3_Diagnostics
-        P3_Telemetry --> P3_SidePanel
-        P3_Telemetry --> P3_QuickFix
-    end
-
-    %% Phase 4: On-Demand LLM Generation Engine
-    subgraph Phase4 ["Phase 4: On-Demand LLM Generation & Verification Engine"]
-        direction TB
-        
-        %% Track A: Refactoring
-        P4_ActionRefactor["Developer Trigger:<br/>'Apply Verified Refactor'"]
-        P4_ASTScope["Extract Target Function<br/>AST Scope Window"]
-        P4_LLMRefactor["LLM Structural<br/>Refactoring Prompt"]
-        P4_Verify{"Tree-sitter Verification:<br/>ΔComplexity > 0 & Syntax OK?"}
-        P4_DiffPreview["Display Side-by-Side<br/>Split Diff to Developer"]
-        P4_SelfCorrect["Discard / Self-Correct<br/>Candidate Patch"]
-
-        %% Track B: Security Guardrails
-        P4_ActionGuardrail["Developer Trigger:<br/>'Inject Security Guardrail'"]
-        P4_SinkContext["Extract Sink AST Scope<br/>& CWE Attack Context"]
-        P4_LLMGuard["LLM Security Reasoning<br/>& Guardrail Generator"]
-        P4_InjectGuard["Inject Drop-in Defensive Schema<br/>(Pydantic / Parameterized Sink)"]
-
-        %% UI to Actions
-        P3_QuickFix -->|"1-Click Refactor"| P4_ActionRefactor
-        P3_QuickFix -->|"1-Click Guardrail"| P4_ActionGuardrail
-
-        %% Flow A
-        P4_ActionRefactor --> P4_ASTScope --> P4_LLMRefactor --> P4_Verify
-        P4_Verify -- "Yes" --> P4_DiffPreview
-        P4_Verify -- "No" --> P4_SelfCorrect
-
-        %% Flow B
-        P4_ActionGuardrail --> P4_SinkContext --> P4_LLMGuard --> P4_InjectGuard
-    end
-
-    %% Phase 5: Empirical Evaluation & Validation
-    subgraph Phase5 ["Phase 5: Empirical Benchmark & Real-World Validation"]
-        direction TB
-        P5_BenchComp["Complexity Track Validation<br/>• CodeComplex & Qualitas Corpus<br/>• 170-Repo Commit-Level ΔComplexity"]
-        P5_BenchSec["Security Track Validation<br/>• Juliet Suite v1.3 & OWASP Benchmark<br/>• NVD CVEFixes Commit Diffs"]
-
-        P4_DiffPreview --> P5_BenchComp
-        P4_InjectGuard --> P5_BenchSec
-    end
+    Phase1 --> Phase2 --> Phase3
+    Phase4 --> Phase5
 ```
-
-<p align="center">
-  <img src="Flow_Image/LLM Security Vulnerability-2026-09-23-144412.png" alt="5-Phase Technical Pipeline (Adaptive Flow)" width="850"/>
-</p>
 
 ### Detailed Pipeline Mechanics:
 1. **Local Deterministic Parsing (Phase 1):**  
