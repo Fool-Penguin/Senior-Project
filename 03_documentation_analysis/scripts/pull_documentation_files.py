@@ -321,14 +321,30 @@ def main() -> int:
         print("--overwrite and --resume cannot be used together", file=sys.stderr)
         return 2
 
+    input_path = Path(args.input)
+    if not input_path.exists():
+        for candidate in [
+            Path(__file__).resolve().parents[2] / "02_repo_sampling" / "data" / args.input,
+            Path("02_repo_sampling/data") / args.input,
+            Path("../data") / args.input,
+        ]:
+            if candidate.exists():
+                input_path = candidate
+                break
+
     try:
         extensions = parse_extensions(args.extensions)
-        repositories = selected_repositories(Path(args.input), args.url_column)
+        repositories = selected_repositories(input_path, args.url_column)
     except (OSError, ValueError, csv.Error) as exc:
         print(f"Error reading input: {exc}", file=sys.stderr)
         return 2
 
     output_path = Path(args.output)
+    if not output_path.is_absolute() and len(output_path.parts) == 1:
+        data_dir = Path(__file__).resolve().parent.parent / "data"
+        if data_dir.exists():
+            output_path = data_dir / args.output
+
     if not args.dry_run and output_path.exists() and not (args.overwrite or args.resume):
         print(
             f"Error: output file already exists: {output_path}. Use --overwrite to replace it.",

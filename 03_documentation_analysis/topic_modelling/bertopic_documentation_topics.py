@@ -818,6 +818,15 @@ def main() -> int:
     try:
         validate_args(args)
         if not args.input.is_file():
+            for c in [
+                HERE.parent / "data" / args.input.name,
+                HERE.parent / args.input.name,
+                Path("03_documentation_analysis/data") / args.input.name,
+            ]:
+                if c.is_file():
+                    args.input = c
+                    break
+        if not args.input.is_file():
             raise FileNotFoundError(f"input JSONL file does not exist: {args.input}")
         limit = document_limit(args)
         cache_path = args.embedding_cache or args.input.with_suffix(".embeddings.npy")

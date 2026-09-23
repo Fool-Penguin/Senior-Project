@@ -231,13 +231,33 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    load_dotenv(Path(".env"))
+    for p in [Path(".env"), Path(__file__).resolve().parent / ".env", Path(__file__).resolve().parents[2] / ".env"]:
+        load_dotenv(p)
     token = os.getenv("GITHUB_TOKEN")
 
+    data_dir = Path(__file__).resolve().parent.parent / "data"
+
     metadata_path = Path(args.metadata_csv)
+    if not metadata_path.exists():
+        for c in [data_dir / args.metadata_csv, Path("02_repo_sampling/data") / args.metadata_csv]:
+            if c.exists():
+                metadata_path = c
+                break
+
     search_path = Path(args.search_json)
+    if not search_path.exists():
+        for c in [data_dir / args.search_json, Path("02_repo_sampling/data") / args.search_json]:
+            if c.exists():
+                search_path = c
+                break
+
     output_path = Path(args.output)
+    if not output_path.is_absolute() and len(output_path.parts) == 1 and data_dir.exists():
+        output_path = data_dir / args.output
+
     cache_path = Path(args.cache)
+    if not cache_path.is_absolute() and len(cache_path.parts) == 1 and data_dir.exists():
+        cache_path = data_dir / args.cache
 
     with metadata_path.open(encoding="utf-8-sig") as f:
         metadata_rows = list(csv.DictReader(f))

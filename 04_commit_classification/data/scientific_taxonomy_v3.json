@@ -1,0 +1,1892 @@
+{
+  "total_commits": 5000,
+  "baseline_counts": {
+    "INTERACTIVE_AI_COAUTHORED": 617,
+    "AUTONOMOUS_AI_AGENT": 3,
+    "DETERMINISTIC_DEVOPS_BOT": 176,
+    "PURE_HUMAN": 4204
+  },
+  "multimodal_counts": {
+    "INTERACTIVE_AI_COAUTHORED": 617,
+    "AUTONOMOUS_AI_AGENT": 3,
+    "DETERMINISTIC_DEVOPS_BOT": 179,
+    "PURE_HUMAN": 4201
+  },
+  "uncovered_ai_examples": [],
+  "samples_interactive_ai": [
+    {
+      "repo": "affaan-m/ECC",
+      "short_sha": "928c1de",
+      "sha": "928c1dea72f5c330442fc1f595563398b8f389f7",
+      "commit_link": "https://github.com/affaan-m/ECC/commit/928c1dea72f5c330442fc1f595563398b8f389f7",
+      "pr_number": 3033,
+      "pr_link": "https://github.com/affaan-m/ECC/pull/3033",
+      "author_login": "affaan-m",
+      "author_name": "Affaan Mustafa",
+      "snippet": "feat(tasteforge): package reusable workflows and preserve native edits (#3033)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "feat(tasteforge): package reusable workflows and preserve native edits (#3033)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "short_sha": "f864035",
+      "sha": "f8640355e454b5942fa671e0a6297d3ecd050f69",
+      "commit_link": "https://github.com/affaan-m/ECC/commit/f8640355e454b5942fa671e0a6297d3ecd050f69",
+      "pr_number": 3040,
+      "pr_link": "https://github.com/affaan-m/ECC/pull/3040",
+      "author_login": "affaan-m",
+      "author_name": "Affaan Mustafa",
+      "snippet": "Consolidate recovered eval framework and operator workflows (#3040)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "Consolidate recovered eval framework and operator workflows (#3040)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "short_sha": "549c146",
+      "sha": "549c14692ccf610f127a4b95eb6f496bb45ab6c9",
+      "commit_link": "https://github.com/affaan-m/ECC/commit/549c14692ccf610f127a4b95eb6f496bb45ab6c9",
+      "pr_number": 3032,
+      "pr_link": "https://github.com/affaan-m/ECC/pull/3032",
+      "author_login": "mylesagnew",
+      "author_name": "Myles Agnew",
+      "snippet": "fix(security): bump js-yaml 4.3.1 -> 4.3.2 (GHSA-2883-xcg3-v3hh) (#3032)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "fix(security): bump js-yaml 4.3.1 -> 4.3.2 (GHSA-2883-xcg3-v3hh) (#3032)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "short_sha": "bdbd90a",
+      "sha": "bdbd90a47fc9c642d7febad9588da3e0668a4ab7",
+      "commit_link": "https://github.com/affaan-m/ECC/commit/bdbd90a47fc9c642d7febad9588da3e0668a4ab7",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "haelyra",
+      "author_name": "haelyra",
+      "snippet": "test(install): scale uninstall CLI timeout for Windows CI",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "test(install): scale uninstall CLI timeout for Windows CI"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "short_sha": "6aaa41e",
+      "sha": "6aaa41e02847b153086fb72c68f0652b569280ec",
+      "commit_link": "https://github.com/affaan-m/ECC/commit/6aaa41e02847b153086fb72c68f0652b569280ec",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "haelyra",
+      "author_name": "haelyra",
+      "snippet": "feat(install): require an explicit hook decision at the apply layer",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "feat(install): require an explicit hook decision at the apply layer"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "NousResearch/hermes-agent",
+      "short_sha": "606ea7f",
+      "sha": "606ea7f4ffa3afd9b9a6e49c0fe3fe6fd6cdccc2",
+      "commit_link": "https://github.com/NousResearch/hermes-agent/commit/606ea7f4ffa3afd9b9a6e49c0fe3fe6fd6cdccc2",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "mira-solari",
+      "author_name": "Mira Solari",
+      "snippet": "fix(gateway): fire processing hooks for runner-drained queued follow-ups (#72502, salvage #72503)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "fix(gateway): fire processing hooks for runner-drained queued follow-ups (#72502"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "9da3b74",
+      "sha": "9da3b7479f1997757a43c6cf5350687677f92b57",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/9da3b7479f1997757a43c6cf5350687677f92b57",
+      "pr_number": 38464,
+      "pr_link": "https://github.com/n8n-io/n8n/pull/38464",
+      "author_login": "alexgrozav",
+      "author_name": "Alex Grozav",
+      "snippet": "refactor(editor): Add `defineFrontendModule()` and make it the canonical descriptor form (no-changelog) (#38464)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "refactor(editor): Add `defineFrontendModule()` and make it the canonical descrip"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "072f496",
+      "sha": "072f4960f0b6cf3ab5b55b402a9799bb0f84c971",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/072f4960f0b6cf3ab5b55b402a9799bb0f84c971",
+      "pr_number": 38461,
+      "pr_link": "https://github.com/n8n-io/n8n/pull/38461",
+      "author_login": "bjorger",
+      "author_name": "Robin Braumann",
+      "snippet": "feat(core): Share integration threads across participants (#38461)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: Co-authored-by AI",
+          "evidence": "feat(core): Share integration threads across participants (#38461)"
+        },
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "feat(core): Share integration threads across participants (#38461)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "f7f92c7",
+      "sha": "f7f92c7107e72f8151392b7fdf22bdf660df6892",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/f7f92c7107e72f8151392b7fdf22bdf660df6892",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "ruben-tiago-castro",
+      "author_name": "R\u00faben Castro",
+      "snippet": "feat(API): Add node type policy instance and project endpoints (no-changelog) (#38239)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "feat(API): Add node type policy instance and project endpoints (no-changelog) (#"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "b9a7f03",
+      "sha": "b9a7f0341af49edda89a3798c6cfecdf03059da3",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/b9a7f0341af49edda89a3798c6cfecdf03059da3",
+      "pr_number": 38488,
+      "pr_link": "https://github.com/n8n-io/n8n/pull/38488",
+      "author_login": "SamWooler",
+      "author_name": "Sam Wooler",
+      "snippet": "fix(API): Return null variable values as empty string & fix newly imported source control variable values (#38488)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "fix(API): Return null variable values as empty string & fix newly imported sourc"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "4579e78",
+      "sha": "4579e78071845f7826227634c705e2f84751b08f",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/4579e78071845f7826227634c705e2f84751b08f",
+      "pr_number": 38479,
+      "pr_link": "https://github.com/n8n-io/n8n/pull/38479",
+      "author_login": "rmakowiak",
+      "author_name": "Roman Makowiak",
+      "snippet": "fix(core): Read the Instance AI folder-exploration flag as a variant, not a boolean (#38479)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "fix(core): Read the Instance AI folder-exploration flag as a variant, not a bool"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "d1ea14c",
+      "sha": "d1ea14cea65a8ea6fa29d04845a535919956e905",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/d1ea14cea65a8ea6fa29d04845a535919956e905",
+      "pr_number": 38485,
+      "pr_link": "https://github.com/n8n-io/n8n/pull/38485",
+      "author_login": "n8n-cat-bot[bot]",
+      "author_name": "n8n-cat-bot[bot]",
+      "snippet": "chore: Move the triplicated `defineField` into the extensions `utils.ts` (#38485)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "chore: Move the triplicated `defineField` into the extensions `utils.ts` (#38485"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "13b8f22",
+      "sha": "13b8f22fd0cd84d923710b32a2be9bcd82f55fbe",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/13b8f22fd0cd84d923710b32a2be9bcd82f55fbe",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "yens1",
+      "author_name": "Yen Su",
+      "snippet": "feat(Databricks Node): Append a per-row MCP registry attribution to the agent reply (#38306)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "feat(Databricks Node): Append a per-row MCP registry attribution to the agent re"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "ce58a15",
+      "sha": "ce58a153c83d41fd6e1b4063d383b1b85d81d15a",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/ce58a153c83d41fd6e1b4063d383b1b85d81d15a",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "n8n-cat-bot[bot]",
+      "author_name": "n8n-cat-bot[bot]",
+      "snippet": "refactor(API): Migrate the variables write routes to @PublicApiController (#38313)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "refactor(API): Migrate the variables write routes to @PublicApiController (#3831"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "3bd0e69",
+      "sha": "3bd0e699bf9a86a2c2aa3a63ceeda726ed28bf14",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/3bd0e699bf9a86a2c2aa3a63ceeda726ed28bf14",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "mutdmour",
+      "author_name": "Mutasem Aldmour",
+      "snippet": "fix(core): Redact opaque field values in confirmed secret containers (#38067)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "fix(core): Redact opaque field values in confirmed secret containers (#38067)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "697b538",
+      "sha": "697b538c953cf1ef3361a4ffacdfdb28668d315e",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/697b538c953cf1ef3361a4ffacdfdb28668d315e",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "uddish",
+      "author_name": "Uddish Verma",
+      "snippet": "refactor(API): Migrate the project member routes to the decorator pattern (no-changelog) (#37979)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "refactor(API): Migrate the project member routes to the decorator pattern (no-ch"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "40b6d84",
+      "sha": "40b6d84525c1489acae9752b91fb69a62727cc96",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/40b6d84525c1489acae9752b91fb69a62727cc96",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "bjorger",
+      "author_name": "Robin Braumann",
+      "snippet": "fix(core): Run tool nodes of an AI Agent upstream of the destination node (#38348)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: Co-authored-by AI",
+          "evidence": "fix(core): Run tool nodes of an AI Agent upstream of the destination node (#3834"
+        },
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "fix(core): Run tool nodes of an AI Agent upstream of the destination node (#3834"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "357b2a0",
+      "sha": "357b2a03d98112da0a9df05afd102d04e2d0d9a8",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/357b2a03d98112da0a9df05afd102d04e2d0d9a8",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "Flexicon",
+      "author_name": "Mike Repe\u0107",
+      "snippet": "feat(core): Acquire expression isolates lazily on first engine evaluation (no-changelog) (#37614)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "feat(core): Acquire expression isolates lazily on first engine evaluation (no-ch"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "f8876ae",
+      "sha": "f8876ae2ffd3a9130025f6ce19f33ec51c6a3b01",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/f8876ae2ffd3a9130025f6ce19f33ec51c6a3b01",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "miguelsaddress",
+      "author_name": "Miguel \u00c1ngel Moreno",
+      "snippet": "feat(core): Improve node grouping instructions for AI Assistant and MCP (no-changelog) (#37729)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "feat(core): Improve node grouping instructions for AI Assistant and MCP (no-chan"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "c1284a0",
+      "sha": "c1284a03027534aa6476cb7cee3a96f48cf72506",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/c1284a03027534aa6476cb7cee3a96f48cf72506",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "CharlieKolb",
+      "author_name": "Charlie Kolb",
+      "snippet": "chore: Drop the dead ElTable guard from the element-plus pnpm patch (#38412)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "chore: Drop the dead ElTable guard from the element-plus pnpm patch (#38412)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "35fb4f1",
+      "sha": "35fb4f1324950c357a8464a635c5c533936cd6d9",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/35fb4f1324950c357a8464a635c5c533936cd6d9",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "n8n-cat-bot[bot]",
+      "author_name": "n8n-cat-bot[bot]",
+      "snippet": "chore: Rename the role path parameter from slug to roleSlug (#38118)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "chore: Rename the role path parameter from slug to roleSlug (#38118)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "b0e8476",
+      "sha": "b0e8476766ae94e3d9dfcbc3fcc72bb1515f5db9",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/b0e8476766ae94e3d9dfcbc3fcc72bb1515f5db9",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "n8n-cat-bot[bot]",
+      "author_name": "n8n-cat-bot[bot]",
+      "snippet": "chore: Rename the workflow version path parameter from versionId to workflowVersionId (#38119)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "chore: Rename the workflow version path parameter from versionId to workflowVers"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "37e50b5",
+      "sha": "37e50b56fde7c48235ddacc3bb7c3d168dbb4ef1",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/37e50b56fde7c48235ddacc3bb7c3d168dbb4ef1",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "sychovSaveliy",
+      "author_name": "Savelii",
+      "snippet": "fix(core): Scope end-user credential checks to reachable nodes (#36970)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "fix(core): Scope end-user credential checks to reachable nodes (#36970)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "6424ca6",
+      "sha": "6424ca6bcbf9e30e0f0233d4de234898b3ea6c62",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/6424ca6bcbf9e30e0f0233d4de234898b3ea6c62",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "Minilfat",
+      "author_name": "Ilfat Mindubaev",
+      "snippet": "feat(Confluence Node): Unhide the node and enable AI tool usage (#38416)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "feat(Confluence Node): Unhide the node and enable AI tool usage (#38416)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "3454df1",
+      "sha": "3454df1c1bd831919e5c0fb7135b3cef49d4f9e4",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/3454df1c1bd831919e5c0fb7135b3cef49d4f9e4",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "Matsuuu",
+      "author_name": "Matsu",
+      "snippet": "chore: Remove dead ESLint config and add lint parity tooling (no-changelog) (#38343)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "chore: Remove dead ESLint config and add lint parity tooling (no-changelog) (#38"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "b0f47eb",
+      "sha": "b0f47ebc1d48d3de6bdfa9797c1f3dac3c247d22",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/b0f47ebc1d48d3de6bdfa9797c1f3dac3c247d22",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "Minilfat",
+      "author_name": "Ilfat Mindubaev",
+      "snippet": "fix(Confluence Node): Return the page sub-tree in tree order and skip drafts (#38403)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "fix(Confluence Node): Return the page sub-tree in tree order and skip drafts (#3"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "aca9b18",
+      "sha": "aca9b189b9f8a1a1656e58c7973a4e4d08bc34cb",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/aca9b189b9f8a1a1656e58c7973a4e4d08bc34cb",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "Matsuuu",
+      "author_name": "Matsu",
+      "snippet": "ci: Grant contents read to the bundle PR retarget job (no-changelog) (#38425)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "ci: Grant contents read to the bundle PR retarget job (no-changelog) (#38425)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "89b0ea1",
+      "sha": "89b0ea157c4383c2b2e93aeeea4613ed5cecb0f1",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/89b0ea157c4383c2b2e93aeeea4613ed5cecb0f1",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "CharlieKolb",
+      "author_name": "Charlie Kolb",
+      "snippet": "chore: Remove unused workspace dependencies (no-changelog) (#38377)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "chore: Remove unused workspace dependencies (no-changelog) (#38377)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "7bac547",
+      "sha": "7bac5478780186243d4b358744243ba7706b546f",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/7bac5478780186243d4b358744243ba7706b546f",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "n8n-cat-bot[bot]",
+      "author_name": "n8n-cat-bot[bot]",
+      "snippet": "fix: Serve binary data stored in the temp execution dir (#38270)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "fix: Serve binary data stored in the temp execution dir (#38270)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "56d18bd",
+      "sha": "56d18bdddc1765dd8cb8789f6f264bafff59f2f5",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/56d18bdddc1765dd8cb8789f6f264bafff59f2f5",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "schrothbn",
+      "author_name": "Benjamin Schroth",
+      "snippet": "feat(editor): Hand agent change requests in the preview chat to the AI Assistant (#38283)",
+      "baseline_category": "INTERACTIVE_AI_COAUTHORED",
+      "multimodal_category": "INTERACTIVE_AI_COAUTHORED",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: AI Provider Email",
+          "evidence": "feat(editor): Hand agent change requests in the preview chat to the AI Assistant"
+        }
+      ],
+      "pr_clues": []
+    }
+  ],
+  "samples_autonomous_ai": [
+    {
+      "repo": "langgenius/dify",
+      "short_sha": "8387590",
+      "sha": "8387590ace4a094de812b7847fc6a4c3a27cd52b",
+      "commit_link": "https://github.com/langgenius/dify/commit/8387590ace4a094de812b7847fc6a4c3a27cd52b",
+      "pr_number": 42129,
+      "pr_link": "https://github.com/langgenius/dify/pull/42129",
+      "author_login": "wylswz",
+      "author_name": "Yunlu Wen",
+      "snippet": "chore: bump version to 1.17.1 (#42129)",
+      "baseline_category": "AUTONOMOUS_AI_AGENT",
+      "multimodal_category": "AUTONOMOUS_AI_AGENT",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: Sweep/Devin Autonomous Agent",
+          "evidence": "chore: bump version to 1.17.1 (#42129)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "langgenius/dify",
+      "short_sha": "a7cc691",
+      "sha": "a7cc6913af4620f4ace8213c45297793d4189764",
+      "commit_link": "https://github.com/langgenius/dify/commit/a7cc6913af4620f4ace8213c45297793d4189764",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "wylswz",
+      "author_name": "Yunlu Wen",
+      "snippet": "chore(deps): bump unstructured from 0.21.5 to 0.27.5 in /api (#42053)",
+      "baseline_category": "AUTONOMOUS_AI_AGENT",
+      "multimodal_category": "AUTONOMOUS_AI_AGENT",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: Sweep/Devin Autonomous Agent",
+          "evidence": "chore(deps): bump unstructured from 0.21.5 to 0.27.5 in /api (#42053)"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "langgenius/dify",
+      "short_sha": "4223b8e",
+      "sha": "4223b8eb0f72bd38e67aa843ef07b9c0291810c4",
+      "commit_link": "https://github.com/langgenius/dify/commit/4223b8eb0f72bd38e67aa843ef07b9c0291810c4",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "wylswz",
+      "author_name": "Yunlu Wen",
+      "snippet": "chore(deps): bump transformers from 5.6.2 to 5.16.1 in /dify-agent (#42054)",
+      "baseline_category": "AUTONOMOUS_AI_AGENT",
+      "multimodal_category": "AUTONOMOUS_AI_AGENT",
+      "clues": [
+        {
+          "field": "Commit Message",
+          "signal": "Git Trailer: Sweep/Devin Autonomous Agent",
+          "evidence": "chore(deps): bump transformers from 5.6.2 to 5.16.1 in /dify-agent (#42054)"
+        }
+      ],
+      "pr_clues": []
+    }
+  ],
+  "samples_devops_bots": [
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "707de95",
+      "sha": "707de95a42c1ba0eb10ed583c52ccca7a68932a3",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/707de95a42c1ba0eb10ed583c52ccca7a68932a3",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "openclaw-mantis[bot]",
+      "author_name": "openclaw-mantis[bot]",
+      "snippet": "chore(i18n): refresh native locales (#147650)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "openclaw-mantis[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "c2f7bfb",
+      "sha": "c2f7bfbc24019099512bb626f05c46ed434d3f17",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/c2f7bfbc24019099512bb626f05c46ed434d3f17",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "roboclaw-bot",
+      "author_name": "RoboClaw",
+      "snippet": "fix(ui): render live drafts as unsent message bubbles (#147669)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login suffix 'bot'",
+          "evidence": "roboclaw-bot"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "4a722e0",
+      "sha": "4a722e0a605cd504adb10783497fc2b293e464f6",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/4a722e0a605cd504adb10783497fc2b293e464f6",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "roboclaw-bot",
+      "author_name": "RoboClaw",
+      "snippet": "improve(ui): make chat disclosures compact and borderless (#147482)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login suffix 'bot'",
+          "evidence": "roboclaw-bot"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "e355514",
+      "sha": "e35551424ada2d3e7fbf3d2d87e2993f26b6bcd7",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/e35551424ada2d3e7fbf3d2d87e2993f26b6bcd7",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "openclaw-mantis[bot]",
+      "author_name": "openclaw-mantis[bot]",
+      "snippet": "chore(ui): refresh control ui locales (#147578)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "openclaw-mantis[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "12f6c20",
+      "sha": "12f6c205850e5cc8290097674c6f00b6b8ac42b1",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/12f6c205850e5cc8290097674c6f00b6b8ac42b1",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "roboclaw-bot",
+      "author_name": "RoboClaw",
+      "snippet": "fix: let visible subagents select managed projects (#147459)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login suffix 'bot'",
+          "evidence": "roboclaw-bot"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "short_sha": "6a1e0c1",
+      "sha": "6a1e0c1bc5c7f932c74b1b16b82711fdbb93a245",
+      "commit_link": "https://github.com/affaan-m/ECC/commit/6a1e0c1bc5c7f932c74b1b16b82711fdbb93a245",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "dependabot[bot]",
+      "author_name": "dependabot[bot]",
+      "snippet": "chore(deps): bump softprops/action-gh-release",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Actor Login: Dependabot",
+          "evidence": "dependabot[bot]"
+        },
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "dependabot[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "short_sha": "d330b57",
+      "sha": "d330b57a50527a3f21aa604ec70266adcfe82505",
+      "commit_link": "https://github.com/affaan-m/ECC/commit/d330b57a50527a3f21aa604ec70266adcfe82505",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "dependabot[bot]",
+      "author_name": "dependabot[bot]",
+      "snippet": "chore(deps): bump @humanfs/node",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Actor Login: Dependabot",
+          "evidence": "dependabot[bot]"
+        },
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "dependabot[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "short_sha": "bd97cbe",
+      "sha": "bd97cbe45130a8e36651dd5424f9bc82dddbd4cb",
+      "commit_link": "https://github.com/affaan-m/ECC/commit/bd97cbe45130a8e36651dd5424f9bc82dddbd4cb",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "dependabot[bot]",
+      "author_name": "dependabot[bot]",
+      "snippet": "chore(deps): bump the npm-minor-and-patch group across 1 directory with 6 updates",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Actor Login: Dependabot",
+          "evidence": "dependabot[bot]"
+        },
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "dependabot[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "short_sha": "8dfa7ce",
+      "sha": "8dfa7cec0aded808f8cbb370c369189ca1dfcfdb",
+      "commit_link": "https://github.com/affaan-m/ECC/commit/8dfa7cec0aded808f8cbb370c369189ca1dfcfdb",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "dependabot[bot]",
+      "author_name": "dependabot[bot]",
+      "snippet": "chore(deps): bump the cargo-minor-and-patch group across 1 directory with 4 updates",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Actor Login: Dependabot",
+          "evidence": "dependabot[bot]"
+        },
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "dependabot[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "short_sha": "45a48d5",
+      "sha": "45a48d5e1bc25e179c9b4d4430d8d3bac30268e1",
+      "commit_link": "https://github.com/affaan-m/ECC/commit/45a48d5e1bc25e179c9b4d4430d8d3bac30268e1",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "dependabot[bot]",
+      "author_name": "dependabot[bot]",
+      "snippet": "chore(deps): bump the actions-minor-and-patch group across 1 directory with 2 updates",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Actor Login: Dependabot",
+          "evidence": "dependabot[bot]"
+        },
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "dependabot[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "aba174c",
+      "sha": "aba174c9f3a4ec8780f8e17d77ea0ce2d3c2b35c",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/aba174c9f3a4ec8780f8e17d77ea0ce2d3c2b35c",
+      "pr_number": 38563,
+      "pr_link": "https://github.com/n8n-io/n8n/pull/38563",
+      "author_login": "n8n-assistant[bot]",
+      "author_name": "n8n-assistant[bot]",
+      "snippet": "chore: Update e2e impact map (#38563)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "n8n-assistant[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "8db30e4",
+      "sha": "8db30e46f45744ccc13d4b527134cbeb019d2c96",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/8db30e46f45744ccc13d4b527134cbeb019d2c96",
+      "pr_number": 38560,
+      "pr_link": "https://github.com/n8n-io/n8n/pull/38560",
+      "author_login": "n8n-assistant[bot]",
+      "author_name": "n8n-assistant[bot]",
+      "snippet": "chore: Update node popularity data (#38560)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "n8n-assistant[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "4169b55",
+      "sha": "4169b55bf3b3e6c255d7361642bc5243bd04345a",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/4169b55bf3b3e6c255d7361642bc5243bd04345a",
+      "pr_number": 38533,
+      "pr_link": "https://github.com/n8n-io/n8n/pull/38533",
+      "author_login": "n8n-assistant[bot]",
+      "author_name": "n8n-assistant[bot]",
+      "snippet": "chore: Update e2e impact map (#38533)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "n8n-assistant[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "4603205",
+      "sha": "46032052308219efadd5a348692e0a305ca4e524",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/46032052308219efadd5a348692e0a305ca4e524",
+      "pr_number": 38507,
+      "pr_link": "https://github.com/n8n-io/n8n/pull/38507",
+      "author_login": "n8n-assistant[bot]",
+      "author_name": "n8n-assistant[bot]",
+      "snippet": "chore: Update e2e impact map (#38507)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "n8n-assistant[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "short_sha": "6137e60",
+      "sha": "6137e60fe50523797f42ea4c20f37547f9dc340e",
+      "commit_link": "https://github.com/n8n-io/n8n/commit/6137e60fe50523797f42ea4c20f37547f9dc340e",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "n8n-assistant[bot]",
+      "author_name": "n8n-assistant[bot]",
+      "snippet": "chore: Update e2e impact map (#38400)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "n8n-assistant[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "631f67a",
+      "sha": "631f67a9f330e2e0b1c064db358e67133a053655",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/631f67a9f330e2e0b1c064db358e67133a053655",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: update nix node_modules hashes",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "a453386",
+      "sha": "a453386e9dd3cd5089714f1f0d4576002a96d30d",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/a453386e9dd3cd5089714f1f0d4576002a96d30d",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: generate",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "0b934e9",
+      "sha": "0b934e9516f8eda63cddcfb34ee6bd9a363d493d",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/0b934e9516f8eda63cddcfb34ee6bd9a363d493d",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: generate",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "486e846",
+      "sha": "486e8460b1401d1338a81c28cbfbf1b3fb1de2f1",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/486e8460b1401d1338a81c28cbfbf1b3fb1de2f1",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: generate",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "b6914b3",
+      "sha": "b6914b39db86e196ebcc95e92a0188cdf58ef67a",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/b6914b39db86e196ebcc95e92a0188cdf58ef67a",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: generate",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "dff8fbc",
+      "sha": "dff8fbc149fb7492e4f07b713ac31ea70d9a541c",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/dff8fbc149fb7492e4f07b713ac31ea70d9a541c",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: generate",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "d6855b6",
+      "sha": "d6855b6b47a8433462ac6aeeba882ccf734cb7f1",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/d6855b6b47a8433462ac6aeeba882ccf734cb7f1",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: generate",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "ecbc6cc",
+      "sha": "ecbc6ccac85b3e8087b6445e584318419b9e2b34",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/ecbc6ccac85b3e8087b6445e584318419b9e2b34",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: update nix node_modules hashes",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "53fec37",
+      "sha": "53fec37d8d2b9e0d92a1b4184e8df8f8480a2d26",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/53fec37d8d2b9e0d92a1b4184e8df8f8480a2d26",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: generate",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "56d4fb2",
+      "sha": "56d4fb24a1dd40e4ca2ab6a6d3bc5d62b5eb63be",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/56d4fb24a1dd40e4ca2ab6a6d3bc5d62b5eb63be",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: generate",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "e207624",
+      "sha": "e207624c48159b03dbe17dbc8e51bbcf23e72df5",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/e207624c48159b03dbe17dbc8e51bbcf23e72df5",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: update nix node_modules hashes",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "ea2d59d",
+      "sha": "ea2d59d7ca8028951a16d4ebc558104258440bf9",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/ea2d59d7ca8028951a16d4ebc558104258440bf9",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "fix(provider): preserve explicit OpenAI service tiers (#47671)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "bec9ee4",
+      "sha": "bec9ee41afc64c0333f7ace8e73ea6ab47f30213",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/bec9ee41afc64c0333f7ace8e73ea6ab47f30213",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "fix(provider): bump Azure SDK to 3.0.93 (#47664)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "c470c79",
+      "sha": "c470c79513f78aabb2ff88a8c8f7a3a22c4e97af",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/c470c79513f78aabb2ff88a8c8f7a3a22c4e97af",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "chore: update nix node_modules hashes",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        },
+        {
+          "field": "Committer Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    },
+    {
+      "repo": "anomalyco/opencode",
+      "short_sha": "23ec4f5",
+      "sha": "23ec4f55c8bf4009068c44635a448d602914f1f7",
+      "commit_link": "https://github.com/anomalyco/opencode/commit/23ec4f55c8bf4009068c44635a448d602914f1f7",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "opencode-agent[bot]",
+      "author_name": "opencode-agent[bot]",
+      "snippet": "fix(provider): bump OpenAI SDK to 3.0.88 (#47659)",
+      "baseline_category": "DETERMINISTIC_DEVOPS_BOT",
+      "multimodal_category": "DETERMINISTIC_DEVOPS_BOT",
+      "clues": [
+        {
+          "field": "Actor Login",
+          "signal": "Generic Bot Login [bot]",
+          "evidence": "opencode-agent[bot]"
+        }
+      ],
+      "pr_clues": []
+    }
+  ],
+  "samples_pure_human": [
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "0cede6c",
+      "sha": "0cede6c5046c858b6e7de4fe6f30bb180fb15d1f",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/0cede6c5046c858b6e7de4fe6f30bb180fb15d1f",
+      "pr_number": 147843,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147843",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "fix(ui): replace widget loading text with a shimmer (#147843)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "32f06f3",
+      "sha": "32f06f37f12648364a1733df3cd7827b0e783748",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/32f06f37f12648364a1733df3cd7827b0e783748",
+      "pr_number": 147828,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147828",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "fix(pr): preserve unrelated worktree metadata during fetch (#147828)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "e5e75c0",
+      "sha": "e5e75c081c9078f43356252c0c5dbc388e9eeaf5",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/e5e75c081c9078f43356252c0c5dbc388e9eeaf5",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "perf: trim identity validation imports from session history (#147727)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "28dd17e",
+      "sha": "28dd17e8a15efa4bd9d20402213798ea9a53c73f",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/28dd17e8a15efa4bd9d20402213798ea9a53c73f",
+      "pr_number": 147792,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147792",
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "refactor(matrix): share context body truncation (#147792)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "e88a88b",
+      "sha": "e88a88b1529f7fecdcfa8738d97cfe9858791cbe",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/e88a88b1529f7fecdcfa8738d97cfe9858791cbe",
+      "pr_number": 147836,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147836",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "fix(ui): retire prompts beside buffered assistant replies (#147836)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "5f1f691",
+      "sha": "5f1f691af22128acd7f401166ed683f6e63b5508",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/5f1f691af22128acd7f401166ed683f6e63b5508",
+      "pr_number": 147841,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147841",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "fix(ui): keep automation fields focused during validation (#147841)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "5f357b7",
+      "sha": "5f357b747802439b4878dea48a78bb91957b7ff5",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/5f357b747802439b4878dea48a78bb91957b7ff5",
+      "pr_number": 147840,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147840",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "feat(ui): shrink diagnostics widget and graph all three metrics (#147840)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "21a4562",
+      "sha": "21a45623278e6311f18249dad696ee35e935b9d0",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/21a45623278e6311f18249dad696ee35e935b9d0",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "perf(agents): reuse byte counts when fitting Code Mode results (#147718)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "5db6b83",
+      "sha": "5db6b830ecd314e53eb31c8a132be3b0a5f1aee7",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/5db6b830ecd314e53eb31c8a132be3b0a5f1aee7",
+      "pr_number": 147783,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147783",
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "refactor(qa): reuse Matrix private path permission check (#147783)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "2e5aec7",
+      "sha": "2e5aec77089bd59eff15daa3b3f1df5a961f55a3",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/2e5aec77089bd59eff15daa3b3f1df5a961f55a3",
+      "pr_number": 147837,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147837",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "fix: avoid Gateway stalls when saving Activity recaps (#147837)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "ca48e6d",
+      "sha": "ca48e6d5991c984cf1445d4e819a0198d2990cfc",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/ca48e6d5991c984cf1445d4e819a0198d2990cfc",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "refactor(mattermost): unify boundary publication bookkeeping (#147497)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "62bcb04",
+      "sha": "62bcb04950fa146b15d9e4b08a92398ee4827930",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/62bcb04950fa146b15d9e4b08a92398ee4827930",
+      "pr_number": 147832,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147832",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "fix: avoid repeating running status on CLI task cards (#147832)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "0798abb",
+      "sha": "0798abb0c21a0c134a6685e8f61ded2d48ccd94a",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/0798abb0c21a0c134a6685e8f61ded2d48ccd94a",
+      "pr_number": 147762,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147762",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "fix(state): prevent duplicate Windows database paths and repair aliases in Doctor (#147762)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "ae5a4b4",
+      "sha": "ae5a4b4a55526a32edbc6d865af66e4a4f7dd25b",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/ae5a4b4a55526a32edbc6d865af66e4a4f7dd25b",
+      "pr_number": 147787,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147787",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "perf(workers): overlap cloud startup preparation (#147787)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "7b6d35e",
+      "sha": "7b6d35e43a1b2be224e4fad16f3a03d260be6aeb",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/7b6d35e43a1b2be224e4fad16f3a03d260be6aeb",
+      "pr_number": 147763,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147763",
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "refactor(discord): share scalar command option construction (#147763)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "487f227",
+      "sha": "487f2274305ff1d77886c042c079056bf7eb2fb6",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/487f2274305ff1d77886c042c079056bf7eb2fb6",
+      "pr_number": 147774,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147774",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "test(e2e): use default status budget in Bun smoke (#147774)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "fea7243",
+      "sha": "fea7243b8b2e1de3a1e11df89dac08a2fe2665ce",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/fea7243b8b2e1de3a1e11df89dac08a2fe2665ce",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "test(tooling): simplify boundary checks and failure output (#147662)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "49dc11a",
+      "sha": "49dc11a3668c785b28b78bae2ba4ef939d644428",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/49dc11a3668c785b28b78bae2ba4ef939d644428",
+      "pr_number": 147822,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147822",
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "refactor(scripts): share plugin lifecycle trace predicate (#147822)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "086471b",
+      "sha": "086471b22c8d1c88847117791d39f5cfa90350aa",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/086471b22c8d1c88847117791d39f5cfa90350aa",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "fix(ios): restore native chat routing and typography checks (#147598)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "c6c9d41",
+      "sha": "c6c9d416327e648c8eb544cad532d71c01e89257",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/c6c9d416327e648c8eb544cad532d71c01e89257",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "fix(qa): preserve final Gateway logs during teardown (#147300)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "65710d3",
+      "sha": "65710d3e8bac5c9534cc361204d493a65e99a1ec",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/65710d3e8bac5c9534cc361204d493a65e99a1ec",
+      "pr_number": 147818,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147818",
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "test(skills): trim duplicated FreeBSD recovery coverage (#147818)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "cbe290c",
+      "sha": "cbe290cdc07072386eba531df7181057d52befcd",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/cbe290cdc07072386eba531df7181057d52befcd",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "refactor(memory): rely on declared facade function types (#147751)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "bd463dc",
+      "sha": "bd463dc1fed8e188c03443bb831c64c387dec016",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/bd463dc1fed8e188c03443bb831c64c387dec016",
+      "pr_number": 147798,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147798",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "fix: preserve node worker failures during startup (#147798)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "731c5a4",
+      "sha": "731c5a40cf0ac9adc4aaa46cf625ab38c960575b",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/731c5a40cf0ac9adc4aaa46cf625ab38c960575b",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "refactor(i18n): share placeholder validation helpers (#147747)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "7bc84b5",
+      "sha": "7bc84b54d7b2758481964a00f37f8dd657a35301",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/7bc84b54d7b2758481964a00f37f8dd657a35301",
+      "pr_number": 147779,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147779",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "fix: prevent cron subagent waits from stalling the Gateway (#147779)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "cf56057",
+      "sha": "cf56057e5f8b276b4b2b84f18c22f7cedd736d71",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/cf56057e5f8b276b4b2b84f18c22f7cedd736d71",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "fix: limit agent session selection to the requesting browser (#147647)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "f984f66",
+      "sha": "f984f6648bacc2862296b8db11c5e9a715809585",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/f984f6648bacc2862296b8db11c5e9a715809585",
+      "pr_number": 147768,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147768",
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "perf(ci): batch publication source object sizes (#147768)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "ab1b607",
+      "sha": "ab1b607181602a06aa4618b283b464b2ed0beaf0",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/ab1b607181602a06aa4618b283b464b2ed0beaf0",
+      "pr_number": 147788,
+      "pr_link": "https://github.com/openclaw/openclaw/pull/147788",
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "chore(agents): cover cold private completion reads (#147788)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "0bb2acf",
+      "sha": "0bb2acf4fed965684d969c6cc7bbecd3fbc061ec",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/0bb2acf4fed965684d969c6cc7bbecd3fbc061ec",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "steipete",
+      "author_name": "Peter Steinberger",
+      "snippet": "test(ui): reuse deferred session list fixtures (#147643)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "short_sha": "2565bba",
+      "sha": "2565bbad199d904a06fc93ac45e80e3931fb9980",
+      "commit_link": "https://github.com/openclaw/openclaw/commit/2565bbad199d904a06fc93ac45e80e3931fb9980",
+      "pr_number": null,
+      "pr_link": null,
+      "author_login": "vincentkoc",
+      "author_name": "Vincent Koc",
+      "snippet": "refactor(google-meet): share CLI lifecycle result handling (#147742)",
+      "baseline_category": "PURE_HUMAN",
+      "multimodal_category": "PURE_HUMAN",
+      "clues": [],
+      "pr_clues": []
+    }
+  ]
+}
