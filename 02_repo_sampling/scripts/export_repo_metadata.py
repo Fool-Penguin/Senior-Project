@@ -186,8 +186,27 @@ def main() -> int:
         return 2
 
     input_path = Path(args.input)
+    if not input_path.exists():
+        for c in [
+            Path(__file__).resolve().parent.parent / "data" / args.input,
+            Path("02_repo_sampling/data") / args.input,
+        ]:
+            if c.exists():
+                input_path = c
+                break
+
     output_path = Path(args.output)
+    if not output_path.is_absolute() and len(output_path.parts) == 1:
+        data_dir = Path(__file__).resolve().parent.parent / "data"
+        if data_dir.exists():
+            output_path = data_dir / args.output
+
     cache_path = Path(args.cache)
+    if not cache_path.is_absolute() and len(cache_path.parts) == 1:
+        data_dir = Path(__file__).resolve().parent.parent / "data"
+        if data_dir.exists():
+            cache_path = data_dir / args.cache
+
     try:
         payload = json.loads(input_path.read_text(encoding="utf-8"))
         repositories = payload["repositories"]
@@ -195,7 +214,8 @@ def main() -> int:
         print(f"Could not read repositories from {input_path}: {exc}", file=sys.stderr)
         return 2
 
-    load_dotenv(Path(".env"))
+    for p in [Path(".env"), Path(__file__).resolve().parent / ".env", Path(__file__).resolve().parents[2] / ".env"]:
+        load_dotenv(p)
     token = os.getenv("GITHUB_TOKEN")
     cache = load_cache(cache_path)
     rows: list[dict[str, Any]] = []

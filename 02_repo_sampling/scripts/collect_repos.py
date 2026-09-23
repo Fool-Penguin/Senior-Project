@@ -86,23 +86,29 @@ class GitHubNotFoundError(GitHubSearchError):
 
 
 def load_dotenv(dotenv_path: str = ".env") -> None:
-    if not os.path.exists(dotenv_path):
-        return
+    candidates = [
+        dotenv_path,
+        os.path.join(os.path.dirname(__file__), ".env"),
+        os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), ".env")
+    ]
+    for candidate in candidates:
+        if not os.path.exists(candidate):
+            continue
+        try:
+            with open(candidate, "r", encoding="utf-8") as f:
+                for raw_line in f:
+                    line = raw_line.strip()
+                    if not line or line.startswith("#") or "=" not in line:
+                        continue
 
-    try:
-        with open(dotenv_path, "r", encoding="utf-8") as f:
-            for raw_line in f:
-                line = raw_line.strip()
-                if not line or line.startswith("#") or "=" not in line:
-                    continue
-
-                key, value = line.split("=", 1)
-                key = key.strip()
-                value = value.strip().strip('"').strip("'")
-                if key and key not in os.environ:
-                    os.environ[key] = value
-    except OSError as exc:
-        print(f"Warning: could not read {dotenv_path}: {exc}", file=sys.stderr)
+                    key, value = line.split("=", 1)
+                    key = key.strip()
+                    value = value.strip().strip('"').strip("'")
+                    if key and key not in os.environ:
+                        os.environ[key] = value
+            break
+        except OSError as exc:
+            print(f"Warning: could not read {candidate}: {exc}", file=sys.stderr)
 
 
 def github_request(url: str, token: str | None) -> dict:
@@ -527,11 +533,16 @@ def main() -> int:
         "repositories": [asdict(item) for item in final_repos],
     }
 
-    with open(args.output, "w", encoding="utf-8") as f:
+    output_path = args.output
+    data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+    if os.path.exists(data_dir) and not os.path.isabs(output_path) and os.path.dirname(output_path) == "":
+        output_path = os.path.join(data_dir, output_path)
+
+    with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output_payload, f, indent=2, ensure_ascii=False)
 
     print(
-        f"Saved {len(final_repos)} repositories to {args.output} "
+        f"Saved {len(final_repos)} repositories to {output_path} "
         f"(unique={len(deduped)})"
     )
 
