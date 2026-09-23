@@ -31,7 +31,7 @@ Developers are forced to juggle fragmented, heavyweight tools across separate CI
 
 This project unites two complementary developer tools into a single, high-impact VS Code extension:
 1. **Pillar 1 (ComplexityLens):** Function-Level Cognitive Debt & Complexity Guard (on-demand Cognitive Complexity, Cyclomatic Complexity, LOC, and automated refactoring with a guaranteed complexity drop).
-2. **Pillar 2 (AgentShield):** Function-Level Security & Vulnerability Guard (detecting critical vulnerabilities mapped to **MITRE CWE Top 25**, **NIST NVD (CVE & CVSS v3.1)**, **OWASP Top 10**, and **OWASP Top 10 for LLMs** with 1-click defensive guardrail patches).
+2. **Pillar 2 (AgentShield):** Function-Level Security & Vulnerability Guard (detecting critical vulnerabilities mapped to **MITRE CWE Top 25**, **NIST NVD (CVE, CVSS v3.1, CPE)**, **OWASP Top 10 (2021)**, and **OWASP Top 10 for LLMs (2025)** with 1-click defensive guardrail patches).
 
 ```mermaid
 flowchart TD
@@ -40,8 +40,8 @@ flowchart TD
     end
 
     subgraph FastLocalEngine ["Fast Local Deterministic Engine (< 20ms, Zero API Cost)"]
-        F1 -->|"Tree-sitter AST Walker"| Q1["Quality Lens: Cognitive Complexity, CC, LOC"]
-        F1 -->|"Semgrep OSS / Local Linters"| S1["Security Lens: CWE & NVD Pattern/Sink Matching"]
+        F1 -->|"Tree-sitter AST Walker"| Q1["Quality Lens: Cognitive Complexity, CC, LOC, LCOM"]
+        F1 -->|"Semgrep OSS / Local Linters"| S1["Security Lens: CWE, NVD & OWASP Pattern Matching"]
     end
 
     subgraph InEditorDisplay ["Dual In-Editor UI (Native Hover + CodeLens & Sidebar)"]
@@ -65,56 +65,167 @@ flowchart TD
    - Explaining vulnerability attack vectors and generating drop-in security guardrails.
 5. **Evaluation Strategy:** **Dual-Track Evaluation**:
    - *Track 1 (Standard Benchmarks):* **Juliet Test Suite v1.3** & **OWASP Benchmark v1.2** + **NIST NVD CVEFixes** (for CWE/CVE detection accuracy) and **CodeComplex / Qualitas Corpus** (for complexity metric accuracy).
-   - *Track 2 (Real-World Commit-Level Evaluation):* Mining historical bug-fixing and refactoring commits across our **170 curated repositories** ([`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/Repos_Final_Sample.csv)) to measure human $\Delta\text{Complexity}$ vs. our tool's automated $\Delta\text{Complexity}$ reduction.
+   - *Track 2 (Real-World Commit-Level Evaluation):* Mining historical bug-fixing and refactoring commits across our **170 curated repositories** ([`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/02_repo_sampling/data/Repos_Final_Sample.csv)) to measure human $\Delta\text{Complexity}$ vs. our tool's automated $\Delta\text{Complexity}$ reduction.
 6. **UI/UX Strategy:** Support both **Native Hovers/QuickFixes** and **CodeLens + Rich Side Panel Webview**, allowing side-by-side testing during development.
 
 ---
 
-## 2. Core Functional Pillars
+## 2. Core Functional Pillars & Complete Metric Specifications
 
-### Pillar 1: ComplexityLens (Quality & Cognitive Debt)
-* **Live Function Metrics:**
-  * **Cognitive Complexity:** Based on G. Ann Campbell's formal specification (penalizes nested loops, nested conditionals, recursion, and compound boolean operators).
-  * **Cyclomatic Complexity (CC):** McCabe's classical decision path count ($CC = E - N + 2P$).
-  * **SLOC & Nesting Depth:** Flags long parameter lists ($>4$ params) and deep indentation ($>3$ levels).
-* **Guaranteed $\Delta\text{Complexity}$ Refactoring:**
-  * When a function exceeds Cognitive Complexity thresholds ($>15$), the developer clicks **"Refactor Function"**.
-  * The tool generates an AST-verified structural decomposition (Extract Method, Guard Clauses, Flattening).
-  * The tool re-evaluates the candidate patch and proves mathematically to the developer:
-    $$\Delta \text{Complexity} = \text{Cognitive}_{\text{before}} - \text{Cognitive}_{\text{after}} > 0$$
-  * Verifies syntax validity and executes local tests (`pytest` / `jest`) before applying.
+### Pillar 1: ComplexityLens (Quality, Cognitive Debt & Full Metrics Suite)
 
----
+Every metric used by the quality engine is mathematically defined with clear interpretation thresholds:
 
-### Pillar 2: AgentShield (Security, CWE & NVD Guard)
-
-#### A. Target Vulnerabilities (MITRE CWE Top 25 & OWASP Top 10)
-* **CWE-78 / CWE-77:** OS Command Injection (untrusted strings flowing into `subprocess.run`, `os.system`, `exec`).
-* **CWE-89:** SQL Injection (string concatenation in database queries).
-* **CWE-79:** Cross-Site Scripting (XSS in web/desktop agent views).
-* **CWE-20:** Improper Input Validation (unvalidated external parameters passing into internal logic).
-* **CWE-22:** Path Traversal (directory climbing via `../`).
-* **CWE-862:** Missing Authorization (autonomous actions/tools executing sensitive operations without access checks).
-* **CWE-200:** Information Exposure (hardcoded secrets, API tokens, leaking prompt contexts).
-* **CWE-918:** Server-Side Request Forgery (SSRF via unvalidated URL fetchers).
-* **CWE-502:** Deserialization of Untrusted Data (`pickle.loads()`).
-* **CWE-94:** Code Injection (use of dynamic `eval()`).
-* **OWASP Top 10 for LLMs:** Prompt injection in tool parameters, insecure output handling, excessive agency.
-
-#### B. NIST NVD (National Vulnerability Database) Integration
-* **CVE to CWE Mapping:** Every detected CWE is mapped to corresponding real-world CVE case studies from the NVD data feed, showing developers concrete historical precedents of the vulnerability.
-* **CVSS v3.1 Severity Scoring:** The extension displays official CVSS metrics:
-  * **Base Score ($0.0 - 10.0$):** Clear severity rating (Critical: $9.0 - 10.0$, High: $7.0 - 8.9$, Medium: $4.0 - 6.9$, Low: $0.1 - 3.9$).
-  * **Vector String Breakdown:** Displays Attack Vector (Network, Local), Attack Complexity (Low, High), and Privileges Required.
-* **NVD Reference Links:** In-editor diagnostic hover includes direct clickable URLs to official NVD advisory pages (`https://nvd.nist.gov/vuln/detail/CVE-...`).
-* **CPE Dependency Cross-Referencing:** Validates third-party packages imported by the function against NVD's Common Platform Enumeration (CPE) to flag known vulnerable library versions.
-
-#### C. Automated Guardrail Generation
-* Generates drop-in defensive code: schema validation (Pydantic / Zod), parameterized execution arrays, regex input validation, and authorization check wrappers.
+| Metric Name | Mathematical Definition / Formula | Interpretation & Thresholds | Impact on Maintainability |
+| :--- | :--- | :--- | :--- |
+| **Cognitive Complexity** | Incremental scoring based on G. Ann Campbell's formal whitepaper:<br/>- `+1` for each break in linear flow (`if`, `ternary`, `switch`, `for`, `while`, `catch`, `goto`, `break`, `continue`)<br/>- `+1` for each nesting level of control structures<br/>- `+1` for logical operator sequences (`a && b && c`)<br/>- `+1` for recursion | - $\le 8$: **Healthy / Clean Code**<br/>- $9 - 14$: **Moderate Complexity**<br/>- $\ge 15$: **Critical (Refactoring Trigger)** | Direct indicator of human mental comprehension effort. High scores lead to bugs and developer misunderstandings. |
+| **McCabe Cyclomatic Complexity (CC)** | $$CC = E - N + 2P$$<br/>Where $E$ = edges, $N$ = nodes, $P$ = connected components in the Control Flow Graph (CFG).<br/>Equivalently: $CC = 1 + \sum (\text{decision points})$ | - $1 - 5$: **Simple / High Testability**<br/>- $6 - 10$: **Moderate / Testable**<br/>- $11 - 15$: **High Complexity**<br/>- $> 15$: **Untestable / Complex** | Measures the minimum number of independent test cases required for complete branch test coverage. |
+| **Source Lines of Code (SLOC)** | Number of physical lines containing executable statements, excluding blank lines and pure comment lines. | - $\le 30$: **Ideal**<br/>- $31 - 50$: **Acceptable**<br/>- $> 50$: **Long Method smell**<br/>- $> 100$: **God Function** | Strong correlation with defects and violation of Single Responsibility Principle. |
+| **Maximum Nesting Depth** | Maximum hierarchical depth of nested AST statement blocks (`if` inside `for` inside `try`...). | - $\le 2$: **Healthy**<br/>- $3$: **Warning**<br/>- $\ge 4$: **Critical Nesting Smell** | Deep nesting creates severe visual friction and cognitive overload. |
+| **Parameter Count (Arity)** | Total number of formal parameters declared in the function signature. | - $\le 3$: **Optimal**<br/>- $4$: **Acceptable**<br/>- $> 4$: **Long Parameter List smell** | High arity indicates excessive coupling; calls for Parameter Object refactoring. |
+| **Lack of Cohesion in Methods (LCOM-4)** | Number of connected components in an undirected graph where nodes are functions and edges represent shared instance variables. | - $LCOM = 1$: **Cohesive**<br/>- $LCOM > 1$: **Low Cohesion (Split recommended)** | Identifies methods that operate on disparate data fields and should be split into modular units. |
+| **Halstead Complexity Suite** | - Distinct Operators ($n_1$), Distinct Operands ($n_2$)<br/>- Total Operators ($N_1$), Total Operands ($N_2$)<br/>- Vocabulary: $n = n_1 + n_2$<br/>- Length: $N = N_1 + N_2$<br/>- Volume: $V = N \log_2 n$<br/>- Difficulty: $D = \frac{n_1}{2} \times \frac{N_2}{n_2}$<br/>- Effort: $E = D \times V$ | - High Volume ($V > 1000$): Overly verbose logic.<br/>- High Difficulty ($D > 30$): Difficult to maintain. | Captures lexical size, operational difficulty, and cognitive mental effort required to implement the function. |
+| **$\Delta \text{Complexity}$ Guarantee (Core Novelty)** | $$\Delta \text{Complexity} = \text{Cognitive}_{\text{before}} - \text{Cognitive}_{\text{after}}$$  $$\% \Delta \text{Complexity} = \frac{\text{Cognitive}_{\text{before}} - \text{Cognitive}_{\text{after}}}{\text{Cognitive}_{\text{before}}} \times 100\%$$ | - $\Delta \text{Complexity} > 0$: **Verified Reduction**<br/>- Target: $\ge 40\%$ reduction on functions with Cognitive $\ge 15$ | **Guaranteed Refactoring Quality:** Proves mathematically that the AI refactoring reduced structural and mental friction. |
 
 ---
 
-## 3. Formal Research Questions (RQs) for Thesis Defense
+### Pillar 2: AgentShield (Security, CWE, NVD & OWASP Complete Standards Suite)
+
+AgentShield comprehensively integrates all major international vulnerability, weakness, and risk taxonomies:
+
+#### A. MITRE CWE Top 25 Most Dangerous Software Weaknesses (Itemized)
+The extension implements detection and remediation rules for every weakness in the official MITRE CWE Top 25 list:
+
+* **CWE-78:** Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+* **CWE-89:** Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+* **CWE-79:** Improper Neutralization of Input During Web Page Generation ('Cross-Site Scripting' - XSS)
+* **CWE-20:** Improper Input Validation
+* **CWE-22:** Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+* **CWE-352:** Cross-Site Request Forgery (CSRF)
+* **CWE-862:** Missing Authorization
+* **CWE-200:** Exposure of Sensitive Information to an Unauthorized Actor
+* **CWE-918:** Server-Side Request Forgery (SSRF)
+* **CWE-502:** Deserialization of Untrusted Data
+* **CWE-77:** Improper Neutralization of Special Elements used in a Command ('Command Injection')
+* **CWE-94:** Improper Control of Generation of Code ('Code Injection')
+* **CWE-434:** Unrestricted Upload of File with Dangerous Type
+* **CWE-306:** Missing Authentication for Critical Function
+* **CWE-287:** Improper Authentication
+* **CWE-798:** Use of Hard-coded Credentials
+* **CWE-863:** Incorrect Authorization
+* **CWE-269:** Improper Privilege Management
+* **CWE-319:** Cleartext Transmission of Sensitive Information
+* **CWE-400:** Uncontrolled Resource Consumption
+* **CWE-611:** Improper Restriction of XML External Entity Reference (XXE)
+* **CWE-916:** Use of Password Hash With Insufficient Computational Effort
+* **CWE-601:** URL Redirection to Untrusted Site ('Open Redirect')
+* **CWE-1321:** Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')
+* **CWE-676:** Use of Potentially Dangerous Function
+
+#### B. NIST NVD (National Vulnerability Database) Data Suite
+* **NVD Data Feeds:** Ingests official NIST NVD JSON 2.0 schema feeds (`services.nvd.nist.gov/rest/json/cves/2.0`).
+* **CVE Identifiers (Common Vulnerabilities and Exposures):** Every detected weakness is cross-referenced with real-world CVE records (e.g. `CVE-2024-XXXXX`) to show developers documented exploit examples.
+* **CVSS v3.1 Severity Scoring:**
+  * **Base Score ($0.0 - 10.0$):**
+    * **Critical:** $9.0 - 10.0$
+    * **High:** $7.0 - 8.9$
+    * **Medium:** $4.0 - 6.9$
+    * **Low:** $0.1 - 3.9$
+    * **None:** $0.0$
+  * **CVSS Vector String:** Computes Attack Vector (AV:N/A/L/P), Attack Complexity (AC:L/H), Privileges Required (PR:N/L/H), User Interaction (UI:N/R), Scope (S:U/C), Confidentiality (C:N/L/H), Integrity (I:N/L/H), Availability (A:N/L/H).
+* **CPE (Common Platform Enumeration):** Uses CPE 2.3 formatted strings (`cpe:2.3:a:vendor:package:version:*:*:*:*:*:*:*`) to validate imported dependencies in `requirements.txt` or `package.json` against known vulnerable package versions.
+* **NVD Advisory URLs:** Provides direct clickable links to official NIST advisory writeups (`https://nvd.nist.gov/vuln/detail/CVE-...`).
+* **NIST NVD CVEFixes Dataset:** Ingests historical CVE-fixing commits to ground automated guardrail patch generation in real-world developer security patches.
+
+#### C. OWASP Top 10 (2021) - Standard Software & Web Application Security
+* **A01:2021 – Broken Access Control:** (Encompasses CWE-862, CWE-22, CWE-601)
+* **A02:2021 – Cryptographic Failures:** (Encompasses CWE-327, CWE-319, CWE-798)
+* **A03:2021 – Injection:** (Encompasses CWE-78, CWE-89, CWE-79, CWE-77, CWE-94)
+* **A04:2021 – Insecure Design:** (Encompasses CWE-20, architectural logic flaws)
+* **A05:2021 – Security Misconfiguration:** (Default credentials, verbose debug logging)
+* **A06:2021 – Vulnerable and Outdated Components:** (CPE-matched packages)
+* **A07:2021 – Identification and Authentication Failures:** (Encompasses CWE-306, CWE-287)
+* **A08:2021 – Software and Data Integrity Failures:** (Encompasses CWE-502, unverified updates)
+* **A09:2021 – Security Logging and Monitoring Failures:** (Missing audit trails on sensitive actions)
+* **A10:2021 – Server-Side Request Forgery (SSRF):** (Encompasses CWE-918)
+
+#### D. OWASP Top 10 for Large Language Model Applications (2025 - Agent & AI Applications)
+* **LLM01:2025 – Prompt Injection:** Untrusted input dynamically alters system instructions or tool execution paths.
+* **LLM02:2025 – Sensitive Information Disclosure:** Unintentional leakage of API keys, proprietary prompts, or memory states.
+* **LLM03:2025 – Supply Chain Vulnerabilities:** Vulnerable third-party plugins, MCP servers, or unverified model weights.
+* **LLM04:2025 – Data and Model Poisoning:** Tampered training data or poisoned context embeddings.
+* **LLM05:2025 – Improper Output Handling:** Raw LLM outputs passed directly into execution sinks (`subprocess`, SQL, `eval`).
+* **LLM06:2025 – Excessive Agency:** Autonomous tools performing destructive operations without human-in-the-loop authorization gates.
+* **LLM07:2025 – System Prompt Leakage:** Exposing system instructions, hidden guardrails, or backend configuration schemas.
+* **LLM08:2025 – Vector and Embedding Weaknesses:** Poisoned or unauthenticated vector database retrievals.
+* **LLM09:2025 – Misinformation:** Hallucinated outputs accepted by backend services without schema verification.
+* **LLM10:2025 – Unbounded Consumption:** Uncapped recursive tool calls or denial of wallet/compute loops.
+
+---
+
+## 3. Technical Methodology & System Pipeline
+
+The system operates across a 5-phase deterministic and generative pipeline:
+
+```mermaid
+flowchart TD
+    subgraph Phase1 ["Phase 1: Local AST & Rule Extraction (< 20ms)"]
+        P1A["Active File Buffer (Python / TS)"] --> P1B["Tree-sitter Incremental AST Parser"]
+        P1B --> P1C["Cognitive Complexity Walker (Campbell Spec)"]
+        P1B --> P1D["McCabe CC Calculator (CFG Edges/Nodes)"]
+        P1B --> P1E["Semgrep OSS Local Engine (CWE/OWASP Sink Scan)"]
+    end
+
+    subgraph Phase2 ["Phase 2: Security & Vulnerability Mapping"]
+        P1E --> P2A["Match Flagged Sinks to MITRE CWE Top 25"]
+        P2A --> P2B["Query NVD Knowledge Base (CVE ID + CVSS v3.1 Score)"]
+        P2A --> P2C["Cross-reference Dependencies via CPE 2.3"]
+        P2A --> P2D["Map to OWASP 2021 & OWASP LLM 2025"]
+    end
+
+    subgraph Phase3 ["Phase 3: Dual-Mode In-Editor Presentation"]
+        P1C & P1D & P2A --> P3A["Render In-Editor Diagnostics (Squigglies & Gutter Icons)"]
+        P1C & P1D & P2A --> P3B["Render CodeLens Line: '🟢 Quality: 4 | ⚠️ Security: CWE-78 (CVSS 9.8)'"]
+        P3A --> P3C["Provide Lightbulb QuickFix Actions"]
+        P3B --> P3D["Interactive Webview Side Panel (Full Telemetry & Charts)"]
+    end
+
+    subgraph Phase4 ["Phase 4: On-Demand LLM Generation Engine"]
+        P3C & P3D -->|"Click 'Apply Verified Refactor'"| P4A["Extract AST Function Scope Window"]
+        P4A --> P4B["LLM Structural Refactoring Prompt"]
+        P4B --> P4C["Re-parse Candidate Diff with Tree-sitter"]
+        P4C --> P4D{"Verify: Delta-Complexity > 0 and Syntax Valid?"}
+        P4D -->|"Yes"| P4E["Display Side-by-Side Split Diff to Developer"]
+        P4D -->|"No"| P4F["Discard / Self-Correct Candidate Patch"]
+        
+        P3C & P3D -->|"Click 'Inject Security Guardrail'"| P4G["LLM Vulnerability Explanation & Guardrail Generator"]
+        P4G --> P4H["Inject Drop-in Defensive Schema (Pydantic / Parameterized Sink)"]
+    end
+
+    subgraph Phase5 ["Phase 5: Empirical Evaluation & Validation"]
+        P5A["Benchmark Testing: Juliet v1.3 + OWASP Benchmark + CodeComplex"]
+        P5B["Real-World Testing: Commit-Level Delta-Complexity on 170 Repos"]
+    end
+
+    Phase1 --> Phase2 --> Phase3
+    Phase4 --> Phase5
+```
+
+### Detailed Pipeline Mechanics:
+1. **Local Deterministic Parsing (Phase 1):**  
+   Tree-sitter performs incremental AST parsing directly inside the VS Code language client. An AST visitor walks the function node to evaluate G. Ann Campbell's Cognitive Complexity rules, McCabe Cyclomatic Complexity, nesting depth, and parameter counts in $<20\text{ ms}$. In parallel, Semgrep OSS runs localized pattern-matching rules on the active buffer to identify dangerous sink invocations.
+2. **Standardized Security Mapping (Phase 2):**  
+   Flagged sinks are enriched with MITRE CWE identifiers, NIST NVD CVE historical references, CVSS v3.1 base score vectors, and OWASP categories.
+3. **Dual In-Editor Interface (Phase 3):**  
+   Results are rendered simultaneously via native VS Code Diagnostics (squigglies/hovers) and a CodeLens header badge above the function. Clicking opens a rich Webview sidebar showing full telemetry and radar charts.
+4. **On-Demand LLM Generation & Mathematical Verification (Phase 4):**  
+   When the user triggers a refactor, the LLM generates a decomposed function diff. Before presenting the diff, the tool re-runs the Tree-sitter complexity calculator on the generated code to verify that $\Delta \text{Complexity} > 0$ and executes local syntax checks. For security alerts, the LLM generates a drop-in defensive guardrail patch.
+5. **Empirical Evaluation Pipeline (Phase 5):**  
+   Validation across official synthetic benchmarks and real-world repository commit histories.
+
+---
+
+## 4. Formal Research Questions (RQs) for Thesis Defense
 
 * **RQ1 (Complexity Reduction & Metric Fidelity):**  
   * *How accurately does our localized Tree-sitter AST parser compute Cognitive and Cyclomatic Complexity compared to server-side enterprise analyzers (SonarQube, Radon)?*  
@@ -128,7 +239,7 @@ flowchart TD
 
 ---
 
-## 4. Benchmark Datasets & Testing Pipeline
+## 5. Benchmark Datasets & Testing Pipeline
 
 ```mermaid
 flowchart LR
@@ -154,13 +265,13 @@ flowchart LR
    * Run AgentShield on the same test cases.
    * Measure detection Recall and Precision across CWE-78, CWE-89, CWE-20, CWE-22, and CWE-862, cross-referencing against NVD CVE vulnerability records.
 2. **Commit-Level $\Delta\text{Complexity}$ Testing:**
-   * Sample historical refactoring and bug-fixing commits from [`dataset_5000_commits.csv`](file:///d:/4th-year/Senior-Project/dataset_5000_commits.csv) and [`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/Repos_Final_Sample.csv).
+   * Sample historical refactoring and bug-fixing commits from [`dataset_5000_commits.csv`](file:///d:/4th-year/Senior-Project/04_commit_classification/data/dataset_5000_commits.csv) and [`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/02_repo_sampling/data/Repos_Final_Sample.csv).
    * Compute human before-and-after complexity changes.
    * Run our tool on the pre-commit code and compare the tool's suggested refactoring against the human developer's actual commit.
 
 ---
 
-## 5. Implementation Roadmap & Milestones
+## 6. Implementation Roadmap & Milestones
 
 | Phase | Milestone Description | Key Technical Deliverables | Timeline |
 | :---: | :--- | :--- | :---: |
@@ -171,7 +282,7 @@ flowchart LR
 
 ---
 
-## 6. TL;DR Summary: The Project at a Glance
+## 7. TL;DR Summary: The Project at a Glance
 
 ```mermaid
 flowchart TD
@@ -187,8 +298,8 @@ flowchart TD
     end
 
     subgraph TheMetrics ["Metrics & Standards"]
-        M1["Complexity: Cognitive Complexity, Cyclomatic Complexity, LOC, Delta-Complexity"]
-        M2["Security: MITRE CWE Top 25, NIST NVD (CVE & CVSS v3.1), OWASP Top 10, OWASP LLM 2025"]
+        M1["Complexity: Cognitive Complexity, Cyclomatic Complexity, LOC, LCOM, Delta-Complexity"]
+        M2["Security: MITRE CWE Top 25 (1-25), NIST NVD (CVE & CVSS v3.1, CPE), OWASP Top 10 (A01-A10), OWASP LLM (LLM01-LLM10)"]
     end
 
     subgraph TheEvaluation ["Evaluation Datasets"]
@@ -204,7 +315,7 @@ flowchart TD
 * **The Product:** A single, lightweight VS Code extension giving developers instant function-level telemetry on **Code Quality (Cognitive Complexity)** and **Security (CWE / NVD Flaws)** while they code.
 * **The Two Pillars:**
   1. **ComplexityLens:** Computes Cognitive Complexity, Cyclomatic Complexity, and LOC in $<20\text{ ms}$. If a function is too complex, the LLM refactors it and **mathematically proves that $\Delta\text{Complexity} > 0$**.
-  2. **AgentShield:** Detects security flaws mapped to **MITRE CWE Top 25**, **NIST NVD (CVE & CVSS v3.1)**, **OWASP Top 10**, and **OWASP Top 10 for LLMs**. The LLM explains the attack vector and **generates 1-click defensive guardrail patches**.
+  2. **AgentShield:** Detects security flaws mapped to **MITRE CWE Top 25 (CWE-1 through CWE-25)**, **NIST NVD (CVE & CVSS v3.1, CPE)**, **OWASP Top 10 (A01–A10)**, and **OWASP Top 10 for LLMs (LLM01–LLM10)**. The LLM explains the attack vector and **generates 1-click defensive guardrail patches**.
 * **Why We Beat Competitors:**
   * **vs. SonarQube:** Runs on-demand at the function level inside the editor with zero server CI build delays.
   * **vs. SonarLint:** Actively synthesizes structural refactorings with a proven drop in Cognitive Complexity, rather than just showing passive squigglies.
@@ -216,4 +327,4 @@ flowchart TD
 * **How We Test & Validate (Thesis Defense):**
   * **Complexity Accuracy:** Tested against **CodeComplex** and **Qualitas Corpus**.
   * **Security Accuracy:** Tested against **Juliet Test Suite v1.3**, **OWASP Benchmark v1.2**, and **NIST NVD CVEFixes**.
-  * **Real-World Impact:** Evaluated on historical commits from our **170 curated open-source repositories** ([`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/Repos_Final_Sample.csv)) to measure human $\Delta\text{Complexity}$ vs. our tool's automated $\Delta\text{Complexity}$ reduction.
+  * **Real-World Impact:** Evaluated on historical commits from our **170 curated open-source repositories** ([`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/02_repo_sampling/data/Repos_Final_Sample.csv)) to measure human $\Delta\text{Complexity}$ vs. our tool's automated $\Delta\text{Complexity}$ reduction.
