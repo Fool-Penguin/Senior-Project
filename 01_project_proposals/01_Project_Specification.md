@@ -66,7 +66,7 @@ flowchart TD
         UI1 & UI2 -->|"Click 'Apply Verified Refactor'"| LLM1["Intelligent Refactoring: Decomposes function & proves Delta-Complexity > 0"]
         UI1 & UI2 -->|"Click 'Explain Vulnerability'"| LLM2["Security Explainer: Plain-English attack scenario + NVD/CWE context"]
         UI1 & UI2 -->|"Click 'Inject Security Guardrail'"| LLM3["Defensive Guardrail Patch: Pydantic schemas, validation, safe sinks"]
-
+    end
 ```
 
 Note: Dual In-Editor UI provides 2 complementary ways to present diagnostics (Native Hover/QuickFix vs. CodeLens & Webview Side Panel); we will evaluate both and select the ideal UX during testing.
