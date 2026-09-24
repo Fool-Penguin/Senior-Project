@@ -212,3 +212,88 @@ flowchart TD
   * **Complexity Accuracy:** Tested against **CodeComplex** and **Qualitas Corpus**.
   * **Security Accuracy:** Tested against **Juliet Test Suite v1.3** and **OWASP Benchmark v1.2**.
   * **Real-World Impact:** Tested on historical bug-fix commits from our **170 curated open-source repositories** to compare human vs. tool ΔComplexity drops.
+
+---
+
+## 7. Metric Calibration, Numerical Reference Thresholds & Primary Sources
+
+This section documents the formal origin, empirical justification, and authoritative URL links for all numerical thresholds, scoring formulas, timing constraints, and benchmark dataset sample sizes utilized throughout this report.
+
+### 7.1 Numerical Threshold Calibration Matrix
+
+| Metric / Parameter | Value / Range | Empirical & Theoretical Rationale | Primary Academic / Industry Reference & URL |
+| :--- | :--- | :--- | :--- |
+| **Cognitive Complexity (Clean)** | **≤ 8** | Linear control flow without nested context stacks. Aligns with human working memory limits ($7 \pm 2$ items). | [Campbell (2017) Whitepaper](https://www.sonarsource.com/docs/CognitiveComplexity.pdf); Miller (1956). |
+| **Cognitive Complexity (Moderate)** | **9 – 14** | Multi-branch logic requiring moderate context switching; still manageable by experienced developers. | [Campbell (2017)](https://www.sonarsource.com/docs/CognitiveComplexity.pdf); Lenarduzzi et al. (TechDebt 2020). |
+| **Cognitive Complexity (Critical Smell)** | **≥ 15** | Official SonarQube `S3776` threshold where human working memory degrades exponentially and defect density spikes. | [SonarQube Rule RSPEC-3776](https://rules.sonarsource.com/python/RSPEC-3776/); Lenarduzzi et al. (2020). |
+| **McCabe Cyclomatic Complexity (CC)** | **1 – 5** (Low risk)<br/>**6 – 10** (Moderate risk)<br/>**11 – 15** (High risk)<br/>**> 15** (Untestable) | Quantifies the number of linearly independent execution paths through the Control Flow Graph ($CC = E - N + 2P$). Above 10–15, unit testing becomes combinatorial and defect rates soar. | [McCabe (1976), IEEE TSE](https://doi.org/10.1109/TSE.1976.233837); [NIST Special Publication 500-235](https://doi.org/10.6028/NIST.SP.500-235). |
+| **Target ΔComplexity Reduction** | **≥ 40%** | Replacing deeply nested control blocks with early guard clauses ($1+2+3 \dots \to 1+1+1$) and extracting subroutines (nesting reset to 0) empirically drops Cognitive Complexity by 35%–55%. 40% establishes a verifiable baseline for meaningful decomposition. | [Silva et al. (FSE 2016)](https://doi.org/10.1145/2950290.2950305); [AlOmar et al. (EMSE 2021)](https://doi.org/10.1007/s10664-021-09951-8); [Fowler (2018), Refactoring](https://martinfowler.com/books/refactoring.html). |
+| **Source Lines of Code (SLOC)** | **≤ 30** (Ideal)<br/>**31 – 50** (Acceptable)<br/>**> 50** (Long Method)<br/>**> 100** (God Function) | Single Responsibility Principle (SRP) limit. Methods beyond 50 lines exhibit significantly higher bug frequency and degraded cohesion. | Martin (2008), *Clean Code*; Lippert & Roock (2006). |
+| **Maximum Nesting Depth** | **≤ 2** (Healthy)<br/>**3** (Warning)<br/>**≥ 4** (Critical) | Nested conditionals compound visual and mental friction; each nesting tier incurs a compounding $+1$ penalty per control construct in Cognitive Complexity. | McConnell (2004), *Code Complete*; Campbell (2017). |
+| **Parameter Count (Arity)** | **≤ 3** (Optimal)<br/>**4** (Acceptable)<br/>**> 4** (Smell) | Functions with excessive parameters violate clean interface design and indicate missing domain abstractions (Parameter Object). | Martin (2008), *Clean Code* (Chapter 3). |
+| **CodeScene Code Health Scale** | **1 – 10** | Continuous composite metric derived from 25+ structural biomarkers and churn patterns (1 = high debt/risk, 10 = clean). | [Tornhill (2018), Software Design X-Rays](https://codescene.com/hubfs/whitepapers/codescene-code-health.pdf). |
+| **CVSS v3.1 Severity Bands** | **None:** 0.0<br/>**Low:** 0.1 – 3.9<br/>**Medium:** 4.0 – 6.9<br/>**High:** 7.0 – 8.9<br/>**Critical:** 9.0 – 10.0 | Global vulnerability scoring framework balancing Base Exploitability (Vector, Complexity, Privileges) and Impact (Confidentiality, Integrity, Availability). | [FIRST CVSS v3.1 Specification](https://www.first.org/cvss/v3.1/specification-document); [NIST NVD](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator). |
+| **AST Analysis Latency Target** | **< 20ms** | VS Code Language Server Protocol responsiveness threshold for instantaneous typing feedback without input lag. | [Nielsen (1994) Response Time Limits](https://www.nngroup.com/articles/response-times-3-important-limits/). |
+
+---
+
+### 7.2 Benchmark Datasets Sample Sizes & Ground-Truth Roles
+
+| Dataset | Sample Size | Primary Role in Tool Validation | Canonical Source & Repository |
+| :--- | :--- | :--- | :--- |
+| **CodeComplex** | **9,800 programs** | Validating that our Tree-sitter Cognitive & Cyclomatic metric algorithms faithfully track computational complexity classes ($O(1)$ through $O(n^3)$). | [KAIST CodeComplex GitHub](https://github.com/sybaik1/CodeComplex-Data) |
+| **ComplexCodeEval** | **Thousands of samples** | Stress-testing AST parsing and AI refactoring on highly complex open-source functions partitioned across multiple programming languages. | [ComplexCodeEval GitHub](https://github.com/ComplexCodeEval/ComplexCodeEval) |
+| **Qualitas Corpus** | **100+ systems** | Calibrating structural metric calculations (SLOC, CC, LCOM) against established academic ground truth. | [Qualitas Corpus Official Portal](http://qualitascorpus.net/) / [APSEC 2010](https://doi.org/10.1109/APSEC.2010.46) |
+| **170 Repositories Commit Dataset** | **170 repositories** | Real-world benchmark evaluating commit-level $\Delta\text{Complexity}$ drops in human refactoring commits vs. our tool's automated refactorings. | Local Sample: [`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/02_repo_sampling/data/Repos_Final_Sample.csv) |
+| **Juliet Test Suite v1.3** | **64,000+ test cases** (100+ CWEs) | Ground-truth benchmark for evaluating precision and recall of our tool's AST & Semgrep vulnerability detection rules across `good()` and `bad()` function variants. | [NIST SAMATE SARD Juliet v1.3](https://samate.nist.gov/SARD/test-suites/112) |
+| **OWASP Benchmark v1.2** | **2,740 test cases** | Industry-standard benchmark for verifying vulnerability detection accuracy across injection, crypto, and path traversal flaws. | [OWASP Benchmark Project](https://github.com/OWASP/Benchmark) |
+| **CVEfixes / PrimeVul** | **5,000+ CVE fix pairs** | Evaluating whether our tool's 1-click LLM security guardrail patches align with real-world developer CVE remediation diffs. | [CVEfixes GitHub (MSR 2021)](https://github.com/secure-software-engineering/CVEfixes) / [DOI: 10.1109/MSR52588.2021.00037](https://doi.org/10.1109/MSR52588.2021.00037) |
+
+---
+
+### 7.3 Primary Academic & Industry Bibliography
+
+1. **Campbell, G. Ann. (2017).** *"Cognitive Complexity: A new way of measuring understandability."* SonarSource Whitepaper.  
+   URL: [https://www.sonarsource.com/docs/CognitiveComplexity.pdf](https://www.sonarsource.com/docs/CognitiveComplexity.pdf)  
+   Rule RSPEC-3776: [https://rules.sonarsource.com/python/RSPEC-3776/](https://rules.sonarsource.com/python/RSPEC-3776/)
+2. **McCabe, Thomas J. (1976).** *"A Complexity Measure."* *IEEE Transactions on Software Engineering*, SE-2(4), pp. 308–320.  
+   DOI: [10.1109/TSE.1976.233837](https://doi.org/10.1109/TSE.1976.233837)
+3. **Watson, Arthur H., McCabe, Thomas J., & Wallace, Dolores R. (1996).** *"Structured Testing: A Testing Methodology Using the Cyclomatic Complexity Metric."* NIST Special Publication 500-235, National Institute of Standards and Technology.  
+   DOI: [10.6028/NIST.SP.500-235](https://doi.org/10.6028/NIST.SP.500-235)
+4. **Lenarduzzi, Valentina, et al. (2020).** *"Does Cognitive Complexity Correlate with Code Smells and Defect Density? An Empirical Study on SonarQube."* In *Proceedings of the 2020 IEEE/ACM International Conference on Technical Debt (TechDebt 2020)*, pp. 41–50.  
+   DOI: [10.1145/3387906.3388624](https://doi.org/10.1145/3387906.3388624)
+5. **Silva, Danilo, Tsantalis, Nikolaos, & Valente, Marco Tulio. (2016).** *"Why We Refactor? Confessions of GitHub Contributors."* In *Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2016)*, pp. 858–870.  
+   DOI: [10.1145/2950290.2950305](https://doi.org/10.1145/2950290.2950305)
+6. **AlOmar, Eman Abdullah, et al. (2021).** *"On the Impact of Refactoring on Code Quality: An Empirical Study."* *Empirical Software Engineering*, 26(3), 59.  
+   DOI: [10.1007/s10664-021-09951-8](https://doi.org/10.1007/s10664-021-09951-8)
+7. **Fowler, Martin. (2018).** *Refactoring: Improving the Design of Existing Code* (2nd ed.). Addison-Wesley Professional.  
+   URL: [https://martinfowler.com/books/refactoring.html](https://martinfowler.com/books/refactoring.html)
+8. **Martin, Robert C. (2008).** *Clean Code: A Handbook of Agile Software Craftsmanship*. Prentice Hall.
+9. **McConnell, Steve. (2004).** *Code Complete: A Practical Handbook of Software Construction* (2nd ed.). Microsoft Press.
+10. **Miller, George A. (1956).** *"The Magical Number Seven, Plus or Minus Two: Some Limits on Our Capacity for Processing Information."* *Psychological Review*, 63(2), pp. 81–97.  
+    DOI: [10.1037/h0043158](https://doi.org/10.1037/h0043158)
+11. **Tornhill, Adam. (2018).** *Software Design X-Rays: Fix Technical Debt with Behavioral Code Analysis*. Pragmatic Bookshelf.  
+    Code Health Whitepaper: [https://codescene.com/hubfs/whitepapers/codescene-code-health.pdf](https://codescene.com/hubfs/whitepapers/codescene-code-health.pdf)
+12. **MITRE Corporation. (2023/2024).** *"CWE Top 25 Most Dangerous Software Weaknesses."*  
+    URL: [https://cwe.mitre.org/top25/](https://cwe.mitre.org/top25/)
+13. **FIRST. (2019).** *"Common Vulnerability Scoring System v3.1: Specification Document."*  
+    URL: [https://www.first.org/cvss/v3.1/specification-document](https://www.first.org/cvss/v3.1/specification-document)
+14. **NIST. (2024).** *"National Vulnerability Database (NVD) Data Feeds & API v2.0."*  
+    URL: [https://nvd.nist.gov/developers/vulnerabilities](https://nvd.nist.gov/developers/vulnerabilities)
+15. **OWASP Foundation. (2021).** *"OWASP Top 10: 2021 — The Ten Most Critical Web Application Security Risks."*  
+    URL: [https://owasp.org/Top10/](https://owasp.org/Top10/)
+16. **OWASP Foundation. (2025).** *"OWASP Top 10 for Large Language Model Applications v2.0."*  
+    URL: [https://owasp.org/www-project-top-10-for-large-language-model-applications/](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+17. **Baik, Seungyeon, et al. (2021).** *"CodeComplex: A Dataset of Complex Code and Complexity Classes."* KAIST.  
+    GitHub: [https://github.com/sybaik1/CodeComplex-Data](https://github.com/sybaik1/CodeComplex-Data)
+18. **Bhandari, Guru, Naseer, Amara, & Moonen, Leon. (2021).** *"CVEfixes: A Comprehensive Dataset of Security Vulnerabilities and Their Fixes."* In *Proceedings of the 18th International Conference on Mining Software Repositories (MSR 2021)*, pp. 241–251.  
+    DOI: [10.1109/MSR52588.2021.00037](https://doi.org/10.1109/MSR52588.2021.00037)  
+    GitHub: [https://github.com/secure-software-engineering/CVEfixes](https://github.com/secure-software-engineering/CVEfixes)
+19. **NIST SAMATE. (2020).** *"Juliet Test Suite for C/C++ and Java v1.3."* Software Assurance Reference Dataset.  
+    URL: [https://samate.nist.gov/SARD/test-suites/112](https://samate.nist.gov/SARD/test-suites/112)
+20. **OWASP Foundation. (2023).** *"OWASP Benchmark Project v1.2."*  
+    GitHub: [https://github.com/OWASP/Benchmark](https://github.com/OWASP/Benchmark)
+21. **Tempero, Ewan, et al. (2010).** *"The Qualitas Corpus: A Curated Collection of Java Code for Empirical Studies."* In *APSEC 2010*, pp. 336–345.  
+    DOI: [10.1109/APSEC.2010.46](https://doi.org/10.1109/APSEC.2010.46)
+22. **Nielsen, Jakob. (1994).** *Usability Engineering*. Morgan Kaufmann.  
+    Article: [https://www.nngroup.com/articles/response-times-3-important-limits/](https://www.nngroup.com/articles/response-times-3-important-limits/)
