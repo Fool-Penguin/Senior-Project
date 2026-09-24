@@ -10,7 +10,7 @@
 
 | Tool | Core Approach | Metrics Measured | Limitations & Weaknesses | How We Beat Them (Our Advantage) |
 | :--- | :--- | :--- | :--- | :--- |
-| **SonarQube / SonarLint** (SonarSource) | Java-based AST rule engine + Static taint analysis | - Cognitive Complexity<br/>- Cyclomatic Complexity (CC)<br/>- Lines of Code (LOC)<br/>- Code Smells<br/>- Technical Debt (time) | - SonarQube is a slow, heavyweight server CI scan.<br/>- SonarLint is passive (only shows squigglies, no on-demand function testing).<br/>- No automated refactoring that guarantees a complexity reduction. | **On-Demand & Verified Refactor:** Instant function-level lens; mathematically guarantees that the recommended refactor drops Cognitive Complexity ($\Delta\text{Complexity} > 0$). |
+| **SonarQube / SonarLint** (SonarSource) | Java-based AST rule engine + Static taint analysis | - Cognitive Complexity<br/>- Cyclomatic Complexity (CC)<br/>- Lines of Code (LOC)<br/>- Code Smells<br/>- Technical Debt (time) | - SonarQube is a slow, heavyweight server CI scan.<br/>- SonarLint is passive (only shows squigglies, no on-demand function testing).<br/>- No automated refactoring that guarantees a complexity reduction. | **On-Demand & Verified Refactor:** Instant function-level lens; mathematically guarantees that the recommended refactor drops Cognitive Complexity (ΔComplexity > 0). |
 | **CodeScene** | Behavioral code analysis (Git history + AST biomarkers) | - Code Health (1–10)<br/>- Biomarkers (Brain Method, God Class)<br/>- Code Churn<br/>- Developer Congestion | - Enterprise SaaS only (closed-source, expensive).<br/>- Post-hoc analysis (requires Git history); cannot analyze new code while a developer is actively writing a function. | **Real-Time Pre-Commit Feedback:** Functions analyzed instantly in-editor via local Tree-sitter AST, without needing prior Git history. |
 | **Radon / complexipy / Lizard** | Standalone CLI parsers (Python/Rust) | - Radon: Cyclomatic Complexity (A–F), Halstead<br/>- complexipy: Cognitive Complexity<br/>- Lizard: CCN, LOC, Token count | - Terminal output only; zero IDE interactivity.<br/>- No semantic reasoning.<br/>- Cannot suggest or apply automated refactoring. | **Rich IDE Experience + LLM Refactoring:** Embeds fast AST parsing directly into VS Code with interactive autofix and contextual explanation. |
 | **CodeClimate / Codacy** | Cloud CI containerized linters | - Maintainability Grade (A–F)<br/>- Duplication %<br/>- Churn | - Slow feedback loop (runs only after push/PR).<br/>- Superficial heuristic grading. | **Zero-Latency In-IDE Feedback:** Developers inspect and refactor functions before committing or opening PRs. |
@@ -45,13 +45,13 @@ flowchart TD
 
 1. **Cognitive Complexity (G. Ann Campbell Specification):**  
    Measures the mental effort required to understand code by penalizing nested structures (`if`, `for`, `while`, `catch`), ternary operators, and logical operator sequences.
-2. **Cyclomatic Complexity (McCabe $CC = E - N + 2P$):**  
+2. **Cyclomatic Complexity (McCabe CC = E - N + 2P):**  
    Measures the number of linearly independent paths through the control flow graph.
 3. **Source Lines of Code (SLOC) & Nesting Depth:**  
-   Identifies oversized methods ($>50$ lines), parameter bloat ($>4$ arguments), and deep indentation ($>3$ levels).
-4. **$\Delta \text{Complexity}$ Guarantee (Our Core Novelty):**  
+   Identifies oversized methods (> 50 lines), parameter bloat (> 4 arguments), and deep indentation (> 3 levels).
+4. **ΔComplexity Guarantee (Our Core Novelty):**  
    Every AI-generated refactoring must satisfy:
-   $$\Delta \text{Complexity} = \text{Cognitive}_{\text{before}} - \text{Cognitive}_{\text{after}} > 0$$
+   `ΔComplexity = Cognitive_before - Cognitive_after > 0`
    proving mathematically that the refactoring reduced cognitive load.
 
 ---
@@ -105,7 +105,7 @@ flowchart TD
 #### D. NIST NVD (National Vulnerability Database) Integration
 * **CVE to CWE Mapping:** Maps detected function weaknesses to historical real-world CVE records in the NVD data feed, giving developers concrete examples of past exploits.
 * **CVSS v3.1 Severity Scoring:** Computes and displays official CVSS metrics:
-  - **Base Score ($0.0 - 10.0$):** Categorized into Critical ($9.0 - 10.0$), High ($7.0 - 8.9$), Medium ($4.0 - 6.9$), and Low ($0.1 - 3.9$).
+  - **Base Score (0.0 – 10.0):** Categorized into Critical (9.0 – 10.0), High (7.0 – 8.9), Medium (4.0 – 6.9), and Low (0.1 – 3.9).
   - **Vector Metrics:** Evaluates Attack Vector (AV), Attack Complexity (AC), and Privileges Required (PR).
 * **NVD Advisory URLs:** Provides direct clickable links to official NIST NVD vulnerability records (`https://nvd.nist.gov/vuln/detail/CVE-...`).
 * **CPE Package Cross-Referencing:** Matches function imports against NVD's Common Platform Enumeration (CPE) to flag known vulnerable or outdated library dependencies.
@@ -151,10 +151,10 @@ flowchart LR
 
 | Dataset | Source | Size & Language | Primary Focus | Senior Project Application |
 | :--- | :--- | :--- | :--- | :--- |
-| **CodeComplex** | KAIST (`sybaik1/CodeComplex-Data`) | 9,800 programs (Python & Java) | Computational & control-flow complexity classes ($O(1)$ to $O(n^3)$). | Benchmark how our tool's complexity metrics correlate with algorithmic structure. |
+| **CodeComplex** | KAIST (`sybaik1/CodeComplex-Data`) | 9,800 programs (Python & Java) | Computational & control-flow complexity classes (O(1) to O(n^3)). | Benchmark how our tool's complexity metrics correlate with algorithmic structure. |
 | **ComplexCodeEval** | Academic Benchmark (`ComplexCodeEval/ComplexCodeEval`) | Thousands of samples from high-star GitHub repos | Complex real-world functions partitioned by time. | Test tool accuracy in identifying messy, unmaintainable code patterns. |
 | **Qualitas Corpus / SourceMeter** | Academic SE Community | 100+ open-source systems | Precomputed object-oriented and structural metrics (CC, LOC, LCOM). | **Ground-Truth Calibration:** Verify that our Tree-sitter AST parser computes identical CC and LOC to official academic baselines. |
-| **170 Repos Commit History** | [`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/Repos_Final_Sample.csv) | 170 active repos, tens of thousands of functions | Real-world historical bug-fix and refactor commits. | **Commit-Level Evaluation:** Measure human $\Delta\text{Complexity}$ before vs. after commits and compare against our tool's automated refactorings. |
+| **170 Repos Commit History** | [`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/02_repo_sampling/data/Repos_Final_Sample.csv) | 170 active repos, tens of thousands of functions | Real-world historical bug-fix and refactor commits. | **Commit-Level Evaluation:** Measure human ΔComplexity before vs. after commits and compare against our tool's automated refactorings. |
 
 ---
 
@@ -200,7 +200,7 @@ flowchart TD
 ### Executive TL;DR Bullet Points:
 * **The Core Goal:** An interactive VS Code extension that gives developers instant function-level feedback on **Code Quality (Cognitive Complexity)** and **Security (CWE Flaws)** with one-click automated fixes.
 * **The 2 Core Pillars:**
-  1. **ComplexityLens:** Calculates Cognitive Complexity, Cyclomatic Complexity, and LOC in $<20\text{ ms}$. If complex, the LLM refactors the function and **mathematically proves that $\Delta\text{Complexity} > 0$**.
+  1. **ComplexityLens:** Calculates Cognitive Complexity, Cyclomatic Complexity, and LOC in < 20ms. If complex, the LLM refactors the function and **mathematically proves that ΔComplexity > 0**.
   2. **AgentShield:** Detects critical security flaws mapped to **MITRE CWE Top 25**, **NIST NVD (CVE & CVSS v3.1)**, **OWASP Top 10**, and **OWASP Top 10 for LLMs**. The LLM explains the exploit vector and **injects drop-in defensive guardrail code**.
 * **How We Overcome Competitors:**
   * Unlike **SonarQube**, our tool runs on-demand at the function level inside the editor with zero server CI latency.
@@ -211,4 +211,4 @@ flowchart TD
 * **How We Test & Validate:**
   * **Complexity Accuracy:** Tested against **CodeComplex** and **Qualitas Corpus**.
   * **Security Accuracy:** Tested against **Juliet Test Suite v1.3** and **OWASP Benchmark v1.2**.
-  * **Real-World Impact:** Tested on historical bug-fix commits from our **170 curated open-source repositories** to compare human vs. tool $\Delta\text{Complexity}$ drops.
+  * **Real-World Impact:** Tested on historical bug-fix commits from our **170 curated open-source repositories** to compare human vs. tool ΔComplexity drops.
