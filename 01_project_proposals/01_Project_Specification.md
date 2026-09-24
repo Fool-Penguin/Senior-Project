@@ -66,8 +66,10 @@ flowchart TD
         UI1 & UI2 -->|"Click 'Apply Verified Refactor'"| LLM1["Intelligent Refactoring: Decomposes function & proves Delta-Complexity > 0"]
         UI1 & UI2 -->|"Click 'Explain Vulnerability'"| LLM2["Security Explainer: Plain-English attack scenario + NVD/CWE context"]
         UI1 & UI2 -->|"Click 'Inject Security Guardrail'"| LLM3["Defensive Guardrail Patch: Pydantic schemas, validation, safe sinks"]
-  Note: Dual In-Editor UI provides 2 complementary ways to present diagnostics (Native Hover/QuickFix vs. CodeLens & Webview Side Panel); we will evaluate both and select the ideal UX during testing.
+
 ```
+
+Note: Dual In-Editor UI provides 2 complementary ways to present diagnostics (Native Hover/QuickFix vs. CodeLens & Webview Side Panel); we will evaluate both and select the ideal UX during testing.
 ### Confirmed Design Choices:
 1. **Scope:** **Dual-Lens Assistant** combining Code Quality/Complexity (Cognitive Complexity, Cyclomatic Complexity, LOC) and Security Flaw Detection (MITRE CWE Top 25, NIST NVD CVEs, CVSS v3.1, OWASP Top 10, OWASP LLM) in a single unified VS Code extension.
 2. **Target Languages:** **Python** and **TypeScript / JavaScript** using multi-language **Tree-sitter** AST parsers (covering > 75% of our 170 curated open-source repositories).
