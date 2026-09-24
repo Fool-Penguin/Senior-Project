@@ -210,7 +210,7 @@ flowchart TD
     Phase1 --> Phase2 --> Phase3
     Phase4 --> Phase5
 ```
-
+![alt text](<LLM Security Vulnerability-2026-09-24-071106-1.png>)
 ### Detailed Pipeline Mechanics:
 1. **Local Deterministic Parsing (Phase 1):**  
    Tree-sitter performs incremental AST parsing directly inside the VS Code language client. An AST visitor walks the function node to evaluate G. Ann Campbell's Cognitive Complexity rules, McCabe Cyclomatic Complexity, nesting depth, and parameter counts in $<20\text{ ms}$. In parallel, Semgrep OSS runs localized pattern-matching rules on the active buffer to identify dangerous sink invocations.
