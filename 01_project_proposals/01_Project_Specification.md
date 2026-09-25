@@ -52,7 +52,7 @@ flowchart TD
         F1["Function Definition (Active Cursor)"]
     end
 
-    subgraph FastLocalEngine ["Fast Local Deterministic Engine (< 20ms, Zero API Cost)"]
+    subgraph FastLocalEngine ["Fast Local Deterministic Engine (Sub-Second, Zero API Cost)"]
         F1 -->|"Tree-sitter AST Walker"| Q1["Quality Lens: Cognitive Complexity, CC, LOC, LCOM"]
         F1 -->|"Semgrep OSS / Local Linters"| S1["Security Lens: CWE, NVD & OWASP Pattern Matching"]
     end
@@ -99,7 +99,7 @@ Every metric used by the quality engine is mathematically defined with clear int
 | **Parameter Count (Arity)** | Total number of formal parameters declared in the function signature. | • **≤ 3**: Optimal<br/>• **4**: Acceptable<br/>• **> 4**: Long Parameter List smell | High arity indicates excessive coupling; calls for Parameter Object refactoring. |
 | **Lack of Cohesion in Methods (LCOM-4)** | Number of connected components in an undirected graph where nodes are functions and edges represent shared instance variables. | • **LCOM = 1**: Cohesive<br/>• **LCOM > 1**: Low Cohesion (Split recommended) | Identifies methods that operate on disparate data fields and should be split into modular units. |
 | **Halstead Complexity Suite** | • Distinct Operators (`n1`), Distinct Operands (`n2`)<br/>• Total Operators (`N1`), Total Operands (`N2`)<br/>• Vocabulary: `n = n1 + n2`<br/>• Length: `N = N1 + N2`<br/>• Volume: `V = N * log2(n)`<br/>• Difficulty: `D = (n1 / 2) * (N2 / n2)`<br/>• Effort: `E = D * V` | • **High Volume** (`V > 1000`): Overly verbose logic.<br/>• **High Difficulty** (`D > 30`): Difficult to maintain. | Captures lexical size, operational difficulty, and cognitive mental effort required to implement the function. |
-| **ΔComplexity Guarantee (Core Novelty)** | `ΔComplexity = Cognitive_before - Cognitive_after`<br/><br/>`%ΔComplexity = ((Cognitive_before - Cognitive_after) / Cognitive_before) * 100%` | • **ΔComplexity > 0**: Verified Complexity Reduction<br/>• **Target**: ≥ 40% reduction on complex functions (Cognitive ≥ 15) | **Guaranteed Refactoring Quality:** Mathematically proves that the AI refactoring reduced structural and mental friction. |
+| **ΔComplexity Guarantee (Core Novelty)** | `ΔComplexity = Cognitive_before - Cognitive_after` | • **ΔComplexity > 0**: Verified Complexity Reduction (Guarantees cognitive burden decreased) | **Guaranteed Refactoring Quality:** Mathematically proves that the AI refactoring reduced structural and mental friction. |
 
 ---
 
@@ -183,7 +183,7 @@ The system operates across a 5-phase deterministic and generative pipeline:
 
 ```mermaid
 flowchart TD
-    subgraph Phase1 ["Phase 1: Local AST & Rule Extraction (< 20ms)"]
+    subgraph Phase1 ["Phase 1: Local AST & Rule Extraction (Sub-Second / In-Editor)"]
         P1A["Active File Buffer (Python / TS)"] --> P1B["Tree-sitter Incremental AST Parser"]
         P1B --> P1C["Cognitive Complexity Walker (Campbell Spec)"]
         P1B --> P1D["McCabe CC Calculator (CFG Edges/Nodes)"]
@@ -231,7 +231,7 @@ flowchart TD
 
 ### Detailed Pipeline Mechanics:
 1. **Local Deterministic Parsing (Phase 1):**  
-   Tree-sitter performs incremental AST parsing directly inside the VS Code language client. An AST visitor walks the function node to evaluate G. Ann Campbell's Cognitive Complexity rules, McCabe Cyclomatic Complexity, nesting depth, and parameter counts in < 20ms. In parallel, Semgrep OSS runs localized pattern-matching rules on the active buffer to identify dangerous sink invocations.
+   Tree-sitter performs incremental AST parsing directly inside the VS Code language client. An AST visitor walks the function node to evaluate G. Ann Campbell's Cognitive Complexity rules, McCabe Cyclomatic Complexity, nesting depth, and parameter counts instantaneously in real time. In parallel, Semgrep OSS runs localized pattern-matching rules on the active buffer to identify dangerous sink invocations.
 2. **Standardized Security Mapping (Phase 2):**  
    Flagged sinks are enriched with MITRE CWE identifiers, NIST NVD CVE historical references, CVSS v3.1 base score vectors, and OWASP categories.
 3. **Dual In-Editor Interface (Phase 3):**  
@@ -361,14 +361,14 @@ This section documents the formal origin, empirical justification, and authorita
 | **Cognitive Complexity (Moderate)** | **9 – 14** | Multi-branch logic requiring active tracing; maintainable but approaches human cognitive capacity limits. | Campbell (2017); Lenarduzzi et al. (2020) empirical smell analysis. |
 | **Cognitive Complexity (Critical)** | **≥ 15** | Exponential defect density inflection point; human working memory is overwhelmed by nested context stacks. Official SonarQube `S3776` threshold. | SonarQube Rule `S3776`; Campbell (2017); Lenarduzzi et al. (TechDebt 2020). |
 | **McCabe Cyclomatic Complexity (CC)** | **1 – 5** (Low)<br/>**6 – 10** (Moderate)<br/>**11 – 15** (High)<br/>**> 15** (Untestable) | Corresponds to the minimum number of independent basis test paths required for complete branch coverage. Systems above 10–15 exhibit severe defect escalation. | McCabe (1976), *IEEE TSE*; NIST Special Publication 500-235 (Structured Testing). |
-| **Target ΔComplexity Reduction** | **≥ 40%** | The combination of Guard Clauses (flattening nesting multipliers 1+2+3 → 1+1+1) and Extract Method (resetting nesting depth to 0) yields an average 35%–55% drop in Cognitive Complexity on monolithic methods. | Fowler (2018), *Refactoring*; Silva et al. (FSE 2016); AlOmar et al. (EMSE 2021). |
+| **ΔComplexity Reduction Guarantee** | **ΔComplexity > 0** | Mathematically guarantees that the refactored code has lower cognitive complexity than the original code. Decomposing nested blocks with guard clauses and extracting methods directly flattens mental friction. | Fowler (2018), *Refactoring*; Silva et al. (FSE 2016); AlOmar et al. (EMSE 2021). |
 | **Source Lines of Code (SLOC)** | **≤ 30** (Ideal)<br/>**31 – 50** (Acceptable)<br/>**> 50** (Long Method)<br/>**> 100** (God Function) | Single Responsibility Principle enforcement; methods beyond 30–50 executable lines correlate strongly with defect density and low cohesion. | Martin (2008), *Clean Code*; Lippert & Roock (2006), *Refactoring in Large Software Projects*. |
 | **Maximum Nesting Depth** | **≤ 2** (Healthy)<br/>**3** (Warning)<br/>**≥ 4** (Critical) | Deep nesting causes exponential visual and cognitive friction; each extra indentation level multiplies Campbell's cognitive penalty. | McConnell (2004), *Code Complete* (Chapter 19: General Control Issues); Campbell (2017). |
 | **Parameter Count (Arity)** | **≤ 3** (Optimal)<br/>**4** (Acceptable)<br/>**> 4** (Smell) | High arity indicates excessive coupling and missing abstraction; warrants Parameter Object refactoring. | Martin (2008), *Clean Code* (Chapter 3: Function Arguments). |
 | **Lack of Cohesion (LCOM-4)** | **LCOM = 1** (Cohesive)<br/>**LCOM > 1** (Split Target) | Measures connected components of method-variable access graphs; components > 1 represent disjoint responsibilities. | Hitz & Montazeri (1995); Chidamber & Kemerer (1994), *IEEE TSE*. |
 | **Halstead Complexity** | **V > 1000** (Verbose)<br/>**D > 30** (High Difficulty) | Software science metrics measuring distinct operators/operands, vocabulary, volume, and cognitive implementation effort. | Halstead (1977), *Elements of Software Science*. |
 | **NVD CVSS v3.1 Severity** | **None:** 0.0<br/>**Low:** 0.1 – 3.9<br/>**Medium:** 4.0 – 6.9<br/>**High:** 7.0 – 8.9<br/>**Critical:** 9.0 – 10.0 | Standardized international vulnerability scoring based on exploitability metrics (Attack Vector, Complexity, Privileges) and impact metrics (C/I/A). | FIRST (2019), CVSS v3.1 Specification; NIST Special Publication 800-115. |
-| **Analysis Latency Target** | **< 20ms** | Human perceptual threshold for instantaneous in-editor interaction (sub-50ms feels instantaneous in VS Code typing buffers). | Nielsen (1994), *Usability Engineering*; Microsoft VS Code Language Server Protocol Performance Guidelines. |
+| **Analysis Latency Target** | **Sub-Second (Real-Time)** | Immediate feedback inside the active editor buffer without waiting for remote CI/CD pipeline builds. | Nielsen (1994), *Usability Engineering*; Microsoft VS Code Language Server Protocol Performance Guidelines. |
 
 ---
 

@@ -43,7 +43,7 @@ flowchart TD
         M5["Interface Design: Parameter Count / Arity (Threshold: <= 3 optimal, > 4 smell)"]
         M6["Object-Oriented Cohesion: LCOM-4 (Threshold: 1 cohesive, > 1 split candidate)"]
         M7["Halstead Complexity Suite: Lexical Volume (V > 1000) & Implementation Difficulty (D > 30)"]
-        M8["Delta-Complexity Guarantee: Proves Cognitive_before - Cognitive_after > 0 (Target >= 40%)"]
+        M8["Delta-Complexity Guarantee: Proves Cognitive_before - Cognitive_after > 0 (Verified Complexity Reduction)"]
     end
 ```
 
@@ -58,7 +58,7 @@ Every metric used by the quality engine is mathematically defined with clear int
 | **Parameter Count (Arity)** | Total number of formal parameters declared in the function signature. | • **≤ 3**: Optimal<br/>• **4**: Acceptable<br/>• **> 4**: Long Parameter List smell | High arity indicates excessive coupling; calls for Parameter Object refactoring. |
 | **Lack of Cohesion in Methods (LCOM-4)** | Number of connected components in an undirected graph where nodes are functions and edges represent shared instance variables. | • **LCOM = 1**: Cohesive<br/>• **LCOM > 1**: Low Cohesion (Split recommended) | Identifies methods that operate on disparate data fields and should be split into modular units. |
 | **Halstead Complexity Suite** | • Distinct Operators (`n1`), Distinct Operands (`n2`)<br/>• Total Operators (`N1`), Total Operands (`N2`)<br/>• Vocabulary: `n = n1 + n2`<br/>• Length: `N = N1 + N2`<br/>• Volume: `V = N * log2(n)`<br/>• Difficulty: `D = (n1 / 2) * (N2 / n2)`<br/>• Effort: `E = D * V` | • **High Volume** (`V > 1000`): Overly verbose logic.<br/>• **High Difficulty** (`D > 30`): Difficult to maintain. | Captures lexical size, operational difficulty, and cognitive mental effort required to implement the function. |
-| **ΔComplexity Guarantee (Core Novelty)** | `ΔComplexity = Cognitive_before - Cognitive_after`<br/><br/>`%ΔComplexity = ((Cognitive_before - Cognitive_after) / Cognitive_before) * 100%` | • **ΔComplexity > 0**: Verified Complexity Reduction<br/>• **Target**: ≥ 40% reduction on complex functions (Cognitive ≥ 15) | **Guaranteed Refactoring Quality:** Mathematically proves that the AI refactoring reduced structural and mental friction. |
+| **ΔComplexity Guarantee (Core Novelty)** | `ΔComplexity = Cognitive_before - Cognitive_after` | • **ΔComplexity > 0**: Verified Complexity Reduction (Guarantees cognitive burden decreased) | **Guaranteed Refactoring Quality:** Mathematically proves that the AI refactoring reduced structural and mental friction. |
 
 ---
 
@@ -235,7 +235,7 @@ flowchart TD
 ### Executive TL;DR Bullet Points:
 * **The Core Goal:** An interactive VS Code extension that gives developers instant function-level feedback on **Code Quality (Cognitive Complexity)** and **Security (CWE Flaws)** with one-click automated fixes.
 * **The 2 Core Pillars:**
-  1. **ComplexityLens:** Calculates Cognitive Complexity, Cyclomatic Complexity, and LOC in < 20ms. If complex, the LLM refactors the function and **mathematically proves that ΔComplexity > 0**.
+  1. **ComplexityLens:** Calculates Cognitive Complexity, Cyclomatic Complexity, and LOC in real time while typing. If complex, the LLM refactors the function and **mathematically proves that ΔComplexity > 0**.
   2. **AgentShield:** Detects critical security flaws mapped to **MITRE CWE Top 25**, **NIST NVD (CVE & CVSS v3.1)**, **OWASP Top 10**, and **OWASP Top 10 for LLMs**. The LLM explains the exploit vector and **injects drop-in defensive guardrail code**.
 * **How We Overcome Competitors:**
   * Unlike **SonarQube**, our tool runs on-demand at the function level inside the editor with zero server CI latency.
@@ -262,13 +262,13 @@ This section documents the formal origin, empirical justification, and authorita
 | **Cognitive Complexity (Moderate)** | **9 – 14** | Multi-branch logic requiring moderate context switching; still manageable by experienced developers. | [Campbell (2017)](https://www.sonarsource.com/docs/CognitiveComplexity.pdf); Lenarduzzi et al. (TechDebt 2020). |
 | **Cognitive Complexity (Critical Smell)** | **≥ 15** | Official SonarQube `S3776` threshold where human working memory degrades exponentially and defect density spikes. | [SonarQube Rule RSPEC-3776](https://rules.sonarsource.com/python/RSPEC-3776/); Lenarduzzi et al. (2020). |
 | **McCabe Cyclomatic Complexity (CC)** | **1 – 5** (Low risk)<br/>**6 – 10** (Moderate risk)<br/>**11 – 15** (High risk)<br/>**> 15** (Untestable) | Quantifies the number of linearly independent execution paths through the Control Flow Graph ($CC = E - N + 2P$). Above 10–15, unit testing becomes combinatorial and defect rates soar. | [McCabe (1976), IEEE TSE](https://doi.org/10.1109/TSE.1976.233837); [NIST Special Publication 500-235](https://doi.org/10.6028/NIST.SP.500-235). |
-| **Target ΔComplexity Reduction** | **≥ 40%** | Replacing deeply nested control blocks with early guard clauses ($1+2+3 \dots \to 1+1+1$) and extracting subroutines (nesting reset to 0) empirically drops Cognitive Complexity by 35%–55%. 40% establishes a verifiable baseline for meaningful decomposition. | [Silva et al. (FSE 2016)](https://doi.org/10.1145/2950290.2950305); [AlOmar et al. (EMSE 2021)](https://doi.org/10.1007/s10664-021-09951-8); [Fowler (2018), Refactoring](https://martinfowler.com/books/refactoring.html). |
+| **ΔComplexity Reduction Guarantee** | **ΔComplexity > 0** | Mathematically guarantees that the refactored code has lower cognitive complexity than the original code. Decomposing nested blocks with guard clauses and extracting methods directly flattens mental friction. | [Silva et al. (FSE 2016)](https://doi.org/10.1145/2950290.2950305); [AlOmar et al. (EMSE 2021)](https://doi.org/10.1007/s10664-021-09951-8); [Fowler (2018), Refactoring](https://martinfowler.com/books/refactoring.html). |
 | **Source Lines of Code (SLOC)** | **≤ 30** (Ideal)<br/>**31 – 50** (Acceptable)<br/>**> 50** (Long Method)<br/>**> 100** (God Function) | Single Responsibility Principle (SRP) limit. Methods beyond 50 lines exhibit significantly higher bug frequency and degraded cohesion. | Martin (2008), *Clean Code*; Lippert & Roock (2006). |
 | **Maximum Nesting Depth** | **≤ 2** (Healthy)<br/>**3** (Warning)<br/>**≥ 4** (Critical) | Nested conditionals compound visual and mental friction; each nesting tier incurs a compounding $+1$ penalty per control construct in Cognitive Complexity. | McConnell (2004), *Code Complete*; Campbell (2017). |
 | **Parameter Count (Arity)** | **≤ 3** (Optimal)<br/>**4** (Acceptable)<br/>**> 4** (Smell) | Functions with excessive parameters violate clean interface design and indicate missing domain abstractions (Parameter Object). | Martin (2008), *Clean Code* (Chapter 3). |
 | **CodeScene Code Health Scale** | **1 – 10** | Continuous composite metric derived from 25+ structural biomarkers and churn patterns (1 = high debt/risk, 10 = clean). | [Tornhill (2018), Software Design X-Rays](https://codescene.com/hubfs/whitepapers/codescene-code-health.pdf). |
 | **CVSS v3.1 Severity Bands** | **None:** 0.0<br/>**Low:** 0.1 – 3.9<br/>**Medium:** 4.0 – 6.9<br/>**High:** 7.0 – 8.9<br/>**Critical:** 9.0 – 10.0 | Global vulnerability scoring framework balancing Base Exploitability (Vector, Complexity, Privileges) and Impact (Confidentiality, Integrity, Availability). | [FIRST CVSS v3.1 Specification](https://www.first.org/cvss/v3.1/specification-document); [NIST NVD](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator). |
-| **AST Analysis Latency Target** | **< 20ms** | VS Code Language Server Protocol responsiveness threshold for instantaneous typing feedback without input lag. | [Nielsen (1994) Response Time Limits](https://www.nngroup.com/articles/response-times-3-important-limits/). |
+| **AST Analysis Latency Target** | **Sub-Second (Real-Time)** | Immediate feedback inside the active editor buffer without waiting for remote CI/CD pipeline builds. | [Nielsen (1994) Response Time Limits](https://www.nngroup.com/articles/response-times-3-important-limits/). |
 
 ---
 
