@@ -34,25 +34,31 @@
 
 ```mermaid
 flowchart TD
-    subgraph QualityMetrics ["Quality & Cognitive Debt Metrics"]
+    subgraph QualityMetrics ["Comprehensive Quality & Cognitive Debt Suite (ComplexityLens)"]
         direction TB
-        M1["Cognitive Complexity: Penalizes nested loops, conditionals & breaks"]
-        M2["Cyclomatic Complexity (CC): Measures independent execution paths"]
-        M3["SLOC & Nesting Depth: Detects bloated 'God Functions' & parameter sprawl"]
-        M4["Delta-Complexity Guarantee: Cognitive(before) - Cognitive(after) > 0"]
+        M1["Cognitive Complexity: Penalizes nested loops, conditionals & breaks (Campbell Spec)"]
+        M2["McCabe Cyclomatic Complexity: Linearly independent paths (CC = E - N + 2P)"]
+        M3["Structural Sizing: SLOC (> 50 Long Method, > 100 God Function)"]
+        M4["Control Flow Friction: Maximum Nesting Depth (Threshold: <= 2 healthy, >= 4 critical)"]
+        M5["Interface Design: Parameter Count / Arity (Threshold: <= 3 optimal, > 4 smell)"]
+        M6["Object-Oriented Cohesion: LCOM-4 (Threshold: 1 cohesive, > 1 split candidate)"]
+        M7["Halstead Complexity Suite: Lexical Volume (V > 1000) & Implementation Difficulty (D > 30)"]
+        M8["Delta-Complexity Guarantee: Proves Cognitive_before - Cognitive_after > 0 (Target >= 40%)"]
     end
 ```
 
-1. **Cognitive Complexity (G. Ann Campbell Specification):**  
-   Measures the mental effort required to understand code by penalizing nested structures (`if`, `for`, `while`, `catch`), ternary operators, and logical operator sequences.
-2. **Cyclomatic Complexity (McCabe CC = E - N + 2P):**  
-   Measures the number of linearly independent paths through the control flow graph.
-3. **Source Lines of Code (SLOC) & Nesting Depth:**  
-   Identifies oversized methods (> 50 lines), parameter bloat (> 4 arguments), and deep indentation (> 3 levels).
-4. **ΔComplexity Guarantee (Our Core Novelty):**  
-   Every AI-generated refactoring must satisfy:
-   `ΔComplexity = Cognitive_before - Cognitive_after > 0`
-   proving mathematically that the refactoring reduced cognitive load.
+Every metric used by the quality engine is mathematically defined with clear interpretation thresholds:
+
+| Metric Name | Mathematical Definition / Formula | Interpretation & Thresholds | Impact on Maintainability |
+| :--- | :--- | :--- | :--- |
+| **Cognitive Complexity** | Incremental scoring based on G. Ann Campbell's formal whitepaper:<br/>• `+1` for each break in linear flow (`if`, `ternary`, `switch`, `for`, `while`, `catch`, `goto`, `break`, `continue`)<br/>• `+1` for each nesting level of control structures<br/>• `+1` for logical operator sequences (`a && b && c`)<br/>• `+1` for recursion | • **≤ 8**: Healthy / Clean Code<br/>• **9 – 14**: Moderate Complexity<br/>• **≥ 15**: Critical (Refactoring Trigger) | Direct indicator of human mental comprehension effort. High scores lead to bugs and developer misunderstandings. |
+| **McCabe Cyclomatic Complexity (CC)** | `CC = E - N + 2P`<br/>Where `E` = CFG edges, `N` = CFG nodes, `P` = connected components.<br/>Equivalently: `CC = 1 + Decision Points` | • **1 – 5**: Simple / High Testability<br/>• **6 – 10**: Moderate / Testable<br/>• **11 – 15**: High Complexity<br/>• **> 15**: Untestable / Complex | Measures the minimum number of independent test cases required for complete branch test coverage. |
+| **Source Lines of Code (SLOC)** | Number of physical lines containing executable statements, excluding blank lines and pure comment lines. | • **≤ 30**: Ideal<br/>• **31 – 50**: Acceptable<br/>• **> 50**: Long Method smell<br/>• **> 100**: God Function | Strong correlation with defects and violation of Single Responsibility Principle. |
+| **Maximum Nesting Depth** | Maximum hierarchical depth of nested AST statement blocks (`if` inside `for` inside `try`...). | • **≤ 2**: Healthy<br/>• **3**: Warning<br/>• **≥ 4**: Critical Nesting Smell | Deep nesting creates severe visual friction and cognitive overload. |
+| **Parameter Count (Arity)** | Total number of formal parameters declared in the function signature. | • **≤ 3**: Optimal<br/>• **4**: Acceptable<br/>• **> 4**: Long Parameter List smell | High arity indicates excessive coupling; calls for Parameter Object refactoring. |
+| **Lack of Cohesion in Methods (LCOM-4)** | Number of connected components in an undirected graph where nodes are functions and edges represent shared instance variables. | • **LCOM = 1**: Cohesive<br/>• **LCOM > 1**: Low Cohesion (Split recommended) | Identifies methods that operate on disparate data fields and should be split into modular units. |
+| **Halstead Complexity Suite** | • Distinct Operators (`n1`), Distinct Operands (`n2`)<br/>• Total Operators (`N1`), Total Operands (`N2`)<br/>• Vocabulary: `n = n1 + n2`<br/>• Length: `N = N1 + N2`<br/>• Volume: `V = N * log2(n)`<br/>• Difficulty: `D = (n1 / 2) * (N2 / n2)`<br/>• Effort: `E = D * V` | • **High Volume** (`V > 1000`): Overly verbose logic.<br/>• **High Difficulty** (`D > 30`): Difficult to maintain. | Captures lexical size, operational difficulty, and cognitive mental effort required to implement the function. |
+| **ΔComplexity Guarantee (Core Novelty)** | `ΔComplexity = Cognitive_before - Cognitive_after`<br/><br/>`%ΔComplexity = ((Cognitive_before - Cognitive_after) / Cognitive_before) * 100%` | • **ΔComplexity > 0**: Verified Complexity Reduction<br/>• **Target**: ≥ 40% reduction on complex functions (Cognitive ≥ 15) | **Guaranteed Refactoring Quality:** Mathematically proves that the AI refactoring reduced structural and mental friction. |
 
 ---
 
@@ -60,55 +66,84 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    subgraph SecurityFrameworks ["Security Standards & Metrics"]
+    subgraph SecurityFrameworks ["Complete Security Standards & Vulnerability Taxonomies (AgentShield)"]
         direction TB
-        S1["MITRE CWE Top 25: Common Weakness Enumeration"]
-        S2["NIST NVD: National Vulnerability Database (CVE & CVSS v3.1)"]
-        S3["OWASP Top 10 (2021): Standard Web & Software Vulnerabilities"]
-        S4["OWASP Top 10 for LLMs (2025): AI & Agent Vulnerabilities"]
+        S1["MITRE CWE Top 25: All 25 Most Dangerous Weaknesses Itemized"]
+        S2["NIST NVD Integration: CVE Records, CVSS v3.1 Scoring & CPE 2.3 Package Matching"]
+        S3["OWASP Top 10 (2021): Complete Web & Software Vulnerabilities (A01 - A10)"]
+        S4["OWASP LLM Top 10 (2025): Complete AI & Agent Risk Suite (LLM01 - LLM10)"]
     end
 ```
 
-#### A. MITRE CWE Top 25 Most Dangerous Weaknesses Mapped
-* **CWE-78 / CWE-77 (OS Command Injection):** Untrusted input passed directly into `subprocess`, `os.system`, or shell execution tools.
-* **CWE-89 (SQL Injection):** Dynamic string concatenation in SQL queries without parameterization.
-* **CWE-79 (Cross-Site Scripting - XSS):** Unsanitized outputs rendered into web views or desktop agent interfaces.
-* **CWE-20 (Improper Input Validation):** Function accepts external/user arguments without validation schemas (e.g. missing Pydantic/Zod).
-* **CWE-22 (Path Traversal):** Unsanitized file paths allowing access outside target directories (`../`).
-* **CWE-862 (Missing Authorization):** Autonomous agent actions executing sensitive write/delete operations without authorization.
-* **CWE-200 (Exposure of Sensitive Information):** Hardcoded secrets, API tokens, or memory context leakage.
-* **CWE-918 (Server-Side Request Forgery - SSRF):** Web scrapers or fetch tools accessing internal network endpoints (`http://169.254.169.254`).
-* **CWE-502 (Deserialization of Untrusted Data):** Unsafe `pickle.loads()` or YAML `load()`.
-* **CWE-94 (Code Injection):** Use of `eval()` or `exec()` on dynamic strings.
-* **CWE-434 (Unrestricted File Upload):** Uploading executable scripts without type verification.
-* **CWE-306 (Missing Authentication for Critical Function):** Sensitive handler endpoints without access guards.
+AgentShield comprehensively integrates all major international vulnerability, weakness, and risk taxonomies:
 
-#### B. OWASP Top 10 (Standard Web/Software Application Security)
-* **A01: Broken Access Control** (CWE-862, CWE-22)
-* **A02: Cryptographic Failures** (CWE-327, CWE-200)
-* **A03: Injection** (CWE-78, CWE-89, CWE-79)
-* **A04: Insecure Design**
-* **A05: Security Misconfiguration**
-* **A06: Vulnerable and Outdated Components**
-* **A07: Identification and Authentication Failures** (CWE-306)
-* **A08: Software and Data Integrity Failures** (CWE-502)
-* **A09: Security Logging and Monitoring Failures**
-* **A10: Server-Side Request Forgery (SSRF)** (CWE-918)
+#### A. MITRE CWE Top 25 Most Dangerous Software Weaknesses (Itemized)
+The extension implements detection and remediation rules for every weakness in the official MITRE CWE Top 25 list:
 
-#### C. OWASP Top 10 for LLMs (2025 - Agent & AI Applications)
-* **LLM01: Prompt Injection:** Untrusted inputs manipulate system instructions.
-* **LLM02: Sensitive Information Disclosure:** Leaking API keys, prompt context, or internal data.
-* **LLM05: Insecure Output Handling:** LLM text passed unchecked into execution sinks (`subprocess`, SQL).
-* **LLM06: Excessive Agency:** Autonomous tools performing destructive operations without human-in-the-loop gates.
-* **LLM07: System Prompt Leakage:** Exposing system prompts or internal operational schemas.
+* **CWE-78:** Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')
+* **CWE-89:** Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
+* **CWE-79:** Improper Neutralization of Input During Web Page Generation ('Cross-Site Scripting' - XSS)
+* **CWE-20:** Improper Input Validation
+* **CWE-22:** Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+* **CWE-352:** Cross-Site Request Forgery (CSRF)
+* **CWE-862:** Missing Authorization
+* **CWE-200:** Exposure of Sensitive Information to an Unauthorized Actor
+* **CWE-918:** Server-Side Request Forgery (SSRF)
+* **CWE-502:** Deserialization of Untrusted Data
+* **CWE-77:** Improper Neutralization of Special Elements used in a Command ('Command Injection')
+* **CWE-94:** Improper Control of Generation of Code ('Code Injection')
+* **CWE-434:** Unrestricted Upload of File with Dangerous Type
+* **CWE-306:** Missing Authentication for Critical Function
+* **CWE-287:** Improper Authentication
+* **CWE-798:** Use of Hard-coded Credentials
+* **CWE-863:** Incorrect Authorization
+* **CWE-269:** Improper Privilege Management
+* **CWE-319:** Cleartext Transmission of Sensitive Information
+* **CWE-400:** Uncontrolled Resource Consumption
+* **CWE-611:** Improper Restriction of XML External Entity Reference (XXE)
+* **CWE-916:** Use of Password Hash With Insufficient Computational Effort
+* **CWE-601:** URL Redirection to Untrusted Site ('Open Redirect')
+* **CWE-1321:** Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')
+* **CWE-676:** Use of Potentially Dangerous Function
 
-#### D. NIST NVD (National Vulnerability Database) Integration
-* **CVE to CWE Mapping:** Maps detected function weaknesses to historical real-world CVE records in the NVD data feed, giving developers concrete examples of past exploits.
-* **CVSS v3.1 Severity Scoring:** Computes and displays official CVSS metrics:
-  - **Base Score (0.0 – 10.0):** Categorized into Critical (9.0 – 10.0), High (7.0 – 8.9), Medium (4.0 – 6.9), and Low (0.1 – 3.9).
-  - **Vector Metrics:** Evaluates Attack Vector (AV), Attack Complexity (AC), and Privileges Required (PR).
-* **NVD Advisory URLs:** Provides direct clickable links to official NIST NVD vulnerability records (`https://nvd.nist.gov/vuln/detail/CVE-...`).
-* **CPE Package Cross-Referencing:** Matches function imports against NVD's Common Platform Enumeration (CPE) to flag known vulnerable or outdated library dependencies.
+#### B. NIST NVD (National Vulnerability Database) Data Suite
+* **NVD Data Feeds:** Ingests official NIST NVD JSON 2.0 schema feeds (`services.nvd.nist.gov/rest/json/cves/2.0`).
+* **CVE Identifiers (Common Vulnerabilities and Exposures):** Every detected weakness is cross-referenced with real-world CVE records (e.g. `CVE-2024-XXXXX`) to show developers documented exploit examples.
+* **CVSS v3.1 Severity Scoring:**
+  * **Base Score (0.0 – 10.0):**
+    * **Critical:** 9.0 – 10.0
+    * **High:** 7.0 – 8.9
+    * **Medium:** 4.0 – 6.9
+    * **Low:** 0.1 – 3.9
+    * **None:** 0.0
+  * **CVSS Vector String:** Computes Attack Vector (AV:N/A/L/P), Attack Complexity (AC:L/H), Privileges Required (PR:N/L/H), User Interaction (UI:N/R), Scope (S:U/C), Confidentiality (C:N/L/H), Integrity (I:N/L/H), Availability (A:N/L/H).
+* **CPE (Common Platform Enumeration):** Uses CPE 2.3 formatted strings (`cpe:2.3:a:vendor:package:version:*:*:*:*:*:*:*`) to validate imported dependencies in `requirements.txt` or `package.json` against known vulnerable package versions.
+* **NVD Advisory URLs:** Provides direct clickable links to official NIST advisory writeups (`https://nvd.nist.gov/vuln/detail/CVE-...`).
+* **NIST NVD CVEFixes Dataset:** Ingests historical CVE-fixing commits to ground automated guardrail patch generation in real-world developer security patches.
+
+#### C. OWASP Top 10 (2021) - Standard Software & Web Application Security
+* **A01:2021 – Broken Access Control:** (Encompasses CWE-862, CWE-22, CWE-601)
+* **A02:2021 – Cryptographic Failures:** (Encompasses CWE-327, CWE-319, CWE-798)
+* **A03:2021 – Injection:** (Encompasses CWE-78, CWE-89, CWE-79, CWE-77, CWE-94)
+* **A04:2021 – Insecure Design:** (Encompasses CWE-20, architectural logic flaws)
+* **A05:2021 – Security Misconfiguration:** (Default credentials, verbose debug logging)
+* **A06:2021 – Vulnerable and Outdated Components:** (CPE-matched packages)
+* **A07:2021 – Identification and Authentication Failures:** (Encompasses CWE-306, CWE-287)
+* **A08:2021 – Software and Data Integrity Failures:** (Encompasses CWE-502, unverified updates)
+* **A09:2021 – Security Logging and Monitoring Failures:** (Missing audit trails on sensitive actions)
+* **A10:2021 – Server-Side Request Forgery (SSRF):** (Encompasses CWE-918)
+
+#### D. OWASP Top 10 for Large Language Model Applications (2025 - Agent & AI Applications)
+* **LLM01:2025 – Prompt Injection:** Untrusted input dynamically alters system instructions or tool execution paths.
+* **LLM02:2025 – Sensitive Information Disclosure:** Unintentional leakage of API keys, proprietary prompts, or memory states.
+* **LLM03:2025 – Supply Chain Vulnerabilities:** Vulnerable third-party plugins, MCP servers, or unverified model weights.
+* **LLM04:2025 – Data and Model Poisoning:** Tampered training data or poisoned context embeddings.
+* **LLM05:2025 – Improper Output Handling:** Raw LLM outputs passed directly into execution sinks (`subprocess`, SQL, `eval`).
+* **LLM06:2025 – Excessive Agency:** Autonomous tools performing destructive operations without human-in-the-loop authorization gates.
+* **LLM07:2025 – System Prompt Leakage:** Exposing system instructions, hidden guardrails, or backend configuration schemas.
+* **LLM08:2025 – Vector and Embedding Weaknesses:** Poisoned or unauthenticated vector database retrievals.
+* **LLM09:2025 – Misinformation:** Hallucinated outputs accepted by backend services without schema verification.
+* **LLM10:2025 – Unbounded Consumption:** Uncapped recursive tool calls or denial of wallet/compute loops.
 
 #### E. Severity & Exploitation Impact
 * **Exploitation Impact:** Plain-English explanation detailing *how* an attacker can exploit the flagged function and the business/security blast radius.
