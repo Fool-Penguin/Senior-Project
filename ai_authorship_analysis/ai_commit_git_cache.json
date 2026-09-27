@@ -1,0 +1,2382 @@
+{
+  "https://github.com/0xPlaygrounds/rig": {
+    "any_ai_signal_commits": 144,
+    "bot_account_commits": 128,
+    "co_author_trailer_commits": 16,
+    "tool_counts": {
+      "Claude": 11,
+      "Codex": 0,
+      "Cursor": 3,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 2251
+  },
+  "https://github.com/1Panel-dev/1Panel": {
+    "any_ai_signal_commits": 78,
+    "bot_account_commits": 70,
+    "co_author_trailer_commits": 8,
+    "tool_counts": {
+      "Claude": 2,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 6
+    },
+    "total_commits": 6429
+  },
+  "https://github.com/1Panel-dev/MaxKB": {
+    "any_ai_signal_commits": 107,
+    "bot_account_commits": 100,
+    "co_author_trailer_commits": 5,
+    "tool_counts": {
+      "Claude": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 6
+    },
+    "total_commits": 8948
+  },
+  "https://github.com/AgriciDaniel/claude-obsidian": {
+    "any_ai_signal_commits": 112,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 112,
+    "tool_counts": {
+      "Claude": 112,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 282
+  },
+  "https://github.com/Alpha-Dojo/DojoAgents": {
+    "any_ai_signal_commits": 1,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 1,
+    "tool_counts": {
+      "Claude": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 471
+  },
+  "https://github.com/AstrBotDevs/AstrBot": {
+    "any_ai_signal_commits": 246,
+    "bot_account_commits": 66,
+    "co_author_trailer_commits": 154,
+    "tool_counts": {
+      "Claude": 29,
+      "Codex": 4,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 60,
+      "GitHub_Copilot": 95
+    },
+    "total_commits": 6470
+  },
+  "https://github.com/Avaiga/taipy": {
+    "any_ai_signal_commits": 147,
+    "bot_account_commits": 140,
+    "co_author_trailer_commits": 7,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 7
+    },
+    "total_commits": 8081
+  },
+  "https://github.com/BlockRunAI/ClawRouter": {
+    "any_ai_signal_commits": 77,
+    "bot_account_commits": 12,
+    "co_author_trailer_commits": 57,
+    "tool_counts": {
+      "Claude": 63,
+      "Codex": 0,
+      "Cursor": 2,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 1272
+  },
+  "https://github.com/Budibase/budibase": {
+    "any_ai_signal_commits": 586,
+    "bot_account_commits": 462,
+    "co_author_trailer_commits": 118,
+    "tool_counts": {
+      "Claude": 83,
+      "Codex": 0,
+      "Cursor": 30,
+      "Devin": 9,
+      "Gemini": 0,
+      "GitHub_Copilot": 11
+    },
+    "total_commits": 67697
+  },
+  "https://github.com/CaviraOSS/OpenMemory": {
+    "any_ai_signal_commits": 67,
+    "bot_account_commits": 28,
+    "co_author_trailer_commits": 37,
+    "tool_counts": {
+      "Claude": 36,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 400
+  },
+  "https://github.com/CherryHQ/cherry-studio": {
+    "any_ai_signal_commits": 3532,
+    "bot_account_commits": 231,
+    "co_author_trailer_commits": 3148,
+    "tool_counts": {
+      "Claude": 3041,
+      "Codex": 1,
+      "Cursor": 152,
+      "Devin": 1,
+      "Gemini": 0,
+      "GitHub_Copilot": 126
+    },
+    "total_commits": 22782
+  },
+  "https://github.com/CopilotKit/CopilotKit": {
+    "any_ai_signal_commits": 11047,
+    "bot_account_commits": 1393,
+    "co_author_trailer_commits": 2684,
+    "tool_counts": {
+      "Claude": 2769,
+      "Codex": 0,
+      "Cursor": 14,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 8312
+    },
+    "total_commits": 21822
+  },
+  "https://github.com/CoplayDev/unity-mcp": {
+    "any_ai_signal_commits": 343,
+    "bot_account_commits": 211,
+    "co_author_trailer_commits": 129,
+    "tool_counts": {
+      "Claude": 126,
+      "Codex": 1,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 5
+    },
+    "total_commits": 2170
+  },
+  "https://github.com/CopyTranslator/CopyTranslator": {
+    "any_ai_signal_commits": 27,
+    "bot_account_commits": 27,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 1309
+  },
+  "https://github.com/Fosowl/agenticSeek": {
+    "any_ai_signal_commits": 12,
+    "bot_account_commits": 1,
+    "co_author_trailer_commits": 11,
+    "tool_counts": {
+      "Claude": 4,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 7
+    },
+    "total_commits": 1002
+  },
+  "https://github.com/FoundationAgents/MetaGPT": {
+    "any_ai_signal_commits": 0,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 6669
+  },
+  "https://github.com/HKUDS/OpenHarness": {
+    "any_ai_signal_commits": 41,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 38,
+    "tool_counts": {
+      "Claude": 21,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 20
+    },
+    "total_commits": 470
+  },
+  "https://github.com/HKUDS/Vibe-Trading": {
+    "any_ai_signal_commits": 115,
+    "bot_account_commits": 36,
+    "co_author_trailer_commits": 79,
+    "tool_counts": {
+      "Claude": 73,
+      "Codex": 0,
+      "Cursor": 4,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 2619
+  },
+  "https://github.com/HKUDS/nanobot": {
+    "any_ai_signal_commits": 204,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 189,
+    "tool_counts": {
+      "Claude": 114,
+      "Codex": 0,
+      "Cursor": 76,
+      "Devin": 1,
+      "Gemini": 1,
+      "GitHub_Copilot": 12
+    },
+    "total_commits": 4785
+  },
+  "https://github.com/IceWhaleTech/CasaOS": {
+    "any_ai_signal_commits": 15,
+    "bot_account_commits": 15,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 692
+  },
+  "https://github.com/JCodesMore/ai-website-cloner-template": {
+    "any_ai_signal_commits": 8,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 8,
+    "tool_counts": {
+      "Claude": 8,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 78
+  },
+  "https://github.com/Kilo-Org/kilocode": {
+    "any_ai_signal_commits": 4747,
+    "bot_account_commits": 4633,
+    "co_author_trailer_commits": 97,
+    "tool_counts": {
+      "Claude": 80,
+      "Codex": 0,
+      "Cursor": 5,
+      "Devin": 16,
+      "Gemini": 0,
+      "GitHub_Copilot": 18
+    },
+    "total_commits": 38491
+  },
+  "https://github.com/LAION-AI/Open-Assistant": {
+    "any_ai_signal_commits": 66,
+    "bot_account_commits": 66,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 3676
+  },
+  "https://github.com/MaaAssistantArknights/MaaAssistantArknights": {
+    "any_ai_signal_commits": 2662,
+    "bot_account_commits": 2573,
+    "co_author_trailer_commits": 106,
+    "tool_counts": {
+      "Claude": 9,
+      "Codex": 0,
+      "Cursor": 4,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 95
+    },
+    "total_commits": 39106
+  },
+  "https://github.com/MagicMirrorOrg/MagicMirror": {
+    "any_ai_signal_commits": 33,
+    "bot_account_commits": 31,
+    "co_author_trailer_commits": 2,
+    "tool_counts": {
+      "Claude": 2,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 5511
+  },
+  "https://github.com/MervinPraison/PraisonAI": {
+    "any_ai_signal_commits": 6012,
+    "bot_account_commits": 5194,
+    "co_author_trailer_commits": 1505,
+    "tool_counts": {
+      "Claude": 1587,
+      "Codex": 0,
+      "Cursor": 197,
+      "Devin": 6,
+      "Gemini": 10,
+      "GitHub_Copilot": 152
+    },
+    "total_commits": 11182
+  },
+  "https://github.com/Mintplex-Labs/anything-llm": {
+    "any_ai_signal_commits": 33,
+    "bot_account_commits": 14,
+    "co_author_trailer_commits": 19,
+    "tool_counts": {
+      "Claude": 17,
+      "Codex": 0,
+      "Cursor": 1,
+      "Devin": 8,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 3511
+  },
+  "https://github.com/Mirix-AI/MIRIX": {
+    "any_ai_signal_commits": 96,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 96,
+    "tool_counts": {
+      "Claude": 96,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 596
+  },
+  "https://github.com/NVIDIA/OpenShell": {
+    "any_ai_signal_commits": 486,
+    "bot_account_commits": 479,
+    "co_author_trailer_commits": 7,
+    "tool_counts": {
+      "Claude": 4,
+      "Codex": 0,
+      "Cursor": 2,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 1
+    },
+    "total_commits": 3829
+  },
+  "https://github.com/NevaMind-AI/memU": {
+    "any_ai_signal_commits": 156,
+    "bot_account_commits": 19,
+    "co_author_trailer_commits": 137,
+    "tool_counts": {
+      "Claude": 106,
+      "Codex": 6,
+      "Cursor": 24,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 4
+    },
+    "total_commits": 536
+  },
+  "https://github.com/NoFxAiOS/nofx": {
+    "any_ai_signal_commits": 82,
+    "bot_account_commits": 3,
+    "co_author_trailer_commits": 79,
+    "tool_counts": {
+      "Claude": 77,
+      "Codex": 2,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 1320
+  },
+  "https://github.com/NousResearch/hermes-agent": {
+    "any_ai_signal_commits": 1527,
+    "bot_account_commits": 436,
+    "co_author_trailer_commits": 1078,
+    "tool_counts": {
+      "Claude": 874,
+      "Codex": 11,
+      "Cursor": 175,
+      "Devin": 5,
+      "Gemini": 0,
+      "GitHub_Copilot": 39
+    },
+    "total_commits": 51799
+  },
+  "https://github.com/OpenBB-finance/OpenBB": {
+    "any_ai_signal_commits": 246,
+    "bot_account_commits": 234,
+    "co_author_trailer_commits": 12,
+    "tool_counts": {
+      "Claude": 7,
+      "Codex": 0,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 5
+    },
+    "total_commits": 9039
+  },
+  "https://github.com/OpenBMB/AgentVerse": {
+    "any_ai_signal_commits": 0,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 450
+  },
+  "https://github.com/OpenHands/OpenHands": {
+    "any_ai_signal_commits": 1640,
+    "bot_account_commits": 1206,
+    "co_author_trailer_commits": 417,
+    "tool_counts": {
+      "Claude": 343,
+      "Codex": 6,
+      "Cursor": 36,
+      "Devin": 22,
+      "Gemini": 15,
+      "GitHub_Copilot": 19
+    },
+    "total_commits": 20312
+  },
+  "https://github.com/Panniantong/Agent-Reach": {
+    "any_ai_signal_commits": 47,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 47,
+    "tool_counts": {
+      "Claude": 47,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 388
+  },
+  "https://github.com/PostHog/posthog": {
+    "any_ai_signal_commits": 36189,
+    "bot_account_commits": 23501,
+    "co_author_trailer_commits": 12401,
+    "tool_counts": {
+      "Claude": 12957,
+      "Codex": 1,
+      "Cursor": 522,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 243
+    },
+    "total_commits": 146204
+  },
+  "https://github.com/PrimeIntellect-ai/prime-agent": {
+    "any_ai_signal_commits": 156,
+    "bot_account_commits": 137,
+    "co_author_trailer_commits": 18,
+    "tool_counts": {
+      "Claude": 19,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 7969
+  },
+  "https://github.com/Project-N-E-K-O/N.E.K.O": {
+    "any_ai_signal_commits": 1163,
+    "bot_account_commits": 1,
+    "co_author_trailer_commits": 1161,
+    "tool_counts": {
+      "Claude": 1135,
+      "Codex": 3,
+      "Cursor": 29,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 3461
+  },
+  "https://github.com/RTGS2017/NagaAgent": {
+    "any_ai_signal_commits": 258,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 258,
+    "tool_counts": {
+      "Claude": 196,
+      "Codex": 10,
+      "Cursor": 52,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 857
+  },
+  "https://github.com/RasaHQ/rasa": {
+    "any_ai_signal_commits": 325,
+    "bot_account_commits": 283,
+    "co_author_trailer_commits": 49,
+    "tool_counts": {
+      "Claude": 15,
+      "Codex": 0,
+      "Cursor": 20,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 19
+    },
+    "total_commits": 43826
+  },
+  "https://github.com/SigNoz/signoz": {
+    "any_ai_signal_commits": 325,
+    "bot_account_commits": 172,
+    "co_author_trailer_commits": 142,
+    "tool_counts": {
+      "Claude": 138,
+      "Codex": 0,
+      "Cursor": 13,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 12804
+  },
+  "https://github.com/Significant-Gravitas/AutoGPT": {
+    "any_ai_signal_commits": 3375,
+    "bot_account_commits": 361,
+    "co_author_trailer_commits": 2946,
+    "tool_counts": {
+      "Claude": 2838,
+      "Codex": 192,
+      "Cursor": 44,
+      "Devin": 1,
+      "Gemini": 1,
+      "GitHub_Copilot": 117
+    },
+    "total_commits": 22454
+  },
+  "https://github.com/Skyvern-AI/skyvern": {
+    "any_ai_signal_commits": 600,
+    "bot_account_commits": 124,
+    "co_author_trailer_commits": 461,
+    "tool_counts": {
+      "Claude": 470,
+      "Codex": 3,
+      "Cursor": 23,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 5
+    },
+    "total_commits": 8979
+  },
+  "https://github.com/Sylinko/Everywhere": {
+    "any_ai_signal_commits": 6,
+    "bot_account_commits": 3,
+    "co_author_trailer_commits": 3,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 1997
+  },
+  "https://github.com/TEN-framework/ten-framework": {
+    "any_ai_signal_commits": 29,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 28,
+    "tool_counts": {
+      "Claude": 18,
+      "Codex": 0,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 10
+    },
+    "total_commits": 4954
+  },
+  "https://github.com/TaskingAI/TaskingAI": {
+    "any_ai_signal_commits": 14,
+    "bot_account_commits": 14,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 458
+  },
+  "https://github.com/TencentCloud/TencentDB-Agent-Memory": {
+    "any_ai_signal_commits": 5,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 5,
+    "tool_counts": {
+      "Claude": 1,
+      "Codex": 0,
+      "Cursor": 4,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 187
+  },
+  "https://github.com/ThinkInAIXYZ/deepchat": {
+    "any_ai_signal_commits": 32,
+    "bot_account_commits": 5,
+    "co_author_trailer_commits": 27,
+    "tool_counts": {
+      "Claude": 19,
+      "Codex": 0,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 7
+    },
+    "total_commits": 4364
+  },
+  "https://github.com/ToolJet/ToolJet": {
+    "any_ai_signal_commits": 1016,
+    "bot_account_commits": 125,
+    "co_author_trailer_commits": 877,
+    "tool_counts": {
+      "Claude": 798,
+      "Codex": 0,
+      "Cursor": 13,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 88
+    },
+    "total_commits": 27840
+  },
+  "https://github.com/TransformerOptimus/SuperAGI": {
+    "any_ai_signal_commits": 0,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 5045
+  },
+  "https://github.com/Untrivial-ai/agent-orchestrator": {
+    "any_ai_signal_commits": 3593,
+    "bot_account_commits": 38,
+    "co_author_trailer_commits": 3514,
+    "tool_counts": {
+      "Claude": 3104,
+      "Codex": 6,
+      "Cursor": 432,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 29
+    },
+    "total_commits": 12965
+  },
+  "https://github.com/Upsonic/Upsonic": {
+    "any_ai_signal_commits": 49,
+    "bot_account_commits": 26,
+    "co_author_trailer_commits": 21,
+    "tool_counts": {
+      "Claude": 17,
+      "Codex": 0,
+      "Cursor": 6,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 3546
+  },
+  "https://github.com/XiaoMi/ha_xiaomi_home": {
+    "any_ai_signal_commits": 3,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 3,
+    "tool_counts": {
+      "Claude": 3,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 280
+  },
+  "https://github.com/Zackriya-Solutions/meetily": {
+    "any_ai_signal_commits": 7,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 6,
+    "tool_counts": {
+      "Claude": 7,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 811
+  },
+  "https://github.com/aaif-goose/goose": {
+    "any_ai_signal_commits": 992,
+    "bot_account_commits": 494,
+    "co_author_trailer_commits": 498,
+    "tool_counts": {
+      "Claude": 410,
+      "Codex": 2,
+      "Cursor": 8,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 85
+    },
+    "total_commits": 10703
+  },
+  "https://github.com/activepieces/activepieces": {
+    "any_ai_signal_commits": 3229,
+    "bot_account_commits": 1046,
+    "co_author_trailer_commits": 2156,
+    "tool_counts": {
+      "Claude": 2138,
+      "Codex": 0,
+      "Cursor": 27,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 23
+    },
+    "total_commits": 77516
+  },
+  "https://github.com/affaan-m/ECC": {
+    "any_ai_signal_commits": 294,
+    "bot_account_commits": 75,
+    "co_author_trailer_commits": 185,
+    "tool_counts": {
+      "Claude": 185,
+      "Codex": 1,
+      "Cursor": 7,
+      "Devin": 9,
+      "Gemini": 0,
+      "GitHub_Copilot": 24
+    },
+    "total_commits": 2969
+  },
+  "https://github.com/agent0ai/agent-zero": {
+    "any_ai_signal_commits": 26,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 25,
+    "tool_counts": {
+      "Claude": 18,
+      "Codex": 1,
+      "Cursor": 2,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 5
+    },
+    "total_commits": 2917
+  },
+  "https://github.com/agentscope-ai/QwenPaw": {
+    "any_ai_signal_commits": 8,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 8,
+    "tool_counts": {
+      "Claude": 2,
+      "Codex": 0,
+      "Cursor": 2,
+      "Devin": 0,
+      "Gemini": 2,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 2622
+  },
+  "https://github.com/agno-agi/agno": {
+    "any_ai_signal_commits": 1734,
+    "bot_account_commits": 1,
+    "co_author_trailer_commits": 1672,
+    "tool_counts": {
+      "Claude": 1684,
+      "Codex": 5,
+      "Cursor": 5,
+      "Devin": 1,
+      "Gemini": 0,
+      "GitHub_Copilot": 39
+    },
+    "total_commits": 16189
+  },
+  "https://github.com/alibaba/nacos": {
+    "any_ai_signal_commits": 45,
+    "bot_account_commits": 22,
+    "co_author_trailer_commits": 14,
+    "tool_counts": {
+      "Claude": 11,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 12
+    },
+    "total_commits": 6627
+  },
+  "https://github.com/alibaba/spring-ai-alibaba": {
+    "any_ai_signal_commits": 47,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 37,
+    "tool_counts": {
+      "Claude": 8,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 39
+    },
+    "total_commits": 3312
+  },
+  "https://github.com/anomalyco/opencode": {
+    "any_ai_signal_commits": 2765,
+    "bot_account_commits": 2673,
+    "co_author_trailer_commits": 67,
+    "tool_counts": {
+      "Claude": 61,
+      "Codex": 0,
+      "Cursor": 3,
+      "Devin": 14,
+      "Gemini": 0,
+      "GitHub_Copilot": 16
+    },
+    "total_commits": 25748
+  },
+  "https://github.com/ansible/ansible": {
+    "any_ai_signal_commits": 23,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 8,
+    "tool_counts": {
+      "Claude": 16,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 7,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 68108
+  },
+  "https://github.com/anthropics/claude-code": {
+    "any_ai_signal_commits": 376,
+    "bot_account_commits": 1,
+    "co_author_trailer_commits": 93,
+    "tool_counts": {
+      "Claude": 376,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 1057
+  },
+  "https://github.com/apache/airflow": {
+    "any_ai_signal_commits": 3748,
+    "bot_account_commits": 3489,
+    "co_author_trailer_commits": 331,
+    "tool_counts": {
+      "Claude": 216,
+      "Codex": 1,
+      "Cursor": 36,
+      "Devin": 1,
+      "Gemini": 0,
+      "GitHub_Copilot": 83
+    },
+    "total_commits": 58879
+  },
+  "https://github.com/arc53/DocsGPT": {
+    "any_ai_signal_commits": 429,
+    "bot_account_commits": 416,
+    "co_author_trailer_commits": 10,
+    "tool_counts": {
+      "Claude": 8,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 6
+    },
+    "total_commits": 5710
+  },
+  "https://github.com/areal-project/AReaL": {
+    "any_ai_signal_commits": 162,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 162,
+    "tool_counts": {
+      "Claude": 82,
+      "Codex": 1,
+      "Cursor": 2,
+      "Devin": 0,
+      "Gemini": 75,
+      "GitHub_Copilot": 9
+    },
+    "total_commits": 2728
+  },
+  "https://github.com/assafelovic/gpt-researcher": {
+    "any_ai_signal_commits": 147,
+    "bot_account_commits": 72,
+    "co_author_trailer_commits": 66,
+    "tool_counts": {
+      "Claude": 58,
+      "Codex": 0,
+      "Cursor": 9,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 8
+    },
+    "total_commits": 6101
+  },
+  "https://github.com/babalae/better-genshin-impact": {
+    "any_ai_signal_commits": 212,
+    "bot_account_commits": 192,
+    "co_author_trailer_commits": 5,
+    "tool_counts": {
+      "Claude": 3,
+      "Codex": 0,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 16
+    },
+    "total_commits": 4001
+  },
+  "https://github.com/browser-use/browser-use": {
+    "any_ai_signal_commits": 520,
+    "bot_account_commits": 75,
+    "co_author_trailer_commits": 204,
+    "tool_counts": {
+      "Claude": 227,
+      "Codex": 0,
+      "Cursor": 237,
+      "Devin": 0,
+      "Gemini": 1,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 12792
+  },
+  "https://github.com/bytedance/deer-flow": {
+    "any_ai_signal_commits": 753,
+    "bot_account_commits": 84,
+    "co_author_trailer_commits": 653,
+    "tool_counts": {
+      "Claude": 392,
+      "Codex": 6,
+      "Cursor": 104,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 198
+    },
+    "total_commits": 3868
+  },
+  "https://github.com/calesthio/Crucix": {
+    "any_ai_signal_commits": 8,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 8,
+    "tool_counts": {
+      "Claude": 8,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 127
+  },
+  "https://github.com/calesthio/OpenMontage": {
+    "any_ai_signal_commits": 34,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 31,
+    "tool_counts": {
+      "Claude": 31,
+      "Codex": 3,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 452
+  },
+  "https://github.com/camel-ai/camel": {
+    "any_ai_signal_commits": 102,
+    "bot_account_commits": 28,
+    "co_author_trailer_commits": 30,
+    "tool_counts": {
+      "Claude": 27,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 47
+    },
+    "total_commits": 6164
+  },
+  "https://github.com/chatboxai/chatbox": {
+    "any_ai_signal_commits": 180,
+    "bot_account_commits": 9,
+    "co_author_trailer_commits": 165,
+    "tool_counts": {
+      "Claude": 136,
+      "Codex": 0,
+      "Cursor": 37,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 1614
+  },
+  "https://github.com/chenhg5/cc-connect": {
+    "any_ai_signal_commits": 1050,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 826,
+    "tool_counts": {
+      "Claude": 1024,
+      "Codex": 1,
+      "Cursor": 123,
+      "Devin": 4,
+      "Gemini": 0,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 1577
+  },
+  "https://github.com/cline/cline": {
+    "any_ai_signal_commits": 859,
+    "bot_account_commits": 326,
+    "co_author_trailer_commits": 295,
+    "tool_counts": {
+      "Claude": 179,
+      "Codex": 0,
+      "Cursor": 278,
+      "Devin": 2,
+      "Gemini": 0,
+      "GitHub_Copilot": 85
+    },
+    "total_commits": 20400
+  },
+  "https://github.com/cloudwego/eino": {
+    "any_ai_signal_commits": 65,
+    "bot_account_commits": 26,
+    "co_author_trailer_commits": 39,
+    "tool_counts": {
+      "Claude": 39,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 2589
+  },
+  "https://github.com/code-yeongyu/oh-my-openagent": {
+    "any_ai_signal_commits": 1907,
+    "bot_account_commits": 1316,
+    "co_author_trailer_commits": 570,
+    "tool_counts": {
+      "Claude": 510,
+      "Codex": 11,
+      "Cursor": 67,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 6
+    },
+    "total_commits": 22461
+  },
+  "https://github.com/coleam00/Archon": {
+    "any_ai_signal_commits": 789,
+    "bot_account_commits": 25,
+    "co_author_trailer_commits": 755,
+    "tool_counts": {
+      "Claude": 752,
+      "Codex": 7,
+      "Cursor": 2,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 12
+    },
+    "total_commits": 4397
+  },
+  "https://github.com/crewAIInc/crewAI": {
+    "any_ai_signal_commits": 2350,
+    "bot_account_commits": 2015,
+    "co_author_trailer_commits": 347,
+    "tool_counts": {
+      "Claude": 219,
+      "Codex": 0,
+      "Cursor": 78,
+      "Devin": 1997,
+      "Gemini": 0,
+      "GitHub_Copilot": 35
+    },
+    "total_commits": 9401
+  },
+  "https://github.com/dataelement/bisheng": {
+    "any_ai_signal_commits": 1603,
+    "bot_account_commits": 11,
+    "co_author_trailer_commits": 1591,
+    "tool_counts": {
+      "Claude": 1428,
+      "Codex": 1,
+      "Cursor": 163,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 12445
+  },
+  "https://github.com/earendil-works/pi": {
+    "any_ai_signal_commits": 204,
+    "bot_account_commits": 188,
+    "co_author_trailer_commits": 16,
+    "tool_counts": {
+      "Claude": 15,
+      "Codex": 0,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 6770
+  },
+  "https://github.com/elie222/inbox-zero": {
+    "any_ai_signal_commits": 2676,
+    "bot_account_commits": 78,
+    "co_author_trailer_commits": 2349,
+    "tool_counts": {
+      "Claude": 2102,
+      "Codex": 0,
+      "Cursor": 582,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 16644
+  },
+  "https://github.com/elizaOS/eliza": {
+    "any_ai_signal_commits": 7895,
+    "bot_account_commits": 168,
+    "co_author_trailer_commits": 7317,
+    "tool_counts": {
+      "Claude": 7576,
+      "Codex": 66,
+      "Cursor": 100,
+      "Devin": 6,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 35947
+  },
+  "https://github.com/eosphoros-ai/DB-GPT": {
+    "any_ai_signal_commits": 80,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 60,
+    "tool_counts": {
+      "Claude": 54,
+      "Codex": 0,
+      "Cursor": 3,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 23
+    },
+    "total_commits": 4221
+  },
+  "https://github.com/farion1231/cc-switch": {
+    "any_ai_signal_commits": 103,
+    "bot_account_commits": 16,
+    "co_author_trailer_commits": 84,
+    "tool_counts": {
+      "Claude": 82,
+      "Codex": 1,
+      "Cursor": 2,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 3225
+  },
+  "https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk": {
+    "any_ai_signal_commits": 0,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 353
+  },
+  "https://github.com/fossasia/susi_server": {
+    "any_ai_signal_commits": 0,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 3874
+  },
+  "https://github.com/getmaxun/maxun": {
+    "any_ai_signal_commits": 7,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 7,
+    "tool_counts": {
+      "Claude": 7,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 7761
+  },
+  "https://github.com/google-gemini/gemini-cli": {
+    "any_ai_signal_commits": 1773,
+    "bot_account_commits": 149,
+    "co_author_trailer_commits": 835,
+    "tool_counts": {
+      "Claude": 4,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 1723,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 16843
+  },
+  "https://github.com/googleworkspace/cli": {
+    "any_ai_signal_commits": 38,
+    "bot_account_commits": 23,
+    "co_author_trailer_commits": 15,
+    "tool_counts": {
+      "Claude": 6,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 9,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 304
+  },
+  "https://github.com/gsd-build/gsd-2": {
+    "any_ai_signal_commits": 1607,
+    "bot_account_commits": 79,
+    "co_author_trailer_commits": 1452,
+    "tool_counts": {
+      "Claude": 1473,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 57
+    },
+    "total_commits": 7419
+  },
+  "https://github.com/hangwin/mcp-chrome": {
+    "any_ai_signal_commits": 13,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 10,
+    "tool_counts": {
+      "Claude": 10,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 312
+  },
+  "https://github.com/harry0703/MoneyPrinterTurbo": {
+    "any_ai_signal_commits": 29,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 25,
+    "tool_counts": {
+      "Claude": 26,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 927
+  },
+  "https://github.com/heygen-com/hyperframes": {
+    "any_ai_signal_commits": 2434,
+    "bot_account_commits": 37,
+    "co_author_trailer_commits": 2388,
+    "tool_counts": {
+      "Claude": 2371,
+      "Codex": 15,
+      "Cursor": 13,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 10993
+  },
+  "https://github.com/hiyouga/LlamaFactory": {
+    "any_ai_signal_commits": 42,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 42,
+    "tool_counts": {
+      "Claude": 12,
+      "Codex": 0,
+      "Cursor": 2,
+      "Devin": 0,
+      "Gemini": 24,
+      "GitHub_Copilot": 5
+    },
+    "total_commits": 3103
+  },
+  "https://github.com/huggingface/speech-to-speech": {
+    "any_ai_signal_commits": 27,
+    "bot_account_commits": 18,
+    "co_author_trailer_commits": 9,
+    "tool_counts": {
+      "Claude": 6,
+      "Codex": 0,
+      "Cursor": 2,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 1
+    },
+    "total_commits": 1412
+  },
+  "https://github.com/iOfficeAI/AionUi": {
+    "any_ai_signal_commits": 146,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 142,
+    "tool_counts": {
+      "Claude": 127,
+      "Codex": 7,
+      "Cursor": 6,
+      "Devin": 0,
+      "Gemini": 1,
+      "GitHub_Copilot": 5
+    },
+    "total_commits": 6860
+  },
+  "https://github.com/infiniflow/ragflow": {
+    "any_ai_signal_commits": 269,
+    "bot_account_commits": 68,
+    "co_author_trailer_commits": 201,
+    "tool_counts": {
+      "Claude": 142,
+      "Codex": 2,
+      "Cursor": 40,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 19
+    },
+    "total_commits": 9721
+  },
+  "https://github.com/jeecgboot/JeecgBoot": {
+    "any_ai_signal_commits": 9,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 9,
+    "tool_counts": {
+      "Claude": 7,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 2560
+  },
+  "https://github.com/jlcodes99/cockpit-tools": {
+    "any_ai_signal_commits": 239,
+    "bot_account_commits": 234,
+    "co_author_trailer_commits": 4,
+    "tool_counts": {
+      "Claude": 1,
+      "Codex": 1,
+      "Cursor": 3,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 1475
+  },
+  "https://github.com/khoj-ai/khoj": {
+    "any_ai_signal_commits": 1,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 1,
+    "tool_counts": {
+      "Claude": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 5415
+  },
+  "https://github.com/koala73/worldmonitor": {
+    "any_ai_signal_commits": 920,
+    "bot_account_commits": 75,
+    "co_author_trailer_commits": 696,
+    "tool_counts": {
+      "Claude": 533,
+      "Codex": 1,
+      "Cursor": 320,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 4
+    },
+    "total_commits": 8704
+  },
+  "https://github.com/labring/FastGPT": {
+    "any_ai_signal_commits": 144,
+    "bot_account_commits": 104,
+    "co_author_trailer_commits": 40,
+    "tool_counts": {
+      "Claude": 16,
+      "Codex": 0,
+      "Cursor": 6,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 18
+    },
+    "total_commits": 3615
+  },
+  "https://github.com/langbot-app/LangBot": {
+    "any_ai_signal_commits": 240,
+    "bot_account_commits": 72,
+    "co_author_trailer_commits": 169,
+    "tool_counts": {
+      "Claude": 94,
+      "Codex": 0,
+      "Cursor": 1,
+      "Devin": 23,
+      "Gemini": 0,
+      "GitHub_Copilot": 75
+    },
+    "total_commits": 4623
+  },
+  "https://github.com/langchain4j/langchain4j": {
+    "any_ai_signal_commits": 365,
+    "bot_account_commits": 318,
+    "co_author_trailer_commits": 47,
+    "tool_counts": {
+      "Claude": 34,
+      "Codex": 0,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 12
+    },
+    "total_commits": 4416
+  },
+  "https://github.com/langflow-ai/langflow": {
+    "any_ai_signal_commits": 3615,
+    "bot_account_commits": 3153,
+    "co_author_trailer_commits": 421,
+    "tool_counts": {
+      "Claude": 356,
+      "Codex": 3,
+      "Cursor": 25,
+      "Devin": 2,
+      "Gemini": 0,
+      "GitHub_Copilot": 90
+    },
+    "total_commits": 55047
+  },
+  "https://github.com/langgenius/dify": {
+    "any_ai_signal_commits": 1912,
+    "bot_account_commits": 765,
+    "co_author_trailer_commits": 1145,
+    "tool_counts": {
+      "Claude": 604,
+      "Codex": 1,
+      "Cursor": 33,
+      "Devin": 12,
+      "Gemini": 257,
+      "GitHub_Copilot": 392
+    },
+    "total_commits": 29723
+  },
+  "https://github.com/leon-ai/leon": {
+    "any_ai_signal_commits": 38,
+    "bot_account_commits": 38,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 2898
+  },
+  "https://github.com/letta-ai/letta": {
+    "any_ai_signal_commits": 138,
+    "bot_account_commits": 93,
+    "co_author_trailer_commits": 45,
+    "tool_counts": {
+      "Claude": 32,
+      "Codex": 0,
+      "Cursor": 8,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 5
+    },
+    "total_commits": 21828
+  },
+  "https://github.com/liliMozi/openhanako": {
+    "any_ai_signal_commits": 25,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 25,
+    "tool_counts": {
+      "Claude": 11,
+      "Codex": 0,
+      "Cursor": 14,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 3466
+  },
+  "https://github.com/livekit/agents": {
+    "any_ai_signal_commits": 485,
+    "bot_account_commits": 208,
+    "co_author_trailer_commits": 255,
+    "tool_counts": {
+      "Claude": 227,
+      "Codex": 0,
+      "Cursor": 21,
+      "Devin": 36,
+      "Gemini": 0,
+      "GitHub_Copilot": 5
+    },
+    "total_commits": 5607
+  },
+  "https://github.com/lobehub/lobehub": {
+    "any_ai_signal_commits": 3485,
+    "bot_account_commits": 445,
+    "co_author_trailer_commits": 3054,
+    "tool_counts": {
+      "Claude": 3072,
+      "Codex": 5,
+      "Cursor": 7,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 25
+    },
+    "total_commits": 22920
+  },
+  "https://github.com/mastra-ai/mastra": {
+    "any_ai_signal_commits": 10038,
+    "bot_account_commits": 4209,
+    "co_author_trailer_commits": 5944,
+    "tool_counts": {
+      "Claude": 5646,
+      "Codex": 127,
+      "Cursor": 194,
+      "Devin": 553,
+      "Gemini": 0,
+      "GitHub_Copilot": 39
+    },
+    "total_commits": 36698
+  },
+  "https://github.com/matthiasn/lotti": {
+    "any_ai_signal_commits": 91,
+    "bot_account_commits": 47,
+    "co_author_trailer_commits": 43,
+    "tool_counts": {
+      "Claude": 43,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 1,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 19252
+  },
+  "https://github.com/mcp-use/mcp-use": {
+    "any_ai_signal_commits": 675,
+    "bot_account_commits": 558,
+    "co_author_trailer_commits": 106,
+    "tool_counts": {
+      "Claude": 57,
+      "Codex": 2,
+      "Cursor": 31,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 44
+    },
+    "total_commits": 3384
+  },
+  "https://github.com/medusajs/medusa": {
+    "any_ai_signal_commits": 1860,
+    "bot_account_commits": 1774,
+    "co_author_trailer_commits": 83,
+    "tool_counts": {
+      "Claude": 72,
+      "Codex": 0,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 13
+    },
+    "total_commits": 29751
+  },
+  "https://github.com/mem0ai/mem0": {
+    "any_ai_signal_commits": 283,
+    "bot_account_commits": 73,
+    "co_author_trailer_commits": 208,
+    "tool_counts": {
+      "Claude": 205,
+      "Codex": 0,
+      "Cursor": 3,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 3289
+  },
+  "https://github.com/micro/go-micro": {
+    "any_ai_signal_commits": 1394,
+    "bot_account_commits": 8,
+    "co_author_trailer_commits": 919,
+    "tool_counts": {
+      "Claude": 291,
+      "Codex": 963,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 135
+    },
+    "total_commits": 5617
+  },
+  "https://github.com/microsoft/agent-framework": {
+    "any_ai_signal_commits": 1383,
+    "bot_account_commits": 268,
+    "co_author_trailer_commits": 1112,
+    "tool_counts": {
+      "Claude": 34,
+      "Codex": 0,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 1115
+    },
+    "total_commits": 3606
+  },
+  "https://github.com/microsoft/autogen": {
+    "any_ai_signal_commits": 125,
+    "bot_account_commits": 49,
+    "co_author_trailer_commits": 38,
+    "tool_counts": {
+      "Claude": 2,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 74
+    },
+    "total_commits": 6227
+  },
+  "https://github.com/microsoft/qlib": {
+    "any_ai_signal_commits": 41,
+    "bot_account_commits": 24,
+    "co_author_trailer_commits": 17,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 17
+    },
+    "total_commits": 2463
+  },
+  "https://github.com/mksglu/context-mode": {
+    "any_ai_signal_commits": 1114,
+    "bot_account_commits": 517,
+    "co_author_trailer_commits": 586,
+    "tool_counts": {
+      "Claude": 577,
+      "Codex": 9,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 12
+    },
+    "total_commits": 2211
+  },
+  "https://github.com/mlflow/mlflow": {
+    "any_ai_signal_commits": 3749,
+    "bot_account_commits": 349,
+    "co_author_trailer_commits": 3411,
+    "tool_counts": {
+      "Claude": 2132,
+      "Codex": 9,
+      "Cursor": 19,
+      "Devin": 1,
+      "Gemini": 0,
+      "GitHub_Copilot": 1439
+    },
+    "total_commits": 17090
+  },
+  "https://github.com/msitarzewski/agency-agents": {
+    "any_ai_signal_commits": 134,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 132,
+    "tool_counts": {
+      "Claude": 131,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 443
+  },
+  "https://github.com/mukul975/Anthropic-Cybersecurity-Skills": {
+    "any_ai_signal_commits": 7,
+    "bot_account_commits": 1,
+    "co_author_trailer_commits": 7,
+    "tool_counts": {
+      "Claude": 5,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 245
+  },
+  "https://github.com/n8n-io/n8n": {
+    "any_ai_signal_commits": 7032,
+    "bot_account_commits": 2477,
+    "co_author_trailer_commits": 5298,
+    "tool_counts": {
+      "Claude": 4602,
+      "Codex": 17,
+      "Cursor": 738,
+      "Devin": 1,
+      "Gemini": 0,
+      "GitHub_Copilot": 12
+    },
+    "total_commits": 33556
+  },
+  "https://github.com/nexu-io/open-design": {
+    "any_ai_signal_commits": 3405,
+    "bot_account_commits": 2524,
+    "co_author_trailer_commits": 773,
+    "tool_counts": {
+      "Claude": 507,
+      "Codex": 17,
+      "Cursor": 376,
+      "Devin": 1,
+      "Gemini": 0,
+      "GitHub_Copilot": 1
+    },
+    "total_commits": 19597
+  },
+  "https://github.com/nrwl/nx": {
+    "any_ai_signal_commits": 1131,
+    "bot_account_commits": 399,
+    "co_author_trailer_commits": 699,
+    "tool_counts": {
+      "Claude": 676,
+      "Codex": 0,
+      "Cursor": 7,
+      "Devin": 22,
+      "Gemini": 0,
+      "GitHub_Copilot": 57
+    },
+    "total_commits": 27635
+  },
+  "https://github.com/nullclaw/nullclaw": {
+    "any_ai_signal_commits": 65,
+    "bot_account_commits": 3,
+    "co_author_trailer_commits": 53,
+    "tool_counts": {
+      "Claude": 54,
+      "Codex": 6,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 2774
+  },
+  "https://github.com/nullclaw/nullhub": {
+    "any_ai_signal_commits": 3,
+    "bot_account_commits": 1,
+    "co_author_trailer_commits": 2,
+    "tool_counts": {
+      "Claude": 2,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 458
+  },
+  "https://github.com/open-jarvis/OpenJarvis": {
+    "any_ai_signal_commits": 737,
+    "bot_account_commits": 192,
+    "co_author_trailer_commits": 544,
+    "tool_counts": {
+      "Claude": 540,
+      "Codex": 0,
+      "Cursor": 2,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 1282
+  },
+  "https://github.com/open-metadata/OpenMetadata": {
+    "any_ai_signal_commits": 5290,
+    "bot_account_commits": 656,
+    "co_author_trailer_commits": 4466,
+    "tool_counts": {
+      "Claude": 4219,
+      "Codex": 1,
+      "Cursor": 17,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 474
+    },
+    "total_commits": 33986
+  },
+  "https://github.com/openai/codex": {
+    "any_ai_signal_commits": 3200,
+    "bot_account_commits": 1222,
+    "co_author_trailer_commits": 1962,
+    "tool_counts": {
+      "Claude": 11,
+      "Codex": 1962,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 4
+    },
+    "total_commits": 40115
+  },
+  "https://github.com/openai/openai-agents-python": {
+    "any_ai_signal_commits": 272,
+    "bot_account_commits": 270,
+    "co_author_trailer_commits": 2,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 2,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 2398
+  },
+  "https://github.com/openai/symphony": {
+    "any_ai_signal_commits": 20,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 20,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 20,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 64
+  },
+  "https://github.com/openclaw/openclaw": {
+    "any_ai_signal_commits": 4240,
+    "bot_account_commits": 2402,
+    "co_author_trailer_commits": 1747,
+    "tool_counts": {
+      "Claude": 1295,
+      "Codex": 45,
+      "Cursor": 151,
+      "Devin": 168,
+      "Gemini": 2,
+      "GitHub_Copilot": 208
+    },
+    "total_commits": 131495
+  },
+  "https://github.com/opendatalab/MinerU": {
+    "any_ai_signal_commits": 302,
+    "bot_account_commits": 148,
+    "co_author_trailer_commits": 151,
+    "tool_counts": {
+      "Claude": 88,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 66
+    },
+    "total_commits": 6954
+  },
+  "https://github.com/osaurus-ai/osaurus": {
+    "any_ai_signal_commits": 737,
+    "bot_account_commits": 697,
+    "co_author_trailer_commits": 38,
+    "tool_counts": {
+      "Claude": 19,
+      "Codex": 0,
+      "Cursor": 17,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 4
+    },
+    "total_commits": 5935
+  },
+  "https://github.com/paperclipai/paperclip": {
+    "any_ai_signal_commits": 2576,
+    "bot_account_commits": 278,
+    "co_author_trailer_commits": 1426,
+    "tool_counts": {
+      "Claude": 1388,
+      "Codex": 19,
+      "Cursor": 4,
+      "Devin": 943,
+      "Gemini": 0,
+      "GitHub_Copilot": 2
+    },
+    "total_commits": 11581
+  },
+  "https://github.com/pestphp/pest": {
+    "any_ai_signal_commits": 17,
+    "bot_account_commits": 6,
+    "co_author_trailer_commits": 11,
+    "tool_counts": {
+      "Claude": 10,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 1
+    },
+    "total_commits": 3195
+  },
+  "https://github.com/pipecat-ai/pipecat": {
+    "any_ai_signal_commits": 318,
+    "bot_account_commits": 188,
+    "co_author_trailer_commits": 123,
+    "tool_counts": {
+      "Claude": 278,
+      "Codex": 0,
+      "Cursor": 8,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 20
+    },
+    "total_commits": 15008
+  },
+  "https://github.com/reworkd/AgentGPT": {
+    "any_ai_signal_commits": 115,
+    "bot_account_commits": 115,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 2326
+  },
+  "https://github.com/ruvnet/ruflo": {
+    "any_ai_signal_commits": 5371,
+    "bot_account_commits": 19,
+    "co_author_trailer_commits": 5070,
+    "tool_counts": {
+      "Claude": 5351,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 1
+    },
+    "total_commits": 13101
+  },
+  "https://github.com/shanraisshan/claude-code-best-practice": {
+    "any_ai_signal_commits": 2299,
+    "bot_account_commits": 4,
+    "co_author_trailer_commits": 2109,
+    "tool_counts": {
+      "Claude": 2299,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 2638
+  },
+  "https://github.com/siddsachar/row-bot": {
+    "any_ai_signal_commits": 22,
+    "bot_account_commits": 21,
+    "co_author_trailer_commits": 1,
+    "tool_counts": {
+      "Claude": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 600
+  },
+  "https://github.com/simstudioai/sim": {
+    "any_ai_signal_commits": 635,
+    "bot_account_commits": 13,
+    "co_author_trailer_commits": 622,
+    "tool_counts": {
+      "Claude": 571,
+      "Codex": 2,
+      "Cursor": 52,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 9648
+  },
+  "https://github.com/snarktank/ralph": {
+    "any_ai_signal_commits": 1,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 1,
+    "tool_counts": {
+      "Claude": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 20
+  },
+  "https://github.com/spinabot/brigade": {
+    "any_ai_signal_commits": 83,
+    "bot_account_commits": 83,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 644
+  },
+  "https://github.com/sukeesh/Jarvis": {
+    "any_ai_signal_commits": 0,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 1944
+  },
+  "https://github.com/superagent-ai/superagent": {
+    "any_ai_signal_commits": 35,
+    "bot_account_commits": 3,
+    "co_author_trailer_commits": 33,
+    "tool_counts": {
+      "Claude": 17,
+      "Codex": 0,
+      "Cursor": 18,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 2480
+  },
+  "https://github.com/the-open-agent/openagent": {
+    "any_ai_signal_commits": 877,
+    "bot_account_commits": 2,
+    "co_author_trailer_commits": 0,
+    "tool_counts": {
+      "Claude": 0,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 875
+    },
+    "total_commits": 3954
+  },
+  "https://github.com/thedotmack/claude-mem": {
+    "any_ai_signal_commits": 3140,
+    "bot_account_commits": 124,
+    "co_author_trailer_commits": 2535,
+    "tool_counts": {
+      "Claude": 2486,
+      "Codex": 0,
+      "Cursor": 199,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 366
+    },
+    "total_commits": 5471
+  },
+  "https://github.com/timescale/pgai": {
+    "any_ai_signal_commits": 44,
+    "bot_account_commits": 43,
+    "co_author_trailer_commits": 1,
+    "tool_counts": {
+      "Claude": 1,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 1915
+  },
+  "https://github.com/tinyhumansai/openhuman": {
+    "any_ai_signal_commits": 1407,
+    "bot_account_commits": 678,
+    "co_author_trailer_commits": 729,
+    "tool_counts": {
+      "Claude": 702,
+      "Codex": 2,
+      "Cursor": 29,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 3
+    },
+    "total_commits": 25091
+  },
+  "https://github.com/topoteretes/cognee": {
+    "any_ai_signal_commits": 2045,
+    "bot_account_commits": 52,
+    "co_author_trailer_commits": 1987,
+    "tool_counts": {
+      "Claude": 1948,
+      "Codex": 0,
+      "Cursor": 31,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 21
+    },
+    "total_commits": 12920
+  },
+  "https://github.com/tradesdontlie/tradingview-mcp": {
+    "any_ai_signal_commits": 58,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 58,
+    "tool_counts": {
+      "Claude": 58,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 98
+  },
+  "https://github.com/triggerdotdev/trigger.dev": {
+    "any_ai_signal_commits": 953,
+    "bot_account_commits": 367,
+    "co_author_trailer_commits": 270,
+    "tool_counts": {
+      "Claude": 331,
+      "Codex": 0,
+      "Cursor": 283,
+      "Devin": 43,
+      "Gemini": 0,
+      "GitHub_Copilot": 16
+    },
+    "total_commits": 11831
+  },
+  "https://github.com/ultraworkers/claw-code": {
+    "any_ai_signal_commits": 44,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 44,
+    "tool_counts": {
+      "Claude": 15,
+      "Codex": 29,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 2363
+  },
+  "https://github.com/vercel-labs/agent-browser": {
+    "any_ai_signal_commits": 141,
+    "bot_account_commits": 77,
+    "co_author_trailer_commits": 64,
+    "tool_counts": {
+      "Claude": 61,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 4
+    },
+    "total_commits": 1682
+  },
+  "https://github.com/vercel/ai": {
+    "any_ai_signal_commits": 5217,
+    "bot_account_commits": 4716,
+    "co_author_trailer_commits": 556,
+    "tool_counts": {
+      "Claude": 475,
+      "Codex": 0,
+      "Cursor": 77,
+      "Devin": 1,
+      "Gemini": 0,
+      "GitHub_Copilot": 29
+    },
+    "total_commits": 15056
+  },
+  "https://github.com/virattt/dexter": {
+    "any_ai_signal_commits": 36,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 34,
+    "tool_counts": {
+      "Claude": 10,
+      "Codex": 0,
+      "Cursor": 26,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 501
+  },
+  "https://github.com/vxcontrol/pentagi": {
+    "any_ai_signal_commits": 715,
+    "bot_account_commits": 4,
+    "co_author_trailer_commits": 711,
+    "tool_counts": {
+      "Claude": 685,
+      "Codex": 0,
+      "Cursor": 25,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 1
+    },
+    "total_commits": 1089
+  },
+  "https://github.com/xbtlin/ai-berkshire": {
+    "any_ai_signal_commits": 789,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 173,
+    "tool_counts": {
+      "Claude": 788,
+      "Codex": 0,
+      "Cursor": 0,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 1
+    },
+    "total_commits": 1535
+  },
+  "https://github.com/yc-software/qm": {
+    "any_ai_signal_commits": 127,
+    "bot_account_commits": 4,
+    "co_author_trailer_commits": 80,
+    "tool_counts": {
+      "Claude": 115,
+      "Codex": 7,
+      "Cursor": 1,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 1577
+  },
+  "https://github.com/zeroclaw-labs/zeroclaw": {
+    "any_ai_signal_commits": 847,
+    "bot_account_commits": 72,
+    "co_author_trailer_commits": 768,
+    "tool_counts": {
+      "Claude": 689,
+      "Codex": 7,
+      "Cursor": 2,
+      "Devin": 2,
+      "Gemini": 0,
+      "GitHub_Copilot": 76
+    },
+    "total_commits": 7258
+  },
+  "https://github.com/zhayujie/CowAgent": {
+    "any_ai_signal_commits": 53,
+    "bot_account_commits": 0,
+    "co_author_trailer_commits": 53,
+    "tool_counts": {
+      "Claude": 15,
+      "Codex": 0,
+      "Cursor": 38,
+      "Devin": 0,
+      "Gemini": 0,
+      "GitHub_Copilot": 0
+    },
+    "total_commits": 3071
+  }
+}
