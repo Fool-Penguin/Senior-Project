@@ -34,16 +34,14 @@
 
 ```mermaid
 flowchart TD
-    subgraph QualityMetrics ["Comprehensive Quality & Cognitive Debt Suite (ComplexityLens)"]
+    subgraph QualityMetrics ["Function-Level Quality & Cognitive Debt Suite (ComplexityLens)"]
         direction TB
         M1["Cognitive Complexity: Penalizes nested loops, conditionals & breaks (Campbell Spec)"]
-        M2["McCabe Cyclomatic Complexity: Linearly independent paths (CC = E - N + 2P)"]
+        M2["McCabe Cyclomatic Complexity: Linearly independent paths (CC = E - N + 2 for P=1)"]
         M3["Structural Sizing: SLOC (> 50 Long Method, > 100 God Function)"]
         M4["Control Flow Friction: Maximum Nesting Depth (Threshold: <= 2 healthy, >= 4 critical)"]
         M5["Interface Design: Parameter Count / Arity (Threshold: <= 3 optimal, > 4 smell)"]
-        M6["Object-Oriented Cohesion: LCOM-4 (Threshold: 1 cohesive, > 1 split candidate)"]
-        M7["Halstead Complexity Suite: Lexical Volume (V > 1000) & Implementation Difficulty (D > 30)"]
-        M8["Delta-Complexity Guarantee: Proves Cognitive_before - Cognitive_after > 0 (Verified Complexity Reduction)"]
+        M6["Delta-Complexity Guarantee: Proves Cognitive_before - Cognitive_after > 0 (Verified Complexity Reduction)"]
     end
 ```
 
@@ -52,12 +50,10 @@ Every metric used by the quality engine is mathematically defined with clear int
 | Metric Name | Mathematical Definition / Formula | Interpretation & Thresholds | Impact on Maintainability |
 | :--- | :--- | :--- | :--- |
 | **Cognitive Complexity** | Incremental scoring based on G. Ann Campbell's formal whitepaper:<br/>• `+1` for each break in linear flow (`if`, `ternary`, `switch`, `for`, `while`, `catch`, `goto`, `break`, `continue`)<br/>• `+1` for each nesting level of control structures<br/>• `+1` for logical operator sequences (`a && b && c`)<br/>• `+1` for recursion | • **≤ 8**: Healthy / Clean Code<br/>• **9 – 14**: Moderate Complexity<br/>• **≥ 15**: Critical (Refactoring Trigger) | Direct indicator of human mental comprehension effort. High scores lead to bugs and developer misunderstandings. |
-| **McCabe Cyclomatic Complexity (CC)** | `CC = E - N + 2P`<br/>Where `E` = CFG edges, `N` = CFG nodes, `P` = connected components.<br/>Equivalently: `CC = 1 + Decision Points` | • **1 – 5**: Simple / High Testability<br/>• **6 – 10**: Moderate / Testable<br/>• **11 – 15**: High Complexity<br/>• **> 15**: Untestable / Complex | Measures the minimum number of independent test cases required for complete branch test coverage. |
+| **McCabe Cyclomatic Complexity (CC)** | `CC = E - N + 2P`<br/>Where `E` = CFG edges, `N` = CFG nodes, `P` = connected components (`P = 1` for a single function subroutine, giving `CC = E - N + 2`).<br/>Equivalently: `CC = 1 + Decision Points` | • **1 – 5**: Simple / High Testability<br/>• **6 – 10**: Moderate / Testable<br/>• **11 – 15**: High Complexity<br/>• **> 15**: Untestable / Complex | Measures the minimum number of independent test cases required for complete branch test coverage. |
 | **Source Lines of Code (SLOC)** | Number of physical lines containing executable statements, excluding blank lines and pure comment lines. | • **≤ 30**: Ideal<br/>• **31 – 50**: Acceptable<br/>• **> 50**: Long Method smell<br/>• **> 100**: God Function | Strong correlation with defects and violation of Single Responsibility Principle. |
 | **Maximum Nesting Depth** | Maximum hierarchical depth of nested AST statement blocks (`if` inside `for` inside `try`...). | • **≤ 2**: Healthy<br/>• **3**: Warning<br/>• **≥ 4**: Critical Nesting Smell | Deep nesting creates severe visual friction and cognitive overload. |
 | **Parameter Count (Arity)** | Total number of formal parameters declared in the function signature. | • **≤ 3**: Optimal<br/>• **4**: Acceptable<br/>• **> 4**: Long Parameter List smell | High arity indicates excessive coupling; calls for Parameter Object refactoring. |
-| **Lack of Cohesion in Methods (LCOM-4)** | Number of connected components in an undirected graph where nodes are functions and edges represent shared instance variables. | • **LCOM = 1**: Cohesive<br/>• **LCOM > 1**: Low Cohesion (Split recommended) | Identifies methods that operate on disparate data fields and should be split into modular units. |
-| **Halstead Complexity Suite** | • Distinct Operators (`n1`), Distinct Operands (`n2`)<br/>• Total Operators (`N1`), Total Operands (`N2`)<br/>• Vocabulary: `n = n1 + n2`<br/>• Length: `N = N1 + N2`<br/>• Volume: `V = N * log2(n)`<br/>• Difficulty: `D = (n1 / 2) * (N2 / n2)`<br/>• Effort: `E = D * V` | • **High Volume** (`V > 1000`): Overly verbose logic.<br/>• **High Difficulty** (`D > 30`): Difficult to maintain. | Captures lexical size, operational difficulty, and cognitive mental effort required to implement the function. |
 | **ΔComplexity Guarantee (Core Novelty)** | `ΔComplexity = Cognitive_before - Cognitive_after` | • **ΔComplexity > 0**: Verified Complexity Reduction (Guarantees cognitive burden decreased) | **Guaranteed Refactoring Quality:** Mathematically proves that the AI refactoring reduced structural and mental friction. |
 
 ---
@@ -188,7 +184,7 @@ flowchart LR
 | :--- | :--- | :--- | :--- | :--- |
 | **CodeComplex** | KAIST (`sybaik1/CodeComplex-Data`) | 9,800 programs (Python & Java) | Computational & control-flow complexity classes (O(1) to O(n^3)). | Benchmark how our tool's complexity metrics correlate with algorithmic structure. |
 | **ComplexCodeEval** | Academic Benchmark (`ComplexCodeEval/ComplexCodeEval`) | Thousands of samples from high-star GitHub repos | Complex real-world functions partitioned by time. | Test tool accuracy in identifying messy, unmaintainable code patterns. |
-| **Qualitas Corpus / SourceMeter** | Academic SE Community | 100+ open-source systems | Precomputed object-oriented and structural metrics (CC, LOC, LCOM). | **Ground-Truth Calibration:** Verify that our Tree-sitter AST parser computes identical CC and LOC to official academic baselines. |
+| **Qualitas Corpus / SourceMeter** | Academic SE Community | 100+ open-source systems | Precomputed structural complexity metrics (CC, SLOC). | **Ground-Truth Calibration:** Verify that our Tree-sitter AST parser computes identical CC and SLOC to official academic baselines. |
 | **170 Repos Commit History** | [`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/02_repo_sampling/data/Repos_Final_Sample.csv) | 170 active repos, tens of thousands of functions | Real-world historical bug-fix and refactor commits. | **Commit-Level Evaluation:** Measure human ΔComplexity before vs. after commits and compare against our tool's automated refactorings. |
 
 ---
@@ -261,7 +257,7 @@ This section documents the formal origin, empirical justification, and authorita
 | **Cognitive Complexity (Clean)** | **≤ 8** | Linear control flow without nested context stacks. Aligns with human working memory limits ($7 \pm 2$ items). | [Campbell (2017) Whitepaper](https://www.sonarsource.com/docs/CognitiveComplexity.pdf); Miller (1956). |
 | **Cognitive Complexity (Moderate)** | **9 – 14** | Multi-branch logic requiring moderate context switching; still manageable by experienced developers. | [Campbell (2017)](https://www.sonarsource.com/docs/CognitiveComplexity.pdf); Lenarduzzi et al. (TechDebt 2020). |
 | **Cognitive Complexity (Critical Smell)** | **≥ 15** | Official SonarQube `S3776` threshold where human working memory degrades exponentially and defect density spikes. | [SonarQube Rule RSPEC-3776](https://rules.sonarsource.com/python/RSPEC-3776/); Lenarduzzi et al. (2020). |
-| **McCabe Cyclomatic Complexity (CC)** | **1 – 5** (Low risk)<br/>**6 – 10** (Moderate risk)<br/>**11 – 15** (High risk)<br/>**> 15** (Untestable) | Quantifies the number of linearly independent execution paths through the Control Flow Graph ($CC = E - N + 2P$). Above 10–15, unit testing becomes combinatorial and defect rates soar. | [McCabe (1976), IEEE TSE](https://doi.org/10.1109/TSE.1976.233837); [NIST Special Publication 500-235](https://doi.org/10.6028/NIST.SP.500-235). |
+| **McCabe Cyclomatic Complexity (CC)** | **1 – 5** (Low risk)<br/>**6 – 10** (Moderate risk)<br/>**11 – 15** (High risk)<br/>**> 15** (Untestable) | Quantifies the number of linearly independent execution paths through the Control Flow Graph ($CC = E - N + 2P$, where $P=1$ for a single function subroutine, yielding $CC = E - N + 2$). Above 10–15, unit testing becomes combinatorial and defect rates soar. | [McCabe (1976), IEEE TSE](https://doi.org/10.1109/TSE.1976.233837); [NIST Special Publication 500-235](https://doi.org/10.6028/NIST.SP.500-235). |
 | **ΔComplexity Reduction Guarantee** | **ΔComplexity > 0** | Mathematically guarantees that the refactored code has lower cognitive complexity than the original code. Decomposing nested blocks with guard clauses and extracting methods directly flattens mental friction. | [Silva et al. (FSE 2016)](https://doi.org/10.1145/2950290.2950305); [AlOmar et al. (EMSE 2021)](https://doi.org/10.1007/s10664-021-09951-8); [Fowler (2018), Refactoring](https://martinfowler.com/books/refactoring.html). |
 | **Source Lines of Code (SLOC)** | **≤ 30** (Ideal)<br/>**31 – 50** (Acceptable)<br/>**> 50** (Long Method)<br/>**> 100** (God Function) | Single Responsibility Principle (SRP) limit. Methods beyond 50 lines exhibit significantly higher bug frequency and degraded cohesion. | Martin (2008), *Clean Code*; Lippert & Roock (2006). |
 | **Maximum Nesting Depth** | **≤ 2** (Healthy)<br/>**3** (Warning)<br/>**≥ 4** (Critical) | Nested conditionals compound visual and mental friction; each nesting tier incurs a compounding $+1$ penalty per control construct in Cognitive Complexity. | McConnell (2004), *Code Complete*; Campbell (2017). |
@@ -278,7 +274,7 @@ This section documents the formal origin, empirical justification, and authorita
 | :--- | :--- | :--- | :--- |
 | **CodeComplex** | **9,800 programs** | Validating that our Tree-sitter Cognitive & Cyclomatic metric algorithms faithfully track computational complexity classes ($O(1)$ through $O(n^3)$). | [KAIST CodeComplex GitHub](https://github.com/sybaik1/CodeComplex-Data) |
 | **ComplexCodeEval** | **Thousands of samples** | Stress-testing AST parsing and AI refactoring on highly complex open-source functions partitioned across multiple programming languages. | [ComplexCodeEval GitHub](https://github.com/ComplexCodeEval/ComplexCodeEval) |
-| **Qualitas Corpus** | **100+ systems** | Calibrating structural metric calculations (SLOC, CC, LCOM) against established academic ground truth. | [Qualitas Corpus Official Portal](http://qualitascorpus.net/) / [APSEC 2010](https://doi.org/10.1109/APSEC.2010.46) |
+| **Qualitas Corpus** | **100+ systems** | Calibrating structural metric calculations (SLOC, CC) against established academic ground truth. | [Qualitas Corpus Official Portal](http://qualitascorpus.net/) / [APSEC 2010](https://doi.org/10.1109/APSEC.2010.46) |
 | **170 Repositories Commit Dataset** | **170 repositories** | Real-world benchmark evaluating commit-level $\Delta\text{Complexity}$ drops in human refactoring commits vs. our tool's automated refactorings. | Local Sample: [`Repos_Final_Sample.csv`](file:///d:/4th-year/Senior-Project/02_repo_sampling/data/Repos_Final_Sample.csv) |
 | **Juliet Test Suite v1.3** | **64,000+ test cases** (100+ CWEs) | Ground-truth benchmark for evaluating precision and recall of our tool's AST & Semgrep vulnerability detection rules across `good()` and `bad()` function variants. | [NIST SAMATE SARD Juliet v1.3](https://samate.nist.gov/SARD/test-suites/112) |
 | **OWASP Benchmark v1.2** | **2,740 test cases** | Industry-standard benchmark for verifying vulnerability detection accuracy across injection, crypto, and path traversal flaws. | [OWASP Benchmark Project](https://github.com/OWASP/Benchmark) |
