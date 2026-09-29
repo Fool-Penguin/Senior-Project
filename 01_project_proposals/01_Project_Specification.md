@@ -53,7 +53,7 @@ flowchart TD
     end
 
     subgraph FastLocalEngine ["Fast Local Deterministic Engine (Sub-Second, Zero API Cost)"]
-        F1 -->|"Tree-sitter AST Walker"| Q1["Quality Lens: Cognitive Complexity, CC, LOC, LCOM"]
+        F1 -->|"Tree-sitter AST Walker"| Q1["Quality Lens: Cognitive Complexity, CC, SLOC, Nesting Depth, Arity"]
         F1 -->|"Semgrep OSS / Local Linters"| S1["Security Lens: CWE, NVD & OWASP Pattern Matching"]
     end
 
@@ -93,12 +93,10 @@ Every metric used by the quality engine is mathematically defined with clear int
 | Metric Name | Mathematical Definition / Formula | Interpretation & Thresholds | Impact on Maintainability |
 | :--- | :--- | :--- | :--- |
 | **Cognitive Complexity** | Incremental scoring based on G. Ann Campbell's formal whitepaper:<br/>• `+1` for each break in linear flow (`if`, `ternary`, `switch`, `for`, `while`, `catch`, `goto`, `break`, `continue`)<br/>• `+1` for each nesting level of control structures<br/>• `+1` for logical operator sequences (`a && b && c`)<br/>• `+1` for recursion | • **≤ 8**: Healthy / Clean Code<br/>• **9 – 14**: Moderate Complexity<br/>• **≥ 15**: Critical (Refactoring Trigger) | Direct indicator of human mental comprehension effort. High scores lead to bugs and developer misunderstandings. |
-| **McCabe Cyclomatic Complexity (CC)** | `CC = E - N + 2P`<br/>Where `E` = CFG edges, `N` = CFG nodes, `P` = connected components.<br/>Equivalently: `CC = 1 + Decision Points` | • **1 – 5**: Simple / High Testability<br/>• **6 – 10**: Moderate / Testable<br/>• **11 – 15**: High Complexity<br/>• **> 15**: Untestable / Complex | Measures the minimum number of independent test cases required for complete branch test coverage. |
+| **McCabe Cyclomatic Complexity (CC)** | `CC = E - N + 2P`<br/>Where `E` = CFG edges, `N` = CFG nodes, `P` = connected components (`P = 1` for a single function subroutine, giving `CC = E - N + 2`).<br/>Equivalently: `CC = 1 + Decision Points` | • **1 – 5**: Simple / High Testability<br/>• **6 – 10**: Moderate / Testable<br/>• **11 – 15**: High Complexity<br/>• **> 15**: Untestable / Complex | Measures the minimum number of independent test cases required for complete branch test coverage. |
 | **Source Lines of Code (SLOC)** | Number of physical lines containing executable statements, excluding blank lines and pure comment lines. | • **≤ 30**: Ideal<br/>• **31 – 50**: Acceptable<br/>• **> 50**: Long Method smell<br/>• **> 100**: God Function | Strong correlation with defects and violation of Single Responsibility Principle. |
 | **Maximum Nesting Depth** | Maximum hierarchical depth of nested AST statement blocks (`if` inside `for` inside `try`...). | • **≤ 2**: Healthy<br/>• **3**: Warning<br/>• **≥ 4**: Critical Nesting Smell | Deep nesting creates severe visual friction and cognitive overload. |
 | **Parameter Count (Arity)** | Total number of formal parameters declared in the function signature. | • **≤ 3**: Optimal<br/>• **4**: Acceptable<br/>• **> 4**: Long Parameter List smell | High arity indicates excessive coupling; calls for Parameter Object refactoring. |
-| **Lack of Cohesion in Methods (LCOM-4)** | Number of connected components in an undirected graph where nodes are functions and edges represent shared instance variables. | • **LCOM = 1**: Cohesive<br/>• **LCOM > 1**: Low Cohesion (Split recommended) | Identifies methods that operate on disparate data fields and should be split into modular units. |
-| **Halstead Complexity Suite** | • Distinct Operators (`n1`), Distinct Operands (`n2`)<br/>• Total Operators (`N1`), Total Operands (`N2`)<br/>• Vocabulary: `n = n1 + n2`<br/>• Length: `N = N1 + N2`<br/>• Volume: `V = N * log2(n)`<br/>• Difficulty: `D = (n1 / 2) * (N2 / n2)`<br/>• Effort: `E = D * V` | • **High Volume** (`V > 1000`): Overly verbose logic.<br/>• **High Difficulty** (`D > 30`): Difficult to maintain. | Captures lexical size, operational difficulty, and cognitive mental effort required to implement the function. |
 | **ΔComplexity Guarantee (Core Novelty)** | `ΔComplexity = Cognitive_before - Cognitive_after` | • **ΔComplexity > 0**: Verified Complexity Reduction (Guarantees cognitive burden decreased) | **Guaranteed Refactoring Quality:** Mathematically proves that the AI refactoring reduced structural and mental friction. |
 
 ---
@@ -316,7 +314,7 @@ flowchart TD
     end
 
     subgraph TheMetrics ["Metrics & Standards"]
-        M1["Complexity: Cognitive Complexity, Cyclomatic Complexity, LOC, LCOM, Delta-Complexity"]
+        M1["Complexity: Cognitive Complexity, Cyclomatic Complexity, SLOC, Nesting Depth, Arity, Delta-Complexity"]
         M2["Security: MITRE CWE Top 25 (1-25), NIST NVD (CVE & CVSS v3.1, CPE), OWASP Top 10 (A01-A10), OWASP LLM (LLM01-LLM10)"]
     end
 
@@ -365,8 +363,6 @@ This section documents the formal origin, empirical justification, and authorita
 | **Source Lines of Code (SLOC)** | **≤ 30** (Ideal)<br/>**31 – 50** (Acceptable)<br/>**> 50** (Long Method)<br/>**> 100** (God Function) | Single Responsibility Principle enforcement; methods beyond 30–50 executable lines correlate strongly with defect density and low cohesion. | Martin (2008), *Clean Code*; Lippert & Roock (2006), *Refactoring in Large Software Projects*. |
 | **Maximum Nesting Depth** | **≤ 2** (Healthy)<br/>**3** (Warning)<br/>**≥ 4** (Critical) | Deep nesting causes exponential visual and cognitive friction; each extra indentation level multiplies Campbell's cognitive penalty. | McConnell (2004), *Code Complete* (Chapter 19: General Control Issues); Campbell (2017). |
 | **Parameter Count (Arity)** | **≤ 3** (Optimal)<br/>**4** (Acceptable)<br/>**> 4** (Smell) | High arity indicates excessive coupling and missing abstraction; warrants Parameter Object refactoring. | Martin (2008), *Clean Code* (Chapter 3: Function Arguments). |
-| **Lack of Cohesion (LCOM-4)** | **LCOM = 1** (Cohesive)<br/>**LCOM > 1** (Split Target) | Measures connected components of method-variable access graphs; components > 1 represent disjoint responsibilities. | Hitz & Montazeri (1995); Chidamber & Kemerer (1994), *IEEE TSE*. |
-| **Halstead Complexity** | **V > 1000** (Verbose)<br/>**D > 30** (High Difficulty) | Software science metrics measuring distinct operators/operands, vocabulary, volume, and cognitive implementation effort. | Halstead (1977), *Elements of Software Science*. |
 | **NVD CVSS v3.1 Severity** | **None:** 0.0<br/>**Low:** 0.1 – 3.9<br/>**Medium:** 4.0 – 6.9<br/>**High:** 7.0 – 8.9<br/>**Critical:** 9.0 – 10.0 | Standardized international vulnerability scoring based on exploitability metrics (Attack Vector, Complexity, Privileges) and impact metrics (C/I/A). | FIRST (2019), CVSS v3.1 Specification; NIST Special Publication 800-115. |
 | **Analysis Latency Target** | **Sub-Second (Real-Time)** | Immediate feedback inside the active editor buffer without waiting for remote CI/CD pipeline builds. | Nielsen (1994), *Usability Engineering*; Microsoft VS Code Language Server Protocol Performance Guidelines. |
 
@@ -394,10 +390,6 @@ This section documents the formal origin, empirical justification, and authorita
 * **McConnell, Steve. (2004).** *Code Complete: A Practical Handbook of Software Construction* (2nd ed.). Microsoft Press. (Chapter 19: General Control Issues).  
 * **Miller, George A. (1956).** *"The Magical Number Seven, Plus or Minus Two: Some Limits on Our Capacity for Processing Information."* *Psychological Review*, 63(2), pp. 81–97.  
   *DOI:* [10.1037/h0043158](https://doi.org/10.1037/h0043158)
-* **Hitz, Martin, & Montazeri, Behzad. (1995).** *"Measuring Coupling and Cohesion in Object-Oriented Systems."* In *Proceedings of the 3rd International Symposium on Applied Corporate Computing (ISAAC '95)*, pp. 25–27.  
-* **Chidamber, Shyam R., & Kemerer, Chris F. (1994).** *"A Metrics Suite for Object Oriented Design."* *IEEE Transactions on Software Engineering*, 20(6), pp. 476–493.  
-  *DOI:* [10.1109/32.295895](https://doi.org/10.1109/32.295895)
-* **Halstead, Maurice H. (1977).** *Elements of Software Science*. Elsevier North-Holland.  
 * **Nielsen, Jakob. (1994).** *Usability Engineering*. Morgan Kaufmann. (Response Time Limits: 0.1s for instantaneous feeling, 1.0s for uninterrupted flow of thought).  
   *Nielsen Norman Group Guide:* [https://www.nngroup.com/articles/response-times-3-important-limits/](https://www.nngroup.com/articles/response-times-3-important-limits/)
 
