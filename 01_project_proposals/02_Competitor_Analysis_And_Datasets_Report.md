@@ -182,6 +182,8 @@ flowchart LR
 
 | Dataset | Source | Size & Language | Primary Focus | Senior Project Application |
 | :--- | :--- | :--- | :--- | :--- |
+| **CodeSearchNet** | GitHub / Microsoft (`code_search_net`) | 2,000,000+ standalone functions (Python, JS, etc.) | Clean, pre-parsed function corpus with AST tokens and docstrings. | Evaluating real-time Tree-sitter AST parsing latency and empirical distribution of Cognitive Complexity across large-scale standalone clean functions. |
+| **CodeXGLUE** | Microsoft Research (`microsoft/codexglue`) | 100,000+ code samples (Python, Java, JS) | Code Refactoring & Defect Detection benchmark tasks. | Standard benchmark to evaluate LLM automated refactoring performance and verify that $\Delta\text{Complexity} > 0$. |
 | **CodeComplex** | KAIST (`sybaik1/CodeComplex-Data`) | 9,800 programs (Python & Java) | Computational & control-flow complexity classes (O(1) to O(n^3)). | Benchmark how our tool's complexity metrics correlate with algorithmic structure. |
 | **ComplexCodeEval** | Academic Benchmark (`ComplexCodeEval/ComplexCodeEval`) | Thousands of samples from high-star GitHub repos | Complex real-world functions partitioned by time. | Test tool accuracy in identifying messy, unmaintainable code patterns. |
 | **Qualitas Corpus / SourceMeter** | Academic SE Community | 100+ open-source systems | Precomputed structural complexity metrics (CC, SLOC). | **Ground-Truth Calibration:** Verify that our Tree-sitter AST parser computes identical CC and SLOC to official academic baselines. |
@@ -220,8 +222,8 @@ flowchart TD
     end
 
     subgraph TheEvaluation ["Evaluation Datasets"]
-        E1["Complexity: CodeComplex, ComplexCodeEval, Qualitas Corpus"]
-        E2["Security: Juliet Test Suite v1.3, OWASP Benchmark v1.2, NIST NVD CVEFixes"]
+        E1["Complexity: CodeSearchNet, CodeXGLUE, CodeComplex, ComplexCodeEval, Qualitas Corpus"]
+        E2["Security: Juliet Test Suite v1.3, OWASP Benchmark v1.2, NIST NVD CVEFixes / PrimeVul"]
         E3["Real-World: Commit-level Delta-Complexity on our 170 curated repos"]
     end
 
@@ -272,6 +274,8 @@ This section documents the formal origin, empirical justification, and authorita
 
 | Dataset | Sample Size | Primary Role in Tool Validation | Canonical Source & Repository |
 | :--- | :--- | :--- | :--- |
+| **CodeSearchNet** | **2,000,000+ functions** (Python, JS, etc.) | Evaluating real-time Tree-sitter AST parsing latency and empirical distribution of Cognitive Complexity across large-scale standalone clean functions. | [Hugging Face `code_search_net`](https://huggingface.co/datasets/code_search_net) / [Husain et al. (2019)](https://arxiv.org/abs/1909.09436) |
+| **CodeXGLUE** | **100,000+ examples** (Refactoring & Defect tasks) | Standardized benchmark for evaluating LLM automated code refactoring efficacy, ensuring candidate refactorings achieve $\Delta\text{Complexity} > 0$ and syntactic validity. | [Hugging Face `microsoft/codexglue`](https://huggingface.co/datasets/microsoft/codexglue) / [Lu et al. (2021)](https://arxiv.org/abs/2102.04664) |
 | **CodeComplex** | **9,800 programs** | Validating that our Tree-sitter Cognitive & Cyclomatic metric algorithms faithfully track computational complexity classes ($O(1)$ through $O(n^3)$). | [KAIST CodeComplex GitHub](https://github.com/sybaik1/CodeComplex-Data) |
 | **ComplexCodeEval** | **Thousands of samples** | Stress-testing AST parsing and AI refactoring on highly complex open-source functions partitioned across multiple programming languages. | [ComplexCodeEval GitHub](https://github.com/ComplexCodeEval/ComplexCodeEval) |
 | **Qualitas Corpus** | **100+ systems** | Calibrating structural metric calculations (SLOC, CC) against established academic ground truth. | [Qualitas Corpus Official Portal](http://qualitascorpus.net/) / [APSEC 2010](https://doi.org/10.1109/APSEC.2010.46) |
@@ -317,14 +321,18 @@ This section documents the formal origin, empirical justification, and authorita
     URL: [https://owasp.org/www-project-top-10-for-large-language-model-applications/](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 17. **Baik, Seungyeon, et al. (2021).** *"CodeComplex: A Dataset of Complex Code and Complexity Classes."* KAIST.  
     GitHub: [https://github.com/sybaik1/CodeComplex-Data](https://github.com/sybaik1/CodeComplex-Data)
-18. **Bhandari, Guru, Naseer, Amara, & Moonen, Leon. (2021).** *"CVEfixes: A Comprehensive Dataset of Security Vulnerabilities and Their Fixes."* In *Proceedings of the 18th International Conference on Mining Software Repositories (MSR 2021)*, pp. 241–251.  
+18. **Husain, Hamel, et al. (2019).** *"CodeSearchNet Challenge: Evaluating the State of Semantic Code Search."* arXiv preprint arXiv:1909.09436.  
+    Hugging Face: [https://huggingface.co/datasets/code_search_net](https://huggingface.co/datasets/code_search_net) / GitHub: [https://github.com/github/CodeSearchNet](https://github.com/github/CodeSearchNet)
+19. **Lu, Shuai, et al. (2021).** *"CodeXGLUE: A Machine Learning Benchmark Dataset for Code Understanding and Generation."* In *Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks (NeurIPS 2021)*.  
+    Hugging Face: [https://huggingface.co/datasets/microsoft/codexglue](https://huggingface.co/datasets/microsoft/codexglue) / arXiv: [https://arxiv.org/abs/2102.04664](https://arxiv.org/abs/2102.04664)
+20. **Bhandari, Guru, Naseer, Amara, & Moonen, Leon. (2021).** *"CVEfixes: A Comprehensive Dataset of Security Vulnerabilities and Their Fixes."* In *Proceedings of the 18th International Conference on Mining Software Repositories (MSR 2021)*, pp. 241–251.  
     DOI: [10.1109/MSR52588.2021.00037](https://doi.org/10.1109/MSR52588.2021.00037)  
     GitHub: [https://github.com/secure-software-engineering/CVEfixes](https://github.com/secure-software-engineering/CVEfixes)
-19. **NIST SAMATE. (2020).** *"Juliet Test Suite for C/C++ and Java v1.3."* Software Assurance Reference Dataset.  
+21. **NIST SAMATE. (2020).** *"Juliet Test Suite for C/C++ and Java v1.3."* Software Assurance Reference Dataset.  
     URL: [https://samate.nist.gov/SARD/test-suites/112](https://samate.nist.gov/SARD/test-suites/112)
-20. **OWASP Foundation. (2023).** *"OWASP Benchmark Project v1.2."*  
+22. **OWASP Foundation. (2023).** *"OWASP Benchmark Project v1.2."*  
     GitHub: [https://github.com/OWASP/Benchmark](https://github.com/OWASP/Benchmark)
-21. **Tempero, Ewan, et al. (2010).** *"The Qualitas Corpus: A Curated Collection of Java Code for Empirical Studies."* In *APSEC 2010*, pp. 336–345.  
+23. **Tempero, Ewan, et al. (2010).** *"The Qualitas Corpus: A Curated Collection of Java Code for Empirical Studies."* In *APSEC 2010*, pp. 336–345.  
     DOI: [10.1109/APSEC.2010.46](https://doi.org/10.1109/APSEC.2010.46)
-22. **Nielsen, Jakob. (1994).** *Usability Engineering*. Morgan Kaufmann.  
+24. **Nielsen, Jakob. (1994).** *Usability Engineering*. Morgan Kaufmann.  
     Article: [https://www.nngroup.com/articles/response-times-3-important-limits/](https://www.nngroup.com/articles/response-times-3-important-limits/)
