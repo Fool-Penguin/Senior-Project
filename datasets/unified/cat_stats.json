@@ -1,0 +1,3000 @@
+{
+  "all": {
+    "total": 1891,
+    "meanCvss": 7.87,
+    "cwesCount": 27,
+    "critical": 766,
+    "severity": {
+      "Critical (9.0-10.0)": {
+        "count": 766,
+        "pct": 40.5,
+        "color": "bg-rose-500"
+      },
+      "High (7.0-8.9)": {
+        "count": 468,
+        "pct": 24.7,
+        "color": "bg-amber-500"
+      },
+      "Medium (4.0-6.9)": {
+        "count": 650,
+        "pct": 34.4,
+        "color": "bg-yellow-500"
+      },
+      "Low (0.1-3.9)": {
+        "count": 7,
+        "pct": 0.4,
+        "color": "bg-emerald-500"
+      },
+      "Unscored/Pending": {
+        "count": 0,
+        "pct": 0.0,
+        "color": "bg-slate-400"
+      }
+    },
+    "cwes": [
+      {
+        "id": "CWE-79",
+        "name": "Cross-site Scripting (XSS)",
+        "count": 321,
+        "pct": 16.98,
+        "rank": 1,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-78",
+        "name": "OS Command Injection",
+        "count": 220,
+        "pct": 11.63,
+        "rank": 9,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-94",
+        "name": "Code Injection",
+        "count": 164,
+        "pct": 8.67,
+        "rank": 10,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-95",
+        "name": "Eval Injection",
+        "count": 157,
+        "pct": 8.3,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-338",
+        "name": "Weak PRNG",
+        "count": 153,
+        "pct": 8.09,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-22",
+        "name": "Path Traversal",
+        "count": 124,
+        "pct": 6.56,
+        "rank": 6,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-328",
+        "name": "Weak Hash Algorithm",
+        "count": 110,
+        "pct": 5.82,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-89",
+        "name": "SQL Injection",
+        "count": 105,
+        "pct": 5.55,
+        "rank": 2,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-502",
+        "name": "Deserialization of Untrusted Data",
+        "count": 103,
+        "pct": 5.45,
+        "rank": 15,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-798",
+        "name": "Use of Hard-coded Credentials",
+        "count": 78,
+        "pct": 4.12,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1321",
+        "name": "Prototype Pollution",
+        "count": 60,
+        "pct": 3.17,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-200",
+        "name": "Sensitive Information Disclosure / System Prompt Leakage",
+        "count": 56,
+        "pct": 2.96,
+        "rank": 20,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-918",
+        "name": "Server-Side Request Forgery (SSRF)",
+        "count": 51,
+        "pct": 2.7,
+        "rank": 22,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1333",
+        "name": "Regular Expression Denial of Service (ReDoS)",
+        "count": 47,
+        "pct": 2.49,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-601",
+        "name": "Open Redirect",
+        "count": 33,
+        "pct": 1.75,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-352",
+        "name": "Cross-Site Request Forgery (CSRF)",
+        "count": 27,
+        "pct": 1.43,
+        "rank": 3,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-77",
+        "name": "Command Injection (General)",
+        "count": 19,
+        "pct": 1.0,
+        "rank": 23,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1427",
+        "name": "Direct and Indirect Prompt Injection",
+        "count": 10,
+        "pct": 0.53,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1426",
+        "name": "Improper Output Handling (Unvalidated Downstream Execution)",
+        "count": 10,
+        "pct": 0.53,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-347",
+        "name": "Improper Verification of Cryptographic Signature",
+        "count": 9,
+        "pct": 0.48,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-611",
+        "name": "XML External Entity (XXE)",
+        "count": 6,
+        "pct": 0.32,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-943",
+        "name": "NoSQL Injection",
+        "count": 6,
+        "pct": 0.32,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-209",
+        "name": "Generation of Error Message with Sensitive Info",
+        "count": 5,
+        "pct": 0.26,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1336",
+        "name": "Server-Side Template Injection (SSTI)",
+        "count": 5,
+        "pct": 0.26,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-862",
+        "name": "Missing Authorization",
+        "count": 5,
+        "pct": 0.26,
+        "rank": 4,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-915",
+        "name": "Mass Assignment",
+        "count": 4,
+        "pct": 0.21,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-327",
+        "name": "Use of Broken Cryptographic Algorithm",
+        "count": 3,
+        "pct": 0.16,
+        "rank": null,
+        "in_catalogue": true
+      }
+    ],
+    "mitre_top25": [
+      {
+        "rank": 1,
+        "id": "CWE-79",
+        "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+        "count": 321,
+        "pct": 16.98,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 2,
+        "id": "CWE-89",
+        "name": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+        "count": 105,
+        "pct": 5.55,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 3,
+        "id": "CWE-352",
+        "name": "Cross-Site Request Forgery (CSRF)",
+        "count": 27,
+        "pct": 1.43,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 4,
+        "id": "CWE-862",
+        "name": "Missing Authorization",
+        "count": 5,
+        "pct": 0.26,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 5,
+        "id": "CWE-787",
+        "name": "Out-of-bounds Write",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 6,
+        "id": "CWE-22",
+        "name": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+        "count": 124,
+        "pct": 6.56,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 7,
+        "id": "CWE-416",
+        "name": "Use After Free",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 8,
+        "id": "CWE-125",
+        "name": "Out-of-bounds Read",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 9,
+        "id": "CWE-78",
+        "name": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+        "count": 220,
+        "pct": 11.63,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 10,
+        "id": "CWE-94",
+        "name": "Improper Control of Generation of Code ('Code Injection')",
+        "count": 164,
+        "pct": 8.67,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 11,
+        "id": "CWE-120",
+        "name": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 12,
+        "id": "CWE-434",
+        "name": "Unrestricted Upload of File with Dangerous Type",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Server / File Upload Infrastructure"
+      },
+      {
+        "rank": 13,
+        "id": "CWE-476",
+        "name": "NULL Pointer Dereference",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 14,
+        "id": "CWE-121",
+        "name": "Stack-based Buffer Overflow",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 15,
+        "id": "CWE-502",
+        "name": "Deserialization of Untrusted Data",
+        "count": 103,
+        "pct": 5.45,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 16,
+        "id": "CWE-122",
+        "name": "Heap-based Buffer Overflow",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 17,
+        "id": "CWE-863",
+        "name": "Incorrect Authorization",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 18,
+        "id": "CWE-20",
+        "name": "Improper Input Validation",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Pillar CWE / Architectural Gap"
+      },
+      {
+        "rank": 19,
+        "id": "CWE-284",
+        "name": "Improper Access Control",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Pillar CWE / Architectural Gap"
+      },
+      {
+        "rank": 20,
+        "id": "CWE-200",
+        "name": "Exposure of Sensitive Information to an Unauthorized Actor",
+        "count": 56,
+        "pct": 2.96,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 21,
+        "id": "CWE-306",
+        "name": "Missing Authentication for Critical Function",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 22,
+        "id": "CWE-918",
+        "name": "Server-Side Request Forgery (SSRF)",
+        "count": 51,
+        "pct": 2.7,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 23,
+        "id": "CWE-77",
+        "name": "Improper Neutralization of Special Elements used in a Command ('Command Injection')",
+        "count": 19,
+        "pct": 1.0,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 24,
+        "id": "CWE-639",
+        "name": "Authorization Bypass Through User-Controlled Key",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 25,
+        "id": "CWE-770",
+        "name": "Allocation of Resources Without Limits or Throttling",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Network Volumetric DoS"
+      }
+    ],
+    "owasp_web": [
+      {
+        "id": "A01:2025",
+        "name": "A01:2025 - Broken Access Control",
+        "count": 284,
+        "pct": 15.02,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Path Traversal, SSRF, Missing Authz, Open Redirect"
+      },
+      {
+        "id": "A02:2025",
+        "name": "A02:2025 - Security Misconfiguration",
+        "count": 53,
+        "pct": 2.8,
+        "is_excluded": false,
+        "exclusion_reason": "Covers XXE, ReDoS"
+      },
+      {
+        "id": "A03:2025",
+        "name": "A03:2025 - Software Supply Chain Failures",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: SCA / Manifest Auditing"
+      },
+      {
+        "id": "A04:2025",
+        "name": "A04:2025 - Cryptographic Failures",
+        "count": 275,
+        "pct": 14.54,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Broken Ciphers, Weak PRNG, JWT Bypass, Weak Hashes"
+      },
+      {
+        "id": "A05:2025",
+        "name": "A05:2025 - Injection",
+        "count": 1005,
+        "pct": 53.15,
+        "is_excluded": false,
+        "exclusion_reason": "Covers SQLi, OS Command Injection, Command Injection, Code Injection, Eval Injection, SSTI, NoSQLi, XSS"
+      },
+      {
+        "id": "A06:2025",
+        "name": "A06:2025 - Insecure Design",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 4: Undocumented Business Logic Architecture"
+      },
+      {
+        "id": "A07:2025",
+        "name": "A07:2025 - Authentication Failures",
+        "count": 78,
+        "pct": 4.12,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Hard-coded Credentials (CWE-798)"
+      },
+      {
+        "id": "A08:2025",
+        "name": "A08:2025 - Software or Data Integrity Failures",
+        "count": 167,
+        "pct": 8.83,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Insecure Deserialization, Prototype Pollution, Mass Assignment (CWE-915)"
+      },
+      {
+        "id": "A09:2025",
+        "name": "A09:2025 - Security Logging & Alerting Failures",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 3: Server Logging Infrastructure & SIEM"
+      },
+      {
+        "id": "A10:2025",
+        "name": "A10:2025 - Mishandling of Exceptional Conditions",
+        "count": 5,
+        "pct": 0.26,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Debug Mode & Error Message Information Leakage (CWE-209)"
+      }
+    ],
+    "owasp_llm": [
+      {
+        "id": "LLM01:2025",
+        "name": "LLM01:2025 - Prompt Injection",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM02:2025",
+        "name": "LLM02:2025 - Sensitive Information Disclosure",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM03:2025",
+        "name": "LLM03:2025 - Supply Chain Vulnerabilities",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Pretrained Weights Provenance (HuggingFace/SCA)"
+      },
+      {
+        "id": "LLM04:2025",
+        "name": "LLM04:2025 - Data and Model Poisoning",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Training Corpus / RLHF Pipeline"
+      },
+      {
+        "id": "LLM05:2025",
+        "name": "LLM05:2025 - Improper Output Handling",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM06:2025",
+        "name": "LLM06:2025 - Excessive Agency",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Agent Autonomous Permissions / HITL Policy"
+      },
+      {
+        "id": "LLM07:2025",
+        "name": "LLM07:2025 - System Prompt Leakage",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM08:2025",
+        "name": "LLM08:2025 - Vector and Embedding Weaknesses",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: External Vector DB / Cluster Infrastructure"
+      },
+      {
+        "id": "LLM09:2025",
+        "name": "LLM09:2025 - Misinformation",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Stochastic Neural Network Hallucinations"
+      },
+      {
+        "id": "LLM10:2025",
+        "name": "LLM10:2025 - Unbounded Consumption",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Cloud Billing / API Rate Quotas"
+      }
+    ],
+    "owasp": [
+      {
+        "name": "A05:2025-Injection",
+        "count": 1005,
+        "pct": 53.1
+      },
+      {
+        "name": "A01:2025-Broken Access Control",
+        "count": 284,
+        "pct": 15.0
+      },
+      {
+        "name": "A04:2025-Cryptographic Failures",
+        "count": 275,
+        "pct": 14.5
+      },
+      {
+        "name": "A08:2025-Software or Data Integrity Failures",
+        "count": 167,
+        "pct": 8.8
+      },
+      {
+        "name": "A07:2025-Authentication Failures",
+        "count": 78,
+        "pct": 4.1
+      },
+      {
+        "name": "A02:2025-Security Misconfiguration",
+        "count": 53,
+        "pct": 2.8
+      },
+      {
+        "name": "OWASP LLM Top 10:2025",
+        "count": 24,
+        "pct": 1.3
+      },
+      {
+        "name": "A10:2025-Mishandling of Exceptional Conditions",
+        "count": 5,
+        "pct": 0.3
+      }
+    ],
+    "hist": [
+      {
+        "bin": "2-3",
+        "count": 2,
+        "h": 0.2
+      },
+      {
+        "bin": "3-4",
+        "count": 5,
+        "h": 0.6
+      },
+      {
+        "bin": "4-5",
+        "count": 41,
+        "h": 5.1
+      },
+      {
+        "bin": "5-6",
+        "count": 351,
+        "h": 43.5
+      },
+      {
+        "bin": "6-7",
+        "count": 258,
+        "h": 32.0
+      },
+      {
+        "bin": "7-8",
+        "count": 298,
+        "h": 37.0
+      },
+      {
+        "bin": "8-9",
+        "count": 170,
+        "h": 21.1
+      },
+      {
+        "bin": "9-10",
+        "count": 766,
+        "h": 95.0
+      }
+    ]
+  },
+  "python": {
+    "total": 1002,
+    "meanCvss": 8.29,
+    "cwesCount": 26,
+    "critical": 489,
+    "severity": {
+      "Critical (9.0-10.0)": {
+        "count": 489,
+        "pct": 48.8,
+        "color": "bg-rose-500"
+      },
+      "High (7.0-8.9)": {
+        "count": 274,
+        "pct": 27.3,
+        "color": "bg-amber-500"
+      },
+      "Medium (4.0-6.9)": {
+        "count": 237,
+        "pct": 23.7,
+        "color": "bg-yellow-500"
+      },
+      "Low (0.1-3.9)": {
+        "count": 2,
+        "pct": 0.2,
+        "color": "bg-emerald-500"
+      },
+      "Unscored/Pending": {
+        "count": 0,
+        "pct": 0.0,
+        "color": "bg-slate-400"
+      }
+    },
+    "cwes": [
+      {
+        "id": "CWE-78",
+        "name": "OS Command Injection",
+        "count": 186,
+        "pct": 18.56,
+        "rank": 9,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-94",
+        "name": "Code Injection",
+        "count": 146,
+        "pct": 14.57,
+        "rank": 10,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-328",
+        "name": "Weak Hash Algorithm",
+        "count": 110,
+        "pct": 10.98,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-502",
+        "name": "Deserialization of Untrusted Data",
+        "count": 102,
+        "pct": 10.18,
+        "rank": 15,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-89",
+        "name": "SQL Injection",
+        "count": 88,
+        "pct": 8.78,
+        "rank": 2,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-798",
+        "name": "Use of Hard-coded Credentials",
+        "count": 74,
+        "pct": 7.39,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-338",
+        "name": "Weak PRNG",
+        "count": 60,
+        "pct": 5.99,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-79",
+        "name": "Cross-site Scripting (XSS)",
+        "count": 58,
+        "pct": 5.79,
+        "rank": 1,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-22",
+        "name": "Path Traversal",
+        "count": 43,
+        "pct": 4.29,
+        "rank": 6,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-200",
+        "name": "Sensitive Information Disclosure / System Prompt Leakage",
+        "count": 28,
+        "pct": 2.79,
+        "rank": 20,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-601",
+        "name": "Open Redirect",
+        "count": 23,
+        "pct": 2.3,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-918",
+        "name": "Server-Side Request Forgery (SSRF)",
+        "count": 23,
+        "pct": 2.3,
+        "rank": 22,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-352",
+        "name": "Cross-Site Request Forgery (CSRF)",
+        "count": 13,
+        "pct": 1.3,
+        "rank": 3,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1333",
+        "name": "Regular Expression Denial of Service (ReDoS)",
+        "count": 9,
+        "pct": 0.9,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-611",
+        "name": "XML External Entity (XXE)",
+        "count": 6,
+        "pct": 0.6,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-77",
+        "name": "Command Injection (General)",
+        "count": 6,
+        "pct": 0.6,
+        "rank": 23,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-209",
+        "name": "Generation of Error Message with Sensitive Info",
+        "count": 5,
+        "pct": 0.5,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1427",
+        "name": "Direct and Indirect Prompt Injection",
+        "count": 4,
+        "pct": 0.4,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1426",
+        "name": "Improper Output Handling (Unvalidated Downstream Execution)",
+        "count": 4,
+        "pct": 0.4,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-347",
+        "name": "Improper Verification of Cryptographic Signature",
+        "count": 3,
+        "pct": 0.3,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1336",
+        "name": "Server-Side Template Injection (SSTI)",
+        "count": 3,
+        "pct": 0.3,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-327",
+        "name": "Use of Broken Cryptographic Algorithm",
+        "count": 2,
+        "pct": 0.2,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-862",
+        "name": "Missing Authorization",
+        "count": 2,
+        "pct": 0.2,
+        "rank": 4,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-943",
+        "name": "NoSQL Injection",
+        "count": 2,
+        "pct": 0.2,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1321",
+        "name": "Prototype Pollution",
+        "count": 1,
+        "pct": 0.1,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-915",
+        "name": "Mass Assignment",
+        "count": 1,
+        "pct": 0.1,
+        "rank": null,
+        "in_catalogue": true
+      }
+    ],
+    "mitre_top25": [
+      {
+        "rank": 1,
+        "id": "CWE-79",
+        "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+        "count": 58,
+        "pct": 5.79,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 2,
+        "id": "CWE-89",
+        "name": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+        "count": 88,
+        "pct": 8.78,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 3,
+        "id": "CWE-352",
+        "name": "Cross-Site Request Forgery (CSRF)",
+        "count": 13,
+        "pct": 1.3,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 4,
+        "id": "CWE-862",
+        "name": "Missing Authorization",
+        "count": 2,
+        "pct": 0.2,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 5,
+        "id": "CWE-787",
+        "name": "Out-of-bounds Write",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 6,
+        "id": "CWE-22",
+        "name": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+        "count": 43,
+        "pct": 4.29,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 7,
+        "id": "CWE-416",
+        "name": "Use After Free",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 8,
+        "id": "CWE-125",
+        "name": "Out-of-bounds Read",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 9,
+        "id": "CWE-78",
+        "name": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+        "count": 186,
+        "pct": 18.56,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 10,
+        "id": "CWE-94",
+        "name": "Improper Control of Generation of Code ('Code Injection')",
+        "count": 146,
+        "pct": 14.57,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 11,
+        "id": "CWE-120",
+        "name": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 12,
+        "id": "CWE-434",
+        "name": "Unrestricted Upload of File with Dangerous Type",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Server / File Upload Infrastructure"
+      },
+      {
+        "rank": 13,
+        "id": "CWE-476",
+        "name": "NULL Pointer Dereference",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 14,
+        "id": "CWE-121",
+        "name": "Stack-based Buffer Overflow",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 15,
+        "id": "CWE-502",
+        "name": "Deserialization of Untrusted Data",
+        "count": 102,
+        "pct": 10.18,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 16,
+        "id": "CWE-122",
+        "name": "Heap-based Buffer Overflow",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 17,
+        "id": "CWE-863",
+        "name": "Incorrect Authorization",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 18,
+        "id": "CWE-20",
+        "name": "Improper Input Validation",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Pillar CWE / Architectural Gap"
+      },
+      {
+        "rank": 19,
+        "id": "CWE-284",
+        "name": "Improper Access Control",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Pillar CWE / Architectural Gap"
+      },
+      {
+        "rank": 20,
+        "id": "CWE-200",
+        "name": "Exposure of Sensitive Information to an Unauthorized Actor",
+        "count": 28,
+        "pct": 2.79,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 21,
+        "id": "CWE-306",
+        "name": "Missing Authentication for Critical Function",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 22,
+        "id": "CWE-918",
+        "name": "Server-Side Request Forgery (SSRF)",
+        "count": 23,
+        "pct": 2.3,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 23,
+        "id": "CWE-77",
+        "name": "Improper Neutralization of Special Elements used in a Command ('Command Injection')",
+        "count": 6,
+        "pct": 0.6,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 24,
+        "id": "CWE-639",
+        "name": "Authorization Bypass Through User-Controlled Key",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 25,
+        "id": "CWE-770",
+        "name": "Allocation of Resources Without Limits or Throttling",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Network Volumetric DoS"
+      }
+    ],
+    "owasp_web": [
+      {
+        "id": "A01:2025",
+        "name": "A01:2025 - Broken Access Control",
+        "count": 128,
+        "pct": 12.77,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Path Traversal, SSRF, Missing Authz, Open Redirect"
+      },
+      {
+        "id": "A02:2025",
+        "name": "A02:2025 - Security Misconfiguration",
+        "count": 15,
+        "pct": 1.5,
+        "is_excluded": false,
+        "exclusion_reason": "Covers XXE, ReDoS"
+      },
+      {
+        "id": "A03:2025",
+        "name": "A03:2025 - Software Supply Chain Failures",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: SCA / Manifest Auditing"
+      },
+      {
+        "id": "A04:2025",
+        "name": "A04:2025 - Cryptographic Failures",
+        "count": 175,
+        "pct": 17.47,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Broken Ciphers, Weak PRNG, JWT Bypass, Weak Hashes"
+      },
+      {
+        "id": "A05:2025",
+        "name": "A05:2025 - Injection",
+        "count": 493,
+        "pct": 49.2,
+        "is_excluded": false,
+        "exclusion_reason": "Covers SQLi, OS Command Injection, Command Injection, Code Injection, Eval Injection, SSTI, NoSQLi, XSS"
+      },
+      {
+        "id": "A06:2025",
+        "name": "A06:2025 - Insecure Design",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 4: Undocumented Business Logic Architecture"
+      },
+      {
+        "id": "A07:2025",
+        "name": "A07:2025 - Authentication Failures",
+        "count": 74,
+        "pct": 7.39,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Hard-coded Credentials (CWE-798)"
+      },
+      {
+        "id": "A08:2025",
+        "name": "A08:2025 - Software or Data Integrity Failures",
+        "count": 104,
+        "pct": 10.38,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Insecure Deserialization, Prototype Pollution, Mass Assignment (CWE-915)"
+      },
+      {
+        "id": "A09:2025",
+        "name": "A09:2025 - Security Logging & Alerting Failures",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 3: Server Logging Infrastructure & SIEM"
+      },
+      {
+        "id": "A10:2025",
+        "name": "A10:2025 - Mishandling of Exceptional Conditions",
+        "count": 5,
+        "pct": 0.5,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Debug Mode & Error Message Information Leakage (CWE-209)"
+      }
+    ],
+    "owasp_llm": [
+      {
+        "id": "LLM01:2025",
+        "name": "LLM01:2025 - Prompt Injection",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM02:2025",
+        "name": "LLM02:2025 - Sensitive Information Disclosure",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM03:2025",
+        "name": "LLM03:2025 - Supply Chain Vulnerabilities",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Pretrained Weights Provenance (HuggingFace/SCA)"
+      },
+      {
+        "id": "LLM04:2025",
+        "name": "LLM04:2025 - Data and Model Poisoning",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Training Corpus / RLHF Pipeline"
+      },
+      {
+        "id": "LLM05:2025",
+        "name": "LLM05:2025 - Improper Output Handling",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM06:2025",
+        "name": "LLM06:2025 - Excessive Agency",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Agent Autonomous Permissions / HITL Policy"
+      },
+      {
+        "id": "LLM07:2025",
+        "name": "LLM07:2025 - System Prompt Leakage",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM08:2025",
+        "name": "LLM08:2025 - Vector and Embedding Weaknesses",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: External Vector DB / Cluster Infrastructure"
+      },
+      {
+        "id": "LLM09:2025",
+        "name": "LLM09:2025 - Misinformation",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Stochastic Neural Network Hallucinations"
+      },
+      {
+        "id": "LLM10:2025",
+        "name": "LLM10:2025 - Unbounded Consumption",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Cloud Billing / API Rate Quotas"
+      }
+    ],
+    "owasp": [
+      {
+        "name": "A05:2025-Injection",
+        "count": 493,
+        "pct": 49.2
+      },
+      {
+        "name": "A04:2025-Cryptographic Failures",
+        "count": 175,
+        "pct": 17.5
+      },
+      {
+        "name": "A01:2025-Broken Access Control",
+        "count": 128,
+        "pct": 12.8
+      },
+      {
+        "name": "A08:2025-Software or Data Integrity Failures",
+        "count": 104,
+        "pct": 10.4
+      },
+      {
+        "name": "A07:2025-Authentication Failures",
+        "count": 74,
+        "pct": 7.4
+      },
+      {
+        "name": "A02:2025-Security Misconfiguration",
+        "count": 15,
+        "pct": 1.5
+      },
+      {
+        "name": "OWASP LLM Top 10:2025",
+        "count": 8,
+        "pct": 0.8
+      },
+      {
+        "name": "A10:2025-Mishandling of Exceptional Conditions",
+        "count": 5,
+        "pct": 0.5
+      }
+    ],
+    "hist": [
+      {
+        "bin": "2-3",
+        "count": 1,
+        "h": 0.2
+      },
+      {
+        "bin": "3-4",
+        "count": 1,
+        "h": 0.2
+      },
+      {
+        "bin": "4-5",
+        "count": 17,
+        "h": 3.3
+      },
+      {
+        "bin": "5-6",
+        "count": 150,
+        "h": 29.1
+      },
+      {
+        "bin": "6-7",
+        "count": 70,
+        "h": 13.6
+      },
+      {
+        "bin": "7-8",
+        "count": 150,
+        "h": 29.1
+      },
+      {
+        "bin": "8-9",
+        "count": 124,
+        "h": 24.1
+      },
+      {
+        "bin": "9-10",
+        "count": 489,
+        "h": 95.0
+      }
+    ]
+  },
+  "javascript": {
+    "total": 774,
+    "meanCvss": 7.41,
+    "cwesCount": 22,
+    "critical": 255,
+    "severity": {
+      "Critical (9.0-10.0)": {
+        "count": 255,
+        "pct": 32.9,
+        "color": "bg-rose-500"
+      },
+      "High (7.0-8.9)": {
+        "count": 158,
+        "pct": 20.4,
+        "color": "bg-amber-500"
+      },
+      "Medium (4.0-6.9)": {
+        "count": 358,
+        "pct": 46.3,
+        "color": "bg-yellow-500"
+      },
+      "Low (0.1-3.9)": {
+        "count": 3,
+        "pct": 0.4,
+        "color": "bg-emerald-500"
+      },
+      "Unscored/Pending": {
+        "count": 0,
+        "pct": 0.0,
+        "color": "bg-slate-400"
+      }
+    },
+    "cwes": [
+      {
+        "id": "CWE-79",
+        "name": "Cross-site Scripting (XSS)",
+        "count": 234,
+        "pct": 30.23,
+        "rank": 1,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-95",
+        "name": "Eval Injection",
+        "count": 157,
+        "pct": 20.28,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-338",
+        "name": "Weak PRNG",
+        "count": 93,
+        "pct": 12.02,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-22",
+        "name": "Path Traversal",
+        "count": 74,
+        "pct": 9.56,
+        "rank": 6,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1321",
+        "name": "Prototype Pollution",
+        "count": 47,
+        "pct": 6.07,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1333",
+        "name": "Regular Expression Denial of Service (ReDoS)",
+        "count": 34,
+        "pct": 4.39,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-78",
+        "name": "OS Command Injection",
+        "count": 25,
+        "pct": 3.23,
+        "rank": 9,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-918",
+        "name": "Server-Side Request Forgery (SSRF)",
+        "count": 18,
+        "pct": 2.33,
+        "rank": 22,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-200",
+        "name": "Sensitive Information Disclosure / System Prompt Leakage",
+        "count": 15,
+        "pct": 1.94,
+        "rank": 20,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-89",
+        "name": "SQL Injection",
+        "count": 13,
+        "pct": 1.68,
+        "rank": 2,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-94",
+        "name": "Code Injection",
+        "count": 13,
+        "pct": 1.68,
+        "rank": 10,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-352",
+        "name": "Cross-Site Request Forgery (CSRF)",
+        "count": 12,
+        "pct": 1.55,
+        "rank": 3,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-601",
+        "name": "Open Redirect",
+        "count": 9,
+        "pct": 1.16,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-77",
+        "name": "Command Injection (General)",
+        "count": 9,
+        "pct": 1.16,
+        "rank": 23,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-347",
+        "name": "Improper Verification of Cryptographic Signature",
+        "count": 5,
+        "pct": 0.65,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-798",
+        "name": "Use of Hard-coded Credentials",
+        "count": 3,
+        "pct": 0.39,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1427",
+        "name": "Direct and Indirect Prompt Injection",
+        "count": 3,
+        "pct": 0.39,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1426",
+        "name": "Improper Output Handling (Unvalidated Downstream Execution)",
+        "count": 3,
+        "pct": 0.39,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-943",
+        "name": "NoSQL Injection",
+        "count": 3,
+        "pct": 0.39,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-915",
+        "name": "Mass Assignment",
+        "count": 2,
+        "pct": 0.26,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-327",
+        "name": "Use of Broken Cryptographic Algorithm",
+        "count": 1,
+        "pct": 0.13,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1336",
+        "name": "Server-Side Template Injection (SSTI)",
+        "count": 1,
+        "pct": 0.13,
+        "rank": null,
+        "in_catalogue": true
+      }
+    ],
+    "mitre_top25": [
+      {
+        "rank": 1,
+        "id": "CWE-79",
+        "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+        "count": 234,
+        "pct": 30.23,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 2,
+        "id": "CWE-89",
+        "name": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+        "count": 13,
+        "pct": 1.68,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 3,
+        "id": "CWE-352",
+        "name": "Cross-Site Request Forgery (CSRF)",
+        "count": 12,
+        "pct": 1.55,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 4,
+        "id": "CWE-862",
+        "name": "Missing Authorization",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 5,
+        "id": "CWE-787",
+        "name": "Out-of-bounds Write",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 6,
+        "id": "CWE-22",
+        "name": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+        "count": 74,
+        "pct": 9.56,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 7,
+        "id": "CWE-416",
+        "name": "Use After Free",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 8,
+        "id": "CWE-125",
+        "name": "Out-of-bounds Read",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 9,
+        "id": "CWE-78",
+        "name": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+        "count": 25,
+        "pct": 3.23,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 10,
+        "id": "CWE-94",
+        "name": "Improper Control of Generation of Code ('Code Injection')",
+        "count": 13,
+        "pct": 1.68,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 11,
+        "id": "CWE-120",
+        "name": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 12,
+        "id": "CWE-434",
+        "name": "Unrestricted Upload of File with Dangerous Type",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Server / File Upload Infrastructure"
+      },
+      {
+        "rank": 13,
+        "id": "CWE-476",
+        "name": "NULL Pointer Dereference",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 14,
+        "id": "CWE-121",
+        "name": "Stack-based Buffer Overflow",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 15,
+        "id": "CWE-502",
+        "name": "Deserialization of Untrusted Data",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 16,
+        "id": "CWE-122",
+        "name": "Heap-based Buffer Overflow",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 17,
+        "id": "CWE-863",
+        "name": "Incorrect Authorization",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 18,
+        "id": "CWE-20",
+        "name": "Improper Input Validation",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Pillar CWE / Architectural Gap"
+      },
+      {
+        "rank": 19,
+        "id": "CWE-284",
+        "name": "Improper Access Control",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Pillar CWE / Architectural Gap"
+      },
+      {
+        "rank": 20,
+        "id": "CWE-200",
+        "name": "Exposure of Sensitive Information to an Unauthorized Actor",
+        "count": 15,
+        "pct": 1.94,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 21,
+        "id": "CWE-306",
+        "name": "Missing Authentication for Critical Function",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 22,
+        "id": "CWE-918",
+        "name": "Server-Side Request Forgery (SSRF)",
+        "count": 18,
+        "pct": 2.33,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 23,
+        "id": "CWE-77",
+        "name": "Improper Neutralization of Special Elements used in a Command ('Command Injection')",
+        "count": 9,
+        "pct": 1.16,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 24,
+        "id": "CWE-639",
+        "name": "Authorization Bypass Through User-Controlled Key",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 25,
+        "id": "CWE-770",
+        "name": "Allocation of Resources Without Limits or Throttling",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Network Volumetric DoS"
+      }
+    ],
+    "owasp_web": [
+      {
+        "id": "A01:2025",
+        "name": "A01:2025 - Broken Access Control",
+        "count": 124,
+        "pct": 16.02,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Path Traversal, SSRF, Missing Authz, Open Redirect"
+      },
+      {
+        "id": "A02:2025",
+        "name": "A02:2025 - Security Misconfiguration",
+        "count": 34,
+        "pct": 4.39,
+        "is_excluded": false,
+        "exclusion_reason": "Covers XXE, ReDoS"
+      },
+      {
+        "id": "A03:2025",
+        "name": "A03:2025 - Software Supply Chain Failures",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: SCA / Manifest Auditing"
+      },
+      {
+        "id": "A04:2025",
+        "name": "A04:2025 - Cryptographic Failures",
+        "count": 99,
+        "pct": 12.79,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Broken Ciphers, Weak PRNG, JWT Bypass, Weak Hashes"
+      },
+      {
+        "id": "A05:2025",
+        "name": "A05:2025 - Injection",
+        "count": 457,
+        "pct": 59.04,
+        "is_excluded": false,
+        "exclusion_reason": "Covers SQLi, OS Command Injection, Command Injection, Code Injection, Eval Injection, SSTI, NoSQLi, XSS"
+      },
+      {
+        "id": "A06:2025",
+        "name": "A06:2025 - Insecure Design",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 4: Undocumented Business Logic Architecture"
+      },
+      {
+        "id": "A07:2025",
+        "name": "A07:2025 - Authentication Failures",
+        "count": 3,
+        "pct": 0.39,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Hard-coded Credentials (CWE-798)"
+      },
+      {
+        "id": "A08:2025",
+        "name": "A08:2025 - Software or Data Integrity Failures",
+        "count": 49,
+        "pct": 6.33,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Insecure Deserialization, Prototype Pollution, Mass Assignment (CWE-915)"
+      },
+      {
+        "id": "A09:2025",
+        "name": "A09:2025 - Security Logging & Alerting Failures",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 3: Server Logging Infrastructure & SIEM"
+      },
+      {
+        "id": "A10:2025",
+        "name": "A10:2025 - Mishandling of Exceptional Conditions",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Debug Mode & Error Message Information Leakage (CWE-209)"
+      }
+    ],
+    "owasp_llm": [
+      {
+        "id": "LLM01:2025",
+        "name": "LLM01:2025 - Prompt Injection",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM02:2025",
+        "name": "LLM02:2025 - Sensitive Information Disclosure",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM03:2025",
+        "name": "LLM03:2025 - Supply Chain Vulnerabilities",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Pretrained Weights Provenance (HuggingFace/SCA)"
+      },
+      {
+        "id": "LLM04:2025",
+        "name": "LLM04:2025 - Data and Model Poisoning",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Training Corpus / RLHF Pipeline"
+      },
+      {
+        "id": "LLM05:2025",
+        "name": "LLM05:2025 - Improper Output Handling",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM06:2025",
+        "name": "LLM06:2025 - Excessive Agency",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Agent Autonomous Permissions / HITL Policy"
+      },
+      {
+        "id": "LLM07:2025",
+        "name": "LLM07:2025 - System Prompt Leakage",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM08:2025",
+        "name": "LLM08:2025 - Vector and Embedding Weaknesses",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: External Vector DB / Cluster Infrastructure"
+      },
+      {
+        "id": "LLM09:2025",
+        "name": "LLM09:2025 - Misinformation",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Stochastic Neural Network Hallucinations"
+      },
+      {
+        "id": "LLM10:2025",
+        "name": "LLM10:2025 - Unbounded Consumption",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Cloud Billing / API Rate Quotas"
+      }
+    ],
+    "owasp": [
+      {
+        "name": "A05:2025-Injection",
+        "count": 457,
+        "pct": 59.0
+      },
+      {
+        "name": "A01:2025-Broken Access Control",
+        "count": 124,
+        "pct": 16.0
+      },
+      {
+        "name": "A04:2025-Cryptographic Failures",
+        "count": 99,
+        "pct": 12.8
+      },
+      {
+        "name": "A08:2025-Software or Data Integrity Failures",
+        "count": 49,
+        "pct": 6.3
+      },
+      {
+        "name": "A02:2025-Security Misconfiguration",
+        "count": 34,
+        "pct": 4.4
+      },
+      {
+        "name": "OWASP LLM Top 10:2025",
+        "count": 8,
+        "pct": 1.0
+      },
+      {
+        "name": "A07:2025-Authentication Failures",
+        "count": 3,
+        "pct": 0.4
+      }
+    ],
+    "hist": [
+      {
+        "bin": "2-3",
+        "count": 1,
+        "h": 0.4
+      },
+      {
+        "bin": "3-4",
+        "count": 2,
+        "h": 0.7
+      },
+      {
+        "bin": "4-5",
+        "count": 21,
+        "h": 7.8
+      },
+      {
+        "bin": "5-6",
+        "count": 182,
+        "h": 67.8
+      },
+      {
+        "bin": "6-7",
+        "count": 155,
+        "h": 57.7
+      },
+      {
+        "bin": "7-8",
+        "count": 133,
+        "h": 49.5
+      },
+      {
+        "bin": "8-9",
+        "count": 25,
+        "h": 9.3
+      },
+      {
+        "bin": "9-10",
+        "count": 255,
+        "h": 95.0
+      }
+    ]
+  },
+  "typescript": {
+    "total": 115,
+    "meanCvss": 7.24,
+    "cwesCount": 21,
+    "critical": 22,
+    "severity": {
+      "Critical (9.0-10.0)": {
+        "count": 22,
+        "pct": 19.1,
+        "color": "bg-rose-500"
+      },
+      "High (7.0-8.9)": {
+        "count": 36,
+        "pct": 31.3,
+        "color": "bg-amber-500"
+      },
+      "Medium (4.0-6.9)": {
+        "count": 55,
+        "pct": 47.8,
+        "color": "bg-yellow-500"
+      },
+      "Low (0.1-3.9)": {
+        "count": 2,
+        "pct": 1.7,
+        "color": "bg-emerald-500"
+      },
+      "Unscored/Pending": {
+        "count": 0,
+        "pct": 0.0,
+        "color": "bg-slate-400"
+      }
+    },
+    "cwes": [
+      {
+        "id": "CWE-79",
+        "name": "Cross-site Scripting (XSS)",
+        "count": 29,
+        "pct": 25.22,
+        "rank": 1,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-200",
+        "name": "Sensitive Information Disclosure / System Prompt Leakage",
+        "count": 13,
+        "pct": 11.3,
+        "rank": 20,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1321",
+        "name": "Prototype Pollution",
+        "count": 12,
+        "pct": 10.43,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-918",
+        "name": "Server-Side Request Forgery (SSRF)",
+        "count": 10,
+        "pct": 8.7,
+        "rank": 22,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-78",
+        "name": "OS Command Injection",
+        "count": 9,
+        "pct": 7.83,
+        "rank": 9,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-22",
+        "name": "Path Traversal",
+        "count": 7,
+        "pct": 6.09,
+        "rank": 6,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-94",
+        "name": "Code Injection",
+        "count": 5,
+        "pct": 4.35,
+        "rank": 10,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-77",
+        "name": "Command Injection (General)",
+        "count": 4,
+        "pct": 3.48,
+        "rank": 23,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-89",
+        "name": "SQL Injection",
+        "count": 4,
+        "pct": 3.48,
+        "rank": 2,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1333",
+        "name": "Regular Expression Denial of Service (ReDoS)",
+        "count": 4,
+        "pct": 3.48,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-862",
+        "name": "Missing Authorization",
+        "count": 3,
+        "pct": 2.61,
+        "rank": 4,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1427",
+        "name": "Direct and Indirect Prompt Injection",
+        "count": 3,
+        "pct": 2.61,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1426",
+        "name": "Improper Output Handling (Unvalidated Downstream Execution)",
+        "count": 3,
+        "pct": 2.61,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-352",
+        "name": "Cross-Site Request Forgery (CSRF)",
+        "count": 2,
+        "pct": 1.74,
+        "rank": 3,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-347",
+        "name": "Improper Verification of Cryptographic Signature",
+        "count": 1,
+        "pct": 0.87,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-798",
+        "name": "Use of Hard-coded Credentials",
+        "count": 1,
+        "pct": 0.87,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-601",
+        "name": "Open Redirect",
+        "count": 1,
+        "pct": 0.87,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-502",
+        "name": "Deserialization of Untrusted Data",
+        "count": 1,
+        "pct": 0.87,
+        "rank": 15,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-943",
+        "name": "NoSQL Injection",
+        "count": 1,
+        "pct": 0.87,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-1336",
+        "name": "Server-Side Template Injection (SSTI)",
+        "count": 1,
+        "pct": 0.87,
+        "rank": null,
+        "in_catalogue": true
+      },
+      {
+        "id": "CWE-915",
+        "name": "Mass Assignment",
+        "count": 1,
+        "pct": 0.87,
+        "rank": null,
+        "in_catalogue": true
+      }
+    ],
+    "mitre_top25": [
+      {
+        "rank": 1,
+        "id": "CWE-79",
+        "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+        "count": 29,
+        "pct": 25.22,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 2,
+        "id": "CWE-89",
+        "name": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+        "count": 4,
+        "pct": 3.48,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 3,
+        "id": "CWE-352",
+        "name": "Cross-Site Request Forgery (CSRF)",
+        "count": 2,
+        "pct": 1.74,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 4,
+        "id": "CWE-862",
+        "name": "Missing Authorization",
+        "count": 3,
+        "pct": 2.61,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 5,
+        "id": "CWE-787",
+        "name": "Out-of-bounds Write",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 6,
+        "id": "CWE-22",
+        "name": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+        "count": 7,
+        "pct": 6.09,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 7,
+        "id": "CWE-416",
+        "name": "Use After Free",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 8,
+        "id": "CWE-125",
+        "name": "Out-of-bounds Read",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 9,
+        "id": "CWE-78",
+        "name": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+        "count": 9,
+        "pct": 7.83,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 10,
+        "id": "CWE-94",
+        "name": "Improper Control of Generation of Code ('Code Injection')",
+        "count": 5,
+        "pct": 4.35,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 11,
+        "id": "CWE-120",
+        "name": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 12,
+        "id": "CWE-434",
+        "name": "Unrestricted Upload of File with Dangerous Type",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Server / File Upload Infrastructure"
+      },
+      {
+        "rank": 13,
+        "id": "CWE-476",
+        "name": "NULL Pointer Dereference",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 14,
+        "id": "CWE-121",
+        "name": "Stack-based Buffer Overflow",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 15,
+        "id": "CWE-502",
+        "name": "Deserialization of Untrusted Data",
+        "count": 1,
+        "pct": 0.87,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 16,
+        "id": "CWE-122",
+        "name": "Heap-based Buffer Overflow",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Memory Safety (VM Layer)"
+      },
+      {
+        "rank": 17,
+        "id": "CWE-863",
+        "name": "Incorrect Authorization",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 18,
+        "id": "CWE-20",
+        "name": "Improper Input Validation",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Pillar CWE / Architectural Gap"
+      },
+      {
+        "rank": 19,
+        "id": "CWE-284",
+        "name": "Improper Access Control",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Pillar CWE / Architectural Gap"
+      },
+      {
+        "rank": 20,
+        "id": "CWE-200",
+        "name": "Exposure of Sensitive Information to an Unauthorized Actor",
+        "count": 13,
+        "pct": 11.3,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 21,
+        "id": "CWE-306",
+        "name": "Missing Authentication for Critical Function",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 22,
+        "id": "CWE-918",
+        "name": "Server-Side Request Forgery (SSRF)",
+        "count": 10,
+        "pct": 8.7,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 23,
+        "id": "CWE-77",
+        "name": "Improper Neutralization of Special Elements used in a Command ('Command Injection')",
+        "count": 4,
+        "pct": 3.48,
+        "in_dataset": true,
+        "in_catalogue": true,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "rank": 24,
+        "id": "CWE-639",
+        "name": "Authorization Bypass Through User-Controlled Key",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Semantic Gap / Product Policy"
+      },
+      {
+        "rank": 25,
+        "id": "CWE-770",
+        "name": "Allocation of Resources Without Limits or Throttling",
+        "count": 0,
+        "pct": 0.0,
+        "in_dataset": false,
+        "in_catalogue": false,
+        "is_excluded": true,
+        "exclusion_reason": "Network Volumetric DoS"
+      }
+    ],
+    "owasp_web": [
+      {
+        "id": "A01:2025",
+        "name": "A01:2025 - Broken Access Control",
+        "count": 32,
+        "pct": 27.83,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Path Traversal, SSRF, Missing Authz, Open Redirect"
+      },
+      {
+        "id": "A02:2025",
+        "name": "A02:2025 - Security Misconfiguration",
+        "count": 4,
+        "pct": 3.48,
+        "is_excluded": false,
+        "exclusion_reason": "Covers XXE, ReDoS"
+      },
+      {
+        "id": "A03:2025",
+        "name": "A03:2025 - Software Supply Chain Failures",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: SCA / Manifest Auditing"
+      },
+      {
+        "id": "A04:2025",
+        "name": "A04:2025 - Cryptographic Failures",
+        "count": 1,
+        "pct": 0.87,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Broken Ciphers, Weak PRNG, JWT Bypass, Weak Hashes"
+      },
+      {
+        "id": "A05:2025",
+        "name": "A05:2025 - Injection",
+        "count": 55,
+        "pct": 47.83,
+        "is_excluded": false,
+        "exclusion_reason": "Covers SQLi, OS Command Injection, Command Injection, Code Injection, Eval Injection, SSTI, NoSQLi, XSS"
+      },
+      {
+        "id": "A06:2025",
+        "name": "A06:2025 - Insecure Design",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 4: Undocumented Business Logic Architecture"
+      },
+      {
+        "id": "A07:2025",
+        "name": "A07:2025 - Authentication Failures",
+        "count": 1,
+        "pct": 0.87,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Hard-coded Credentials (CWE-798)"
+      },
+      {
+        "id": "A08:2025",
+        "name": "A08:2025 - Software or Data Integrity Failures",
+        "count": 14,
+        "pct": 12.17,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Insecure Deserialization, Prototype Pollution, Mass Assignment (CWE-915)"
+      },
+      {
+        "id": "A09:2025",
+        "name": "A09:2025 - Security Logging & Alerting Failures",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 3: Server Logging Infrastructure & SIEM"
+      },
+      {
+        "id": "A10:2025",
+        "name": "A10:2025 - Mishandling of Exceptional Conditions",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": "Covers Debug Mode & Error Message Information Leakage (CWE-209)"
+      }
+    ],
+    "owasp_llm": [
+      {
+        "id": "LLM01:2025",
+        "name": "LLM01:2025 - Prompt Injection",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM02:2025",
+        "name": "LLM02:2025 - Sensitive Information Disclosure",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM03:2025",
+        "name": "LLM03:2025 - Supply Chain Vulnerabilities",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Pretrained Weights Provenance (HuggingFace/SCA)"
+      },
+      {
+        "id": "LLM04:2025",
+        "name": "LLM04:2025 - Data and Model Poisoning",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Training Corpus / RLHF Pipeline"
+      },
+      {
+        "id": "LLM05:2025",
+        "name": "LLM05:2025 - Improper Output Handling",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM06:2025",
+        "name": "LLM06:2025 - Excessive Agency",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Agent Autonomous Permissions / HITL Policy"
+      },
+      {
+        "id": "LLM07:2025",
+        "name": "LLM07:2025 - System Prompt Leakage",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": false,
+        "exclusion_reason": ""
+      },
+      {
+        "id": "LLM08:2025",
+        "name": "LLM08:2025 - Vector and Embedding Weaknesses",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: External Vector DB / Cluster Infrastructure"
+      },
+      {
+        "id": "LLM09:2025",
+        "name": "LLM09:2025 - Misinformation",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Stochastic Neural Network Hallucinations"
+      },
+      {
+        "id": "LLM10:2025",
+        "name": "LLM10:2025 - Unbounded Consumption",
+        "count": 0,
+        "pct": 0.0,
+        "is_excluded": true,
+        "exclusion_reason": "Domain 6: Cloud Billing / API Rate Quotas"
+      }
+    ],
+    "owasp": [
+      {
+        "name": "A05:2025-Injection",
+        "count": 55,
+        "pct": 47.8
+      },
+      {
+        "name": "A01:2025-Broken Access Control",
+        "count": 32,
+        "pct": 27.8
+      },
+      {
+        "name": "A08:2025-Software or Data Integrity Failures",
+        "count": 14,
+        "pct": 12.2
+      },
+      {
+        "name": "OWASP LLM Top 10:2025",
+        "count": 8,
+        "pct": 7.0
+      },
+      {
+        "name": "A02:2025-Security Misconfiguration",
+        "count": 4,
+        "pct": 3.5
+      },
+      {
+        "name": "A04:2025-Cryptographic Failures",
+        "count": 1,
+        "pct": 0.9
+      },
+      {
+        "name": "A07:2025-Authentication Failures",
+        "count": 1,
+        "pct": 0.9
+      }
+    ],
+    "hist": [
+      {
+        "bin": "2-3",
+        "count": 0,
+        "h": 0.0
+      },
+      {
+        "bin": "3-4",
+        "count": 2,
+        "h": 5.8
+      },
+      {
+        "bin": "4-5",
+        "count": 3,
+        "h": 8.6
+      },
+      {
+        "bin": "5-6",
+        "count": 19,
+        "h": 54.7
+      },
+      {
+        "bin": "6-7",
+        "count": 33,
+        "h": 95.0
+      },
+      {
+        "bin": "7-8",
+        "count": 15,
+        "h": 43.2
+      },
+      {
+        "bin": "8-9",
+        "count": 21,
+        "h": 60.5
+      },
+      {
+        "bin": "9-10",
+        "count": 22,
+        "h": 63.3
+      }
+    ]
+  }
+}
