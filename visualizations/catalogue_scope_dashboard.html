@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeDEE Security Dataset & Vulnerability Taxonomy Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #090d16; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #334155; }
+  </style>
+</head>
+<body class="bg-[#070b14] text-slate-100 antialiased font-sans p-4 sm:p-8">
+
+  <div class="max-w-7xl mx-auto space-y-8">
+
+    <!-- Header Section -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800/80">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 mb-2.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>100% Catalogue Class Coverage Verified</span>
+          <span class="text-slate-500">•</span>
+          <span class="font-mono text-[11px] text-emerald-300">28/28 Covered Vulnerability Classes</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white flex items-center gap-3">
+          <span>CodeDEE Multi-Source Security Dataset</span>
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 font-mono">v3.0 Academic Edition</span>
+        </h1>
+        <p class="text-slate-400 text-xs sm:text-sm mt-1 max-w-3xl leading-relaxed">
+          Comprehensive empirical security benchmark dataset covering all 28 in-scope vulnerability classes across Python, JavaScript, and TypeScript. Traced across authentic CVE patches, Meta CyberSecEval, OWASP benchmark suites, and Task 2 GenAI pipelines.
+        </p>
+      </div>
+
+      <!-- Quick Action Badges -->
+      <div class="flex items-center gap-2">
+        <a href="#catalogue-table" class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white shadow-sm transition-colors">
+          📋 Catalogue Table
+        </a>
+        <a href="#rubric-section" class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors">
+          ⚖️ Scope Rubric
+        </a>
+      </div>
+    </div>
+
+    <!-- KPI Metric Summary Cards -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 shadow-sm">
+        <div class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Total Verified Samples</div>
+        <div class="mt-2 flex items-baseline gap-2">
+          <span class="text-3xl sm:text-4xl font-extrabold text-white font-mono">1,891</span>
+          <span class="text-xs text-emerald-400 font-semibold">100% In-Scope</span>
+        </div>
+        <div class="text-[11px] text-slate-500 mt-1 font-mono">Python: 1,002 | JS: 774 | TS: 115</div>
+      </div>
+
+      <div class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 shadow-sm">
+        <div class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Catalogue Coverage</div>
+        <div class="mt-2 flex items-baseline gap-2">
+          <span class="text-3xl sm:text-4xl font-extrabold text-indigo-400 font-mono">28 / 28</span>
+          <span class="text-xs text-emerald-400 font-semibold font-mono">100.0%</span>
+        </div>
+        <div class="text-[11px] text-slate-500 mt-1">Every catalogue class has ground truth</div>
+      </div>
+
+      <div class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 shadow-sm">
+        <div class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Mean CVSS Severity</div>
+        <div class="mt-2 flex items-baseline gap-2">
+          <span class="text-3xl sm:text-4xl font-extrabold text-amber-400 font-mono">7.87</span>
+          <span class="text-xs text-amber-300 font-semibold">High Severity</span>
+        </div>
+        <div class="text-[11px] text-slate-500 mt-1">CVSS v3.1 base score average</div>
+      </div>
+
+      <div class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 shadow-sm">
+        <div class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Critical & High Flaws</div>
+        <div class="mt-2 flex items-baseline gap-2">
+          <span class="text-3xl sm:text-4xl font-extrabold text-rose-400 font-mono">1,234</span>
+          <span class="text-xs text-rose-300 font-semibold font-mono">65.3%</span>
+        </div>
+        <div class="text-[11px] text-slate-500 mt-1">Critical: 766 | High: 468</div>
+      </div>
+    </div>
+
+    <!-- Charts Row 1: Sample Distribution by Catalogue Class (Bar Chart) -->
+    <div class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <span>Sample Distribution Across All 28 Covered Vulnerability Classes</span>
+            <span class="text-xs font-normal text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 font-mono">28 / 28 Covered</span>
+          </h2>
+          <p class="text-xs text-slate-400">Frequency of empirical ground-truth samples per vulnerability class in codedee_security_dataset_catalogue_scope.json</p>
+        </div>
+        <div class="text-xs font-mono text-slate-400 bg-slate-950 px-3 py-1 rounded-lg border border-slate-800">
+          Total: 1,891 samples
+        </div>
+      </div>
+      <div class="h-80 w-full">
+        <canvas id="cweDistributionChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Charts Row 2: Languages, Severities, Provenance (3 Column Grid) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Language Distribution -->
+      <div class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 shadow-sm flex flex-col justify-between space-y-4">
+        <div>
+          <h3 class="text-sm font-bold text-white">Programming Language Breakdown</h3>
+          <p class="text-xs text-slate-400">Target managed runtime ecosystems</p>
+        </div>
+        <div class="h-52 flex items-center justify-center">
+          <canvas id="langChart"></canvas>
+        </div>
+        <div class="grid grid-cols-3 gap-2 pt-3 border-t border-slate-800/80 text-center text-xs font-mono">
+          <div class="p-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-300">
+            <span class="block font-bold text-base">1,002</span>
+            Python
+          </div>
+          <div class="p-2 rounded-lg bg-yellow-500/10 border border-yellow-500/20 text-yellow-300">
+            <span class="block font-bold text-base">774</span>
+            JavaScript
+          </div>
+          <div class="p-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">
+            <span class="block font-bold text-base">115</span>
+            TypeScript
+          </div>
+        </div>
+      </div>
+
+      <!-- Severity Distribution -->
+      <div class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 shadow-sm flex flex-col justify-between space-y-4">
+        <div>
+          <h3 class="text-sm font-bold text-white">CVSS v3.1 Severity Tiers</h3>
+          <p class="text-xs text-slate-400">NVD standardized vulnerability impact</p>
+        </div>
+        <div class="h-52 flex items-center justify-center">
+          <canvas id="sevChart"></canvas>
+        </div>
+        <div class="grid grid-cols-4 gap-1 pt-3 border-t border-slate-800/80 text-center text-[11px] font-mono">
+          <div class="p-1.5 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-300">
+            <span class="block font-bold text-sm">766</span>
+            Crit
+          </div>
+          <div class="p-1.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-300">
+            <span class="block font-bold text-sm">468</span>
+            High
+          </div>
+          <div class="p-1.5 rounded-lg bg-yellow-500/10 border border-yellow-500/20 text-yellow-300">
+            <span class="block font-bold text-sm">650</span>
+            Med
+          </div>
+          <div class="p-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-300">
+            <span class="block font-bold text-sm">7</span>
+            Low
+          </div>
+        </div>
+      </div>
+
+      <!-- Provenance Breakdown -->
+      <div class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 shadow-sm flex flex-col justify-between space-y-4">
+        <div>
+          <h3 class="text-sm font-bold text-white">Dataset Provenance Sources</h3>
+          <p class="text-xs text-slate-400">Real-world repos vs synthetic benchmarks</p>
+        </div>
+        <div class="h-52 flex items-center justify-center">
+          <canvas id="sourceChart"></canvas>
+        </div>
+        <div class="pt-3 border-t border-slate-800/80 text-xs text-slate-400 flex justify-between items-center font-mono">
+          <span>Real Repos: 42.3%</span>
+          <span>Benchmarks: 57.7%</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scope Qualification Checklist (Decision Rubric) -->
+    <div id="rubric-section" class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="border-b border-slate-800 pb-3">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <span>The Scope Qualification Checklist (Deterministic Decision Rubric)</span>
+        </h2>
+        <p class="text-xs text-slate-400 mt-1">
+          A candidate vulnerability (CWE) is classified as <strong>COVERED (In-Scope)</strong> if and only if it satisfies <strong>ALL FOUR</strong> criteria below:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2">
+          <div class="flex items-center gap-2 font-bold text-indigo-400">
+            <span class="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-mono text-[11px]">1</span>
+            <span>Managed Runtime Layer</span>
+          </div>
+          <p class="text-slate-300 leading-relaxed">
+            Natively executes in first-party <strong>Python, JavaScript, or TypeScript</strong> on managed virtual runtimes (CPython, Node.js / V8).
+          </p>
+          <div class="text-[11px] text-rose-400/90 pt-1 border-t border-slate-800/60">
+            ❌ Excludes raw pointer corruption & C/C++ memory management (CWE-119).
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2">
+          <div class="flex items-center gap-2 font-bold text-indigo-400">
+            <span class="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-mono text-[11px]">2</span>
+            <span>AST & Taint Detectability</span>
+          </div>
+          <p class="text-slate-300 leading-relaxed">
+            Resides in repository source code and is verifiable via intra/inter-procedural AST inspection, CFG, and source-to-sink taint graphs.
+          </p>
+          <div class="text-[11px] text-rose-400/90 pt-1 border-t border-slate-800/60">
+            ❌ Excludes network layer attacks (DDoS) & reverse-proxy smuggling (CWE-444).
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2">
+          <div class="flex items-center gap-2 font-bold text-indigo-400">
+            <span class="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-mono text-[11px]">3</span>
+            <span>In-Memory Lifecycle</span>
+          </div>
+          <p class="text-slate-300 leading-relaxed">
+            Data flows from untrusted HTTP/agent input directly to an execution sink within the <strong>same application runtime process</strong>.
+          </p>
+          <div class="text-[11px] text-rose-400/90 pt-1 border-t border-slate-800/60">
+            ❌ Excludes multi-stage static disk persistence executed out-of-band (CWE-96).
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 space-y-2">
+          <div class="flex items-center gap-2 font-bold text-indigo-400">
+            <span class="w-5 h-5 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-mono text-[11px]">4</span>
+            <span>Objective Syntactic Semantics</span>
+          </div>
+          <p class="text-slate-300 leading-relaxed">
+            Identifiable through unambiguous framework APIs, decorators, or crypto contracts without guessing unwritten human design specs.
+          </p>
+          <div class="text-[11px] text-rose-400/90 pt-1 border-t border-slate-800/60">
+            ❌ Excludes missing authentication on unannotated endpoints (CWE-306).
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Complete 28 In-Scope Catalogue Table -->
+    <div id="catalogue-table" class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <span>In-Scope Vulnerability Taxonomy & Ground-Truth Dataset (28 Classes)</span>
+            <span class="text-xs bg-indigo-500/20 text-indigo-300 px-2.5 py-0.5 rounded font-mono">100% In-Scope</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">Full specification of all 28 classes with exact CWE IDs, standard alignment, sample counts, and language availability.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <input type="text" id="taxonomy-search" oninput="filterTaxonomy()" placeholder="Search CWE, name, or category..." class="bg-slate-950 border border-slate-800 px-3 py-1.5 rounded-xl text-xs text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500 w-64">
+        </div>
+      </div>
+
+      <div class="overflow-x-auto border border-slate-800/80 rounded-xl">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead>
+            <tr class="border-b border-slate-800 text-slate-400 font-semibold bg-slate-950/80">
+              <th class="p-3">No.</th>
+              <th class="p-3">Flaw ID</th>
+              <th class="p-3">CWE ID</th>
+              <th class="p-3">Vulnerability Name</th>
+              <th class="p-3">OWASP Category</th>
+              <th class="p-3 text-center">Dataset Samples</th>
+              <th class="p-3">CVSS / Tier</th>
+              <th class="p-3">Languages</th>
+              <th class="p-3 text-right">Action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60 text-slate-300" id="taxonomy-tbody">
+            <!-- Populated via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Formal Exclusions Section (7 Domains) -->
+    <div class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="border-b border-slate-800 pb-3 flex items-center justify-between">
+        <div>
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <span>Formal Academic Exclusions (7 Vulnerability Domains)</span>
+            <span class="text-xs bg-rose-500/10 text-rose-400 border border-rose-500/20 px-2 py-0.5 rounded font-mono uppercase">Excluded</span>
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">Vulnerability classes excluded from static source code analysis due to runtime virtualization or external infrastructure boundaries.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="exclusions-grid">
+        <!-- Populated via JS -->
+      </div>
+    </div>
+
+    <!-- Live Dataset Sample Inspection & Lineage -->
+    <div class="bg-slate-900/90 border border-slate-800/90 rounded-2xl p-6 shadow-sm space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
+        <div>
+          <h2 class="text-lg font-bold text-white">Representative Benchmark Samples Inspection</h2>
+          <p class="text-xs text-slate-400 mt-1">Inspect authentic code snippets and corresponding remediation patches across the multi-source benchmark</p>
+        </div>
+        <div class="text-xs font-mono text-slate-400 bg-slate-950 px-3 py-1 rounded-lg border border-slate-800">
+          Showing representative samples
+        </div>
+      </div>
+
+      <div class="overflow-x-auto border border-slate-800/80 rounded-xl">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead>
+            <tr class="border-b border-slate-800 text-slate-400 font-semibold bg-slate-950/80">
+              <th class="p-3">Sample ID</th>
+              <th class="p-3">Language</th>
+              <th class="p-3">CWE ID</th>
+              <th class="p-3">Weakness Name</th>
+              <th class="p-3">OWASP Category</th>
+              <th class="p-3">CVSS</th>
+              <th class="p-3">Source Dataset</th>
+              <th class="p-3 text-right">Inspect Code</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60 font-mono text-slate-300" id="sample-tbody">
+            <!-- Populated via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal 1: Pattern Specification Modal -->
+  <div id="flaw-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+      <div class="p-5 border-b border-slate-800 flex items-start justify-between bg-slate-950/60">
+        <div>
+          <div class="inline-flex items-center gap-2 mb-1">
+            <span class="text-xs font-bold text-indigo-400 font-mono" id="flaw-modal-id">VULN-INJ-001</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-mono" id="flaw-modal-cwe">CWE-89</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 font-mono" id="flaw-modal-sev">CRITICAL</span>
+          </div>
+          <h3 class="text-base font-bold text-white" id="flaw-modal-title">SQL Injection</h3>
+          <p class="text-xs text-slate-400 mt-0.5" id="flaw-modal-owasp">A05:2025-Injection</p>
+        </div>
+        <button onclick="closeFlawModal()" class="text-slate-400 hover:text-white text-lg p-1">&times;</button>
+      </div>
+      <div class="p-5 overflow-y-auto space-y-4 text-xs">
+        <div>
+          <span class="text-slate-400 font-semibold block mb-1">Detection Approach:</span>
+          <p class="text-slate-300 bg-slate-950 p-2.5 rounded-lg border border-slate-800/80 font-mono" id="flaw-modal-detect"></p>
+        </div>
+        <div>
+          <span class="text-amber-400 font-semibold block mb-1">Source Patterns (Untrusted Input Sinks):</span>
+          <pre class="bg-slate-950 p-3 rounded-lg border border-slate-800/80 text-amber-200/90 overflow-x-auto text-[11px]" id="flaw-modal-sources"></pre>
+        </div>
+        <div>
+          <span class="text-rose-400 font-semibold block mb-1">Sink Patterns (Sensitive Execution Primitives):</span>
+          <pre class="bg-slate-950 p-3 rounded-lg border border-slate-800/80 text-rose-200/90 overflow-x-auto text-[11px]" id="flaw-modal-sinks"></pre>
+        </div>
+        <div>
+          <span class="text-emerald-400 font-semibold block mb-1">Sanitizer & Remediation Patterns:</span>
+          <pre class="bg-slate-950 p-3 rounded-lg border border-slate-800/80 text-emerald-200/90 overflow-x-auto text-[11px]" id="flaw-modal-sanitizers"></pre>
+        </div>
+      </div>
+      <div class="p-4 border-t border-slate-800 bg-slate-950/60 flex justify-end">
+        <button onclick="closeFlawModal()" class="px-4 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Code Snippet & Fix Diff Modal -->
+  <div id="code-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-4xl w-full max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+      <div class="p-5 border-b border-slate-800 flex items-start justify-between bg-slate-950/60">
+        <div>
+          <h3 class="text-base font-bold text-white" id="code-modal-title">Sample Inspection</h3>
+          <p class="text-xs text-slate-400 mt-1 font-mono" id="code-modal-meta"></p>
+        </div>
+        <button onclick="closeCodeModal()" class="text-slate-400 hover:text-white text-lg p-1">&times;</button>
+      </div>
+      <div class="p-5 overflow-y-auto space-y-4 text-xs">
+        <div>
+          <span class="text-rose-400 font-bold block mb-1">Vulnerable Code Snippet:</span>
+          <pre class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 text-slate-200 overflow-x-auto text-[11px] leading-relaxed" id="code-modal-vuln"></pre>
+        </div>
+        <div id="code-modal-fix-container">
+          <span class="text-emerald-400 font-bold block mb-1">Remediated / Fixed Code Snippet:</span>
+          <pre class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 text-emerald-200 overflow-x-auto text-[11px] leading-relaxed" id="code-modal-fix"></pre>
+        </div>
+      </div>
+      <div class="p-4 border-t border-slate-800 bg-slate-950/60 flex justify-end">
+        <button onclick="closeCodeModal()" class="px-4 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Embedded Data Payload -->
+  <script>
+    const INCLUSIONS = [{"id": "VULN-INJ-001", "cwe_id": "CWE-89", "name": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "owasp": "A05:2025-Injection", "severity": "CRITICAL", "cvss": 9.8, "sample_count": 105, "lang_breakdown": {"py": 88, "js": 13, "ts": 4}, "detection": "Inter-procedural Taint Graph (Symbolic) + Neural Sanitizer Oracle", "sources": {"python": ["flask.request.args.get", "flask.request.form.get", "flask.request.json", "django.http.HttpRequest.GET/POST"], "javascript": ["req.query", "req.body", "req.params", "req.headers"]}, "sinks": {"python": ["cursor.execute(sql_concat)", "session.execute(text(raw_sql))", "engine.execute(raw_sql)"], "javascript": ["db.query(sql_concat)", "connection.query(template_literal)", "sequelize.query(raw_sql)"]}, "sanitizers": {"python": ["cursor.execute(sql, (param,))", "int(user_input)", "float(user_input)", "SQLAlchemy ORM filter_by"], "javascript": ["client.query(sql, [param])", "parseInt(val, 10)", "Number(val)", "Knex.js parameterized builder"]}}, {"id": "VULN-INJ-002", "cwe_id": "CWE-78", "name": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')", "owasp": "A05:2025-Injection", "severity": "CRITICAL", "cvss": 9.8, "sample_count": 220, "lang_breakdown": {"py": 186, "js": 25, "ts": 9}, "detection": "Inter-procedural Taint Graph + AST Argument Vector Verification", "sources": {"python": ["request.args.get", "request.form.get", "request.json", "os.environ.get"], "javascript": ["req.query", "req.body", "req.params", "process.env"]}, "sinks": {"python": ["subprocess.check_output(cmd, shell=True)", "subprocess.run(cmd, shell=True)", "os.system(cmd)", "os.popen(cmd)"], "javascript": ["child_process.exec(cmd)", "child_process.execSync(cmd)", "child_process.spawn(cmd, { shell: true })"]}, "sanitizers": {"python": ["subprocess.run(['cmd', arg1, arg2], shell=False)", "shlex.quote(user_input)"], "javascript": ["child_process.execFile(file, [args])", "child_process.spawn(executable, [args], { shell: false })"]}}, {"id": "VULN-INJ-003", "cwe_id": "CWE-94", "name": "Improper Control of Generation of Code ('Code Injection / Eval Injection')", "owasp": "A05:2025-Injection", "severity": "CRITICAL", "cvss": 9.8, "sample_count": 164, "lang_breakdown": {"py": 146, "js": 13, "ts": 5}, "detection": "AST Call Visitor + Dynamic Code Execution Detector", "sources": {"python": ["request.args.get('code')", "request.json.get('formula')"], "javascript": ["req.query.code", "req.body.fn"]}, "sinks": {"python": ["eval(user_code)", "exec(user_code)", "compile(user_code, '\u003cstring\u003e', 'exec')"], "javascript": ["eval(userCode)", "new Function(userCode)()", "setTimeout(userCode, 1000)", "setInterval(userCode, 1000)"]}, "sanitizers": {"python": ["ast.literal_eval(user_data)", "Whitelisted operator dispatch mapping table", "math.js safe expression parser"], "javascript": ["JSON.parse(user_data)", "Whitelisted function lookup table Map"]}}, {"id": "VULN-INJ-004", "cwe_id": "CWE-1336", "name": "Server-Side Template Injection (SSTI)", "owasp": "A05:2025-Injection", "severity": "CRITICAL", "cvss": 9.8, "sample_count": 5, "lang_breakdown": {"py": 3, "js": 1, "ts": 1}, "detection": "Inter-procedural Taint Graph + Template String Constructor Inspector", "sources": {"python": ["request.args.get('template')", "request.form.get('greeting')"], "javascript": ["req.query.tpl", "req.body.templateString"]}, "sinks": {"python": ["jinja2.Template(user_string).render()", "flask.render_template_string(user_string)", "mako.template.Template(user_string)"], "javascript": ["ejs.render(userString)", "nunjucks.renderString(userString)", "handlebars.compile(userString)"]}, "sanitizers": {"python": ["Static template files via render_template('file.html', var=user_input)", "jinja2.sandbox.SandboxedEnvironment"], "javascript": ["Pre-compiled static template files", "Pass user input strictly as template context data, never template syntax"]}}, {"id": "VULN-INJ-005", "cwe_id": "CWE-943", "name": "Improper Neutralization of Special Elements in Data Query Logic ('NoSQL Injection')", "owasp": "A05:2025-Injection", "severity": "HIGH", "cvss": 8.6, "sample_count": 6, "lang_breakdown": {"py": 2, "js": 3, "ts": 1}, "detection": "Inter-procedural Taint Graph + MongoDB Query Operator Slicer", "sources": {"python": ["request.json.get('username')", "request.args"], "javascript": ["req.body.user", "req.query"]}, "sinks": {"python": ["db.users.find({'username': req_data})", "collection.find({'$where': user_script})"], "javascript": ["User.find({ username: req.body.username })", "db.collection('users').find({ $where: jsScript })"]}, "sanitizers": {"python": ["Type-casting string values (str(req_data))", "mongo_sanitize", "Banning $gt, $ne, $where operators in user input"], "javascript": ["mongo-sanitize package", "Cast to string: String(req.body.username)", "Mongoose strict schema type validation"]}}, {"id": "VULN-INJ-006", "cwe_id": "CWE-611", "name": "Improper Restriction of XML External Entity Reference ('XML External Entity - XXE')", "owasp": "A02:2025-Security Misconfiguration", "severity": "HIGH", "cvss": 8.6, "sample_count": 6, "lang_breakdown": {"py": 6, "js": 0, "ts": 0}, "detection": "AST Parser Configuration Scanner + XML Feature Slicer", "sources": {"python": ["request.data", "request.get_data()", "request.files['xml']"], "javascript": ["req.body (raw xml)", "req.files.uploadedXml"]}, "sinks": {"python": ["xml.etree.ElementTree.fromstring(xml_data)", "lxml.etree.fromstring(xml_data)", "minidom.parseString(xml_data)"], "javascript": ["libxmljs.parseXml(xmlString, { noent: true })", "xmldom.DOMParser().parseFromString(xmlString)"]}, "sanitizers": {"python": ["defusedxml.ElementTree.fromstring(xml_data)", "lxml.etree.XMLParser(resolve_entities=False, load_dtd=False)"], "javascript": ["libxmljs parser with noent: false", "Disable DTD and entity expansion in XML parser options"]}}, {"id": "VULN-INJ-007", "cwe_id": "CWE-77", "name": "Improper Neutralization of Special Elements used in a Command ('Command Injection')", "owasp": "A05:2025-Injection", "severity": "CRITICAL", "cvss": 9.8, "sample_count": 19, "lang_breakdown": {"py": 6, "js": 9, "ts": 4}, "detection": "Inter-procedural Taint Graph + Command Argument Vector Verification", "sources": {"python": ["request.args.get('cmd')", "request.form.get('printer')", "request.json.get('args')", "os.environ.get('CLI_PARAM')"], "javascript": ["req.query.printer", "req.body.temp_file_name", "req.params.command", "process.env.TARGET"]}, "sinks": {"python": ["os.system(cmd_string)", "os.popen(cmd_string)", "subprocess.Popen(cmd_string, shell=True)"], "javascript": ["child_process.exec(cmdString)", "child_process.execSync(cmdString)", "child_process.spawn(cmdString, { shell: true })"]}, "sanitizers": {"python": ["subprocess.run([binary_path, arg1, arg2], shell=False)", "shlex.quote(user_param)", "shlex.split(safe_command)", "Input validation against strict alphanumeric whitelist regex: re.match(r\"^[a-zA-Z0-9_.-]+$\", param)"], "javascript": ["child_process.execFile(executable, [arg1, arg2])", "child_process.spawn(executable, [arg1, arg2], { shell: false })", "Argument array tokenization preventing shell metacharacter expansion (;|&$`\u003c\u003e)", "Sanitization using strict regex allowlist /^[a-zA-Z0-9_.-]+$/ before command execution"]}}, {"id": "VULN-INJ-008", "cwe_id": "CWE-95", "name": "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')", "owasp": "A05:2025-Injection", "severity": "CRITICAL", "cvss": 9.8, "sample_count": 157, "lang_breakdown": {"py": 0, "js": 157, "ts": 0}, "detection": "AST Dynamic Code Execution Detector + Taint Flow Analyzer", "sources": {"python": ["request.args.get('userMathFormula')", "request.json.get('calc')", "request.form.get('expr')"], "javascript": ["req.query.userMathFormula", "req.body.formula", "req.params.calculation"]}, "sinks": {"python": ["eval('(' + user_math_formula + ')')", "eval(user_expression)", "exec(user_code)"], "javascript": ["eval('(' + userMathFormula + ')')", "eval(userExpression)", "new Function(userFormula)()"]}, "sanitizers": {"python": ["ast.literal_eval(user_data) (safely parses literal expressions without executing code)", "mathjs or sympy parse_expr with safe AST visitor banning builtins and call nodes", "Operator lookup dispatch dictionary (e.g. {'+': operator.add, '-': operator.sub})", "Input validation against strict arithmetic regex: re.match(r\"^[0-9+\\-*/().\\s]+$\", expr)"], "javascript": ["vm.runInNewContext(userMathFormula, Object.create(null), { timeout: 200 }) (isolated VM sandbox)", "Dedicated safe math expression parser library (e.g. expr-eval, mathjs.evaluate with scope lockdown)", "JSON.parse(user_data) for structured serialized payloads", "Strict tokenization whitelist regex allowing only digits and basic arithmetic operators: /^[0-9+\\-*/().\\s]+$/"]}}, {"id": "VULN-XSS-001", "cwe_id": "CWE-79", "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting - Reflected/Stored/DOM')", "owasp": "A05:2025-Injection", "severity": "HIGH", "cvss": 8.8, "sample_count": 321, "lang_breakdown": {"py": 58, "js": 234, "ts": 29}, "detection": "Inter-procedural Taint Graph + DOM/Template Sink Visitor", "sources": {"python": ["request.args.get", "request.form.get", "database_records"], "javascript": ["req.query", "req.params", "location.search", "location.hash", "document.cookie"]}, "sinks": {"python": ["render_template_string(template_with_user_input)", "flask.Markup(user_string)", "django.utils.safestring.mark_safe(user_string)"], "javascript": ["res.send(html_with_user_input)", "element.innerHTML = tainted_str", "element.outerHTML = tainted_str", "document.write(tainted_str)"]}, "sanitizers": {"python": ["html.escape(user_string)", "markupsafe.escape(user_string)", "bleach.clean(user_string)"], "javascript": ["DOMPurify.sanitize(user_string)", "validator.escape(user_string)", "element.textContent = user_string"]}}, {"id": "VULN-TRAV-001", "cwe_id": "CWE-22", "name": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal / Local File Inclusion')", "owasp": "A01:2025-Broken Access Control", "severity": "HIGH", "cvss": 8.6, "sample_count": 124, "lang_breakdown": {"py": 43, "js": 74, "ts": 7}, "detection": "Inter-procedural Taint Graph + Path Boundary Normalization Slicer", "sources": {"python": ["request.args.get('filename')", "request.json.get('path')", "request.files['file'].filename"], "javascript": ["req.query.filename", "req.params.filepath"]}, "sinks": {"python": ["open(file_path, mode)", "flask.send_file(file_path)", "shutil.copy(file_path, dest)"], "javascript": ["fs.readFile(filePath)", "fs.readFileSync(filePath)", "fs.createReadStream(filePath)", "res.sendFile(filePath)"]}, "sanitizers": {"python": ["os.path.commonpath([base_dir, os.path.abspath(target_path)]) == base_dir", "werkzeug.utils.secure_filename(filename)"], "javascript": ["path.resolve(base_dir, user_input).startsWith(base_dir)", "sanitize-filename package"]}}, {"id": "VULN-RED-001", "cwe_id": "CWE-601", "name": "URL Redirection to Untrusted Site ('Open Redirect')", "owasp": "A01:2025-Broken Access Control", "severity": "MEDIUM", "cvss": 6.1, "sample_count": 33, "lang_breakdown": {"py": 23, "js": 9, "ts": 1}, "detection": "Taint Graph + Redirection Target Domain Whitelist Inspector", "sources": {"python": ["request.args.get('next')", "request.args.get('return_url')"], "javascript": ["req.query.redirect_to", "req.query.url"]}, "sinks": {"python": ["flask.redirect(target_url)", "django.shortcuts.redirect(target_url)"], "javascript": ["res.redirect(targetUrl)", "window.location.href = targetUrl"]}, "sanitizers": {"python": ["urllib.parse.urlparse(target_url).netloc in ALLOWED_DOMAINS", "Ensuring target_url.startswith('/') without '//'"], "javascript": ["new URL(targetUrl, base).origin === baseOrigin", "Strict domain allowlist checking"]}}, {"id": "VULN-ACCESS-001", "cwe_id": "CWE-862", "name": "Missing Authorization on Sensitive Endpoint Decorator", "owasp": "A01:2025-Broken Access Control", "severity": "HIGH", "cvss": 8.6, "sample_count": 5, "lang_breakdown": {"py": 2, "js": 0, "ts": 3}, "detection": "AST Route Decorator Visitor + Authentication Middleware Slicer", "sources": {"python": ["@app.route('/api/admin/...') without @login_required or @has_role"], "javascript": ["router.post('/admin/...', handler) without authMiddleware in parameter list"]}, "sinks": {"python": ["Admin state modification logic executing without user session validation"], "javascript": ["Privileged DB mutation executed without req.user verification"]}, "sanitizers": {"python": ["Adding @login_required and @roles_accepted('admin') decorators"], "javascript": ["router.post('/admin/...', passport.authenticate('jwt'), requireAdmin, handler)"]}}, {"id": "VULN-CSRF-001", "cwe_id": "CWE-352", "name": "Cross-Site Request Forgery ('CSRF')", "owasp": "A01:2025-Broken Access Control", "severity": "HIGH", "cvss": 8.8, "sample_count": 27, "lang_breakdown": {"py": 13, "js": 12, "ts": 2}, "detection": "AST State-Changing Route Inspector + Anti-CSRF Middleware Verifier", "sources": {"python": ["POST/PUT/DELETE route handlers declared without CSRFProtect"], "javascript": ["Express app handling POST state changes without csurf or SameSite=Strict cookies"]}, "sinks": {"python": ["db.session.commit() executed from unverified cross-origin form POST"], "javascript": ["User balance transfer or password change executed from cross-origin HTTP request"]}, "sanitizers": {"python": ["flask_wtf.csrf.CSRFProtect(app)", "Django built-in CsrfViewMiddleware"], "javascript": ["csurf middleware validation", "Cookie configured with SameSite=Strict"]}}, {"id": "VULN-DESER-001", "cwe_id": "CWE-502", "name": "Deserialization of Untrusted Data", "owasp": "A08:2025-Software or Data Integrity Failures", "severity": "CRITICAL", "cvss": 9.8, "sample_count": 103, "lang_breakdown": {"py": 102, "js": 0, "ts": 1}, "detection": "Syntactic Call Visitor + Taint Flow", "sources": {"python": ["request.data", "request.get_data()", "base64.b64decode(payload)"], "javascript": ["req.body.serializedData", "req.headers['x-state']"]}, "sinks": {"python": ["pickle.loads(payload)", "_pickle.loads(payload)", "yaml.load(payload, Loader=yaml.Loader)"], "javascript": ["node_serialize.unserialize(payload)"]}, "sanitizers": {"python": ["json.loads(payload)", "yaml.safe_load(payload)"], "javascript": ["JSON.parse(payload) with Ajv / Zod schema validation"]}}, {"id": "VULN-PROTO-001", "cwe_id": "CWE-1321", "name": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')", "owasp": "A08:2025-Software or Data Integrity Failures", "severity": "HIGH", "cvss": 7.5, "sample_count": 60, "lang_breakdown": {"py": 1, "js": 47, "ts": 12}, "detection": "Inter-procedural Taint Graph + Recursive Object Merge AST Visitor", "sources": {"javascript": ["req.body (nested JSON input containing '__proto__' or 'constructor.prototype')"]}, "sinks": {"javascript": ["target[key] = value in recursive merge loop", "lodash.merge / lodash.defaultsDeep (\u003c 4.17.12)"]}, "sanitizers": {"javascript": ["key === '__proto__' || key === 'constructor' || key === 'prototype' -\u003e continue", "Object.freeze(Object.prototype)", "Object.create(null)", "new Map()"]}}, {"id": "VULN-INTEG-001", "cwe_id": "CWE-915", "name": "Improperly Controlled Modification of Dynamically-Determined Object Attributes ('Mass Assignment')", "owasp": "A08:2025-Software or Data Integrity Failures", "severity": "HIGH", "cvss": 7.5, "sample_count": 4, "lang_breakdown": {"py": 1, "js": 2, "ts": 1}, "detection": "AST Constructor Call Inspector + Schema Property Verification", "sources": {"python": ["request.json (containing arbitrary extra fields like 'is_admin': True)"], "javascript": ["req.body (containing unauthorized role/permission keys)"]}, "sinks": {"python": ["User(**request.json)", "for k, v in request.json.items(): setattr(user, k, v)"], "javascript": ["User.create(req.body)", "Object.assign(user, req.body)"]}, "sanitizers": {"python": ["Pydantic model with model_config = ConfigDict(extra='forbid')", "Explicit attribute extraction: User(username=req['username'])"], "javascript": ["Lodash _.pick(req.body, ['username', 'email'])", "Zod schema parsing enforcing strict whitelist"]}}, {"id": "VULN-SSRF-001", "cwe_id": "CWE-918", "name": "Server-Side Request Forgery ('SSRF')", "owasp": "A01:2025-Broken Access Control", "severity": "HIGH", "cvss": 8.6, "sample_count": 51, "lang_breakdown": {"py": 23, "js": 18, "ts": 10}, "detection": "Inter-procedural Taint Graph + Network Sink IP Range Whitelist Slicer", "sources": {"python": ["request.args.get('url')", "request.json.get('webhook_url')"], "javascript": ["req.query.url", "req.body.callback"]}, "sinks": {"python": ["requests.get(url)", "requests.post(url)", "urllib.request.urlopen(url)", "httpx.get(url)"], "javascript": ["axios.get(url)", "axios.post(url)", "fetch(url)", "http.get(url)"]}, "sanitizers": {"python": ["ipaddress.ip_address(resolved_ip).is_private/is_loopback check", "Destination domain strict allowlist"], "javascript": ["ssrf-req-filter library", "DNS pinning + private RFC 1918 CIDR filtering"]}}, {"id": "VULN-SECRET-001", "cwe_id": "CWE-798", "name": "Use of Hard-coded Credentials", "owasp": "A07:2025-Authentication Failures", "severity": "HIGH", "cvss": 8.9, "sample_count": 78, "lang_breakdown": {"py": 74, "js": 3, "ts": 1}, "detection": "AST Literal Visitor + Shannon Entropy & Token Pattern Regex Scanner", "sources": {"python": ["API_KEY = 'AKIA[0-9A-Z]{16}'", "SECRET_KEY = 'high-entropy-string-literal'"], "javascript": ["const apiKey = 'ghp_[0-9a-zA-Z]{36}'", "const jwtSecret = 'literal_secret'"]}, "sinks": {"python": ["Direct commit of secret constants into version-controlled application files"], "javascript": ["Hardcoded secrets bundled into client-side scripts or public repositories"]}, "sanitizers": {"python": ["os.environ.get('SECRET_KEY')", "decouple.config('SECRET_KEY')", "pydantic_settings.BaseSettings"], "javascript": ["process.env.API_KEY", "dotenv.config()", "HashiCorp Vault / AWS Secrets Manager"]}}, {"id": "VULN-CRYPTO-001", "cwe_id": "CWE-327", "name": "Broken or Risky Cryptographic Algorithm (Insecure Ciphers & Modes)", "owasp": "A04:2025-Cryptographic Failures", "severity": "MEDIUM", "cvss": 5.9, "sample_count": 3, "lang_breakdown": {"py": 2, "js": 1, "ts": 0}, "detection": "Syntactic AST Call Visitor (Insecure Cipher & Mode Registry)", "sources": {"python": ["Crypto.Cipher.DES", "Crypto.Cipher.ARC4", "Crypto.Cipher.Blowfish", "AES.MODE_ECB"], "javascript": ["crypto.createCipher('des', key)", "crypto.createCipher('rc4', key)"]}, "sinks": {"python": ["Confidential data encryption routines", "Cipher block instantiation"], "javascript": ["Encrypted stream piping", "Session data encryption"]}, "sanitizers": {"python": ["AES.new(key, AES.MODE_GCM, nonce=nonce)", "cryptography.hazmat.primitives.ciphers.aead.AESGCM"], "javascript": ["crypto.createCipheriv('aes-256-gcm', key, iv)"]}}, {"id": "VULN-CRYPTO-002", "cwe_id": "CWE-338", "name": "Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)", "owasp": "A04:2025-Cryptographic Failures", "severity": "MEDIUM", "cvss": 5.3, "sample_count": 153, "lang_breakdown": {"py": 60, "js": 93, "ts": 0}, "detection": "AST Call Visitor for Insecure Random Primitives in Security Contexts", "sources": {"python": ["random.random()", "random.randint()", "random.choice() in token/session generation"], "javascript": ["Math.random() in token generation / password reset URLs"]}, "sinks": {"python": ["Password reset tokens, CSRF tokens, session IDs, salt generation"], "javascript": ["crypto token generation, nonce creation"]}, "sanitizers": {"python": ["secrets.token_hex(32)", "secrets.token_urlsafe(32)", "os.urandom(32)"], "javascript": ["crypto.randomBytes(32).toString('hex')", "crypto.getRandomValues(new Uint8Array(32))"]}}, {"id": "VULN-CRYPTO-003", "cwe_id": "CWE-328", "name": "Use of Weak Hash Algorithm", "owasp": "A04:2025-Cryptographic Failures", "severity": "HIGH", "cvss": 7.5, "sample_count": 110, "lang_breakdown": {"py": 110, "js": 0, "ts": 0}, "detection": "Syntactic AST Call Visitor (Deprecated Hash Function Identifier: MD5, SHA-1)", "sources": {"python": ["hashlib.md5()", "hashlib.sha1()"], "javascript": ["crypto.createHash('md5')", "crypto.createHash('sha1')"]}, "sinks": {"python": ["Password storage / hashing contexts", "Data integrity validation"], "javascript": ["Password storage / hashing", "Security token hashing"]}, "sanitizers": {"python": ["bcrypt.hashpw(password, bcrypt.gensalt(12))", "argon2.PasswordHasher().hash(password)", "hashlib.sha256()"], "javascript": ["bcrypt.hash(password, 12)", "argon2.hash(password)", "crypto.createHash('sha256')"]}}, {"id": "VULN-AUTH-001", "cwe_id": "CWE-347", "name": "Improper Verification of Cryptographic Signature ('JWT Signature Bypass')", "owasp": "A04:2025-Cryptographic Failures", "severity": "CRITICAL", "cvss": 9.1, "sample_count": 9, "lang_breakdown": {"py": 3, "js": 5, "ts": 1}, "detection": "AST Call Argument Verifier (JWT Decode Configuration Inspector)", "sources": {"python": ["jwt.decode(token, options={'verify_signature': False})", "jwt.decode(token, verify=False)"], "javascript": ["jwt.verify(token, secret, { algorithms: ['none'] })", "jwt.decode(token) without signature verification"]}, "sinks": {"python": ["User authentication identity trusted from unverified JWT claims"], "javascript": ["req.user populated from unverified JWT token"]}, "sanitizers": {"python": ["jwt.decode(token, SECRET_KEY, algorithms=['HS256'], options={'verify_signature': True})"], "javascript": ["jwt.verify(token, process.env.JWT_SECRET, { algorithms: ['HS256'] })"]}}, {"id": "VULN-CONFIG-001", "cwe_id": "CWE-209", "name": "Generation of Error Message Containing Sensitive Information / Debug Mode Active", "owasp": "A10:2025-Mishandling of Exceptional Conditions", "severity": "MEDIUM", "cvss": 5.3, "sample_count": 5, "lang_breakdown": {"py": 5, "js": 0, "ts": 0}, "detection": "AST Attribute Visitor + Framework Configuration Scanner", "sources": {"python": ["app.run(debug=True)", "DEBUG = True in production Django settings"], "javascript": ["res.status(500).send(err.stack)", "app.use(errorhandler()) in production"]}, "sinks": {"python": ["Detailed interactive traceback console (Werkzeug pin exploit) served publicly"], "javascript": ["Internal file system paths and stack traces returned in HTTP 500 response"]}, "sanitizers": {"python": ["app.run(debug=False)", "DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'"], "javascript": ["res.status(500).json({ error: 'Internal Server Error' }) (logging stack trace internally only)"]}}, {"id": "VULN-DOS-001", "cwe_id": "CWE-1333", "name": "Regular Expression Denial of Service (ReDoS)", "owasp": "A02:2025-Security Misconfiguration", "severity": "HIGH", "cvss": 7.5, "sample_count": 47, "lang_breakdown": {"py": 9, "js": 34, "ts": 4}, "detection": "Regex AST Catastrophic Backtracking Pattern Analyzer", "sources": {"python": ["re.compile(r'^(a+)+$')", "re.match(r'(.*a){10}', user_string)"], "javascript": ["new RegExp('^([a-zA-Z0-9]+)*$')", "/(a+)+$/.test(userString)"]}, "sinks": {"python": ["Single-threaded CPython GIL blocked for minutes on evil input matching"], "javascript": ["Node.js event loop completely frozen, blocking all concurrent HTTP requests"]}, "sanitizers": {"python": ["Linear-time regex engines (re2, google-re2)", "Atomic grouping or non-backtracking regex constructs"], "javascript": ["re2 package for Node.js", "Input length limits before regex matching"]}}, {"id": "VULN-LLM-001", "cwe_id": "CWE-1427", "name": "Direct and Indirect Prompt Injection", "owasp": "A05:2025-Injection", "severity": "HIGH", "cvss": 8.6, "sample_count": 10, "lang_breakdown": {"py": 4, "js": 3, "ts": 3}, "detection": "Inter-procedural Taint Graph (Untrusted Input into System Prompt Role / Unified String)", "sources": {"python": ["ticket.description (FastAPI / Pydantic Request Body)", "request.args.get('user_prompt')", "request.json().get('query')"], "javascript": ["req.body.userNotes (Express.js Body Parser)", "req.body.message", "req.query.prompt"]}, "sinks": {"python": ["client.chat.completions.create(messages=[{'role': 'user', 'content': f'... {user_input}'}])", "client.chat.completions.create (AsyncOpenAI / OpenAI Python SDK)"], "javascript": ["generateText({ model, prompt: `... ${notes}` }) (Vercel AI SDK)", "openai.chat.completions.create({ messages: [{ role: 'system', content: `... ${userInput}` }] })"]}, "sanitizers": {"python": ["Structural Role Separation: messages=[{'role': 'system', ...}, {'role': 'user', 'content': user_input}]", "Strict Input Validation: pydantic.Field(max_length=..., pattern=r'...')", "NeMo Guardrails classifier"], "javascript": ["SDK Schema Boundaries: generateText({ system: '...', prompt: notes }) (Vercel AI SDK)", "Type and Length Input Validation: typeof notes === 'string' && notes.length \u003c= 500", "Zod runtime schema validation for user prompt inputs"]}}, {"id": "VULN-LLM-002", "cwe_id": "CWE-200", "name": "Sensitive Information Disclosure (LLM Context Window Leakage / RAG Cross-Tenant Exposure)", "owasp": "A01:2025-Broken Access Control", "severity": "HIGH", "cvss": 7.5, "sample_count": 56, "lang_breakdown": {"py": 28, "js": 15, "ts": 13}, "detection": "Inter-procedural Taint Graph (Unfiltered Vector Search Chunks / PII into LLM Messages)", "sources": {"python": ["vectorstore.similarity_search() (Pinecone/LangChain without metadata filter)", "os.environ.get('DB_PASSWORD')", "user_pii_db_records"], "javascript": ["index.query() (Pinecone / Vector DB without tenant filter)", "process.env.DB_CONNECTION_STRING", "process.env.ADMIN_TOKEN"]}, "sinks": {"python": ["llm.invoke(prompt) (LangChain ChatOpenAI prompt context injection)", "client.chat.completions.create(messages=[{'role': 'system', 'content': f'Context: {raw_context}'}])"], "javascript": ["generateText({ system: `Ticket History: ${rawContext}`, prompt }) (Vercel AI SDK)", "Template literal interpolation of unmasked context into LLM API call"]}, "sanitizers": {"python": ["Role-based document ACL filtering: vectorstore.similarity_search(filter={'$or': [{'owner_id': ...}]})", "PII anonymization regex: re.sub(r'\\b\\d{3}-\\d{2}-\\d{4}\\b', '[REDACTED SSN]', text)", "Microsoft Presidio PII redaction pipeline"], "javascript": ["Role-based document ACL filtering: index.query({ filter: { tenantId: { $eq: req.user.tenantId } } })", "PII anonymization regex: safeContext.replace(/(sk-[a-zA-Z0-9]{32,})/g, '[REDACTED API KEY]')", "Tenant isolation boundary enforcement"]}}, {"id": "VULN-LLM-005", "cwe_id": "CWE-1426", "name": "Improper Output Handling (Unvalidated Downstream Execution of LLM Output)", "owasp": "A05:2025-Injection", "severity": "CRITICAL", "cvss": 9.6, "sample_count": 10, "lang_breakdown": {"py": 4, "js": 3, "ts": 3}, "detection": "Inter-procedural Taint Graph (LLM Completion Output into Execution Sinks)", "sources": {"python": ["response.choices[0].message.content (OpenAI Python SDK)", "agent.invoke()['output']"], "javascript": ["llmCommand (Vercel AI SDK generateText text output)", "completion.choices[0].message.content", "llmResult.text"]}, "sinks": {"python": ["cursor.executescript(llm_sql_output) (SQLite / Raw DB execution)", "subprocess.run(llm_output, shell=True)", "eval(llm_output)"], "javascript": ["execAsync(untrustedCommand) / child_process.exec (Raw shell execution)", "db.query(llmOutput)", "res.send(llmOutput)"]}, "sanitizers": {"python": ["OpenAI Structured Outputs API: client.beta.chat.completions.parse(response_format=PydanticSchema)", "Parameterized query execution: cursor.execute(query, params) (Treating LLM output as data)"], "javascript": ["Zod runtime schema parsing: generateObject({ schema: diagnosticSchema }) with strict z.enum constraints", "Parameterized execution sandbox: child_process.execFile(tool, args) without shell evaluation", "DOMPurify.sanitize before rendering to HTML"]}}, {"id": "VULN-LLM-007", "cwe_id": "CWE-200", "name": "System Prompt Leakage", "owasp": "A01:2025-Broken Access Control", "severity": "MEDIUM", "cvss": 5.3, "sample_count": 56, "lang_breakdown": {"py": 28, "js": 15, "ts": 13}, "detection": "AST Route Analysis + Prompt Extraction Slicer + Output Leakage Check", "sources": {"python": ["PROPRIETARY_SYSTEM_PROMPT (Server memory constant string)", "Core developer system instruction string constant"], "javascript": ["SYSTEM_PROMPT (Server-side constant string containing business IP)", "systemPrompt constant declared in backend"]}, "sinks": {"python": ["return {'system_prompt': PROPRIETARY_SYSTEM_PROMPT} (Unauthenticated debug route)", "return {'reply': response.choices[0].message.content} (Chat route without extraction filter)"], "javascript": ["res.json({ evaluation: text, _debug_context: SYSTEM_PROMPT }) (Client-side state leakage)", "res.json({ prompt: systemPrompt })"]}, "sanitizers": {"python": ["Output guardrail diffing/filtering: difflib.SequenceMatcher checking similarity threshold", "Complete removal of unauthenticated debug routes (/debug/prompt) in production"], "javascript": ["Output guardrail filtering: containsLeakedPrompt substring analysis checking proprietary keywords", "Removal of _debug_context attribute from HTTP response payloads"]}}];
+    const EXCLUSIONS = [{"domain": "Memory Safety & Pointer Management", "owasp_mapping": "N/A (Managed Runtime Virtual Machine Layer)", "technical_layer": "Managed Runtime VM & Operating System Memory Allocator", "formal_justification": "Target languages in CodeDEE (Python, JavaScript, TypeScript) execute inside managed virtual machines (CPython Virtual Machine and Google V8 / Node.js Engine). These environments enforce automated garbage collection, reference counting, and dynamic bounds-checked array allocations at runtime. Application developers cannot manipulate raw memory pointers, invoke manual malloc/free operations, or cause buffer overflows in pure source code without compiling native C/C++ extensions (e.g. Cython, CTypes, Node native addons), which is outside the scope of web application layer static analysis.", "excluded_cwes": [{"cwe_id": "CWE-119", "name": "Improper Restriction of Operations within the Bounds of a Memory Buffer"}, {"cwe_id": "CWE-787", "name": "Out-of-bounds Write (MITRE #2)"}, {"cwe_id": "CWE-120", "name": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')"}, {"cwe_id": "CWE-125", "name": "Out-of-bounds Read (MITRE #7)"}, {"cwe_id": "CWE-416", "name": "Use After Free (MITRE #9)"}, {"cwe_id": "CWE-476", "name": "NULL Pointer Dereference (MITRE #14)"}, {"cwe_id": "CWE-190", "name": "Integer Overflow or Wraparound (MITRE #25)"}]}, {"domain": "Network & Transport Layer Volumetric Denial of Service", "owasp_mapping": "A06:2025-Insecure Design (Architectural Volumetric DoS)", "technical_layer": "OSI Layer 3 (Network) & Layer 4 (Transport) Infrastructure", "formal_justification": "Volumetric Denial of Service attacks (SYN floods, UDP amplification, bandwidth saturation, connection exhaustion) operate at the network and transport layers of the TCP/IP stack. Static application source code has no visibility into incoming network packet rates, edge routing tables, or volumetric socket traffic. These threats are fundamentally mitigated at the infrastructure boundary using Anycast CDNs (Cloudflare, AWS CloudFront), Web Application Firewalls (WAFs), and edge reverse proxies, not via source code refactoring.", "excluded_cwes": [{"cwe_id": "CWE-400", "name": "Uncontrolled Resource Consumption (Network/Transport Layer Volumetric DoS)"}, {"cwe_id": "CWE-770", "name": "Allocation of Resources Without Limits or Throttling (Layer 3/4 Bandwidth Exhaustion)"}]}, {"domain": "Server Deployment & Infrastructure Configuration", "owasp_mapping": "A02:2025-Security Misconfiguration & Ingress Layer", "technical_layer": "Reverse Proxy, Ingress Controller & Web Server Deployment Layer", "formal_justification": "In modern cloud-native architectures (Docker, Kubernetes, AWS ECS, Serverless), TLS/SSL termination, HSTS header enforcement, TLS cipher suite negotiation, and HTTP/2 multiplexing are managed by Ingress Controllers (Nginx, Traefik, Envoy, AWS ALB). Application source code files run behind these reverse proxies and listen over internal plain HTTP sockets. Attempting to audit TLS encryption from application source code produces false negatives and misidentifies architectural design.", "excluded_cwes": [{"cwe_id": "CWE-311", "name": "Missing Encryption of Sensitive Data (Cleartext Transport / TLS Termination)"}, {"cwe_id": "CWE-319", "name": "Cleartext Transmission of Sensitive Information (HTTP instead of HTTPS)"}, {"cwe_id": "CWE-444", "name": "Inconsistent Interpretation of HTTP Requests ('HTTP Request Smuggling')"}]}, {"domain": "Undocumented High-Level Business Logic & Human Intent", "owasp_mapping": "A06:2025-Insecure Design & A07:2025-Authentication Failures", "technical_layer": "Product Business Domain & Organizational Policy", "formal_justification": "Semantic Gap in Automated Static Analysis: A static analyzer scanning proprietary source code cannot discern human product intent. Without an external formal specification, the analyzer cannot know whether an endpoint such as '/api/v1/healthz' or '/api/v1/products' was intentionally designed to be public or was accidentally left unauthenticated. Attempting to flag missing authentication on unannotated endpoints results in intolerable false alarm rates (\u003e85%), completely eroding developer trust.", "excluded_cwes": [{"cwe_id": "CWE-306", "name": "Missing Authentication for Critical Function (Without Formal Design Specifications - MITRE #20)"}, {"cwe_id": "CWE-269", "name": "Improper Privilege Management (MITRE #12)"}, {"cwe_id": "CWE-287", "name": "Improper Authentication (Multi-Factor / Session Semantics - MITRE #13)"}, {"cwe_id": "CWE-362", "name": "Concurrent Execution using Shared Resource ('Race Condition' - MITRE #21)"}, {"cwe_id": "CWE-840", "name": "Business Logic Errors (Shopping Cart Discount Abuse, Coupon Reuse, Workflow Bypasses)"}]}, {"domain": "Operational, Physical & Social Engineering Threats", "owasp_mapping": "A07:2025-Authentication Failures & External Credential Stuffing", "technical_layer": "Human Operations, Identity Provider (IdP) & Supply Chain Account Security", "formal_justification": "Phishing, credential stuffing against developer accounts, SIM swapping, and physical hardware compromise operate outside the source code repository. These are governed by enterprise Identity and Access Management (IAM), Multi-Factor Authentication (MFA), and physical security controls, which are completely inaccessible to static code analyzers.", "excluded_cwes": [{"cwe_id": "CWE-1395", "name": "Dependency on Vulnerable Third-Party Repository Account / Credential Theft"}, {"cwe_id": "CWE-842", "name": "Placement of User into Incorrect Group via Social Engineering"}]}, {"domain": "Third-Party Supply Chain & Model Provenance (SCA / Weights)", "owasp_mapping": "A03:2025-Software Supply Chain Failures & LLM03:2025", "technical_layer": "Software Bill of Materials (SBOM) & Software Composition Analysis (SCA)", "formal_justification": "OWASP A03:2025 (Software Supply Chain Failures) is the domain of Software Composition Analysis (SCA) tools (e.g., Snyk, Dependabot, pip-audit, npm audit), which match declared package manifests (package.json, requirements.txt) against National Vulnerability Databases. Static AST / CST code analyzers examine first-party source code syntax and data flows; auditing unpatched transitive binary dependencies requires metadata lookup rather than code structure analysis.", "excluded_cwes": [{"cwe_id": "CWE-1104", "name": "Use of Unmaintained Third-Party Components (OWASP A03:2025)"}, {"cwe_id": "CWE-1357", "name": "Reliance on Insufficiently Trustworthy Component (Package Registry Compromise)"}, {"cwe_id": "LLM03:2025", "name": "Supply Chain Vulnerabilities (Third-party model weights, poisoned HuggingFace packages)"}]}, {"domain": "OWASP LLM Model Weights & Infrastructure (Non-Code Flaws)", "owasp_mapping": "OWASP Top 10 for LLM:2025 (LLM04, LLM06, LLM08, LLM09, LLM10)", "technical_layer": "Foundation Model Weights, Fine-Tuning Pipeline & Vector DB Infrastructure", "formal_justification": "These vulnerabilities occur at the foundation model pretraining layer, training dataset curation, or external cloud vector database infrastructure. A static source code analyzer inspecting application logic (Python/TypeScript) has no visibility into neural network weights, attention matrices, or remote vector embeddings. Mitigating these risks requires Software Bill of Materials (SBOM) for AI models, dataset provenance verification, and cloud billing quota rate-limiters, which operate entirely outside the scope of AST-based code analysis.", "excluded_cwes": [{"cwe_id": "LLM04:2025", "name": "Data and Model Poisoning (Pretraining corpus contamination, RLHF alignment poisoning)"}, {"cwe_id": "LLM06:2025", "name": "Excessive Agency (Autonomous agent decision authority without human-in-the-loop policies)"}, {"cwe_id": "LLM08:2025", "name": "Vector and Embedding Weaknesses (RAG vector database index poisoning & clustering attacks)"}, {"cwe_id": "LLM09:2025", "name": "Misinformation (Model hallucinations and factual errors inherent in LLM stochastic weights)"}, {"cwe_id": "LLM10:2025", "name": "Unbounded Consumption (Denial of Wallet, API rate quota exhaustion, resource exhaustion)"}]}];
+    const SAMPLES = [{"id": "CVEFIXES_CVE_2020_7763_00001", "lang": "javascript", "cwe": "CWE-22", "name": "Path Traversal", "owasp": "A01:2025-Broken Access Control", "cvss": "7.5", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "    }\n\n    //potentially dangerous request\n    if (request.url.lastIndexOf(\"file:///\", 0) === 0 && !body.allowLocalFilesAccess) {\n        networkRequest.abort();\n        return;\n    }\nvar should = require(\"should\"),\n    fs = require(\"fs\"),\n        });\n\n        it('should create a pdf file ignoring ssl errors', function(done) {\n            conversion({\n                url: 'https://sygris.com'\n    ", "fixed": "    }   \n     //potentially dangerous request\n     if (request.url.lastIndexOf(\"http://\", 0) !== 0 && request.url.lastIndexOf(\"https://\", 0) && !body.allowLocalFilesAccess) {\n        networkRequest.abort();\n        return;\n    }\n\nvar should = require(\"should\"),   \n    fs = require(\"fs\"),    \n        });       \n                ;\n\n        it('should "}, {"id": "CVEFIXES_CVE_2023_51665_00002", "lang": "javascript", "cwe": "CWE-918", "name": "Server-Side Request Forgery (SSRF)", "owasp": "A01:2025-Broken Access Control", "cvss": "7.5", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "           (Database.serverSettings.authOpenIDMobileRedirectURIs.length === 1 && Database.serverSettings.authOpenIDMobileRedirectURIs[0] === '*')) {\n    \n     * Used to auto-populate the openid URLs in config/authentication\n    router.get('/auth/openid/config', async (req, res) =\u003e {\n      const configUrl = `${issuerUrl}/.well-known/openid-configuration`\n      axios.get(configUrl).then(({ data }) =", "fixed": "            (Database.serverSettings.authOpenIDMobileRedirectURIs.length === 1 && Database.serverSettings.authOpenIDMobileRedirectURIs[0] === '*')) {\n\n     * Helper route used to auto-populate the openid URLs in config/authentication\n     * Takes an issuer URL as a query param and requests the config data at \"/.well-known/openid-configuration\"\n    "}, {"id": "CVEFIXES_CVE_2023_51697_00003", "lang": "javascript", "cwe": "CWE-918", "name": "Server-Side Request Forgery (SSRF)", "owasp": "A01:2025-Broken Access Control", "cvss": "7.5", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "    var url = req.body.rssFeed\n      return res.status(400).send('Bad request')\n    Array(str1.length + 1).fill(null));\n    track[0][i] = i;\n    track[j][0] = j;\n      const indicator = str1[i - 1] === str2[j - 1] ? 0 : 1;\n      );\n  return track[str2.length][str1.length];\nconst Logger = require('../Logger')\n  return axios.get(feedUrl, { timeout: 12000, responseType: 'arraybuffer', headers: { Acce", "fixed": "const { validateUrl } = require('../utils/index')\n  /**\n   * POST: /api/podcasts/feed\n   * \n   * @typedef getPodcastFeedReqBody\n   * @property {string} rssFeed\n   * \n   * @param {import('express').Request\u003c{}, {}, getPodcastFeedReqBody, {}} req \n   * @param {import('express').Response} res \n   */\n    const url = validateUrl(req.body.rssFeed)\n      r"}, {"id": "CVEFIXES_CVE_2017_16876_00006", "lang": "python", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "6.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "__version__ = '0.8'\n    return _key_pattern.sub(' ', key.lower())\n            r'\u003c(\\w+%s)((?:%s)*?)\\s*\u003e([\\s\\S]*?)\u003c\\/\\1\u003e' % (_valid_end, _valid_attr),", "fixed": "__version__ = '0.8.1'\n    key = escape(key.lower(), quote=True)\n    return _key_pattern.sub(' ', key)\n            r'\u003c(\\w+%s)((?:%s)*?)\\s*\u003e([\\s\\S]*?)\u003c\\/\\1\u003e' % (\n                _valid_end, _valid_attr),"}, {"id": "CVEFIXES_CVE_2023_28444_00035", "lang": "typescript", "cwe": "CWE-200", "name": "Sensitive Information Disclosure / System Prompt Leakage", "owasp": "A01:2025-Broken Access Control", "cvss": "7.5", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "either `app.module.ts`, `app.components.ts` or `main.ts` depending on availability. The ngssc\nbuilder will also now search all files for environment variable usages instead of just the\ndefined environment file. Due to this, the `ngsscEnvironmentFile` option can be removed.\n            \"filePattern\": \"index.html\"\n### environment.prod.ts\n            \"required\": [\"input\"]\n            \"required\": [\"in", "fixed": "test/test-project-*\n18\n## Changes with version 15.1\n\nWith the change in version 15 to search all files for environment variables, a potential\ninformation disclosure vulnerability was introduced, as unintended environment variables might\nbe exposed.\n\nYou might be affected, if you use environment variables in your angular.json workspace that expose\na"}, {"id": "CVEFIXES_CVE_2023_2516_00042", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "5.4", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "                    'description': $('#form-item-description').summernote('code') !== \"\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\" ? $('#form-item-description').summernote('code') : '',\n                    'email': $('#form-item-email').val(),\n                    'label': $('#form-item-label').val(),\n                    'login': $('#form-item-login').val(),\n                    'tags': $('#form-item-tags').val(),\n               ", "fixed": "    \u003c!-- DOMPurify --\u003e\n    \u003cscript type=\"text/javascript\" src=\"plugins/DOMPurify/purify.min.js\"\u003e\u003c/script\u003e\n                    'description': $('#form-item-description').summernote('code') !== \"\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\" ? DOMPurify.sanitize($('#form-item-description').summernote('code'), {USE_PROFILES: {html: true}}) : '',\n                    'email': DOMPurify."}, {"id": "CVEFIXES_CVE_2021_32851_00060", "lang": "typescript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "6.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "  \"version\": \"0.18.0\",\n\u003cscript src=\"https://cdn.jsdelivr.net/npm/regenerator-runtime\"\u003e\u003c/script\u003e\n    div.innerHTML = words\n    li.innerHTML = `\u003cspan\u003e${name}\u003c/span\u003e\u003cspan\u003e${keyname}\u003c/span\u003e`\nconst createDiv = (id, name) =\u003e {\n  div.innerHTML = `\u003cspan\u003e${name}\u003c/span\u003e`\n  const styleDiv = createDiv('nm-style', 'style')\n  const tagDiv = createDiv('nm-tag', 'tag')\n  const iconDiv = createDiv('nm-icon', 'icon", "fixed": "  \"version\": \"0.18.1\",\nimport { encodeHTML } from '../utils/index'\n    div.innerText = words\n    li.innerHTML = `\u003cspan\u003e${encodeHTML(name)}\u003c/span\u003e\u003cspan\u003e${encodeHTML(keyname)}\u003c/span\u003e`\nconst createDiv = (id) =\u003e {\n  const styleDiv = createDiv('nm-style')\n  const tagDiv = createDiv('nm-tag')\n  const iconDiv = createDiv('nm-icon')\n  tagDiv.innerHTML = `$"}, {"id": "CVEFIXES_CVE_2017_17713_00077", "lang": "python", "cwe": "CWE-89", "name": "SQL Injection", "owasp": "A05:2025-Injection", "cvss": "9.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "        self.cursor.execute(sentence)\n        self.cursor.execute(sentence)\n        self.cursor.execute(sentence)\n            'get_data' : \"SELECT victims.*, geo.*, victims.ip AS ip_local, COUNT(clicks.id) FROM victims INNER JOIN geo ON victims.id = geo.id LEFT JOIN clicks ON clicks.id = victims.id GROUP BY victims.id ORDER BY victims.time DESC\",\n            'all_networks' : \"SELECT networks.* FRO", "fixed": "    \tif type(sentence) is str:\n        \tself.cursor.execute(sentence)\n    \telse:\n        \tself.cursor.execute(sentence[0], sentence[1])\n        if type(sentence) is str:\n        \tself.cursor.execute(sentence)\n    \telse:\n        \tself.cursor.execute(sentence[0], sentence[1])\t\n        if type(sentence) is str:\n        \tself.cursor.execute(sentence)\n "}, {"id": "CVEFIXES_CVE_2017_17714_00078", "lang": "python", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "6.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "        self.cursor.execute(sentence)\n        self.cursor.execute(sentence)\n        self.cursor.execute(sentence)\n            'get_data' : \"SELECT victims.*, geo.*, victims.ip AS ip_local, COUNT(clicks.id) FROM victims INNER JOIN geo ON victims.id = geo.id LEFT JOIN clicks ON clicks.id = victims.id GROUP BY victims.id ORDER BY victims.time DESC\",\n            'all_networks' : \"SELECT networks.* FRO", "fixed": "    \tif type(sentence) is str:\n        \tself.cursor.execute(sentence)\n    \telse:\n        \tself.cursor.execute(sentence[0], sentence[1])\n        if type(sentence) is str:\n        \tself.cursor.execute(sentence)\n    \telse:\n        \tself.cursor.execute(sentence[0], sentence[1])\t\n        if type(sentence) is str:\n        \tself.cursor.execute(sentence)\n "}, {"id": "CVEFIXES_CVE_2021_29421_00079", "lang": "python", "cwe": "CWE-611", "name": "XML External Entity (XXE)", "owasp": "A02:2025-Security Misconfiguration", "cvss": "7.5", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "from lxml.etree import QName, XMLParser, XMLSyntaxError, parse\n            return parse(BytesIO(xml))\n            return parse(BytesIO(re_xml_illegal_bytes.sub(b'', xml)))\n            parser = XMLParser(recover=True)\n            return parse(BytesIO(xml), parser)", "fixed": "# This Source Code Form is subject to the terms of the Mozilla Public\n# License, v. 2.0. If a copy of the MPL was not distributed with this\n# file, You can obtain one at http://mozilla.org/MPL/2.0/.\n#\n# Copyright (C) 2021, James R. Barlow (https://github.com/jbarlow83/)\n\n\nfrom typing import IO, Any, AnyStr, Union\n\nfrom lxml.etree import XMLParser a"}, {"id": "CVEFIXES_CVE_2016_4444_00080", "lang": "python", "cwe": "CWE-77", "name": "Command Injection (General)", "owasp": "A05:2025-Injection", "cvss": "7.0", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "        import commands\n            if (commands.getstatusoutput(\"eu-readelf -d %s | fgrep -q TEXTREL\" % avc.tpath)[0] == 1):", "fixed": "        import subprocess\n            # from https://docs.python.org/2.7/library/subprocess.html#replacing-shell-pipeline\n            p1 = subprocess.Popen(['eu-readelf', '-d', avc.tpath], stdout=subprocess.PIPE)\n            p2 = subprocess.Popen([\"fgrep\", \"-q\", \"TEXTREL\"], stdin=p1.stdout, stdout=subprocess.PIPE)\n            p1.stdout.close()  # A"}, {"id": "CVEFIXES_CVE_2019_10767_00084", "lang": "javascript", "cwe": "CWE-22", "name": "Path Traversal", "owasp": "A01:2025-Broken Access Control", "cvss": "7.5", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "        id = id.replace(/\\.\\./g, ''); // do not allow to write in parent directories\n    if (name.indexOf('..') !== -1) {\n        name = path.normalize(name);", "fixed": "        id = id.replace(/[\\]\\[*,;'\"`\u003c\u003e\\\\?\\/]/g, ''); // remove all invalid characters from states plus slashes\n    if (name.includes('..')) {\n        name = path.normalize('/' + name);\n        name = name.replace(/\\\\/g, '/');\n    }\n    if (name.includes('..')) {\n        // Also after normalization we still have .. in it - should not happen if norma"}, {"id": "CVEFIXES_CVE_2021_23418_00112", "lang": "python", "cwe": "CWE-611", "name": "XML External Entity (XXE)", "owasp": "A02:2025-Security Misconfiguration", "cvss": "9.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "from subprocess import Popen\n\n            logger.debug(\"Action will be executed with the following command: \\\n                subprocess.Popen({}, shell=False)\".format(cmd_full.split(' ')))\n                Popen(cmd_full.split(' '), shell=False)\n                logger.error(\"Can't execute the action ({})\".format(e))\n        Dynamic vlaue should starts and end with the ` char\n", "fixed": "from glances.secure import secure_popen\n                ret = secure_popen(cmd_full)\n                logger.error(\"Action error for {} ({}): {}\".format(stat_name,\n                                                                   criticity,\n                                                                   e))\n            else:\n                logg"}, {"id": "CVEFIXES_CVE_2021_23418_00113", "lang": "python", "cwe": "CWE-611", "name": "XML External Entity (XXE)", "owasp": "A02:2025-Security Misconfiguration", "cvss": "9.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "influxdb\n    requires = ['psutil\u003e=5.3.0', 'future']\n        'gpu': ['py3nvml'],", "fixed": "- ``defusedxml`` (in order to monkey path xmlrpc)\n- ``future`` (for Python 2 support)\n*Deprecation warning note for Python 2.x users*\n\nGlances version 4.0 will no longer supports Python 2.x.\n\n    # Correct issue #1025 by monkey path the xmlrpc lib\n    from defusedxml.xmlrpc import monkey_patch\n    monkey_patch()\n\n    # Correct issue #1025 by monkey"}, {"id": "CVEFIXES_CVE_2021_32805_00128", "lang": "python", "cwe": "CWE-601", "name": "Open Redirect", "owasp": "A01:2025-Broken Access Control", "cvss": "6.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "\nfrom flask import abort, current_app, flash, g, redirect, request, session, url_for\n    \"\"\"\n        For Future Use, API Auth, must check howto keep REST stateless\n    \"\"\"\n\n    \"\"\"\n    @expose_api(name='auth',url='/api/auth')\n    def auth(self):\n        if g.user is not None and g.user.is_authenticated:\n            http_return_code = 401\n            response = make_response(\n                jsonif", "fixed": "from typing import Optional\nfrom urllib.parse import urlparse\n\nfrom flask import (\n    abort,\n    current_app,\n    flash,\n    g,\n    redirect,\n    request,\n    Response,\n    session,\n    url_for,\n)\n    def login(\n        self, provider: Optional[str] = None, register: Optional[str] = None\n    ) -\u003e Response:\n    def oauth_authorized(self, provider: "}, {"id": "CVEFIXES_CVE_2023_34110_00130", "lang": "python", "cwe": "CWE-209", "name": "Generation of Error Message with Sensitive Info", "owasp": "A10:2025-Mishandling of Exceptional Conditions", "cvss": "2.7", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "from .views import LocaleView\nfrom ..basemanager import BaseManager\n\n            Get Values: formats values for list template.\n            returns [{'col_name':'col_value',....},{'col_name':'col_value',....}]\n            :param lst:\n                The list of item objects from query\n            :param list_columns:\n                The list of columns to include\n            Get Values: formats val", "fixed": "from flask_appbuilder.babel.views import LocaleView\nfrom flask_appbuilder.basemanager import BaseManager\n    database_error_message = lazy_gettext(\"Database Error\")\n\n        Get Values: formats values for list template.\n        returns [{'col_name':'col_value',....},{'col_name':'col_value',....}]\n        :param lst:\n            The list of item obj"}, {"id": "CVEFIXES_CVE_2021_23470_00151", "lang": "javascript", "cwe": "CWE-1321", "name": "Prototype Pollution", "owasp": "A08:2025-Software or Data Integrity Failures", "cvss": "9.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "    if (key === '__proto__')\n    \"eslint\": \"^7.19.0\",\n    \"mocha\": \"^9.0.2\",\n  it('should prevent Prototype Pollution vulnerability', function() {", "fixed": "    if (key === '__proto__' || key === 'constructor')\n    \"eslint\": \"^8.8.0\",\n    \"mocha\": \"^9.2.0\",\n  it('should prevent Prototype Pollution vulnerability (__proto__)', function() {\n  it('should prevent Prototype Pollution vulnerability (constructor)', function() {\n    const payload = JSON.parse('{\"constructor\": {\"prototype\": {\"polluted\": \"yes\"}}}"}, {"id": "CVEFIXES_CVE_2020_12607_00156", "lang": "python", "cwe": "CWE-347", "name": "Improper Verification of Cryptographic Signature", "owasp": "A04:2025-Cryptographic Failures", "cvss": "7.5", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "release = '2.1.1'", "fixed": "release = '2.1.2'"}, {"id": "CVEFIXES_CVE_2022_39300_00158", "lang": "typescript", "cwe": "CWE-347", "name": "Improper Verification of Cryptographic Signature", "owasp": "A04:2025-Cryptographic Failures", "cvss": "8.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "      // Check if this document has a valid top-level signature\n      if (validateSignature(xml, doc.documentElement, certs)) {", "fixed": "      // Check if this document has a valid top-level signature which applies to the entire XML document\n      if (\n        validateSignature(xml, doc.documentElement, certs) &&\n        Array.from(doc.childNodes as NodeListOf\u003cElement\u003e).filter(\n          (n) =\u003e n.tagName != null && n.childNodes != null\n        ).length === 1\n      ) {\n\u003c?xml version="}, {"id": "CVEFIXES_CVE_2020_15141_00166", "lang": "python", "cwe": "CWE-22", "name": "Path Traversal", "owasp": "A01:2025-Broken Access Control", "cvss": "4.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "    from .fastapi_app import generate_openapi_json\n\n    generate_openapi_json()\n    TEMPLATE_FILTERS = {\"snakecase\": utils.snake_case, \"spinalcase\": utils.spinal_case}\n        self.project_name: str = self.project_name_override or f\"{openapi.title.replace(' ', '-').lower()}-client\"\nheaders[\"{{ parameter.python_name | spinalcase}}\"] = {{ parameter.python_name }}\n    headers[\"{{ parameter.python_nam", "fixed": "    TEMPLATE_FILTERS = {\"snakecase\": utils.snake_case, \"kebabcase\": utils.kebab_case}\n        self.project_name: str = self.project_name_override or f\"{utils.kebab_case(openapi.title).lower()}-client\"\n            tag = utils.snake_case(tag)\nheaders[\"{{ parameter.python_name | kebabcase}}\"] = {{ parameter.python_name }}\n    headers[\"{{ parameter.pyt"}, {"id": "CVEFIXES_CVE_2020_15142_00167", "lang": "python", "cwe": "CWE-94", "name": "Code Injection", "owasp": "A05:2025-Injection", "cvss": "9.0", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "## 0.5.3 - Unrelease\nfrom fastapi import APIRouter, FastAPI, File, Header, Query, UploadFile\n    some_dict: Dict[str, str] = {}\ndef get_list(an_enum_value: List[AnEnum] = Query(...), some_date: Union[date, datetime] = Query(...)):\n                        },\n                        \"default\": {}\nfrom dataclasses import asdict\nfrom datetime import date, datetime\n    *, client: Client, an_enum_value:", "fixed": "## 0.5.3 - Unreleased\n### Security\n- All values that become file/directory names are sanitized to address path traversal vulnerabilities (CVE-2020-15141)\n- All values that get placed into python files (everything from enum names, to endpoint descriptions, to default values) are validated and/or saniziatied to address arbitrary code execution vulner"}, {"id": "CVEFIXES_CVE_2020_28490_00168", "lang": "javascript", "cwe": "CWE-78", "name": "OS Command Injection", "owasp": "A05:2025-Injection", "cvss": "9.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "const exec = require('async-execute');\n\tlist,\n\t[ 'branch', 'git rev-parse --abbrev-ref HEAD' ],\n\t[ 'origin', 'git remote get-url origin' ],\n\t[ 'changed', 'git diff-tree --no-commit-id --name-only -r HEAD' ],\n\t[ 'staged', 'git diff --name-only --cached' ],\n\t[ 'tags', 'git tag' ],\n\t[ 'unstaged', 'git diff --name-only' ],\n\t[ 'untracked', 'git ls-files -o --exclude-standard' ],\n\t\tdate: async () =\u003e new", "fixed": "const { spawn } = require('child_process');\n\n/**\n * Executes git with given arguments string. resolves with the output message\n * @param  {String} string\n * @return {Promise}\n */\nmodule.exports = string =\u003e new Promise(\n\t(resolve, reject) =\u003e {\n\t\tconst git = spawn(\n\t\t\t'git',\n\t\t\tstring.split(' '),\n\t\t);\n\n\t\tconst outputs = { stdout: [], stderr: [] };\n\n\t"}, {"id": "CVEFIXES_CVE_2022_23068_00188", "lang": "typescript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "5.4", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "    \"../plugins/node_modules/@babel/runtime\": {\n      \"version\": \"7.16.7\",\n      \"integrity\": \"sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==\",\n      \"peer\": true,\n      \"dependencies\": {\n        \"regenerator-runtime\": \"^0.13.4\"\n      },\n      \"engines\": {\n        \"node\": \"\u003e=6.9.0\"\n      }\n    },\n    \"../plugins/node_modules/block-stream2\": {\n      ", "fixed": "        \"@tooljet-plugins/baserow\": \"file:packages/baserow\",\n        \"@tooljet-plugins/rethinkdb\": \"file:packages/rethinkdb\",\n      \"dev\": true,\n      \"integrity\": \"sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==\",\n      \"dev\": true\n      \"dev\": true,\n      \"dev\": true,\n      \"dev\": true,\n      \"dev\":"}, {"id": "CVEFIXES_CVE_2021_3983_00195", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "6.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "                .replace('%customer%', timesheet.project.customer.name)\n                .replace('%project%', timesheet.project.name)\n                .replace('%activity%', timesheet.activity.name);\n/*! For license information please see app.3947eaef.js.LICENSE.txt */\n(self.webpackChunkkimai2=self.webpackChunkkimai2||[]).push([[143],{3752:function(e,t,n){var r=n(9755);if(void 0===r)throw new Error", "fixed": "    /**\n     * @param {string} title\n     * @returns {string}\n     */\n    escape(title) {\n        const tagsToReplace = {\n            '&': '&amp;',\n            '\u003c': '&lt;',\n            '\u003e': '&gt;',\n        };\n\n        return title.replace(/[&\u003c\u003e]/g, function(tag) {\n            return tagsToReplace[tag] || tag;\n        });\n    };\n                .rep"}, {"id": "CVEFIXES_CVE_2022_1430_00200", "lang": "python", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "7.5", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "    redirect_url = request.args.get(\"redirect\", request.script_root + url_for(\"index\"))", "fixed": "from urllib.parse import urlparse\n    default_redirect_url = request.script_root + url_for(\"index\")\n    redirect_url = request.args.get(\"redirect\", default_redirect_url)\n\n    parsed = urlparse(redirect_url)  # check if redirect url is valid\n    if parsed.scheme != \"\" or parsed.netloc != \"\":\n        _logger.warning(\n            f\"Got an invalid redi"}, {"id": "CVEFIXES_CVE_2022_1432_00201", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "6.4", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "var determineWebcamStreamType = function (streamUrl) {\n    if (streamUrl) {\n        if (streamUrl.startsWith(\"webrtc\")) {\n            return \"webrtc\";\n        }\n        var lastDotPosition = streamUrl.lastIndexOf(\".\");\n        var firstQuotationSignPosition = streamUrl.indexOf(\"?\");\n        if (\n            lastDotPosition != -1 &&\n            firstQuotationSignPosition != -1 &&\n            lastDo", "fixed": "var getExternalHostUrl = function () {\n    var loc = window.location;\n    var port = \"\";\n    if (\n        (loc.protocol === \"http:\" && loc.port !== \"80\") ||\n        (loc.protocol === \"https:\" && loc.port !== \"443\")\n    ) {\n        port = \":\" + loc.port;\n    }\n    return loc.protocol + \"//\" + loc.hostname + port;\n};\nvar validateWebcamUrl = function "}, {"id": "CVEFIXES_CVE_2020_15239_00217", "lang": "python", "cwe": "CWE-22", "name": "Path Traversal", "owasp": "A01:2025-Broken Access Control", "cvss": "3.5", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "def sanitized_join(path: str, root: pathlib.Path) -\u003e pathlib.Path:\n    result = (root / path).absolute()\n    if not str(result).startswith(str(root) + \"/\"):\n        raise ValueError(\"resulting path is outside root\")\n    return result\n\n\ndef get_paths(base_path: pathlib.Path):\n    data_file = pathlib.Path(str(base_path) + \".data\")\n    metadata_file = pathlib.Path(str(base_path) + \".meta\")\ndef get_in", "fixed": "import werkzeug.exceptions\ndef get_paths(root: str, sub_path: str) \\\n        -\u003e typing.Tuple[pathlib.Path, pathlib.Path]:\n    base_path = flask.safe_join(root, sub_path)\n    data_file = pathlib.Path(base_path + \".data\")\n    metadata_file = pathlib.Path(base_path + \".meta\")\ndef get_info(path: str) -\u003e typing.Tuple[\n    data_file, metadata_file = get_"}, {"id": "CVEFIXES_CVE_2023_36665_00237", "lang": "javascript", "cwe": "CWE-1321", "name": "Prototype Pollution", "owasp": "A08:2025-Software or Data Integrity Failures", "cvss": "9.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "        if (part === \"__proto__\") {", "fixed": "        if (part === \"__proto__\" || part === \"prototype\") {\n        \n        util.setProperty({}, \"__proto__.test\", \"value\");\n        test.is({}.test, undefined);\n\n        util.setProperty({}, \"prototype.test\", \"value\");\n        test.is({}.test, undefined);\n\n        util.setProperty({}, \"constructor.prototype.test\", \"value\");\n        test.is({}.tes"}, {"id": "CVEFIXES_CVE_2021_4278_00238", "lang": "javascript", "cwe": "CWE-1321", "name": "Prototype Pollution", "owasp": "A08:2025-Software or Data Integrity Failures", "cvss": "7.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "\tCopyright (c) 2014 - 2019 C\u00e9dric Ronvel\nvar tree = {} ;\n},{\"./clone.js\":2,\"./extend.js\":3,\"./path.js\":4}],2:[function(require,module,exports){\n\tCopyright (c) 2014 - 2019 C\u00e9dric Ronvel\n\tCopyright (c) 2014 - 2019 C\u00e9dric Ronvel\n},{}],4:[function(require,module,exports){\n\tCopyright (c) 2014 - 2019 C\u00e9dric Ronvel\nvar treePath = {} ;\ntreePath.op = function op( type , object , path , value ) {\n\tif ( ! ob", "fixed": "v0.7.0\n------\n\nBREAKING CHANGE -- .path()/.dotPath(): drop the function's subtree support, fix prototype pollution\n\n\n\tCopyright (c) 2014 - 2021 C\u00e9dric Ronvel\nconst tree = {} ;\n\ntree.dotPath = require( './dotPath.js' ) ;\n\n},{\"./clone.js\":2,\"./dotPath.js\":3,\"./extend.js\":4,\"./path.js\":5}],2:[function(require,module,exports){\n\tCopyright (c) 2014 - 202"}, {"id": "CVEFIXES_CVE_2021_25939_00239", "lang": "javascript", "cwe": "CWE-918", "name": "Server-Side Request Forgery (SSRF)", "owasp": "A01:2025-Broken Access Control", "cvss": "2.7", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "      _hardenedRestApi(false) {\n\n  if (global.SYS_IS_FOXX_API_DISABLED) {\n  if (global.SYS_IS_FOXX_STORE_DISABLED) {", "fixed": "* Added startup security option `--foxx.allow-install-from-remote` to allow \n  installing Foxx apps from remote URLs other than Github. The option is turned \n  off by default.\n\n      _hardenedRestApi(false),\n      _foxxAllowInstallFromRemote(false) {\n\n  \n  options-\u003eaddOption(\"--foxx.allow-install-from-remote\", \"allow installing Foxx apps from remot"}, {"id": "CVEFIXES_CVE_2021_25912_00255", "lang": "javascript", "cwe": "CWE-1321", "name": "Prototype Pollution", "owasp": "A08:2025-Software or Data Integrity Failures", "cvss": "9.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "  \u003clink rel=\"stylesheet\" media=\"all\" href=\"..\\docco.css\" /\u003e\nvar exists = module.exports.exists = function exists(object, path) {\n};\n// the difference between an unresolved path and an undefined property, so you \nvar get = module.exports.get = function get(object, path) {\n};\nvar search = module.exports.search = function search(object, path, action) {\n    return Object.keys(object).filter(key.test.b", "fixed": "  \u003clink rel=\"stylesheet\" media=\"all\" href=\"../docco.css\" /\u003e\nvar exists = (module.exports.exists = function exists(object, path) {\n});\n// the difference between an unresolved path and an undefined property, so you\nvar get = (module.exports.get = function get(object, path) {\n});\nvar search = (module.exports.search = function search(object, path, acti"}, {"id": "CVEFIXES_CVE_2023_38997_00279", "lang": "python", "cwe": "CWE-22", "name": "Path Traversal", "owasp": "A01:2025-Broken Access Control", "cvss": "7.2", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "    template_data = cnf.fetch_template_data(sys.argv[1])\n                if zf_info.filename[-1] != '/':\n                    target_filename = '%s%s' % (target_directory, zf_info.filename)", "fixed": "    template_data = cnf.fetch_template_data(zoneid)\n                target_filename = '%s%s' % (target_directory, zf_info.filename)\n                if os.path.realpath(target_filename).startswith(target_directory):"}, {"id": "CVEFIXES_CVE_2023_31779_00289", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "5.4", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "  reactionCodepoint: { type: String, optional: false },", "fixed": "  reactionCodepoint: {\n    type: String,\n    optional: false,\n    max: 9, // max length of reaction code\n    custom() {\n      if (!this.value.match(/^&#\\d{4,6};$/)) { // regex for only valid reactions\n        return \"incorrectReactionCode\";\n      }\n    },\n  },"}, {"id": "CVEFIXES_CVE_2012_3366_00300", "lang": "python", "cwe": "CWE-78", "name": "OS Command Injection", "owasp": "A05:2025-Injection", "cvss": "9.0", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "\n\ndef async_run(prog, args):\n    pid = os.fork()\n    if pid:\n        os.waitpid(pid, 0)\n    else:\n        dpid = os.fork()\n        if not dpid:\n            os.system(\" \".join([prog] + args))\n        os._exit(0)\n\n            npath = self.data + '/' + notifier\n            self.logger.debug(\"Running %s %s\" % (npath, \" \".join(args)))\n            async_run(npath, args)", "fixed": "import pipes\nfrom subprocess import Popen, PIPE\n    def async_run(self, args):\n        pid = os.fork()\n        if pid:\n            os.waitpid(pid, 0)\n        else:\n            dpid = os.fork()\n            if not dpid:\n                self.debug_log(\"Running %s\" % \" \".join(pipes.quote(a)\n                                                       for a i"}, {"id": "CVEFIXES_CVE_2022_35942_00321", "lang": "javascript", "cwe": "CWE-89", "name": "SQL Injection", "owasp": "A05:2025-Injection", "cvss": "10.0", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "      return new ParameterizedSQL(columnName + ' @\u003e array[' + operatorValue.map((v) =\u003e `'${v}'`) + ']::'\n        + propertyDefinition.postgresql.dataType);\n      return new ParameterizedSQL(`to_tsvector(${columnName}) @@ to_tsquery('${operatorValue}')`);", "fixed": "      return new ParameterizedSQL(columnName + ' @\u003e array[' + operatorValue.map(() =\u003e '?') + ']::'\n        + propertyDefinition.postgresql.dataType,\n        operatorValue);\n      return new ParameterizedSQL(`to_tsvector(${columnName}) @@ to_tsquery(?)`, [operatorValue]);"}, {"id": "CVEFIXES_CVE_2020_15272_00396", "lang": "javascript", "cwe": "CWE-78", "name": "OS Command Injection", "owasp": "A05:2025-Injection", "cvss": "9.6", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "  icon: 'git-commit'\n    exec(`git for-each-ref --format='%(contents)' ${tag}`, (err, stdout) =\u003e {\n      if (err) {\n        core.setFailed(err);\n      } else {\n        core.setOutput('git-tag-annotation', stdout);\n      }\n    });\n    `git for-each-ref --format='%(contents)' refs/tags/${tag}`,\n    `git for-each-ref --format='%(contents)' refs/tags/${tag}`,", "fixed": "## [1.0.1] - 2020-10-24\n\n- Update Action icon.\n- Fix shell injection vulnerability.\n\n  icon: 'tag'\n// Based on https://stackoverflow.com/a/22827128\nfunction escapeShellArg(arg) {\n  return arg.replace(/'/g, `'\\\\''`);\n}\n\n    exec(\n      `git for-each-ref --format='%(contents)' '${escapeShellArg(tag)}'`,\n      (err, stdout) =\u003e {\n        if (err) {\n   "}, {"id": "CVEFIXES_CVE_2021_21360_00407", "lang": "python", "cwe": "CWE-200", "name": "Sensitive Information Disclosure / System Prompt Leakage", "owasp": "A01:2025-Broken Access Control", "cvss": "5.3", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "- Enforce access control on setup tool log files\n\n            current = current._getOb(element)\n            rop_info = file_ob.rolesOfPermission(view)\n            allowed_roles = sorted([x['name'] for x in rop_info\n                                    if x['selected']])\n            self.assertEqual(allowed_roles, ['Manager', 'Owner'])\n            self.assertFalse(file_ob.acquiredRolesAreUsedBy(view", "fixed": "- Enforce access control on setup tool log files and snapshot files and folders.\nfrom AccessControl.Permissions import view\n        # Tighten the View permission on the new object.\n        # Only the owner and Manager users may view the log.\n        # file_ob = self._getOb(name)\n        ob.manage_permission(view, ('Manager', 'Owner'), 0)\n          "}, {"id": "CVEFIXES_CVE_2021_23568_00424", "lang": "javascript", "cwe": "CWE-1321", "name": "Prototype Pollution", "owasp": "A08:2025-Software or Data Integrity Failures", "cvss": "9.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "sudo: false\nlanguage: node_js\nnode_js:\n  - '4'\n  - '6'\n  - '7'\ninstall:\n  - npm i npminstall && npminstall\nscript:\n  - npm run ci\nafter_script:\n  - npminstall codecov && codecov\nenvironment:\n  matrix:\n    - nodejs_version: '4'\n    - nodejs_version: '6'\n    - nodejs_version: '7'\n\ninstall:\n  - ps: Install-Product node $env:nodejs_version\n  - npm i npminstall && node_modules\\.bin\\npminstall\n\ntest_scr", "fixed": "# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node\n# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions\n\nname: Node.js CI\n\non:\n  push:\n    branches:\n      - main\n      - master\n  pull_request:\n    br"}, {"id": "CVEFIXES_CVE_2023_6461_00435", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "6.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "\t\t\t\thtml += '\t\u003cbutton class=\"layer_name\" id=\"layer_name\" data-id=\"' + value.id + '\"\u003e' + value.name + '\u003c/button\u003e';\n\t\t\t\t{name: \"name\", title: \"Name:\", value: config.layer.name},", "fixed": "\n\t\t\t\tvar layer_title = this.Helper.escapeHtml(value.name);\n\t\t\t\thtml += '\t\u003cbutton class=\"layer_name\" id=\"layer_name\" data-id=\"' + value.id + '\"\u003e' + layer_title + '\u003c/button\u003e';\nimport Helper_class from './../../libs/helpers.js';\n\t\tthis.Helper = new Helper_class();\n\t\tvar name_ = this.Helper.escapeHtml(config.layer.name);\n\n\t\t\t\t{name: \"name\", title: \"Nam"}, {"id": "CVEFIXES_CVE_2016_10127_00445", "lang": "python", "cwe": "CWE-611", "name": "XML External Entity (XXE)", "owasp": "A02:2025-Security Misconfiguration", "cvss": "9.0", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "    tree = ElementTree.fromstring(xml_string)\n    element_tree = ElementTree.fromstring(xml_string)\n    envelope = ElementTree.fromstring(text)\n    envelope = ElementTree.fromstring(text)\n        envelope = ElementTree.fromstring(text)\n        envelope = ElementTree.fromstring(text)", "fixed": "    'defusedxml',\nimport defusedxml.ElementTree\n    tree = defusedxml.ElementTree.fromstring(xml_string)\n    element_tree = defusedxml.ElementTree.fromstring(xml_string)\nimport defusedxml.ElementTree\n    envelope = defusedxml.ElementTree.fromstring(text)\nimport defusedxml.ElementTree\n    envelope = defusedxml.ElementTree.fromstring(text)\n        en"}, {"id": "CVEFIXES_CVE_2023_32681_00457", "lang": "python", "cwe": "CWE-200", "name": "Sensitive Information Disclosure / System Prompt Leakage", "owasp": "A01:2025-Broken Access Control", "cvss": "6.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "        if username and password:", "fixed": "        # urllib3 handles proxy authorization for us in the standard adapter.\n        # Avoid appending this to TLS tunneled requests where it may be leaked.\n        if not scheme.startswith('https') and username and password:\n\n    @pytest.mark.parametrize(\n        \"url,has_proxy_auth\",\n        (\n            ('http://example.com', True),\n          "}, {"id": "CVEFIXES_CVE_2020_15172_00465", "lang": "python", "cwe": "CWE-502", "name": "Deserialization of Untrusted Data", "owasp": "A08:2025-Software or Data Integrity Failures", "cvss": "8.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "import itertools\r\nfrom redbot.core import Config, checks, commands\r\n    def __init__(self, bot):\r\n    async def initialize(self, bot):\r\n    async def act(self, ctx, *, target: Union[discord.Member, str] = None):\r\n            message = message.format(target, user=target)\r\n    async def actset(self, ctx):\r\n    async def customize(self, ctx, command: str.lower, *, response: str = None):\r\n        awai", "fixed": "import functools\r\nimport re\r\nfrom redbot.core import bot, Config, checks, commands\r\nfmt_re = re.compile(r\"{(?:0|user)(?:\\.([^\\{]+))?}\")\r\n\r\n    def __init__(self, bot: bot.Red):\r\n    async def initialize(self, bot: bot.Red):\r\n    @staticmethod\r\n    def repl(target: discord.Member, match: re.Match):\r\n        if attr := match.group(1):\r\n            pr"}, {"id": "CVEFIXES_CVE_2018_25088_00507", "lang": "python", "cwe": "CWE-89", "name": "SQL Injection", "owasp": "A05:2025-Injection", "cvss": "9.8", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "            cur.execute(\"SELECT 1 FROM pg_database WHERE datname='{}';\".format(db_name))\n            cur.execute(\"SELECT 1 FROM pg_roles WHERE rolname='{}';\".format(db_user))\n            create_role = \"CREATE USER {db_username} WITH PASSWORD '{db_pwd}';\".format(**connection_dict)\n            drop_role = \"DROP ROLE {db_username};\".format(**connection_dict)\n            grant_role = 'GRANT {db_userna", "fixed": "from psycopg2.sql import SQL, Identifier\n            cur.execute(\"SELECT 1 FROM pg_database WHERE datname=%s;\", (db_name, ))\n            cur.execute(\"SELECT 1 FROM pg_roles WHERE rolname=%s;\", (db_user, ))\n                cur.execute(SQL(\"CREATE USER {} WITH PASSWORD %s;\").format(\n                    Identifier(connection_dict['db_username']),\n    "}, {"id": "CVEFIXES_CVE_2023_26103_00508", "lang": "javascript", "cwe": "CWE-1333", "name": "Regular Expression Denial of Service (ReDoS)", "owasp": "A02:2025-Security Misconfiguration", "cvss": "7.5", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "      StringPrototypeSplit(upgrade, /\\s*,\\s*/),\n      (option) =\u003e StringPrototypeToLowerCase(option) === \"websocket\",\n      StringPrototypeSplit(connection, /\\s*,\\s*/),\n      (option) =\u003e StringPrototypeToLowerCase(option) === \"upgrade\",", "fixed": "  StringPrototypeTrim,\n      StringPrototypeSplit(upgrade, \",\"),\n      (option) =\u003e\n        StringPrototypeToLowerCase(StringPrototypeTrim(option)) === \"websocket\",\n      StringPrototypeSplit(connection, \",\"),\n      (option) =\u003e\n        StringPrototypeToLowerCase(StringPrototypeTrim(option)) === \"upgrade\","}, {"id": "CVEFIXES_CVE_2021_4081_00522", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "6.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "        var formValues = this.formPanel.getForm().getFieldValues();\n        var proxy = this.store.getProxy();\n        proxy.setExtraParam(\"query\", formValues.query);\n        this.updateTabTitle(formValues.query);\n        var formValues = this.formPanel.getForm().getFieldValues();\n        var proxy = this.store.getProxy();\n        proxy.setExtraParam(\"query\", formValues.query);\n        this.update", "fixed": "        let formValues = this.formPanel.getForm().getFieldValues();\n        let proxy = this.store.getProxy();\n        let query = Ext.util.Format.htmlEncode(formValues.query);\n        proxy.setExtraParam(\"query\", query);\n        this.updateTabTitle(query);\n        let formValues = this.formPanel.getForm().getFieldValues();\n        let proxy = this"}, {"id": "CVEFIXES_CVE_2021_4084_00524", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "6.1", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "                        this.data[item.name] = item.getValue();", "fixed": "                        let value = item.getValue();\n                        if (typeof item.config.xtype !== 'undefined' && item.config.xtype === 'textfield') {\n                            value = Ext.util.Format.htmlEncode(value);\n                        }\n\n                        this.data[item.name] = value;\n            renderer: Ext.util.Forma"}, {"id": "CVEFIXES_CVE_2021_4139_00525", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "9.0", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "                'text' =\u003e $item-\u003egetName(),\n                'description' =\u003e $item-\u003egetDescription(),\n            $resultItem['qtip'] = $item-\u003egetDescription() ? $item-\u003egetDescription() : ' ';\n    return t(value);\n        gridColumns.push({text: t(\"name\"), flex: 200, sortable: true, dataIndex: 'groupName', filter: 'string'});\n        gridColumns.push({text: t(\"description\"), flex: 200, sortable: t", "fixed": "                'text' =\u003e htmlspecialchars($item-\u003egetName(), ENT_QUOTES),\n                'description' =\u003e htmlspecialchars($item-\u003egetDescription(), ENT_QUOTES),\n            $resultItem['qtip'] = $item-\u003egetDescription() ? htmlspecialchars($item-\u003egetDescription(), ENT_QUOTES) : ' ';\n    return Ext.util.Format.htmlEncode(t(value));\n        gridColumn"}, {"id": "CVEFIXES_CVE_2022_0509_00529", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "5.4", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "                items:[this.getRowEditor()]\n                items: typesColumns\n        var data = record.data;\n        var type = data.type;\n        var property;\n            property = Ext.create('Ext.form.TextField');\n            property = Ext.create('Ext.form.TextArea');", "fixed": "                items:[this.getRowEditor()],\n                editor: new Ext.form.TextField({}),\n                items: typesColumns,\n                defaults: {\n                    renderer: Ext.util.Format.htmlEncode\n                },\n        let data = record.data;\n        let type = data.type;\n        let property;\n            property = {\n   "}, {"id": "CVEFIXES_CVE_2022_0831_00534", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "5.4", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "            if (in_array(customKey.getValue(), this.disallowedKeys)) {\n            this.add(customKey.getValue(), customType.getValue(), false, false, false, true);", "fixed": "            let key = htmlspecialchars(customKey.getValue());\n            if (in_array(key, this.disallowedKeys)) {\n            this.add(key, customType.getValue(), false, false, false, true);"}, {"id": "CVEFIXES_CVE_2022_0832_00535", "lang": "javascript", "cwe": "CWE-79", "name": "Cross-site Scripting (XSS)", "owasp": "A05:2025-Injection", "cvss": "5.4", "source_type": "real_repo", "dataset": "hitoshura25_cvefixes_all.parquet", "code": "                var title = metaPanel.getComponent(\"title\").getValue();\n                var description = metaPanel.getComponent(\"description\").getValue();", "fixed": "                var title = htmlspecialchars(metaPanel.getComponent(\"title\").getValue());\n                var description = htmlspecialchars(metaPanel.getComponent(\"description\").getValue());"}];
+    const BY_LANG = {"python": 1002, "javascript": 774, "typescript": 115};
+    const BY_SEV = {"CRITICAL": 766, "HIGH": 468, "MEDIUM": 650, "LOW": 7};
+    const BY_SOURCE = {"CVEfixes (Real CVE Repos)": 800, "CodeDEE Custom Benchmark": 22, "Meta CyberSecEval 2": 1010, "OWASP Benchmark Suite": 14, "Other Benchmark Repos": 5, "CodeDEE Synthetic GenAI (Task 2)": 40};
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Render Inclusions Table
+    function renderTaxonomy(items) {
+      const tbody = document.getElementById('taxonomy-tbody');
+      tbody.innerHTML = '';
+      items.forEach((item, idx) => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-800/40 transition-colors';
+        
+        const sevClass = item.severity === 'CRITICAL' ? 'bg-rose-500/10 text-rose-400 border-rose-500/20' :
+                        (item.severity === 'HIGH' ? 'bg-amber-500/10 text-amber-400 border-amber-500/20' : 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20');
+        
+        const langsStr = `py:${item.lang_breakdown.py || 0} js:${item.lang_breakdown.js || 0} ts:${item.lang_breakdown.ts || 0}`;
+
+        tr.innerHTML = `
+          <td class="p-3 text-slate-500 font-mono">${idx + 1}</td>
+          <td class="p-3 font-mono font-semibold text-indigo-400">${escapeHtml(item.id)}</td>
+          <td class="p-3 font-mono font-bold text-white">${escapeHtml(item.cwe_id)}</td>
+          <td class="p-3 font-medium text-slate-200 max-w-[240px] truncate" title="${escapeHtml(item.name)}">${escapeHtml(item.name)}</td>
+          <td class="p-3 text-slate-400 max-w-[180px] truncate">${escapeHtml(item.owasp)}</td>
+          <td class="p-3 text-center font-mono font-bold text-emerald-400">${item.sample_count}</td>
+          <td class="p-3">
+            <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold border ${sevClass}">
+              ${item.cvss.toFixed(1)} (${item.severity})
+            </span>
+          </td>
+          <td class="p-3 font-mono text-[11px] text-slate-400">${langsStr}</td>
+          <td class="p-3 text-right">
+            <button onclick="openFlawModal(${idx})" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-white font-sans text-[11px] transition-colors">
+              Patterns
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function filterTaxonomy() {
+      const q = document.getElementById('taxonomy-search').value.toLowerCase();
+      const filtered = INCLUSIONS.filter(item => 
+        item.name.toLowerCase().includes(q) ||
+        item.cwe_id.toLowerCase().includes(q) ||
+        item.id.toLowerCase().includes(q) ||
+        item.owasp.toLowerCase().includes(q)
+      );
+      renderTaxonomy(filtered);
+    }
+
+    // Render Exclusions Grid
+    function renderExclusions() {
+      const grid = document.getElementById('exclusions-grid');
+      grid.innerHTML = '';
+      EXCLUSIONS.forEach(exc => {
+        const card = document.createElement('div');
+        card.className = 'p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 flex flex-col justify-between space-y-3';
+        
+        const cwesBadges = (exc.excluded_cwes || []).map(c => 
+          `<span class="inline-block px-1.5 py-0.5 rounded text-[10px] bg-rose-500/10 text-rose-400 border border-rose-500/20 font-mono font-semibold mr-1 mb-1">${escapeHtml(c.cwe_id)}</span>`
+        ).join('');
+
+        const owaspBadge = exc.owasp_mapping 
+          ? `<div class="mt-1 inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/20 text-amber-300 font-mono text-[10px]">
+               <span>OWASP: ${escapeHtml(exc.owasp_mapping)}</span>
+             </div>`
+          : '';
+
+        card.innerHTML = `
+          <div>
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-bold text-white text-sm">${escapeHtml(exc.domain)}</h3>
+              <span class="px-2 py-0.5 rounded text-[9px] bg-rose-500/10 text-rose-400 border border-rose-500/20 font-mono uppercase whitespace-nowrap">Excluded</span>
+            </div>
+            <div class="text-[11px] text-indigo-400 font-mono mt-1">${escapeHtml(exc.technical_layer)}</div>
+            ${owaspBadge}
+            <div class="mt-2 flex flex-wrap">${cwesBadges}</div>
+            <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">${escapeHtml(exc.formal_justification)}</p>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Render Representative Samples Table
+    function renderSamples() {
+      const tbody = document.getElementById('sample-tbody');
+      tbody.innerHTML = '';
+      SAMPLES.forEach((s, idx) => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-800/40 transition-colors';
+        const langBadge = s.lang === 'python' ? 'bg-blue-500/10 text-blue-400 border-blue-500/20' :
+                         (s.lang === 'typescript' ? 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20' : 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20');
+
+        tr.innerHTML = `
+          <td class="p-3 text-slate-300 font-semibold">${escapeHtml(s.id)}</td>
+          <td class="p-3">
+            <span class="px-2 py-0.5 rounded text-[10px] border ${langBadge}">${escapeHtml(s.lang)}</span>
+          </td>
+          <td class="p-3 text-indigo-400 font-bold">${escapeHtml(s.cwe)}</td>
+          <td class="p-3 text-slate-300 font-sans max-w-[200px] truncate" title="${escapeHtml(s.name)}">${escapeHtml(s.name)}</td>
+          <td class="p-3 text-slate-400 font-sans max-w-[160px] truncate">${escapeHtml(s.owasp)}</td>
+          <td class="p-3 font-bold ${parseFloat(s.cvss) >= 9.0 ? 'text-rose-400' : 'text-amber-400'}">${escapeHtml(s.cvss)}</td>
+          <td class="p-3 text-slate-400 truncate max-w-[120px] font-sans">${escapeHtml(s.dataset)}</td>
+          <td class="p-3 text-right font-sans">
+            <button onclick="inspectSample(${idx})" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-white text-[11px] transition-colors">
+              Inspect
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Modals
+    function openFlawModal(idx) {
+      const item = INCLUSIONS[idx];
+      if (!item) return;
+      document.getElementById('flaw-modal-id').innerText = item.id;
+      document.getElementById('flaw-modal-cwe').innerText = item.cwe_id;
+      document.getElementById('flaw-modal-sev').innerText = `${item.severity} (${item.cvss.toFixed(1)})`;
+      document.getElementById('flaw-modal-title').innerText = item.name;
+      document.getElementById('flaw-modal-owasp').innerText = item.owasp;
+      document.getElementById('flaw-modal-detect').innerText = item.detection || 'AST Call Visitor + Inter-procedural Taint Graph';
+      document.getElementById('flaw-modal-sources').innerText = JSON.stringify(item.sources, null, 2);
+      document.getElementById('flaw-modal-sinks').innerText = JSON.stringify(item.sinks, null, 2);
+      document.getElementById('flaw-modal-sanitizers').innerText = JSON.stringify(item.sanitizers, null, 2);
+      document.getElementById('flaw-modal').classList.remove('hidden');
+    }
+
+    function closeFlawModal() {
+      document.getElementById('flaw-modal').classList.add('hidden');
+    }
+
+    function inspectSample(idx) {
+      const s = SAMPLES[idx];
+      if (!s) return;
+      document.getElementById('code-modal-title').innerText = `${s.cwe}: ${s.name} (${s.lang})`;
+      document.getElementById('code-modal-meta').innerText = `ID: ${s.id} | CVSS: ${s.cvss} | Source: ${s.dataset}`;
+      document.getElementById('code-modal-vuln').innerText = s.code || '// No snippet available';
+      if (s.fixed) {
+        document.getElementById('code-modal-fix-container').classList.remove('hidden');
+        document.getElementById('code-modal-fix').innerText = s.fixed;
+      } else {
+        document.getElementById('code-modal-fix-container').classList.add('hidden');
+      }
+      document.getElementById('code-modal').classList.remove('hidden');
+    }
+
+    function closeCodeModal() {
+      document.getElementById('code-modal').classList.add('hidden');
+    }
+
+    // Initialize Charts
+    function initCharts() {
+      // 1. Bar Chart: 28 CWEs
+      const cweLabels = INCLUSIONS.map(i => `${i.cwe_id} (${i.id})`);
+      const cweCounts = INCLUSIONS.map(i => i.sample_count);
+
+      new Chart(document.getElementById('cweDistributionChart'), {
+        type: 'bar',
+        data: {
+          labels: cweLabels,
+          datasets: [{
+            label: 'Sample Count',
+            data: cweCounts,
+            backgroundColor: INCLUSIONS.map(i => i.sample_count >= 100 ? '#6366f1' : (i.sample_count >= 20 ? '#38bdf8' : '#10b981')),
+            borderRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                afterLabel: function(ctx) {
+                  const item = INCLUSIONS[ctx.dataIndex];
+                  return `${item.name}\nCVSS: ${item.cvss} (${item.severity})`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: '#94a3b8', font: { size: 10 }, maxRotation: 45, minRotation: 45 },
+              grid: { display: false }
+            },
+            y: {
+              ticks: { color: '#94a3b8', font: { size: 10 } },
+              grid: { color: '#1e293b' }
+            }
+          }
+        }
+      });
+
+      // 2. Language Doughnut
+      new Chart(document.getElementById('langChart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['Python', 'JavaScript', 'TypeScript'],
+          datasets: [{
+            data: [BY_LANG.python, BY_LANG.javascript, BY_LANG.typescript],
+            backgroundColor: ['#3b82f6', '#eab308', '#06b6d4'],
+            borderColor: '#070b14',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom', labels: { color: '#cbd5e1', font: { size: 11 } } }
+          }
+        }
+      });
+
+      // 3. Severity Doughnut
+      new Chart(document.getElementById('sevChart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['Critical (9.0+)', 'High (7.0-8.9)', 'Medium (4.0-6.9)', 'Low (0.1-3.9)'],
+          datasets: [{
+            data: [BY_SEV.CRITICAL, BY_SEV.HIGH, BY_SEV.MEDIUM, BY_SEV.LOW],
+            backgroundColor: ['#f43f5e', '#f59e0b', '#eab308', '#10b981'],
+            borderColor: '#070b14',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom', labels: { color: '#cbd5e1', font: { size: 10 } } }
+          }
+        }
+      });
+
+      // 4. Source Horizontal Bar
+      const srcLabels = Object.keys(BY_SOURCE);
+      const srcCounts = Object.values(BY_SOURCE);
+
+      new Chart(document.getElementById('sourceChart'), {
+        type: 'bar',
+        data: {
+          labels: srcLabels,
+          datasets: [{
+            data: srcCounts,
+            backgroundColor: ['#6366f1', '#06b6d4', '#10b981', '#f59e0b', '#8b5cf6', '#64748b'],
+            borderRadius: 4
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            x: {
+              ticks: { color: '#94a3b8', font: { size: 9 } },
+              grid: { color: '#1e293b' }
+            },
+            y: {
+              ticks: { color: '#cbd5e1', font: { size: 9 } },
+              grid: { display: false }
+            }
+          }
+        }
+      });
+    }
+
+    window.onload = () => {
+      renderTaxonomy(INCLUSIONS);
+      renderExclusions();
+      renderSamples();
+      initCharts();
+    };
+  </script>
+</body>
+</html>
