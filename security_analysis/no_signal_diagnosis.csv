@@ -1,0 +1,46 @@
+﻿Repo_Name,Repo_URL,GHSA_Recheck_Status,Doc_Corpus_Coverage,Possibly_Missed_Changelog_Files,OSV_Self_Package_Ecosystem_Tried,OSV_Self_Package_Hits,Likely_Real_Absence
+AReaL,https://github.com/areal-project/AReaL,confirmed_zero,189_docs_collected,,PyPI,,True
+AgentGPT,https://github.com/reworkd/AgentGPT,confirmed_zero,26_docs_collected,,npm,,True
+AgentVerse,https://github.com/OpenBMB/AgentVerse,confirmed_zero,29_docs_collected,,npm,,True
+CopyTranslator,https://github.com/CopyTranslator/CopyTranslator,confirmed_zero,46_docs_collected,,npm,,True
+Crucix,https://github.com/calesthio/Crucix,confirmed_zero,8_docs_collected,,npm,,True
+DojoAgents,https://github.com/Alpha-Dojo/DojoAgents,confirmed_zero,116_docs_collected,,PyPI,,True
+Everywhere,https://github.com/Sylinko/Everywhere,confirmed_zero,98_docs_collected,,,,True
+Jarvis,https://github.com/sukeesh/Jarvis,confirmed_zero,13_docs_collected,,PyPI,,True
+Jobs_Applier_AI_Agent_AIHawk,https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk,confirmed_zero,89_docs_collected,,PyPI,,True
+MIRIX,https://github.com/Mirix-AI/MIRIX,confirmed_zero,80_docs_collected,,PyPI,,True
+MetaGPT,https://github.com/FoundationAgents/MetaGPT,confirmed_zero,96_docs_collected,,PyPI,"GHSA-3c3g-7hwg-9qmr, GHSA-3ghp-8r47-4gj4, GHSA-fcc8-4q7h-wvwc, GHSA-g7ph-8423-pf4j, GHSA-g977-h85w-h2xj, GHSA-qw5f-qpq5-ppfg, GHSA-r5v8-c28h-f8r8, GHSA-w287-wwhf-95vv, GHSA-wp29-qmvj-frvp, GHSA-xr7v-m9px-q4qj, PYSEC-2024-9, PYSEC-2026-2637, PYSEC-2026-2638, PYSEC-2026-2639, PYSEC-2026-2640, PYSEC-2026-2641, PYSEC-2026-2642, PYSEC-2026-2643, PYSEC-2026-2644, PYSEC-2026-2645",False
+N.E.K.O,https://github.com/Project-N-E-K-O/N.E.K.O,confirmed_zero,539_docs_collected,,PyPI,,True
+NagaAgent,https://github.com/RTGS2017/NagaAgent,confirmed_zero,71_docs_collected,,PyPI,,True
+Open-Assistant,https://github.com/LAION-AI/Open-Assistant,confirmed_zero,151_docs_collected,,PyPI,,True
+OpenHarness,https://github.com/HKUDS/OpenHarness,confirmed_zero,21_docs_collected,"RELEASE_NOTES_v0.1.8.md, RELEASE_NOTES_v0.1.9.md",PyPI,,False
+OpenJarvis,https://github.com/open-jarvis/OpenJarvis,confirmed_zero,119_docs_collected,,PyPI,,True
+OpenMontage,https://github.com/calesthio/OpenMontage,confirmed_zero,1105_docs_collected,,PyPI,,True
+QwenPaw,https://github.com/agentscope-ai/QwenPaw,confirmed_zero,429_docs_collected,,PyPI,,True
+SuperAGI,https://github.com/TransformerOptimus/SuperAGI,confirmed_zero,44_docs_collected,,PyPI,,True
+TaskingAI,https://github.com/TaskingAI/TaskingAI,confirmed_zero,130_docs_collected,,PyPI,,True
+TencentDB-Agent-Memory,https://github.com/TencentCloud/TencentDB-Agent-Memory,confirmed_zero,70_docs_collected,,npm,,True
+agent-browser,https://github.com/vercel-labs/agent-browser,confirmed_zero,78_docs_collected,,crates.io,,True
+agent-orchestrator,https://github.com/Untrivial-ai/agent-orchestrator,confirmed_zero,165_docs_collected,,Go,,True
+ansible,https://github.com/ansible/ansible,confirmed_zero,no_docs_collected,changelogs,PyPI,"GHSA-2pfh-q76x-gwvm, GHSA-3c67-gc48-983w, GHSA-3m8p-xpm6-8ww3, GHSA-3m93-m4q6-mc6v, GHSA-3xvg-x47j-x75w, GHSA-49m5-2838-q2rv, GHSA-4cvm-5776-jx9f, GHSA-4r65-35qq-ch8j, GHSA-588w-w6mv-3cw5, GHSA-5g4v-2pc6-4hh4, GHSA-5rrg-rr89-x9mv, GHSA-5xm4-jmpw-p6j3, GHSA-64cw-m57j-65xj, GHSA-6667-f46p-pg88, GHSA-66c7-5pwv-mm3j, GHSA-6fq2-x65v-v9h7, GHSA-74vq-h4q8-x6jv, GHSA-77g3-3j5w-64w4, GHSA-785x-qw4v-6872, GHSA-86hp-cj9j-33vv, GHSA-893h-35v4-mxqx, GHSA-8f4m-hccc-8qph, GHSA-8ggh-xwr9-3373, GHSA-923p-fr2c-g5m2, GHSA-9x6q-5423-w5v9, GHSA-cmwx-9m2h-x7v4, GHSA-cpx3-93w7-457x, GHSA-cqmr-rcpr-cxh3, GHSA-f556-49jc-4rvc, GHSA-f85h-23mf-2fwh, GHSA-fc4h-467w-46rh, GHSA-fh5v-5f35-2rv2, GHSA-fj24-ghp9-39v3, GHSA-frxj-5j27-f8rf, GHSA-g4mq-6fp5-qwcf, GHSA-gfr2-qpxh-qj9m, GHSA-grgm-pph5-j5h7, GHSA-gwr8-5j83-483c, GHSA-h39q-95q5-9jfp, GHSA-h653-95qw-h2mp, GHSA-hwrm-63v2-42g4, GHSA-j2h6-73x8-22c4, GHSA-j569-fghw-f9rx, GHSA-j667-c2hm-f2wp, GHSA-jg4f-jqm5-4mgq, GHSA-jpvw-p8pr-9g2x, GHSA-jwcc-j78w-j73w, GHSA-m429-fhmv-c6q2, GHSA-m956-frf4-m2wr, GHSA-p62g-jhg6-v3rq, GHSA-p75j-wc34-527c, GHSA-pcqv-c46v-2p4v, GHSA-pm48-cvv2-29q5, GHSA-qg47-5px9-32g7, GHSA-r6h7-5pq2-j77h, GHSA-rh6x-qvg7-rrmj, GHSA-v735-2pp6-h86r, GHSA-vcg8-98q8-g7mj, GHSA-vp9j-rghq-8jhh, GHSA-w578-j992-554x, GHSA-w64c-pxjj-h866, GHSA-wqq5-c89p-3wc3, GHSA-wv5p-gmmv-wh9v, GHSA-wwwh-47wp-m522, GHSA-x4cm-m36h-c6qj, GHSA-x7jh-595q-wq82, PYSEC-2013-1, PYSEC-2013-2, PYSEC-2015-1, PYSEC-2016-1, PYSEC-2017-2, PYSEC-2017-3, PYSEC-2017-4, PYSEC-2018-36, PYSEC-2018-37, PYSEC-2018-38, PYSEC-2018-39, PYSEC-2018-40, PYSEC-2018-41, PYSEC-2018-42, PYSEC-2018-43, PYSEC-2018-44, PYSEC-2018-58, PYSEC-2018-60, PYSEC-2018-81, PYSEC-2019-141, PYSEC-2019-145, PYSEC-2019-146, PYSEC-2019-171, PYSEC-2019-2, PYSEC-2019-3, PYSEC-2019-4, PYSEC-2019-5, PYSEC-2020-1, PYSEC-2020-10, PYSEC-2020-11, PYSEC-2020-12, PYSEC-2020-13, PYSEC-2020-160, PYSEC-2020-161, PYSEC-2020-198, PYSEC-2020-199, PYSEC-2020-2, PYSEC-2020-200, PYSEC-2020-201, PYSEC-2020-202, PYSEC-2020-203, PYSEC-2020-204, PYSEC-2020-205, PYSEC-2020-206, PYSEC-2020-207, PYSEC-2020-208, PYSEC-2020-209, PYSEC-2020-210, PYSEC-2020-220, PYSEC-2020-3, PYSEC-2020-4, PYSEC-2020-5, PYSEC-2020-6, PYSEC-2020-7, PYSEC-2020-8, PYSEC-2020-9, PYSEC-2021-1, PYSEC-2021-105, PYSEC-2021-106, PYSEC-2021-107, PYSEC-2021-124, PYSEC-2021-126, PYSEC-2021-358, PYSEC-2022-164, PYSEC-2026-1119, PYSEC-2026-1120, PYSEC-2026-618, PYSEC-2026-768",False
+better-genshin-impact,https://github.com/babalae/better-genshin-impact,confirmed_zero,35_docs_collected,,,,True
+cc-connect,https://github.com/chenhg5/cc-connect,confirmed_zero,51_docs_collected,changelogs,Go,,False
+chatbox,https://github.com/chatboxai/chatbox,confirmed_zero,63_docs_collected,release,npm,,False
+deer-flow,https://github.com/bytedance/deer-flow,confirmed_zero,308_docs_collected,CHANGELOG_zh.md,PyPI,,False
+dexter,https://github.com/virattt/dexter,confirmed_zero,10_docs_collected,,npm,,True
+eino,https://github.com/cloudwego/eino,confirmed_zero,9_docs_collected,,Go,,True
+gemini-cli,https://github.com/google-gemini/gemini-cli,confirmed_zero,no_docs_collected,,npm,,False
+ha_xiaomi_home,https://github.com/XiaoMi/ha_xiaomi_home,confirmed_zero,8_docs_collected,,PyPI,,True
+leon,https://github.com/leon-ai/leon,confirmed_zero,25_docs_collected,.changelogrc,npm,,False
+letta,https://github.com/letta-ai/letta,confirmed_zero,7_docs_collected,,PyPI,"GHSA-7p2g-2vxc-5g55, PYSEC-2026-1533",False
+mcp-chrome,https://github.com/hangwin/mcp-chrome,confirmed_zero,26_docs_collected,releases,npm,,False
+meetily,https://github.com/Zackriya-Solutions/meetily,confirmed_zero,29_docs_collected,,crates.io,,True
+memU,https://github.com/NevaMind-AI/memU,confirmed_zero,57_docs_collected,,PyPI,,True
+nullhub,https://github.com/nullclaw/nullhub,confirmed_zero,9_docs_collected,,,,True
+open-design,https://github.com/nexu-io/open-design,confirmed_zero,2250_docs_collected,RELEASE-NOTES-0.10.0.md,npm,,False
+openagent,https://github.com/the-open-agent/openagent,confirmed_zero,69_docs_collected,".goreleaser.yaml, .releaserc.json",Go,,False
+ralph,https://github.com/snarktank/ralph,confirmed_zero,7_docs_collected,,npm,,True
+rig,https://github.com/0xPlaygrounds/rig,confirmed_zero,64_docs_collected,release-plz.toml,crates.io,,False
+spring-ai-alibaba,https://github.com/alibaba/spring-ai-alibaba,confirmed_zero,no_docs_collected,,Maven,,False
+symphony,https://github.com/openai/symphony,confirmed_zero,28_docs_collected,,,,True
+unity-mcp,https://github.com/CoplayDev/unity-mcp,confirmed_zero,no_docs_collected,,,,False

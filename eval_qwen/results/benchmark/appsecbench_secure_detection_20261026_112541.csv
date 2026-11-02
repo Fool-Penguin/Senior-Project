@@ -1,0 +1,752 @@
+benchmark_id,flagged_secure,latency_s,prompt_tokens,gen_tokens,prompt_tps,gen_tps,ram_rss_mb,raw_output
+ASB-000517,False,2.124,177,74,408.1,45.91,4922.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000326,False,3.143,174,131,993.76,45.56,4922.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": ""/etc/app/secret.env"",
+  ""explanation"": ""The code sets the correct permissions and ownership for the secret file, which is a secure practice."""
+ASB-000552,False,1.96,219,74,826.54,45.76,4922.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000333,True,6.696,235,279,692.33,44.84,4922.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A9: Security Misconfiguration"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""location"": ""exec.Comm"
+ASB-000459,False,1.872,162,74,921.0,45.79,4922.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000497,True,5.447,196,227,743.6,44.83,4922.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-80: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A1: Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""location"": ""/api/transfer"",
+  ""explan"
+ASB-000240,True,3.547,161,147,910.69,44.95,4922.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-401: Missing Authentication"",
+  ""owasp"": ""A9:2017 - Security Misconfiguration"",
+  ""severity"": ""High"",
+  ""cvss"": 8.6,
+  ""location"": ""/api/login"",
+  ""explanation"": ""The endpoint /api/login is accessible w"
+ASB-000024,False,1.884,182,74,1017.2,45.52,4923.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000528,False,1.879,182,74,1018.08,45.61,4923.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000289,False,1.796,155,74,1542.76,45.77,4923.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000499,False,1.98,212,74,795.49,45.25,4923.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000413,False,1.975,196,74,737.09,45.38,4923.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000194,False,1.883,189,74,1059.6,45.51,4923.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000419,True,4.781,183,200,1023.72,44.55,4923.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-476: Null Pointer Dereference"",
+  ""owasp"": ""A9:2017 - Security Misconfiguration"",
+  ""severity"": ""High"",
+  ""cvss"": 8.5,
+  ""location"": ""fetchRecord function"",
+  ""explanation"": ""The code does not handle th"
+ASB-000071,False,1.898,181,74,1001.07,45.2,4923.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000253,False,1.887,167,74,938.93,45.38,4923.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000550,False,2.087,233,74,661.85,44.67,4923.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000082,True,7.793,224,325,819.45,44.08,4924.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94: Improper Control of Generation of Code ('Code Injection')"",
+  ""owasp"": ""A1: Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""location"": ""/api/config"",
+  ""explanation"": ""The code directly uses use"
+ASB-000487,True,5.113,183,212,996.42,44.05,4924.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A1:2021 - Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""location"": ""req.file.mv(UPLOAD+"
+ASB-000255,True,5.281,192,219,1040.43,44.01,4926.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A1: Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 9.0,
+  ""location"": ""/api/upload"",
+  ""explanat"
+ASB-000233,False,1.91,177,74,957.37,44.92,4927.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000183,False,1.907,182,74,986.05,45.01,4929.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000010,False,2.005,206,74,752.66,44.77,4931.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000347,False,1.902,183,74,1001.06,45.1,4933.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000188,False,1.899,167,74,928.95,45.07,4935.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000225,True,5.21,195,211,715.17,43.77,4936.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-80"",
+  ""owasp"": ""A1: Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""location"": ""/api/profile"",
+  ""explanation"": ""The code uses the `fast-xml-parser` library with default settings, which can be vuln"
+ASB-000206,False,2.029,213,74,758.31,44.3,4938.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000001,True,4.412,177,181,979.86,43.9,4940.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-470: Use of Externally-Controlled Format String"",
+  ""owasp"": ""A9: Using Components with Known Vulnerabilities"",
+  ""severity"": ""High"",
+  ""cvss"": 8.2,
+  ""location"": ""fetchRecord function"",
+  ""explanation"""
+ASB-000492,False,1.84,153,74,1457.78,44.65,4940.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000030,False,1.918,161,74,869.09,44.7,4940.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000312,False,1.917,191,74,1030.39,44.74,4940.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000427,False,1.917,173,74,938.15,44.74,4940.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000284,True,4.258,244,166,665.88,43.83,4941.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94: Improper Control of Generation of Code ('Code Injection')"",
+  ""owasp"": ""A1: Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""location"": ""/api/search"",
+  ""explanation"": ""The code directly uses the"
+ASB-000182,False,2.034,165,74,878.77,41.84,4941.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000091,False,1.953,174,74,838.9,44.25,4941.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000036,False,1.937,187,74,1047.33,44.02,4941.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000330,False,2.079,181,74,986.64,40.81,4941.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000442,False,2.263,201,74,684.36,39.08,4933.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000136,True,4.535,179,180,931.21,42.44,4932.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A1: Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 9.0,
+  ""location"": ""charge(total)"",
+  ""explan"
+ASB-000558,False,2.024,200,74,718.6,44.37,4933.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000364,True,6.202,226,253,687.9,44.03,4923.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94: Improper Control of Generation of Code ('Code Injection')"",
+  ""owasp"": ""A1:2021 - Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""location"": ""/api/export"",
+  ""explanation"": ""The code directly us"
+ASB-000420,False,1.849,161,74,855.28,46.45,4923.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000021,False,1.756,149,74,1507.26,46.81,4923.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000536,True,4.513,178,189,992.77,44.75,4923.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A1: Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 9.0,
+  ""location"": ""body.items.reduce((s,i)=>"
+ASB-000467,False,1.867,180,74,968.94,46.18,4924.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000349,False,1.952,149,74,1348.04,41.73,4925.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000145,False,1.847,184,74,1001.81,46.73,4925.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000017,False,2.087,208,74,771.61,42.61,4925.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000457,False,1.863,172,74,978.33,45.96,4925.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000336,False,1.835,189,74,1062.27,46.88,4925.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000537,False,1.94,196,74,738.77,46.33,4925.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000571,False,1.945,206,74,769.65,46.3,4928.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000216,False,1.947,194,74,730.6,46.16,4929.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000471,False,1.933,201,74,766.96,46.48,4931.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000318,False,2.118,228,74,642.78,43.93,4933.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000563,False,1.88,170,74,937.17,45.55,4933.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000356,False,1.885,184,74,1026.1,45.55,4933.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000286,True,5.909,207,240,770.05,43.51,4933.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A1:2021 - Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""location"": ""db.Exec(\""UPDATE c SET us"
+ASB-000300,False,2.037,170,74,780.21,42.54,4933.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000515,False,1.891,169,74,949.1,45.26,4933.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000322,False,2.035,210,74,752.39,44.09,4933.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000089,False,2.043,204,74,716.0,44.04,4933.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000261,False,2.031,200,74,716.28,44.22,4933.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000390,True,4.212,244,162,658.04,43.33,4933.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94: Improper Control of Generation of Code ('Code Injection')"",
+  ""owasp"": ""A1: Injection"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""location"": ""/api/export"",
+  ""explanation"": ""The code directly uses the"
+ASB-000236,False,1.959,177,74,919.18,43.83,4933.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000167,True,4.723,191,190,1018.79,42.92,4933.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284: Improper Access Control"",
+  ""owasp"": ""A1: Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""location"": ""function runTask(req,res)"",
+  ""explanation"": ""The code does not properly valida"
+ASB-000127,False,1.875,149,74,1396.26,43.78,4933.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000458,True,7.168,196,287,668.36,42.6,4933.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A9: Security Misconfiguration"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""location"": ""func proc"
+ASB-000506,False,1.963,173,74,873.58,43.91,4933.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": """",
+  ""cvss"": 0,
+  ""location"": """",
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"

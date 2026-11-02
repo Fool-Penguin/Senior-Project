@@ -20,3 +20,7 @@ documentation_files.jsonl
 # OS artifacts
 .DS_Store
 Thumbs.db
+
+# Local eval artifacts
+code_dee_eval/node_modules/
+code_dee_eval/.codeql-db-*/

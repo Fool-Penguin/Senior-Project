@@ -1,0 +1,15 @@
+repo,n,flagged_parent,flag_parent_rate,cwe_correct,cwe_accuracy
+openclaw/openclaw,44,18,0.4091,8,0.1818
+langflow-ai/langflow,5,1,0.2,1,0.2
+mlflow/mlflow,4,1,0.25,0,0.0
+Budibase/budibase,3,2,0.6667,0,0.0
+MervinPraison/PraisonAI,3,3,1.0,2,0.6667
+Mintplex-Labs/anything-llm,3,1,0.3333,0,0.0
+pipecat-ai/pipecat,3,1,0.3333,0,0.0
+hiyouga/LlamaFactory,2,1,0.5,0,0.0
+n8n-io/n8n,2,0,0.0,0,0.0
+Significant-Gravitas/AutoGPT,1,0,0.0,0,0.0
+arc53/DocsGPT,1,0,0.0,0,0.0
+earendil-works/pi,1,1,1.0,0,0.0
+khoj-ai/khoj,1,0,0.0,0,0.0
+lobehub/lobehub,1,0,0.0,0,0.0

@@ -1,0 +1,12 @@
+llm_id,name,in_catalogue,catalogue_cwe,how_to_split,gift_879_correct,appsec_native_pyjsts,scp_native_pyjsts,ghsa_74,union_correct,notes
+LLM01,Prompt Injection,yes,CWE-1427,CWE-1427 is LLM01 only,10,17,2,0,29,do_not_use_for_LLM02
+LLM02,Sensitive Information Disclosure (context / RAG),yes,CWE-200,only if PII/secrets/tenant RAG enter LLM context,11,16,0,0,11,gift=6 SYN_LLM02 + 4 batch LLM02 + 1 CodeLens LLM02; AppSec 16 are RAG tenant-filter (CWE-1427 mismatch)
+LLM03,Supply Chain Vulnerabilities,no,,,,0,0,0,0,excluded_by_catalogue
+LLM04,Data and Model Poisoning,no,,,,0,0,0,0,excluded_by_catalogue
+LLM05,Improper Output Handling,yes,CWE-1426,CWE-1426 is LLM05 only,10,0,0,0,10,gift_synthetic_only
+LLM06,Excessive Agency,no,,,,0,33,2,0,0,native_tags_exist_but_catalogue_excludes
+LLM07,System Prompt Leakage,yes,CWE-200,only if system prompt/guardrails returned to client,11,0,0,0,11,gift=6 SYN_LLM07 + 4 batch LLM07 + 1 CodeLens LLM07
+LLM08,Vector and Embedding Weaknesses,no,,,,0,0,0,0,excluded_by_catalogue
+LLM09,Misinformation,no,,,,0,0,0,0,excluded_by_catalogue
+LLM10,Unbounded Consumption,no,,,,0,0,0,0,excluded_by_catalogue
+CWE-200-generic,Web information disclosure (not LLM),cwe_only,CWE-200,no LLM if no model context/prompt leak,33,0,1,5,33,CVEFixes 32 + CodeLens sqlite exception 1; SCP /me dump; GHSA not LLM02/07

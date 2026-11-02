@@ -1,0 +1,2512 @@
+{
+  "0xPlaygrounds/rig": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "1Panel-dev/1Panel": {
+    "ghsa_count": 16,
+    "ghsa_ids": [
+      "GHSA-mg24-6h5c-9q42",
+      "GHSA-7cqv-qcq2-r765",
+      "GHSA-qmg5-v42x-qqhq",
+      "GHSA-8j63-96wh-wh3j",
+      "GHSA-7m53-pwp6-v3f5",
+      "GHSA-5grx-v727-qmq6",
+      "GHSA-f8ch-w75v-c847",
+      "GHSA-6m9h-2pr2-9j8f",
+      "GHSA-26w3-q4j8-4xjp",
+      "GHSA-9xfw-jjq2-7v8h",
+      "GHSA-hf7j-xj3w-87g4",
+      "GHSA-85cf-gj29-f555",
+      "GHSA-pv7q-v9mv-9mh5",
+      "GHSA-p9xf-74xh-mhw5",
+      "GHSA-7x2c-fgx6-xf9h",
+      "GHSA-q2mx-gpjf-3h8x"
+    ],
+    "release_cves": [
+      "CVE-2023-36457",
+      "CVE-2023-36458",
+      "CVE-2023-37477",
+      "CVE-2023-39964",
+      "CVE-2023-39965",
+      "CVE-2023-39966",
+      "CVE-2024-24768",
+      "CVE-2024-27288",
+      "CVE-2024-30257"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "1Panel-dev/MaxKB": {
+    "ghsa_count": 49,
+    "ghsa_ids": [
+      "GHSA-3j82-m9mg-vcfh",
+      "GHSA-657x-9gfv-m4p8",
+      "GHSA-hx64-fc76-gmxg",
+      "GHSA-6x98-v97f-7pv4",
+      "GHSA-x73h-wxcf-j26f",
+      "GHSA-4rc6-vvgg-w8gc",
+      "GHSA-8562-p4hq-mxx5",
+      "GHSA-9mh9-v949-fwqh",
+      "GHSA-5fcx-wjp2-7wwg",
+      "GHSA-rw44-5mq3-j4fp",
+      "GHSA-6h35-c779-4v37",
+      "GHSA-m8gr-554p-8r82",
+      "GHSA-2324-7xjr-9qxg",
+      "GHSA-f36j-f34j-h3rx",
+      "GHSA-ffxw-frpx-8rww",
+      "GHSA-g888-8cvh-9284",
+      "GHSA-7fmh-98f2-2cfg",
+      "GHSA-4w4r-h4x8-mg7h",
+      "GHSA-r6g6-69fh-c39q",
+      "GHSA-x65c-w438-c58f",
+      "GHSA-58cm-c5jq-96vf",
+      "GHSA-7xxm-gqxv-ph3v",
+      "GHSA-383v-fx78-pphm",
+      "GHSA-4pr3-9xhm-98x5",
+      "GHSA-2m4c-mcq5-q8xq",
+      "GHSA-x9g5-j56j-4mfj",
+      "GHSA-r3j3-j58q-rjpp",
+      "GHSA-2jmj-gwvg-3gp2",
+      "GHSA-6m4p-9wwc-4q5q",
+      "GHSA-r8hf-mwwr-hxgc",
+      "GHSA-q2qg-43vq-f2wv",
+      "GHSA-3rq5-pgm7-pvp4",
+      "GHSA-462x-99gf-mp79",
+      "GHSA-rr4r-7cj2-29vp",
+      "GHSA-wf7p-3jq5-q52w",
+      "GHSA-9c6w-j7w5-3gf7",
+      "GHSA-7wgv-v2r3-7f7w",
+      "GHSA-w9g4-q3gm-6q6w",
+      "GHSA-f3c8-p474-xwfv",
+      "GHSA-pw52-326g-r5xj",
+      "GHSA-5xx2-3q9w-jpgf",
+      "GHSA-f9qm-2pxq-fx6c",
+      "GHSA-qwvm-x4xh-g2qq",
+      "GHSA-9287-g7px-9rp4",
+      "GHSA-5xhm-4j3v-87m4",
+      "GHSA-38q2-4mm7-qf5h",
+      "GHSA-p2qq-x9j2-px8v",
+      "GHSA-fjf6-6cvf-xr72",
+      "GHSA-76w2-2g72-cg85"
+    ],
+    "release_cves": [
+      "CVE-2024-42005",
+      "CVE-2024-56137",
+      "CVE-2025-3238",
+      "CVE-2025-4546",
+      "CVE-2025-53927",
+      "CVE-2025-53928",
+      "CVE-2025-64511",
+      "CVE-2025-64703",
+      "CVE-2025-66419",
+      "CVE-2025-66446",
+      "CVE-2026-39417",
+      "CVE-2026-39418",
+      "CVE-2026-39419",
+      "CVE-2026-39420",
+      "CVE-2026-39421",
+      "CVE-2026-39422",
+      "CVE-2026-39423",
+      "CVE-2026-39424",
+      "CVE-2026-39425",
+      "CVE-2026-39426",
+      "CVE-2026-79919"
+    ],
+    "release_ghsas": [
+      "GHSA-38Q2-4MM7-QF5H",
+      "GHSA-5XHM-4J3V-87M4",
+      "GHSA-76W2-2G72-CG85",
+      "GHSA-9287-G7PX-9RP4",
+      "GHSA-QWVM-X4XH-G2QQ"
+    ],
+    "release_mentions": 34
+  },
+  "AgriciDaniel/claude-obsidian": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "Alpha-Dojo/DojoAgents": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "AstrBotDevs/AstrBot": {
+    "ghsa_count": 2,
+    "ghsa_ids": [
+      "GHSA-4m32-cjv7-f425",
+      "GHSA-cq37-g2qp-3c2p"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 2
+  },
+  "Avaiga/taipy": {
+    "ghsa_count": 2,
+    "ghsa_ids": [
+      "GHSA-pp84-v3mw-gg4w",
+      "GHSA-r3jq-4r5c-j9hp"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "BlockRunAI/ClawRouter": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-3GC7-FJRX-P6MG",
+      "GHSA-848J-6MX2-7J84",
+      "GHSA-G7R4-M6W7-QQQR"
+    ],
+    "release_mentions": 1
+  },
+  "Budibase/budibase": {
+    "ghsa_count": 90,
+    "ghsa_ids": [
+      "GHSA-8xr5-pggf-26jq",
+      "GHSA-942w-fccr-8r3c",
+      "GHSA-37r6-5jxh-vm83",
+      "GHSA-ppj8-hmx2-m546",
+      "GHSA-35ch-57g2-3g98",
+      "GHSA-76m3-47v8-p7h6",
+      "GHSA-pp5r-q4fp-mcj3",
+      "GHSA-rmv5-3xpj-w885",
+      "GHSA-4946-qf2m-wrh5",
+      "GHSA-c8vc-7pv3-g98p",
+      "GHSA-ppr4-5f46-j9c6",
+      "GHSA-mqhr-6j6h-74p5",
+      "GHSA-vq3j-xwg3-pg8x",
+      "GHSA-468g-55qj-v8rr",
+      "GHSA-9754-4wm6-3c8r",
+      "GHSA-q6x4-v3qx-85qw",
+      "GHSA-2xgg-r2wc-c5r2",
+      "GHSA-v42f-v8xc-j435",
+      "GHSA-pvcr-8mvp-w8qr",
+      "GHSA-pxwc-66g3-5f27",
+      "GHSA-x7h8-ww3q-xv7c",
+      "GHSA-xqpq-288m-r5q7",
+      "GHSA-j9fc-w3mr-x6mv",
+      "GHSA-xj29-x47g-9w2c",
+      "GHSA-hp6v-6jw7-gv2f",
+      "GHSA-xg5g-26x8-cvf4",
+      "GHSA-j82g-67x3-xcwh",
+      "GHSA-qqf5-x7mj-v43p",
+      "GHSA-6mpp-gfg5-x2vv",
+      "GHSA-6x9p-4r67-5gjx",
+      "GHSA-hr66-5mqr-8mpx",
+      "GHSA-xcx6-4f2g-hhgx",
+      "GHSA-gfq7-5x4g-3xhf",
+      "GHSA-hfhx-w8p8-4hc7",
+      "GHSA-4qcj-m5wp-jmf4",
+      "GHSA-w7mq-r738-x278",
+      "GHSA-8qv3-p479-cj62",
+      "GHSA-35c4-rvc8-frhm",
+      "GHSA-qhv3-wjg8-6fx6",
+      "GHSA-jj36-r9w3-3pfh",
+      "GHSA-v7j5-vc4m-723w",
+      "GHSA-3gp5-q4jw-3v94",
+      "GHSA-57p7-9h9w-xqpw",
+      "GHSA-q9rw-q89f-jx2f",
+      "GHSA-pmpg-2mxq-6xwr",
+      "GHSA-6xp4-cf37-ppjh",
+      "GHSA-qv26-4hvj-m7fv",
+      "GHSA-4q6h-8p4v-67vq",
+      "GHSA-44m2-crh7-f4q2",
+      "GHSA-8783-3wgf-jggf",
+      "GHSA-4f9j-vr4p-642r",
+      "GHSA-6vp2-6r7m-2jvx",
+      "GHSA-fcrw-f7gg-6g9f",
+      "GHSA-cr7p-cr3q-h5cm",
+      "GHSA-3263-v5v9-xq8q",
+      "GHSA-gh4h-34gr-87r7",
+      "GHSA-83m5-fvmg-r7xv",
+      "GHSA-rgvg-3wpc-h44p",
+      "GHSA-c54j-xp92-wh28",
+      "GHSA-gwr2-pgg3-p7xp",
+      "GHSA-xh5j-727m-w6gg",
+      "GHSA-g6qx-g4pr-92v7",
+      "GHSA-363w-hvwh-w7m6",
+      "GHSA-4wr8-5c3p-rjcr",
+      "GHSA-fgqv-jh4g-pvg2",
+      "GHSA-rpj4-7x2v-wjrf",
+      "GHSA-cv96-5348-p5p8",
+      "GHSA-6964-pp88-6wp9",
+      "GHSA-86f3-cqpq-wp9m",
+      "GHSA-qw6m-8fw2-2v64",
+      "GHSA-wxq7-x3qp-vcr8",
+      "GHSA-5fpj-28rv-84r7",
+      "GHSA-pqcr-jmfv-c9cp",
+      "GHSA-48x3-9ph2-p9gj",
+      "GHSA-gw94-hprh-4wj8",
+      "GHSA-gp5x-2v54-v2q5",
+      "GHSA-82rc-gxrg-v4gf",
+      "GHSA-7r9j-r86q-7g45",
+      "GHSA-fcm4-4pj2-m5hf",
+      "GHSA-4647-wpjq-hh7f",
+      "GHSA-rvhr-26g4-p2r8",
+      "GHSA-2wfh-rcwf-wh23",
+      "GHSA-2hfr-343j-863r",
+      "GHSA-277c-prw2-rqgh",
+      "GHSA-726g-59wr-cj4c",
+      "GHSA-gjw9-34gf-rp6m",
+      "GHSA-2g39-332f-68p9",
+      "GHSA-4wfw-r86x-qxrm",
+      "GHSA-4g2x-vq5p-5vj6",
+      "GHSA-9xg2-9mcv-985p"
+    ],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-4F9J-VR4P-642R",
+      "GHSA-MQHR-6J6H-74P5"
+    ],
+    "release_mentions": 1
+  },
+  "CaviraOSS/OpenMemory": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "CherryHQ/cherry-studio": {
+    "ghsa_count": 4,
+    "ghsa_ids": [
+      "GHSA-hh6w-rmjc-26f6",
+      "GHSA-gjp6-9cvg-8w93",
+      "GHSA-8xr5-732g-84px",
+      "GHSA-p6vw-w3p8-4g72"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 2
+  },
+  "CopilotKit/CopilotKit": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-72QQ-P3R5-F7WQ"
+    ],
+    "release_mentions": 2
+  },
+  "CoplayDev/unity-mcp": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "CopyTranslator/CopyTranslator": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "Fosowl/agenticSeek": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "FoundationAgents/MetaGPT": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "HKUDS/OpenHarness": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "HKUDS/Vibe-Trading": {
+    "ghsa_count": 3,
+    "ghsa_ids": [
+      "GHSA-5rmq-chc7-m22f",
+      "GHSA-jqmf-mx4f-hfr6",
+      "GHSA-v2f8-6655-7grj"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "HKUDS/nanobot": {
+    "ghsa_count": 5,
+    "ghsa_ids": [
+      "GHSA-3f63-vcp3-hvqr",
+      "GHSA-v5j3-4q66-58cf",
+      "GHSA-g6cf-xjwr-pm77",
+      "GHSA-4gmr-2vc8-7qh3",
+      "GHSA-vc5v-6vwm-wf9m"
+    ],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-4GMR-2VC8-7QH3"
+    ],
+    "release_mentions": 3
+  },
+  "IceWhaleTech/CasaOS": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-m5q5-8mfw-p2hr"
+    ],
+    "release_cves": [
+      "CVE-2023-37265",
+      "CVE-2023-37266"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 2
+  },
+  "JCodesMore/ai-website-cloner-template": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "Kilo-Org/kilocode": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "LAION-AI/Open-Assistant": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "MaaAssistantArknights/MaaAssistantArknights": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-pqx2-5g66-f5w8"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "MagicMirrorOrg/MagicMirror": {
+    "ghsa_count": 5,
+    "ghsa_ids": [
+      "GHSA-q4gh-4ffp-5cg8",
+      "GHSA-w26r-fwg8-rcp3",
+      "GHSA-998g-7v5w-cr7g",
+      "GHSA-w6x9-28jw-hq7j",
+      "GHSA-ph6f-2cvq-79hq"
+    ],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-8HC4-VH64-CXMJ"
+    ],
+    "release_mentions": 2
+  },
+  "MervinPraison/PraisonAI": {
+    "ghsa_count": 100,
+    "ghsa_ids": [
+      "GHSA-5r6c-gj4g-r697",
+      "GHSA-4r3p-w3mc-5v34",
+      "GHSA-29r9-67vg-qj56",
+      "GHSA-xpx6-x8c2-mw5w",
+      "GHSA-qjw5-xwrp-xwpq",
+      "GHSA-wf65-4jjx-q444",
+      "GHSA-4w49-gwv8-fpjg",
+      "GHSA-6wjp-v33h-5cvq",
+      "GHSA-hc5v-gxvj-58wh",
+      "GHSA-qj9c-59p6-8cgx",
+      "GHSA-6g59-gm2v-qhvq",
+      "GHSA-qg25-6gc4-48mg",
+      "GHSA-q7m5-3jmv-vm48",
+      "GHSA-4xxv-6wmf-xf45",
+      "GHSA-79fv-7hq9-w7xg",
+      "GHSA-cv3g-hj65-pcfh",
+      "GHSA-2gpf-2492-q9jh",
+      "GHSA-7c92-x8vg-4258",
+      "GHSA-4gfv-wg42-7jw5",
+      "GHSA-26mh-57q7-jfvr",
+      "GHSA-fj8f-m44g-c479",
+      "GHSA-xxgv-vgvj-qvxh",
+      "GHSA-mxmx-rh57-jx58",
+      "GHSA-c78w-2q4r-68r7",
+      "GHSA-c44f-37qr-gw3f",
+      "GHSA-g6j7-pffp-8whg",
+      "GHSA-9mp3-24cc-77mg",
+      "GHSA-m6wp-h223-4c8g",
+      "GHSA-2xv2-w8cq-5gxw",
+      "GHSA-2fjj-qqg8-fg7x",
+      "GHSA-4pcv-mg8v-vrgf",
+      "GHSA-jxcw-qp4h-6jfq",
+      "GHSA-8579-rgg5-ph2m",
+      "GHSA-22cj-m4wf-fv2c",
+      "GHSA-j7qx-p75m-wp7g",
+      "GHSA-4qq2-2j2x-x62c",
+      "GHSA-5jv7-2mjm-h6qj",
+      "GHSA-gqmf-56h7-rrpf",
+      "GHSA-vjv9-7m7j-h833",
+      "GHSA-h2w2-v7j6-xqm4",
+      "GHSA-j4f3-55x4-r6q2",
+      "GHSA-vmmj-pfw7-fjwp",
+      "GHSA-9752-mhqh-h34f",
+      "GHSA-qvpf-j64c-jmhr",
+      "GHSA-5qw8-f2g9-ff29",
+      "GHSA-vmf9-xx9w-86wx",
+      "GHSA-6jcq-6546-qrrw",
+      "GHSA-fc26-m9pf-v56q",
+      "GHSA-v847-hxxw-3pxg",
+      "GHSA-7qw2-w5rc-37x2",
+      "GHSA-63v4-w882-g4x2",
+      "GHSA-f44v-7qgw-9gh9",
+      "GHSA-gcq3-mfvh-3x25",
+      "GHSA-892r-p3jq-jp24",
+      "GHSA-w6h2-fr4q-xvxv",
+      "GHSA-rjvw-7vvw-549v",
+      "GHSA-6h9p-93hq-q7h6",
+      "GHSA-x8cv-xmq7-p8xp",
+      "GHSA-hxmv-c4g6-5fqc",
+      "GHSA-8hjw-25cg-g52h",
+      "GHSA-wv94-5qcp-6m36",
+      "GHSA-pvph-5j39-v8qc",
+      "GHSA-5r34-2g38-6569",
+      "GHSA-pv2j-rghr-v5r9",
+      "GHSA-cfxv-8fw8-rwpv",
+      "GHSA-gfq8-hmph-9gjv",
+      "GHSA-wj6g-v78p-6fx3",
+      "GHSA-vg6p-v9vm-6fgj",
+      "GHSA-x227-pf99-vffg",
+      "GHSA-x92v-rpx6-p6cw",
+      "GHSA-gxmw-5f7x-6g22",
+      "GHSA-rg5q-pp8p-f7jm",
+      "GHSA-6g6r-q6gw-w8fg",
+      "GHSA-x44h-65qv-cw74",
+      "GHSA-rh39-9c67-59mh",
+      "GHSA-r7v3-x45f-g7hp",
+      "GHSA-ch89-h4r2-c8f8",
+      "GHSA-2jgc-f764-c5r2",
+      "GHSA-p75f-6fp4-p57w",
+      "GHSA-pvxx-r596-f5qj",
+      "GHSA-7ww9-85pg-cv4x",
+      "GHSA-8ccj-p46r-jwqq",
+      "GHSA-hmfx-4v44-9qw9",
+      "GHSA-p4pj-vh7h-6cqh",
+      "GHSA-4869-x4pr-q22x",
+      "GHSA-7g3p-92qq-8wvh",
+      "GHSA-vxgj-xg5c-p4h7",
+      "GHSA-j4hj-7hfh-g2f4",
+      "GHSA-cwj8-7gp2-ggcw",
+      "GHSA-fq2m-6wqh-x44g",
+      "GHSA-p69m-4f92-2v84",
+      "GHSA-29w3-p9w9-wc47",
+      "GHSA-35w5-pcw4-jx94",
+      "GHSA-c969-5x3p-vq3v",
+      "GHSA-2rcg-mm5h-xchx",
+      "GHSA-f38v-77qj-h4jq",
+      "GHSA-8444-4fhq-fxpq",
+      "GHSA-gv23-xrm3-8c62",
+      "GHSA-hvhp-v2gc-268q",
+      "GHSA-6h6v-6m7w-7vxx"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "Mintplex-Labs/anything-llm": {
+    "ghsa_count": 22,
+    "ghsa_ids": [
+      "GHSA-rh3m-xv7m-9jhf",
+      "GHSA-vv8w-wg6r-hq56",
+      "GHSA-r872-gr59-vf5w",
+      "GHSA-j4m9-wwcq-m868",
+      "GHSA-6hrp-7mw6-8v59",
+      "GHSA-vjrp-43mm-j7vw",
+      "GHSA-h349-hp2v-8rhw",
+      "GHSA-jwqg-jfg3-x5vv",
+      "GHSA-4q6m-qh3w-9gf5",
+      "GHSA-2qmm-82f7-8qj5",
+      "GHSA-wfq3-65gm-3g2p",
+      "GHSA-7754-8jcc-2rg3",
+      "GHSA-rrmw-2j6x-4mf2",
+      "GHSA-jwjx-mw2p-5wc7",
+      "GHSA-rh66-4w74-cf4m",
+      "GHSA-24qj-pw4h-3jmm",
+      "GHSA-p5rf-8p88-979c",
+      "GHSA-gm94-qc2p-xcwf",
+      "GHSA-jp2f-99h9-7vjv",
+      "GHSA-47vr-w3vm-69ch",
+      "GHSA-7hpg-6pc7-cx86",
+      "GHSA-xmj6-g32r-fc5q"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "Mirix-AI/MIRIX": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "NVIDIA/OpenShell": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "NevaMind-AI/memU": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "NoFxAiOS/nofx": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "NousResearch/hermes-agent": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2026-48710"
+    ],
+    "release_ghsas": [
+      "GHSA-5QR3-C538-WM9J",
+      "GHSA-RHGP-J443-P4RF"
+    ],
+    "release_mentions": 3
+  },
+  "OpenBB-finance/OpenBB": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2024-47874",
+      "CVE-2024-52303",
+      "CVE-2024-52304",
+      "CVE-2024-52804"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "OpenBMB/AgentVerse": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "OpenHands/OpenHands": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-7h8w-hj9j-8rjw"
+    ],
+    "release_cves": [
+      "CVE-2026-12143",
+      "CVE-2026-41691",
+      "CVE-2026-44681",
+      "CVE-2026-44727",
+      "CVE-2026-45409",
+      "CVE-2026-48526",
+      "CVE-2026-48712",
+      "CVE-2026-48779",
+      "CVE-2026-49458",
+      "CVE-2026-49855",
+      "CVE-2026-53539",
+      "CVE-2026-53571",
+      "CVE-2026-54278",
+      "CVE-2026-54283",
+      "CVE-2026-54285",
+      "CVE-2026-8723"
+    ],
+    "release_ghsas": [
+      "GHSA-4XGF-CPJX-PC3J",
+      "GHSA-6V7P-G79W-8964",
+      "GHSA-CMWH-PVXP-8882",
+      "GHSA-GJ48-438W-JH9V",
+      "GHSA-JM82-FX9C-MX94",
+      "GHSA-QX2V-QP2M-JG93"
+    ],
+    "release_mentions": 0
+  },
+  "Panniantong/Agent-Reach": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "PostHog/posthog": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-wqqw-r8c5-j67c"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "PrimeIntellect-ai/prime-agent": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "Project-N-E-K-O/N.E.K.O": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "RTGS2017/NagaAgent": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "RasaHQ/rasa": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-4365-fhm5-qcrx"
+    ],
+    "release_cves": [
+      "CVE-2019-20478",
+      "CVE-2021-41127",
+      "CVE-2023-4863"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "SigNoz/signoz": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2026-45409"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "Significant-Gravitas/AutoGPT": {
+    "ghsa_count": 40,
+    "ghsa_ids": [
+      "GHSA-349p-3c3r-8mjr",
+      "GHSA-4m2w-qfr5-9f3v",
+      "GHSA-rq9m-xvc7-v9h6",
+      "GHSA-vm4v-5hgj-rq77",
+      "GHSA-8pjg-mfqm-vrhr",
+      "GHSA-xxpr-ccx5-48mf",
+      "GHSA-vj3m-g4cv-8j93",
+      "GHSA-c543-3829-f27q",
+      "GHSA-j2cp-jg5q-38wj",
+      "GHSA-4hqw-7f5j-5v66",
+      "GHSA-q58p-v9r9-7gqj",
+      "GHSA-8qc5-rhmg-r6r6",
+      "GHSA-4jwj-6mg5-wrwf",
+      "GHSA-rfg2-37xq-w4m9",
+      "GHSA-374w-2pxq-c9jp",
+      "GHSA-4crw-9p35-9x54",
+      "GHSA-r277-3xc5-c79v",
+      "GHSA-ppw9-h7rv-gwq9",
+      "GHSA-3cwv-4w3r-xqff",
+      "GHSA-rc89-6g7g-v5v7",
+      "GHSA-ggc4-4fmm-9hmc",
+      "GHSA-r55v-q5pc-j57f",
+      "GHSA-m2wr-7m3r-p52c",
+      "GHSA-x77j-qg2x-fgg6",
+      "GHSA-g26x-xwc5-7p44",
+      "GHSA-rg6v-m9x9-7wf9",
+      "GHSA-pppq-xx2w-7jpq",
+      "GHSA-7g34-7fvq-xxq6",
+      "GHSA-9fr4-9jj9-mhh6",
+      "GHSA-vw3v-whvp-33v5",
+      "GHSA-267x-8jx3-gg6w",
+      "GHSA-5cqw-g779-9f9x",
+      "GHSA-955p-gpfx-r66j",
+      "GHSA-958f-37vw-jx8f",
+      "GHSA-wvjg-9879-3m7w",
+      "GHSA-ggcm-93qg-gfhp",
+      "GHSA-4c8v-hwxc-2356",
+      "GHSA-r7f7-qrrv-3fjh",
+      "GHSA-5h38-mgp9-rj5f",
+      "GHSA-x5gj-2chr-4ch6"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "Skyvern-AI/skyvern": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2024-12797",
+      "CVE-2026-44492",
+      "CVE-2026-44494",
+      "CVE-2026-47429",
+      "CVE-2026-49851",
+      "CVE-2026-49852"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "Sylinko/Everywhere": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "TEN-framework/ten-framework": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "TaskingAI/TaskingAI": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "TencentCloud/TencentDB-Agent-Memory": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "ThinkInAIXYZ/deepchat": {
+    "ghsa_count": 7,
+    "ghsa_ids": [
+      "GHSA-cp8j-jx7q-7r5f",
+      "GHSA-7r59-67v3-3mgp",
+      "GHSA-w8w8-82pv-5rg9",
+      "GHSA-h9f5-7hhf-fqm4",
+      "GHSA-v8v5-c872-mf8r",
+      "GHSA-f7q5-vc93-wp6j",
+      "GHSA-hqr4-4gfc-5p2j"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "ToolJet/ToolJet": {
+    "ghsa_count": 12,
+    "ghsa_ids": [
+      "GHSA-7vj5-wxfm-gmfq",
+      "GHSA-xr3w-r926-xfmm",
+      "GHSA-xqqj-pfc2-vf48",
+      "GHSA-2jhv-482p-4php",
+      "GHSA-h47x-ffhc-xqh8",
+      "GHSA-x7qj-hfg8-p4cw",
+      "GHSA-jgmf-cw3v-r98x",
+      "GHSA-h49f-mhmm-jx4w",
+      "GHSA-pqfh-276q-w3cp",
+      "GHSA-w3hx-rg9g-mw5c",
+      "GHSA-cx42-x23w-vhvf",
+      "GHSA-4pm2-w6g5-28mm"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 5
+  },
+  "TransformerOptimus/SuperAGI": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "Untrivial-ai/agent-orchestrator": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "Upsonic/Upsonic": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "XiaoMi/ha_xiaomi_home": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "Zackriya-Solutions/meetily": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "aaif-goose/goose": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-r5pp-p5r8-466r"
+    ],
+    "release_cves": [
+      "CVE-2026-33056"
+    ],
+    "release_ghsas": [
+      "GHSA-R5PP-P5R8-466R"
+    ],
+    "release_mentions": 2
+  },
+  "activepieces/activepieces": {
+    "ghsa_count": 9,
+    "ghsa_ids": [
+      "GHSA-m992-8rcw-vmrx",
+      "GHSA-9723-fmff-mc24",
+      "GHSA-qqcr-rg2x-97mm",
+      "GHSA-5h2x-g6m3-grmq",
+      "GHSA-7qx9-q4xx-rh59",
+      "GHSA-3pfv-m69p-5fv5",
+      "GHSA-gr3h-c2j7-r52g",
+      "GHSA-hc39-cm5m-q8g7",
+      "GHSA-3w4h-jvcx-rw99"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "affaan-m/ECC": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "agent0ai/agent-zero": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2026-32871",
+      "CVE-2026-42271",
+      "CVE-2026-4307",
+      "CVE-2026-4308"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 5
+  },
+  "agentscope-ai/QwenPaw": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "agno-agi/agno": {
+    "ghsa_count": 3,
+    "ghsa_ids": [
+      "GHSA-w9j5-7p53-pvr3",
+      "GHSA-m4w4-3r8h-jw98",
+      "GHSA-vw84-hprm-cxmm"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "alibaba/nacos": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2025-55752"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "alibaba/spring-ai-alibaba": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "anomalyco/opencode": {
+    "ghsa_count": 2,
+    "ghsa_ids": [
+      "GHSA-c83v-7274-4vgp",
+      "GHSA-vxw4-wv6m-9hhh"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "ansible/ansible": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "anthropics/claude-code": {
+    "ghsa_count": 30,
+    "ghsa_ids": [
+      "GHSA-7835-87q9-rgvv",
+      "GHSA-fg94-h982-f3mm",
+      "GHSA-4vp2-6q8c-pvq2",
+      "GHSA-5p5x-5294-qhp3",
+      "GHSA-3rwf-2g6p-c2f9",
+      "GHSA-5cwg-9f6j-9jvx",
+      "GHSA-q5hj-mxqh-vv77",
+      "GHSA-mmgp-wc2j-qcv7",
+      "GHSA-vp62-r36r-9xqp",
+      "GHSA-66q4-vfjg-2qhh",
+      "GHSA-mhg7-666j-cqg4",
+      "GHSA-ff64-7w26-62rf",
+      "GHSA-4q92-rfm6-2cqx",
+      "GHSA-qgqw-h4xq-7w8w",
+      "GHSA-q728-gf8j-w49r",
+      "GHSA-vhw5-3g5m-8ggf",
+      "GHSA-jh7p-qr78-84p7",
+      "GHSA-xq4m-mc3c-vvg3",
+      "GHSA-5hhx-v7f6-x7gv",
+      "GHSA-7mv8-j34q-vp7q",
+      "GHSA-66m2-gx93-v996",
+      "GHSA-2jjv-qf24-vfm4",
+      "GHSA-4fgq-fpq9-mr3g",
+      "GHSA-j4h9-wv2m-wrf7",
+      "GHSA-qxfv-fcpc-w36x",
+      "GHSA-ph6w-f82w-28w6",
+      "GHSA-x5gv-jw7f-j6xj",
+      "GHSA-x56v-x2h6-7j34",
+      "GHSA-pmw4-pwvc-3hx2",
+      "GHSA-9f65-56v6-gxw7"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "apache/airflow": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2023-47248",
+      "CVE-2024-23334",
+      "CVE-2024-23829",
+      "CVE-2024-24786"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "arc53/DocsGPT": {
+    "ghsa_count": 4,
+    "ghsa_ids": [
+      "GHSA-6gxj-6hq5-hqcj",
+      "GHSA-m448-vp23-j393",
+      "GHSA-gcrq-f296-2j74",
+      "GHSA-p5qc-vj2x-9rjp"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "areal-project/AReaL": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "assafelovic/gpt-researcher": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "babalae/better-genshin-impact": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "browser-use/browser-use": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-x39x-9qw5-ghrf"
+    ],
+    "release_cves": [
+      "CVE-2026-34515",
+      "CVE-2026-40192",
+      "CVE-2026-40260"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "bytedance/deer-flow": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "calesthio/Crucix": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "calesthio/OpenMontage": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "camel-ai/camel": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "chatboxai/chatbox": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "chenhg5/cc-connect": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "cline/cline": {
+    "ghsa_count": 3,
+    "ghsa_ids": [
+      "GHSA-3cj3-hqcr-g934",
+      "GHSA-5c57-rqjx-35g2",
+      "GHSA-9ppg-jx86-fqw7"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "cloudwego/eino": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "code-yeongyu/oh-my-openagent": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "coleam00/Archon": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "crewAIInc/crewAI": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2025-15467",
+      "CVE-2026-16796",
+      "CVE-2026-1839",
+      "CVE-2026-35030",
+      "CVE-2026-39892",
+      "CVE-2026-40260"
+    ],
+    "release_ghsas": [
+      "GHSA-3644-Q5CJ-C5C7",
+      "GHSA-65PC-FJ4G-8RJX",
+      "GHSA-6HR6-W5QG-QMWG",
+      "GHSA-6W46-J5RX-G56G",
+      "GHSA-PJJW-68HJ-V9MW",
+      "GHSA-VFMQ-68HX-4JFW"
+    ],
+    "release_mentions": 7
+  },
+  "dataelement/bisheng": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "earendil-works/pi": {
+    "ghsa_count": 4,
+    "ghsa_ids": [
+      "GHSA-7v5m-pr3q-6453",
+      "GHSA-r95r-rj6r-c39x",
+      "GHSA-jfgx-wxx8-mp94",
+      "GHSA-mqxh-6gq7-558m"
+    ],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-4CWX-7WF7-3272",
+      "GHSA-8XCM-R25X-G524",
+      "GHSA-J3F2-48V5-CCWW",
+      "GHSA-JR45-8VMC-QM54",
+      "GHSA-M8RV-5G2X-5CG5",
+      "GHSA-MH99-V99M-4GVG",
+      "GHSA-P7FG-763F-G4GF",
+      "GHSA-RGW5-RVV9-X895",
+      "GHSA-V3R7-H72X-CJCM"
+    ],
+    "release_mentions": 0
+  },
+  "elie222/inbox-zero": {
+    "ghsa_count": 2,
+    "ghsa_ids": [
+      "GHSA-f3gp-v7cj-2569",
+      "GHSA-gx2w-rxxq-f62c"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "elizaOS/eliza": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "eosphoros-ai/DB-GPT": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2024-10834",
+      "CVE-2024-10835",
+      "CVE-2024-10901"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "farion1231/cc-switch": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "feder-cr/Jobs_Applier_AI_Agent_AIHawk": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "fossasia/susi_server": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-wcm4-2jp5-q269"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "getmaxun/maxun": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "google-gemini/gemini-cli": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "googleworkspace/cli": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "gsd-build/gsd-2": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "hangwin/mcp-chrome": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "heygen-com/hyperframes": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "hiyouga/LlamaFactory": {
+    "ghsa_count": 4,
+    "ghsa_ids": [
+      "GHSA-527m-2xhr-j27g",
+      "GHSA-xj56-p8mm-qmxj",
+      "GHSA-f2f7-gj54-6vpv",
+      "GHSA-hj3w-wrh4-44vp"
+    ],
+    "release_cves": [
+      "CVE-2024-52803"
+    ],
+    "release_ghsas": [
+      "GHSA-HJ3W-WRH4-44VP"
+    ],
+    "release_mentions": 1
+  },
+  "huggingface/speech-to-speech": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2026-54293"
+    ],
+    "release_ghsas": [
+      "GHSA-P4GQ-832X-FM9V"
+    ],
+    "release_mentions": 0
+  },
+  "iOfficeAI/AionUi": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "infiniflow/ragflow": {
+    "ghsa_count": 7,
+    "ghsa_ids": [
+      "GHSA-wpg4-h5g2-jxm6",
+      "GHSA-vvwj-fvwh-4whx",
+      "GHSA-v7cf-w7gj-pgf4",
+      "GHSA-8xw3-v6c2-j84j",
+      "GHSA-9j5g-g4xm-57w7",
+      "GHSA-3gqj-66qm-25jq",
+      "GHSA-wc5v-g79p-7hch"
+    ],
+    "release_cves": [
+      "CVE-2023-36464",
+      "CVE-2024-37288",
+      "CVE-2024-47081",
+      "CVE-2025-13465",
+      "CVE-2025-21521",
+      "CVE-2025-23419",
+      "CVE-2025-53859",
+      "CVE-2025-59466",
+      "CVE-2025-66418",
+      "CVE-2025-66471",
+      "CVE-2025-67221",
+      "CVE-2025-69534",
+      "CVE-2026-0540",
+      "CVE-2026-0994",
+      "CVE-2026-21226",
+      "CVE-2026-21441",
+      "CVE-2026-25639",
+      "CVE-2026-26209",
+      "CVE-2026-26216",
+      "CVE-2026-26217",
+      "CVE-2026-28804",
+      "CVE-2026-30922",
+      "CVE-2026-31826",
+      "CVE-2026-33752",
+      "CVE-2026-42033",
+      "CVE-2026-42264",
+      "CVE-2026-42533",
+      "CVE-2026-53533",
+      "CVE-2026-54283",
+      "CVE-2026-59939",
+      "CVE-2026-9256"
+    ],
+    "release_ghsas": [
+      "GHSA-72HV-8253-57QQ",
+      "GHSA-JV5F-3MQH-CXWF",
+      "GHSA-R253-R9JW-QG44"
+    ],
+    "release_mentions": 1
+  },
+  "jeecgboot/JeecgBoot": {
+    "ghsa_count": 2,
+    "ghsa_ids": [
+      "GHSA-7wcq-939v-pcrg",
+      "GHSA-4c6j-45p9-rhrw"
+    ],
+    "release_cves": [
+      "CVE-2020-5398",
+      "CVE-2021-2471",
+      "CVE-2022-2647",
+      "CVE-2023-20860",
+      "CVE-2023-34478",
+      "CVE-2023-6378",
+      "CVE-2024-24113",
+      "CVE-2026-10239",
+      "CVE-2026-10240",
+      "CVE-2026-11464",
+      "CVE-2026-19000",
+      "CVE-2026-5616",
+      "CVE-2026-58375",
+      "CVE-2026-67925",
+      "CVE-2026-67926",
+      "CVE-2026-8195",
+      "CVE-2026-9579",
+      "CVE-2026-9580",
+      "CVE-2026-9581",
+      "CVE-2026-9604"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "jlcodes99/cockpit-tools": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "khoj-ai/khoj": {
+    "ghsa_count": 6,
+    "ghsa_ids": [
+      "GHSA-62mm-xwmv-crhg",
+      "GHSA-6whj-7qmg-86qj",
+      "GHSA-hq4h-w933-jm6c",
+      "GHSA-564j-v29w-rqr6",
+      "GHSA-cf72-vg59-4j4h",
+      "GHSA-h2q2-vch3-72qm"
+    ],
+    "release_cves": [
+      "CVE-2024-25639"
+    ],
+    "release_ghsas": [
+      "GHSA-564J-V29W-RQR6",
+      "GHSA-H2Q2-VCH3-72QM"
+    ],
+    "release_mentions": 0
+  },
+  "koala73/worldmonitor": {
+    "ghsa_count": 11,
+    "ghsa_ids": [
+      "GHSA-5j39-mmw6-cqw6",
+      "GHSA-9gp4-366w-pcq3",
+      "GHSA-9m4c-824h-m4xw",
+      "GHSA-gxj5-54wh-7vgr",
+      "GHSA-cmj5-cfhr-w964",
+      "GHSA-hcq5-jm84-2395",
+      "GHSA-f6gj-3v7v-j75q",
+      "GHSA-c267-988w-7pq7",
+      "GHSA-2x6r-qq54-mmhr",
+      "GHSA-r649-4cqj-w93h",
+      "GHSA-5458-hq84-hcr5"
+    ],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-C96F-X56V-GQ3H",
+      "GHSA-F88M-G3JW-G9CJ",
+      "GHSA-R28C-9Q8G-F849",
+      "GHSA-RGW5-RVV9-X895"
+    ],
+    "release_mentions": 0
+  },
+  "labring/FastGPT": {
+    "ghsa_count": 35,
+    "ghsa_ids": [
+      "GHSA-q4pr-3qpg-9q5v",
+      "GHSA-6jwp-qf29-hpj9",
+      "GHSA-w732-rq8c-chc8",
+      "GHSA-g969-67mv-2qxq",
+      "GHSA-5jmh-5f2m-89jg",
+      "GHSA-qxcq-48gr-93pj",
+      "GHSA-mmg6-2g54-j896",
+      "GHSA-72hf-5382-2mq9",
+      "GHSA-6rxv-p43w-mmx5",
+      "GHSA-93r3-wqq3-c5ch",
+      "GHSA-6vx6-f72r-74cg",
+      "GHSA-rvgc-2c29-g876",
+      "GHSA-cxxj-99f7-f5wq",
+      "GHSA-f5mq-qxm4-5mvc",
+      "GHSA-xpx6-xcpf-76qg",
+      "GHSA-c65v-7vx6-f8m3",
+      "GHSA-qv7v-r94x-6x3x",
+      "GHSA-cc8x-jrqv-hmwh",
+      "GHSA-jhqw-944x-xh94",
+      "GHSA-34rc-438g-7w78",
+      "GHSA-422w-vrfj-72g6",
+      "GHSA-x8mx-2mr7-h9xg",
+      "GHSA-gc8m-w37w-24hw",
+      "GHSA-jrhc-f3j7-f8g4",
+      "GHSA-w36r-f268-pwrj",
+      "GHSA-x9vj-5m4j-9mfv",
+      "GHSA-xfx8-w35j-485c",
+      "GHSA-6g6x-8hq5-9cw4",
+      "GHSA-6hw6-mxrm-v6wj",
+      "GHSA-g345-7pqp-c395",
+      "GHSA-wcrg-g824-9gfg",
+      "GHSA-573g-3567-8phg",
+      "GHSA-r976-rfrv-q24m",
+      "GHSA-f3pf-r3g7-g895",
+      "GHSA-vc67-62v5-8cwx"
+    ],
+    "release_cves": [
+      "CVE-2025-14847",
+      "CVE-2025-55184"
+    ],
+    "release_ghsas": [
+      "GHSA-6G6X-8HQ5-9CW4"
+    ],
+    "release_mentions": 0
+  },
+  "langbot-app/LangBot": {
+    "ghsa_count": 4,
+    "ghsa_ids": [
+      "GHSA-m7qm-2mjr-2h4q",
+      "GHSA-w8gq-g4pc-xh3h",
+      "GHSA-3pvh-63gf-j9mw",
+      "GHSA-7j3j-qj83-9qv4"
+    ],
+    "release_cves": [
+      "CVE-2025-59835"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "langchain4j/langchain4j": {
+    "ghsa_count": 2,
+    "ghsa_ids": [
+      "GHSA-gmwr-7wmf-mrjm",
+      "GHSA-2mfg-cc43-9pcj"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 2
+  },
+  "langflow-ai/langflow": {
+    "ghsa_count": 31,
+    "ghsa_ids": [
+      "GHSA-79ph-745m-6wxq",
+      "GHSA-7w94-79vh-5mr2",
+      "GHSA-9c59-2mvc-vfr8",
+      "GHSA-jxw3-mjmx-3pqm",
+      "GHSA-v8hw-mh8c-jxfc",
+      "GHSA-qrpv-q767-xqq2",
+      "GHSA-vwmf-pq79-vjvx",
+      "GHSA-9whx-c884-c68q",
+      "GHSA-7grx-3xcx-2xv5",
+      "GHSA-g2j9-7rj2-gm6c",
+      "GHSA-5238-72vg-52vh",
+      "GHSA-rcjh-r59h-gq37",
+      "GHSA-ccv6-r384-xp75",
+      "GHSA-v5ff-9q35-q26f",
+      "GHSA-x223-p2gf-v735",
+      "GHSA-9fpm-3445-2vx4",
+      "GHSA-w584-2h2r-2hvf",
+      "GHSA-rf6x-r45m-xv3w",
+      "GHSA-cf6m-vc3m-7cgm",
+      "GHSA-4f6c-2vvp-gw82",
+      "GHSA-3645-fxcv-hqr4",
+      "GHSA-5993-7p27-66g5",
+      "GHSA-f43r-cc68-gpx4",
+      "GHSA-7hw8-6q6r-4276",
+      "GHSA-c5cp-vx83-jhqx",
+      "GHSA-4gv9-mp8m-592r",
+      "GHSA-8c4j-f57c-35cf",
+      "GHSA-rvqx-wpfh-mfx7",
+      "GHSA-87cc-65ph-2j4w",
+      "GHSA-ph9w-r52h-28p7",
+      "GHSA-qwqc-p3q8-wcg9"
+    ],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-2WCQ-PVW2-XH7V",
+      "GHSA-7RW4-V4GC-R864",
+      "GHSA-8QPJ-27X8-PWPQ",
+      "GHSA-CCV6-R384-XP75",
+      "GHSA-FJGC-VJ2F-77HM",
+      "GHSA-H3C6-FQR4-M99P",
+      "GHSA-JXW3-MJMX-3PQM",
+      "GHSA-MFP9-86W4-493F",
+      "GHSA-QJ98-RHF8-V93F",
+      "GHSA-RCJH-R59H-GQ37",
+      "GHSA-RPF3-3973-4GJR"
+    ],
+    "release_mentions": 12
+  },
+  "langgenius/dify": {
+    "ghsa_count": 21,
+    "ghsa_ids": [
+      "GHSA-ccrj-frp2-c945",
+      "GHSA-9c9q-5rj5-mjj2",
+      "GHSA-fj5w-7rc8-3f3f",
+      "GHSA-5vmp-5q9h-hmr7",
+      "GHSA-qqjx-5h5w-x5vj",
+      "GHSA-qpv6-75c2-75h4",
+      "GHSA-phpv-94hg-fv9g",
+      "GHSA-cg94-8v83-7hjj",
+      "GHSA-9qpf-wcv3-w3qx",
+      "GHSA-fxq3-hh7x-c63p",
+      "GHSA-jg5j-c9pq-w894",
+      "GHSA-9jch-j9qf-vqfw",
+      "GHSA-8235-vv5j-mmvg",
+      "GHSA-fw4f-cghv-2v33",
+      "GHSA-grmh-ww4v-5cgj",
+      "GHSA-cg9f-q34p-p9h3",
+      "GHSA-6pw4-jqhv-3626",
+      "GHSA-jp6m-v4gw-5vgp",
+      "GHSA-hqcx-598m-pjq4",
+      "GHSA-gg5w-m2vw-vmmj",
+      "GHSA-jhgq-cx3f-vj5p"
+    ],
+    "release_cves": [
+      "CVE-2024-5565",
+      "CVE-2025-55182",
+      "CVE-2025-6176",
+      "CVE-2025-64718",
+      "CVE-2026-41948",
+      "CVE-2026-42208"
+    ],
+    "release_ghsas": [
+      "GHSA-2QWC-C2CC-2XWV",
+      "GHSA-48XC-WMW8-3JR3",
+      "GHSA-4Q3W-Q5MC-45RQ",
+      "GHSA-FV66-9V8Q-G76R",
+      "GHSA-GVC6-FH3X-89XH"
+    ],
+    "release_mentions": 6
+  },
+  "leon-ai/leon": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "letta-ai/letta": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "liliMozi/openhanako": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "livekit/agents": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-q77r-q2p5-68vf"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "lobehub/lobehub": {
+    "ghsa_count": 14,
+    "ghsa_ids": [
+      "GHSA-xmwj-c75x-6346",
+      "GHSA-5mwj-v5jw-5c97",
+      "GHSA-xq4x-622m-q8fq",
+      "GHSA-j7xp-4mg9-x28r",
+      "GHSA-wrrr-8jcv-wjf5",
+      "GHSA-4gpc-rhpj-9443",
+      "GHSA-fgx4-p8xf-qhp9",
+      "GHSA-xph5-278p-26qx",
+      "GHSA-m79r-r765-5f9j",
+      "GHSA-3fc8-2r3f-8wrg",
+      "GHSA-p36r-qxgx-jq2v",
+      "GHSA-mxhq-xw3g-rphc",
+      "GHSA-2xcc-vm3f-m8rw",
+      "GHSA-pf55-fj96-xf37"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "mastra-ai/mastra": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-xh92-rqrq-227v"
+    ],
+    "release_cves": [
+      "CVE-2025-22871",
+      "CVE-2025-61729",
+      "CVE-2026-8769"
+    ],
+    "release_ghsas": [
+      "GHSA-58QX-3VCG-4XPX",
+      "GHSA-866G-F22W-33X8",
+      "GHSA-86J7-9J95-VPQJ",
+      "GHSA-8988-4F7V-96QF",
+      "GHSA-96HV-2XVQ-FX4P"
+    ],
+    "release_mentions": 0
+  },
+  "matthiasn/lotti": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "mcp-use/mcp-use": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 5
+  },
+  "medusajs/medusa": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2026-44680"
+    ],
+    "release_ghsas": [
+      "GHSA-2W69-QVJG-HVJX",
+      "GHSA-3PPC-4F35-3M26",
+      "GHSA-WF6X-7X77-MVGW"
+    ],
+    "release_mentions": 11
+  },
+  "mem0ai/mem0": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2025-48387",
+      "CVE-2025-59343",
+      "CVE-2025-64756",
+      "CVE-2025-65945",
+      "CVE-2025-66414",
+      "CVE-2026-0621",
+      "CVE-2026-12143",
+      "CVE-2026-12151",
+      "CVE-2026-26019",
+      "CVE-2026-26996",
+      "CVE-2026-27606",
+      "CVE-2026-27795",
+      "CVE-2026-27903",
+      "CVE-2026-27904",
+      "CVE-2026-33671",
+      "CVE-2026-4372",
+      "CVE-2026-45134",
+      "CVE-2026-4926"
+    ],
+    "release_ghsas": [
+      "GHSA-29PF-2H5F-8G72",
+      "GHSA-XQ3M-2V4X-88GG"
+    ],
+    "release_mentions": 1
+  },
+  "micro/go-micro": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "microsoft/agent-framework": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "microsoft/autogen": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "microsoft/qlib": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "mksglu/context-mode": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 6
+  },
+  "mlflow/mlflow": {
+    "ghsa_count": 7,
+    "ghsa_ids": [
+      "GHSA-7gwp-5pfp-969j",
+      "GHSA-gqch-g4w5-7qcw",
+      "GHSA-3p64-6gvh-82v5",
+      "GHSA-gqvg-gmmx-x4hm",
+      "GHSA-83fm-w79m-64r5",
+      "GHSA-wp72-7hj9-5265",
+      "GHSA-xg73-94fp-g449"
+    ],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-83FM-W79M-64R5",
+      "GHSA-WP72-7HJ9-5265",
+      "GHSA-XG73-94FP-G449"
+    ],
+    "release_mentions": 11
+  },
+  "msitarzewski/agency-agents": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "mukul975/Anthropic-Cybersecurity-Skills": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "n8n-io/n8n": {
+    "ghsa_count": 100,
+    "ghsa_ids": [
+      "GHSA-cw9w-vv67-hf73",
+      "GHSA-fm93-2x43-6676",
+      "GHSA-6xcw-7xm6-48c6",
+      "GHSA-hvrx-jc5j-pg3w",
+      "GHSA-pf83-w3f9-8m37",
+      "GHSA-34ff-336r-5q23",
+      "GHSA-7hgx-277f-7vmg",
+      "GHSA-j535-v25q-vx3q",
+      "GHSA-5m98-cgcr-xx3q",
+      "GHSA-f2cp-m7mv-8jpv",
+      "GHSA-qgpw-8g46-w95v",
+      "GHSA-q5wm-mgqx-fv2f",
+      "GHSA-679f-58pq-4v2c",
+      "GHSA-cqr2-h44g-v75v",
+      "GHSA-pq6c-vh67-xpm3",
+      "GHSA-65xw-2v52-jhxc",
+      "GHSA-35jj-42hp-8gmq",
+      "GHSA-hw8v-xxg5-vvvx",
+      "GHSA-hh89-3r9w-qj3j",
+      "GHSA-fg85-4wv2-p98j",
+      "GHSA-4r56-g65c-fm83",
+      "GHSA-wxwj-8wv6-vpw2",
+      "GHSA-mwp5-2m32-r54h",
+      "GHSA-9x83-43r8-5hwc",
+      "GHSA-95ph-833c-4wrp",
+      "GHSA-vrv8-j27g-g7cr",
+      "GHSA-jp9j-jr97-w9pj",
+      "GHSA-jmmj-93rg-6j39",
+      "GHSA-6h4x-896x-fw5m",
+      "GHSA-c4f6-59xq-95ww",
+      "GHSA-953p-jm2c-8h5j",
+      "GHSA-f4f3-2g67-4vhm",
+      "GHSA-rmr5-775f-jvm2",
+      "GHSA-vfrj-582q-mvcp",
+      "GHSA-233r-fpgw-fx8x",
+      "GHSA-fh4c-9rr2-p7qc",
+      "GHSA-9fqj-7wc5-cwhx",
+      "GHSA-m3hg-p5r9-fg9h",
+      "GHSA-xhmh-8fgr-xqhj",
+      "GHSA-r4j2-j3wm-q689",
+      "GHSA-wcv8-x773-j96r",
+      "GHSA-q3fv-295f-qfpf",
+      "GHSA-c9c6-rq46-h25v",
+      "GHSA-m87g-qr43-ccvc",
+      "GHSA-9rp2-wm75-c5fj",
+      "GHSA-xwx6-jjhv-84p8",
+      "GHSA-652q-gvq3-74qv",
+      "GHSA-xmc9-4f2h-jf9c",
+      "GHSA-cj9h-qx8g-pq2g",
+      "GHSA-9cmh-xcqm-5hqr",
+      "GHSA-gv7g-jm28-cr3m",
+      "GHSA-2x35-3fw4-9jr4",
+      "GHSA-rcv6-pvrj-4xcg",
+      "GHSA-vhf8-cg2h-cg3p",
+      "GHSA-hx4h-vr3m-45vh",
+      "GHSA-gf29-4f56-r2jf",
+      "GHSA-64xh-79j6-r5v8",
+      "GHSA-8342-988q-86cr",
+      "GHSA-pf2q-pxhf-hgmw",
+      "GHSA-6qc9-mqvw-jg7x",
+      "GHSA-33q9-f52j-gc75",
+      "GHSA-x5vx-c2c8-m3w9",
+      "GHSA-35q8-9mj6-wjmf",
+      "GHSA-89gh-3pgc-v5h2",
+      "GHSA-fpg6-x68q-5793",
+      "GHSA-pm35-fqvh-cq5g",
+      "GHSA-9wcp-9r3j-383q",
+      "GHSA-9w78-79q7-r4fp",
+      "GHSA-q5xf-xhwf-cwqf",
+      "GHSA-777w-rpr6-c52h",
+      "GHSA-gq66-9cw5-j5jm",
+      "GHSA-p3rg-hrf9-w9gj",
+      "GHSA-g3r5-9h93-4j2c",
+      "GHSA-w867-jm58-p9pv",
+      "GHSA-2xgm-wc4g-5jvg",
+      "GHSA-2434-3x6q-8r99",
+      "GHSA-h44j-f5r5-ph73",
+      "GHSA-75qm-gp28-rcq9",
+      "GHSA-hwmj-qg4v-cvg9",
+      "GHSA-mq3m-f8x3-579w",
+      "GHSA-jp7m-xcgx-57qm",
+      "GHSA-q3j5-8vrg-4p9q",
+      "GHSA-jqpw-qww5-cj4c",
+      "GHSA-664h-gpgq-h6xx",
+      "GHSA-pmqw-72cg-wx85",
+      "GHSA-2j5h-858j-5mpf",
+      "GHSA-qrx8-25qr-5r7v",
+      "GHSA-rm2v-h48j-895m",
+      "GHSA-wrwr-h859-xh2r",
+      "GHSA-mhrx-qhrj-673w",
+      "GHSA-c37g-w77q-m4vp",
+      "GHSA-jpq7-226w-6cxx",
+      "GHSA-hv7x-3x78-gx53",
+      "GHSA-jqwr-vx3p-r266",
+      "GHSA-jvc7-762p-3743",
+      "GHSA-6h4j-wcr9-2vg7",
+      "GHSA-v733-mwr6-fgcm",
+      "GHSA-2vff-hj5x-8gq7",
+      "GHSA-c8xv-5998-g76h",
+      "GHSA-57g9-58c2-xjg3"
+    ],
+    "release_cves": [
+      "CVE-2025-59466",
+      "CVE-2026-73088"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "nexu-io/open-design": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "nrwl/nx": {
+    "ghsa_count": 8,
+    "ghsa_ids": [
+      "GHSA-hrvq-x7jp-36xv",
+      "GHSA-w3vv-58gj-gw77",
+      "GHSA-w2vw-w76x-qr89",
+      "GHSA-6vc5-vf29-ffr2",
+      "GHSA-qm8w-vx34-5j9j",
+      "GHSA-vp3h-ghgh-jr7g",
+      "GHSA-g2r8-wvmj-jf5w",
+      "GHSA-cxm3-wv7p-598c"
+    ],
+    "release_cves": [
+      "CVE-2025-58754",
+      "CVE-2026-14257",
+      "CVE-2026-25639",
+      "CVE-2026-26996",
+      "CVE-2026-44705"
+    ],
+    "release_ghsas": [
+      "GHSA-W7JW-789Q-3M8P"
+    ],
+    "release_mentions": 0
+  },
+  "nullclaw/nullclaw": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "nullclaw/nullhub": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "open-jarvis/OpenJarvis": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "open-metadata/OpenMetadata": {
+    "ghsa_count": 8,
+    "ghsa_ids": [
+      "GHSA-9vmh-whc4-7phg",
+      "GHSA-pqqf-7hxm-rj5r",
+      "GHSA-5f29-2333-h9c7",
+      "GHSA-6wx7-qw5p-wh84",
+      "GHSA-7vf4-x5m2-r6gr",
+      "GHSA-5xv3-fm7g-865r",
+      "GHSA-8p5r-6mvv-2435",
+      "GHSA-j86m-rrpr-g8gw"
+    ],
+    "release_cves": [
+      "CVE-2024-35255",
+      "CVE-2024-52338",
+      "CVE-2025-11226",
+      "CVE-2025-3588",
+      "CVE-2026-0636",
+      "CVE-2026-1225",
+      "CVE-2026-19032",
+      "CVE-2026-19203",
+      "CVE-2026-19204",
+      "CVE-2026-2332",
+      "CVE-2026-25087",
+      "CVE-2026-2635",
+      "CVE-2026-33870",
+      "CVE-2026-33871",
+      "CVE-2026-34237",
+      "CVE-2026-34477",
+      "CVE-2026-34478",
+      "CVE-2026-34480",
+      "CVE-2026-35535",
+      "CVE-2026-41850",
+      "CVE-2026-41851",
+      "CVE-2026-42198",
+      "CVE-2026-43869",
+      "CVE-2026-44249",
+      "CVE-2026-47886",
+      "CVE-2026-48779",
+      "CVE-2026-49844",
+      "CVE-2026-54183",
+      "CVE-2026-54399",
+      "CVE-2026-54512",
+      "CVE-2026-55223",
+      "CVE-2026-55760",
+      "CVE-2026-5588",
+      "CVE-2026-5598",
+      "CVE-2026-59282",
+      "CVE-2026-59283",
+      "CVE-2026-59296",
+      "CVE-2026-59903",
+      "CVE-2026-61372",
+      "CVE-2026-67587",
+      "CVE-2026-68082",
+      "CVE-2026-72522",
+      "CVE-2026-8147",
+      "CVE-2026-83557"
+    ],
+    "release_ghsas": [
+      "GHSA-72HV-8253-57QQ"
+    ],
+    "release_mentions": 19
+  },
+  "openai/codex": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-w5fx-fh39-j5rw"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "openai/openai-agents-python": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "openai/symphony": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "openclaw/openclaw": {
+    "ghsa_count": 100,
+    "ghsa_ids": [
+      "GHSA-rx8p-qcpv-c7vr",
+      "GHSA-xvwp-wmh2-fq48",
+      "GHSA-5j57-84cx-r295",
+      "GHSA-m78m-7h3q-q938",
+      "GHSA-vhpg-cq3w-v8p9",
+      "GHSA-7jfq-rmfm-29wp",
+      "GHSA-3mq7-q27j-mq7q",
+      "GHSA-v7hh-7676-rg67",
+      "GHSA-9m4p-cqp4-jppq",
+      "GHSA-5rx7-34fw-64qg",
+      "GHSA-g24w-m94m-59qc",
+      "GHSA-62qm-6fjj-6g23",
+      "GHSA-fphf-69cp-h5xw",
+      "GHSA-wjfv-5qch-m5vj",
+      "GHSA-w5x7-c87m-3jpc",
+      "GHSA-chr6-w4m5-57fv",
+      "GHSA-h2qg-fxpv-82v6",
+      "GHSA-hgv5-f2r3-6v9r",
+      "GHSA-6xpv-wwr5-265h",
+      "GHSA-qgj5-6x35-9g6f",
+      "GHSA-rrxp-5mx8-mvhh",
+      "GHSA-5fwv-rrvp-8xvr",
+      "GHSA-5x6q-wg56-rxg8",
+      "GHSA-356g-m7rx-7pm3",
+      "GHSA-66hm-hxq3-5pfh",
+      "GHSA-rm45-4jx5-2927",
+      "GHSA-8938-r7c6-54vq",
+      "GHSA-jjpc-p3xf-8g7p",
+      "GHSA-wwcw-jfpp-gpxw",
+      "GHSA-h9jh-75j7-7hhx",
+      "GHSA-g697-vv6h-r8hv",
+      "GHSA-cf95-m4jv-59rc",
+      "GHSA-mm7m-wcgh-8mfq",
+      "GHSA-7cp7-87pj-p32v",
+      "GHSA-4r25-35qc-fr6j",
+      "GHSA-9f86-pvv5-rxfw",
+      "GHSA-74gc-hg2m-79p9",
+      "GHSA-ghpx-6xwq-2w4w",
+      "GHSA-j4mm-p864-vx7f",
+      "GHSA-xx9p-hc9w-6p5h",
+      "GHSA-39hf-qg99-f4qv",
+      "GHSA-fgwg-c3wv-8f45",
+      "GHSA-p3h6-v2h4-36q2",
+      "GHSA-hpg5-cq3m-phqp",
+      "GHSA-pfrw-r5vr-89hw",
+      "GHSA-5mrc-77hj-xjxv",
+      "GHSA-xw48-j584-r73h",
+      "GHSA-fw6q-2frm-jxxr",
+      "GHSA-5m4g-88rg-69pj",
+      "GHSA-72p2-79fg-pvph",
+      "GHSA-58qx-6m8p-wh2j",
+      "GHSA-4g58-43jr-6738",
+      "GHSA-fvxr-9g24-x3hf",
+      "GHSA-qw7m-h363-33qw",
+      "GHSA-4wvr-f35r-f8w4",
+      "GHSA-8xxh-v4vc-qvm4",
+      "GHSA-gcm4-fmcp-2f9r",
+      "GHSA-g7fw-3gjp-g5hf",
+      "GHSA-35wj-hm2r-ghgw",
+      "GHSA-rgjw-6v73-php6",
+      "GHSA-p5g8-m35v-7m82",
+      "GHSA-9p6m-2872-xm7x",
+      "GHSA-pjjr-5qhr-5w6r",
+      "GHSA-jghr-xp78-995p",
+      "GHSA-9x88-f7rh-4c83",
+      "GHSA-5j27-v2pw-cj9m",
+      "GHSA-xw9g-7xvv-gcjc",
+      "GHSA-22v4-33m3-8p7m",
+      "GHSA-q9j5-4xr6-xqqw",
+      "GHSA-89cw-7452-cfrf",
+      "GHSA-4hwv-rj92-h7rp",
+      "GHSA-wwx7-573h-pqwc",
+      "GHSA-crg9-c62w-j2p5",
+      "GHSA-jhfx-v2j8-x3m6",
+      "GHSA-r88x-r7jj-f2cf",
+      "GHSA-2q7j-2vhx-56g8",
+      "GHSA-w8wf-3qvj-6xqf",
+      "GHSA-m38g-vpwj-mpg9",
+      "GHSA-3fp5-v549-9v66",
+      "GHSA-v7hx-r36p-f68m",
+      "GHSA-3pmr-x9g8-m55r",
+      "GHSA-wgq8-x5wm-g4rw",
+      "GHSA-7vrr-rp4x-4g76",
+      "GHSA-52xj-c9p8-78cv",
+      "GHSA-fh38-965w-f6c3",
+      "GHSA-3x84-qq85-fj65",
+      "GHSA-v4f6-x5g5-2g4g",
+      "GHSA-hjr6-g723-hmfm",
+      "GHSA-9969-8g9h-rxwm",
+      "GHSA-mgvr-6gvw-3rgr",
+      "GHSA-224w-vfr9-h35c",
+      "GHSA-mm9g-83wh-mhwj",
+      "GHSA-wxh3-g47h-q3mc",
+      "GHSA-575v-8hfq-m3mc",
+      "GHSA-p5xh-frrh-cmgj",
+      "GHSA-f6p7-6326-vf7v",
+      "GHSA-cf2p-f286-mphf",
+      "GHSA-9c3v-684m-579c",
+      "GHSA-wp73-f3gg-w4vr",
+      "GHSA-4xwj-mcc7-x7x5"
+    ],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-2PWV-X786-56F8",
+      "GHSA-2RQG-GJGV-84JM",
+      "GHSA-4MHR-G7XJ-CG8J",
+      "GHSA-57JW-9722-6RF2",
+      "GHSA-5M9R-P9G7-679C",
+      "GHSA-5WCW-8JJV-M286",
+      "GHSA-6HC3-F4RG-377M",
+      "GHSA-6RPH-MMHP-H7H9",
+      "GHSA-72FW-CQH5-F324",
+      "GHSA-76M6-PJ3W-V7MF",
+      "GHSA-7JRW-X62H-64P8",
+      "GHSA-99QW-6MR3-36QR",
+      "GHSA-9R3V-37XH-2CF6",
+      "GHSA-CMWH-PVXP-8882",
+      "GHSA-F8R2-VG7X-GH8M",
+      "GHSA-G353-MGV3-8PCJ",
+      "GHSA-GQ3J-XVXP-8HRF",
+      "GHSA-JC5J-VG4R-J5JX",
+      "GHSA-JF5V-PQGW-GM5M",
+      "GHSA-JV4G-M82P-2J93",
+      "GHSA-JVQH-RFMH-JH27",
+      "GHSA-M69H-JM2F-2PV8",
+      "GHSA-MHXH-9PJM-W7Q5",
+      "GHSA-PCQG-F7RG-XFVV",
+      "GHSA-QFFP-2RHF-9H96",
+      "GHSA-R7VR-GR74-94P8",
+      "GHSA-RQPP-RJJ8-7WV8",
+      "GHSA-VMHQ-CQM9-6P7Q",
+      "GHSA-WCXR-59V9-RXR8",
+      "GHSA-X7PP-23XV-MMR4",
+      "GHSA-XWX2-PPV2-WX98"
+    ],
+    "release_mentions": 0
+  },
+  "opendatalab/MinerU": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2025-64512"
+    ],
+    "release_ghsas": [
+      "GHSA-WF5F-4JWR-PPCP"
+    ],
+    "release_mentions": 0
+  },
+  "osaurus-ai/osaurus": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "paperclipai/paperclip": {
+    "ghsa_count": 12,
+    "ghsa_ids": [
+      "GHSA-gqqj-85qm-8qhf",
+      "GHSA-vr7g-88fq-vhq3",
+      "GHSA-47wq-cj9q-wpmp",
+      "GHSA-p7mm-r948-4q3q",
+      "GHSA-fpw4-p57j-hqmq",
+      "GHSA-3xx2-mqjm-hg9x",
+      "GHSA-xfqj-r5qw-8g4j",
+      "GHSA-68qg-g8mg-6pr7",
+      "GHSA-x8hx-rhr2-9rf7",
+      "GHSA-w8hx-hqjv-vjcq",
+      "GHSA-3pw3-v88x-xj24",
+      "GHSA-265w-rf2w-cjh4"
+    ],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-68QG-G8MG-6PR7"
+    ],
+    "release_mentions": 0
+  },
+  "pestphp/pest": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-QRR6-MG7R-M243",
+      "GHSA-VVJ3-C3RP-C85P"
+    ],
+    "release_mentions": 0
+  },
+  "pipecat-ai/pipecat": {
+    "ghsa_count": 3,
+    "ghsa_ids": [
+      "GHSA-j8cv-x86q-rj85",
+      "GHSA-3363-2ph6-35wh",
+      "GHSA-c2jg-5cp7-6wc7"
+    ],
+    "release_cves": [
+      "CVE-2026-32597"
+    ],
+    "release_ghsas": [
+      "GHSA-752W-5FWX-JX9F"
+    ],
+    "release_mentions": 1
+  },
+  "reworkd/AgentGPT": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "ruvnet/ruflo": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-c4hm-4h84-2cf3"
+    ],
+    "release_cves": [
+      "CVE-2024-27980",
+      "CVE-2025-59536"
+    ],
+    "release_ghsas": [
+      "GHSA-5JGF-P345-68V8",
+      "GHSA-5XRQ-8626-4RWP",
+      "GHSA-C4HM-4H84-2CF3"
+    ],
+    "release_mentions": 9
+  },
+  "shanraisshan/claude-code-best-practice": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "siddsachar/row-bot": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "simstudioai/sim": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2026-44578",
+      "CVE-2026-54285"
+    ],
+    "release_ghsas": [
+      "GHSA-5XRQ-8626-4RWP",
+      "GHSA-GHCM-XQFW-Q4VR"
+    ],
+    "release_mentions": 0
+  },
+  "snarktank/ralph": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "spinabot/brigade": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "sukeesh/Jarvis": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "superagent-ai/superagent": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-pw7h-8x4q-fwwh"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "the-open-agent/openagent": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "thedotmack/claude-mem": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [
+      "CVE-2026-13311"
+    ],
+    "release_ghsas": [],
+    "release_mentions": 4
+  },
+  "timescale/pgai": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-89qq-hgvp-x37m"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "tinyhumansai/openhuman": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-F46P-6VF9-64MM"
+    ],
+    "release_mentions": 0
+  },
+  "topoteretes/cognee": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 6
+  },
+  "tradesdontlie/tradingview-mcp": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "triggerdotdev/trigger.dev": {
+    "ghsa_count": 30,
+    "ghsa_ids": [
+      "GHSA-m8pr-xr7c-frh3",
+      "GHSA-hc5h-gqhc-4h79",
+      "GHSA-fj2x-mqqp-3v2w",
+      "GHSA-fhh4-xvj5-m7pq",
+      "GHSA-wpjq-q67r-pg6m",
+      "GHSA-q567-cr4x-96w4",
+      "GHSA-2gvw-9968-v578",
+      "GHSA-h4pj-26m5-j4r3",
+      "GHSA-4672-hwv6-gq62",
+      "GHSA-p28v-f755-9qrg",
+      "GHSA-2wgf-7gx2-hcpw",
+      "GHSA-9q4r-4842-93vw",
+      "GHSA-cpx8-cffg-mp4w",
+      "GHSA-gx7f-q62h-9fxp",
+      "GHSA-qxpp-qjg8-x4jv",
+      "GHSA-xxv7-2vv3-h682",
+      "GHSA-j6vv-pq9h-f4wj",
+      "GHSA-p6j2-2fjh-vc8v",
+      "GHSA-m3mf-37q7-8928",
+      "GHSA-59h8-w5q6-mfmp",
+      "GHSA-pqxw-g93w-hj9x",
+      "GHSA-gg6r-gp4c-89hp",
+      "GHSA-jx48-qfwm-xq67",
+      "GHSA-888c-px7m-736v",
+      "GHSA-58mc-m3qq-6qrh",
+      "GHSA-pqmg-rq46-vm4m",
+      "GHSA-9fq3-68cw-r7p2",
+      "GHSA-rp8c-h4xr-w9qv",
+      "GHSA-pp95-gc86-jq6q",
+      "GHSA-2cqj-rq4j-8835"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 1
+  },
+  "ultraworkers/claw-code": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "vercel-labs/agent-browser": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "vercel/ai": {
+    "ghsa_count": 4,
+    "ghsa_ids": [
+      "GHSA-222v-gj5h-ff73",
+      "GHSA-vmqp-7rwf-cq3w",
+      "GHSA-g48p-5rr5-8rgq",
+      "GHSA-qw9h-448j-6rph"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "virattt/dexter": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "vxcontrol/pentagi": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 3
+  },
+  "xbtlin/ai-berkshire": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  },
+  "yc-software/qm": {
+    "ghsa_count": 0,
+    "ghsa_ids": [],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-55Q2-FJHQ-7XH7"
+    ],
+    "release_mentions": 1
+  },
+  "zeroclaw-labs/zeroclaw": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-93f6-34w8-5g98"
+    ],
+    "release_cves": [],
+    "release_ghsas": [
+      "GHSA-93F6-34W8-5G98",
+      "GHSA-F385-F6H2-3GQJ"
+    ],
+    "release_mentions": 0
+  },
+  "zhayujie/CowAgent": {
+    "ghsa_count": 1,
+    "ghsa_ids": [
+      "GHSA-qwjc-xv6c-mqfx"
+    ],
+    "release_cves": [],
+    "release_ghsas": [],
+    "release_mentions": 0
+  }
+}

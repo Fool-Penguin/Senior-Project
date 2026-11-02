@@ -1,0 +1,682 @@
+benchmark_id,language,framework,gold_cwe,pred_cwe,cwe_correct,gold_owasp,pred_owasp,owasp_correct,gold_severity,pred_severity,severity_correct,gold_cvss,pred_cvss,cvss_abs_err,cvss_within_1,flagged,location_mentions_code,explanation_f1,secure_code_similarity,secure_code_exact,fp_within_0_15,fn_within_0_15,latency_s,prompt_tps,gen_tps,ram_rss_mb,location,raw_explanation,raw_output
+ASB-000517,TypeScript,Vue,CWE-1427,CWE-89,False,A05:2021,A01:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1132,0.2573,False,True,True,6.066,384.55,46.18,4906.1,const d = idx.search(q);,The code is vulnerable to SQL injection because it directly incorporates user input (q) into the SQL query without proper sanitization or parameterized queries.,"{
+  ""vulnerable"": true,
+  ""location"": ""const d = idx.search(q);"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code is vulnerable to SQL injection because it directly incorporates user input (q) into the SQL query without proper sanitization or parameterized queries."",
+  ""secure_code"": ""function resolveTarget(q) { const d = idx.search(q); return llm(q + d."
+ASB-000326,Bash,None,CWE-1188,CWE-276,False,A05:2021,A01:2021,False,Critical,High,False,9.9,8.5,1.4,False,True,True,0.1154,0.4328,False,True,True,3.278,1218.84,46.21,4911.0,chmod 644 /etc/app/secret.env,"The secret file is readable by all users, which can lead to unauthorized access and disclosure of sensitive information.","{
+  ""vulnerable"": true,
+  ""location"": ""chmod 644 /etc/app/secret.env"",
+  ""cwe"": ""CWE-276"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.5,
+  ""explanation"": ""The secret file is readable by all users, which can lead to unauthorized access and disclosure of sensitive information."",
+  ""secure_code"": ""chmod 600 /etc/app/secret.env"",
+  ""false_positive_probability"": 0.1,
+  ""false_negative_probability"": 0.2
+}"
+ASB-000552,TypeScript,Vue,CWE-77,CWE-78,False,A03:2021,A01:2021,False,High,High,True,8.0,9.8,1.8,False,True,True,0.1852,0.6538,False,False,False,5.841,948.98,45.99,4914.7,"app.get(""/api/profile"", (req, res) => { ... })",The code is vulnerable to OS command injection because it directly uses user input (`req.query.host`) in a shell command without proper validation or sanitization.,"{
+  ""vulnerable"": true,
+  ""location"": ""app.get(\""/api/profile\"", (req, res) => { ... })"",
+  ""cwe"": ""CWE-78: OS Command Injection"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code is vulnerable to OS command injection because it directly uses user input (`req.query.host`) in a shell command without proper validation or sanitization."",
+  ""secure_code"": ""app.get(\""/api/profile\"", (req, res) => {\n  const host: string = req.query.host;\n"
+ASB-000333,Go,Fiber,CWE-77,CWE-78,False,A03:2021,A03:2021,True,High,High,True,8.0,9.8,1.8,False,True,True,0.2143,0.4641,False,False,False,6.564,957.68,46.02,4919.0,"exec.Command(""sh"", ""-c"", ""ping -c1 "" + host).Output()","The code is vulnerable to OS command injection because it directly includes user input (host) in the command string without proper validation or sanitization, allowing an attacker to inject malicious commands.","{
+  ""vulnerable"": true,
+  ""location"": ""exec.Command(\""sh\"", \""-c\"", \""ping -c1 \"" + host).Output()"",
+  ""cwe"": ""CWE-78: OS Command Injection"",
+  ""owasp"": ""A03:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code is vulnerable to OS command injection because it directly includes user input (host) in the command string without proper validation or sanitization, allowing an attacker to inject malicious commands."",
+  ""secure_code"": ""func exportData(w http.ResponseWriter, r *http.Req"
+ASB-000459,C#,ASP.NET Core,CWE-502,CWE-89,False,A08:2021,A01:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1034,0.6726,False,True,True,4.153,1225.83,46.25,4922.3,[FromBody] string data,"The code deserializes JSON data directly into an object without any validation or sanitization, which can lead to injection attacks if the input is crafted maliciously.","{
+  ""vulnerable"": true,
+  ""location"": ""[FromBody] string data"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code deserializes JSON data directly into an object without any validation or sanitization, which can lead to injection attacks if the input is crafted maliciously."",
+  ""secure_code"": ""[HttpPost(\""/api/state\"")] public IActio"
+ASB-000497,TypeScript,Angular,CWE-611,CWE-78,False,A05:2021,A01:2021,False,High,High,True,8.0,9.8,1.8,False,True,True,0.129,0.5166,False,False,True,4.612,915.82,46.19,4926.2,const o = require('fast-xml-parser').parse(req.body);,"The code uses the fast-xml-parser library to parse XML data from the request body without any hardening, which can lead to OS command injection if the input is not properly sanitized.","{
+  ""vulnerable"": true,
+  ""location"": ""const o = require('fast-xml-parser').parse(req.body);"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code uses the fast-xml-parser library to parse XML data from the request body without any hardening, which can lead to OS command injection if the input is not properly sanitized."",
+  ""secure_code"": ""const o = re"
+ASB-000240,Java,Spring Boot,CWE-307,CWE-284,False,A07:2021,A06:2021,False,High,High,True,8.0,7.5,0.5,True,True,True,0.0323,0.59,False,False,True,3.782,2011.79,46.37,4926.8,/api/login,"The method 'getItem' is mapped to a POST endpoint but does not check if the user has the necessary permissions to access it, potentially allowing unauthorized users to perform actions they should not.","{
+  ""vulnerable"": true,
+  ""location"": ""/api/login"",
+  ""cwe"": ""CWE-284: Improper Access Control"",
+  ""owasp"": ""A06:2021 - Sensitive Data Exposure"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The method 'getItem' is mapped to a POST endpoint but does not check if the user has the necessary permissions to access it, potentially allowing unauthorized users to perform actions they should not."",
+  ""secure_code"": ""@PostMapping(\""/api/login\"") public void getItem(@AuthenticationPrincipal User"
+ASB-000024,Go,Fiber,CWE-345,CWE-327,False,A07:2021,A05:2021,False,High,High,True,8.0,8.6,0.6,True,True,True,0.0741,0.3445,False,False,True,5.562,1265.21,46.16,4927.7,return jwt.ParseUnverified(t),"The code uses jwt.ParseUnverified, which does not verify the JWT signature, making it vulnerable to replay attacks and injection of arbitrary claims.","{
+  ""vulnerable"": true,
+  ""location"": ""return jwt.ParseUnverified(t)"",
+  ""cwe"": ""CWE-327"",
+  ""owasp"": ""A05:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The code uses jwt.ParseUnverified, which does not verify the JWT signature, making it vulnerable to replay attacks and injection of arbitrary claims."",
+  ""secure_code"": ""func resolveTarget(t string) (Claims, error) {\n    token, err := jwt.Parse(t, func(token *jwt.Token) (interface{}, error) {\n        return []byte(\""your-256-bi"
+ASB-000528,Python,FastAPI,CWE-285,CWE-284,False,A01:2021,A06:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1111,0.3553,False,True,True,5.189,1284.75,46.2,4928.4,return jsonify([u.email for u in User.query.all()]),"The code does not check if the user has the necessary role to access this endpoint, potentially exposing sensitive data.","{
+  ""vulnerable"": true,
+  ""location"": ""return jsonify([u.email for u in User.query.all()])"",
+  ""cwe"": ""CWE-284: Improper Access Control"",
+  ""owasp"": ""A06:2021 - Sensitive Data Exposure"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code does not check if the user has the necessary role to access this endpoint, potentially exposing sensitive data."",
+  ""secure_code"": ""from fastapi import Depends\nfrom sqlalchemy.orm import Session\nfrom .models import User\nfrom .schemas import UserS"
+ASB-000289,Go,Echo,CWE-798,CWE-200,False,A02:2021,A01:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1154,0.7692,False,True,True,3.977,1280.69,46.25,4926.4,"const apiKey = ""sk_live_9f8a7b6c5d4e3f2a1b0c""","The API key is hardcoded in the source code, which can be exposed through error messages or logs, leading to unauthorized access.","{
+  ""vulnerable"": true,
+  ""location"": ""const apiKey = \""sk_live_9f8a7b6c5d4e3f2a1b0c\"""",
+  ""cwe"": ""CWE-200: Exposure of Sensitive Information Through an Error Message"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The API key is hardcoded in the source code, which can be exposed through error messages or logs, leading to unauthorized access."",
+  ""secure_code"": ""const apiKey = os.Getenv(\""API_KEY\"")"",
+  ""false_positive_probability"": 0.1,
+  "
+ASB-000499,Scala,Spring Boot,CWE-434,CWE-86,False,A03:2021,A05:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1333,0.1594,False,True,True,4.881,1292.85,46.19,4916.1,"Files.copy(file.getInputStream, Paths.get(""uploads/"" + file.getOriginalFilename))","The code directly uses the original filename from the uploaded file to construct a path, which can be exploited to traverse directories and overwrite or read sensitive files.","{
+  ""vulnerable"": true,
+  ""location"": ""Files.copy(file.getInputStream, Paths.get(\""uploads/\"" + file.getOriginalFilename))"",
+  ""cwe"": ""CWE-86: Path Traversal"",
+  ""owasp"": ""A05:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code directly uses the original filename from the uploaded file to construct a path, which can be exploited to traverse directories and overwrite or read sensitive files."",
+  ""secure_code"": ""def execute(file: MultipartFile): Unit =\n  val safeFilename = sani"
+ASB-000413,Dockerfile,None,CWE-250,CWE-786,False,A05:2021,A01:2021,False,High,High,True,8.0,9.8,1.8,False,True,True,0.1569,0.5652,False,False,False,4.174,910.89,46.22,4919.8,"USER root
+VOLUME /var/run/docker.sock:/var/run/docker.sock",Running as root and mounting the Docker socket can allow an attacker to gain full control of the host system.,"{
+  ""vulnerable"": true,
+  ""location"": ""USER root\nVOLUME /var/run/docker.sock:/var/run/docker.sock"",
+  ""cwe"": ""CWE-786"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""Running as root and mounting the Docker socket can allow an attacker to gain full control of the host system."",
+  ""secure_code"": ""FROM python:3.12-slim\nUSER appuser\nRUN useradd -m appuser\nVOLUME /var/run/docker.sock:/var/run/docker.sock\nCMD [\""python\"", \""app.py\""]"",
+  ""false_positive_probability"
+ASB-000194,Swift,iOS,CWE-287,CWE-200,False,A07:2021,A10:2021,False,High,High,True,8.0,7.5,0.5,True,True,True,0.1132,0.5519,False,False,False,5.458,1296.82,46.17,4922.4,"guard let u = repo.find(c.user), u.pass == c.pass else { throw BadCred() }","The error message 'BadCred' reveals sensitive information about the authentication process, potentially aiding attackers in guessing valid usernames.","{
+  ""vulnerable"": true,
+  ""location"": ""guard let u = repo.find(c.user), u.pass == c.pass else { throw BadCred() }"",
+  ""cwe"": ""CWE-200: Exposure of Sensitive Information Through an Error Message"",
+  ""owasp"": ""A10:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The error message 'BadCred' reveals sensitive information about the authentication process, potentially aiding attackers in guessing valid usernames."",
+  ""secure_code"": ""func fetchRecord(c: Cred) throws -> Token { guard let u "
+ASB-000419,JavaScript,Express,CWE-362,CWE-89,False,A04:2021,A01:2021,False,High,High,True,8.0,7.5,0.5,True,True,True,0.1034,0.4387,False,True,False,4.184,1237.38,47.65,4924.5,if(await get(id).used) return;,"The code does not properly sanitize the input 'id' before using it in a conditional statement, which could lead to SQL injection if 'get(id)' returns user-controlled data.","{
+  ""vulnerable"": true,
+  ""location"": ""if(await get(id).used) return;"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code does not properly sanitize the input 'id' before using it in a conditional statement, which could lead to SQL injection if 'get(id)' returns user-controlled data."",
+  ""secure_code"": ""async function renderView(id) { const item = await ge"
+ASB-000071,Java,Spring Boot,CWE-502,CWE-502,True,A08:2021,A01:2021,False,Critical,Critical,True,9.9,9.8,0.1,True,True,True,0.2353,0.155,False,True,True,3.266,1273.71,47.21,4927.3,new ObjectInputStream(new ByteArrayInputStream(body)).readObject();,"The code uses native deserialization, which can lead to remote code execution if the input is controlled by an attacker.","{
+  ""vulnerable"": true,
+  ""location"": ""new ObjectInputStream(new ByteArrayInputStream(body)).readObject();"",
+  ""cwe"": ""CWE-502"",
+  ""owasp"": ""A1:2021"",
+  ""severity"": ""Critical"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code uses native deserialization, which can lead to remote code execution if the input is controlled by an attacker."",
+  ""secure_code"": ""Use a safe serialization library like Jackson or Gson instead of ObjectInputStream."",
+  ""false_positive_probability"": 0.1,
+  ""false_negative_probabil"
+ASB-000253,C#,ASP.NET Core,CWE-307,CWE-94,False,A07:2021,A01:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.0755,0.6555,False,True,True,3.955,1202.51,46.24,4927.8,The method 'resolveTarget' does not validate the input parameters.,"The method 'resolveTarget' does not validate the input parameters, which could lead to code injection attacks.","{
+  ""vulnerable"": true,
+  ""location"": ""The method 'resolveTarget' does not validate the input parameters."",
+  ""cwe"": ""CWE-94: Improper Control of Generation of Code ('Code Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The method 'resolveTarget' does not validate the input parameters, which could lead to code injection attacks."",
+  ""secure_code"": ""[HttpPost(\""/api/login\"")] public IActionResult resolveTarget([FromBody] LoginReq"
+ASB-000550,YAML,None,CWE-250,CWE-782,False,A05:2021,A01:2021,False,Critical,Critical,True,9.9,9.8,0.1,True,True,True,0.1754,0.1484,False,True,True,3.216,1282.46,46.32,4927.9,securityContext.privileged: true,"Running a container with privileged mode allows the container to have full access to the host system, which can lead to privilege escalation and other security breaches.","{
+  ""vulnerable"": true,
+  ""location"": ""securityContext.privileged: true"",
+  ""cwe"": ""CWE-782"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""Critical"",
+  ""cvss"": 9.8,
+  ""explanation"": ""Running a container with privileged mode allows the container to have full access to the host system, which can lead to privilege escalation and other security breaches."",
+  ""secure_code"": ""securityContext.privileged: false"",
+  ""false_positive_probability"": 0.1,
+  ""false_negative_probability"": 0.2
+}"
+ASB-000082,JavaScript,Next.js,CWE-918,CWE-94,False,A10:2021,A01:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1333,0.087,False,True,True,5.573,1308.94,45.56,4926.5,const r = await fetch(url);,"The code directly uses user-supplied input (`req.body.url`) to make an HTTP request, which can lead to code injection if the URL is not properly sanitized or validated.","{
+  ""vulnerable"": true,
+  ""location"": ""const r = await fetch(url);"",
+  ""cwe"": ""CWE-94: Improper Control of Generation of Code ('Code Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code directly uses user-supplied input (`req.body.url`) to make an HTTP request, which can lead to code injection if the URL is not properly sanitized or validated."",
+  ""secure_code"": ""const url = req.body.url;\nif (!isValidUrl(url)) {\n  return r"
+ASB-000487,TypeScript,NestJS,CWE-434,CWE-78,False,A03:2021,A01:2021,False,High,High,True,8.0,9.8,1.8,False,True,True,0.1667,0.4195,False,True,True,5.178,1214.23,45.99,4926.7,req.file.mv(UPLOAD+req.file.name),"The code directly uses user-supplied input (req.file.name) to construct a file path for the OS command, which can lead to command injection if an attacker can control any part of the file name.","{
+  ""vulnerable"": true,
+  ""location"": ""req.file.mv(UPLOAD+req.file.name)"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code directly uses user-supplied input (req.file.name) to construct a file path for the OS command, which can lead to command injection if an attacker can control any part of the file name."",
+  ""secure_code"": ""const fs = require('fs"
+ASB-000255,C#,ASP.NET Core,CWE-434,CWE-78,False,A03:2021,A01:2021,False,Critical,High,False,9.9,9.8,0.1,True,True,True,0.1493,0.5929,False,True,True,5.081,1263.66,45.89,4927.0,f.CopyTo(System.IO.File.Create(UPLOAD + f.FileName)),"The code directly uses the file name from the user input to create a file on the server without proper validation or sanitization, which can lead to OS command injection if the file name contains special characters that are interpreted by the operating system.","{
+  ""vulnerable"": true,
+  ""location"": ""f.CopyTo(System.IO.File.Create(UPLOAD + f.FileName))"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code directly uses the file name from the user input to create a file on the server without proper validation or sanitization, which can lead to OS command injection if the file name contai"
+ASB-000233,TypeScript,Vue,CWE-1427,CWE-89,False,A05:2021,A01:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1455,0.3723,False,True,True,4.732,1286.12,46.17,4923.8,fetchRecord function,The function fetchRecord is vulnerable to SQL injection because it directly concatenates user input (q) with the query string without proper sanitization or parameterized queries.,"{
+  ""vulnerable"": true,
+  ""location"": ""fetchRecord function"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The function fetchRecord is vulnerable to SQL injection because it directly concatenates user input (q) with the query string without proper sanitization or parameterized queries."",
+  ""secure_code"": ""function fetchRecord(q) { const d = idx.search(q); retu"
+ASB-000183,Go,Gin,CWE-345,CWE-327,False,A07:2021,A05:2021,False,High,High,True,8.0,8.6,0.6,True,True,True,0.0741,0.3489,False,True,False,3.763,1282.54,46.74,4923.8,return jwt.ParseUnverified(t),"The code uses jwt.ParseUnverified, which does not verify the JWT signature, making it vulnerable to replay attacks and injection of arbitrary claims.","{
+  ""vulnerable"": true,
+  ""location"": ""return jwt.ParseUnverified(t)"",
+  ""cwe"": ""CWE-327"",
+  ""owasp"": ""A05:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The code uses jwt.ParseUnverified, which does not verify the JWT signature, making it vulnerable to replay attacks and injection of arbitrary claims."",
+  ""secure_code"": ""return jwt.Parse(t, func(token *jwt.Token) (interface{}, error) { return []byte(\""your-256-bit-secret\""), nil })"",
+  ""false_positive_probability"": 0.1,
+  ""false_"
+ASB-000010,Go,Fiber,CWE-639,CWE-89,False,A01:2021,A01:2021,True,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1091,0.397,False,False,False,4.243,965.17,45.56,4923.9,"row := db.QueryRow(""SELECT body FROM docs WHERE id="" + id)",The code is vulnerable to SQL injection because it directly concatenates user input (id) into the SQL query without proper sanitization or parameterized queries.,"{
+  ""vulnerable"": true,
+  ""location"": ""row := db.QueryRow(\""SELECT body FROM docs WHERE id=\"" + id)"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code is vulnerable to SQL injection because it directly concatenates user input (id) into the SQL query without proper sanitization or parameterized queries."",
+  ""secure_code"": ""row := db"
+ASB-000347,TypeScript,Angular,CWE-285,,False,A01:2021,,False,Critical,,False,9.9,,,False,False,False,0.0,0.0,False,False,False,5.09,1259.6,46.01,4924.0,,,"{
+  ""vulnerable"": true,
+  ""location"": ""server.delete(call, cb)"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code directly uses the input from 'call.request.id' without proper validation or sanitization, which could lead to an OS command injection attack."",
+  ""secure_code"": ""const server = { delete(call, cb) { const sanitizedId = sanitizeInput(call."
+ASB-000188,Go,Fiber,CWE-915,CWE-78,False,A04:2021,A01:2021,False,Critical,High,False,9.9,9.8,0.1,True,True,True,0.1538,0.5,False,True,True,4.594,1273.37,46.11,4924.2,"return gql.MustParse(""type Query { secret: String! }"").Schema();","The code is vulnerable to OS command injection because it directly parses and executes a GraphQL schema string, which could be manipulated by an attacker.","{
+  ""vulnerable"": true,
+  ""location"": ""return gql.MustParse(\""type Query { secret: String! }\"").Schema();"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code is vulnerable to OS command injection because it directly parses and executes a GraphQL schema string, which could be manipulated by an attacker."",
+  ""secure_code"": ""func"
+ASB-000225,TypeScript,NestJS,CWE-611,CWE-78,False,A05:2021,A01:2021,False,High,High,True,8.0,9.8,1.8,False,True,True,0.1967,0.4452,False,False,True,7.113,911.18,45.32,4926.1,"app.post(""/api/profile"", (req, res) => { ... })","The use of the `fast-xml-parser` library without proper hardening can lead to XML External Entity (XXE) attacks, which could allow an attacker to execute arbitrary code on the server.","{
+  ""vulnerable"": true,
+  ""location"": ""app.post(\""/api/profile\"", (req, res) => { ... })"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The use of the `fast-xml-parser` library without proper hardening can lead to XML External Entity (XXE) attacks, which could allow an attacker to execute arbitrary code on the server."",
+  ""secure_code"": ""app.post(\""/api/"
+ASB-000206,JavaScript,Express,CWE-79,CWE-79,True,A03:2021,A01:2021,False,High,High,True,8.0,8.6,0.6,True,True,True,0.1818,0.2007,False,False,True,3.948,1312.23,45.05,4926.5,res.send(`<div>${q}</div>`),"The user input 'q' is directly reflected into the HTML response without proper sanitization, making it vulnerable to Cross-Site Scripting (XSS). An attacker could inject malicious scripts that would execute in the browser of any user viewing the page.","{
+  ""vulnerable"": true,
+  ""location"": ""res.send(`<div>${q}</div>`)"",
+  ""cwe"": ""CWE-79"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The user input 'q' is directly reflected into the HTML response without proper sanitization, making it vulnerable to Cross-Site Scripting (XSS). An attacker could inject malicious scripts that would execute in the browser of any user viewing the page."",
+  ""secure_code"": ""res.send(`<div>${escape(q)}</div>`);"",
+  ""false_positive_proba"
+ASB-000001,Kotlin,Android,CWE-434,,False,A03:2021,,False,Critical,,False,9.9,,,False,False,False,0.0,0.0,False,False,False,5.19,1197.72,44.8,4926.6,,,"{
+  ""vulnerable"": true,
+  ""location"": ""f.transferTo(File(UPLOAD + f.originalFilename))"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code directly concatenates the file name from the user input (f.originalFilename) with a directory path (UPLOAD), which can lead to OS command injection if the file name contains special characters that are interpreted"
+ASB-000492,JavaScript,Angular,CWE-502,CWE-89,False,A08:2021,A01:2021,False,Critical,Critical,True,9.9,9.8,0.1,True,True,True,0.0984,1.0,True,True,True,3.773,2005.24,45.22,4926.7,fetchRecord function,"The use of eval to parse the body parameter can lead to arbitrary code execution if the input is not properly sanitized, which could be exploited for SQL injection or other malicious activities.","{
+  ""vulnerable"": true,
+  ""location"": ""fetchRecord function"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""Critical"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The use of eval to parse the body parameter can lead to arbitrary code execution if the input is not properly sanitized, which could be exploited for SQL injection or other malicious activities."",
+  ""secure_code"": ""function fetchRecord(body) { return "
+ASB-000030,Kotlin,Android,CWE-601,CWE-601,True,A01:2021,A05:2021,False,Critical,High,False,9.9,8.8,1.1,False,True,True,0.1481,0.3813,False,True,True,4.74,1992.69,45.32,4926.8,lookup function,"The function 'lookup' redirects the user to a URL provided by the 'next' parameter without validation, which could lead to an open redirect attack.","{
+  ""vulnerable"": true,
+  ""location"": ""lookup function"",
+  ""cwe"": ""CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"",
+  ""owasp"": ""A05:2021: Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 8.8,
+  ""explanation"": ""The function 'lookup' redirects the user to a URL provided by the 'next' parameter without validation, which could lead to an open redirect attack."",
+  ""secure_code"": ""fun lookup(next: String) {\n    if (isValidUrl(next)) {\n        redirect(next)\n    } else {\n      "
+ASB-000312,TypeScript,Angular,CWE-639,CWE-918,False,A01:2021,A05:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1053,0.4778,False,True,True,4.027,1220.74,45.66,4926.9,db.accounts.update(req.body),"The code directly updates the database with data from the request body, which can lead to mass assignment vulnerabilities if the request includes unintended or malicious fields.","{
+  ""vulnerable"": true,
+  ""location"": ""db.accounts.update(req.body)"",
+  ""cwe"": ""CWE-918"",
+  ""owasp"": ""A05:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code directly updates the database with data from the request body, which can lead to mass assignment vulnerabilities if the request includes unintended or malicious fields."",
+  ""secure_code"": ""function fetchRecord(req,res){ const allowedFields = ['field1', 'field2']; const sanitizedBody = pick(req.body, allowedFields); db.acc"
+ASB-000427,TypeScript,Vue,CWE-352,CWE-78,False,A01:2021,A09:2021,False,Critical,High,False,9.9,6.5,3.4,False,True,True,0.1379,0.5124,False,True,True,3.461,2026.29,45.68,4927.0,transfer(req.body),"The code directly transfers user input (req.body) to another system without proper validation or sanitization, which can lead to injection attacks.","{
+  ""vulnerable"": true,
+  ""location"": ""transfer(req.body)"",
+  ""cwe"": ""CWE-78"",
+  ""owasp"": ""A09:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 6.5,
+  ""explanation"": ""The code directly transfers user input (req.body) to another system without proper validation or sanitization, which can lead to injection attacks."",
+  ""secure_code"": ""function resolveTarget(req,res){ const sanitizedInput = sanitize(req.body); transfer(sanitizedInput); res.end(); }"",
+  ""false_positive_probability"": 0.1,
+  ""false_negative_pro"
+ASB-000284,Python,FastAPI,CWE-918,,False,A10:2021,,False,Critical,,False,9.9,,,False,False,False,0.0,0.0,False,False,False,4.827,1331.38,44.88,4926.8,,,"{
+  ""vulnerable"": true,
+  ""location"": ""resp = requests.get(target)"",
+  ""cwe"": ""CWE-94"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""Critical"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The code fetches data from an arbitrary URL provided by the user, which can lead to remote code execution if the target URL is malicious."",
+  ""secure_code"": """"""
+@app.route(""/api/search"", methods=[""POST""])
+def getItem():
+    target = request.json[""url""]
+    # Validate and sanitize the URL
+    parsed_url = urlparse(target)
+    if "
+ASB-000182,PHP,Laravel,CWE-327,CWE-327,True,A02:2021,A06:2021,False,Critical,High,False,9.9,8.2,1.7,False,True,False,0.1154,0.3248,False,True,True,3.222,1234.71,45.89,4926.8,md5($d),"MD5 is a weak hash function and can be easily cracked, allowing attackers to determine the original input from the hash.","{
+  ""vulnerable"": true,
+  ""location"": ""md5($d)"",
+  ""cwe"": ""CWE-327"",
+  ""owasp"": ""A06:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.2,
+  ""explanation"": ""MD5 is a weak hash function and can be easily cracked, allowing attackers to determine the original input from the hash."",
+  ""secure_code"": ""return password_hash($d, PASSWORD_BCRYPT);"",
+  ""false_positive_probability"": 0.01,
+  ""false_negative_probability"": 0.01
+}"
+ASB-000091,JavaScript,Angular,CWE-287,CWE-78,False,A07:2021,A01:2021,False,Critical,High,False,9.9,9.8,0.1,True,True,True,0.1034,0.5714,False,True,True,4.003,1207.3,47.23,4926.1,"oauth.exchange(code, ru)","The code directly passes user input (code and ru) to the oauth.exchange function without proper validation or sanitization, which could lead to OS command injection if the exchange function is implemented incorrectly.","{
+  ""vulnerable"": true,
+  ""location"": ""oauth.exchange(code, ru)"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code directly passes user input (code and ru) to the oauth.exchange function without proper validation or sanitization, which could lead to OS command injection if the exchange function is implemented incorrectly."",
+  ""secure_code"": ""functio"
+ASB-000036,Python,FastAPI,CWE-918,CWE-78,False,A05:2021,A01:2021,False,High,Critical,False,8.0,9.8,1.8,False,True,True,0.1053,0.372,False,False,False,5.06,1337.12,47.4,4926.3,"os.popen(""cat "" + path).read()","The code uses os.popen to execute a shell command constructed from user input, which can lead to arbitrary command execution if the path parameter is not properly sanitized.","{
+  ""vulnerable"": true,
+  ""location"": ""os.popen(\""cat \"" + path).read()"",
+  ""cwe"": ""CWE-78: OS Command Injection"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""Critical"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code uses os.popen to execute a shell command constructed from user input, which can lead to arbitrary command execution if the path parameter is not properly sanitized."",
+  ""secure_code"": ""from fastapi import HTTPException\n\ndef loadUser(path: str):\n    # Ensure the path "
+ASB-000330,Go,Echo,CWE-345,CWE-327,False,A07:2021,A05:2021,False,Critical,High,False,9.9,8.6,1.3,False,True,True,0.0741,0.2814,False,True,True,5.555,1298.45,47.34,4926.3,return jwt.ParseUnverified(t),"The code uses `jwt.ParseUnverified`, which does not verify the JWT signature, making it vulnerable to replay attacks and injection of arbitrary claims.","{
+  ""vulnerable"": true,
+  ""location"": ""return jwt.ParseUnverified(t)"",
+  ""cwe"": ""CWE-327"",
+  ""owasp"": ""A05:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The code uses `jwt.ParseUnverified`, which does not verify the JWT signature, making it vulnerable to replay attacks and injection of arbitrary claims."",
+  ""secure_code"": ""func exportData(t string) (Claims, error) {\n    token, err := jwt.ParseWithClaims(t, &Claims{}, func(token *jwt.Token) (interface{}, error) {\n        return "
+ASB-000442,TypeScript,Vue,CWE-639,CWE-89,False,A01:2021,A01:2021,True,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1017,0.5219,False,True,True,6.012,1334.18,46.95,4923.6,Db.doc(req.params.doc_id).then(d => res.json(d));,The code is vulnerable to SQL injection because it directly uses user input (req.params.doc_id) in a database query without proper sanitization or parameterized queries.,"{
+  ""vulnerable"": true,
+  ""location"": ""Db.doc(req.params.doc_id).then(d => res.json(d));"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code is vulnerable to SQL injection because it directly uses user input (req.params.doc_id) in a database query without proper sanitization or parameterized queries."",
+  ""secure_code"": ""app.get(\""/a"
+ASB-000136,JavaScript,Next.js,CWE-840,CWE-327,False,A04:2021,A05:2021,False,Critical,High,False,9.9,8.6,1.3,False,True,True,0.0769,0.2655,False,True,True,4.861,1221.92,46.63,4918.4,charge(body.total),"The function trusts the client-supplied value for 'total' without validation, which could lead to unauthorized charges.","{
+  ""vulnerable"": true,
+  ""location"": ""charge(body.total)"",
+  ""cwe"": ""CWE-327"",
+  ""owasp"": ""A05:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The function trusts the client-supplied value for 'total' without validation, which could lead to unauthorized charges."",
+  ""secure_code"": ""function resolveTarget(body){\n  const total = validateTotal(body.total);\n  if (total === null) {\n    throw new Error('Invalid total');\n  }\n  charge(total);\n}\n\nfunction validateTotal(total) {\n  "
+ASB-000558,Python,Django,CWE-1427,CWE-89,False,A05:2021,A01:2021,False,High,High,True,8.0,7.5,0.5,True,True,True,0.1379,0.411,False,False,False,4.317,1363.94,47.59,4919.2,docs = index.search(query),"The code directly concatenates user input (query) with the document text, which can lead to SQL injection if the index.search method is not properly parameterized or sanitized.","{
+  ""vulnerable"": true,
+  ""location"": ""docs = index.search(query)"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code directly concatenates user input (query) with the document text, which can lead to SQL injection if the index.search method is not properly parameterized or sanitized."",
+  ""secure_code"": ""def renderView(query):\n    # Secure: Use parameteri"
+ASB-000364,TypeScript,Angular,CWE-918,CWE-94,False,A10:2021,A01:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1017,0.3344,False,True,True,6.384,939.47,47.17,4919.2,"app.post(""/api/export"", async (req, res) => { ... })","The code directly uses user-supplied input (req.body.url) in a fetch call, which can lead to code injection if the URL is not properly sanitized or validated.","{
+  ""vulnerable"": true,
+  ""location"": ""app.post(\""/api/export\"", async (req, res) => { ... })"",
+  ""cwe"": ""CWE-94: Improper Control of Generation of Code ('Code Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code directly uses user-supplied input (req.body.url) in a fetch call, which can lead to code injection if the URL is not properly sanitized or validated."",
+  ""secure_code"": ""app.post(\""/api/export\"", async (req, res) =>"
+ASB-000420,Kotlin,Android,CWE-532,CWE-521,False,A09:2021,A06:2021,False,Critical,High,False,9.9,7.8,2.1,False,True,True,0.0702,0.6923,False,True,True,3.718,1225.28,47.62,4919.9,renderView function,"The code logs user credentials (username and password) without any validation, which could lead to sensitive information being logged in plain text.","{
+  ""vulnerable"": true,
+  ""location"": ""renderView function"",
+  ""cwe"": ""CWE-521: Missing Input Validation"",
+  ""owasp"": ""A06:2021 - Security Misconfiguration"",
+  ""severity"": ""High"",
+  ""cvss"": 7.8,
+  ""explanation"": ""The code logs user credentials (username and password) without any validation, which could lead to sensitive information being logged in plain text."",
+  ""secure_code"": ""fun renderView(u: String, p: String) = log.info(\""login ${u.take(5)}... ${p.takeLast(5)}\"")"",
+  ""false_positive_probab"
+ASB-000021,PHP,Laravel,CWE-862,,False,A01:2021,,False,High,N/A,False,8.0,0.0,8.0,False,False,False,0.0,0.0,False,False,False,1.826,2020.01,47.84,4919.9,,,"{
+  ""vulnerable"": false,
+  ""location"": """",
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": ""N/A"",
+  ""cvss"": 0.0,
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000536,TypeScript,NestJS,CWE-840,CWE-327,False,A04:2021,A05:2021,False,High,High,True,8.0,8.6,0.6,True,True,True,0.12,0.3478,False,False,False,4.164,1248.51,47.59,4919.9,charge(body.total),"The function trusts the client-provided total without validation, which could lead to unauthorized charges.","{
+  ""vulnerable"": true,
+  ""location"": ""charge(body.total)"",
+  ""cwe"": ""CWE-327"",
+  ""owasp"": ""A05:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The function trusts the client-provided total without validation, which could lead to unauthorized charges."",
+  ""secure_code"": ""function resolveTarget(body){\n  const total = validateTotal(body.total);\n  charge(total);\n}\n\nfunction validateTotal(total) {\n  if (typeof total !== 'number' || total < 0) {\n    throw new Error('Invalid total"
+ASB-000467,TypeScript,Vue,CWE-113,CWE-79,False,A03:2021,A01:2021,False,Critical,High,False,9.9,8.6,1.3,False,True,True,0.1481,0.4225,False,True,True,4.867,1259.44,47.61,4920.6,"res.setHeader(""X-Dest"", req.query.dest);",The code is vulnerable to OS command injection because it directly uses the value of `req.query.dest` in a header without proper validation or sanitization.,"{
+  ""vulnerable"": true,
+  ""location"": ""res.setHeader(\""X-Dest\"", req.query.dest);"",
+  ""cwe"": ""CWE-79: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The code is vulnerable to OS command injection because it directly uses the value of `req.query.dest` in a header without proper validation or sanitization."",
+  ""secure_code"": ""function lookup(req,res){\n  const sanitizedDest ="
+ASB-000349,C++,None,CWE-798,,False,A02:2021,,False,Critical,N/A,False,9.9,0.0,9.9,False,False,False,0.0,0.0,False,True,True,1.837,2015.98,47.57,4920.8,,,"{
+  ""vulnerable"": false,
+  ""location"": """",
+  ""cwe"": """",
+  ""owasp"": """",
+  ""severity"": ""N/A"",
+  ""cvss"": 0.0,
+  ""explanation"": """",
+  ""secure_code"": """",
+  ""false_positive_probability"": 0.0,
+  ""false_negative_probability"": 0.0
+}"
+ASB-000145,Python,Django,CWE-89,CWE-89,True,A03:2021,A03:2021,True,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1887,0.385,False,True,True,3.479,908.27,45.37,4921.0,"orders.objects.extra(where=[f""email = '{email}'""])",This code is vulnerable to SQL Injection because it directly includes user input in the SQL query without proper sanitization or parameterized queries.,"{
+  ""vulnerable"": true,
+  ""location"": ""orders.objects.extra(where=[f\""email = '{email}'\""])"",
+  ""cwe"": ""CWE-89"",
+  ""owasp"": ""A03:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""This code is vulnerable to SQL Injection because it directly includes user input in the SQL query without proper sanitization or parameterized queries."",
+  ""secure_code"": ""rows = orders.objects.filter(email=email)"",
+  ""false_positive_probability"": 0.1,
+  ""false_negative_probability"": 0.2
+}"
+ASB-000017,JavaScript,Next.js,CWE-22,CWE-78,False,A01:2021,A01:2021,True,High,High,True,8.0,9.8,1.8,False,True,True,0.1404,0.2667,False,False,True,4.832,1306.68,46.38,4921.3,"res.sendFile(path.join(BASE_DIR, fn));","The code directly uses user-supplied input (`fn`) to construct a file path and send the file, which can lead to OS command injection if `fn` contains special characters or commands.","{
+  ""vulnerable"": true,
+  ""location"": ""res.sendFile(path.join(BASE_DIR, fn));"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code directly uses user-supplied input (`fn`) to construct a file path and send the file, which can lead to OS command injection if `fn` contains special characters or commands."",
+  ""secure_code"": ""const"
+ASB-000457,Java,Spring Boot,CWE-362,CWE-480,False,A04:2021,A12:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1,0.2935,False,True,True,3.889,1316.61,47.36,4921.2,if(!coupon.isUsed()) coupon.setUsed(true);,"The code does not ensure that the coupon object is thread-safe, which can lead to race conditions where multiple threads might incorrectly mark a coupon as used.","{
+  ""vulnerable"": true,
+  ""location"": ""if(!coupon.isUsed()) coupon.setUsed(true);"",
+  ""cwe"": ""CWE-480: Use of Object with Mutable State in Synchronization Context"",
+  ""owasp"": ""A12:2021: Insecure Deserialization"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code does not ensure that the coupon object is thread-safe, which can lead to race conditions where multiple threads might incorrectly mark a coupon as used."",
+  ""secure_code"": ""synchronized (coupon) { if (!coupon.isUsed()) cou"
+ASB-000336,Python,Django,CWE-345,,False,A07:2021,,False,Critical,,False,9.9,,,False,False,False,0.0,0.0,False,False,False,3.311,1309.04,47.02,4922.9,,,"{
+  ""vulnerable"": true,
+  ""location"": ""jwt.decode(token, options={""verify_signature"": False})"",
+  ""cwe"": ""CWE-327: Use of a Broken or Risky Algorithm"",
+  ""owasp"": ""A05:2021: Sensitive Data Exposure"",
+  ""severity"": ""High"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The code disables JWT signature verification, making it vulnerable to replay attacks and tampering."",
+  ""secure_code"": ""payload = jwt.decode(token)"",
+  ""false_positive_probability"": 0.1,
+  ""false_negative_probability"": 0.2
+}"
+ASB-000537,Dockerfile,None,CWE-250,CWE-786,False,A05:2021,A01:2021,False,Critical,High,False,9.9,9.8,0.1,True,True,True,0.1569,0.5652,False,True,True,4.123,939.44,46.77,4921.9,"USER root
+VOLUME /var/run/docker.sock:/var/run/docker.sock",Running as root and mounting the Docker socket can allow an attacker to gain full control of the host system.,"{
+  ""vulnerable"": true,
+  ""location"": ""USER root\nVOLUME /var/run/docker.sock:/var/run/docker.sock"",
+  ""cwe"": ""CWE-786"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""Running as root and mounting the Docker socket can allow an attacker to gain full control of the host system."",
+  ""secure_code"": ""FROM python:3.12-slim\nUSER appuser\nRUN useradd -m appuser\nVOLUME /var/run/docker.sock:/var/run/docker.sock\nCMD [\""python\"", \""app.py\""]"",
+  ""false_positive_probability"
+ASB-000571,Go,Gin,CWE-862,CWE-284,False,A01:2021,A06:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1111,0.7204,False,True,True,4.381,1293.81,46.39,4902.9,svc.Delete(id),"The function does not perform any authorization checks before deleting data, which could lead to unauthorized deletion of sensitive information.","{
+  ""vulnerable"": true,
+  ""location"": ""svc.Delete(id)"",
+  ""cwe"": ""CWE-284"",
+  ""owasp"": ""A06:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The function does not perform any authorization checks before deleting data, which could lead to unauthorized deletion of sensitive information."",
+  ""secure_code"": ""func exportData(w http.ResponseWriter, r *http.Request) {\n    id := chi.URLParam(r, \""id\"")\n    // Perform authorization check\n    if !isAuthorized(r, id) {\n        http.Error(w"
+ASB-000216,Python,Flask,CWE-79,CWE-79,True,A03:2021,A03:2021,True,High,High,True,8.0,8.6,0.6,True,True,True,0.2222,0.6727,False,False,False,4.26,1344.75,46.0,4913.2,"return f""<h1>Hello {name}</h1>""",The code is vulnerable to Cross-Site Scripting (XSS) because it directly includes user input in the HTML response without proper escaping.,"{
+  ""vulnerable"": true,
+  ""location"": ""return f\""<h1>Hello {name}</h1>\"""",
+  ""cwe"": ""CWE-79"",
+  ""owasp"": ""A03:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The code is vulnerable to Cross-Site Scripting (XSS) because it directly includes user input in the HTML response without proper escaping."",
+  ""secure_code"": ""from flask import escape\n@app.route(\""/api/users\"")\ndef processRequest():\n    name = request.args.get(\""name\"", \""\"")\n    return f\""<h1>Hello {escape(name)}</h1>\"""","
+ASB-000471,TypeScript,Next.js,CWE-639,CWE-89,False,A01:2021,A01:2021,True,High,High,True,8.0,7.5,0.5,True,True,True,0.1017,0.5085,False,True,True,6.104,1224.75,46.76,4913.2,Db.doc(req.params.doc_id).then(d => res.json(d));,The code is vulnerable to SQL injection because it directly uses user input (req.params.doc_id) in a database query without proper sanitization or parameterized queries.,"{
+  ""vulnerable"": true,
+  ""location"": ""Db.doc(req.params.doc_id).then(d => res.json(d));"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code is vulnerable to SQL injection because it directly uses user input (req.params.doc_id) in a database query without proper sanitization or parameterized queries."",
+  ""secure_code"": ""app.get(\""/a"
+ASB-000318,Python,Flask,CWE-840,,False,A04:2021,,False,Critical,,False,9.9,,,False,False,False,0.0,0.0,False,False,False,5.431,1353.51,45.57,4913.4,,,"{
+  ""vulnerable"": true,
+  ""location"": ""total = request.json[\""total\""]"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code directly uses the client-provided 'total' value without any validation or sanitization, which could lead to OS command injection if the 'total' value is used in a system call."",
+  ""secure_code"": """"""
+@app.r"
+ASB-000563,TypeScript,Angular,CWE-918,CWE-78,False,A05:2021,A01:2021,False,Critical,High,False,9.9,9.8,0.1,True,True,True,0.1429,0.298,False,True,True,4.141,1249.14,47.64,4913.4,lookup function,"The code constructs a command string using user-supplied input without proper validation or sanitization, allowing an attacker to inject arbitrary commands into the system.","{
+  ""vulnerable"": true,
+  ""location"": ""lookup function"",
+  ""cwe"": ""CWE-78: OS Command Injection"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code constructs a command string using user-supplied input without proper validation or sanitization, allowing an attacker to inject arbitrary commands into the system."",
+  ""secure_code"": ""function lookup(path) {\n  const sanitizedPath = sanitizePath(path);\n  return execSync(`cat ${sanitizedPat"
+ASB-000356,Python,Django,CWE-352,,False,A01:2021,,False,High,,False,8.0,,,False,False,False,0.0,0.0,False,False,False,4.67,1325.26,45.61,4915.2,,,"{
+  ""vulnerable"": true,
+  ""location"": ""The route handler for /api/transfer does not include a CSRF token check."",
+  ""cwe"": ""CWE-352"",
+  ""owasp"": ""A07:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 6.8,
+  ""explanation"": ""The code is vulnerable to Cross-Site Request Forgery (CSRF) attacks because it does not include a CSRF token in the request handling."",
+  ""secure_code"": """"""
+@app.route(""/api/transfer"", methods=[""POST""])
+def runTask():
+    if 'csrf_token' not in request.form or not verify_csrf_token(reque"
+ASB-000286,Go,Gin,CWE-362,CWE-457,False,A04:2021,A06:2021,False,Critical,High,False,9.9,8.0,1.9,False,True,True,0.037,0.3642,False,True,True,3.898,1326.17,47.49,4917.0,if !used() { setUsed() },The code may lead to a deadlock if the `used()` function is not thread-safe and multiple goroutines attempt to execute this block concurrently.,"{
+  ""vulnerable"": true,
+  ""location"": ""if !used() { setUsed() }"",
+  ""cwe"": ""CWE-457: Deadlock"",
+  ""owasp"": ""A06:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.0,
+  ""explanation"": ""The code may lead to a deadlock if the `used()` function is not thread-safe and multiple goroutines attempt to execute this block concurrently."",
+  ""secure_code"": ""func processRequest(w http.ResponseWriter, r *http.Request) {\n    mu.Lock()\n    defer mu.Unlock()\n    if !used() { setUsed() }\n}"",
+  ""false_positive_probabili"
+ASB-000300,JavaScript,Express,CWE-918,CWE-78,False,A05:2021,A01:2021,False,Critical,High,False,9.9,9.8,0.1,True,True,True,0.2143,0.402,False,True,True,3.785,1252.32,47.28,4918.8,fetchRecord function,"The code uses execSync to execute a system command with user-provided input, which can lead to OS command injection if the path parameter is not properly sanitized.","{
+  ""vulnerable"": true,
+  ""location"": ""fetchRecord function"",
+  ""cwe"": ""CWE-78: OS Command Injection"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code uses execSync to execute a system command with user-provided input, which can lead to OS command injection if the path parameter is not properly sanitized."",
+  ""secure_code"": ""const fs = require('fs');\nfunction fetchRecord(path) {\n  return fs.readFileSync(path, 'utf8');\n}"",
+  ""false"
+ASB-000515,Ruby,Rails,CWE-639,CWE-284,False,A01:2021,A06:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.0417,0.5767,False,True,True,3.252,1255.02,47.56,4920.7,render json: User.all,"The endpoint is accessible without authentication, allowing any user to retrieve all user data.","{
+  ""vulnerable"": true,
+  ""location"": ""render json: User.all"",
+  ""cwe"": ""CWE-284: Improper Access Control"",
+  ""owasp"": ""A06:2021 - Security Misconfiguration"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The endpoint is accessible without authentication, allowing any user to retrieve all user data."",
+  ""secure_code"": ""def process\n  authenticate_user!\n  render json: User.all\nend"",
+  ""false_positive_probability"": 0.1,
+  ""false_negative_probability"": 0.2
+}"
+ASB-000322,TypeScript,Vue,CWE-22,CWE-78,False,A01:2021,A01:2021,True,High,High,True,8.0,9.8,1.8,False,True,True,0.1404,0.2609,False,True,True,5.071,1346.47,44.11,4920.7,"res.sendFile(path.join(BASE_DIR, fn));","The code directly uses user-supplied input (`fn`) to construct a file path and send the file, which can lead to OS command injection if `fn` contains special characters or commands.","{
+  ""vulnerable"": true,
+  ""location"": ""res.sendFile(path.join(BASE_DIR, fn));"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A01:2021 - Broken Access Control"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code directly uses user-supplied input (`fn`) to construct a file path and send the file, which can lead to OS command injection if `fn` contains special characters or commands."",
+  ""secure_code"": ""const"
+ASB-000089,Dockerfile,None,CWE-250,CWE-948,False,A05:2021,A01:2021,False,High,High,True,8.0,7.5,0.5,True,True,True,0.1132,0.2043,False,True,False,3.066,1343.71,47.13,4920.7,FROM python:latest,Using the 'latest' tag for a base image can lead to security vulnerabilities as it may include outdated software and patches.,"{
+  ""vulnerable"": true,
+  ""location"": ""FROM python:latest"",
+  ""cwe"": ""CWE-948"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""Using the 'latest' tag for a base image can lead to security vulnerabilities as it may include outdated software and patches."",
+  ""secure_code"": ""FROM python:3.9-slim"",
+  ""false_positive_probability"": 0.1,
+  ""false_negative_probability"": 0.2
+}"
+ASB-000261,Python,Flask,CWE-1427,CWE-89,False,A05:2021,A01:2021,False,Critical,High,False,9.9,7.5,2.4,False,True,True,0.1481,0.208,False,True,True,4.423,1360.52,47.08,4920.7,docs = index.search(query),The code is vulnerable to SQL injection because it directly concatenates user input (query) with the SQL command without proper sanitization or parameterized queries.,"{
+  ""vulnerable"": true,
+  ""location"": ""docs = index.search(query)"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code is vulnerable to SQL injection because it directly concatenates user input (query) with the SQL command without proper sanitization or parameterized queries."",
+  ""secure_code"": ""def loadUser(query):\n    # Secure: Use parameterized query\n "
+ASB-000390,Python,Flask,CWE-918,,False,A10:2021,,False,High,,False,8.0,,,False,False,False,0.0,0.0,False,False,False,4.623,1365.57,46.29,4920.8,,,"{
+  ""vulnerable"": true,
+  ""location"": ""resp = requests.get(target)"",
+  ""cwe"": ""CWE-94"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""Critical"",
+  ""cvss"": 8.6,
+  ""explanation"": ""The code fetches data from an arbitrary URL provided by the user, which can lead to remote code execution if the target URL is malicious."",
+  ""secure_code"": """"""
+@app.route(""/api/export"", methods=[""POST""])
+def lookup():
+    target = request.json[""url""]
+    # Validate and sanitize the URL
+    parsed_url = urlparse(target)
+    if n"
+ASB-000236,TypeScript,Angular,CWE-1427,CWE-89,False,A05:2021,A01:2021,False,High,High,True,8.0,7.5,0.5,True,True,True,0.1481,0.3403,False,False,False,4.811,1157.9,47.05,4920.8,const d = idx.search(q);,The code is vulnerable to SQL injection because it directly concatenates user input (q) with the query string without proper sanitization or parameterized queries.,"{
+  ""vulnerable"": true,
+  ""location"": ""const d = idx.search(q);"",
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"",
+  ""owasp"": ""A01:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code is vulnerable to SQL injection because it directly concatenates user input (q) with the query string without proper sanitization or parameterized queries."",
+  ""secure_code"": ""function resolveTarget(q) { const d = idx.search(q); return llm(q +"
+ASB-000167,JavaScript,Angular,CWE-639,CWE-918,False,A01:2021,A05:2021,False,High,High,True,8.0,7.5,0.5,True,True,True,0.1053,0.4778,False,True,True,3.909,1271.76,46.5,4920.8,db.accounts.update(req.body),"The code directly updates the database with data from the request body, which can lead to mass assignment vulnerabilities if the request includes unintended or malicious fields.","{
+  ""vulnerable"": true,
+  ""location"": ""db.accounts.update(req.body)"",
+  ""cwe"": ""CWE-918"",
+  ""owasp"": ""A05:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 7.5,
+  ""explanation"": ""The code directly updates the database with data from the request body, which can lead to mass assignment vulnerabilities if the request includes unintended or malicious fields."",
+  ""secure_code"": ""function processRequest(req,res){ const allowedFields = ['username', 'email']; const sanitizedBody = pick(req.body, allowedFields); db"
+ASB-000127,C#,ASP.NET Core,CWE-611,CWE-611,True,A05:2021,A09:2021,False,Critical,High,False,9.9,8.5,1.4,False,True,False,0.1639,0.1221,False,True,True,4.123,2037.05,43.36,4918.2,The code does not disable XML External Entity (XXE) processing.,"XML External Entity (XXE) attacks can lead to information disclosure, denial of service, and remote code execution. The application is vulnerable if it does not disable XXE processing.","{
+  ""vulnerable"": true,
+  ""location"": ""The code does not disable XML External Entity (XXE) processing."",
+  ""cwe"": ""CWE-611"",
+  ""owasp"": ""A09:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 8.5,
+  ""explanation"": ""XML External Entity (XXE) attacks can lead to information disclosure, denial of service, and remote code execution. The application is vulnerable if it does not disable XXE processing."",
+  ""secure_code"": ""// Secure: Disable XXE processing\nvar settings = new XmlReaderSettings { DtdProcessing = Dt"
+ASB-000458,Swift,iOS,CWE-77,,False,A03:2021,,False,Critical,,False,9.9,,,False,False,False,0.0,0.0,False,False,False,5.165,1237.6,44.69,4920.9,,,"{
+  ""vulnerable"": true,
+  ""location"": ""let h = req.param(\""host\""); system(\""ping -c1 \(h)\"")"",
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"",
+  ""owasp"": ""A03:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 9.8,
+  ""explanation"": ""The code is vulnerable to OS command injection because it directly uses user input (`req.param(\""host\"")`) in a system call without proper sanitization or validation."",
+  ""secure_code"": ""let h = req.param(\""host\"");"
+ASB-000506,JavaScript,Next.js,CWE-352,CWE-78,False,A01:2021,A09:2021,False,Critical,High,False,9.9,6.5,3.4,False,True,True,0.1091,0.5424,False,True,True,3.369,1956.98,45.32,4921.0,transfer(req.body),"The code directly transfers user input to another function without validation or sanitization, which can lead to injection attacks.","{
+  ""vulnerable"": true,
+  ""location"": ""transfer(req.body)"",
+  ""cwe"": ""CWE-78"",
+  ""owasp"": ""A09:2021"",
+  ""severity"": ""High"",
+  ""cvss"": 6.5,
+  ""explanation"": ""The code directly transfers user input to another function without validation or sanitization, which can lead to injection attacks."",
+  ""secure_code"": ""function handleInput(req,res){ const sanitizedBody = sanitize(req.body); transfer(sanitizedBody); res.end(); }"",
+  ""false_positive_probability"": 0.1,
+  ""false_negative_probability"": 0.2
+}"
