@@ -1,0 +1,51 @@
+case_id,source,language,label,gold_cwe,verdict,notes
+HW-CWE-1321-typescript-proto-assign__vuln,handwritten,typescript,vulnerable,CWE-1321,keep,Object.assign from JSON can pollute
+HW-CWE-1333-python-redos-nested-quant__vuln,handwritten,python,vulnerable,CWE-1333,keep,nested quantifier
+HW-CWE-1336-python-ssti-flask-string__vuln,handwritten,python,vulnerable,CWE-1336,keep,render_template_string of user input
+HW-CWE-200-javascript-info-user-dump__vuln,handwritten,javascript,vulnerable,CWE-200,keep,returns full user document
+HW-CWE-338-javascript-prng-otp__vuln,handwritten,javascript,vulnerable,CWE-338,keep,Math.random OTP
+HW-CWE-347-javascript-jwt-alg-from-header__vuln,handwritten,javascript,vulnerable,CWE-347,keep,algorithm taken from attacker header
+HW-CWE-347-typescript-jwt-hs-pubkey-ts__vuln,handwritten,typescript,vulnerable,CWE-347,keep,HS256 accepted with public key
+HW-CWE-78-javascript-cmd-exec-host__vuln,handwritten,javascript,vulnerable,CWE-78,keep,exec concatenates query.host
+HW-CWE-798-javascript-secret-slack__vuln,handwritten,javascript,vulnerable,CWE-798,keep,webhook token in source
+HW-CWE-94-typescript-codeinj-settimeout-str__vuln,handwritten,typescript,vulnerable,CWE-94,keep,setTimeout of string
+HW-CWE-1321-typescript-proto-assign__safe,handwritten,typescript,safe,SAFE,keep,null object plus key deny
+HW-CWE-1333-python-redos-nested-quant__safe,handwritten,python,safe,SAFE,keep,linear regex plus length cap
+HW-CWE-1336-python-ssti-flask-string__safe,handwritten,python,safe,SAFE,keep,static template file
+HW-CWE-200-javascript-info-user-dump__safe,handwritten,javascript,safe,SAFE,keep,id and name only
+HW-CWE-338-javascript-prng-otp__safe,handwritten,javascript,safe,SAFE,keep,crypto.randomInt
+HW-CWE-347-javascript-jwt-alg-from-header__safe,handwritten,javascript,safe,SAFE,keep,HS256 allow-list
+HW-CWE-347-typescript-jwt-hs-pubkey-ts__safe,handwritten,typescript,safe,SAFE,keep,RS256 only
+HW-CWE-78-javascript-cmd-git-clone__safe,handwritten,javascript,safe,SAFE,keep,url allow-list plus spawn
+HW-CWE-798-typescript-secret-basic-ts__safe,handwritten,typescript,safe,SAFE,keep,secret from env
+HW-CWE-94-typescript-codeinj-vm__safe,handwritten,typescript,safe,SAFE,keep,allow-listed functions
+scw-001437__vuln,securecode-web-test,python,vulnerable,CWE-306,keep,/admin has no auth
+scw-001459__vuln,securecode-web-test,javascript,vulnerable,CWE-778,keep,official pair; sink in logging path
+scw-001484__vuln,securecode-web-test,javascript,vulnerable,CWE-922,keep,official pair
+scw-001513__vuln,securecode-web-test,typescript,vulnerable,CWE-532,keep,error object stored/returned
+scw-001529__vuln,securecode-web-test,typescript,vulnerable,CWE-89,keep,SQL built from request
+scw-001554__vuln,securecode-web-test,javascript,vulnerable,CWE-942,keep,CORS origin handling
+scw-001572__vuln,securecode-web-test,typescript,vulnerable,CWE-639,keep,IDOR-style access
+scw-001595__vuln,securecode-web-test,python,vulnerable,CWE-918,keep,SSRF fetch
+scw-001437__safe,securecode-web-test,python,safe,SAFE,keep,bearer token compare
+scw-001459__safe,securecode-web-test,javascript,safe,SAFE,keep,hardened counterpart
+scw-001484__safe,securecode-web-test,javascript,safe,SAFE,keep,hardened counterpart
+scw-001513__safe,securecode-web-test,typescript,safe,SAFE,keep,generic error id only
+scw-001529__safe,securecode-web-test,typescript,safe,SAFE,keep,parameterized query
+scw-001554__safe,securecode-web-test,javascript,safe,SAFE,keep,origin allow-list helper
+scw-001572__safe,securecode-web-test,typescript,safe,SAFE,keep,role checks
+scw-001595__safe,securecode-web-test,python,safe,SAFE,keep,URL/IP blocklist
+scw-001615__safe,securecode-web-test,javascript,safe,SAFE,keep,https origin enforced
+scw-001624__safe,securecode-web-test,javascript,safe,SAFE,keep,CORS locked to https origin
+llm02-langchain-streaming-callback-data-exposure__vuln,securecode-aiml,typescript,vulnerable,LLM02,keep,callback can stream sensitive data
+ASB-000017__vuln,appsecbench-test,javascript,vulnerable,CWE-22,keep,sendFile of query filename
+ASB-000075__vuln,appsecbench-val,python,vulnerable,CWE-307,weak,after comment strip this is just verify(); missing rate-limit is invisible
+ASB-000048__vuln,appsecbench-train,typescript,vulnerable,CWE-1427,keep,retrieved docs concatenated into prompt
+ASB-000166__vuln,appsecbench-train,typescript,vulnerable,CWE-532,keep,logs password
+ASB-000375__vuln,appsecbench-train,typescript,vulnerable,CWE-840,weak,charge(body.total) only; business-logic CWE is under-specified
+ASB-000017__safe,appsecbench-test,javascript,safe,SAFE,keep,path prefix check
+ASB-000054__safe,appsecbench-val,python,safe,SAFE,keep,retrieved data fenced; still concatenates user_msg
+ASB-000038__safe,appsecbench-train,javascript,safe,SAFE,keep,hostname allow-list
+ASB-000148__safe,appsecbench-train,typescript,safe,SAFE,keep,password redacted in log
+ASB-000351__safe,appsecbench-train,javascript,safe,SAFE,keep,rate.ok added
+ASB-000009__vuln,appsecbench-train,javascript,vulnerable,CWE-915,weak,after strip only ApolloServer constructor remains; gold depended on comment

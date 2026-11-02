@@ -1,3 +1,7 @@
 .env
 __pycache__/
+**/__pycache__/
+.DS_Store
 documentation_files.jsonl
+code_dee_eval/node_modules/
+code_dee_eval/.codeql-db-*/

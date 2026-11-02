@@ -1,0 +1,457 @@
+case_id,pair_id,language,framework,label,gold_cwe,pred_cwe,gold_vuln,pred_vuln,cwe_correct,latency_s,prompt_tps,gen_tps,ram_rss_mb,raw_output
+SCP-000042__vuln,SCP-000042,Java,Spring Boot,vulnerable,CWE-1021,CWE-1024,True,True,False,0.808,410.28,49.64,4886.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-1024""
+}"
+SCP-000042__safe,SCP-000042,Java,Spring Boot,safe,SAFE,,False,False,False,0.638,675.71,50.68,4888.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000333__vuln,SCP-000333,C#,ASP.NET Core,vulnerable,CWE-345,CWE-327,True,True,False,0.7,646.01,49.55,4890.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+SCP-000333__safe,SCP-000333,C#,ASP.NET Core,safe,SAFE,,False,False,False,0.551,693.67,50.61,4891.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000410__vuln,SCP-000410,Swift,iOS,vulnerable,CWE-345,CWE-327,True,True,False,0.629,1008.34,49.59,4894.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+SCP-000410__safe,SCP-000410,Swift,iOS,safe,SAFE,,False,False,False,0.476,1120.42,50.64,4896.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000161__vuln,SCP-000161,Python,Flask,vulnerable,CWE-209,CWE-78,True,True,False,0.676,661.31,49.76,4897.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+SCP-000161__safe,SCP-000161,Python,Flask,safe,SAFE,,False,False,False,0.549,733.18,50.67,4900.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000094__vuln,SCP-000094,Python,FastAPI,vulnerable,CWE-20,CWE-89,True,True,False,0.678,706.96,49.75,4901.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000094__safe,SCP-000094,Python,FastAPI,safe,SAFE,,False,False,False,0.633,622.28,50.67,4904.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000248__vuln,SCP-000248,Ruby,Rails,vulnerable,CWE-79,CWE-80,True,True,False,0.604,1024.14,49.8,4906.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-80""
+}"
+SCP-000248__safe,SCP-000248,Ruby,Rails,safe,SAFE,,False,False,False,0.478,967.37,50.75,4908.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000273__vuln,SCP-000273,C++,STD,vulnerable,CWE-134,CWE-190,True,True,False,0.626,1014.84,49.67,4910.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-190""
+}"
+SCP-000273__safe,SCP-000273,C++,STD,safe,SAFE,,False,False,False,0.479,1022.38,50.65,4912.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000208__vuln,SCP-000208,Go,Gin,vulnerable,CWE-840,CWE-451,True,True,False,0.781,527.9,49.69,4913.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-451""
+}"
+SCP-000208__safe,SCP-000208,Go,Gin,safe,SAFE,,False,False,False,0.634,671.01,50.64,4915.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000345__vuln,SCP-000345,C#,ASP.NET Core,vulnerable,CWE-90,CWE-89,True,True,False,0.605,1015.48,49.8,4917.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000345__safe,SCP-000345,C#,ASP.NET Core,safe,SAFE,,False,False,False,0.475,1114.66,50.76,4919.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000237__vuln,SCP-000237,Java,Spring Boot,vulnerable,CWE-79,CWE-80,True,True,False,0.604,1029.11,49.87,4921.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-80""
+}"
+SCP-000237__safe,SCP-000237,Java,Spring Boot,safe,SAFE,,False,False,False,0.476,993.07,50.72,4922.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000450__vuln,SCP-000450,C++,Qt,vulnerable,CWE-89,CWE-89,True,True,True,0.718,610.39,49.64,4924.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89 SQL Injection""
+}"
+SCP-000450__safe,SCP-000450,C++,Qt,safe,SAFE,,False,False,False,0.549,653.54,50.73,4926.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000181__vuln,SCP-000181,Go,Gin,vulnerable,CWE-79,CWE-79,True,True,True,0.678,756.71,49.84,4928.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+SCP-000181__safe,SCP-000181,Go,Gin,safe,SAFE,,False,False,False,0.549,760.76,50.7,4930.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000457__vuln,SCP-000457,C#,gRPC,vulnerable,CWE-306,,True,False,False,0.563,1008.79,50.11,4930.3,"```json
+{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}
+```"
+SCP-000457__safe,SCP-000457,C#,gRPC,safe,SAFE,CWE-312,False,True,False,0.818,1206.26,49.13,4930.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+SCP-000060__vuln,SCP-000060,Ruby,Rails,vulnerable,CWE-352,CWE-352,True,True,True,0.91,698.5,49.09,4930.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-352: Cross-Site Request Forgery (CSRF)""
+}"
+SCP-000060__safe,SCP-000060,Ruby,Rails,safe,SAFE,,False,False,False,0.549,720.42,50.66,4930.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000460__vuln,SCP-000460,PHP,Laravel,vulnerable,CWE-916,,True,False,False,0.477,974.2,50.71,4930.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000460__safe,SCP-000460,PHP,Laravel,safe,SAFE,,False,False,False,0.475,1026.33,50.71,4930.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000185__vuln,SCP-000185,Scala,Play,vulnerable,CWE-338,CWE-327,True,True,False,0.698,610.07,49.59,4930.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+SCP-000185__safe,SCP-000185,Scala,Play,safe,SAFE,,False,False,False,0.548,717.76,50.75,4930.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000378__vuln,SCP-000378,Rust,Actix,vulnerable,CWE-502,CWE-89,True,True,False,0.678,626.74,49.83,4930.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000378__safe,SCP-000378,Rust,Actix,safe,SAFE,,False,False,False,0.561,1055.29,50.1,4930.5,"```json
+{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}
+```"
+SCP-000326__vuln,SCP-000326,C#,ASP.NET Core,vulnerable,CWE-89,CWE-89,True,True,True,0.675,654.6,49.89,4930.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000326__safe,SCP-000326,C#,ASP.NET Core,safe,SAFE,,False,False,False,0.547,675.59,50.82,4930.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000433__vuln,SCP-000433,Python,Django,vulnerable,CWE-532,CWE-502,True,True,False,0.624,1001.36,49.79,4930.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-502""
+}"
+SCP-000433__safe,SCP-000433,Python,Django,safe,SAFE,,False,False,False,0.478,983.31,50.78,4930.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000075__vuln,SCP-000075,Scala,Play,vulnerable,CWE-502,CWE-702,True,True,False,0.7,717.16,49.76,4930.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-702""
+}"
+SCP-000075__safe,SCP-000075,Scala,Play,safe,SAFE,,False,False,False,0.476,1109.31,50.78,4930.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000022__vuln,SCP-000022,Go,Gin,vulnerable,CWE-918,CWE-89,True,True,False,0.76,579.45,49.81,4930.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000022__safe,SCP-000022,Go,Gin,safe,SAFE,CWE-89,False,True,False,0.924,547.31,49.74,4932.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000299__vuln,SCP-000299,Scala,Play,vulnerable,CWE-798,CWE-312,True,True,False,0.888,600.25,49.09,4932.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+SCP-000299__safe,SCP-000299,Scala,Play,safe,SAFE,,False,False,False,0.478,992.61,50.81,4932.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000381__vuln,SCP-000381,Rust,Actix,vulnerable,CWE-90,CWE-89,True,True,False,0.599,1009.65,49.9,4932.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000381__safe,SCP-000381,Rust,Actix,safe,SAFE,,False,False,False,0.474,1117.16,50.78,4932.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000191__vuln,SCP-000191,Ruby,Rails,vulnerable,CWE-942,CWE-319,True,True,False,0.701,738.02,49.74,4932.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+SCP-000191__safe,SCP-000191,Ruby,Rails,safe,SAFE,,False,False,False,0.548,780.97,50.79,4932.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000095__vuln,SCP-000095,C#,ASP.NET Core,vulnerable,CWE-778,CWE-200,True,True,False,0.704,659.53,49.29,4934.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+SCP-000095__safe,SCP-000095,C#,ASP.NET Core,safe,SAFE,,False,False,False,0.64,801.44,49.54,4936.4,"```json
+{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}
+```"
+SCP-000159__vuln,SCP-000159,Python,Django,vulnerable,CWE-362,CWE-358,True,True,False,0.7,725.92,49.7,4938.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-358""
+}"
+SCP-000159__safe,SCP-000159,Python,Django,safe,SAFE,,False,False,False,0.55,783.95,50.8,4940.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000165__vuln,SCP-000165,PHP,Laravel,vulnerable,CWE-611,CWE-829,True,True,False,0.626,999.34,49.77,4941.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-829""
+}"
+SCP-000165__safe,SCP-000165,PHP,Laravel,safe,SAFE,,False,False,False,0.55,761.01,50.78,4943.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000155__vuln,SCP-000155,C#,ASP.NET Core,vulnerable,CWE-502,CWE-89,True,True,False,0.676,616.24,49.85,4945.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000155__safe,SCP-000155,C#,ASP.NET Core,safe,SAFE,,False,False,False,0.549,676.16,50.73,4947.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000369__vuln,SCP-000369,Rust,Actix,vulnerable,CWE-862,CWE-284,True,True,False,0.804,617.38,49.34,4948.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284: Improper Access Control""
+}"
+SCP-000369__safe,SCP-000369,Rust,Actix,safe,SAFE,,False,False,False,0.478,1046.54,50.73,4950.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000278__vuln,SCP-000278,C++,STD,vulnerable,CWE-798,CWE-312,True,True,False,0.887,616.6,49.11,4952.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+SCP-000278__safe,SCP-000278,C++,STD,safe,SAFE,,False,False,False,0.55,684.49,50.65,4954.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000110__vuln,SCP-000110,Python,Django,vulnerable,CWE-352,CWE-762,True,True,False,0.696,623.56,49.75,4954.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-762""
+}"
+SCP-000110__safe,SCP-000110,Python,Django,safe,SAFE,,False,False,False,0.475,1135.86,50.77,4954.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000170__vuln,SCP-000170,Python,Django,vulnerable,CWE-915,CWE-89,True,True,False,0.678,730.04,49.81,4954.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000170__safe,SCP-000170,Python,Django,safe,SAFE,,False,False,False,0.549,911.74,50.71,4954.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000154__vuln,SCP-000154,Go,Gin,vulnerable,CWE-345,CWE-327,True,True,False,0.697,627.57,49.75,4954.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+SCP-000154__safe,SCP-000154,Go,Gin,safe,SAFE,,False,False,False,0.634,608.46,50.68,4954.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000156__vuln,SCP-000156,TypeScript,Next.js,vulnerable,CWE-770,CWE-400,True,True,False,0.697,660.38,49.8,4954.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-400""
+}"
+SCP-000156__safe,SCP-000156,TypeScript,Next.js,safe,SAFE,,False,False,False,0.549,804.55,50.73,4954.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000441__vuln,SCP-000441,TypeScript,NestJS,vulnerable,CWE-307,,True,False,False,0.477,1035.69,50.77,4954.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000441__safe,SCP-000441,TypeScript,NestJS,safe,SAFE,,False,False,False,0.549,714.68,50.76,4954.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000089__vuln,SCP-000089,Go,Gin,vulnerable,CWE-345,CWE-319,True,True,False,0.7,729.31,49.7,4954.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+SCP-000089__safe,SCP-000089,Go,Gin,safe,SAFE,,False,False,False,0.707,589.69,50.71,4954.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000275__vuln,SCP-000275,C++,STD,vulnerable,CWE-190,CWE-190,True,True,True,0.698,639.99,49.73,4954.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-190""
+}"
+SCP-000275__safe,SCP-000275,C++,STD,safe,SAFE,,False,False,False,0.549,727.61,50.7,4954.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000238__vuln,SCP-000238,Java,Spring Boot,vulnerable,CWE-307,CWE-79,True,True,False,0.676,671.23,49.84,4954.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+SCP-000238__safe,SCP-000238,Java,Spring Boot,safe,SAFE,,False,False,False,0.55,762.33,50.75,4956.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000093__vuln,SCP-000093,Java,Spring Boot,vulnerable,CWE-639,CWE-284,True,True,False,0.697,714.73,49.74,4956.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+SCP-000093__safe,SCP-000093,Java,Spring Boot,safe,SAFE,,False,False,False,0.552,855.4,50.67,4956.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000128__vuln,SCP-000128,TypeScript,Next.js,vulnerable,CWE-918,CWE-89,True,True,False,0.676,706.13,49.87,4956.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000128__safe,SCP-000128,TypeScript,Next.js,safe,SAFE,CWE-89,False,True,False,0.763,646.2,49.82,4956.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000054__vuln,SCP-000054,Ruby,Rails,vulnerable,CWE-502,CWE-78,True,True,False,0.676,726.19,49.88,4956.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+SCP-000054__safe,SCP-000054,Ruby,Rails,safe,SAFE,,False,False,False,0.55,763.41,50.68,4956.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000323__vuln,SCP-000323,Go,Gin,vulnerable,CWE-434,CWE-78,True,True,False,0.677,660.09,49.82,4956.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+SCP-000323__safe,SCP-000323,Go,Gin,safe,SAFE,,False,False,False,0.633,585.25,50.69,4956.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000130__vuln,SCP-000130,Java,Spring Boot,vulnerable,CWE-22,CWE-78,True,True,False,0.678,692.72,49.84,4956.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+SCP-000130__safe,SCP-000130,Java,Spring Boot,safe,SAFE,,False,False,False,0.55,772.75,50.7,4956.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000038__vuln,SCP-000038,Python,FastAPI,vulnerable,CWE-94,CWE-89,True,True,False,0.759,539.97,49.83,4956.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000038__safe,SCP-000038,Python,FastAPI,safe,SAFE,,False,False,False,0.71,623.77,50.61,4956.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000180__vuln,SCP-000180,TypeScript,NestJS,vulnerable,CWE-798,CWE-312,True,True,False,0.89,621.91,49.12,4956.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+SCP-000180__safe,SCP-000180,TypeScript,NestJS,safe,SAFE,,False,False,False,0.551,692.43,50.69,4956.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000003__vuln,SCP-000003,Python,Django,vulnerable,CWE-798,CWE-259,True,True,False,0.986,545.47,49.17,4956.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-259: Use of Hard-coded Credentials""
+}"
+SCP-000003__safe,SCP-000003,Python,Django,safe,SAFE,CWE-312,False,True,False,0.976,655.55,49.04,4956.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+SCP-000202__vuln,SCP-000202,Go,Gin,vulnerable,CWE-330,CWE-358,True,True,False,0.697,615.82,49.71,4956.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-358""
+}"
+SCP-000202__safe,SCP-000202,Go,Gin,safe,SAFE,,False,False,False,0.477,1140.07,50.76,4956.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000449__vuln,SCP-000449,Scala,Play,vulnerable,CWE-307,CWE-352,True,True,False,0.817,936.74,49.11,4956.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-352: Cross-Site Scripting (XSS)""
+}"
+SCP-000449__safe,SCP-000449,Scala,Play,safe,SAFE,,False,False,False,0.475,1034.2,50.71,4956.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000426__vuln,SCP-000426,YAML,Kubernetes,vulnerable,CWE-693,CWE-1078,True,True,False,0.647,973.9,49.7,4956.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-1078""
+}"
+SCP-000426__safe,SCP-000426,YAML,Kubernetes,safe,SAFE,,False,False,False,0.476,1073.83,50.81,4956.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000005__vuln,SCP-000005,Python,FastAPI,vulnerable,CWE-502,CWE-708,True,True,False,0.784,597.3,49.68,4956.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-708""
+}"
+SCP-000005__safe,SCP-000005,Python,FastAPI,safe,SAFE,,False,False,False,0.707,537.75,50.69,4956.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000008__vuln,SCP-000008,Python,Flask,vulnerable,CWE-916,CWE-327,True,True,False,0.784,594.91,49.65,4956.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+SCP-000008__safe,SCP-000008,Python,Flask,safe,SAFE,,False,False,False,0.635,650.63,50.65,4956.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000387__vuln,SCP-000387,Kotlin,Android,vulnerable,CWE-79,CWE-78,True,True,False,0.676,600.18,49.84,4956.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+SCP-000387__safe,SCP-000387,Kotlin,Android,safe,SAFE,,False,False,False,0.548,644.89,50.72,4956.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000292__vuln,SCP-000292,Scala,Play,vulnerable,CWE-79,CWE-79,True,True,True,0.604,981.15,49.89,4956.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+SCP-000292__safe,SCP-000292,Scala,Play,safe,SAFE,,False,False,False,0.563,942.01,50.07,4956.8,"```json
+{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}
+```"
+SCP-000164__vuln,SCP-000164,Go,Gin,vulnerable,CWE-117,CWE-14,True,True,False,0.679,687.16,49.81,4957.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-14""
+}"
+SCP-000164__safe,SCP-000164,Go,Gin,safe,SAFE,CWE-180,False,True,False,1.039,751.69,48.75,4957.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-180: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')""
+}"
+SCP-000046__vuln,SCP-000046,Python,Flask,vulnerable,CWE-93,CWE-141,True,True,False,0.781,536.42,49.66,4957.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-141""
+}"
+SCP-000046__safe,SCP-000046,Python,Flask,safe,SAFE,,False,False,False,0.552,903.43,50.65,4957.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+SCP-000144__vuln,SCP-000144,Go,Gin,vulnerable,CWE-22,CWE-89,True,True,False,0.676,687.46,49.83,4957.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+SCP-000144__safe,SCP-000144,Go,Gin,safe,SAFE,CWE-89,False,True,False,0.681,861.44,49.65,4958.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"

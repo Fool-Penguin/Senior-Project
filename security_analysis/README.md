@@ -4,6 +4,8 @@
 **Input sample:** [`Repos_Final_Sample.csv`](../Repos_Final_Sample.csv) (170 repositories)
 **Scope:** Extends the project's software-quality/maintenance research with a security-posture analysis, covering both traditional software security and agent-specific execution risks (sandboxing, tool permissions, credential handling, prompt-injection awareness).
 
+> **Later work (LLM vuln/fixed dataset):** this folder is the 170-repo docs / GHSA / SBOM / OSV pipeline. The catalogue pairs, 155-row exam, and knowledge base used to test Qwen and other models are documented in [`../datasets/SECURITY_DATASET.md`](../datasets/SECURITY_DATASET.md).
+
 ---
 
 ## 1. Why this exists

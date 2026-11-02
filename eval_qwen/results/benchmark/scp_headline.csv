@@ -1,0 +1,2 @@
+model,split,n_pairs,n_snippets,detection_accuracy,detection_recall,detection_specificity,cwe_accuracy,latency_mean_s,wall_s,ram_peak_mb,gen_tps_mean
+qwen2.5-coder:7b,test,56,112,0.9196,0.9464,0.8929,0.1071,0.6425,77.103,4958.8,50.1227
