@@ -1,0 +1,81 @@
+sample_id,ghsa_id,repo,file,true_label,cwe_id,predicted_label,predicted_cwe,correct_binary,correct_cwe,latency_s,extract,raw_output
+GHSA-ccv6-r384-xp75_FIXED,GHSA-ccv6-r384-xp75,langflow-ai/langflow,src/lfx/src/lfx/base/data/base_file.py,SAFE,CWE-200,SAFE,,True,True,3.712,hunks,- SAFE
+GHSA-825q-w924-xhgx_VULN,GHSA-825q-w924-xhgx,n8n-io/n8n,packages/core/src/html-sandbox.ts,VULNERABLE,CWE-79,SAFE,,False,False,0.72,full_file,SAFE
+GHSA-rh3m-xv7m-9jhf_FIXED,GHSA-rh3m-xv7m-9jhf,Mintplex-Labs/anything-llm,server/utils/boot/MetaGenerator.js,SAFE,CWE-79,SAFE,,True,True,3.322,hunks,- SAFE
+GHSA-c4qg-j8jg-42q5_VULN,GHSA-c4qg-j8jg-42q5,openclaw/openclaw,extensions/qqbot/src/api.ts,VULNERABLE,CWE-918,VULNERABLE,CWE-78,True,False,3.146,hunks,- VULNERABLE CWE-78
+GHSA-hqm2-cfx2-2vgh_FIXED,GHSA-hqm2-cfx2-2vgh,pipecat-ai/pipecat,src/pipecat/runner/run.py,SAFE,CWE-862,SAFE,,True,True,2.987,hunks,- SAFE
+GHSA-7v5m-pr3q-6453_VULN,GHSA-7v5m-pr3q-6453,earendil-works/pi,packages/coding-agent/src/core/export-html/template.js,VULNERABLE,CWE-79,VULNERABLE,CWE-89,True,False,3.14,hunks,- VULNERABLE CWE-89
+GHSA-c28g-vh7m-fm7v_VULN,GHSA-c28g-vh7m-fm7v,openclaw/openclaw,src/auto-reply/command-auth.ts,VULNERABLE,CWE-862,SAFE,,False,False,1.727,hunks,- SAFE
+GHSA-2ww6-868g-2c56_FIXED,GHSA-2ww6-868g-2c56,openclaw/openclaw,skills/openai-image-gen/scripts/gen.py,SAFE,CWE-79,SAFE,,True,True,3.382,hunks,SAFE
+GHSA-49mx-fj45-q3p6_FIXED,GHSA-49mx-fj45-q3p6,n8n-io/n8n,packages/@n8n/task-runner/src/js-task-runner/js-task-runner.ts,SAFE,CWE-200,SAFE,,True,True,2.195,hunks,- SAFE
+GHSA-w584-2h2r-2hvf_FIXED,GHSA-w584-2h2r-2hvf,langflow-ai/langflow,src/lfx/src/lfx/custom/validate.py,SAFE,CWE-94,VULNERABLE,CWE-94,False,False,2.633,hunks,- VULNERABLE CWE-94
+GHSA-p5qc-vj2x-9rjp_FIXED,GHSA-p5qc-vj2x-9rjp,arc53/DocsGPT,application/api/user/routes.py,SAFE,CWE-22,SAFE,,True,True,2.935,hunks,- SAFE
+GHSA-f2f7-gj54-6vpv_FIXED,GHSA-f2f7-gj54-6vpv,hiyouga/LlamaFactory,scripts/convert_ckpt/llamafy_baichuan2.py,SAFE,CWE-502,SAFE,,True,True,2.336,hunks,- SAFE
+GHSA-62mm-xwmv-crhg_VULN,GHSA-62mm-xwmv-crhg,khoj-ai/khoj,src/khoj/routers/web_client.py,VULNERABLE,CWE-22,SAFE,,False,False,2.49,hunks,- SAFE
+GHSA-fgx4-p8xf-qhp9_FIXED,GHSA-fgx4-p8xf-qhp9,lobehub/lobehub,packages/web-crawler/src/crawImpl/naive.ts,SAFE,CWE-918,VULNERABLE,CWE-78,False,False,2.538,full_file,- VULNERABLE CWE-78
+GHSA-hfhx-w8p8-4hc7_VULN,GHSA-hfhx-w8p8-4hc7,Budibase/budibase,packages/server/src/utilities/fileUtils.ts,VULNERABLE,CWE-918,VULNERABLE,CWE-78,True,False,1.643,full_file,- VULNERABLE CWE-78
+GHSA-j8cv-x86q-rj85_VULN,GHSA-j8cv-x86q-rj85,pipecat-ai/pipecat,src/pipecat/runner/run.py,VULNERABLE,CWE-862,SAFE,,False,False,3.235,hunks,- SAFE
+GHSA-c28g-vh7m-fm7v_FIXED,GHSA-c28g-vh7m-fm7v,openclaw/openclaw,src/auto-reply/command-auth.ts,SAFE,CWE-862,SAFE,,True,True,1.705,hunks,- SAFE
+GHSA-62mm-xwmv-crhg_FIXED,GHSA-62mm-xwmv-crhg,khoj-ai/khoj,src/khoj/routers/web_client.py,SAFE,CWE-22,SAFE,,True,True,2.641,hunks,- SAFE
+GHSA-jwqg-jfg3-x5vv_VULN,GHSA-jwqg-jfg3-x5vv,Mintplex-Labs/anything-llm,server/endpoints/workspaces.js,VULNERABLE,CWE-200,SAFE,,False,False,2.084,hunks,- SAFE
+GHSA-fgx4-p8xf-qhp9_VULN,GHSA-fgx4-p8xf-qhp9,lobehub/lobehub,packages/web-crawler/src/crawImpl/naive.ts,VULNERABLE,CWE-918,SAFE,,False,False,2.335,full_file,- SAFE
+GHSA-4gc7-qcvf-38wg_VULN,GHSA-4gc7-qcvf-38wg,openclaw/openclaw,src/infra/exec-safe-bin-policy.ts,VULNERABLE,CWE-78,SAFE,,False,False,3.1,hunks,- SAFE
+GHSA-49mx-fj45-q3p6_VULN,GHSA-49mx-fj45-q3p6,n8n-io/n8n,packages/@n8n/task-runner/src/js-task-runner/js-task-runner.ts,VULNERABLE,CWE-200,SAFE,,False,False,1.863,hunks,- SAFE
+GHSA-4564-pvr2-qq4h_VULN,GHSA-4564-pvr2-qq4h,openclaw/openclaw,src/agents/cli-credentials.ts,VULNERABLE,CWE-78,VULNERABLE,CWE-78,True,True,3.427,hunks,- VULNERABLE CWE-78
+GHSA-3645-fxcv-hqr4_VULN,GHSA-3645-fxcv-hqr4,langflow-ai/langflow,src/lfx/src/lfx/components/langchain_utilities/csv_agent.py,VULNERABLE,CWE-94,SAFE,,False,False,2.652,hunks,- SAFE
+GHSA-7r9j-r86q-7g45_VULN,GHSA-7r9j-r86q-7g45,Budibase/budibase,packages/backend-core/src/blacklist/blacklist.ts,VULNERABLE,CWE-918,VULNERABLE,CWE-89,True,False,1.176,full_file,- VULNERABLE CWE-89
+GHSA-6hrp-7mw6-8v59_FIXED,GHSA-6hrp-7mw6-8v59,Mintplex-Labs/anything-llm,server/utils/agents/aibitat/plugins/filesystem/search-files.js,SAFE,CWE-77,VULNERABLE,CWE-78,False,False,3.527,hunks,- VULNERABLE CWE-78
+GHSA-79ph-745m-6wxq_FIXED,GHSA-79ph-745m-6wxq,langflow-ai/langflow,src/backend/base/langflow/api/v1/knowledge_bases.py,SAFE,CWE-22,SAFE,,True,True,2.815,hunks,SAFE
+GHSA-825q-w924-xhgx_FIXED,GHSA-825q-w924-xhgx,n8n-io/n8n,packages/core/src/html-sandbox.ts,SAFE,CWE-79,SAFE,,True,True,0.767,full_file,SAFE
+GHSA-4qcj-m5wp-jmf4_FIXED,GHSA-4qcj-m5wp-jmf4,Budibase/budibase,packages/worker/src/api/routes/global/groups.ts,SAFE,CWE-862,VULNERABLE,CWE-89,False,False,1.867,full_file,- VULNERABLE CWE-89
+GHSA-7xhj-55q9-pc3m_FIXED,GHSA-7xhj-55q9-pc3m,openclaw/openclaw,src/hooks/workspace.ts,SAFE,CWE-22,SAFE,,True,True,3.064,hunks,- SAFE
+GHSA-6hrp-7mw6-8v59_VULN,GHSA-6hrp-7mw6-8v59,Mintplex-Labs/anything-llm,server/utils/agents/aibitat/plugins/filesystem/search-files.js,VULNERABLE,CWE-77,VULNERABLE,CWE-78,True,False,3.64,hunks,- VULNERABLE CWE-78
+GHSA-f2f7-gj54-6vpv_VULN,GHSA-f2f7-gj54-6vpv,hiyouga/LlamaFactory,scripts/convert_ckpt/llamafy_baichuan2.py,VULNERABLE,CWE-502,SAFE,,False,False,2.268,hunks,- SAFE
+GHSA-g86v-f9qv-rh6m_VULN,GHSA-g86v-f9qv-rh6m,openclaw/openclaw,src/shared/net/ip.ts,VULNERABLE,CWE-918,VULNERABLE,CWE-1336,True,False,3.834,hunks,- VULNERABLE CWE-1336
+GHSA-7fcc-cw49-xm78_FIXED,GHSA-7fcc-cw49-xm78,openclaw/openclaw,extensions/lobster/src/lobster-tool.ts,SAFE,CWE-78,SAFE,,True,True,3.117,hunks,- SAFE
+GHSA-9qhq-v63v-fv3j_FIXED,GHSA-9qhq-v63v-fv3j,MervinPraison/PraisonAI,src/praisonai/praisonai/cli/features/mcp.py,SAFE,CWE-78,VULNERABLE,CWE-78,False,False,3.105,hunks,- VULNERABLE CWE-78
+GHSA-9gm9-c8mq-vq7m_FIXED,GHSA-9gm9-c8mq-vq7m,MervinPraison/PraisonAI,src/praisonai/praisonai/cli/features/mcp.py,SAFE,CWE-78,VULNERABLE,CWE-78,False,False,0.265,hunks,- VULNERABLE CWE-78
+GHSA-j7qq-vr8c-xvw3_FIXED,GHSA-j7qq-vr8c-xvw3,mlflow/mlflow,mlflow/crewai/autolog.py,SAFE,CWE-200,SAFE,,True,True,2.86,hunks,- SAFE
+GHSA-7fcc-cw49-xm78_VULN,GHSA-7fcc-cw49-xm78,openclaw/openclaw,extensions/lobster/src/lobster-tool.ts,VULNERABLE,CWE-78,VULNERABLE,CWE-78,True,True,3.258,hunks,- VULNERABLE CWE-78
+GHSA-4qcj-m5wp-jmf4_VULN,GHSA-4qcj-m5wp-jmf4,Budibase/budibase,packages/worker/src/api/routes/global/groups.ts,VULNERABLE,CWE-862,SAFE,,False,False,1.719,full_file,- SAFE
+GHSA-j8cv-x86q-rj85_FIXED,GHSA-j8cv-x86q-rj85,pipecat-ai/pipecat,src/pipecat/runner/run.py,SAFE,CWE-862,SAFE,,True,True,3.258,hunks,- SAFE
+GHSA-g86v-f9qv-rh6m_FIXED,GHSA-g86v-f9qv-rh6m,openclaw/openclaw,src/shared/net/ip.ts,SAFE,CWE-918,SAFE,,True,True,3.747,hunks,- SAFE
+GHSA-j7qq-vr8c-xvw3_VULN,GHSA-j7qq-vr8c-xvw3,mlflow/mlflow,mlflow/crewai/autolog.py,VULNERABLE,CWE-200,VULNERABLE,CWE-94,True,False,2.877,hunks,- VULNERABLE CWE-94
+GHSA-4c8v-hwxc-2356_VULN,GHSA-4c8v-hwxc-2356,Significant-Gravitas/AutoGPT,autogpt_platform/backend/backend/util/request.py,VULNERABLE,CWE-918,SAFE,,False,False,3.896,hunks,- SAFE
+GHSA-gqch-g4w5-7qcw_FIXED,GHSA-gqch-g4w5-7qcw,mlflow/mlflow,mlflow/server/auth/__init__.py,SAFE,CWE-862,SAFE,,True,True,2.957,hunks,SAFE
+GHSA-3p64-6gvh-82v5_FIXED,GHSA-3p64-6gvh-82v5,mlflow/mlflow,mlflow/server/auth/__init__.py,SAFE,CWE-862,SAFE,,True,True,3.081,hunks,- SAFE
+GHSA-7xhj-55q9-pc3m_VULN,GHSA-7xhj-55q9-pc3m,openclaw/openclaw,src/hooks/workspace.ts,VULNERABLE,CWE-22,SAFE,,False,False,3.255,hunks,- SAFE
+GHSA-9qhq-v63v-fv3j_VULN,GHSA-9qhq-v63v-fv3j,MervinPraison/PraisonAI,src/praisonai/praisonai/cli/features/mcp.py,VULNERABLE,CWE-78,VULNERABLE,CWE-78,True,True,2.994,hunks,- VULNERABLE CWE-78
+GHSA-3p64-6gvh-82v5_VULN,GHSA-3p64-6gvh-82v5,mlflow/mlflow,mlflow/server/auth/__init__.py,VULNERABLE,CWE-862,SAFE,,False,False,2.999,hunks,- SAFE
+GHSA-3645-fxcv-hqr4_FIXED,GHSA-3645-fxcv-hqr4,langflow-ai/langflow,src/lfx/src/lfx/components/langchain_utilities/csv_agent.py,SAFE,CWE-94,VULNERABLE,CWE-94,False,False,2.7,hunks,- VULNERABLE CWE-94
+GHSA-hj3w-wrh4-44vp_VULN,GHSA-hj3w-wrh4-44vp,hiyouga/LlamaFactory,src/llamafactory/webui/runner.py,VULNERABLE,CWE-78,VULNERABLE,CWE-862,True,False,2.524,hunks,- VULNERABLE CWE-862
+GHSA-3363-2ph6-35wh_VULN,GHSA-3363-2ph6-35wh,pipecat-ai/pipecat,src/pipecat/runner/run.py,VULNERABLE,CWE-22,VULNERABLE,CWE-78,True,False,3.204,hunks,- VULNERABLE CWE-78
+GHSA-2ww6-868g-2c56_VULN,GHSA-2ww6-868g-2c56,openclaw/openclaw,skills/openai-image-gen/scripts/gen.py,VULNERABLE,CWE-79,VULNERABLE,CWE-78,True,False,3.832,hunks,- VULNERABLE CWE-78
+GHSA-hj3w-wrh4-44vp_FIXED,GHSA-hj3w-wrh4-44vp,hiyouga/LlamaFactory,src/llamafactory/webui/runner.py,SAFE,CWE-78,VULNERABLE,CWE-78,False,False,2.37,hunks,- VULNERABLE CWE-78
+GHSA-3363-2ph6-35wh_FIXED,GHSA-3363-2ph6-35wh,pipecat-ai/pipecat,src/pipecat/runner/run.py,SAFE,CWE-22,VULNERABLE,CWE-79,False,False,3.129,hunks,- VULNERABLE CWE-79
+GHSA-gqch-g4w5-7qcw_VULN,GHSA-gqch-g4w5-7qcw,mlflow/mlflow,mlflow/server/auth/__init__.py,VULNERABLE,CWE-862,SAFE,,False,False,2.893,hunks,- SAFE
+GHSA-qf48-qfv4-jjm9_VULN,GHSA-qf48-qfv4-jjm9,openclaw/openclaw,extensions/feishu/src/docx.ts,VULNERABLE,CWE-22,SAFE,,False,False,2.911,hunks,- SAFE
+GHSA-7v5m-pr3q-6453_FIXED,GHSA-7v5m-pr3q-6453,earendil-works/pi,packages/coding-agent/src/core/export-html/template.js,SAFE,CWE-79,VULNERABLE,CWE-78,False,False,3.244,hunks,- VULNERABLE CWE-78
+GHSA-4564-pvr2-qq4h_FIXED,GHSA-4564-pvr2-qq4h,openclaw/openclaw,src/agents/cli-credentials.ts,SAFE,CWE-78,VULNERABLE,CWE-78,False,False,3.252,hunks,- VULNERABLE CWE-78
+GHSA-79ph-745m-6wxq_VULN,GHSA-79ph-745m-6wxq,langflow-ai/langflow,src/backend/base/langflow/api/v1/knowledge_bases.py,VULNERABLE,CWE-22,SAFE,,False,False,2.686,hunks,- SAFE
+GHSA-5c6w-wwfq-7qqm_FIXED,GHSA-5c6w-wwfq-7qqm,MervinPraison/PraisonAI,src/praisonai-agents/praisonaiagents/tools/spider_tools.py,SAFE,CWE-918,VULNERABLE,CWE-89,False,False,2.566,hunks,- VULNERABLE CWE-89
+GHSA-8c4j-f57c-35cf_VULN,GHSA-8c4j-f57c-35cf,langflow-ai/langflow,src/backend/base/langflow/api/v1/flows.py,VULNERABLE,CWE-862,SAFE,,False,False,2.686,hunks,- SAFE
+GHSA-5c6w-wwfq-7qqm_VULN,GHSA-5c6w-wwfq-7qqm,MervinPraison/PraisonAI,src/praisonai-agents/praisonaiagents/tools/spider_tools.py,VULNERABLE,CWE-918,VULNERABLE,CWE-94,True,False,1.763,hunks,- VULNERABLE CWE-94
+GHSA-qf48-qfv4-jjm9_FIXED,GHSA-qf48-qfv4-jjm9,openclaw/openclaw,extensions/feishu/src/docx.ts,SAFE,CWE-22,SAFE,,True,True,2.991,hunks,- SAFE
+GHSA-r5fq-947m-xm57_FIXED,GHSA-r5fq-947m-xm57,openclaw/openclaw,src/agents/apply-patch.ts,SAFE,CWE-22,SAFE,,True,True,3.326,hunks,- SAFE
+GHSA-jwqg-jfg3-x5vv_FIXED,GHSA-jwqg-jfg3-x5vv,Mintplex-Labs/anything-llm,server/endpoints/workspaces.js,SAFE,CWE-200,SAFE,,True,True,2.19,hunks,- SAFE
+GHSA-4gc7-qcvf-38wg_FIXED,GHSA-4gc7-qcvf-38wg,openclaw/openclaw,src/infra/exec-safe-bin-policy.ts,SAFE,CWE-78,VULNERABLE,CWE-78,False,False,3.382,hunks,- VULNERABLE CWE-78
+GHSA-ccv6-r384-xp75_VULN,GHSA-ccv6-r384-xp75,langflow-ai/langflow,src/lfx/src/lfx/base/data/base_file.py,VULNERABLE,CWE-200,SAFE,,False,False,2.421,hunks,- SAFE
+GHSA-rh3m-xv7m-9jhf_VULN,GHSA-rh3m-xv7m-9jhf,Mintplex-Labs/anything-llm,server/utils/boot/MetaGenerator.js,VULNERABLE,CWE-79,SAFE,,False,False,3.346,hunks,- SAFE
+GHSA-p5qc-vj2x-9rjp_VULN,GHSA-p5qc-vj2x-9rjp,arc53/DocsGPT,application/api/user/routes.py,VULNERABLE,CWE-22,SAFE,,False,False,2.88,hunks,- SAFE
+GHSA-7r9j-r86q-7g45_FIXED,GHSA-7r9j-r86q-7g45,Budibase/budibase,packages/backend-core/src/blacklist/blacklist.ts,SAFE,CWE-918,VULNERABLE,CWE-78,False,False,2.698,full_file,- VULNERABLE CWE-78
+GHSA-w584-2h2r-2hvf_VULN,GHSA-w584-2h2r-2hvf,langflow-ai/langflow,src/lfx/src/lfx/custom/validate.py,VULNERABLE,CWE-94,VULNERABLE,CWE-94,True,True,2.976,hunks,- VULNERABLE CWE-94
+GHSA-hqm2-cfx2-2vgh_VULN,GHSA-hqm2-cfx2-2vgh,pipecat-ai/pipecat,src/pipecat/runner/run.py,VULNERABLE,CWE-862,SAFE,,False,False,3.046,hunks,- SAFE
+GHSA-8c4j-f57c-35cf_FIXED,GHSA-8c4j-f57c-35cf,langflow-ai/langflow,src/backend/base/langflow/api/v1/flows.py,SAFE,CWE-862,SAFE,,True,True,2.763,hunks,- SAFE
+GHSA-r5fq-947m-xm57_VULN,GHSA-r5fq-947m-xm57,openclaw/openclaw,src/agents/apply-patch.ts,VULNERABLE,CWE-22,SAFE,,False,False,3.341,hunks,- SAFE
+GHSA-9gm9-c8mq-vq7m_VULN,GHSA-9gm9-c8mq-vq7m,MervinPraison/PraisonAI,src/praisonai/praisonai/cli/features/mcp.py,VULNERABLE,CWE-78,VULNERABLE,CWE-78,True,True,2.98,hunks,- VULNERABLE CWE-78
+GHSA-4c8v-hwxc-2356_FIXED,GHSA-4c8v-hwxc-2356,Significant-Gravitas/AutoGPT,autogpt_platform/backend/backend/util/request.py,SAFE,CWE-918,VULNERABLE,CWE-200,False,False,3.876,hunks,- VULNERABLE CWE-200
+GHSA-hfhx-w8p8-4hc7_FIXED,GHSA-hfhx-w8p8-4hc7,Budibase/budibase,packages/server/src/utilities/fileUtils.ts,SAFE,CWE-918,VULNERABLE,CWE-78,False,False,1.677,full_file,- VULNERABLE CWE-78
+GHSA-c4qg-j8jg-42q5_FIXED,GHSA-c4qg-j8jg-42q5,openclaw/openclaw,extensions/qqbot/src/api.ts,SAFE,CWE-918,VULNERABLE,CWE-78,False,False,3.241,hunks,- VULNERABLE CWE-78
+GHSA-gqvg-gmmx-x4hm_VULN,GHSA-gqvg-gmmx-x4hm,mlflow/mlflow,mlflow/statsmodels/__init__.py,VULNERABLE,CWE-502,SAFE,,False,False,2.845,hunks,- SAFE
+GHSA-gqvg-gmmx-x4hm_FIXED,GHSA-gqvg-gmmx-x4hm,mlflow/mlflow,mlflow/statsmodels/__init__.py,SAFE,CWE-502,SAFE,,True,True,2.795,hunks,- SAFE

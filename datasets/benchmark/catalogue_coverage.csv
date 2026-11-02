@@ -1,0 +1,29 @@
+catalogue_id,cwe_id,owasp_2025,owasp_llm,gift_879,appsecbench_pyjsts,securecodepairs_pyjsts,ghsa_74,union,py,js,ts,status
+VULN-INJ-001,CWE-89,A05:2025-Injection,,36,8,2,0,46,24,17,5,ok
+VULN-INJ-002,CWE-78,A05:2025-Injection,,54,0,2,19,75,25,25,25,ok
+VULN-INJ-003,CWE-94,A05:2025-Injection,,35,0,3,4,42,23,12,7,ok
+VULN-INJ-004,CWE-1336,A05:2025-Injection,,5,0,0,0,5,3,1,1,thin
+VULN-INJ-005,CWE-943,A05:2025-Injection,,6,0,3,0,9,3,5,1,thin
+VULN-INJ-006,CWE-611,A02:2025-Security Misconfiguration,,6,8,1,0,15,10,0,5,missing_js
+VULN-INJ-007,CWE-77,A05:2025-Injection,,18,25,0,2,45,11,20,14,ok
+VULN-INJ-008,CWE-95,A05:2025-Injection,,1,0,2,0,3,1,1,1,thin
+VULN-XSS-001,CWE-79,A05:2025-Injection,,303,8,5,5,321,63,222,36,ok
+VULN-TRAV-001,CWE-22,A01:2025-Broken Access Control,,77,9,0,15,101,51,30,20,ok
+VULN-RED-001,CWE-601,A01:2025-Broken Access Control,,32,11,3,0,46,26,13,7,ok
+VULN-ACCESS-001,CWE-862,A01:2025-Broken Access Control,,5,8,9,11,33,11,8,14,ok
+VULN-CSRF-001,CWE-352,A01:2025-Broken Access Control,,27,7,2,0,36,15,16,5,ok
+VULN-DESER-001,CWE-502,A08:2025-Software or Data Integrity Failures,,16,9,3,2,30,24,5,1,thin_ts
+VULN-PROTO-001,CWE-1321,A08:2025-Software or Data Integrity Failures,,60,0,2,0,62,1,49,12,ok_js_ts
+VULN-INTEG-001,CWE-915,A08:2025-Software or Data Integrity Failures,,4,11,1,0,16,3,9,4,thin
+VULN-SSRF-001,CWE-918,A01:2025-Broken Access Control,,51,25,2,11,89,36,27,26,ok
+VULN-SECRET-001,CWE-798,A07:2025-Authentication Failures,,3,9,6,0,18,6,5,7,ok
+VULN-CRYPTO-001,CWE-327,A04:2025-Cryptographic Failures,,3,7,1,0,11,6,5,0,missing_ts
+VULN-CRYPTO-002,CWE-338,A04:2025-Cryptographic Failures,,1,0,1,0,2,0,2,0,thin
+VULN-CRYPTO-003,CWE-328,A04:2025-Cryptographic Failures,,0,0,0,0,0,0,0,0,MISSING
+VULN-AUTH-001,CWE-347,A04:2025-Cryptographic Failures,,9,0,0,0,9,3,5,1,thin
+VULN-CONFIG-001,CWE-209,A10:2025-Mishandling of Exceptional Conditions,,5,0,5,0,10,8,0,2,missing_js
+VULN-DOS-001,CWE-1333,A02:2025-Security Misconfiguration,,47,0,1,0,48,10,34,4,thin_ts
+VULN-LLM-001,CWE-1427,A05:2025-Injection,LLM01:2025,10,33,0,0,43,13,10,20,ok
+VULN-LLM-002,CWE-200,A01:2025-Broken Access Control,LLM02:2025,55,0,1,5,61,31,16,14,ok_shared_cwe200
+VULN-LLM-005,CWE-1426,A05:2025-Injection,LLM05:2025,10,0,0,0,10,4,3,3,thin_gift_only
+VULN-LLM-007,CWE-200,A01:2025-Broken Access Control,LLM07:2025,55,0,1,5,61,31,16,14,ok_shared_cwe200
