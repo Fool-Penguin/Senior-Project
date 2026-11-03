@@ -1,0 +1,58 @@
+Bandit (AST)
+Python only
+Work on Functional level / File
+Detect: CWE, OWASP
+
+
+
+
+Semgrep OSS CST (Concrete Syntax Tree) (Tree-sitter)
+Multiple languages ex. Python, JavaScript, TypeScript, Go, Java, C#, Ruby, PHP, Rust, C / C++
+Work on Function / File (ในรุ่น OSS) |  Repository Level (ในรุ่น Pro/Commercial)
+Detect CWE, OWASP, CVE(Semgrep Supply Chain)
+
+
+Synk code (Deep AI) (AST)
+Have AI suggestions to fix code but for paid only
+multi-language: JavaScript/TypeScript, Python, Java/Kotlin, C#/.NET, Go, PHP, Ruby, Rust, Scala, Swift/Objective C, Dart/Flutter, Apex, Groovy, C/C++, and COBOL.
+Detect: CWE, OWASP, CVE(Snyk Open Source)
+
+CodeQL 
+
+
+Bandit (AST Pattern Matching)
+Engine: Built-in Python ast (Node Visitor Pattern)
+Language: Python Only
+Work Level: Function Level / File Level (ตรวจแบบทีละบรรทัด/ทีละฟังก์ชัน ไม่มีการตาม Dataflow ข้ามฟังก์ชัน)
+Detect: CWE, OWASP (เฉพาะ Web Flaws พื้นฐานของ Python) เช่น Hardcoded Passwords, Insecure Deserialization (Pickle), SQL Injection string, Shell Injection (subprocess)
+Fix Support: ไม่มี Autofix (บอกแค่ชื่อ Rule ID และบรรทัด)
+
+
+ESLint (AST / Espree & Acorn)
+Engine: AST Parser (Espree สำหรับ JS, @typescript-eslint/parser สำหรับ TS) เดินตรวจตาม Node Visitor
+Language: JavaScript / TypeScript Only
+Work Level: Line Level / Function Level / File Level (ตรวจทีละไฟล์เดี่ยวๆ ไม่มีการตาม Dataflow ข้ามไฟล์)
+Detect: Code Quality, Syntactic Bugs, CWE (เฉพาะเมื่อติดตั้งปลั๊กอินเสริม เช่น eslint-plugin-security)
+Fix Support: มี Autofix ผ่านคำสั่ง eslint --fix (แก้ได้เฉพาะ Formatting และ Syntax เล็กน้อย ไม่สามารถแก้ Security Flaws ได้)
+
+
+Semgrep OSS (CST / Tree-sitter)
+Engine: CST (Concrete Syntax Tree) ผ่าน Tree-sitter + Intra-file Taint Tracking
+Language: Multi-language (Python, JavaScript, TypeScript, Go, Java, C#, Ruby, PHP, Rust, C/C++, ฯลฯ)
+Work Level: Function / File Level (ในรุ่น OSS) | Repository Level (Inter-file / Deep Taint ในรุ่น Pro/Commercial)
+Detect: CWE, OWASP Top 10, Secrets/API Keys, และ CVE (เฉพาะรุ่นเสริม Semgrep Supply Chain / SCA ที่สแกน package.json, requirements.txt)
+Fix Support: มี Autofix เบื้องต้นในกฎบางข้อ (ผ่านฟิลด์ autofix: แทนที่คำในบรรทัด)
+
+
+Snyk Code (DeepCode AI / Symbolic Taint Graph)
+Engine: Symbolic AI + Machine Learning Cloud Taint Graph
+Language: Multi-language กว้างมาก (JavaScript/TypeScript, Python, Java/Kotlin, C#/.NET, Go, PHP, Ruby, Rust, Scala, Swift/Objective C, Dart/Flutter, Apex, Groovy, C/C++, COBOL)
+Work Level: Repository Level (Inter-procedural & Cross-File บน Cloud)
+Detect: CWE, OWASP Top 10, และ CVE (เฉพาะใน Snyk Open Source / SCA ที่สแกน Dependency Manifest)
+Fix Support: มี DeepCode AI Suggestions (Snyk Fix) ช่วยแนะแนวทางแก้โค้ด (แต่จำกัดการใช้งานจริง ต้องจ่ายเงิน Enterprise Tier)
+
+CodeQL (Relational Code DB & Datalog) (AST + CFG + DFG)
+Multiple languages: C/C++, C#, Go, Java/Kotlin, JavaScript/TypeScript, Python, Ruby, Swift
+Work on Repository Level (Whole-Program Analysis)
+Detect: CWE, OWASP, Code Quality & Bug Patterns, CVE (GitHub Dependabot)
+Have Copilot Autofix suggestions (GitHub Advanced Security / Paid Enterprise only)

@@ -1,0 +1,1 @@
+User notified on 2026-10-18T14:47:00+07:00 to check the terms at https://info.arxiv.org/help/api/index.html and to always check the license of the papers retrieved by the skill for any restrictions.

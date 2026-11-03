@@ -1,0 +1,112 @@
+--- a/codedee/codedee_server/app/graphs/dfg.py
++++ b/codedee/codedee_server/app/graphs/dfg.py
+@@ -128,19 +128,45 @@ class DFGBuilder:
+         stmt_type = stmt.type
+ 
+-        # In Python and JS: expression_statement wraps assignments
++        # In Python and JS: expression_statement wraps assignments or parenthesized expressions
+         if stmt_type == "expression_statement" and stmt.children:
+-            for child in stmt.children:
+-                if child.type in ("assignment", "augmented_assignment", "assignment_expression"):
+-                    stmt = child
+-                    stmt_type = child.type
+-                    break
++            inner = stmt.children[0]
++            if inner.type == "parenthesized_expression" and inner.children:
++                for sub in inner.children:
++                    if sub.type in ("assignment", "augmented_assignment", "assignment_expression", "augmented_assignment_expression"):
++                        stmt = sub
++                        stmt_type = sub.type
++                        break
++            elif inner.type in ("assignment", "augmented_assignment", "assignment_expression", "augmented_assignment_expression"):
++                stmt = inner
++                stmt_type = inner.type
+ 
+-        # PYTHON ASSIGNMENT: var = expr
+-        if stmt_type in ("assignment", "augmented_assignment"):
++        # ASSIGNMENTS: Python (assignment, augmented_assignment) & JS/TS (assignment_expression, augmented_assignment_expression)
++        if stmt_type in ("assignment", "augmented_assignment", "assignment_expression", "augmented_assignment_expression"):
+             left = stmt.child_by_field_name("left")
+             right = stmt.child_by_field_name("right")
+ 
+             rhs_nodes = self._process_expression(right, source_bytes, language, file_path, func_id, current_defs) if right else []
+ 
+-            if left and left.type == "identifier":
++            targets = self._extract_pattern_targets(left)
++            if targets:
++                expr_text = self.cst_manager.get_node_text(stmt, source_bytes)
++                for target_node in targets:
++                    var_name = self.cst_manager.get_node_text(target_node, source_bytes)
++                    def_id = f"{func_id}::def_{var_name}_{target_node.start_point.row + 1}_{target_node.start_point.column}"
++
++                    self.graph.add_node(
++                        def_id,
++                        node_id=def_id,
++                        var_name=var_name,
++                        file_path=file_path,
++                        line_number=target_node.start_point.row + 1,
++                        col_offset=target_node.start_point.column,
++                        node_kind="ASSIGN_DEF",
++                        expression_text=expr_text,
++                        tainted=False,
++                        taint_source=None,
++                        ast_node=target_node,
++                    )
++
++                    for r_id in rhs_nodes:
++                        self.graph.add_edge(r_id, def_id, flow_type="ASSIGNMENT", operation="=")
++
++                    if stmt_type in ("augmented_assignment", "augmented_assignment_expression") and var_name in current_defs:
++                        prev_def = current_defs[var_name]
++                        self.graph.add_edge(prev_def, def_id, flow_type="STRING_CONCAT", operation="+=")
++
++                    current_defs[var_name] = def_id
++                return
+@@ -220,25 +246,25 @@ class DFGBuilder:
+-                    if name_node and name_node.type == "identifier":
+-                        var_name = self.cst_manager.get_node_text(name_node, source_bytes)
+-                        def_id = f"{func_id}::def_{var_name}_{name_node.start_point.row + 1}_{name_node.start_point.column}"
+-                        expr_text = self.cst_manager.get_node_text(decl, source_bytes)
+-
+-                        self.graph.add_node(
+-                            def_id,
+-                            node_id=def_id,
+-                            var_name=var_name,
+-                            file_path=file_path,
+-                            line_number=name_node.start_point.row + 1,
+-                            col_offset=name_node.start_point.column,
+-                            node_kind="ASSIGN_DEF",
+-                            expression_text=expr_text,
+-                            tainted=False,
+-                            taint_source=None,
+-                            ast_node=name_node,
+-                        )
+-
+-                        for r_id in rhs_nodes:
+-                            self.graph.add_edge(r_id, def_id, flow_type="ASSIGNMENT", operation="=")
+-
+-                        current_defs[var_name] = def_id
++                    targets = self._extract_pattern_targets(name_node)
++                    expr_text = self.cst_manager.get_node_text(decl, source_bytes)
++                    for target_node in targets:
++                        var_name = self.cst_manager.get_node_text(target_node, source_bytes)
++                        def_id = f"{func_id}::def_{var_name}_{target_node.start_point.row + 1}_{target_node.start_point.column}"
++
++                        self.graph.add_node(
++                            def_id,
++                            node_id=def_id,
++                            var_name=var_name,
++                            file_path=file_path,
++                            line_number=target_node.start_point.row + 1,
++                            col_offset=target_node.start_point.column,
++                            node_kind="ASSIGN_DEF",
++                            expression_text=expr_text,
++                            tainted=False,
++                            taint_source=None,
++                            ast_node=target_node,
++                        )
++
++                        for r_id in rhs_nodes:
++                            self.graph.add_edge(r_id, def_id, flow_type="ASSIGNMENT", operation="=")
++
++                        current_defs[var_name] = def_id

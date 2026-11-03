@@ -1,0 +1,12 @@
+---
+sourceLocationPrefix: D:\4th-year\Senior-Project\codeql_test_src
+baselineLinesOfCode: 91
+unicodeNewlines: false
+columnKind: utf32
+primaryLanguage: python
+creationMetadata:
+  cliVersion: 2.27.1
+  creationTime: 2026-10-01T05:45:49.818574400Z
+overlayDatabase: false
+overlayBaseDatabase: false
+finalised: true

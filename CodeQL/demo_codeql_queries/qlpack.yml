@@ -1,0 +1,4 @@
+name: senior-project-codeql-demo
+version: 1.0.0
+dependencies:
+  codeql/python-all: "*"

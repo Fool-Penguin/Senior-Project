@@ -1,0 +1,81 @@
+--- codedee/codedee_server/app/graphs/dfg.py
++++ codedee/codedee_server/app/graphs/dfg.py
+@@ -467,6 +467,82 @@
+ 
+             return [call_id]
+ 
++        # 7. Parenthesized Expressions (Grouping)
++        # Transparently unwrap and forward inner expression value nodes
++        if node_type == "parenthesized_expression":
++            inner_ids: List[str] = []
++            for child in node.children:
++                if child.type not in ("(", ")", ";"):
++                    inner_ids.extend(self._process_expression(child, source_bytes, language, file_path, func_id, current_defs))
++            if inner_ids:
++                return inner_ids
++
++        # 8. Collections & Sequences: tuple, list, array, set, expression_list, sequence_expression
++        if node_type in ("tuple", "list", "array", "set", "expression_list", "sequence_expression"):
++            coll_id = f"{func_id}::coll_{node.start_point.row + 1}_{node.start_point.column}"
++            self.graph.add_node(
++                coll_id,
++                node_id=coll_id,
++                var_name=node_text,
++                file_path=file_path,
++                line_number=node.start_point.row + 1,
++                col_offset=node.start_point.column,
++                node_kind="COLLECTION",
++                expression_text=node_text,
++                tainted=False,
++                taint_source=None,
++                ast_node=node,
++            )
++            for child in node.children:
++                if child.type in ("(", ")", "[", "]", "{", "}", ",", ";"):
++                    continue
++                elem_ids = self._process_expression(child, source_bytes, language, file_path, func_id, current_defs)
++                for eid in elem_ids:
++                    self.graph.add_edge(eid, coll_id, flow_type="CONTAINER_ELEMENT", operation=node_type)
++            return [coll_id]
++
++        # 9. Dictionaries / Objects & Key-Value Pairs
++        if node_type in ("dictionary", "object"):
++            dict_id = f"{func_id}::dict_{node.start_point.row + 1}_{node.start_point.column}"
++            self.graph.add_node(
++                dict_id,
++                node_id=dict_id,
++                var_name=node_text,
++                file_path=file_path,
++                line_number=node.start_point.row + 1,
++                col_offset=node.start_point.column,
++                node_kind="COLLECTION",
++                expression_text=node_text,
++                tainted=False,
++                taint_source=None,
++                ast_node=node,
++            )
++            for child in node.children:
++                if child.type in ("{", "}", ",", ";"):
++                    continue
++                val_ids = self._process_expression(child, source_bytes, language, file_path, func_id, current_defs)
++                for vid in val_ids:
++                    self.graph.add_edge(vid, dict_id, flow_type="CONTAINER_ELEMENT", operation="dict_entry")
++            return [dict_id]
++
++        if node_type == "pair":
++            val_node = node.child_by_field_name("value") or (node.children[-1] if len(node.children) >= 3 else None)
++            if val_node:
++                return self._process_expression(val_node, source_bytes, language, file_path, func_id, current_defs)
++            return []
++
++        # 10. Syntactic wrappers / Type assertions (TS) / Await / Unary
++        if node_type in ("await_expression", "as_expression", "type_assertion", "non_null_expression", "unary_operator", "unary_expression"):
++            for child in node.children:
++                if child.type not in ("await", "as", "!", "+", "-", "~", "not", "type_arguments", "predefined_type", "type_identifier"):
++                    sub_ids = self._process_expression(child, source_bytes, language, file_path, func_id, current_defs)
++                    if sub_ids:
++                        return sub_ids
++
+         # 7. Fallback for literals / other expressions
+         lit_id = f"{func_id}::lit_{node.start_point.row + 1}_{node.start_point.column}"
+         self.graph.add_node(

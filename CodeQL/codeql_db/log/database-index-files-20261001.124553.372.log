@@ -1,0 +1,10 @@
+[2026-10-01 12:45:53] This is codeql database index-files --include-extension=.yaml --include-extension=.yml --also-match-lgtm-index-filters --size-limit=5m --language yaml -- d:\4th-year\Senior-Project\codeql_db
+[2026-10-01 12:45:53] Log file was started late.
+[2026-10-01 12:45:53] Using index-files script C:\Users\Ongsa\AppData\Roaming\Antigravity IDE\User\globalStorage\github.vscode-codeql\distribution1\codeql\yaml\tools\index-files.cmd.
+[2026-10-01 12:45:53] [PROGRESS] database index-files> Scanning for files in D:\4th-year\Senior-Project\codeql_test_src...
+[2026-10-01 12:45:53] Calling plumbing command: codeql resolve files --include-extension=.yaml --include-extension=.yml --also-match-lgtm-index-filters --size-limit=5m D:\4th-year\Senior-Project\codeql_test_src --format=json
+[2026-10-01 12:45:53] [PROGRESS] resolve files> Scanning D:\4th-year\Senior-Project\codeql_test_src...
+[2026-10-01 12:45:53] Plumbing command codeql resolve files completed:
+                      [ ]
+[2026-10-01 12:45:53] [DETAILS] database index-files> Found 0 files.
+[2026-10-01 12:45:53] Terminating normally.

@@ -1,0 +1,45 @@
+---
+sourceLocationPrefix: D:\4th-year\Senior-Project\Security&CWE
+baselineLinesOfCode: 961
+unicodeNewlines: false
+columnKind: utf32
+primaryLanguage: python
+inProgress:
+  primaryLanguage: python
+  installedExtractors:
+    actions:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/actions
+    cpp:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/cpp
+    csharp:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/csharp
+    csv:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/csv
+    go:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/go
+    html:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/html
+    java:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/java
+    javascript:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/javascript
+    properties:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/properties
+    python:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/python
+    ruby:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/ruby
+    rust:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/rust
+    swift:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/swift
+    xml:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/xml
+    yaml:
+     - C:/Users/Ongsa/AppData/Roaming/Antigravity IDE/User/globalStorage/github.vscode-codeql/distribution1/codeql/yaml
+creationMetadata:
+  cliVersion: 2.27.1
+  creationTime: 2026-10-01T05:45:25.838637200Z
+overlayBaseDatabase: false
+overlayDatabase: false
+finalised: false

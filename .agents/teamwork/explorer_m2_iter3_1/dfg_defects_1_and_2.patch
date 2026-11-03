@@ -1,0 +1,45 @@
+--- a/codedee/codedee_server/app/graphs/dfg.py
++++ b/codedee/codedee_server/app/graphs/dfg.py
+@@ -339,9 +339,17 @@ class DFGBuilder:
+             # Look up base identifier
+             base = node.child_by_field_name("object") or (node.children[0] if node.children else None)
+-            if base and base.type == "identifier":
+-                base_name = self.cst_manager.get_node_text(base, source_bytes)
++            curr = base
++            while curr and curr.type in ("attribute", "member_expression"):
++                curr = curr.child_by_field_name("object") or (curr.children[0] if curr.children else None)
++            if curr and curr.type == "identifier":
++                base_name = self.cst_manager.get_node_text(curr, source_bytes)
+                 if base_name in current_defs:
+                     self.graph.add_edge(current_defs[base_name], attr_id, flow_type="DEF_USE", operation="member_access")
++            elif curr:
++                curr_ids = self._process_expression(curr, source_bytes, language, file_path, func_id, current_defs)
++                for cid in curr_ids:
++                    self.graph.add_edge(cid, attr_id, flow_type="DEF_USE", operation="member_access")
+             return [attr_id]
+ 
+         # 3. String Concatenation: a + b
+@@ -455,6 +463,14 @@ class DFGBuilder:
+                 ast_node=node,
+             )
+ 
++            # Connect receiver object for method invocations (e.g. raw_user.replace(...), user.strip())
++            if fn_node and fn_node.type in ("attribute", "member_expression"):
++                recv_node = fn_node.child_by_field_name("object")
++                if recv_node:
++                    recv_ids = self._process_expression(recv_node, source_bytes, language, file_path, func_id, current_defs)
++                    for rid in recv_ids:
++                        self.graph.add_edge(rid, call_id, flow_type="ARG_TO_PARAM", operation="receiver")
++
+             # Process arguments
+             if args_node:
+                 arg_idx = 0
+@@ -533,7 +549,7 @@ class DFGBuilder:
+             return []
+ 
+         # 10. Syntactic wrappers / Type assertions (TS) / Await / Unary
+-        if node_type in ("await_expression", "as_expression", "type_assertion", "non_null_expression", "unary_operator", "unary_expression"):
++        if node_type in ("await", "await_expression", "as_expression", "type_assertion", "non_null_expression", "unary_operator", "unary_expression"):
+             for child in node.children:
+                 if child.type not in ("await", "as", "!", "+", "-", "~", "not", "type_arguments", "predefined_type", "type_identifier", ";"):
+                     sub_ids = self._process_expression(child, source_bytes, language, file_path, func_id, current_defs)

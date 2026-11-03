@@ -1,0 +1,30 @@
+# CodeDEE Backend Server Dependencies
+# Monorepo Scaffolding & Backend Architecture
+
+# Web Framework & ASGI
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+
+# Tree-sitter Concrete Syntax Tree Parsing (Modern 0.22+ API)
+# Note: Legacy tree-sitter-languages is obsolete on Python 3.12+ and tree-sitter 0.22+.
+# Modern tree-sitter uses modular grammar packages:
+tree-sitter>=0.22.0
+tree-sitter-python>=0.21.0
+tree-sitter-javascript>=0.21.0
+tree-sitter-typescript>=0.23.0
+
+# Graph Modeling Engine (Call Graph, CFG, DFG)
+networkx>=3.2.0
+
+# Neuro-Symbolic Vector RAG Knowledge Store
+chromadb>=0.4.24
+
+# HTTP & AI Orchestration (Ollama Client)
+requests>=2.31.0
+httpx>=0.27.0
+
+# Testing & Quality Assurance
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

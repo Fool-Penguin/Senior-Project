@@ -1,0 +1,11 @@
+[2026-10-01 12:52:52] This is codeql query run d:\4th-year\Senior-Project\demo_codeql_queries\find_execute_calls.ql --database=d:\4th-year\Senior-Project\codeql_db
+[2026-10-01 12:52:52] Log file was started late.
+[2026-10-01 12:52:52] Calling plumbing command: codeql resolve ram --dataset=D:\4th-year\Senior-Project\codeql_db\db-python --format=json
+[2026-10-01 12:52:52] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1800M",
+                        "--off-heap-ram=1285"
+                      ]
+[2026-10-01 12:52:52] Spawning plumbing command: execute queries -J-Xmx1800M --off-heap-ram=1285 --verbosity=progress --logdir=D:\4th-year\Senior-Project\codeql_db\log --evaluator-log-level=5 --warnings=show --qlconfig-file=D:\4th-year\Senior-Project\qlconfig.yml --dynamic-join-order-mode=none -- D:\4th-year\Senior-Project\codeql_db\db-python path:D:\4th-year\Senior-Project\demo_codeql_queries\find_execute_calls.ql
+[2026-10-01 12:53:08] Plumbing command codeql execute queries terminated with status 0.
+[2026-10-01 12:53:08] Exiting with code 0
