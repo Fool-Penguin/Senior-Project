@@ -113,6 +113,11 @@ parameter count, each line and decision belongs to its innermost unit, so it is 
   cyclomatic rules come from the SonarJS S1541 source, because that rule is off by default.
 - On real code, cyclomatic and cognitive match SonarQube for IDE on 432 of 432 functions sampled from the
   benchmark repositories, and on all 18 functions of `metrics.py` itself.
+- After the 2026-11-05 nesting and nested-def changes, a second sample (22 files, 212 functions, incl. 9 Python
+  nested defs) matches again: cyclomatic 201/201, cognitive 212/212. The other 11 functions get no cyclomatic issue
+  from Sonar at all: SonarJS S1541 does not report function expressions inside an AMD `define(...)` or
+  immediately invoked ones. That is a reporting choice; their values are still measured. Evidence:
+  `05_metric_comparison/results/sonar_real_code_check_2.txt`.
 - The comparison found four rules that are now implemented and tested:
   - the Python nested `def`;
   - the Python parenthesised boolean group;
