@@ -13,8 +13,13 @@
   },
   "functions": 17331,
   "internal_import_edges": 10188,
+  "js_alias_imports_unresolved": 24,
   "js_relative_imports_unresolved": 57,
+  "js_type_only_import_edges": 99,
   "key": "overleaf__overleaf",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "e039ad26c5bf5422eb57b89fc7e57c75055e631d",
   "tools": {
     "tree-sitter": "0.26.0",

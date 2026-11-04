@@ -9,9 +9,14 @@
     "python": 69
   },
   "functions": 442,
-  "internal_import_edges": 80,
+  "internal_import_edges": 126,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "tiny-pilot__tinypilot",
+  "py_imports_ambiguous": 1,
+  "py_imports_unresolved": 3,
+  "py_type_only_import_edges": 0,
   "sha": "5f34d8a66d05fb8ca3625e7458915e55cfb7fac7",
   "tools": {
     "tree-sitter": "0.26.0",

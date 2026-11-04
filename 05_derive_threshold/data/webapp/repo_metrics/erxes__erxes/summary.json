@@ -12,8 +12,13 @@
   },
   "functions": 63127,
   "internal_import_edges": 31667,
+  "js_alias_imports_unresolved": 5698,
   "js_relative_imports_unresolved": 13,
+  "js_type_only_import_edges": 930,
   "key": "erxes__erxes",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "5933d725ae199debc53cc4719bd63185d5cfcc45",
   "tools": {
     "tree-sitter": "0.26.0",

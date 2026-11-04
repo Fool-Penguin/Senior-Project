@@ -11,8 +11,13 @@
   },
   "functions": 693,
   "internal_import_edges": 159,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "carbon-app__carbon",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "3e9efcc506bdccb6d3834f66f30f8e883f80e49d",
   "tools": {
     "tree-sitter": "0.26.0",

@@ -4536,12 +4536,12 @@ frontend/core-ui/src/modules/agent/bloub/engine/cycles.ts,typescript,115,63,1,2
 frontend/core-ui/src/modules/agent/bloub/engine/decor.ts,typescript,180,56,1,3
 frontend/core-ui/src/modules/agent/bloub/engine/engine.ts,typescript,326,145,7,2
 frontend/core-ui/src/modules/agent/bloub/engine/expressions.ts,typescript,149,30,3,7
-frontend/core-ui/src/modules/agent/bloub/engine/eyefit.ts,typescript,237,113,5,1
+frontend/core-ui/src/modules/agent/bloub/engine/eyefit.ts,typescript,237,144,5,1
 frontend/core-ui/src/modules/agent/bloub/engine/face.ts,typescript,105,43,1,4
 frontend/core-ui/src/modules/agent/bloub/engine/gaze.ts,typescript,29,39,2,1
 frontend/core-ui/src/modules/agent/bloub/engine/math.ts,typescript,27,7,0,7
 frontend/core-ui/src/modules/agent/bloub/engine/profiles.ts,typescript,7,6,0,2
-frontend/core-ui/src/modules/agent/bloub/engine/repere.ts,typescript,2,5,0,1
+frontend/core-ui/src/modules/agent/bloub/engine/repere.ts,typescript,2,17,0,1
 frontend/core-ui/src/modules/agent/bloub/engine/shape.ts,typescript,230,47,2,4
 frontend/core-ui/src/modules/agent/bloub/engine/skins.ts,typescript,102,24,2,4
 frontend/core-ui/src/modules/agent/bloub/engine/states.ts,typescript,468,92,4,10

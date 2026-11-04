@@ -314,7 +314,7 @@ server/services/BaseService.ts,typescript,28,1,2,7
 server/services/Deluge/clientGatewayService.ts,typescript,436,3,16,1
 server/services/Deluge/clientRequestManager.ts,typescript,238,1,3,1
 server/services/Deluge/types/DelugeCoreMethods.ts,typescript,558,231,0,3
-server/services/Deluge/util/rencode.ts,typescript,353,20,0,1
+server/services/Deluge/util/rencode.ts,typescript,353,22,0,1
 server/services/Deluge/util/torrentPropertiesUtil.ts,typescript,40,0,2,1
 server/services/Neptune/clientGatewayService.ts,typescript,363,4,15,1
 server/services/Neptune/clientRequestManager.ts,typescript,84,0,1,1

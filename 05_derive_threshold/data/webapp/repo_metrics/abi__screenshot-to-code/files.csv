@@ -1,9 +1,9 @@
 path,language,sloc,cloc,ce,ca
 backend/agent/engine.py,python,312,23,8,2
 backend/agent/providers/__init__.py,python,26,0,5,0
-backend/agent/providers/anthropic/__init__.py,python,10,0,1,2
+backend/agent/providers/anthropic/__init__.py,python,10,0,1,3
 backend/agent/providers/anthropic/image.py,python,61,30,0,1
-backend/agent/providers/anthropic/provider.py,python,439,15,8,1
+backend/agent/providers/anthropic/provider.py,python,439,15,9,1
 backend/agent/providers/base.py,python,38,2,1,8
 backend/agent/providers/factory.py,python,66,3,9,2
 backend/agent/providers/gemini.py,python,376,12,7,2

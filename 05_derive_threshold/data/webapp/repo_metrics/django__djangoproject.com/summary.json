@@ -11,8 +11,13 @@
   },
   "functions": 701,
   "internal_import_edges": 99,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "django__djangoproject.com",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "af69186487e4524effbf983a55ac81e630c23981",
   "tools": {
     "tree-sitter": "0.26.0",

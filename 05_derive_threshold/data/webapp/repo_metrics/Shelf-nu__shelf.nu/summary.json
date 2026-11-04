@@ -13,9 +13,14 @@
     "typescript": 1943
   },
   "functions": 15763,
-  "internal_import_edges": 11354,
+  "internal_import_edges": 11435,
+  "js_alias_imports_unresolved": 35,
   "js_relative_imports_unresolved": 7,
+  "js_type_only_import_edges": 764,
   "key": "Shelf-nu__shelf.nu",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "0a053db5e74203aa0d2ce682e2a2acaee2a22f3d",
   "tools": {
     "tree-sitter": "0.26.0",

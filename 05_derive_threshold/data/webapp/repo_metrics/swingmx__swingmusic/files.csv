@@ -50,7 +50,7 @@ src/swingmusic/lib/artistlib.py,python,124,16,5,1
 src/swingmusic/lib/colorlib.py,python,216,41,6,2
 src/swingmusic/lib/coverart.py,python,94,13,0,1
 src/swingmusic/lib/crypto.py,python,52,10,2,2
-src/swingmusic/lib/device.py,python,311,57,0,0
+src/swingmusic/lib/device.py,python,311,54,0,0
 src/swingmusic/lib/errors.py,python,0,0,0,0
 src/swingmusic/lib/extras.py,python,24,3,3,2
 src/swingmusic/lib/folderslib.py,python,75,30,5,1

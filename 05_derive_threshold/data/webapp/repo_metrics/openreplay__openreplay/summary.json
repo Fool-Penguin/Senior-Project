@@ -13,9 +13,14 @@
     "typescript": 1504
   },
   "functions": 14784,
-  "internal_import_edges": 4796,
+  "internal_import_edges": 5342,
+  "js_alias_imports_unresolved": 91,
   "js_relative_imports_unresolved": 182,
+  "js_type_only_import_edges": 126,
   "key": "openreplay__openreplay",
+  "py_imports_ambiguous": 205,
+  "py_imports_unresolved": 18,
+  "py_type_only_import_edges": 0,
   "sha": "9f1dcebfa5bd98967c902b77b8fe7ed120ab5b2b",
   "tools": {
     "tree-sitter": "0.26.0",

@@ -11,9 +11,14 @@
     "typescript": 104
   },
   "functions": 1506,
-  "internal_import_edges": 452,
+  "internal_import_edges": 453,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 1,
+  "js_type_only_import_edges": 0,
   "key": "abi__screenshot-to-code",
+  "py_imports_ambiguous": 6,
+  "py_imports_unresolved": 17,
+  "py_type_only_import_edges": 2,
   "sha": "a8139779f7c5ae231b7f2a86fa7f83ddc5f7badc",
   "tools": {
     "tree-sitter": "0.26.0",

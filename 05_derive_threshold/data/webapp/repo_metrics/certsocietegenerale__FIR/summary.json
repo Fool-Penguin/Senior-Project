@@ -12,8 +12,13 @@
   },
   "functions": 728,
   "internal_import_edges": 231,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "certsocietegenerale__FIR",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 1,
+  "py_type_only_import_edges": 0,
   "sha": "ed479a1b93bba9fa7dd59379ba1f46add11e4eb7",
   "tools": {
     "tree-sitter": "0.26.0",

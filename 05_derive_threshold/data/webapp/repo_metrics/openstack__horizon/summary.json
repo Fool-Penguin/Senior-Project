@@ -12,9 +12,14 @@
     "python": 719
   },
   "functions": 6886,
-  "internal_import_edges": 1735,
+  "internal_import_edges": 1736,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "openstack__horizon",
+  "py_imports_ambiguous": 3,
+  "py_imports_unresolved": 13,
+  "py_type_only_import_edges": 0,
   "sha": "efa10a13753620c85963fedf5bf9f9ded8c4f5d8",
   "tools": {
     "tree-sitter": "0.26.0",

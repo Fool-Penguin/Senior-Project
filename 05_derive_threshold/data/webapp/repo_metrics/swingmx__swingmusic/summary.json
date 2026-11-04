@@ -8,8 +8,13 @@
   },
   "functions": 928,
   "internal_import_edges": 533,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "swingmx__swingmusic",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 22,
+  "py_type_only_import_edges": 0,
   "sha": "89b9ddc7fb88ab1be5d483f4bdc8924ff56f5a8b",
   "tools": {
     "tree-sitter": "0.26.0",

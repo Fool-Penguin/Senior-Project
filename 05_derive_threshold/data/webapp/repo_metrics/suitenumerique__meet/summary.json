@@ -12,9 +12,14 @@
     "typescript": 522
   },
   "functions": 2763,
-  "internal_import_edges": 870,
+  "internal_import_edges": 1846,
+  "js_alias_imports_unresolved": 227,
   "js_relative_imports_unresolved": 2,
+  "js_type_only_import_edges": 91,
   "key": "suitenumerique__meet",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 28,
+  "py_type_only_import_edges": 0,
   "sha": "455daf1e8f36b1c5e43bb2b5dc212e47430162ee",
   "tools": {
     "tree-sitter": "0.26.0",

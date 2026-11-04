@@ -11,8 +11,13 @@
   },
   "functions": 451,
   "internal_import_edges": 119,
+  "js_alias_imports_unresolved": 3,
   "js_relative_imports_unresolved": 7,
+  "js_type_only_import_edges": 16,
   "key": "AykutSarac__jsoncrack.com",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "a46d0d0adb098e12e577a083e87ead7f61f90098",
   "tools": {
     "tree-sitter": "0.26.0",

@@ -10,9 +10,14 @@
     "typescript": 373
   },
   "functions": 5075,
-  "internal_import_edges": 1831,
+  "internal_import_edges": 1832,
+  "js_alias_imports_unresolved": 3,
   "js_relative_imports_unresolved": 113,
+  "js_type_only_import_edges": 440,
   "key": "firefox-devtools__profiler",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "a73f07c297386c77b880c3f4b9d07571953c535e",
   "tools": {
     "tree-sitter": "0.26.0",

@@ -13,9 +13,14 @@
     "typescript": 2219
   },
   "functions": 31347,
-  "internal_import_edges": 9429,
+  "internal_import_edges": 19394,
+  "js_alias_imports_unresolved": 94,
   "js_relative_imports_unresolved": 5,
+  "js_type_only_import_edges": 1367,
   "key": "onyx-dot-app__onyx",
+  "py_imports_ambiguous": 141,
+  "py_imports_unresolved": 1263,
+  "py_type_only_import_edges": 34,
   "sha": "3eb6420f6c7d6c0a94a0b7107a6138509c6d0f48",
   "tools": {
     "tree-sitter": "0.26.0",

@@ -11,8 +11,13 @@
   },
   "functions": 693,
   "internal_import_edges": 355,
+  "js_alias_imports_unresolved": 50,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 60,
   "key": "bambanah__deemix",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "1e34d4ff2195ed40aa04d774cff39d9e7b64b555",
   "tools": {
     "tree-sitter": "0.26.0",

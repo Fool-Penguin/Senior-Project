@@ -12,8 +12,13 @@
   },
   "functions": 1717,
   "internal_import_edges": 616,
+  "js_alias_imports_unresolved": 23,
   "js_relative_imports_unresolved": 2,
+  "js_type_only_import_edges": 5,
   "key": "aws-solutions__dynamic-image-transformation-for-amazon-cloudfront",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "a9e664ccb1ce3c5c25ad09ff4246cf54ca1adc67",
   "tools": {
     "tree-sitter": "0.26.0",

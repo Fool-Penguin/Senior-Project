@@ -15,8 +15,8 @@ other/semantic-search/index-podcasts.ts,typescript,676,7,8,0
 other/semantic-search/index-repo-content.ts,typescript,937,30,6,0
 other/semantic-search/index-youtube-playlist.ts,typescript,1664,29,8,0
 other/semantic-search/jsx-page-content.ts,typescript,545,9,1,1
-other/semantic-search/lexical-search-artifact.ts,typescript,8,0,0,3
-other/semantic-search/lexical-search-service.ts,typescript,80,0,0,0
+other/semantic-search/lexical-search-artifact.ts,typescript,8,0,1,3
+other/semantic-search/lexical-search-service.ts,typescript,80,0,1,0
 other/semantic-search/r2-manifest.ts,typescript,109,8,0,4
 other/semantic-search/youtube-channel-helpers.ts,typescript,26,0,0,1
 other/semantic-search/youtube-transcript-chunking.ts,typescript,115,3,1,1
@@ -29,13 +29,13 @@ services/call-kent-audio-worker/src/index.ts,typescript,205,4,3,0
 services/oauth/src/index.ts,typescript,139,2,0,0
 services/search-shared/src/lexical-artifact.ts,typescript,33,0,0,1
 services/search-shared/src/lexical-doc-id.ts,typescript,66,0,0,1
-services/search-shared/src/search-shared.ts,typescript,66,2,2,0
+services/search-shared/src/search-shared.ts,typescript,66,2,2,14
 services/search-worker/src/d1-sql.ts,typescript,14,3,0,1
-services/search-worker/src/index.ts,typescript,125,0,1,0
-services/search-worker/src/search-db.ts,typescript,587,9,1,2
-services/search-worker/src/search-results.ts,typescript,324,3,0,1
-services/search-worker/src/search-service.ts,typescript,312,0,3,1
-services/search-worker/src/search-sync.ts,typescript,73,0,1,1
+services/search-worker/src/index.ts,typescript,125,0,2,0
+services/search-worker/src/search-db.ts,typescript,587,9,2,2
+services/search-worker/src/search-results.ts,typescript,324,3,1,1
+services/search-worker/src/search-service.ts,typescript,312,0,4,1
+services/search-worker/src/search-sync.ts,typescript,73,0,2,1
 services/site-worker/scripts/build-app-worker.mjs,javascript,245,3,0,0
 services/site-worker/scripts/ensure-dist-placeholders.mjs,javascript,24,3,0,1
 services/site-worker/scripts/generate-worker-config.mjs,javascript,259,4,0,0
@@ -204,7 +204,7 @@ services/site/app/routes/chats/guest-info.tsx,typescript,38,1,1,0
 services/site/app/routes/chats/index.tsx,typescript,15,0,1,0
 services/site/app/routes/chats_/$season.$episode_.$slug.tsx,typescript,663,7,25,0
 services/site/app/routes/chats_/$season_.$episode.tsx,typescript,28,2,3,0
-services/site/app/routes/clear-resolved-search-error.tsx,typescript,23,5,1,1
+services/site/app/routes/clear-resolved-search-error.tsx,typescript,23,5,2,1
 services/site/app/routes/contact.tsx,typescript,222,5,11,0
 services/site/app/routes/courses.tsx,typescript,226,0,13,0
 services/site/app/routes/credits.tsx,typescript,280,0,14,0
@@ -221,7 +221,7 @@ services/site/app/routes/mcp/create-mcp-server-card.server.ts,typescript,41,0,3,
 services/site/app/routes/mcp/index.ts,typescript,43,8,2,0
 services/site/app/routes/mcp/mcp-lazy.server.ts,typescript,12,2,2,2
 services/site/app/routes/mcp/mcp-sdk.server.ts,typescript,4,0,0,2
-services/site/app/routes/mcp/mcp.runtime.server.ts,typescript,534,7,13,1
+services/site/app/routes/mcp/mcp.runtime.server.ts,typescript,534,7,14,1
 services/site/app/routes/mcp/server-card.ts,typescript,3,0,0,2
 services/site/app/routes/me/_layout.tsx,typescript,743,2,25,0
 services/site/app/routes/me/download[.]json.tsx,typescript,29,0,4,0
@@ -246,7 +246,7 @@ services/site/app/routes/resources/homework-completion.tsx,typescript,259,0,6,1
 services/site/app/routes/resources/lookout.ts,typescript,72,6,1,0
 services/site/app/routes/resources/og-image-sign.ts,typescript,35,3,5,0
 services/site/app/routes/resources/promotification.tsx,typescript,291,18,4,1
-services/site/app/routes/resources/search.ts,typescript,64,3,2,0
+services/site/app/routes/resources/search.ts,typescript,64,3,3,0
 services/site/app/routes/resources/webauthn/generate-authentication-options.ts,typescript,16,0,2,0
 services/site/app/routes/resources/webauthn/generate-registration-options.ts,typescript,42,0,5,0
 services/site/app/routes/resources/webauthn/verify-authentication.ts,typescript,87,3,6,0
@@ -254,7 +254,7 @@ services/site/app/routes/resources/webauthn/verify-registration.ts,typescript,91
 services/site/app/routes/resume.tsx,typescript,501,0,7,0
 services/site/app/routes/s.$query.tsx,typescript,10,1,0,0
 services/site/app/routes/search.admin.tsx,typescript,884,5,8,0
-services/site/app/routes/search.tsx,typescript,491,6,10,0
+services/site/app/routes/search.tsx,typescript,491,6,11,0
 services/site/app/routes/signup.tsx,typescript,816,13,24,0
 services/site/app/routes/subscribe.tsx,typescript,172,0,13,0
 services/site/app/routes/talks/$slug.tsx,typescript,40,1,2,0
@@ -345,7 +345,7 @@ services/site/app/utils/media-serving.server.ts,typescript,641,21,1,4
 services/site/app/utils/media.ts,typescript,147,22,0,11
 services/site/app/utils/misc-react.tsx,typescript,312,47,5,25
 services/site/app/utils/misc.ts,typescript,203,9,1,70
-services/site/app/utils/mock-search-worker-fixtures.server.ts,typescript,155,0,0,2
+services/site/app/utils/mock-search-worker-fixtures.server.ts,typescript,155,0,1,2
 services/site/app/utils/monitoring.client.tsx,typescript,31,4,1,1
 services/site/app/utils/nonce-provider.ts,typescript,4,5,0,2
 services/site/app/utils/not-found-matches.ts,typescript,55,5,0,5
@@ -375,8 +375,8 @@ services/site/app/utils/request-info.ts,typescript,8,1,1,3
 services/site/app/utils/resume.server.ts,typescript,168,0,3,1
 services/site/app/utils/resume.ts,typescript,27,0,0,1
 services/site/app/utils/runtime-bindings.server.ts,typescript,29,0,1,12
-services/site/app/utils/search-worker-client.server.ts,typescript,86,0,1,1
-services/site/app/utils/search.server.ts,typescript,173,2,5,3
+services/site/app/utils/search-worker-client.server.ts,typescript,86,0,2,1
+services/site/app/utils/search.server.ts,typescript,173,2,6,3
 services/site/app/utils/security-headers.server.ts,typescript,16,0,0,1
 services/site/app/utils/semantic-search-admin.server.ts,typescript,290,0,2,1
 services/site/app/utils/semantic-search-presentation.server.ts,typescript,521,12,2,1

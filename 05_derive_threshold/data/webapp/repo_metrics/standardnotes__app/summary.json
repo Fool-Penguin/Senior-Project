@@ -12,8 +12,13 @@
   },
   "functions": 10471,
   "internal_import_edges": 7783,
+  "js_alias_imports_unresolved": 377,
   "js_relative_imports_unresolved": 253,
+  "js_type_only_import_edges": 5,
   "key": "standardnotes__app",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "11432ca3b443f1b520430ac28c70678e0bcfd425",
   "tools": {
     "tree-sitter": "0.26.0",

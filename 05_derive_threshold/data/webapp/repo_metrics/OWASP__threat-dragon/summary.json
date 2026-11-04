@@ -8,9 +8,14 @@
     "javascript": 193
   },
   "functions": 1022,
-  "internal_import_edges": 252,
+  "internal_import_edges": 338,
+  "js_alias_imports_unresolved": 31,
   "js_relative_imports_unresolved": 25,
+  "js_type_only_import_edges": 0,
   "key": "OWASP__threat-dragon",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "72ea3b18876de21831ec21c0df18a71a9a795af4",
   "tools": {
     "tree-sitter": "0.26.0",

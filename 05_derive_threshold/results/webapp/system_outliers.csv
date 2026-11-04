@@ -1,13 +1,14 @@
 group,metric,key,system_median,upper_fence
 python,cyclomatic,fossasia__veditor,12,10.50
-python,cognitive,crocodilestick__Calibre-Web-Automated,12,10.50
-python,cognitive,fossasia__veditor,16,10.50
-python,cognitive,pritunl__pritunl,16,10.50
+python,cognitive,crocodilestick__Calibre-Web-Automated,13,11.50
+python,cognitive,fireshare-app__fireshare,12,11.50
+python,cognitive,fossasia__veditor,16,11.50
+python,cognitive,pritunl__pritunl,17,11.50
 python,params,fossasia__veditor,4,3.50
 python,function_sloc,fossasia__veditor,73,51.50
 python,function_sloc,pritunl__pritunl,65,51.50
 python,file_sloc,django__djangoproject.com,17945,1037.00
-python,ce,saleor__saleor,16,12.00
+python,ce,saleor__saleor,16,10.50
 python,ca,Haidra-Org__AI-Horde,4,3.50
 javascript,cyclomatic,fireshare-app__fireshare,9,7.00
 javascript,cyclomatic,fossasia__veditor,8,7.00
@@ -42,7 +43,6 @@ typescript,file_sloc,audreyt__ethercalc,22683,544.75
 typescript,file_sloc,measure-sh__measure,692,544.75
 typescript,file_sloc,saltcorn__saltcorn,1101,544.75
 typescript,ce,Expensify__App,11,10.50
-typescript,ce,saltcorn__saltcorn,16,10.50
 typescript,ca,Arthi-chaud__Meelo,2,1.00
 typescript,ca,Shelf-nu__shelf.nu,2,1.00
 typescript,ca,bambanah__deemix,2,1.00
@@ -51,7 +51,6 @@ typescript,ca,firefox-devtools__profiler,2,1.00
 typescript,ca,hyperdxio__hyperdx,2,1.00
 typescript,ca,joye61__pic-smaller,2,1.00
 typescript,ca,paperless-ngx__paperless-ngx,2,1.00
-typescript,ca,saltcorn__saltcorn,2,1.00
 typescript,ca,standardnotes__app,2,1.00
 typescript,ca,tdurieux__anonymous_github,2,1.00
 js_ts,cyclomatic,fireshare-app__fireshare,9,8.00

@@ -12,9 +12,14 @@
     "typescript": 195
   },
   "functions": 3528,
-  "internal_import_edges": 602,
+  "internal_import_edges": 2166,
+  "js_alias_imports_unresolved": 45,
   "js_relative_imports_unresolved": 51,
+  "js_type_only_import_edges": 129,
   "key": "endurain-project__endurain",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 74,
+  "py_type_only_import_edges": 59,
   "sha": "712b04ddbcb269109f72661637636251e396b3a5",
   "tools": {
     "tree-sitter": "0.26.0",

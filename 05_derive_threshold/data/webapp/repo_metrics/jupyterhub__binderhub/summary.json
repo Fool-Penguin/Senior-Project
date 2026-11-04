@@ -10,9 +10,14 @@
     "python": 29
   },
   "functions": 385,
-  "internal_import_edges": 54,
+  "internal_import_edges": 58,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 5,
+  "js_type_only_import_edges": 0,
   "key": "jupyterhub__binderhub",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "1013493a4eaf91d9ad15de0d125cd0e36505d093",
   "tools": {
     "tree-sitter": "0.26.0",

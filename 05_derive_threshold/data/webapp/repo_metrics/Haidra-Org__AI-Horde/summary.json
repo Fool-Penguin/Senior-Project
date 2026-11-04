@@ -7,9 +7,14 @@
     "python": 134
   },
   "functions": 1995,
-  "internal_import_edges": 692,
+  "internal_import_edges": 695,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "Haidra-Org__AI-Horde",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 11,
   "sha": "451ad32dc400a9ca1ffdb0f0c54c3d41e7d688e6",
   "tools": {
     "tree-sitter": "0.26.0",

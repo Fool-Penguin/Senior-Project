@@ -12,9 +12,14 @@
     "typescript": 694
   },
   "functions": 13783,
-  "internal_import_edges": 4013,
+  "internal_import_edges": 4017,
+  "js_alias_imports_unresolved": 1,
   "js_relative_imports_unresolved": 161,
+  "js_type_only_import_edges": 94,
   "key": "cvat-ai__cvat",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 165,
+  "py_type_only_import_edges": 19,
   "sha": "fcd72d43ad5f791974d6d1e57ee9d0d9886a2a51",
   "tools": {
     "tree-sitter": "0.26.0",

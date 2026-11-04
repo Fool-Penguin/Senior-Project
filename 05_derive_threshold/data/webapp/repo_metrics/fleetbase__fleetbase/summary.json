@@ -10,8 +10,13 @@
   },
   "functions": 1670,
   "internal_import_edges": 63,
+  "js_alias_imports_unresolved": 5,
   "js_relative_imports_unresolved": 2,
+  "js_type_only_import_edges": 0,
   "key": "fleetbase__fleetbase",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "b56571cfe296995e311051b3e66abd0a35e37d79",
   "tools": {
     "tree-sitter": "0.26.0",

@@ -11,8 +11,13 @@
   },
   "functions": 4273,
   "internal_import_edges": 331,
+  "js_alias_imports_unresolved": 13,
   "js_relative_imports_unresolved": 4,
+  "js_type_only_import_edges": 0,
   "key": "pwndoc__pwndoc",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "844e50e012d59a180cf11b3bde08907601996f76",
   "tools": {
     "tree-sitter": "0.26.0",

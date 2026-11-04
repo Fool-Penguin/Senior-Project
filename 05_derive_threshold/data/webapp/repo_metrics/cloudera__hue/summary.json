@@ -14,9 +14,14 @@
     "typescript": 289
   },
   "functions": 50883,
-  "internal_import_edges": 6238,
+  "internal_import_edges": 6251,
+  "js_alias_imports_unresolved": 46,
   "js_relative_imports_unresolved": 2355,
+  "js_type_only_import_edges": 1,
   "key": "cloudera__hue",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 728,
+  "py_type_only_import_edges": 7,
   "sha": "7ad92b1820d62a0d5fde38889a1d16646d7a397f",
   "tools": {
     "tree-sitter": "0.26.0",

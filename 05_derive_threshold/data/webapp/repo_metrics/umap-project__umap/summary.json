@@ -11,8 +11,13 @@
   },
   "functions": 2931,
   "internal_import_edges": 320,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "umap-project__umap",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "f2ed40e17bee3f91b01f4de1ce3f798b9b5a78a9",
   "tools": {
     "tree-sitter": "0.26.0",

@@ -15,9 +15,14 @@
     "typescript": 2454
   },
   "functions": 20108,
-  "internal_import_edges": 11082,
+  "internal_import_edges": 11195,
+  "js_alias_imports_unresolved": 2,
   "js_relative_imports_unresolved": 6,
+  "js_type_only_import_edges": 1264,
   "key": "Arize-ai__phoenix",
+  "py_imports_ambiguous": 6,
+  "py_imports_unresolved": 947,
+  "py_type_only_import_edges": 32,
   "sha": "10103fed446441508e098e3a6dc9f172005fd264",
   "tools": {
     "tree-sitter": "0.26.0",

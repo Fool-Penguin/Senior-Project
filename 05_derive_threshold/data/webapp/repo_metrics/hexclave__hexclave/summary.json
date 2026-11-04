@@ -15,8 +15,13 @@
   },
   "functions": 22220,
   "internal_import_edges": 5324,
+  "js_alias_imports_unresolved": 2504,
   "js_relative_imports_unresolved": 24,
+  "js_type_only_import_edges": 189,
   "key": "hexclave__hexclave",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "748d46a16d63df00a8e403b4baab9bfa541f2372",
   "tools": {
     "tree-sitter": "0.26.0",

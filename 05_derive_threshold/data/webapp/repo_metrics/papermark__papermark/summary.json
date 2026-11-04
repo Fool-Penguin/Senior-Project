@@ -11,8 +11,13 @@
   },
   "functions": 8145,
   "internal_import_edges": 5400,
+  "js_alias_imports_unresolved": 127,
   "js_relative_imports_unresolved": 2,
+  "js_type_only_import_edges": 32,
   "key": "papermark__papermark",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "ed19717ec02a1ac79aecf5569159aa9d2d869312",
   "tools": {
     "tree-sitter": "0.26.0",

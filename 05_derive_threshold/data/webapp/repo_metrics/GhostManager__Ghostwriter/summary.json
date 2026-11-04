@@ -13,8 +13,13 @@
   },
   "functions": 3162,
   "internal_import_edges": 556,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 3,
+  "js_type_only_import_edges": 2,
   "key": "GhostManager__Ghostwriter",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 53,
+  "py_type_only_import_edges": 0,
   "sha": "0f4231b5018db0c7b281e55ddf5d06b217d9243e",
   "tools": {
     "tree-sitter": "0.26.0",

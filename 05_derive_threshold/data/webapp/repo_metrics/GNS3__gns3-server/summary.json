@@ -9,9 +9,14 @@
     "python": 268
   },
   "functions": 2393,
-  "internal_import_edges": 682,
+  "internal_import_edges": 687,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "GNS3__gns3-server",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 68,
+  "py_type_only_import_edges": 0,
   "sha": "9c6a0c7be42629fd0c72fab1e3376c34f7dd1681",
   "tools": {
     "tree-sitter": "0.26.0",

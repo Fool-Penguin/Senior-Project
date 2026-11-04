@@ -10,9 +10,14 @@
     "javascript": 464
   },
   "functions": 4831,
-  "internal_import_edges": 1242,
+  "internal_import_edges": 1273,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 4,
+  "js_type_only_import_edges": 0,
   "key": "nasa-gibs__worldview",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "1accc6e947423ae114942c9fd04d19821205f467",
   "tools": {
     "tree-sitter": "0.26.0",

@@ -12,8 +12,13 @@
   },
   "functions": 2248,
   "internal_import_edges": 342,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 4,
+  "js_type_only_import_edges": 61,
   "key": "audreyt__ethercalc",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "e989429d011a8e79706272103a63ed94ac8526bc",
   "tools": {
     "tree-sitter": "0.26.0",

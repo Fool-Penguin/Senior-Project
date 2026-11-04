@@ -9,9 +9,14 @@
     "python": 336
   },
   "functions": 4904,
-  "internal_import_edges": 234,
+  "internal_import_edges": 1143,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "cdhigh__KindleEar",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 240,
+  "py_type_only_import_edges": 0,
   "sha": "125983694c36c589bcfac61ca4dc6c9e4eddd7e0",
   "tools": {
     "tree-sitter": "0.26.0",

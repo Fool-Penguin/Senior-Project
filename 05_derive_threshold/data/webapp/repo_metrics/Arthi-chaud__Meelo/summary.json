@@ -12,8 +12,13 @@
   },
   "functions": 4337,
   "internal_import_edges": 3467,
+  "js_alias_imports_unresolved": 115,
   "js_relative_imports_unresolved": 4,
+  "js_type_only_import_edges": 567,
   "key": "Arthi-chaud__Meelo",
+  "py_imports_ambiguous": 3,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "3c51de42bbe094161d5b12a363c44ec7275e2f15",
   "tools": {
     "tree-sitter": "0.26.0",

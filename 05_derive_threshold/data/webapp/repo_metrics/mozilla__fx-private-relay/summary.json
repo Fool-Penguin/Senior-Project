@@ -12,8 +12,13 @@
   },
   "functions": 1462,
   "internal_import_edges": 762,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 198,
+  "js_type_only_import_edges": 0,
   "key": "mozilla__fx-private-relay",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 24,
+  "py_type_only_import_edges": 1,
   "sha": "75b65462bca35a0363cec7695e809f7a0228f450",
   "tools": {
     "tree-sitter": "0.26.0",

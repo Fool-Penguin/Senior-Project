@@ -8,8 +8,13 @@
   },
   "functions": 1809,
   "internal_import_edges": 1749,
+  "js_alias_imports_unresolved": 4,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "gethomepage__homepage",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "2e5f10134ae3961bb936d3e7c441f9a1f4a4bf4f",
   "tools": {
     "tree-sitter": "0.26.0",

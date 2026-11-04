@@ -1351,7 +1351,7 @@ packages/utils/src/Domain/Logger/LogLevel.ts,typescript,1,0,0,3
 packages/utils/src/Domain/Logger/Logger.ts,typescript,49,2,1,1
 packages/utils/src/Domain/Logger/LoggerInterface.ts,typescript,8,1,1,1
 packages/utils/src/Domain/Utils/ClassNames.ts,typescript,7,0,1,1
-packages/utils/src/Domain/Utils/Debounce.ts,typescript,68,1,0,1
+packages/utils/src/Domain/Utils/Debounce.ts,typescript,68,2,0,1
 packages/utils/src/Domain/Utils/Utils.ts,typescript,500,77,0,4
 packages/utils/src/Domain/Uuid/Utils.ts,typescript,5,0,0,1
 packages/utils/src/Domain/Uuid/UuidGenerator.ts,typescript,9,4,0,1
@@ -1860,7 +1860,7 @@ packages/web/src/javascripts/Components/SuperEditor/Lexical/Shared/invariant.ts,
 packages/web/src/javascripts/Components/SuperEditor/Lexical/Theme/IconComponent.tsx,typescript,15,0,0,0
 packages/web/src/javascripts/Components/SuperEditor/Lexical/Theme/Theme.ts,typescript,96,0,0,4
 packages/web/src/javascripts/Components/SuperEditor/Lexical/UI/Modal.tsx,typescript,93,0,2,2
-packages/web/src/javascripts/Components/SuperEditor/Lexical/Utils/MarkdownExport.ts,typescript,195,23,1,2
+packages/web/src/javascripts/Components/SuperEditor/Lexical/Utils/MarkdownExport.ts,typescript,195,24,1,2
 packages/web/src/javascripts/Components/SuperEditor/Lexical/Utils/MarkdownImportExportUtils.ts,typescript,57,0,0,1
 packages/web/src/javascripts/Components/SuperEditor/Lexical/Utils/PDFExport/CodeHighlightColors.ts,typescript,27,0,1,1
 packages/web/src/javascripts/Components/SuperEditor/Lexical/Utils/PDFExport/FontConfig.ts,typescript,268,1,0,2

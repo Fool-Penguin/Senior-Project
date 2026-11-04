@@ -48,8 +48,8 @@ app/blueprints/settings/__init__.py,python,0,0,0,0
 app/blueprints/settings/routes.py,python,432,60,10,1
 app/blueprints/setup/__init__.py,python,0,0,0,0
 app/blueprints/setup/routes.py,python,55,11,3,1
-app/blueprints/webauthn/__init__.py,python,0,1,0,0
-app/blueprints/webauthn/routes.py,python,440,40,2,1
+app/blueprints/webauthn/__init__.py,python,0,1,0,1
+app/blueprints/webauthn/routes.py,python,440,40,3,1
 app/blueprints/wizard/routes.py,python,953,284,7,2
 app/blueprints/wizard_admin/__init__.py,python,0,0,0,0
 app/blueprints/wizard_admin/routes.py,python,686,117,6,1
@@ -170,6 +170,6 @@ scripts/build_plus.py,python,8,3,0,0
 scripts/cleanup_unknown_sessions.py,python,64,17,2,0
 scripts/migration_doctor.py,python,319,22,2,0
 scripts/update_wizard_external_url.py,python,36,9,2,0
-scripts/verify_plus_license.py,python,8,3,0,0
+scripts/verify_plus_license.py,python,8,1,0,0
 scripts/wizard_translation_extractor.py,python,55,4,0,0
 setup_plus.py,python,8,2,0,0

@@ -10,9 +10,14 @@
     "typescript": 207
   },
   "functions": 810,
-  "internal_import_edges": 71,
+  "internal_import_edges": 106,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 364,
+  "js_type_only_import_edges": 32,
   "key": "miantiao-me__Sink",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "6718f0a5eeaddd9b0347cd18b4ff9f2de48e6fea",
   "tools": {
     "tree-sitter": "0.26.0",

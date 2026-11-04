@@ -13,8 +13,13 @@
   },
   "functions": 8937,
   "internal_import_edges": 6025,
+  "js_alias_imports_unresolved": 4,
   "js_relative_imports_unresolved": 37,
+  "js_type_only_import_edges": 66,
   "key": "stumpapp__stump",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "0769a29393e0b5c87d5c0d6a580fca2063ef3e7a",
   "tools": {
     "tree-sitter": "0.26.0",

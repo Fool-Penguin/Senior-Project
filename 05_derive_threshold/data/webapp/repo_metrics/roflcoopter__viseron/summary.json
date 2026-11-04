@@ -11,9 +11,14 @@
     "typescript": 257
   },
   "functions": 4928,
-  "internal_import_edges": 1952,
+  "internal_import_edges": 1963,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 3,
+  "js_type_only_import_edges": 4,
   "key": "roflcoopter__viseron",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 54,
+  "py_type_only_import_edges": 267,
   "sha": "699c65bc3eaec09eb3ade8b82ef1adec106298fe",
   "tools": {
     "tree-sitter": "0.26.0",

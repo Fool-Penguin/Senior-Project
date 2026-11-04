@@ -10,9 +10,14 @@
     "python": 102
   },
   "functions": 1411,
-  "internal_import_edges": 301,
+  "internal_import_edges": 352,
+  "js_alias_imports_unresolved": 18,
   "js_relative_imports_unresolved": 11,
+  "js_type_only_import_edges": 0,
   "key": "bugy__script-server",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 35,
+  "py_type_only_import_edges": 0,
   "sha": "62bd38a3942e73546ba701248253d043eb66dadd",
   "tools": {
     "tree-sitter": "0.26.0",

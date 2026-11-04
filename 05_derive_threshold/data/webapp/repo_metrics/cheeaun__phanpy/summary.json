@@ -10,8 +10,13 @@
   },
   "functions": 3295,
   "internal_import_edges": 1127,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 96,
+  "js_type_only_import_edges": 0,
   "key": "cheeaun__phanpy",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "a03425ea314c5be26d79e572a68a6d8f4b88e5de",
   "tools": {
     "tree-sitter": "0.26.0",

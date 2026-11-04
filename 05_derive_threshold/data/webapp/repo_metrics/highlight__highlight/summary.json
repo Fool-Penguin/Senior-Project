@@ -16,8 +16,13 @@
   },
   "functions": 7086,
   "internal_import_edges": 5857,
+  "js_alias_imports_unresolved": 61,
   "js_relative_imports_unresolved": 233,
+  "js_type_only_import_edges": 30,
   "key": "highlight__highlight",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 10,
+  "py_type_only_import_edges": 0,
   "sha": "3bf002113e555d1ba3d4df648ed44e3503a27e96",
   "tools": {
     "tree-sitter": "0.26.0",

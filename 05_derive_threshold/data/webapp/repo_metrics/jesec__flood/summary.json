@@ -12,8 +12,13 @@
   },
   "functions": 2325,
   "internal_import_edges": 1117,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 4,
+  "js_type_only_import_edges": 223,
   "key": "jesec__flood",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "c7359f4904e9096e8c42222f209e2b12fe9f1c8f",
   "tools": {
     "tree-sitter": "0.26.0",

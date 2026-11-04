@@ -9,9 +9,14 @@
     "typescript": 1
   },
   "functions": 796,
-  "internal_import_edges": 106,
+  "internal_import_edges": 203,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "meeb__tubesync",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 34,
+  "py_type_only_import_edges": 0,
   "sha": "bdb59f4650cf6d9e0a3e178b00b2a053378d6d98",
   "tools": {
     "tree-sitter": "0.26.0",

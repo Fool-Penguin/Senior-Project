@@ -12,8 +12,13 @@
   },
   "functions": 20685,
   "internal_import_edges": 1162,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 78,
+  "js_type_only_import_edges": 0,
   "key": "Countly__countly-server",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "5bb8e77c5060172af8fb49d4865587bf70365013",
   "tools": {
     "tree-sitter": "0.26.0",

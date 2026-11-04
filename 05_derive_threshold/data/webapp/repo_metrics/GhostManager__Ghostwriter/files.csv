@@ -189,7 +189,7 @@ ghostwriter/static/js/admin/userprofile_admin.js,javascript,20,7,0,0
 ghostwriter/static/js/collection-add-footer.js,javascript,52,6,0,0
 ghostwriter/static/js/editor_shortcuts.js,javascript,160,0,0,0
 ghostwriter/static/js/evidence-lightbox.js,javascript,159,48,0,0
-ghostwriter/static/js/jquery.textarea_autosize.js,javascript,39,1,0,0
+ghostwriter/static/js/jquery.textarea_autosize.js,javascript,39,2,0,0
 ghostwriter/static/js/jsonview.js,javascript,185,2,0,0
 ghostwriter/static/js/oplog.js,javascript,1505,113,0,0
 ghostwriter/static/js/page-sticky-offset.js,javascript,26,2,0,0

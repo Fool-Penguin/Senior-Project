@@ -13,9 +13,14 @@
     "typescript": 3237
   },
   "functions": 17814,
-  "internal_import_edges": 13699,
+  "internal_import_edges": 14115,
+  "js_alias_imports_unresolved": 223,
   "js_relative_imports_unresolved": 79,
+  "js_type_only_import_edges": 1746,
   "key": "makeplane__plane",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 71,
+  "py_type_only_import_edges": 0,
   "sha": "37a15d99231042b3ff5a4401fed479fdbec9effe",
   "tools": {
     "tree-sitter": "0.26.0",

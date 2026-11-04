@@ -10,9 +10,14 @@
     "python": 269
   },
   "functions": 3078,
-  "internal_import_edges": 1172,
+  "internal_import_edges": 1175,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "pritunl__pritunl",
+  "py_imports_ambiguous": 1,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "c9c29fd60f8a81cbfa6b6b0742b604bdf066bb05",
   "tools": {
     "tree-sitter": "0.26.0",

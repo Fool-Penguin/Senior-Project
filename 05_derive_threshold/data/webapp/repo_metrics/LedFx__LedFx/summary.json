@@ -11,9 +11,14 @@
     "python": 253
   },
   "functions": 2213,
-  "internal_import_edges": 854,
+  "internal_import_edges": 855,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "LedFx__LedFx",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 10,
+  "py_type_only_import_edges": 17,
   "sha": "f562a02964bcc940f149ba6baa81b68f8be668df",
   "tools": {
     "tree-sitter": "0.26.0",

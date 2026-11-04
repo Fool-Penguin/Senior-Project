@@ -13,9 +13,14 @@
     "typescript": 3319
   },
   "functions": 21392,
-  "internal_import_edges": 14460,
+  "internal_import_edges": 14482,
+  "js_alias_imports_unresolved": 50,
   "js_relative_imports_unresolved": 8,
+  "js_type_only_import_edges": 1429,
   "key": "formbricks__formbricks",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "fa289168d43699043e8e4016c3aa38bc3109f865",
   "tools": {
     "tree-sitter": "0.26.0",

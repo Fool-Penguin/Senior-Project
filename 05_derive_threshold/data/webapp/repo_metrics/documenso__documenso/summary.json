@@ -12,8 +12,13 @@
   },
   "functions": 10006,
   "internal_import_edges": 9936,
+  "js_alias_imports_unresolved": 154,
   "js_relative_imports_unresolved": 88,
+  "js_type_only_import_edges": 708,
   "key": "documenso__documenso",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "503cd1aa1c7507ef8cadf476a7998bec7673f6d2",
   "tools": {
     "tree-sitter": "0.26.0",

@@ -9,9 +9,14 @@
     "python": 461
   },
   "functions": 5247,
-  "internal_import_edges": 2302,
+  "internal_import_edges": 2510,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "gpustack__gpustack",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 54,
+  "py_type_only_import_edges": 14,
   "sha": "6e3a42a9d3d59eb6f11407ed5cb96d5840c3f48e",
   "tools": {
     "tree-sitter": "0.26.0",

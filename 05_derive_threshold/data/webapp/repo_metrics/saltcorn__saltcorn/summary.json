@@ -13,9 +13,14 @@
     "typescript": 249
   },
   "functions": 9741,
-  "internal_import_edges": 2254,
+  "internal_import_edges": 1755,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 32,
+  "js_type_only_import_edges": 136,
   "key": "saltcorn__saltcorn",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "743add10a56e12d77b9a0565920ca6be7651ccf3",
   "tools": {
     "tree-sitter": "0.26.0",

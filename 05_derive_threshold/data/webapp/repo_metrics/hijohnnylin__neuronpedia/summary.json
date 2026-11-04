@@ -14,9 +14,14 @@
     "typescript": 533
   },
   "functions": 7040,
-  "internal_import_edges": 1971,
+  "internal_import_edges": 1999,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 4,
+  "js_type_only_import_edges": 24,
   "key": "hijohnnylin__neuronpedia",
+  "py_imports_ambiguous": 3,
+  "py_imports_unresolved": 21,
+  "py_type_only_import_edges": 0,
   "sha": "e2573d3a4b9fd1a620fc386f6d2a8e0571420f9d",
   "tools": {
     "tree-sitter": "0.26.0",

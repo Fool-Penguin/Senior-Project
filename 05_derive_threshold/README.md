@@ -188,12 +188,12 @@ Flag when value > default.
 | Metric | `.py` (python) | `.js` (js_ts) | `.ts` (typescript) |
 |---|---|---|---|
 | Cyclomatic | 11 | 10 | 10 |
-| Cognitive | 17 | 8 | 8 |
+| Cognitive | 18 | 8 | 8 |
 | Parameter count | 3 | 2 | 2 |
 | Function SLOC | 63 | 88 | 97 |
 | File SLOC | 1029 | 707 | 578 |
-| Ce | 9 | 9 | 11 |
-| Ca | 4 | 2 | 3 |
+| Ce | 10 | 9 | 11 |
+| Ca | 5 | 3 | 3 |
 | Comment density | information only | information only | information only |
 
 All 70/80/90 values are in `results/webapp/thresholds.md`.
@@ -202,7 +202,7 @@ All 70/80/90 values are in `results/webapp/thresholds.md`.
 
 - **Single default per metric = t80.** This is the start of Alves' high-risk band;
   flag when value > default. t90 (very-high risk) was judged too loose, e.g. cyclomatic 18 in all three
-  languages and cognitive 32 for Python. The full bands are stored alongside the default.
+  languages and cognitive 34 for Python. The full bands are stored alongside the default.
 - **`.js` uses the pooled js_ts set.** The JS-only systems are small and uneven: the median system is 10.5K SLOC,
   and 21 of 54 are the JS part of a Python or TS repository. Its file SLOC and Ce thresholds shift with the
   minimum system size, and its file-SLOC quality profile has empty top bands. Alves also pooled two languages
@@ -213,9 +213,8 @@ All 70/80/90 values are in `results/webapp/thresholds.md`.
   profile was 85 / 10 / 1.6 / 4 (high band far below Alves' ~5%); with 70/80/90 it is 73 / 12 / 10 / 5, close
   to 70/10/10/10. The JS/TS default is 2 under either set; Python goes from 5 to 3.
 - **Parameter count JS/TS thresholds = 1 / 2 / 2.** The 80% and 90% quantiles are both 2, so the high band is
-  empty: three effective bands, a consequence of a whole-number metric. Ca (t70 = t80) has the same effect in
-  the `.js` set.
-- **No outlier systems removed.** 78 metric × system flags (55 systems) are listed in
+  empty: three effective bands, a consequence of a whole-number metric.
+- **No outlier systems removed.** 77 metric × system flags (56 systems) are listed in
   `results/webapp/system_outliers.csv`. All systems are kept, following Alves Sec. VII-C: the method is
   resilient to outliers.
 - **Comment density has no default (information only).** At least 15% of files have no comments, so Vale's

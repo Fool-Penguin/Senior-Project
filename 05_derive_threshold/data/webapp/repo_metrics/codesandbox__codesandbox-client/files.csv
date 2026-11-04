@@ -27,7 +27,7 @@ packages/app/scripts/sentry-create-release.js,javascript,18,1,0,0
 packages/app/scripts/sentry-deploy-release.js,javascript,10,0,0,0
 packages/app/scripts/start.js,javascript,265,69,3,0
 packages/app/scripts/stats.js,javascript,20,1,0,0
-packages/app/scripts/utils/WatchMissingNodeModulesPlugin.js,javascript,16,2,0,1
+packages/app/scripts/utils/WatchMissingNodeModulesPlugin.js,javascript,16,5,0,1
 packages/app/scripts/utils/prompt.js,javascript,25,3,0,0
 packages/app/src/app/components/CodeEditor/CodeMirror/elements.js,javascript,172,0,0,1
 packages/app/src/app/components/CodeEditor/Configuration/index.tsx,typescript,99,4,3,1
@@ -597,7 +597,7 @@ packages/app/src/sandbox/eval/transpilers/babel/worker/index.ts,typescript,10,2,
 packages/app/src/sandbox/eval/transpilers/babel/worker/plugins/babel-plugin-detective.ts,typescript,50,2,1,1
 packages/app/src/sandbox/eval/transpilers/babel/worker/plugins/babel-plugin-dynamic-css-modules.ts,typescript,29,11,1,1
 packages/app/src/sandbox/eval/transpilers/babel/worker/plugins/babel-plugin-rename-imports.ts,typescript,15,2,0,1
-packages/app/src/sandbox/eval/transpilers/babel/worker/plugins/babel-plugin-transform-prevent-infinite-loops.ts,typescript,36,5,0,1
+packages/app/src/sandbox/eval/transpilers/babel/worker/plugins/babel-plugin-transform-prevent-infinite-loops.ts,typescript,36,7,0,1
 packages/app/src/sandbox/eval/transpilers/babel/worker/plugins/wrap-listener.ts,typescript,62,3,0,2
 packages/app/src/sandbox/eval/transpilers/babel/worker/simple-get-require-statements.ts,typescript,45,3,0,1
 packages/app/src/sandbox/eval/transpilers/babel/worker/utils/babelTypes.ts,typescript,12,2,0,2
@@ -645,11 +645,11 @@ packages/app/src/sandbox/eval/transpilers/typescript/index.ts,typescript,59,3,3,
 packages/app/src/sandbox/eval/transpilers/typescript/typescript-worker.ts,typescript,74,0,2,0
 packages/app/src/sandbox/eval/transpilers/utils/binary.ts,typescript,7,0,0,0
 packages/app/src/sandbox/eval/transpilers/utils/fs.ts,typescript,18,0,1,2
-packages/app/src/sandbox/eval/transpilers/utils/get-source-map.ts,typescript,83,15,0,0
+packages/app/src/sandbox/eval/transpilers/utils/get-source-map.ts,typescript,83,16,0,0
 packages/app/src/sandbox/eval/transpilers/utils/worker-error-handler.ts,typescript,29,0,0,0
 packages/app/src/sandbox/eval/transpilers/utils/worker-warning-handler.ts,typescript,29,0,0,1
 packages/app/src/sandbox/eval/transpilers/vue/v2/component-normalizer.js,javascript,62,24,0,0
-packages/app/src/sandbox/eval/transpilers/vue/v2/css-loader/client/css-base.js,javascript,57,8,0,0
+packages/app/src/sandbox/eval/transpilers/vue/v2/css-loader/client/css-base.js,javascript,57,10,0,0
 packages/app/src/sandbox/eval/transpilers/vue/v2/css-loader/get-modules.ts,typescript,23,1,0,1
 packages/app/src/sandbox/eval/transpilers/vue/v2/css-loader/index.ts,typescript,15,3,0,2
 packages/app/src/sandbox/eval/transpilers/vue/v2/css-loader/loader.ts,typescript,22,2,1,0
@@ -662,7 +662,7 @@ packages/app/src/sandbox/eval/transpilers/vue/v2/style-compiler/index.ts,typescr
 packages/app/src/sandbox/eval/transpilers/vue/v2/style-compiler/loader.ts,typescript,96,8,4,0
 packages/app/src/sandbox/eval/transpilers/vue/v2/style-compiler/plugins/scope-id.js,javascript,72,11,0,1
 packages/app/src/sandbox/eval/transpilers/vue/v2/style-compiler/plugins/trim.js,javascript,10,2,0,1
-packages/app/src/sandbox/eval/transpilers/vue/v2/style-loader/addStylesClient.js,javascript,166,28,1,0
+packages/app/src/sandbox/eval/transpilers/vue/v2/style-loader/addStylesClient.js,javascript,166,29,1,0
 packages/app/src/sandbox/eval/transpilers/vue/v2/style-loader/index.ts,typescript,14,0,2,2
 packages/app/src/sandbox/eval/transpilers/vue/v2/style-loader/listToStyles.js,javascript,23,3,0,1
 packages/app/src/sandbox/eval/transpilers/vue/v2/style-loader/loader.ts,typescript,56,3,0,1
@@ -872,9 +872,9 @@ packages/common/src/themes/index.ts,typescript,90,0,1,0
 packages/common/src/themes/vscode-light.ts,typescript,604,0,0,1
 packages/common/src/types/index.ts,typescript,741,27,1,14
 packages/common/src/url.ts,typescript,99,2,0,0
-packages/common/src/utils/analytics/amplitude.ts,typescript,97,3,1,1
-packages/common/src/utils/analytics/index.ts,typescript,103,3,3,1
-packages/common/src/utils/analytics/sentry.ts,typescript,139,18,1,1
+packages/common/src/utils/analytics/amplitude.ts,typescript,97,3,2,1
+packages/common/src/utils/analytics/index.ts,typescript,103,3,4,1
+packages/common/src/utils/analytics/sentry.ts,typescript,139,18,2,1
 packages/common/src/utils/analytics/utils.ts,typescript,98,4,2,3
 packages/common/src/utils/animation/delay-effect.ts,typescript,16,0,0,0
 packages/common/src/utils/animation/delay-out-effect.ts,typescript,16,0,0,0
@@ -889,7 +889,7 @@ packages/common/src/utils/decorate-selector.ts,typescript,37,19,0,32
 packages/common/src/utils/delay.ts,typescript,3,0,0,0
 packages/common/src/utils/dependencies.ts,typescript,85,9,0,0
 packages/common/src/utils/diff/index.ts,typescript,42,1,1,0
-packages/common/src/utils/diff/lcs.js,javascript,1005,228,0,1
+packages/common/src/utils/diff/lcs.js,javascript,1005,229,0,1
 packages/common/src/utils/feature-flags.ts,typescript,1,3,0,0
 packages/common/src/utils/get-color.ts,typescript,8,2,0,0
 packages/common/src/utils/get-sandbox-name.ts,typescript,7,0,1,1
@@ -926,7 +926,7 @@ packages/common/src/utils/url-generator.ts,typescript,308,6,3,7
 packages/common/src/utils/url-generator/dashboard.ts,typescript,137,1,0,1
 packages/common/src/utils/user.ts,typescript,8,0,0,0
 packages/common/src/utils/withoutProps.tsx,typescript,29,1,0,1
-packages/common/src/version.js,javascript,23,1,0,0
+packages/common/src/version.js,javascript,23,1,0,3
 packages/components/scripts/visual-tests.js,javascript,23,0,0,0
 packages/components/src/components/Avatar/index.tsx,typescript,61,4,2,1
 packages/components/src/components/Avatar/stubs.ts,typescript,75,0,0,0
@@ -1129,7 +1129,7 @@ packages/sandbox-hooks/not-found-screen/index.js,javascript,84,0,2,3
 packages/sandbox-hooks/not-found-screen/overlay-manager.js,javascript,41,1,0,1
 packages/sandbox-hooks/not-found-screen/standalone.js,javascript,10,1,2,0
 packages/sandbox-hooks/preview-secret.js,javascript,84,3,0,6
-packages/sandbox-hooks/react-error-overlay/styles.js,javascript,246,3,0,0
+packages/sandbox-hooks/react-error-overlay/styles.js,javascript,246,4,0,0
 packages/sandbox-hooks/screenshot.js,javascript,63,3,1,2
 packages/sandbox-hooks/url-listeners.js,javascript,98,2,0,2
 packages/sandpack-core/jest.config.js,javascript,15,0,0,0
@@ -1200,7 +1200,7 @@ packages/sandpack-core/src/transpiler/transpiler.ts,typescript,37,3,2,1
 packages/sandpack-core/src/transpiler/transpilers/csb-dynamic-import/dynamic-import/index.ts,typescript,4,0,0,1
 packages/sandpack-core/src/transpiler/transpilers/csb-dynamic-import/index.ts,typescript,18,3,3,0
 packages/sandpack-core/src/transpiler/transpilers/webpack/index.ts,typescript,38,5,3,1
-packages/sandpack-core/src/transpiler/utils/get-source-map.ts,typescript,83,14,0,1
+packages/sandpack-core/src/transpiler/utils/get-source-map.ts,typescript,83,17,0,1
 packages/sandpack-core/src/transpiler/utils/loader-utils/get-options.ts,typescript,4,0,1,1
 packages/sandpack-core/src/transpiler/utils/loader-utils/get-remaining-request.ts,typescript,4,0,1,1
 packages/sandpack-core/src/transpiler/utils/loader-utils/index.ts,typescript,10,0,4,0
@@ -1381,8 +1381,8 @@ standalone-packages/vscode-editor/metadata.js,javascript,79,0,0,1
 standalone-packages/vscode-editor/website/index/index.js,javascript,142,1,0,0
 standalone-packages/vscode-editor/website/monarch/monarch.js,javascript,128,17,0,0
 standalone-packages/vscode-editor/website/typedoc-theme/helpers/sortModelGroups.js,javascript,69,3,0,0
-standalone-packages/vscode-textmate/benchmark/benchmark.js,javascript,50,3,0,0
-standalone-packages/vscode-textmate/release/main.js,javascript,3384,387,0,0
+standalone-packages/vscode-textmate/benchmark/benchmark.js,javascript,50,3,1,0
+standalone-packages/vscode-textmate/release/main.js,javascript,3384,387,0,1
 standalone-packages/vscode-textmate/scripts/inspect.js,javascript,58,0,0,0
 standalone-packages/vscode-textmate/scripts/release.js,javascript,41,0,0,0
 standalone-packages/vscode-textmate/src/_prefix.ts,typescript,27,0,0,0

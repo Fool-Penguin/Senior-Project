@@ -14,9 +14,14 @@
     "typescript": 1115
   },
   "functions": 9552,
-  "internal_import_edges": 2932,
+  "internal_import_edges": 2936,
+  "js_alias_imports_unresolved": 480,
   "js_relative_imports_unresolved": 24,
+  "js_type_only_import_edges": 9,
   "key": "codesandbox__codesandbox-client",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "dcba8ebc49cd46838e298cfa1501811ac67fb0c9",
   "tools": {
     "tree-sitter": "0.26.0",

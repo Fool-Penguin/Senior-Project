@@ -13,9 +13,14 @@
     "typescript": 214
   },
   "functions": 9656,
-  "internal_import_edges": 2938,
+  "internal_import_edges": 3016,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 1,
+  "js_type_only_import_edges": 126,
   "key": "xorbitsai__inference",
+  "py_imports_ambiguous": 5,
+  "py_imports_unresolved": 741,
+  "py_type_only_import_edges": 116,
   "sha": "12d4e66b3fc32f97d17eef09c4e21a4fe5b85c1c",
   "tools": {
     "tree-sitter": "0.26.0",

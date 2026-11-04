@@ -24,11 +24,11 @@
         90
       ],
       "thresholds": [
-        11,
-        17,
-        32
+        12,
+        18,
+        34
       ],
-      "default": 17,
+      "default": 18,
       "default_quantile": 80
     },
     "params": {
@@ -84,11 +84,11 @@
         90
       ],
       "thresholds": [
-        6,
-        9,
-        14
+        7,
+        10,
+        15
       ],
-      "default": 9,
+      "default": 10,
       "default_quantile": 80
     },
     "ca": {
@@ -99,11 +99,11 @@
         90
       ],
       "thresholds": [
-        2,
-        4,
-        10
+        3,
+        5,
+        11
       ],
-      "default": 4,
+      "default": 5,
       "default_quantile": 80
     },
     "comment_density": {
@@ -117,8 +117,8 @@
       "thresholds": [
         0.0,
         0.0,
-        33.33,
-        43.94
+        33.62,
+        43.92
       ],
       "default": null
     }
@@ -224,10 +224,10 @@
       ],
       "thresholds": [
         2,
-        2,
-        5
+        3,
+        6
       ],
-      "default": 2,
+      "default": 3,
       "default_quantile": 80
     },
     "comment_density": {
@@ -241,8 +241,8 @@
       "thresholds": [
         0.0,
         0.0,
-        17.99,
-        28.0
+        18.31,
+        28.57
       ],
       "default": null
     }
@@ -365,8 +365,8 @@
       "thresholds": [
         0.0,
         0.0,
-        17.65,
-        27.69
+        17.74,
+        27.91
       ],
       "default": null
     }

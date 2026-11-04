@@ -9,9 +9,14 @@
     "python": 1139
   },
   "functions": 7267,
-  "internal_import_edges": 9464,
+  "internal_import_edges": 9559,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "saleor__saleor",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 1719,
+  "py_type_only_import_edges": 284,
   "sha": "cc4aea76e397b1dead74363c266c579ae808770f",
   "tools": {
     "tree-sitter": "0.26.0",

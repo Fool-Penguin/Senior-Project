@@ -11,8 +11,13 @@
   },
   "functions": 256,
   "internal_import_edges": 60,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 6,
+  "js_type_only_import_edges": 0,
   "key": "DefiLlama__chainlist",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "dd516acc1089822779969784f16bc9ec76c4eac5",
   "tools": {
     "tree-sitter": "0.26.0",

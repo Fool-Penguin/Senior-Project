@@ -11,8 +11,13 @@
   },
   "functions": 679,
   "internal_import_edges": 164,
+  "js_alias_imports_unresolved": 3,
   "js_relative_imports_unresolved": 15,
+  "js_type_only_import_edges": 10,
   "key": "joye61__pic-smaller",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "7bfc890a0719f90a629f03ee5580d4bb40b588e9",
   "tools": {
     "tree-sitter": "0.26.0",

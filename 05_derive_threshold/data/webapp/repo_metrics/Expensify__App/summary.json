@@ -13,9 +13,14 @@
     "typescript": 6175
   },
   "functions": 31215,
-  "internal_import_edges": 42522,
+  "internal_import_edges": 42536,
+  "js_alias_imports_unresolved": 807,
   "js_relative_imports_unresolved": 2,
+  "js_type_only_import_edges": 6229,
   "key": "Expensify__App",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "1191e7b2fba721b609ec645880a4ce4456cda1ac",
   "tools": {
     "tree-sitter": "0.26.0",

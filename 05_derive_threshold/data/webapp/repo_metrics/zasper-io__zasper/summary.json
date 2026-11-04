@@ -11,8 +11,13 @@
   },
   "functions": 3651,
   "internal_import_edges": 1220,
+  "js_alias_imports_unresolved": 1,
   "js_relative_imports_unresolved": 42,
+  "js_type_only_import_edges": 23,
   "key": "zasper-io__zasper",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 2,
+  "py_type_only_import_edges": 0,
   "sha": "f77b24bb2cac7cb19206ffa06cb5f58ccf3b7985",
   "tools": {
     "tree-sitter": "0.26.0",

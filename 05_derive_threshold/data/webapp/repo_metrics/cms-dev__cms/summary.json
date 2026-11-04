@@ -12,9 +12,14 @@
     "python": 347
   },
   "functions": 2641,
-  "internal_import_edges": 796,
+  "internal_import_edges": 803,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "cms-dev__cms",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 51,
+  "py_type_only_import_edges": 11,
   "sha": "55ebd3a7418b574cfb391303fd0695d8c1686ba1",
   "tools": {
     "tree-sitter": "0.26.0",

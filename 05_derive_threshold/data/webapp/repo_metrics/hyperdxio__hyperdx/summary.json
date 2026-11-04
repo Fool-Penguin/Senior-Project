@@ -14,8 +14,13 @@
   },
   "functions": 10139,
   "internal_import_edges": 3470,
+  "js_alias_imports_unresolved": 866,
   "js_relative_imports_unresolved": 32,
+  "js_type_only_import_edges": 291,
   "key": "hyperdxio__hyperdx",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "7a9fe57d373dbb016013435c206be0d91d4e99e6",
   "tools": {
     "tree-sitter": "0.26.0",

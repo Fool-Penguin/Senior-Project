@@ -11,14 +11,14 @@ System = repository x language group, kept if SLOC >= 3000.
 | Metric | Method | Quantiles | Thresholds | Quality profile check (median % of SLOC per band) |
 |---|---|---|---|---|
 | cyclomatic | Alves | 70/80/90 | 8 / 11 / 18 | 75.2 / 7.7 / 9.5 / 8.2 |
-| cognitive | Alves | 70/80/90 | 11 / 17 / 32 | 72.4 / 8.8 / 10.5 / 8.2 |
+| cognitive | Alves | 70/80/90 | 12 / 18 / 34 | 71.9 / 8.4 / 10.2 / 7.9 |
 | params | Alves | 70/80/90 | 2 / 3 / 5 | 73.2 / 12.4 / 9.5 / 5.3 |
 | function_sloc | Alves | 70/80/90 | 45 / 63 / 104 | 70.9 / 9.9 / 9.9 / 7.4 |
 | file_sloc | Alves | 70/80/90 | 677 / 1029 / 1689 | 71.0 / 9.2 / 8.0 / 0.9 |
-| ce | Alves | 70/80/90 | 6 / 9 / 14 | 68.4 / 9.5 / 10.5 / 2.7 |
-| ca | Alves | 70/80/90 | 2 / 4 / 10 | 71.0 / 9.7 / 9.2 / 8.9 |
-| comment_density (%) | Vale | 3/15/90/95 | 0.00 / 0.00 / 33.33 / 43.94 | |
-| comment_density (%) | Vale, per-system normalised | 3/15/90/95 | 0.00 / 0.00 / 33.33 / 42.55 | |
+| ce | Alves | 70/80/90 | 7 / 10 / 15 | 72.6 / 10.3 / 10.0 / 4.3 |
+| ca | Alves | 70/80/90 | 3 / 5 / 11 | 74.8 / 7.3 / 8.7 / 8.2 |
+| comment_density (%) | Vale | 3/15/90/95 | 0.00 / 0.00 / 33.62 / 43.92 | |
+| comment_density (%) | Vale, per-system normalised | 3/15/90/95 | 0.00 / 0.00 / 33.33 / 42.44 | |
 
 ## javascript
 
@@ -31,9 +31,9 @@ System = repository x language group, kept if SLOC >= 3000.
 | params | Alves | 70/80/90 | 1 / 2 / 3 | 70.0 / 16.5 / 5.0 / 3.0 |
 | function_sloc | Alves | 70/80/90 | 42 / 66 / 146 | 72.5 / 9.3 / 9.7 / 8.5 |
 | file_sloc | Alves | 70/80/90 | 659 / 1084 / 1814 | 77.6 / 7.7 / 0.0 / 0.0 |
-| ce | Alves | 70/80/90 | 2 / 4 / 8 | 78.4 / 6.0 / 6.0 / 1.6 |
-| ca | Alves | 70/80/90 | 1 / 1 / 3 | 83.9 / 0.0 / 7.5 / 3.9 |
-| comment_density (%) | Vale | 3/15/90/95 | 0.00 / 0.00 / 19.44 / 28.77 | |
+| ce | Alves | 70/80/90 | 2 / 4 / 8 | 73.9 / 6.6 / 7.6 / 1.9 |
+| ca | Alves | 70/80/90 | 1 / 1 / 3 | 83.2 / 0.0 / 7.6 / 6.1 |
+| comment_density (%) | Vale | 3/15/90/95 | 0.00 / 0.00 / 21.09 / 32.61 | |
 | comment_density (%) | Vale, per-system normalised | 3/15/90/95 | 0.00 / 0.00 / 20.00 / 28.57 | |
 
 ## typescript
@@ -47,10 +47,10 @@ System = repository x language group, kept if SLOC >= 3000.
 | params | Alves | 70/80/90 | 1 / 2 / 2 | 80.7 / 12.4 / 0.0 / 6.6 |
 | function_sloc | Alves | 70/80/90 | 62 / 97 / 176 | 72.1 / 10.5 / 10.3 / 7.6 |
 | file_sloc | Alves | 70/80/90 | 398 / 578 / 965 | 73.2 / 9.4 / 10.2 / 6.7 |
-| ce | Alves | 70/80/90 | 8 / 11 / 17 | 73.4 / 8.8 / 9.4 / 7.0 |
+| ce | Alves | 70/80/90 | 8 / 11 / 17 | 72.5 / 8.9 / 9.5 / 7.1 |
 | ca | Alves | 70/80/90 | 2 / 3 / 8 | 73.8 / 6.2 / 9.5 / 8.1 |
-| comment_density (%) | Vale | 3/15/90/95 | 0.00 / 0.00 / 17.65 / 27.69 | |
-| comment_density (%) | Vale, per-system normalised | 3/15/90/95 | 0.00 / 0.00 / 20.00 / 30.43 | |
+| comment_density (%) | Vale | 3/15/90/95 | 0.00 / 0.00 / 17.74 / 27.91 | |
+| comment_density (%) | Vale, per-system normalised | 3/15/90/95 | 0.00 / 0.00 / 20.00 / 30.77 | |
 
 ## js_ts
 
@@ -63,10 +63,10 @@ System = repository x language group, kept if SLOC >= 3000.
 | params | Alves | 70/80/90 | 1 / 2 / 2 | 78.6 / 13.9 / 0.0 / 6.7 |
 | function_sloc | Alves | 70/80/90 | 54 / 88 / 171 | 70.3 / 10.1 / 10.2 / 8.6 |
 | file_sloc | Alves | 70/80/90 | 496 / 707 / 1382 | 72.4 / 8.3 / 8.9 / 3.5 |
-| ce | Alves | 70/80/90 | 6 / 9 / 14 | 74.7 / 10.6 / 7.8 / 5.7 |
-| ca | Alves | 70/80/90 | 2 / 2 / 5 | 79.6 / 0.0 / 10.7 / 8.5 |
-| comment_density (%) | Vale | 3/15/90/95 | 0.00 / 0.00 / 17.99 / 28.00 | |
-| comment_density (%) | Vale, per-system normalised | 3/15/90/95 | 0.00 / 0.00 / 19.30 / 28.83 | |
+| ce | Alves | 70/80/90 | 6 / 9 / 14 | 72.7 / 10.6 / 8.0 / 6.3 |
+| ca | Alves | 70/80/90 | 2 / 3 / 6 | 79.0 / 5.3 / 5.9 / 7.6 |
+| comment_density (%) | Vale | 3/15/90/95 | 0.00 / 0.00 / 18.31 / 28.57 | |
+| comment_density (%) | Vale, per-system normalised | 3/15/90/95 | 0.00 / 0.00 / 19.59 / 29.55 | |
 
 Quality profile check: share of each system's SLOC in low / moderate / high / very high bands. If the thresholds represent the benchmark, medians sit near 70/10/10/10.
 
@@ -79,13 +79,13 @@ Thresholds when systems below N SLOC are left out (outlier exclusions applied).
 | Metric | >= 0 SLOC (53 systems) | >= 1,000 SLOC (48 systems) | >= 3,000 SLOC (45 systems) | >= 10,000 SLOC (36 systems) |
 |---|---|---|---|---|
 | cyclomatic | 7 / 10 / 16 | 8 / 11 / 17 | 8 / 11 / 18 | 8 / 12 / 19 |
-| cognitive | 10 / 16 / 29 | 11 / 17 / 30 | 11 / 17 / 32 | 11 / 18 / 34 |
+| cognitive | 11 / 17 / 31 | 11 / 18 / 32 | 12 / 18 / 34 | 12 / 19 / 37 |
 | params | 2 / 3 / 4 | 3 / 3 / 5 | 2 / 3 / 5 | 3 / 3 / 5 |
 | function_sloc | 41 / 59 / 96 | 43 / 60 / 103 | 45 / 63 / 104 | 49 / 69 / 116 |
 | file_sloc | 571 / 886 / 1506 | 632 / 978 / 1648 | 677 / 1029 / 1689 | 729 / 1088 / 1909 |
-| ce | 5 / 8 / 12 | 6 / 8 / 13 | 6 / 9 / 14 | 7 / 10 / 15 |
-| ca | 2 / 3 / 8 | 2 / 4 / 9 | 2 / 4 / 10 | 3 / 5 / 10 |
-| comment_density | 0.00 / 0.00 / 33.33 / 43.92 | 0.00 / 0.00 / 33.33 / 43.87 | 0.00 / 0.00 / 33.33 / 43.94 | 0.00 / 0.00 / 33.65 / 44.00 |
+| ce | 6 / 9 / 14 | 7 / 9 / 14 | 7 / 10 / 15 | 8 / 11 / 16 |
+| ca | 2 / 4 / 9 | 3 / 5 / 10 | 3 / 5 / 11 | 3 / 6 / 12 |
+| comment_density | 0.00 / 0.00 / 33.45 / 43.86 | 0.00 / 0.00 / 33.45 / 43.84 | 0.00 / 0.00 / 33.62 / 43.92 | 0.00 / 0.00 / 33.78 / 43.94 |
 
 **javascript**
 
@@ -96,9 +96,9 @@ Thresholds when systems below N SLOC are left out (outlier exclusions applied).
 | params | 1 / 2 / 2 | 1 / 2 / 3 | 1 / 2 / 3 | 1 / 2 / 3 |
 | function_sloc | 35 / 55 / 111 | 40 / 64 / 139 | 42 / 66 / 146 | 45 / 76 / 161 |
 | file_sloc | 399 / 652 / 1460 | 603 / 1038 / 1619 | 659 / 1084 / 1814 | 502 / 685 / 1439 |
-| ce | 1 / 2 / 5 | 1 / 3 / 7 | 2 / 4 / 8 | 4 / 6 / 11 |
+| ce | 1 / 2 / 5 | 2 / 3 / 7 | 2 / 4 / 8 | 4 / 6 / 11 |
 | ca | 1 / 1 / 2 | 1 / 1 / 2 | 1 / 1 / 3 | 1 / 2 / 4 |
-| comment_density | 0.00 / 0.00 / 19.81 / 29.17 | 0.00 / 0.00 / 19.64 / 28.99 | 0.00 / 0.00 / 19.44 / 28.77 | 0.00 / 0.00 / 19.05 / 28.77 |
+| comment_density | 0.00 / 0.00 / 21.37 / 32.71 | 0.00 / 0.00 / 21.21 / 32.61 | 0.00 / 0.00 / 21.09 / 32.61 | 0.00 / 0.00 / 21.11 / 33.33 |
 
 **typescript**
 
@@ -109,9 +109,9 @@ Thresholds when systems below N SLOC are left out (outlier exclusions applied).
 | params | 1 / 2 / 2 | 1 / 2 / 2 | 1 / 2 / 2 | 1 / 2 / 2 |
 | function_sloc | 59 / 95 / 171 | 61 / 96 / 174 | 62 / 97 / 176 | 63 / 98 / 179 |
 | file_sloc | 409 / 608 / 1088 | 419 / 613 / 1101 | 398 / 578 / 965 | 426 / 617 / 1048 |
-| ce | 8 / 11 / 16 | 8 / 11 / 17 | 8 / 11 / 17 | 8 / 12 / 18 |
+| ce | 8 / 11 / 16 | 8 / 11 / 17 | 8 / 11 / 17 | 8 / 12 / 17 |
 | ca | 2 / 3 / 8 | 2 / 3 / 8 | 2 / 3 / 8 | 2 / 3 / 8 |
-| comment_density | 0.00 / 0.00 / 17.65 / 27.69 | 0.00 / 0.00 / 17.65 / 27.69 | 0.00 / 0.00 / 17.65 / 27.69 | 0.00 / 0.00 / 17.65 / 27.78 |
+| comment_density | 0.00 / 0.00 / 17.74 / 27.91 | 0.00 / 0.00 / 17.74 / 27.91 | 0.00 / 0.00 / 17.74 / 27.91 | 0.00 / 0.00 / 17.78 / 28.00 |
 
 **js_ts**
 
@@ -123,8 +123,8 @@ Thresholds when systems below N SLOC are left out (outlier exclusions applied).
 | function_sloc | 50 / 81 / 163 | 53 / 86 / 170 | 54 / 88 / 171 | 57 / 93 / 177 |
 | file_sloc | 469 / 681 / 1252 | 499 / 722 / 1359 | 496 / 707 / 1382 | 461 / 664 / 1206 |
 | ce | 5 / 8 / 13 | 6 / 8 / 14 | 6 / 9 / 14 | 7 / 10 / 15 |
-| ca | 1 / 2 / 5 | 1 / 2 / 5 | 2 / 2 / 5 | 2 / 3 / 6 |
-| comment_density | 0.00 / 0.00 / 18.03 / 28.00 | 0.00 / 0.00 / 18.02 / 28.00 | 0.00 / 0.00 / 17.99 / 28.00 | 0.00 / 0.00 / 18.03 / 28.05 |
+| ca | 1 / 2 / 5 | 2 / 2 / 5 | 2 / 3 / 6 | 2 / 3 / 6 |
+| comment_density | 0.00 / 0.00 / 18.37 / 28.57 | 0.00 / 0.00 / 18.35 / 28.57 | 0.00 / 0.00 / 18.31 / 28.57 | 0.00 / 0.00 / 18.37 / 28.57 |
 
 ## Single default per metric (shipped)
 
@@ -133,10 +133,10 @@ Flag when value > default. Default = start of Alves' high-risk band (t80).
 | Metric | .py (python) | .js (js_ts) | .ts (typescript) |
 |---|---|---|---|
 | cyclomatic | 11 | 10 | 10 |
-| cognitive | 17 | 8 | 8 |
+| cognitive | 18 | 8 | 8 |
 | params | 3 | 2 | 2 |
 | function_sloc | 63 | 88 | 97 |
 | file_sloc | 1029 | 707 | 578 |
-| ce | 9 | 9 | 11 |
-| ca | 4 | 2 | 3 |
+| ce | 10 | 9 | 11 |
+| ca | 5 | 3 | 3 |
 | comment_density | information only | information only | information only |

@@ -9,8 +9,13 @@
   },
   "functions": 683,
   "internal_import_edges": 94,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "cla-assistant__cla-assistant",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "43e06e95f13f2d23542eb12cb93e04e30597dee7",
   "tools": {
     "tree-sitter": "0.26.0",

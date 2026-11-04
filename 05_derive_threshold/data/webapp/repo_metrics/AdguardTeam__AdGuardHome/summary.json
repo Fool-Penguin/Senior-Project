@@ -12,8 +12,13 @@
   },
   "functions": 4404,
   "internal_import_edges": 2690,
+  "js_alias_imports_unresolved": 2,
   "js_relative_imports_unresolved": 226,
+  "js_type_only_import_edges": 225,
   "key": "AdguardTeam__AdGuardHome",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "5c4d531d8d13f189dc7609a32d5073c63587746d",
   "tools": {
     "tree-sitter": "0.26.0",

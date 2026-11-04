@@ -10,8 +10,13 @@
   },
   "functions": 2553,
   "internal_import_edges": 604,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 32,
+  "js_type_only_import_edges": 0,
   "key": "tdurieux__anonymous_github",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "772e40debd045b94051defdf6a9f33cc9f2fe5a6",
   "tools": {
     "tree-sitter": "0.26.0",

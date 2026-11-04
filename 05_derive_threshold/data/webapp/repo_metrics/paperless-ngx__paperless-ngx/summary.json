@@ -12,9 +12,14 @@
     "typescript": 237
   },
   "functions": 4361,
-  "internal_import_edges": 1623,
+  "internal_import_edges": 1633,
+  "js_alias_imports_unresolved": 0,
   "js_relative_imports_unresolved": 0,
+  "js_type_only_import_edges": 0,
   "key": "paperless-ngx__paperless-ngx",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 76,
+  "py_type_only_import_edges": 11,
   "sha": "13acdabb47ed2b2b17ab2c23b8183c5323b1ce62",
   "tools": {
     "tree-sitter": "0.26.0",

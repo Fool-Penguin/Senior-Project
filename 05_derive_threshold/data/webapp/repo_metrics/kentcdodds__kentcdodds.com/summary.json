@@ -10,9 +10,14 @@
     "typescript": 454
   },
   "functions": 4061,
-  "internal_import_edges": 1463,
+  "internal_import_edges": 1477,
+  "js_alias_imports_unresolved": 1,
   "js_relative_imports_unresolved": 91,
+  "js_type_only_import_edges": 84,
   "key": "kentcdodds__kentcdodds.com",
+  "py_imports_ambiguous": 0,
+  "py_imports_unresolved": 0,
+  "py_type_only_import_edges": 0,
   "sha": "16d1b6f19ad0d4df751d48cd075530211ca92671",
   "tools": {
     "tree-sitter": "0.26.0",
