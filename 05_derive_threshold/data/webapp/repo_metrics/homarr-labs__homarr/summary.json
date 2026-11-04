@@ -1,0 +1,27 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 1,
+    "example_docs": 319,
+    "generated_vendored": 23,
+    "hidden_dir": 1,
+    "parse_error": 5,
+    "test": 508
+  },
+  "files_measured": {
+    "javascript": 28,
+    "python": 7,
+    "typescript": 2048
+  },
+  "functions": 17374,
+  "internal_import_edges": 8115,
+  "js_relative_imports_unresolved": 167,
+  "key": "homarr-labs__homarr",
+  "sha": "0f0987d2ed013c93ce30c1c00786983d29f4b956",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/homarr-labs/homarr"
+}

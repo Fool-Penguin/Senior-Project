@@ -1,0 +1,25 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 29,
+    "generated_vendored": 115,
+    "parse_error": 6,
+    "test": 457
+  },
+  "files_measured": {
+    "javascript": 17,
+    "python": 389,
+    "typescript": 694
+  },
+  "functions": 13783,
+  "internal_import_edges": 4013,
+  "js_relative_imports_unresolved": 161,
+  "key": "cvat-ai__cvat",
+  "sha": "fcd72d43ad5f791974d6d1e57ee9d0d9886a2a51",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/cvat-ai/cvat"
+}

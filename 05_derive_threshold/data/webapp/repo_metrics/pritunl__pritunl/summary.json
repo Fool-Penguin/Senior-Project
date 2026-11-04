@@ -1,0 +1,23 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 2,
+    "generated_vendored": 40,
+    "test": 1
+  },
+  "files_measured": {
+    "javascript": 165,
+    "python": 269
+  },
+  "functions": 3078,
+  "internal_import_edges": 1172,
+  "js_relative_imports_unresolved": 0,
+  "key": "pritunl__pritunl",
+  "sha": "c9c29fd60f8a81cbfa6b6b0742b604bdf066bb05",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/pritunl/pritunl"
+}

@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 36,
+    "generated_vendored": 70,
+    "test": 32
+  },
+  "files_measured": {
+    "javascript": 13,
+    "python": 130
+  },
+  "functions": 701,
+  "internal_import_edges": 99,
+  "js_relative_imports_unresolved": 0,
+  "key": "django__djangoproject.com",
+  "sha": "af69186487e4524effbf983a55ac81e630c23981",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/django/djangoproject.com"
+}

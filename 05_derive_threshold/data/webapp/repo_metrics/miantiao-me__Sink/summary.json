@@ -1,0 +1,23 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 1,
+    "generated_vendored": 2,
+    "test": 36
+  },
+  "files_measured": {
+    "javascript": 7,
+    "typescript": 207
+  },
+  "functions": 810,
+  "internal_import_edges": 71,
+  "js_relative_imports_unresolved": 364,
+  "key": "miantiao-me__Sink",
+  "sha": "6718f0a5eeaddd9b0347cd18b4ff9f2de48e6fea",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/miantiao-me/Sink"
+}

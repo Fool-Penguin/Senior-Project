@@ -1,0 +1,24 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "data_file": 2,
+    "generated_vendored": 212,
+    "hidden_dir": 4,
+    "test": 472
+  },
+  "files_measured": {
+    "javascript": 206,
+    "python": 1058
+  },
+  "functions": 5628,
+  "internal_import_edges": 3039,
+  "js_relative_imports_unresolved": 1,
+  "key": "TencentBlueKing__bk-sops",
+  "sha": "423b355944592f9e6a80c727f06d5c57827fe29c",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/TencentBlueKing/bk-sops"
+}

@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 12,
+    "generated_vendored": 171,
+    "test": 500
+  },
+  "files_measured": {
+    "javascript": 535,
+    "typescript": 483
+  },
+  "functions": 11923,
+  "internal_import_edges": 3552,
+  "js_relative_imports_unresolved": 2,
+  "key": "chrisvel__tududi",
+  "sha": "eda9aa60b16ce657a08b47d1894f5c27bf098586",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/chrisvel/tududi"
+}

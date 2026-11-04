@@ -1,0 +1,22 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 1,
+    "parse_error": 1,
+    "test": 18
+  },
+  "files_measured": {
+    "javascript": 84
+  },
+  "functions": 898,
+  "internal_import_edges": 191,
+  "js_relative_imports_unresolved": 2,
+  "key": "Blockstream__esplora",
+  "sha": "32756801de6f412da1d88a198772e75ee0fffa84",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/Blockstream/esplora"
+}

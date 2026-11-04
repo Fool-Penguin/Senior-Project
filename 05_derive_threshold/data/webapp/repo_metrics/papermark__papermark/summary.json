@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 1,
+    "parse_error": 17
+  },
+  "files_measured": {
+    "javascript": 4,
+    "python": 1,
+    "typescript": 1358
+  },
+  "functions": 8145,
+  "internal_import_edges": 5400,
+  "js_relative_imports_unresolved": 2,
+  "key": "papermark__papermark",
+  "sha": "ed19717ec02a1ac79aecf5569159aa9d2d869312",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/papermark/papermark"
+}

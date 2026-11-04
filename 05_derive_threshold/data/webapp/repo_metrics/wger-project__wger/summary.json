@@ -1,0 +1,22 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 177,
+    "test": 187
+  },
+  "files_measured": {
+    "javascript": 3,
+    "python": 388
+  },
+  "functions": 1264,
+  "internal_import_edges": 759,
+  "js_relative_imports_unresolved": 0,
+  "key": "wger-project__wger",
+  "sha": "dde740753e76dee89fcd5b20fbb02fd8513bfa04",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/wger-project/wger"
+}

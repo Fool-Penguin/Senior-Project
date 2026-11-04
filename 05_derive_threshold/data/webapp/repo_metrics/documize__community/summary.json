@@ -1,0 +1,23 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "data_file": 1,
+    "generated_vendored": 72,
+    "test": 23,
+    "vendored_library": 179
+  },
+  "files_measured": {
+    "javascript": 345
+  },
+  "functions": 1963,
+  "internal_import_edges": 130,
+  "js_relative_imports_unresolved": 4,
+  "key": "documize__community",
+  "sha": "e19bcd02ab20750a904fc2e3815cd453e877fa54",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/documize/community"
+}

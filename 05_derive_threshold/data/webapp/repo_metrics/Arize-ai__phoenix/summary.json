@@ -1,0 +1,28 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 1,
+    "example_docs": 525,
+    "generated_vendored": 659,
+    "hidden_dir": 19,
+    "parse_error": 4,
+    "test": 1091,
+    "vendored_library": 1
+  },
+  "files_measured": {
+    "javascript": 7,
+    "python": 861,
+    "typescript": 2454
+  },
+  "functions": 20108,
+  "internal_import_edges": 11082,
+  "js_relative_imports_unresolved": 6,
+  "key": "Arize-ai__phoenix",
+  "sha": "10103fed446441508e098e3a6dc9f172005fd264",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/Arize-ai/phoenix"
+}

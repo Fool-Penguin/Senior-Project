@@ -1,0 +1,22 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 119,
+    "test": 183
+  },
+  "files_measured": {
+    "javascript": 18,
+    "typescript": 1073
+  },
+  "functions": 4374,
+  "internal_import_edges": 4222,
+  "js_relative_imports_unresolved": 16,
+  "key": "umami-software__umami",
+  "sha": "559e3c607c23d2c72d9bd4f6481bda428255323c",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/umami-software/umami"
+}

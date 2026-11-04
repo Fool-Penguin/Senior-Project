@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 61,
+    "test": 121
+  },
+  "files_measured": {
+    "javascript": 9,
+    "python": 165
+  },
+  "functions": 1434,
+  "internal_import_edges": 476,
+  "js_relative_imports_unresolved": 0,
+  "key": "wizarrrr__wizarr",
+  "sha": "330b7c4ff779c7f27ef967bdca6603fba73fd168",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/wizarrrr/wizarr"
+}

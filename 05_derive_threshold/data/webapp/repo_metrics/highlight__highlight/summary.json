@@ -1,0 +1,28 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 2,
+    "example_docs": 41,
+    "generated_vendored": 236,
+    "hidden_dir": 14,
+    "parse_error": 8,
+    "test": 244,
+    "vendored_library": 1
+  },
+  "files_measured": {
+    "javascript": 35,
+    "python": 47,
+    "typescript": 1920
+  },
+  "functions": 7086,
+  "internal_import_edges": 5857,
+  "js_relative_imports_unresolved": 233,
+  "key": "highlight__highlight",
+  "sha": "3bf002113e555d1ba3d4df648ed44e3503a27e96",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/highlight/highlight"
+}

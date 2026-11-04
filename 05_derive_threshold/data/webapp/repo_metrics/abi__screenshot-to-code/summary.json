@@ -1,0 +1,24 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 1,
+    "parse_error": 2,
+    "test": 50
+  },
+  "files_measured": {
+    "javascript": 4,
+    "python": 94,
+    "typescript": 104
+  },
+  "functions": 1506,
+  "internal_import_edges": 452,
+  "js_relative_imports_unresolved": 1,
+  "key": "abi__screenshot-to-code",
+  "sha": "a8139779f7c5ae231b7f2a86fa7f83ddc5f7badc",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/abi/screenshot-to-code"
+}

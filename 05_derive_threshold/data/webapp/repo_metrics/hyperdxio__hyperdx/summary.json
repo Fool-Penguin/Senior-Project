@@ -1,0 +1,26 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 1,
+    "example_docs": 43,
+    "generated_vendored": 10,
+    "hidden_dir": 12,
+    "parse_error": 8,
+    "test": 668
+  },
+  "files_measured": {
+    "javascript": 27,
+    "typescript": 999
+  },
+  "functions": 10139,
+  "internal_import_edges": 3470,
+  "js_relative_imports_unresolved": 32,
+  "key": "hyperdxio__hyperdx",
+  "sha": "7a9fe57d373dbb016013435c206be0d91d4e99e6",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/hyperdxio/hyperdx"
+}

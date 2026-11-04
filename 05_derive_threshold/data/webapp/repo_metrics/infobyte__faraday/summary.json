@@ -1,0 +1,22 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 180,
+    "hidden_dir": 1,
+    "test": 73
+  },
+  "files_measured": {
+    "python": 127
+  },
+  "functions": 1093,
+  "internal_import_edges": 376,
+  "js_relative_imports_unresolved": 0,
+  "key": "infobyte__faraday",
+  "sha": "d00e81cd9c0279e9fa7cc48d80e52f5ced820cb1",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/infobyte/faraday"
+}

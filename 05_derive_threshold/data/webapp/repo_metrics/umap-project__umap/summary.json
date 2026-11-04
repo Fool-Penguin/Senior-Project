@@ -1,0 +1,23 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 31,
+    "parse_error": 2,
+    "test": 77
+  },
+  "files_measured": {
+    "javascript": 135,
+    "python": 44
+  },
+  "functions": 2931,
+  "internal_import_edges": 320,
+  "js_relative_imports_unresolved": 0,
+  "key": "umap-project__umap",
+  "sha": "f2ed40e17bee3f91b01f4de1ce3f798b9b5a78a9",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/umap-project/umap"
+}

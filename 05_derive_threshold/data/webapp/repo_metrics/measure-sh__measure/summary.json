@@ -1,0 +1,25 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 19,
+    "generated_vendored": 2,
+    "parse_error": 8,
+    "test": 228
+  },
+  "files_measured": {
+    "javascript": 14,
+    "python": 3,
+    "typescript": 403
+  },
+  "functions": 4303,
+  "internal_import_edges": 1371,
+  "js_relative_imports_unresolved": 3,
+  "key": "measure-sh__measure",
+  "sha": "aa840653ecb7ca74fb32957099acd2137808d878",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/measure-sh/measure"
+}

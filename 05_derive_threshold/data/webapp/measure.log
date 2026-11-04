@@ -1,0 +1,100 @@
+﻿[1/100] 7Sageer__sublink-worker: {'javascript': 64} functions=656 excluded={'generated_vendored': 1, 'test': 38}
+[2/100] abi__screenshot-to-code: {'javascript': 4, 'python': 94, 'typescript': 104} functions=1506 excluded={'generated_vendored': 1, 'parse_error': 2, 'test': 50}
+[3/100] Akkudoktor-EOS__EOS: {'python': 167} functions=1650 excluded={'example_docs': 1, 'test': 123}
+[4/100] AdguardTeam__AdGuardHome: {'javascript': 18, 'typescript': 750} functions=4404 excluded={'example_docs': 2, 'generated_vendored': 7, 'parse_error': 8, 'test': 142}
+[5/100] Arthi-chaud__Meelo: {'javascript': 3, 'python': 35, 'typescript': 613} functions=4337 excluded={'generated_vendored': 4, 'hidden_dir': 2, 'test': 61}
+[6/100] audreyt__ethercalc: {'javascript': 16, 'typescript': 164} functions=2248 excluded={'example_docs': 2, 'generated_vendored': 19, 'test': 160, 'vendored_library': 2}
+[7/100] aws-solutions__dynamic-image-transformation-for-amazon-cloudfront: {'javascript': 17, 'typescript': 284} functions=1717 excluded={'example_docs': 3, 'generated_vendored': 2, 'parse_error': 2, 'test': 286}
+[8/100] bambanah__deemix: {'javascript': 30, 'typescript': 148} functions=693 excluded={'generated_vendored': 3, 'test': 17, 'vendored_library': 1}
+[9/100] AykutSarac__jsoncrack.com: {'javascript': 7, 'typescript': 83} functions=451 excluded={'generated_vendored': 5, 'parse_error': 15, 'test': 3}
+[10/100] BennyKok__comfyui-deploy: {'javascript': 12, 'python': 37, 'typescript': 167} functions=1205 excluded={'example_docs': 28, 'generated_vendored': 1, 'parse_error': 1, 'test': 1}
+[11/100] benvinegar__counterscale: {'javascript': 9, 'typescript': 78} functions=367 excluded={'generated_vendored': 2, 'test': 53}
+[12/100] actualbudget__actual: {'javascript': 51, 'typescript': 1734} functions=13557 excluded={'example_docs': 41, 'generated_vendored': 22, 'hidden_dir': 8, 'parse_error': 4, 'test': 400}
+[13/100] Blockstream__esplora: {'javascript': 84} functions=898 excluded={'generated_vendored': 1, 'parse_error': 1, 'test': 18}
+[14/100] BrasilAPI__BrasilAPI: {'javascript': 177} functions=690 excluded={'example_docs': 1, 'hidden_dir': 1, 'parse_error': 1, 'test': 65}
+[15/100] brmodeloweb__brmodelo-app: {'javascript': 38, 'typescript': 99} functions=1431 excluded={'generated_vendored': 1, 'test': 32}
+[16/100] bugy__script-server: {'javascript': 51, 'python': 102} functions=1411 excluded={'example_docs': 7, 'generated_vendored': 2, 'test': 99}
+[17/100] bugsink__bugsink: {'javascript': 12, 'python': 301} functions=1297 excluded={'generated_vendored': 122, 'test': 40}
+[18/100] bytedance__SandboxFusion: {'javascript': 1, 'python': 53} functions=311 excluded={'example_docs': 27, 'test': 62}
+[19/100] carbon-app__carbon: {'javascript': 87} functions=693 excluded={'data_file': 1, 'generated_vendored': 3, 'parse_error': 1, 'test': 7}
+[20/100] certsocietegenerale__FIR: {'javascript': 22, 'python': 157} functions=728 excluded={'generated_vendored': 84, 'parse_error': 1, 'test': 1, 'vendored_library': 1}
+[21/100] cla-assistant__cla-assistant: {'javascript': 64} functions=683 excluded={'generated_vendored': 1, 'test': 31}
+[22/100] Arize-ai__phoenix: {'javascript': 7, 'python': 861, 'typescript': 2454} functions=20108 excluded={'data_file': 1, 'example_docs': 525, 'generated_vendored': 659, 'hidden_dir': 19, 'parse_error': 4, 'test': 1091, 'vendored_library': 1}
+[23/100] cms-dev__cms: {'javascript': 15, 'python': 347} functions=2641 excluded={'example_docs': 2, 'generated_vendored': 7, 'parse_error': 1, 'test': 39, 'vendored_library': 2}
+[24/100] ALwrity__ALwrity: {'javascript': 2, 'python': 1135, 'typescript': 1242} functions=20921 excluded={'example_docs': 1, 'generated_vendored': 2, 'parse_error': 84, 'test': 62}
+[25/100] chrisvel__tududi: {'javascript': 535, 'typescript': 483} functions=11923 excluded={'example_docs': 12, 'generated_vendored': 171, 'test': 500}
+[26/100] crocodilestick__Calibre-Web-Automated: {'javascript': 25, 'python': 146} functions=2656 excluded={'generated_vendored': 175, 'hidden_dir': 1, 'test': 52}
+[27/100] codesandbox__codesandbox-client: {'javascript': 289, 'typescript': 1115} functions=9552 excluded={'data_file': 3, 'example_docs': 113, 'generated_vendored': 153, 'hidden_dir': 13, 'parse_error': 91, 'test': 217, 'vendored_library': 89}
+[28/100] DefiLlama__chainlist: {'javascript': 569} functions=256 excluded={'data_file': 1, 'generated_vendored': 2, 'hidden_dir': 1, 'test': 1}
+[29/100] django__djangoproject.com: {'javascript': 13, 'python': 130} functions=701 excluded={'example_docs': 36, 'generated_vendored': 70, 'test': 32}
+[30/100] drawdb-io__drawdb: {'javascript': 261} functions=2709 excluded={'generated_vendored': 1}
+[31/100] documize__community: {'javascript': 345} functions=1963 excluded={'data_file': 1, 'generated_vendored': 72, 'test': 23, 'vendored_library': 179}
+[32/100] Countly__countly-server: {'javascript': 950} functions=20685 excluded={'data_file': 1, 'generated_vendored': 74, 'hidden_dir': 2, 'test': 173, 'vendored_library': 18}
+[33/100] cvat-ai__cvat: {'javascript': 17, 'python': 389, 'typescript': 694} functions=13783 excluded={'example_docs': 29, 'generated_vendored': 115, 'parse_error': 6, 'test': 457}
+[34/100] documenso__documenso: {'javascript': 11, 'typescript': 2014} functions=10006 excluded={'example_docs': 34, 'generated_vendored': 10, 'parse_error': 3, 'test': 187}
+[35/100] endurain-project__endurain: {'javascript': 1, 'python': 544, 'typescript': 195} functions=3528 excluded={'example_docs': 1, 'generated_vendored': 18, 'hidden_dir': 1, 'test': 479}
+[36/100] fleetbase__fleetbase: {'javascript': 290, 'python': 3} functions=1670 excluded={'generated_vendored': 2, 'test': 261}
+[37/100] fossasia__veditor: {'javascript': 8, 'python': 42} functions=670 excluded={'generated_vendored': 23, 'test': 51}
+[38/100] gethomepage__homepage: {'javascript': 581} functions=1809 excluded={'test': 573}
+[39/100] GhostManager__Ghostwriter: {'javascript': 16, 'python': 204, 'typescript': 77} functions=3162 excluded={'example_docs': 2, 'generated_vendored': 359, 'test': 93, 'vendored_library': 4}
+[40/100] GNS3__gns3-server: {'python': 268} functions=2393 excluded={'example_docs': 2, 'generated_vendored': 5, 'test': 92}
+[41/100] Haidra-Org__AI-Horde: {'python': 134} functions=1995 excluded={'test': 204}
+[42/100] gpustack__gpustack: {'python': 461} functions=5247 excluded={'example_docs': 6, 'generated_vendored': 44, 'test': 459}
+[43/100] formbricks__formbricks: {'javascript': 64, 'typescript': 3319} functions=21392 excluded={'example_docs': 26, 'generated_vendored': 14, 'hidden_dir': 9, 'parse_error': 63, 'test': 1713, 'vendored_library': 2}
+[44/100] cloudera__hue: {'javascript': 1442, 'python': 1265, 'typescript': 289} functions=50883 excluded={'data_file': 3, 'example_docs': 129, 'generated_vendored': 540, 'parse_error': 5, 'test': 751, 'vendored_library': 13}
+[45/100] hashintel__hash: {'javascript': 17, 'typescript': 2049} functions=15426 excluded={'example_docs': 41, 'generated_vendored': 2629, 'parse_error': 4, 'test': 470}
+[46/100] Expensify__App: {'javascript': 48, 'typescript': 6175} functions=31215 excluded={'data_file': 7, 'example_docs': 39, 'generated_vendored': 2384, 'hidden_dir': 81, 'parse_error': 1, 'test': 2363}
+[47/100] highlight__highlight: {'javascript': 35, 'python': 47, 'typescript': 1920} functions=7086 excluded={'data_file': 2, 'example_docs': 41, 'generated_vendored': 236, 'hidden_dir': 14, 'parse_error': 8, 'test': 244, 'vendored_library': 1}
+[48/100] hijohnnylin__neuronpedia: {'javascript': 7, 'python': 180, 'typescript': 533} functions=7040 excluded={'data_file': 2, 'example_docs': 1, 'generated_vendored': 33, 'hidden_dir': 6, 'parse_error': 21, 'test': 140}
+[49/100] hydro-dev__Hydro: {'javascript': 73, 'typescript': 367} functions=5121 excluded={'example_docs': 4, 'generated_vendored': 15, 'parse_error': 1, 'test': 5}
+[50/100] hexclave__hexclave: {'javascript': 65, 'python': 15, 'typescript': 1939} functions=22227 excluded={'data_file': 3, 'example_docs': 255, 'generated_vendored': 156, 'hidden_dir': 3, 'parse_error': 37, 'test': 570}
+[51/100] erxes__erxes: {'javascript': 50, 'typescript': 12753} functions=63127 excluded={'data_file': 2, 'generated_vendored': 1241, 'parse_error': 2, 'test': 420}
+[52/100] joye61__pic-smaller: {'javascript': 5, 'typescript': 65} functions=679 excluded={'generated_vendored': 1, 'hidden_dir': 30, 'test': 3}
+[53/100] infobyte__faraday: {'python': 127} functions=1093 excluded={'generated_vendored': 180, 'hidden_dir': 1, 'test': 73}
+[54/100] jesec__flood: {'javascript': 35, 'typescript': 371} functions=2325 excluded={'example_docs': 6, 'generated_vendored': 54, 'hidden_dir': 15, 'test': 8}
+[55/100] jupyterhub__binderhub: {'javascript': 20, 'python': 29} functions=385 excluded={'example_docs': 5, 'generated_vendored': 1, 'test': 32}
+[56/100] kentcdodds__kentcdodds.com: {'javascript': 37, 'typescript': 454} functions=4061 excluded={'generated_vendored': 12, 'parse_error': 2, 'test': 150}
+[57/100] hyperdxio__hyperdx: {'javascript': 27, 'typescript': 999} functions=10139 excluded={'data_file': 1, 'example_docs': 43, 'generated_vendored': 10, 'hidden_dir': 12, 'parse_error': 8, 'test': 668}
+[58/100] homarr-labs__homarr: {'javascript': 28, 'python': 7, 'typescript': 2048} functions=17374 excluded={'data_file': 1, 'example_docs': 319, 'generated_vendored': 23, 'hidden_dir': 1, 'parse_error': 5, 'test': 508}
+[59/100] LedFx__LedFx: {'javascript': 4, 'python': 253} functions=2213 excluded={'example_docs': 2, 'generated_vendored': 9, 'hidden_dir': 3, 'test': 172}
+[60/100] miantiao-me__Sink: {'javascript': 7, 'typescript': 207} functions=810 excluded={'example_docs': 1, 'generated_vendored': 2, 'test': 36}
+[61/100] meeb__tubesync: {'python': 102, 'typescript': 1} functions=796 excluded={'generated_vendored': 49, 'test': 13}
+[62/100] mindskip__xzs-mysql: {'javascript': 150} functions=660 excluded={'data_file': 3, 'example_docs': 23, 'generated_vendored': 215, 'vendored_library': 24}
+[63/100] measure-sh__measure: {'javascript': 14, 'python': 3, 'typescript': 403} functions=4303 excluded={'example_docs': 19, 'generated_vendored': 2, 'parse_error': 8, 'test': 228}
+[64/100] mozilla__fx-private-relay: {'javascript': 4, 'python': 87, 'typescript': 143} functions=1462 excluded={'generated_vendored': 112, 'parse_error': 1, 'test': 185}
+[65/100] nxzai__NextExplorer: {'javascript': 346} functions=3903 excluded={'example_docs': 2, 'hidden_dir': 2, 'test': 473}
+[66/100] makeplane__plane: {'javascript': 10, 'python': 451, 'typescript': 3237} functions=17814 excluded={'data_file': 1, 'example_docs': 45, 'generated_vendored': 158, 'hidden_dir': 5, 'test': 83}
+[67/100] openstack__horizon: {'javascript': 371, 'python': 719} functions=6886 excluded={'example_docs': 3, 'generated_vendored': 1, 'parse_error': 1, 'test': 586, 'vendored_library': 1}
+[68/100] OWASP__threat-dragon: {'javascript': 193} functions=1022 excluded={'example_docs': 1, 'test': 263}
+[69/100] openreplay__openreplay: {'javascript': 358, 'python': 236, 'typescript': 1504} functions=14784 excluded={'example_docs': 37, 'generated_vendored': 666, 'hidden_dir': 9, 'parse_error': 1, 'test': 108}
+[70/100] nasa-gibs__worldview: {'javascript': 464} functions=4831 excluded={'generated_vendored': 1, 'parse_error': 1, 'test': 458, 'vendored_library': 1}
+[71/100] paperless-ngx__paperless-ngx: {'javascript': 4, 'python': 166, 'typescript': 237} functions=4361 excluded={'generated_vendored': 54, 'parse_error': 1, 'test': 389, 'vendored_library': 1}
+[72/100] plankanban__planka: {'javascript': 1188, 'python': 1} functions=5607 excluded={'generated_vendored': 23, 'test': 17}
+[73/100] pritunl__pritunl: {'javascript': 165, 'python': 269} functions=3078 excluded={'example_docs': 2, 'generated_vendored': 40, 'test': 1}
+[74/100] pschlan__cron-job.org: {'javascript': 132} functions=1455 excluded={'example_docs': 1, 'test': 8}
+[75/100] overleaf__overleaf: {'javascript': 952, 'typescript': 1637} functions=17331 excluded={'data_file': 1, 'example_docs': 7, 'generated_vendored': 230, 'parse_error': 1, 'test': 1131}
+[76/100] papermark__papermark: {'javascript': 4, 'python': 1, 'typescript': 1358} functions=8145 excluded={'generated_vendored': 1, 'parse_error': 17}
+[77/100] pwndoc__pwndoc: {'javascript': 161} functions=4273 excluded={'data_file': 1, 'example_docs': 6, 'generated_vendored': 2, 'test': 148}
+[78/100] SplashtopInc__winstall: {'javascript': 156, 'typescript': 1} functions=1170 excluded={'parse_error': 3, 'test': 24}
+[79/100] suitenumerique__meet: {'javascript': 20, 'python': 142, 'typescript': 522} functions=2763 excluded={'example_docs': 8, 'generated_vendored': 37, 'hidden_dir': 4, 'test': 127}
+[80/100] saltcorn__saltcorn: {'javascript': 401, 'python': 11, 'typescript': 249} functions=9741 excluded={'data_file': 1, 'generated_vendored': 555, 'parse_error': 5, 'test': 170, 'vendored_library': 173}
+[81/100] swingmx__swingmusic: {'python': 156} functions=928 excluded={'generated_vendored': 2}
+[82/100] stumpapp__stump: {'javascript': 9, 'typescript': 1587} functions=8937 excluded={'example_docs': 62, 'generated_vendored': 4, 'hidden_dir': 2, 'parse_error': 1, 'test': 69}
+[83/100] TavernAI__TavernAI-v1: {'javascript': 29} functions=1600 excluded={'generated_vendored': 9}
+[84/100] onyx-dot-app__onyx: {'javascript': 35, 'python': 2302, 'typescript': 2219} functions=31347 excluded={'example_docs': 7, 'generated_vendored': 157, 'hidden_dir': 17, 'parse_error': 1, 'test': 2785}
+[85/100] tdurieux__anonymous_github: {'javascript': 29, 'typescript': 138} functions=2553 excluded={'generated_vendored': 442, 'test': 95}
+[86/100] Shelf-nu__shelf.nu: {'javascript': 29, 'typescript': 1943} functions=15763 excluded={'data_file': 1, 'example_docs': 2, 'generated_vendored': 8, 'hidden_dir': 2, 'parse_error': 25, 'test': 1077}
+[87/100] tiny-pilot__tinypilot: {'javascript': 21, 'python': 69} functions=442 excluded={'generated_vendored': 3, 'test': 45}
+[88/100] triton-inference-server__server: {'python': 271} functions=1419 excluded={'example_docs': 5, 'generated_vendored': 2, 'test': 136}
+[89/100] standardnotes__app: {'javascript': 99, 'typescript': 2027} functions=10471 excluded={'example_docs': 5, 'generated_vendored': 32, 'hidden_dir': 4, 'test': 246}
+[90/100] VOICEVOX__voicevox_engine: {'python': 67} functions=357 excluded={'test': 82}
+[91/100] TencentBlueKing__bk-sops: {'javascript': 206, 'python': 1058} functions=5628 excluded={'data_file': 2, 'generated_vendored': 212, 'hidden_dir': 4, 'test': 472}
+[92/100] umami-software__umami: {'javascript': 18, 'typescript': 1073} functions=4374 excluded={'generated_vendored': 119, 'test': 183}
+[93/100] umap-project__umap: {'javascript': 135, 'python': 44} functions=2931 excluded={'generated_vendored': 31, 'parse_error': 2, 'test': 77}
+[94/100] tsukumijima__KonomiTV: {'javascript': 5, 'python': 85, 'typescript': 63} functions=1825 excluded={'generated_vendored': 91, 'hidden_dir': 2, 'test': 14}
+[95/100] xfgryujk__blivechat: {'javascript': 27, 'python': 42} functions=815 excluded={'data_file': 2, 'vendored_library': 1}
+[96/100] xemle__home-gallery: {'javascript': 248, 'typescript': 248} functions=3767 excluded={'generated_vendored': 9, 'parse_error': 2, 'test': 87}
+[97/100] wizarrrr__wizarr: {'javascript': 9, 'python': 165} functions=1434 excluded={'generated_vendored': 61, 'test': 121}
+[98/100] zasper-io__zasper: {'javascript': 4, 'python': 3, 'typescript': 318} functions=3651 excluded={'generated_vendored': 1, 'test': 153}
+[99/100] wireapp__wire-webapp: {'javascript': 34, 'typescript': 2931} functions=14968 excluded={'generated_vendored': 10, 'test': 1058}
+[100/100] xorbitsai__inference: {'javascript': 13, 'python': 549, 'typescript': 214} functions=9656 excluded={'data_file': 5, 'example_docs': 9, 'generated_vendored': 2024, 'hidden_dir': 5, 'test': 590}

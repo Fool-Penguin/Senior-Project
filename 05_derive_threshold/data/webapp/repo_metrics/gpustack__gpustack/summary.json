@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 6,
+    "generated_vendored": 44,
+    "test": 459
+  },
+  "files_measured": {
+    "python": 461
+  },
+  "functions": 5247,
+  "internal_import_edges": 2302,
+  "js_relative_imports_unresolved": 0,
+  "key": "gpustack__gpustack",
+  "sha": "6e3a42a9d3d59eb6f11407ed5cb96d5840c3f48e",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/gpustack/gpustack"
+}

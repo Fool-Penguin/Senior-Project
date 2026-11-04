@@ -1,0 +1,24 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 91,
+    "hidden_dir": 2,
+    "test": 14
+  },
+  "files_measured": {
+    "javascript": 5,
+    "python": 85,
+    "typescript": 63
+  },
+  "functions": 1825,
+  "internal_import_edges": 536,
+  "js_relative_imports_unresolved": 0,
+  "key": "tsukumijima__KonomiTV",
+  "sha": "ed4e4b8d5c1b2f28d3e1baff5baf10506c6a9c74",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/tsukumijima/KonomiTV"
+}

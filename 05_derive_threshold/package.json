@@ -1,0 +1,8 @@
+{
+  "name": "05_derive_threshold",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "typescript": "6.0.3"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 1,
+    "test": 153
+  },
+  "files_measured": {
+    "javascript": 4,
+    "python": 3,
+    "typescript": 318
+  },
+  "functions": 3651,
+  "internal_import_edges": 1220,
+  "js_relative_imports_unresolved": 42,
+  "key": "zasper-io__zasper",
+  "sha": "f77b24bb2cac7cb19206ffa06cb5f58ccf3b7985",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/zasper-io/zasper"
+}

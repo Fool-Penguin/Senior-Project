@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 1,
+    "test": 32
+  },
+  "files_measured": {
+    "javascript": 38,
+    "typescript": 99
+  },
+  "functions": 1431,
+  "internal_import_edges": 241,
+  "js_relative_imports_unresolved": 13,
+  "key": "brmodeloweb__brmodelo-app",
+  "sha": "c705d83870d40dde577b23f5e99e048dc77e45c8",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/brmodeloweb/brmodelo-app"
+}

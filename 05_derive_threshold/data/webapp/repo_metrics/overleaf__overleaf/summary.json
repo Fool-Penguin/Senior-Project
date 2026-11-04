@@ -1,0 +1,25 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 1,
+    "example_docs": 7,
+    "generated_vendored": 230,
+    "parse_error": 1,
+    "test": 1131
+  },
+  "files_measured": {
+    "javascript": 952,
+    "typescript": 1637
+  },
+  "functions": 17331,
+  "internal_import_edges": 10188,
+  "js_relative_imports_unresolved": 57,
+  "key": "overleaf__overleaf",
+  "sha": "e039ad26c5bf5422eb57b89fc7e57c75055e631d",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/overleaf/overleaf"
+}

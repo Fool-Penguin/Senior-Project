@@ -1,0 +1,24 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 84,
+    "parse_error": 1,
+    "test": 1,
+    "vendored_library": 1
+  },
+  "files_measured": {
+    "javascript": 22,
+    "python": 157
+  },
+  "functions": 728,
+  "internal_import_edges": 231,
+  "js_relative_imports_unresolved": 0,
+  "key": "certsocietegenerale__FIR",
+  "sha": "ed479a1b93bba9fa7dd59379ba1f46add11e4eb7",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/certsocietegenerale/FIR"
+}

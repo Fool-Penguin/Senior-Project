@@ -1,0 +1,27 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 2,
+    "example_docs": 1,
+    "generated_vendored": 33,
+    "hidden_dir": 6,
+    "parse_error": 21,
+    "test": 140
+  },
+  "files_measured": {
+    "javascript": 7,
+    "python": 180,
+    "typescript": 533
+  },
+  "functions": 7040,
+  "internal_import_edges": 1971,
+  "js_relative_imports_unresolved": 4,
+  "key": "hijohnnylin__neuronpedia",
+  "sha": "e2573d3a4b9fd1a620fc386f6d2a8e0571420f9d",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/hijohnnylin/neuronpedia"
+}

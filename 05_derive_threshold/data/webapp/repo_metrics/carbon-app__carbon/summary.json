@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 1,
+    "generated_vendored": 3,
+    "parse_error": 1,
+    "test": 7
+  },
+  "files_measured": {
+    "javascript": 87
+  },
+  "functions": 693,
+  "internal_import_edges": 159,
+  "js_relative_imports_unresolved": 0,
+  "key": "carbon-app__carbon",
+  "sha": "3e9efcc506bdccb6d3834f66f30f8e883f80e49d",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/carbon-app/carbon"
+}

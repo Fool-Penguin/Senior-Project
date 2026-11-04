@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 1,
+    "parse_error": 1,
+    "test": 458,
+    "vendored_library": 1
+  },
+  "files_measured": {
+    "javascript": 464
+  },
+  "functions": 4831,
+  "internal_import_edges": 1242,
+  "js_relative_imports_unresolved": 4,
+  "key": "nasa-gibs__worldview",
+  "sha": "1accc6e947423ae114942c9fd04d19821205f467",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/nasa-gibs/worldview"
+}

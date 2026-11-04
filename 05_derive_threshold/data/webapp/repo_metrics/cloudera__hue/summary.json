@@ -1,0 +1,27 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "data_file": 3,
+    "example_docs": 129,
+    "generated_vendored": 540,
+    "parse_error": 5,
+    "test": 751,
+    "vendored_library": 13
+  },
+  "files_measured": {
+    "javascript": 1442,
+    "python": 1265,
+    "typescript": 289
+  },
+  "functions": 50883,
+  "internal_import_edges": 6238,
+  "js_relative_imports_unresolved": 2355,
+  "key": "cloudera__hue",
+  "sha": "7ad92b1820d62a0d5fde38889a1d16646d7a397f",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/cloudera/hue"
+}

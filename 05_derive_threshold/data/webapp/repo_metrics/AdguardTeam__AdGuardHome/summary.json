@@ -1,0 +1,24 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 2,
+    "generated_vendored": 7,
+    "parse_error": 8,
+    "test": 142
+  },
+  "files_measured": {
+    "javascript": 18,
+    "typescript": 750
+  },
+  "functions": 4404,
+  "internal_import_edges": 2690,
+  "js_relative_imports_unresolved": 226,
+  "key": "AdguardTeam__AdGuardHome",
+  "sha": "5c4d531d8d13f189dc7609a32d5073c63587746d",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/AdguardTeam/AdGuardHome"
+}

@@ -1,0 +1,55 @@
+key,reason
+AI4Finance-Foundation__FinRL-Trading,quantitative-trading research infrastructure; Streamlit dashboard is secondary
+StuffAnThings__qbit_manage,qBittorrent automation daemon; web UI is secondary
+X1Plus__X1Plus,3D-printer firmware
+datajuicer__data-juicer,data-processing library for foundation models
+dataabc__weibo-crawler,crawler script; Flask API is optional
+developmentseed__titiler,framework for building tile services (published packages)
+emby-keeper__emby-keeper,automation bot; web console is optional
+errbotio__errbot,chatbot daemon; web server only receives webhooks
+huozhi__sugar-high,syntax-highlighting library; Next.js site is its docs
+microsoft__RD-Agent,research agent framework; Streamlit UI is a log viewer
+nagadomi__nunif,machine-learning models and tools; web server is a side demo
+nodejs__nodejs.org,content website (static export)
+runhey__OnmyojiAutoScript,game automation script; web UI is a control panel
+Asabeneh__30-Days-Of-Python,programming tutorial
+OpenBMB__XAgent,autonomous agent framework; web UI is secondary
+QIN2DIM__hcaptcha-challenger,captcha-solving library
+flet-dev__flet,framework for building apps
+google-deepmind__open_spiel,reinforcement-learning research library
+om-ai-lab__OmAgent,agent framework; Gradio UI is a demo
+reata__sqllineage,SQL lineage library and CLI; web visualizer is secondary
+ComposioHQ__composio,SDK for AI-agent tool integrations
+slidevjs__slidev,developer tool for making slides (CLI and framework)
+Teradata__covalent,design system (UI component library)
+mui__mui-x,React component library
+coolpace__V2EX_Polish,browser extension
+fonoster__routr,SIP telephony server; web is secondary
+JustFly1984__react-google-maps-api,React component library
+Mentra-Community__MentraOS,smart-glasses operating system
+felixmosh__bull-board,embeddable queue-dashboard library (npm packages)
+epicweb-dev__advanced-react-apis,React workshop (educational)
+sadanandpai__frontend-mini-challenges,collection of learning / interview challenges
+reactplay__react-play,collection of learning projects
+mindskip__xzs,near-duplicate of mindskip/xzs-mysql (same exam system; earlier draw kept)
+Beaver-Notes__Beaver-Notes,desktop (Electron) app
+SharpAI__DeepCamera,AI camera / NVR platform; web is secondary
+strapi__documentation,documentation website
+wesbos__awesome-uses,awesome-list website
+svaarala__duktape,embeddable JavaScript engine (C library)
+datawhalechina__fun-rec,recommender-systems tutorial
+rocicorp__mono,sync-engine framework (Zero) monorepo
+epicweb-dev__react-hooks,React workshop (educational)
+remix-run__examples,collection of framework examples
+signalapp__Signal-Desktop,desktop (Electron) app
+newrelic__node-newrelic,APM agent library
+mitmproxy__mitmproxy,HTTPS proxy tool (CLI/TUI first); web UI is one of three interfaces
+tomalaforge__angular-challenges,set of Angular training challenges (educational)
+wanglin2__mind-map,mind-map JavaScript library (simple-mind-map); web app is its demo
+apache__burr,framework for building stateful AI apps; web UI is a telemetry viewer
+convex__convex-backend,database / backend platform used through its SDK; TypeScript is mostly client SDK
+langren1353__GM_script,collection of browser userscripts (Tampermonkey)
+blakeblackshear__frigate-hass-integration,Home Assistant integration (plugin)
+darkoperator__dnsrecon,DNS enumeration command-line tool; web API is secondary
+run-house__kubetorch,Python library for running ML workloads on Kubernetes
+triton-inference-server__server,C++ inference server; its Python code is QA tests and build scripts, not the server

@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 27,
+    "test": 62
+  },
+  "files_measured": {
+    "javascript": 1,
+    "python": 53
+  },
+  "functions": 311,
+  "internal_import_edges": 154,
+  "js_relative_imports_unresolved": 0,
+  "key": "bytedance__SandboxFusion",
+  "sha": "469de0845cb7d665bc68044d541aa3aa28c5b30a",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/bytedance/SandboxFusion"
+}

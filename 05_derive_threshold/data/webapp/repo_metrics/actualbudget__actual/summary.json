@@ -1,0 +1,25 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 41,
+    "generated_vendored": 22,
+    "hidden_dir": 8,
+    "parse_error": 4,
+    "test": 400
+  },
+  "files_measured": {
+    "javascript": 51,
+    "typescript": 1734
+  },
+  "functions": 13557,
+  "internal_import_edges": 7307,
+  "js_relative_imports_unresolved": 8,
+  "key": "actualbudget__actual",
+  "sha": "5226912e390a9e6d0acdef0b628245ec7705859b",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/actualbudget/actual"
+}

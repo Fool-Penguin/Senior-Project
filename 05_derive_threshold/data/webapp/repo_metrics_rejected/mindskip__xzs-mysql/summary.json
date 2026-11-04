@@ -1,0 +1,23 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "data_file": 3,
+    "example_docs": 23,
+    "generated_vendored": 215,
+    "vendored_library": 24
+  },
+  "files_measured": {
+    "javascript": 150
+  },
+  "functions": 660,
+  "internal_import_edges": 24,
+  "js_relative_imports_unresolved": 7,
+  "key": "mindskip__xzs-mysql",
+  "sha": "c2d11a87af0d7e4bc252f6f1d2d41b46f9c7ab95",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/mindskip/xzs-mysql"
+}

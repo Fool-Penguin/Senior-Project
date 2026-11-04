@@ -1,0 +1,20 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 2
+  },
+  "files_measured": {
+    "python": 156
+  },
+  "functions": 928,
+  "internal_import_edges": 533,
+  "js_relative_imports_unresolved": 0,
+  "key": "swingmx__swingmusic",
+  "sha": "89b9ddc7fb88ab1be5d483f4bdc8924ff56f5a8b",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/swingmx/swingmusic"
+}

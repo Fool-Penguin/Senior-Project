@@ -1,0 +1,27 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 3,
+    "example_docs": 255,
+    "generated_vendored": 156,
+    "hidden_dir": 3,
+    "parse_error": 37,
+    "test": 573
+  },
+  "files_measured": {
+    "javascript": 65,
+    "python": 15,
+    "typescript": 1936
+  },
+  "functions": 22220,
+  "internal_import_edges": 5324,
+  "js_relative_imports_unresolved": 24,
+  "key": "hexclave__hexclave",
+  "sha": "748d46a16d63df00a8e403b4baab9bfa541f2372",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/hexclave/hexclave"
+}

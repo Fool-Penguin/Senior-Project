@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 2,
+    "hidden_dir": 2,
+    "test": 473
+  },
+  "files_measured": {
+    "javascript": 346
+  },
+  "functions": 3903,
+  "internal_import_edges": 1121,
+  "js_relative_imports_unresolved": 10,
+  "key": "nxzai__NextExplorer",
+  "sha": "41cc0385e8126347fa17fe77a0df298cf621d749",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/nxzai/NextExplorer"
+}

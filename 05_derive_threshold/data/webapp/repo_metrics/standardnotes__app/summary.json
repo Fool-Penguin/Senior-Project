@@ -1,0 +1,24 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 5,
+    "generated_vendored": 32,
+    "hidden_dir": 4,
+    "test": 246
+  },
+  "files_measured": {
+    "javascript": 99,
+    "typescript": 2027
+  },
+  "functions": 10471,
+  "internal_import_edges": 7783,
+  "js_relative_imports_unresolved": 253,
+  "key": "standardnotes__app",
+  "sha": "11432ca3b443f1b520430ac28c70678e0bcfd425",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/standardnotes/app"
+}

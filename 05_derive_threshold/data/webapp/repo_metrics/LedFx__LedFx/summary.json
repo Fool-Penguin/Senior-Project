@@ -1,0 +1,24 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 2,
+    "generated_vendored": 9,
+    "hidden_dir": 3,
+    "test": 172
+  },
+  "files_measured": {
+    "javascript": 4,
+    "python": 253
+  },
+  "functions": 2213,
+  "internal_import_edges": 854,
+  "js_relative_imports_unresolved": 0,
+  "key": "LedFx__LedFx",
+  "sha": "f562a02964bcc940f149ba6baa81b68f8be668df",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/LedFx/LedFx"
+}

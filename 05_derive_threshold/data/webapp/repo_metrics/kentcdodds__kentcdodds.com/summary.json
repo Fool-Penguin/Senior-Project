@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 12,
+    "parse_error": 2,
+    "test": 150
+  },
+  "files_measured": {
+    "javascript": 37,
+    "typescript": 454
+  },
+  "functions": 4061,
+  "internal_import_edges": 1463,
+  "js_relative_imports_unresolved": 91,
+  "key": "kentcdodds__kentcdodds.com",
+  "sha": "16d1b6f19ad0d4df751d48cd075530211ca92671",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/kentcdodds/kentcdodds.com"
+}

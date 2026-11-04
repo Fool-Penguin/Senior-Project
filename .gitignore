@@ -20,3 +20,8 @@ documentation_files.jsonl
 # OS artifacts
 .DS_Store
 Thumbs.db
+
+# Local work
+05_metric_comparison/
+
+# 

@@ -1,0 +1,26 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 7,
+    "generated_vendored": 157,
+    "hidden_dir": 17,
+    "parse_error": 1,
+    "test": 2785
+  },
+  "files_measured": {
+    "javascript": 35,
+    "python": 2302,
+    "typescript": 2219
+  },
+  "functions": 31347,
+  "internal_import_edges": 9429,
+  "js_relative_imports_unresolved": 5,
+  "key": "onyx-dot-app__onyx",
+  "sha": "3eb6420f6c7d6c0a94a0b7107a6138509c6d0f48",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/onyx-dot-app/onyx"
+}

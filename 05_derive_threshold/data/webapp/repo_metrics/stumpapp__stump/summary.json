@@ -1,0 +1,25 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 62,
+    "generated_vendored": 4,
+    "hidden_dir": 2,
+    "parse_error": 1,
+    "test": 69
+  },
+  "files_measured": {
+    "javascript": 9,
+    "typescript": 1587
+  },
+  "functions": 8937,
+  "internal_import_edges": 6025,
+  "js_relative_imports_unresolved": 37,
+  "key": "stumpapp__stump",
+  "sha": "0769a29393e0b5c87d5c0d6a580fca2063ef3e7a",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/stumpapp/stump"
+}

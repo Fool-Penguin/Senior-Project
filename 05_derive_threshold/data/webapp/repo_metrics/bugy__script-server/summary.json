@@ -1,0 +1,23 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 7,
+    "generated_vendored": 2,
+    "test": 99
+  },
+  "files_measured": {
+    "javascript": 51,
+    "python": 102
+  },
+  "functions": 1411,
+  "internal_import_edges": 301,
+  "js_relative_imports_unresolved": 11,
+  "key": "bugy__script-server",
+  "sha": "62bd38a3942e73546ba701248253d043eb66dadd",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/bugy/script-server"
+}

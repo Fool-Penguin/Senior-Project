@@ -1,0 +1,23 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 1,
+    "hidden_dir": 30,
+    "test": 3
+  },
+  "files_measured": {
+    "javascript": 5,
+    "typescript": 65
+  },
+  "functions": 679,
+  "internal_import_edges": 164,
+  "js_relative_imports_unresolved": 15,
+  "key": "joye61__pic-smaller",
+  "sha": "7bfc890a0719f90a629f03ee5580d4bb40b588e9",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/joye61/pic-smaller"
+}

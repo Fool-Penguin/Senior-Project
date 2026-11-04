@@ -1,0 +1,26 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 7,
+    "example_docs": 39,
+    "generated_vendored": 2384,
+    "hidden_dir": 81,
+    "parse_error": 1,
+    "test": 2363
+  },
+  "files_measured": {
+    "javascript": 48,
+    "typescript": 6175
+  },
+  "functions": 31215,
+  "internal_import_edges": 42522,
+  "js_relative_imports_unresolved": 2,
+  "key": "Expensify__App",
+  "sha": "1191e7b2fba721b609ec645880a4ce4456cda1ac",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/Expensify/App"
+}

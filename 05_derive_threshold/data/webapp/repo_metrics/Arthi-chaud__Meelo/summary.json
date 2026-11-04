@@ -1,0 +1,24 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 4,
+    "hidden_dir": 2,
+    "test": 61
+  },
+  "files_measured": {
+    "javascript": 3,
+    "python": 35,
+    "typescript": 613
+  },
+  "functions": 4337,
+  "internal_import_edges": 3467,
+  "js_relative_imports_unresolved": 4,
+  "key": "Arthi-chaud__Meelo",
+  "sha": "3c51de42bbe094161d5b12a363c44ec7275e2f15",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/Arthi-chaud/Meelo"
+}

@@ -1,0 +1,26 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 1,
+    "example_docs": 2,
+    "generated_vendored": 8,
+    "hidden_dir": 2,
+    "parse_error": 25,
+    "test": 1077
+  },
+  "files_measured": {
+    "javascript": 29,
+    "typescript": 1943
+  },
+  "functions": 15763,
+  "internal_import_edges": 11354,
+  "js_relative_imports_unresolved": 7,
+  "key": "Shelf-nu__shelf.nu",
+  "sha": "0a053db5e74203aa0d2ce682e2a2acaee2a22f3d",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/Shelf-nu/shelf.nu"
+}

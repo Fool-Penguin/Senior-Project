@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 122,
+    "test": 40
+  },
+  "files_measured": {
+    "javascript": 12,
+    "python": 301
+  },
+  "functions": 1297,
+  "internal_import_edges": 654,
+  "js_relative_imports_unresolved": 0,
+  "key": "bugsink__bugsink",
+  "sha": "bdd593fe3e1a50a4ffe0d469e0d87bf4e4847ba7",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/bugsink/bugsink"
+}

@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 2,
+    "test": 261
+  },
+  "files_measured": {
+    "javascript": 290,
+    "python": 3
+  },
+  "functions": 1670,
+  "internal_import_edges": 63,
+  "js_relative_imports_unresolved": 2,
+  "key": "fleetbase__fleetbase",
+  "sha": "b56571cfe296995e311051b3e66abd0a35e37d79",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/fleetbase/fleetbase"
+}

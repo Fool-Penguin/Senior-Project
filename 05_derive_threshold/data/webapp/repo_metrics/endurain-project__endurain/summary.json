@@ -1,0 +1,25 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 1,
+    "generated_vendored": 18,
+    "hidden_dir": 1,
+    "test": 479
+  },
+  "files_measured": {
+    "javascript": 1,
+    "python": 544,
+    "typescript": 195
+  },
+  "functions": 3528,
+  "internal_import_edges": 602,
+  "js_relative_imports_unresolved": 51,
+  "key": "endurain-project__endurain",
+  "sha": "712b04ddbcb269109f72661637636251e396b3a5",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/endurain-project/endurain"
+}

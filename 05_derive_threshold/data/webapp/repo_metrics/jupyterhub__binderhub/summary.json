@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 5,
+    "generated_vendored": 1,
+    "test": 32
+  },
+  "files_measured": {
+    "javascript": 20,
+    "python": 29
+  },
+  "functions": 385,
+  "internal_import_edges": 54,
+  "js_relative_imports_unresolved": 5,
+  "key": "jupyterhub__binderhub",
+  "sha": "1013493a4eaf91d9ad15de0d125cd0e36505d093",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/jupyterhub/binderhub"
+}

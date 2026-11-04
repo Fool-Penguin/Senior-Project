@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 23,
+    "test": 51
+  },
+  "files_measured": {
+    "javascript": 8,
+    "python": 42
+  },
+  "functions": 670,
+  "internal_import_edges": 160,
+  "js_relative_imports_unresolved": 0,
+  "key": "fossasia__veditor",
+  "sha": "0ecb70d4269f93034a5bb416eefa841c3c69eecc",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/fossasia/veditor"
+}

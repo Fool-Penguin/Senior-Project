@@ -1,0 +1,26 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 26,
+    "generated_vendored": 14,
+    "hidden_dir": 9,
+    "parse_error": 63,
+    "test": 1713,
+    "vendored_library": 2
+  },
+  "files_measured": {
+    "javascript": 64,
+    "typescript": 3319
+  },
+  "functions": 21392,
+  "internal_import_edges": 14460,
+  "js_relative_imports_unresolved": 8,
+  "key": "formbricks__formbricks",
+  "sha": "fa289168d43699043e8e4016c3aa38bc3109f865",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/formbricks/formbricks"
+}

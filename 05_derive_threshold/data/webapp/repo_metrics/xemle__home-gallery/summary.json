@@ -1,0 +1,23 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 9,
+    "parse_error": 2,
+    "test": 87
+  },
+  "files_measured": {
+    "javascript": 248,
+    "typescript": 248
+  },
+  "functions": 3767,
+  "internal_import_edges": 1052,
+  "js_relative_imports_unresolved": 1,
+  "key": "xemle__home-gallery",
+  "sha": "5b6232c78f89c52ce2e0f58f8d45f75f17670c07",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/xemle/home-gallery"
+}

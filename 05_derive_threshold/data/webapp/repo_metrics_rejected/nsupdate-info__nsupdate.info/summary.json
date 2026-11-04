@@ -1,0 +1,24 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 1,
+    "generated_vendored": 24,
+    "hidden_dir": 1,
+    "test": 13
+  },
+  "files_measured": {
+    "javascript": 1,
+    "python": 48
+  },
+  "functions": 197,
+  "internal_import_edges": 38,
+  "js_relative_imports_unresolved": 0,
+  "key": "nsupdate-info__nsupdate.info",
+  "sha": "1c3578ba2e0d82c322bf49f11dbf891af189a4a8",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/nsupdate-info/nsupdate.info"
+}

@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 5,
+    "parse_error": 15,
+    "test": 3
+  },
+  "files_measured": {
+    "javascript": 7,
+    "typescript": 83
+  },
+  "functions": 451,
+  "internal_import_edges": 119,
+  "js_relative_imports_unresolved": 7,
+  "key": "AykutSarac__jsoncrack.com",
+  "sha": "a46d0d0adb098e12e577a083e87ead7f61f90098",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/AykutSarac/jsoncrack.com"
+}

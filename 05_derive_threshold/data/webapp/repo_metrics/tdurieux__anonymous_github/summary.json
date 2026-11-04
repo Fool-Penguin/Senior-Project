@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 442,
+    "test": 95
+  },
+  "files_measured": {
+    "javascript": 29,
+    "typescript": 138
+  },
+  "functions": 2553,
+  "internal_import_edges": 604,
+  "js_relative_imports_unresolved": 32,
+  "key": "tdurieux__anonymous_github",
+  "sha": "772e40debd045b94051defdf6a9f33cc9f2fe5a6",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/tdurieux/anonymous_github"
+}

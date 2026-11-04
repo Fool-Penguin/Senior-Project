@@ -1,0 +1,24 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 3,
+    "generated_vendored": 2,
+    "parse_error": 2,
+    "test": 286
+  },
+  "files_measured": {
+    "javascript": 17,
+    "typescript": 284
+  },
+  "functions": 1717,
+  "internal_import_edges": 616,
+  "js_relative_imports_unresolved": 2,
+  "key": "aws-solutions__dynamic-image-transformation-for-amazon-cloudfront",
+  "sha": "a9e664ccb1ce3c5c25ad09ff4246cf54ca1adc67",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/aws-solutions/dynamic-image-transformation-for-amazon-cloudfront"
+}

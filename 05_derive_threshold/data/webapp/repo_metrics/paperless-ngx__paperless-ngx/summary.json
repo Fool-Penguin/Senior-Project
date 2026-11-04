@@ -1,0 +1,25 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 54,
+    "parse_error": 1,
+    "test": 389,
+    "vendored_library": 1
+  },
+  "files_measured": {
+    "javascript": 4,
+    "python": 166,
+    "typescript": 237
+  },
+  "functions": 4361,
+  "internal_import_edges": 1623,
+  "js_relative_imports_unresolved": 0,
+  "key": "paperless-ngx__paperless-ngx",
+  "sha": "13acdabb47ed2b2b17ab2c23b8183c5323b1ce62",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/paperless-ngx/paperless-ngx"
+}

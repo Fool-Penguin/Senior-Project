@@ -1,0 +1,21 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 1,
+    "test": 38
+  },
+  "files_measured": {
+    "javascript": 64
+  },
+  "functions": 656,
+  "internal_import_edges": 112,
+  "js_relative_imports_unresolved": 1,
+  "key": "7Sageer__sublink-worker",
+  "sha": "acc2a06ddc9a5c79d60a176aaaa8377813ebf67b",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/7Sageer/sublink-worker"
+}

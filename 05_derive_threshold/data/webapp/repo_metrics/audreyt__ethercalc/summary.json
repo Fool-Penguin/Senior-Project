@@ -1,0 +1,24 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 2,
+    "generated_vendored": 19,
+    "test": 160,
+    "vendored_library": 2
+  },
+  "files_measured": {
+    "javascript": 16,
+    "typescript": 164
+  },
+  "functions": 2248,
+  "internal_import_edges": 342,
+  "js_relative_imports_unresolved": 4,
+  "key": "audreyt__ethercalc",
+  "sha": "e989429d011a8e79706272103a63ed94ac8526bc",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/audreyt/ethercalc"
+}

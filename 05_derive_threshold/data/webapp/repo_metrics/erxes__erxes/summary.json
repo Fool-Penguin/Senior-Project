@@ -1,0 +1,24 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 2,
+    "generated_vendored": 1241,
+    "parse_error": 2,
+    "test": 420
+  },
+  "files_measured": {
+    "javascript": 50,
+    "typescript": 12753
+  },
+  "functions": 63127,
+  "internal_import_edges": 31667,
+  "js_relative_imports_unresolved": 13,
+  "key": "erxes__erxes",
+  "sha": "5933d725ae199debc53cc4719bd63185d5cfcc45",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/erxes/erxes"
+}

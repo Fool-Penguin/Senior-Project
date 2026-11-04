@@ -1,0 +1,26 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 37,
+    "generated_vendored": 666,
+    "hidden_dir": 9,
+    "parse_error": 1,
+    "test": 108
+  },
+  "files_measured": {
+    "javascript": 358,
+    "python": 236,
+    "typescript": 1504
+  },
+  "functions": 14784,
+  "internal_import_edges": 4796,
+  "js_relative_imports_unresolved": 182,
+  "key": "openreplay__openreplay",
+  "sha": "9f1dcebfa5bd98967c902b77b8fe7ed120ab5b2b",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/openreplay/openreplay"
+}

@@ -1,0 +1,21 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 1,
+    "test": 263
+  },
+  "files_measured": {
+    "javascript": 193
+  },
+  "functions": 1022,
+  "internal_import_edges": 252,
+  "js_relative_imports_unresolved": 25,
+  "key": "OWASP__threat-dragon",
+  "sha": "72ea3b18876de21831ec21c0df18a71a9a795af4",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/OWASP/threat-dragon"
+}

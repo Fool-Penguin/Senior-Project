@@ -1,0 +1,20 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "test": 13
+  },
+  "files_measured": {
+    "javascript": 41
+  },
+  "functions": 242,
+  "internal_import_edges": 44,
+  "js_relative_imports_unresolved": 5,
+  "key": "sbs20__scanservjs",
+  "sha": "afe2967230b791fd09b973df6ab7209b7ae30323",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/sbs20/scanservjs"
+}

@@ -1,0 +1,22 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 3,
+    "test": 45
+  },
+  "files_measured": {
+    "javascript": 21,
+    "python": 69
+  },
+  "functions": 442,
+  "internal_import_edges": 80,
+  "js_relative_imports_unresolved": 0,
+  "key": "tiny-pilot__tinypilot",
+  "sha": "5f34d8a66d05fb8ca3625e7458915e55cfb7fac7",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/tiny-pilot/tinypilot"
+}

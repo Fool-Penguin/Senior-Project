@@ -1,0 +1,374 @@
+{
+  "python": {
+    "derived_from_group": "python",
+    "cyclomatic": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        8,
+        11,
+        18
+      ],
+      "default": 11,
+      "default_quantile": 80
+    },
+    "cognitive": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        11,
+        17,
+        32
+      ],
+      "default": 17,
+      "default_quantile": 80
+    },
+    "params": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        2,
+        3,
+        5
+      ],
+      "default": 3,
+      "default_quantile": 80
+    },
+    "function_sloc": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        45,
+        63,
+        104
+      ],
+      "default": 63,
+      "default_quantile": 80
+    },
+    "file_sloc": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        677,
+        1029,
+        1689
+      ],
+      "default": 1029,
+      "default_quantile": 80
+    },
+    "ce": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        6,
+        9,
+        14
+      ],
+      "default": 9,
+      "default_quantile": 80
+    },
+    "ca": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        2,
+        4,
+        10
+      ],
+      "default": 4,
+      "default_quantile": 80
+    },
+    "comment_density": {
+      "method": "vale",
+      "quantiles": [
+        3,
+        15,
+        90,
+        95
+      ],
+      "thresholds": [
+        0.0,
+        0.0,
+        33.33,
+        43.94
+      ],
+      "default": null
+    }
+  },
+  "javascript": {
+    "derived_from_group": "js_ts",
+    "cyclomatic": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        7,
+        10,
+        18
+      ],
+      "default": 10,
+      "default_quantile": 80
+    },
+    "cognitive": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        5,
+        8,
+        17
+      ],
+      "default": 8,
+      "default_quantile": 80
+    },
+    "params": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        1,
+        2,
+        2
+      ],
+      "default": 2,
+      "default_quantile": 80
+    },
+    "function_sloc": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        54,
+        88,
+        171
+      ],
+      "default": 88,
+      "default_quantile": 80
+    },
+    "file_sloc": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        496,
+        707,
+        1382
+      ],
+      "default": 707,
+      "default_quantile": 80
+    },
+    "ce": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        6,
+        9,
+        14
+      ],
+      "default": 9,
+      "default_quantile": 80
+    },
+    "ca": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        2,
+        2,
+        5
+      ],
+      "default": 2,
+      "default_quantile": 80
+    },
+    "comment_density": {
+      "method": "vale",
+      "quantiles": [
+        3,
+        15,
+        90,
+        95
+      ],
+      "thresholds": [
+        0.0,
+        0.0,
+        17.99,
+        28.0
+      ],
+      "default": null
+    }
+  },
+  "typescript": {
+    "derived_from_group": "typescript",
+    "cyclomatic": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        7,
+        10,
+        18
+      ],
+      "default": 10,
+      "default_quantile": 80
+    },
+    "cognitive": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        5,
+        8,
+        15
+      ],
+      "default": 8,
+      "default_quantile": 80
+    },
+    "params": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        1,
+        2,
+        2
+      ],
+      "default": 2,
+      "default_quantile": 80
+    },
+    "function_sloc": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        62,
+        97,
+        176
+      ],
+      "default": 97,
+      "default_quantile": 80
+    },
+    "file_sloc": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        398,
+        578,
+        965
+      ],
+      "default": 578,
+      "default_quantile": 80
+    },
+    "ce": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        8,
+        11,
+        17
+      ],
+      "default": 11,
+      "default_quantile": 80
+    },
+    "ca": {
+      "method": "alves",
+      "quantiles": [
+        70,
+        80,
+        90
+      ],
+      "thresholds": [
+        2,
+        3,
+        8
+      ],
+      "default": 3,
+      "default_quantile": 80
+    },
+    "comment_density": {
+      "method": "vale",
+      "quantiles": [
+        3,
+        15,
+        90,
+        95
+      ],
+      "thresholds": [
+        0.0,
+        0.0,
+        17.65,
+        27.69
+      ],
+      "default": null
+    }
+  }
+}

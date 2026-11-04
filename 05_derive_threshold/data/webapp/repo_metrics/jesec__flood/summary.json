@@ -1,0 +1,24 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 6,
+    "generated_vendored": 54,
+    "hidden_dir": 15,
+    "test": 8
+  },
+  "files_measured": {
+    "javascript": 35,
+    "typescript": 371
+  },
+  "functions": 2325,
+  "internal_import_edges": 1117,
+  "js_relative_imports_unresolved": 4,
+  "key": "jesec__flood",
+  "sha": "c7359f4904e9096e8c42222f209e2b12fe9f1c8f",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/jesec/flood"
+}

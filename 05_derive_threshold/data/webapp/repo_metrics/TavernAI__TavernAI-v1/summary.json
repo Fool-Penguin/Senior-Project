@@ -1,0 +1,20 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 9
+  },
+  "files_measured": {
+    "javascript": 29
+  },
+  "functions": 1600,
+  "internal_import_edges": 68,
+  "js_relative_imports_unresolved": 5,
+  "key": "TavernAI__TavernAI-v1",
+  "sha": "fb7c11427be3b95507d02fb988f2afb95835780f",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/TavernAI/TavernAI-v1"
+}

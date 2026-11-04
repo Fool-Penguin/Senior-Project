@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 27,
+    "parse_error": 1
+  },
+  "files_measured": {
+    "javascript": 107,
+    "python": 34
+  },
+  "functions": 2978,
+  "internal_import_edges": 485,
+  "js_relative_imports_unresolved": 7,
+  "key": "fireshare-app__fireshare",
+  "sha": "ea64b10d6fe10dd8d6ea214950581cf999cdcc57",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/fireshare-app/fireshare"
+}

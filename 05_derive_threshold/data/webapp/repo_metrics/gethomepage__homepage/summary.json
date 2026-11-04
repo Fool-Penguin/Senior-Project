@@ -1,0 +1,20 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "test": 573
+  },
+  "files_measured": {
+    "javascript": 581
+  },
+  "functions": 1809,
+  "internal_import_edges": 1749,
+  "js_relative_imports_unresolved": 0,
+  "key": "gethomepage__homepage",
+  "sha": "2e5f10134ae3961bb936d3e7c441f9a1f4a4bf4f",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/gethomepage/homepage"
+}

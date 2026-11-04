@@ -1,0 +1,21 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 1,
+    "test": 123
+  },
+  "files_measured": {
+    "python": 167
+  },
+  "functions": 1650,
+  "internal_import_edges": 585,
+  "js_relative_imports_unresolved": 0,
+  "key": "Akkudoktor-EOS__EOS",
+  "sha": "298d46a52742a9a4cc61c16ee3811beee34270e3",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/Akkudoktor-EOS/EOS"
+}

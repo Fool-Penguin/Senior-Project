@@ -1,0 +1,24 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 4,
+    "generated_vendored": 15,
+    "parse_error": 1,
+    "test": 5
+  },
+  "files_measured": {
+    "javascript": 73,
+    "typescript": 367
+  },
+  "functions": 5121,
+  "internal_import_edges": 1180,
+  "js_relative_imports_unresolved": 4,
+  "key": "hydro-dev__Hydro",
+  "sha": "5179dca8b2092a68276b8dcd5e2a6ba41b9f8443",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/hydro-dev/Hydro"
+}

@@ -1,0 +1,26 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "data_file": 1,
+    "generated_vendored": 555,
+    "parse_error": 5,
+    "test": 170,
+    "vendored_library": 173
+  },
+  "files_measured": {
+    "javascript": 401,
+    "python": 11,
+    "typescript": 249
+  },
+  "functions": 9741,
+  "internal_import_edges": 2254,
+  "js_relative_imports_unresolved": 32,
+  "key": "saltcorn__saltcorn",
+  "sha": "743add10a56e12d77b9a0565920ca6be7651ccf3",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/saltcorn/saltcorn"
+}

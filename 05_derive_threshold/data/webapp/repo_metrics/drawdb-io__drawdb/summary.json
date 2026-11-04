@@ -1,0 +1,20 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 1
+  },
+  "files_measured": {
+    "javascript": 261
+  },
+  "functions": 2709,
+  "internal_import_edges": 627,
+  "js_relative_imports_unresolved": 24,
+  "key": "drawdb-io__drawdb",
+  "sha": "a249c7fb730c2de9b5c2ce6e863f2ea7344ac372",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/drawdb-io/drawdb"
+}

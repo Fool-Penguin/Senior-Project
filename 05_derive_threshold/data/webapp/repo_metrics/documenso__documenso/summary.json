@@ -1,0 +1,24 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 34,
+    "generated_vendored": 10,
+    "parse_error": 3,
+    "test": 187
+  },
+  "files_measured": {
+    "javascript": 11,
+    "typescript": 2014
+  },
+  "functions": 10006,
+  "internal_import_edges": 9936,
+  "js_relative_imports_unresolved": 88,
+  "key": "documenso__documenso",
+  "sha": "503cd1aa1c7507ef8cadf476a7998bec7673f6d2",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/documenso/documenso"
+}

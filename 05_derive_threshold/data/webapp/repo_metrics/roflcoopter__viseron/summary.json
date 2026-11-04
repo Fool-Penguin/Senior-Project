@@ -1,0 +1,24 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 49,
+    "generated_vendored": 4,
+    "test": 144
+  },
+  "files_measured": {
+    "javascript": 5,
+    "python": 274,
+    "typescript": 257
+  },
+  "functions": 4928,
+  "internal_import_edges": 1952,
+  "js_relative_imports_unresolved": 3,
+  "key": "roflcoopter__viseron",
+  "sha": "699c65bc3eaec09eb3ade8b82ef1adec106298fe",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/roflcoopter/viseron"
+}

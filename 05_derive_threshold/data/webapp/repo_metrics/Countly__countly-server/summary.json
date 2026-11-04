@@ -1,0 +1,24 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "data_file": 1,
+    "generated_vendored": 74,
+    "hidden_dir": 2,
+    "test": 173,
+    "vendored_library": 18
+  },
+  "files_measured": {
+    "javascript": 950
+  },
+  "functions": 20685,
+  "internal_import_edges": 1162,
+  "js_relative_imports_unresolved": 78,
+  "key": "Countly__countly-server",
+  "sha": "5bb8e77c5060172af8fb49d4865587bf70365013",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/Countly/countly-server"
+}

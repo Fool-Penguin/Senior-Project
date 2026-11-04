@@ -1,0 +1,24 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 41,
+    "generated_vendored": 2629,
+    "parse_error": 4,
+    "test": 470
+  },
+  "files_measured": {
+    "javascript": 17,
+    "typescript": 2049
+  },
+  "functions": 15426,
+  "internal_import_edges": 5919,
+  "js_relative_imports_unresolved": 279,
+  "key": "hashintel__hash",
+  "sha": "5e162926850b869327cc27f70222c83f63b419af",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/hashintel/hash"
+}

@@ -1,0 +1,20 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 103
+  },
+  "files_measured": {
+    "javascript": 159
+  },
+  "functions": 1566,
+  "internal_import_edges": 390,
+  "js_relative_imports_unresolved": 76,
+  "key": "CyferShepard__Jellystat",
+  "sha": "e0a38eeeff4c4bbaba60abad5f76e8a54415d1a8",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/CyferShepard/Jellystat"
+}

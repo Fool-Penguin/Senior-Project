@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 11,
+    "hidden_dir": 2,
+    "test": 238
+  },
+  "files_measured": {
+    "javascript": 31,
+    "typescript": 373
+  },
+  "functions": 5075,
+  "internal_import_edges": 1831,
+  "js_relative_imports_unresolved": 113,
+  "key": "firefox-devtools__profiler",
+  "sha": "a73f07c297386c77b880c3f4b9d07571953c535e",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/firefox-devtools/profiler"
+}

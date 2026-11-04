@@ -1,0 +1,26 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "data_file": 1,
+    "example_docs": 45,
+    "generated_vendored": 158,
+    "hidden_dir": 5,
+    "test": 83
+  },
+  "files_measured": {
+    "javascript": 10,
+    "python": 451,
+    "typescript": 3237
+  },
+  "functions": 17814,
+  "internal_import_edges": 13699,
+  "js_relative_imports_unresolved": 79,
+  "key": "makeplane__plane",
+  "sha": "37a15d99231042b3ff5a4401fed479fdbec9effe",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/makeplane/plane"
+}

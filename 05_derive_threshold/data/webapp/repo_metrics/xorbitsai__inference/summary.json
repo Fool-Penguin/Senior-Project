@@ -1,0 +1,26 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 5,
+    "example_docs": 9,
+    "generated_vendored": 2024,
+    "hidden_dir": 5,
+    "test": 590
+  },
+  "files_measured": {
+    "javascript": 13,
+    "python": 549,
+    "typescript": 214
+  },
+  "functions": 9656,
+  "internal_import_edges": 2938,
+  "js_relative_imports_unresolved": 1,
+  "key": "xorbitsai__inference",
+  "sha": "12d4e66b3fc32f97d17eef09c4e21a4fe5b85c1c",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/xorbitsai/inference"
+}

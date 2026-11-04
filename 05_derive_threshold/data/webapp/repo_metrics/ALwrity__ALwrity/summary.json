@@ -1,0 +1,25 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 1,
+    "generated_vendored": 2,
+    "parse_error": 84,
+    "test": 62
+  },
+  "files_measured": {
+    "javascript": 2,
+    "python": 1135,
+    "typescript": 1242
+  },
+  "functions": 20921,
+  "internal_import_edges": 3717,
+  "js_relative_imports_unresolved": 3,
+  "key": "ALwrity__ALwrity",
+  "sha": "f69ed7fab6b87271713729aa7c547e765f214832",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/ALwrity/ALwrity"
+}

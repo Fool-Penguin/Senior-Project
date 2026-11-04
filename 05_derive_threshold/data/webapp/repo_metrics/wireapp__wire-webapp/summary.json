@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 10,
+    "test": 1058
+  },
+  "files_measured": {
+    "javascript": 34,
+    "typescript": 2931
+  },
+  "functions": 14968,
+  "internal_import_edges": 10324,
+  "js_relative_imports_unresolved": 10,
+  "key": "wireapp__wire-webapp",
+  "sha": "78ed96fca7de059b487e61807ba38b231c5ae334",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/wireapp/wire-webapp"
+}

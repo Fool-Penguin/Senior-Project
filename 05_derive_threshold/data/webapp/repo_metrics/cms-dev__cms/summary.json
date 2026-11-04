@@ -1,0 +1,25 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 2,
+    "generated_vendored": 7,
+    "parse_error": 1,
+    "test": 39,
+    "vendored_library": 2
+  },
+  "files_measured": {
+    "javascript": 15,
+    "python": 347
+  },
+  "functions": 2641,
+  "internal_import_edges": 796,
+  "js_relative_imports_unresolved": 0,
+  "key": "cms-dev__cms",
+  "sha": "55ebd3a7418b574cfb391303fd0695d8c1686ba1",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/cms-dev/cms"
+}

@@ -1,0 +1,295 @@
+group,key,main_language,sloc,used,reason
+python,abi__screenshot-to-code,Python,11312,True,
+python,Akkudoktor-EOS__EOS,Python,40130,True,
+python,ALwrity__ALwrity,Python,238282,True,
+python,Arize-ai__phoenix,Python,155634,True,
+python,Arthi-chaud__Meelo,TypeScript,3971,True,
+python,BennyKok__comfyui-deploy,TypeScript,5912,True,
+python,bugsink__bugsink,Python,18054,True,
+python,bugy__script-server,Python,8848,True,
+python,bytedance__SandboxFusion,Python,6430,True,
+python,cdhigh__KindleEar,Python,92023,True,
+python,certsocietegenerale__FIR,JavaScript,9043,True,
+python,cloudera__hue,JavaScript,182558,True,
+python,cms-dev__cms,Python,34322,True,
+python,crocodilestick__Calibre-Web-Automated,JavaScript,40418,True,
+python,cvat-ai__cvat,Python,59386,True,
+python,django__djangoproject.com,Python,25499,True,
+python,endurain-project__endurain,Python,58489,True,
+python,fireshare-app__fireshare,JavaScript,11483,True,
+python,fleetbase__fleetbase,JavaScript,268,False,below 3000 SLOC
+python,fossasia__veditor,Python,13690,True,
+python,GhostManager__Ghostwriter,Python,40078,True,
+python,GNS3__gns3-server,Python,35896,True,
+python,gpustack__gpustack,Python,117998,True,
+python,Haidra-Org__AI-Horde,Python,46637,True,
+python,hexclave__hexclave,TypeScript,3277,True,
+python,highlight__highlight,TypeScript,1836,False,below 3000 SLOC
+python,hijohnnylin__neuronpedia,TypeScript,34088,True,
+python,homarr-labs__homarr,TypeScript,1079,False,below 3000 SLOC
+python,infobyte__faraday,Python,20291,True,
+python,jupyterhub__binderhub,Python,6769,True,
+python,LedFx__LedFx,Python,41000,True,
+python,makeplane__plane,TypeScript,55008,True,
+python,measure-sh__measure,TypeScript,208,False,below 3000 SLOC
+python,meeb__tubesync,Python,14353,True,
+python,mozilla__fx-private-relay,Python,11435,True,
+python,onyx-dot-app__onyx,Python,359984,True,
+python,openreplay__openreplay,TypeScript,23789,True,
+python,openstack__horizon,Python,48151,True,
+python,paperless-ngx__paperless-ngx,Python,36567,True,
+python,papermark__papermark,TypeScript,278,False,below 3000 SLOC
+python,plankanban__planka,JavaScript,62,False,below 3000 SLOC
+python,pritunl__pritunl,Python,43317,True,
+python,roflcoopter__viseron,Python,40498,True,
+python,saleor__saleor,Python,165930,True,
+python,saltcorn__saltcorn,JavaScript,501,False,below 3000 SLOC
+python,suitenumerique__meet,Python,14019,True,
+python,swingmx__swingmusic,Python,13537,True,
+python,tiny-pilot__tinypilot,Python,3199,True,
+python,umap-project__umap,JavaScript,4206,True,
+python,wger-project__wger,Python,25938,True,
+python,wizarrrr__wizarr,Python,29869,True,
+python,xorbitsai__inference,Python,148667,True,
+python,zasper-io__zasper,TypeScript,1104,False,below 3000 SLOC
+javascript,7Sageer__sublink-worker,JavaScript,8786,True,
+javascript,abi__screenshot-to-code,Python,110,False,below 3000 SLOC
+javascript,actualbudget__actual,TypeScript,6391,True,
+javascript,AdguardTeam__AdGuardHome,TypeScript,993,False,below 3000 SLOC
+javascript,ALwrity__ALwrity,Python,70,False,below 3000 SLOC
+javascript,Arize-ai__phoenix,Python,261,False,below 3000 SLOC
+javascript,Arthi-chaud__Meelo,TypeScript,116,False,below 3000 SLOC
+javascript,audreyt__ethercalc,TypeScript,1128,False,below 3000 SLOC
+javascript,aws-solutions__dynamic-image-transformation-for-amazon-cloudfront,TypeScript,537,False,below 3000 SLOC
+javascript,AykutSarac__jsoncrack.com,TypeScript,562,False,below 3000 SLOC
+javascript,bambanah__deemix,JavaScript,9240,True,
+javascript,BennyKok__comfyui-deploy,TypeScript,6953,True,
+javascript,benvinegar__counterscale,TypeScript,280,False,below 3000 SLOC
+javascript,Blockstream__esplora,JavaScript,8353,True,
+javascript,brmodeloweb__brmodelo-app,JavaScript,6926,True,
+javascript,bugsink__bugsink,Python,398,False,below 3000 SLOC
+javascript,bugy__script-server,Python,3990,True,
+javascript,bytedance__SandboxFusion,Python,6,False,below 3000 SLOC
+javascript,carbon-app__carbon,JavaScript,10239,True,
+javascript,cdhigh__KindleEar,Python,3798,True,
+javascript,certsocietegenerale__FIR,JavaScript,3604,True,
+javascript,cheeaun__phanpy,JavaScript,50250,True,
+javascript,chrisvel__tududi,JavaScript,74260,True,
+javascript,cla-assistant__cla-assistant,JavaScript,8007,True,
+javascript,cloudera__hue,JavaScript,479786,True,
+javascript,cms-dev__cms,Python,4731,True,
+javascript,codesandbox__codesandbox-client,JavaScript,29046,True,
+javascript,Countly__countly-server,JavaScript,230727,True,
+javascript,crocodilestick__Calibre-Web-Automated,JavaScript,6867,True,
+javascript,cvat-ai__cvat,Python,1224,False,below 3000 SLOC
+javascript,CyferShepard__Jellystat,JavaScript,20110,True,
+javascript,DefiLlama__chainlist,JavaScript,16751,True,
+javascript,django__djangoproject.com,Python,778,False,below 3000 SLOC
+javascript,documenso__documenso,TypeScript,490,False,below 3000 SLOC
+javascript,documize__community,JavaScript,20062,True,
+javascript,drawdb-io__drawdb,JavaScript,51496,True,
+javascript,endurain-project__endurain,Python,3,False,below 3000 SLOC
+javascript,erxes__erxes,TypeScript,4026,True,
+javascript,Expensify__App,TypeScript,4639,True,
+javascript,firefox-devtools__profiler,TypeScript,2860,False,below 3000 SLOC
+javascript,fireshare-app__fireshare,JavaScript,29945,True,
+javascript,fleetbase__fleetbase,JavaScript,15221,True,
+javascript,formbricks__formbricks,TypeScript,4784,True,
+javascript,fossasia__veditor,Python,3700,True,
+javascript,gethomepage__homepage,JavaScript,29136,True,
+javascript,GhostManager__Ghostwriter,Python,3544,True,
+javascript,hashintel__hash,TypeScript,1313,False,below 3000 SLOC
+javascript,hexclave__hexclave,TypeScript,7800,True,
+javascript,highlight__highlight,TypeScript,875,False,below 3000 SLOC
+javascript,hijohnnylin__neuronpedia,TypeScript,483,False,below 3000 SLOC
+javascript,homarr-labs__homarr,TypeScript,6333,True,
+javascript,hyperdxio__hyperdx,TypeScript,3717,True,
+javascript,jesec__flood,TypeScript,3224,True,
+javascript,joye61__pic-smaller,TypeScript,4075,True,
+javascript,jupyterhub__binderhub,Python,1370,False,below 3000 SLOC
+javascript,kentcdodds__kentcdodds.com,TypeScript,2635,False,below 3000 SLOC
+javascript,LedFx__LedFx,Python,12,False,below 3000 SLOC
+javascript,makeplane__plane,TypeScript,1571,False,below 3000 SLOC
+javascript,measure-sh__measure,TypeScript,1202,False,below 3000 SLOC
+javascript,miantiao-me__Sink,TypeScript,457,False,below 3000 SLOC
+javascript,mozilla__fx-private-relay,Python,135,False,below 3000 SLOC
+javascript,nasa-gibs__worldview,JavaScript,65833,True,
+javascript,nxzai__NextExplorer,JavaScript,48285,True,
+javascript,onyx-dot-app__onyx,Python,5383,True,
+javascript,openreplay__openreplay,TypeScript,14283,True,
+javascript,openstack__horizon,Python,26958,True,
+javascript,overleaf__overleaf,JavaScript,133529,True,
+javascript,OWASP__threat-dragon,JavaScript,10858,True,
+javascript,paperless-ngx__paperless-ngx,Python,137,False,below 3000 SLOC
+javascript,papermark__papermark,TypeScript,706,False,below 3000 SLOC
+javascript,plankanban__planka,JavaScript,96632,True,
+javascript,pritunl__pritunl,Python,14917,True,
+javascript,pschlan__cron-job.org,JavaScript,13772,True,
+javascript,pwndoc__pwndoc,JavaScript,34824,True,
+javascript,roflcoopter__viseron,Python,684,False,below 3000 SLOC
+javascript,saltcorn__saltcorn,JavaScript,45562,True,
+javascript,Shelf-nu__shelf.nu,TypeScript,3122,True,
+javascript,SplashtopInc__winstall,JavaScript,14776,True,
+javascript,standardnotes__app,TypeScript,3944,True,
+javascript,stumpapp__stump,TypeScript,470,False,below 3000 SLOC
+javascript,suitenumerique__meet,Python,1037,False,below 3000 SLOC
+javascript,TavernAI__TavernAI-v1,JavaScript,17773,True,
+javascript,tdurieux__anonymous_github,JavaScript,8274,True,
+javascript,tiny-pilot__tinypilot,Python,1890,False,below 3000 SLOC
+javascript,umami-software__umami,TypeScript,1162,False,below 3000 SLOC
+javascript,umap-project__umap,JavaScript,51445,True,
+javascript,wger-project__wger,Python,118,False,below 3000 SLOC
+javascript,wireapp__wire-webapp,TypeScript,2229,False,below 3000 SLOC
+javascript,wizarrrr__wizarr,Python,691,False,below 3000 SLOC
+javascript,xemle__home-gallery,JavaScript,11901,True,
+javascript,xorbitsai__inference,Python,537,False,below 3000 SLOC
+javascript,zasper-io__zasper,TypeScript,119,False,below 3000 SLOC
+typescript,abi__screenshot-to-code,Python,15175,True,
+typescript,actualbudget__actual,TypeScript,212932,True,
+typescript,AdguardTeam__AdGuardHome,TypeScript,54872,True,
+typescript,ALwrity__ALwrity,Python,268806,True,
+typescript,Arize-ai__phoenix,Python,259151,True,
+typescript,Arthi-chaud__Meelo,TypeScript,55424,True,
+typescript,audreyt__ethercalc,TypeScript,44260,True,
+typescript,aws-solutions__dynamic-image-transformation-for-amazon-cloudfront,TypeScript,24393,True,
+typescript,AykutSarac__jsoncrack.com,TypeScript,5728,True,
+typescript,bambanah__deemix,JavaScript,11755,True,
+typescript,BennyKok__comfyui-deploy,TypeScript,11902,True,
+typescript,benvinegar__counterscale,TypeScript,6351,True,
+typescript,brmodeloweb__brmodelo-app,JavaScript,6915,True,
+typescript,chrisvel__tududi,JavaScript,107149,True,
+typescript,cloudera__hue,JavaScript,28117,True,
+typescript,codesandbox__codesandbox-client,JavaScript,99888,True,
+typescript,cvat-ai__cvat,Python,121495,True,
+typescript,documenso__documenso,TypeScript,185227,True,
+typescript,endurain-project__endurain,Python,11942,True,
+typescript,erxes__erxes,TypeScript,1096443,True,
+typescript,Expensify__App,TypeScript,528068,True,
+typescript,firefox-devtools__profiler,TypeScript,96517,True,
+typescript,formbricks__formbricks,TypeScript,339312,True,
+typescript,GhostManager__Ghostwriter,Python,9286,True,
+typescript,hashintel__hash,TypeScript,268089,True,
+typescript,hexclave__hexclave,TypeScript,298700,True,
+typescript,highlight__highlight,TypeScript,159683,True,
+typescript,hijohnnylin__neuronpedia,TypeScript,88784,True,
+typescript,homarr-labs__homarr,TypeScript,205928,True,
+typescript,hyperdxio__hyperdx,TypeScript,188616,True,
+typescript,jesec__flood,TypeScript,26952,True,
+typescript,joye61__pic-smaller,TypeScript,4655,True,
+typescript,kentcdodds__kentcdodds.com,TypeScript,66459,True,
+typescript,makeplane__plane,TypeScript,214692,True,
+typescript,measure-sh__measure,TypeScript,83169,True,
+typescript,meeb__tubesync,Python,1159,False,below 3000 SLOC
+typescript,miantiao-me__Sink,TypeScript,10649,True,
+typescript,mozilla__fx-private-relay,Python,20529,True,
+typescript,onyx-dot-app__onyx,Python,259709,True,
+typescript,openreplay__openreplay,TypeScript,150526,True,
+typescript,overleaf__overleaf,JavaScript,133640,True,
+typescript,paperless-ngx__paperless-ngx,Python,30592,True,
+typescript,papermark__papermark,TypeScript,196305,True,
+typescript,roflcoopter__viseron,Python,41818,True,
+typescript,saltcorn__saltcorn,JavaScript,104208,True,
+typescript,Shelf-nu__shelf.nu,TypeScript,329913,True,
+typescript,SplashtopInc__winstall,JavaScript,43,False,below 3000 SLOC
+typescript,standardnotes__app,TypeScript,120095,True,
+typescript,stumpapp__stump,TypeScript,128087,True,
+typescript,suitenumerique__meet,Python,33021,True,
+typescript,tdurieux__anonymous_github,JavaScript,18803,True,
+typescript,umami-software__umami,TypeScript,70716,True,
+typescript,wireapp__wire-webapp,TypeScript,204971,True,
+typescript,xemle__home-gallery,JavaScript,11734,True,
+typescript,xorbitsai__inference,Python,41466,True,
+typescript,zasper-io__zasper,TypeScript,33925,True,
+js_ts,7Sageer__sublink-worker,JavaScript,8786,True,
+js_ts,abi__screenshot-to-code,Python,15285,True,
+js_ts,actualbudget__actual,TypeScript,219323,True,
+js_ts,AdguardTeam__AdGuardHome,TypeScript,55865,True,
+js_ts,ALwrity__ALwrity,Python,268876,True,
+js_ts,Arize-ai__phoenix,Python,259412,True,
+js_ts,Arthi-chaud__Meelo,TypeScript,55540,True,
+js_ts,audreyt__ethercalc,TypeScript,45388,True,
+js_ts,aws-solutions__dynamic-image-transformation-for-amazon-cloudfront,TypeScript,24930,True,
+js_ts,AykutSarac__jsoncrack.com,TypeScript,6290,True,
+js_ts,bambanah__deemix,JavaScript,20995,True,
+js_ts,BennyKok__comfyui-deploy,TypeScript,18855,True,
+js_ts,benvinegar__counterscale,TypeScript,6631,True,
+js_ts,Blockstream__esplora,JavaScript,8353,True,
+js_ts,brmodeloweb__brmodelo-app,JavaScript,13841,True,
+js_ts,bugsink__bugsink,Python,398,False,below 3000 SLOC
+js_ts,bugy__script-server,Python,3990,True,
+js_ts,bytedance__SandboxFusion,Python,6,False,below 3000 SLOC
+js_ts,carbon-app__carbon,JavaScript,10239,True,
+js_ts,cdhigh__KindleEar,Python,3798,True,
+js_ts,certsocietegenerale__FIR,JavaScript,3604,True,
+js_ts,cheeaun__phanpy,JavaScript,50250,True,
+js_ts,chrisvel__tududi,JavaScript,181409,True,
+js_ts,cla-assistant__cla-assistant,JavaScript,8007,True,
+js_ts,cloudera__hue,JavaScript,507903,True,
+js_ts,cms-dev__cms,Python,4731,True,
+js_ts,codesandbox__codesandbox-client,JavaScript,128934,True,
+js_ts,Countly__countly-server,JavaScript,230727,True,
+js_ts,crocodilestick__Calibre-Web-Automated,JavaScript,6867,True,
+js_ts,cvat-ai__cvat,Python,122719,True,
+js_ts,CyferShepard__Jellystat,JavaScript,20110,True,
+js_ts,DefiLlama__chainlist,JavaScript,16751,True,
+js_ts,django__djangoproject.com,Python,778,False,below 3000 SLOC
+js_ts,documenso__documenso,TypeScript,185717,True,
+js_ts,documize__community,JavaScript,20062,True,
+js_ts,drawdb-io__drawdb,JavaScript,51496,True,
+js_ts,endurain-project__endurain,Python,11945,True,
+js_ts,erxes__erxes,TypeScript,1100469,True,
+js_ts,Expensify__App,TypeScript,532707,True,
+js_ts,firefox-devtools__profiler,TypeScript,99377,True,
+js_ts,fireshare-app__fireshare,JavaScript,29945,True,
+js_ts,fleetbase__fleetbase,JavaScript,15221,True,
+js_ts,formbricks__formbricks,TypeScript,344096,True,
+js_ts,fossasia__veditor,Python,3700,True,
+js_ts,gethomepage__homepage,JavaScript,29136,True,
+js_ts,GhostManager__Ghostwriter,Python,12830,True,
+js_ts,hashintel__hash,TypeScript,269402,True,
+js_ts,hexclave__hexclave,TypeScript,306500,True,
+js_ts,highlight__highlight,TypeScript,160558,True,
+js_ts,hijohnnylin__neuronpedia,TypeScript,89267,True,
+js_ts,homarr-labs__homarr,TypeScript,212261,True,
+js_ts,hyperdxio__hyperdx,TypeScript,192333,True,
+js_ts,jesec__flood,TypeScript,30176,True,
+js_ts,joye61__pic-smaller,TypeScript,8730,True,
+js_ts,jupyterhub__binderhub,Python,1370,False,below 3000 SLOC
+js_ts,kentcdodds__kentcdodds.com,TypeScript,69094,True,
+js_ts,LedFx__LedFx,Python,12,False,below 3000 SLOC
+js_ts,makeplane__plane,TypeScript,216263,True,
+js_ts,measure-sh__measure,TypeScript,84371,True,
+js_ts,meeb__tubesync,Python,1159,False,below 3000 SLOC
+js_ts,miantiao-me__Sink,TypeScript,11106,True,
+js_ts,mozilla__fx-private-relay,Python,20664,True,
+js_ts,nasa-gibs__worldview,JavaScript,65833,True,
+js_ts,nxzai__NextExplorer,JavaScript,48285,True,
+js_ts,onyx-dot-app__onyx,Python,265092,True,
+js_ts,openreplay__openreplay,TypeScript,164809,True,
+js_ts,openstack__horizon,Python,26958,True,
+js_ts,overleaf__overleaf,JavaScript,267169,True,
+js_ts,OWASP__threat-dragon,JavaScript,10858,True,
+js_ts,paperless-ngx__paperless-ngx,Python,30729,True,
+js_ts,papermark__papermark,TypeScript,197011,True,
+js_ts,plankanban__planka,JavaScript,96632,True,
+js_ts,pritunl__pritunl,Python,14917,True,
+js_ts,pschlan__cron-job.org,JavaScript,13772,True,
+js_ts,pwndoc__pwndoc,JavaScript,34824,True,
+js_ts,roflcoopter__viseron,Python,42502,True,
+js_ts,saltcorn__saltcorn,JavaScript,149770,True,
+js_ts,Shelf-nu__shelf.nu,TypeScript,333035,True,
+js_ts,SplashtopInc__winstall,JavaScript,14819,True,
+js_ts,standardnotes__app,TypeScript,124039,True,
+js_ts,stumpapp__stump,TypeScript,128557,True,
+js_ts,suitenumerique__meet,Python,34058,True,
+js_ts,TavernAI__TavernAI-v1,JavaScript,17773,True,
+js_ts,tdurieux__anonymous_github,JavaScript,27077,True,
+js_ts,tiny-pilot__tinypilot,Python,1890,False,below 3000 SLOC
+js_ts,umami-software__umami,TypeScript,71878,True,
+js_ts,umap-project__umap,JavaScript,51445,True,
+js_ts,wger-project__wger,Python,118,False,below 3000 SLOC
+js_ts,wireapp__wire-webapp,TypeScript,207200,True,
+js_ts,wizarrrr__wizarr,Python,691,False,below 3000 SLOC
+js_ts,xemle__home-gallery,JavaScript,23635,True,
+js_ts,xorbitsai__inference,Python,42003,True,
+js_ts,zasper-io__zasper,TypeScript,34044,True,

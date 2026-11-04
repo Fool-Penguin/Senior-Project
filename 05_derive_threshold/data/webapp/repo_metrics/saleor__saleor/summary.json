@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 1486,
+    "hidden_dir": 9,
+    "test": 1746
+  },
+  "files_measured": {
+    "python": 1139
+  },
+  "functions": 7267,
+  "internal_import_edges": 9464,
+  "js_relative_imports_unresolved": 0,
+  "key": "saleor__saleor",
+  "sha": "cc4aea76e397b1dead74363c266c579ae808770f",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/saleor/saleor"
+}

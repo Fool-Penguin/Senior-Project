@@ -1,0 +1,25 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 28,
+    "generated_vendored": 1,
+    "parse_error": 1,
+    "test": 1
+  },
+  "files_measured": {
+    "javascript": 12,
+    "python": 37,
+    "typescript": 167
+  },
+  "functions": 1205,
+  "internal_import_edges": 460,
+  "js_relative_imports_unresolved": 4,
+  "key": "BennyKok__comfyui-deploy",
+  "sha": "0ad7b8eae61030cb38c3a74db73893953f28303d",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/BennyKok/comfyui-deploy"
+}

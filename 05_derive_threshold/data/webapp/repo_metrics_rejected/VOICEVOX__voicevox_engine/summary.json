@@ -1,0 +1,20 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "test": 82
+  },
+  "files_measured": {
+    "python": 67
+  },
+  "functions": 357,
+  "internal_import_edges": 177,
+  "js_relative_imports_unresolved": 0,
+  "key": "VOICEVOX__voicevox_engine",
+  "sha": "80362b4d04e315477ef02bce0f2dbc61c323f823",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/VOICEVOX/voicevox_engine"
+}

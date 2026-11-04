@@ -1,0 +1,27 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 3,
+    "example_docs": 113,
+    "generated_vendored": 153,
+    "hidden_dir": 13,
+    "parse_error": 91,
+    "test": 217,
+    "vendored_library": 89
+  },
+  "files_measured": {
+    "javascript": 289,
+    "typescript": 1115
+  },
+  "functions": 9552,
+  "internal_import_edges": 2932,
+  "js_relative_imports_unresolved": 24,
+  "key": "codesandbox__codesandbox-client",
+  "sha": "dcba8ebc49cd46838e298cfa1501811ac67fb0c9",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/codesandbox/codesandbox-client"
+}

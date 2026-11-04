@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 1,
+    "example_docs": 6,
+    "generated_vendored": 2,
+    "test": 148
+  },
+  "files_measured": {
+    "javascript": 161
+  },
+  "functions": 4273,
+  "internal_import_edges": 331,
+  "js_relative_imports_unresolved": 4,
+  "key": "pwndoc__pwndoc",
+  "sha": "844e50e012d59a180cf11b3bde08907601996f76",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/pwndoc/pwndoc"
+}

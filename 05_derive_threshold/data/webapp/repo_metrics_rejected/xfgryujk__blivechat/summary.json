@@ -1,0 +1,22 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "data_file": 2,
+    "vendored_library": 1
+  },
+  "files_measured": {
+    "javascript": 27,
+    "python": 42
+  },
+  "functions": 815,
+  "internal_import_edges": 149,
+  "js_relative_imports_unresolved": 8,
+  "key": "xfgryujk__blivechat",
+  "sha": "848409df78d2cca65d3cc8ffe938eb6b6f261b76",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/xfgryujk/blivechat"
+}

@@ -1,0 +1,21 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 1,
+    "test": 8
+  },
+  "files_measured": {
+    "javascript": 132
+  },
+  "functions": 1455,
+  "internal_import_edges": 345,
+  "js_relative_imports_unresolved": 31,
+  "key": "pschlan__cron-job.org",
+  "sha": "8fc935ad68c017ae51db7fd5ca146188ef73c343",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/pschlan/cron-job.org"
+}

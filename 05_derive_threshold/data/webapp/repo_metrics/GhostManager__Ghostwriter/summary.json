@@ -1,0 +1,25 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 2,
+    "generated_vendored": 359,
+    "test": 93,
+    "vendored_library": 4
+  },
+  "files_measured": {
+    "javascript": 16,
+    "python": 204,
+    "typescript": 77
+  },
+  "functions": 3162,
+  "internal_import_edges": 556,
+  "js_relative_imports_unresolved": 3,
+  "key": "GhostManager__Ghostwriter",
+  "sha": "0f4231b5018db0c7b281e55ddf5d06b217d9243e",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/GhostManager/Ghostwriter"
+}

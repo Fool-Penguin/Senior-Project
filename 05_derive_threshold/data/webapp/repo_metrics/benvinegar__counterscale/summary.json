@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 2,
+    "test": 53
+  },
+  "files_measured": {
+    "javascript": 9,
+    "typescript": 78
+  },
+  "functions": 367,
+  "internal_import_edges": 148,
+  "js_relative_imports_unresolved": 4,
+  "key": "benvinegar__counterscale",
+  "sha": "de70cac29ad2207c130df45ebecdabb3f65985c7",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/benvinegar/counterscale"
+}

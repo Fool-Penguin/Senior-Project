@@ -1,0 +1,25 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "example_docs": 3,
+    "generated_vendored": 1,
+    "parse_error": 1,
+    "test": 586,
+    "vendored_library": 1
+  },
+  "files_measured": {
+    "javascript": 371,
+    "python": 719
+  },
+  "functions": 6886,
+  "internal_import_edges": 1735,
+  "js_relative_imports_unresolved": 0,
+  "key": "openstack__horizon",
+  "sha": "efa10a13753620c85963fedf5bf9f9ded8c4f5d8",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/openstack/horizon"
+}

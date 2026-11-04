@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 1,
+    "hidden_dir": 1,
+    "parse_error": 1,
+    "test": 65
+  },
+  "files_measured": {
+    "javascript": 177
+  },
+  "functions": 690,
+  "internal_import_edges": 420,
+  "js_relative_imports_unresolved": 3,
+  "key": "BrasilAPI__BrasilAPI",
+  "sha": "0c229b4e56d0c8f789e1162b6a71d6ea1d54fc8b",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/BrasilAPI/BrasilAPI"
+}

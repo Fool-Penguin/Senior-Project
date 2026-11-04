@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "data_file": 1,
+    "generated_vendored": 2,
+    "hidden_dir": 1,
+    "test": 1
+  },
+  "files_measured": {
+    "javascript": 569
+  },
+  "functions": 256,
+  "internal_import_edges": 60,
+  "js_relative_imports_unresolved": 6,
+  "key": "DefiLlama__chainlist",
+  "sha": "dd516acc1089822779969784f16bc9ec76c4eac5",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/DefiLlama/chainlist"
+}

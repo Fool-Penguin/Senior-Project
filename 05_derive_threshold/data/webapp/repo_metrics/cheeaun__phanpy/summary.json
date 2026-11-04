@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 1,
+    "parse_error": 2,
+    "test": 6
+  },
+  "files_measured": {
+    "javascript": 247
+  },
+  "functions": 3295,
+  "internal_import_edges": 1127,
+  "js_relative_imports_unresolved": 96,
+  "key": "cheeaun__phanpy",
+  "sha": "a03425ea314c5be26d79e572a68a6d8f4b88e5de",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/cheeaun/phanpy"
+}

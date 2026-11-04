@@ -1,0 +1,25 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 8,
+    "generated_vendored": 37,
+    "hidden_dir": 4,
+    "test": 127
+  },
+  "files_measured": {
+    "javascript": 20,
+    "python": 142,
+    "typescript": 522
+  },
+  "functions": 2763,
+  "internal_import_edges": 870,
+  "js_relative_imports_unresolved": 2,
+  "key": "suitenumerique__meet",
+  "sha": "455daf1e8f36b1c5e43bb2b5dc212e47430162ee",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/suitenumerique/meet"
+}

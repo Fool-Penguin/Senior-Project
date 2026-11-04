@@ -1,0 +1,22 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "generated_vendored": 23,
+    "test": 17
+  },
+  "files_measured": {
+    "javascript": 1188,
+    "python": 1
+  },
+  "functions": 5607,
+  "internal_import_edges": 2270,
+  "js_relative_imports_unresolved": 230,
+  "key": "plankanban__planka",
+  "sha": "b128869c6231c32df9548acf0a0d810693f045d9",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/plankanban/planka"
+}

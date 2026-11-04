@@ -1,0 +1,22 @@
+{
+  "branch": "master",
+  "files_excluded": {
+    "parse_error": 3,
+    "test": 24
+  },
+  "files_measured": {
+    "javascript": 156,
+    "typescript": 1
+  },
+  "functions": 1170,
+  "internal_import_edges": 355,
+  "js_relative_imports_unresolved": 84,
+  "key": "SplashtopInc__winstall",
+  "sha": "ec1b587bd423e0356c3f3eddc56e1cf8211c4e38",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/SplashtopInc/winstall"
+}

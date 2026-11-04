@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 5,
+    "generated_vendored": 2,
+    "test": 136
+  },
+  "files_measured": {
+    "python": 271
+  },
+  "functions": 1419,
+  "internal_import_edges": 66,
+  "js_relative_imports_unresolved": 0,
+  "key": "triton-inference-server__server",
+  "sha": "44b22e89d167bb25d016e59fda7d42da9bb36a3f",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/triton-inference-server/server"
+}

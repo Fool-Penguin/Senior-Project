@@ -1,0 +1,23 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 175,
+    "hidden_dir": 1,
+    "test": 52
+  },
+  "files_measured": {
+    "javascript": 25,
+    "python": 146
+  },
+  "functions": 2656,
+  "internal_import_edges": 620,
+  "js_relative_imports_unresolved": 0,
+  "key": "crocodilestick__Calibre-Web-Automated",
+  "sha": "4fc2c4459965efb1b8ff43ea7849c2f47a755d9c",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/crocodilestick/Calibre-Web-Automated"
+}

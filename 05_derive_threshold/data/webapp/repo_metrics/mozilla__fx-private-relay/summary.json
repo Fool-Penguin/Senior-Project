@@ -1,0 +1,24 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 112,
+    "parse_error": 1,
+    "test": 185
+  },
+  "files_measured": {
+    "javascript": 4,
+    "python": 87,
+    "typescript": 143
+  },
+  "functions": 1462,
+  "internal_import_edges": 762,
+  "js_relative_imports_unresolved": 198,
+  "key": "mozilla__fx-private-relay",
+  "sha": "75b65462bca35a0363cec7695e809f7a0228f450",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/mozilla/fx-private-relay"
+}

@@ -1,0 +1,21 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "example_docs": 3,
+    "test": 62
+  },
+  "files_measured": {
+    "python": 128
+  },
+  "functions": 1231,
+  "internal_import_edges": 326,
+  "js_relative_imports_unresolved": 0,
+  "key": "run-house__kubetorch",
+  "sha": "a40e2b54f830e18e73ff38cd1368638c7c5d0cce",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/run-house/kubetorch"
+}

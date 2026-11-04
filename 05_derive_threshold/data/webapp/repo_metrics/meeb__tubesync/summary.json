@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 49,
+    "test": 13
+  },
+  "files_measured": {
+    "python": 102,
+    "typescript": 1
+  },
+  "functions": 796,
+  "internal_import_edges": 106,
+  "js_relative_imports_unresolved": 0,
+  "key": "meeb__tubesync",
+  "sha": "bdb59f4650cf6d9e0a3e178b00b2a053378d6d98",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/meeb/tubesync"
+}

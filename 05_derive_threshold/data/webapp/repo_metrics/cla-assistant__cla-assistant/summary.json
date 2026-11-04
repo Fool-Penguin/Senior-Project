@@ -1,0 +1,21 @@
+{
+  "branch": "main",
+  "files_excluded": {
+    "generated_vendored": 1,
+    "test": 31
+  },
+  "files_measured": {
+    "javascript": 64
+  },
+  "functions": 683,
+  "internal_import_edges": 94,
+  "js_relative_imports_unresolved": 0,
+  "key": "cla-assistant__cla-assistant",
+  "sha": "43e06e95f13f2d23542eb12cb93e04e30597dee7",
+  "tools": {
+    "tree-sitter": "0.26.0",
+    "tree-sitter-language-pack": "1.12.5",
+    "typescript": "6.0.3"
+  },
+  "url": "https://github.com/cla-assistant/cla-assistant"
+}
