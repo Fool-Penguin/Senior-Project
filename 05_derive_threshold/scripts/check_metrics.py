@@ -343,5 +343,25 @@ expect("js stats (type-only edges, alias unresolved)",
        {k: v for k, v in js_stats.items() if k.startswith("js_")},
        {"js_alias_imports_unresolved": 1, "js_relative_imports_unresolved": 0, "js_type_only_import_edges": 2})
 
+print("8) Duplicated blocks (metrics.duplicated_blocks): 100 tokens over 10 lines")
+from metrics import duplicated_blocks  # noqa: E402
+
+
+def dup_body(lines, tag, indent="    "):  # 12 tokens per line, the string literal counts as one
+    return "".join(f"{indent}x{i} = foo(a{i}, b{i}, c{i}, '{tag}{i}')\n" for i in range(lines))
+
+
+expect("two 10-line copies, other string values and indentation -> 2 blocks", duplicated_blocks(
+    "d.py", f"def f():\n{dup_body(10, 'p')}\ndef g():\n    if 1:\n{dup_body(10, 'q', ' ' * 8)}".encode()), 2)
+expect("two 8-line copies (96 tokens, too few) -> 0", duplicated_blocks(
+    "d.py", f"def f():\n{dup_body(8, 'p')}\ndef g():\n{dup_body(8, 'q')}".encode()), 0)
+CALL = "x(a,b,c,d,e,f,g,h,i,j,k,l);"  # 27 tokens
+expect("243 duplicated tokens on 9 lines -> 0", duplicated_blocks("d.js", "".join(
+    f"function {n}({p}) {{ {CALL}\n" + f"{CALL}\n" * 7 + f"{CALL} }}\n" for n, p in (("f", "p"), ("g", "q"))).encode()), 0)
+expect("comments are not tokens: copies differing only in comments -> 2", duplicated_blocks(
+    "d.js", ("function f() {\n// one\n" + "".join(f"  y{i} = z(a, b, '{i}');\n" for i in range(12)) + "}\n"
+             "function g() {\n/* two */\n" + "".join(f"  y{i} = z(a, b, 'x');\n" for i in range(12)) + "}\n").encode()), 2)
+expect("parse error -> None", duplicated_blocks("d.js", b"f(a) { if ( }"), None)
+
 print(f"\n{'ALL CHECKS PASSED' if not failures else f'{len(failures)} FAILED'}")
 sys.exit(1 if failures else 0)

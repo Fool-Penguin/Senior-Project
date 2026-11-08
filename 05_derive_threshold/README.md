@@ -25,6 +25,19 @@ python -I scripts/derive.py              # step 3: thresholds -> results/webapp/
 `sample_webapps.py` calls `measure.py` for every candidate that reaches the size rule, so step 2 is needed only
 after deleting measurements. Both `measure.py` and `derive.py` take `--dataset=NAME` (default `webapp`).
 
+### Security snippets (`security/`)
+
+The input `codedee_combined_pairs.jsonl` lives on the `security_analysis` branch (Git LFS). Check that branch out
+as a worktree next to this repo first, then measure:
+
+```bash
+git worktree add ../../Senior-security security_analysis
+git -C ../../Senior-security lfs pull --include "datasets/combined/codedee_combined_pairs.jsonl"
+python -I security/measure_snippets.py   # -> security/results/snippets.csv, functions.csv
+```
+
+Another copy of the file can be passed as the first argument instead.
+
 ## Files
 
 | Path | Content |

@@ -416,6 +416,51 @@ def measure_snippet(path, source):
     return result
 
 
+DUP_MIN_TOKENS, DUP_MIN_LINES = 100, 10  # SonarQube duplicated_blocks, non-Java languages
+STRING_TYPES = {"string", "template_string"}
+
+
+def duplicated_blocks(path, source):
+    """SonarQube duplicated_blocks within one file: >= 100 successive duplicated tokens spread over >= 10 lines.
+    Comments and Python docstrings are not tokens; every string literal is one placeholder token, so differences
+    in string literals and indentation are ignored. Each copy is a block (a block and its copy = 2).
+    Copies may not overlap. Rule from the SonarQube metric definition, not checked against a SonarQube run.
+    Known gap: one run of many identical short lines (period < 100 tokens) counts as 1 block.
+    Returns None on parse error."""
+    ext = path[path.rfind("."):].lower()
+    root = get_parser(GRAMMAR.get(ext, "javascript")).parse(source.removeprefix(b"\xef\xbb\xbf")).root_node
+    if root.has_error:
+        return None
+    skip = _docstrings(root) if ext == ".py" else set()
+    texts, rows, stack = [], [], [root]
+    while stack:
+        node = stack.pop()
+        if node.type in ("comment", "hash_bang_line") or node.id in skip:
+            continue
+        if node.type in STRING_TYPES or (node.child_count == 0 and node.start_byte != node.end_byte):
+            texts.append(b"\0str" if node.type in STRING_TYPES else node.text)
+            rows.append(node.start_point[0])
+            continue
+        stack.extend(reversed(node.children))
+    # ponytail: every 100-token window is a dict key, O(tokens * 100) memory; rolling hash if whole repos need it
+    starts = {}
+    for i in range(len(texts) - DUP_MIN_TOKENS + 1):
+        starts.setdefault(tuple(texts[i:i + DUP_MIN_TOKENS]), []).append(i)
+    marked = set()  # window starts that have a non-overlapping copy
+    for group in starts.values():
+        if group[-1] - group[0] >= DUP_MIN_TOKENS:
+            marked.update(s for s in group if s - group[0] >= DUP_MIN_TOKENS or group[-1] - s >= DUP_MIN_TOKENS)
+    # a run of consecutive marked window starts = one block (two adjacent copies leave a gap between their runs)
+    blocks, run = 0, []
+    for s in sorted(marked) + [None]:
+        if run and (s is None or s != run[-1] + 1):
+            blocks += len(set(rows[run[0]:run[-1] + DUP_MIN_TOKENS])) >= DUP_MIN_LINES
+            run = []
+        if s is not None:
+            run.append(s)
+    return blocks
+
+
 def _string_value(node):
     """Value of a plain string literal (no interpolation), else None."""
     if node is None or node.type != "string":
