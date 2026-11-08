@@ -24,4 +24,6 @@ Thumbs.db
 # Local work
 05_metric_comparison/
 
-# 
+# Local eval artifacts
+code_dee_eval/node_modules/
+code_dee_eval/.codeql-db-*/

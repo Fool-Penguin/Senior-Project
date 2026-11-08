@@ -1,0 +1,40 @@
+{
+  "n_rows": 1384,
+  "by_source": {
+    "gift_879": 879,
+    "appsecbench_pyjsts": 324,
+    "securecodepairs_pyjsts": 107,
+    "ghsa_74": 74
+  },
+  "by_language": {
+    "javascript": 596,
+    "python": 485,
+    "typescript": 303
+  },
+  "cwe_200": {
+    "total": 61,
+    "LLM02": 11,
+    "LLM07": 11,
+    "generic_web": 39
+  },
+  "in_catalogue": 1147,
+  "out_of_catalogue": 237,
+  "columns": [
+    "sample_id",
+    "language",
+    "is_vulnerable",
+    "cwe_id",
+    "cwe_name",
+    "cwe_description",
+    "owasp_category",
+    "cvss_v31_vector",
+    "original_sources",
+    "source_pattern",
+    "sink_pattern",
+    "sanitizer_pattern",
+    "original_code",
+    "fixed_code",
+    "catalogue_id",
+    "owasp_llm"
+  ]
+}

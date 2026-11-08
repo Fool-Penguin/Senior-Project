@@ -1,0 +1,2361 @@
+case_id,source,language,label,gold_cwe,pred_cwe,gold_vuln,pred_vuln,cwe_correct,latency_s,prompt_tps,gen_tps,ram_rss_mb,raw_output
+HW-CWE-1321-typescript-proto-assign__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.798,409.74,50.86,4952.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1321-typescript-proto-assign__vuln,handwritten,typescript,vulnerable,CWE-1321,CWE-78,True,True,False,0.606,1079.74,49.85,4954.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-1321-typescript-proto-lodash__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.55,724.26,50.67,4956.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1321-typescript-proto-lodash__vuln,handwritten,typescript,vulnerable,CWE-1321,CWE-94,True,True,False,0.605,1170.16,49.84,4961.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94""
+}"
+HW-CWE-1321-typescript-proto-merge__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.634,659.23,50.78,4963.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1321-typescript-proto-merge__vuln,handwritten,typescript,vulnerable,CWE-1321,,True,False,False,0.479,1277.36,50.85,4965.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1321-typescript-proto-query__safe,handwritten,typescript,safe,SAFE,CWE-89,False,True,False,0.763,636.61,49.75,4966.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1321-typescript-proto-query__vuln,handwritten,typescript,vulnerable,CWE-1321,CWE-89,True,True,False,0.676,753.17,49.89,4968.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1321-typescript-proto-recursive__safe,handwritten,typescript,safe,SAFE,CWE-502,False,True,False,0.86,615.64,49.7,4970.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-502""
+}"
+HW-CWE-1321-typescript-proto-recursive__vuln,handwritten,typescript,vulnerable,CWE-1321,CWE-602,True,True,False,0.781,615.16,49.72,4972.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-602""
+}"
+HW-CWE-1333-javascript-redos-csv-js__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.634,612.19,50.76,4974.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-javascript-redos-csv-js__vuln,handwritten,javascript,vulnerable,CWE-1333,CWE-89,True,True,False,0.675,670.14,49.92,4975.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1333-javascript-redos-email-js__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.632,575.84,50.82,4977.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-javascript-redos-email-js__vuln,handwritten,javascript,vulnerable,CWE-1333,,True,False,False,0.549,718.11,50.82,4979.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-javascript-redos-nested-js__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.549,712.45,50.82,4981.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-javascript-redos-nested-js__vuln,handwritten,javascript,vulnerable,CWE-1333,CWE-78,True,True,False,0.603,1099.46,49.93,4983.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-1333-javascript-redos-path-js__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.552,816.54,50.85,4984.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-javascript-redos-path-js__vuln,handwritten,javascript,vulnerable,CWE-1333,,True,False,False,0.548,699.29,50.85,4987.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-javascript-redos-ua-js__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.55,770.98,50.83,4987.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-javascript-redos-ua-js__vuln,handwritten,javascript,vulnerable,CWE-1333,,True,False,False,0.548,698.04,50.81,4987.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-python-redos-csv-field__safe,handwritten,python,safe,SAFE,,False,False,False,0.551,769.37,50.86,4987.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-python-redos-csv-field__vuln,handwritten,python,vulnerable,CWE-1333,CWE-89,True,True,False,0.676,692.25,49.96,4987.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1333-python-redos-email__safe,handwritten,python,safe,SAFE,,False,False,False,0.631,606.73,50.9,4988.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-python-redos-email__vuln,handwritten,python,vulnerable,CWE-1333,CWE-312,True,True,False,0.888,745.43,49.23,4988.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+HW-CWE-1333-python-redos-header__safe,handwritten,python,safe,SAFE,,False,False,False,0.55,763.17,50.79,4988.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-python-redos-header__vuln,handwritten,python,vulnerable,CWE-1333,,True,False,False,0.548,718.82,50.9,4988.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-python-redos-nested-quant__safe,handwritten,python,safe,SAFE,,False,False,False,0.549,753.55,50.81,4988.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-python-redos-nested-quant__vuln,handwritten,python,vulnerable,CWE-1333,CWE-78,True,True,False,0.603,1183.96,50.02,4988.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-1333-python-redos-url-path__safe,handwritten,python,safe,SAFE,,False,False,False,0.55,762.35,50.87,4988.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-python-redos-url-path__vuln,handwritten,python,vulnerable,CWE-1333,,True,False,False,0.548,716.61,50.89,4988.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-typescript-redos-csv-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.634,650.79,50.8,4988.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-typescript-redos-csv-ts__vuln,handwritten,typescript,vulnerable,CWE-1333,CWE-89,True,True,False,0.675,692.65,50.02,4988.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1333-typescript-redos-email-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.632,594.18,50.87,4988.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-typescript-redos-email-ts__vuln,handwritten,typescript,vulnerable,CWE-1333,,True,False,False,0.549,743.54,50.91,4988.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-typescript-redos-nested-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.548,738.45,50.89,4988.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-typescript-redos-nested-ts__vuln,handwritten,typescript,vulnerable,CWE-1333,,True,False,False,0.477,1145.19,50.89,4988.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-typescript-redos-path-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.552,836.38,50.92,4989.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-typescript-redos-path-ts__vuln,handwritten,typescript,vulnerable,CWE-1333,,True,False,False,0.549,724.4,50.88,4990.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-typescript-redos-ua-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.548,798.63,50.85,4992.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1333-typescript-redos-ua-ts__vuln,handwritten,typescript,vulnerable,CWE-1333,,True,False,False,0.549,725.58,50.86,4994.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1336-javascript-ssti-ejs__safe,handwritten,javascript,safe,SAFE,CWE-79,False,True,False,0.678,793.92,50.0,4996.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+HW-CWE-1336-javascript-ssti-ejs__vuln,handwritten,javascript,vulnerable,CWE-1336,CWE-80,True,True,False,0.603,1391.4,49.98,4997.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-80""
+}"
+HW-CWE-1336-javascript-ssti-eval-template__safe,handwritten,javascript,safe,SAFE,CWE-78,False,True,False,0.761,638.01,49.97,4999.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-1336-javascript-ssti-eval-template__vuln,handwritten,javascript,vulnerable,CWE-1336,CWE-89,True,True,False,0.676,741.9,49.98,5001.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-javascript-ssti-handlebars__safe,handwritten,javascript,safe,SAFE,CWE-79,False,True,False,0.759,582.83,49.95,5003.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+HW-CWE-1336-javascript-ssti-handlebars__vuln,handwritten,javascript,vulnerable,CWE-1336,CWE-89,True,True,False,0.676,773.14,49.95,5005.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-javascript-ssti-nunjucks__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.631,580.02,50.87,5006.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1336-javascript-ssti-nunjucks__vuln,handwritten,javascript,vulnerable,CWE-1336,CWE-89,True,True,False,0.742,790.31,43.53,5008.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-javascript-ssti-pug-compile__safe,handwritten,javascript,safe,SAFE,CWE-89,False,True,False,0.791,587.47,48.23,5010.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-javascript-ssti-pug-compile__vuln,handwritten,javascript,vulnerable,CWE-1336,CWE-89,True,True,False,0.67,754.37,50.39,5012.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-python-ssti-django-template__safe,handwritten,python,safe,SAFE,,False,False,False,0.63,590.6,51.11,5012.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1336-python-ssti-django-template__vuln,handwritten,python,vulnerable,CWE-1336,CWE-80,True,True,False,0.675,783.6,50.28,5014.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-80""
+}"
+HW-CWE-1336-python-ssti-flask-string__safe,handwritten,python,safe,SAFE,CWE-79,False,True,False,0.674,780.69,50.18,5014.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+HW-CWE-1336-python-ssti-flask-string__vuln,handwritten,python,vulnerable,CWE-1336,CWE-79,True,True,False,0.759,754.2,43.43,5014.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+HW-CWE-1336-python-ssti-jinja-from-string__safe,handwritten,python,safe,SAFE,,False,False,False,0.662,590.08,50.28,5014.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1336-python-ssti-jinja-from-string__vuln,handwritten,python,vulnerable,CWE-1336,CWE-89,True,True,False,0.669,810.89,49.72,5014.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-python-ssti-mako__safe,handwritten,python,safe,SAFE,,False,False,False,0.546,741.19,50.91,5014.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1336-python-ssti-mako__vuln,handwritten,python,vulnerable,CWE-1336,CWE-89,True,True,False,0.679,770.36,49.76,5014.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-python-ssti-tornado__safe,handwritten,python,safe,SAFE,,False,False,False,0.552,734.12,50.39,5014.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1336-python-ssti-tornado__vuln,handwritten,python,vulnerable,CWE-1336,CWE-89,True,True,False,0.675,791.88,49.91,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-typescript-ssti-ejs-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.629,545.1,50.83,5014.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1336-typescript-ssti-ejs-ts__vuln,handwritten,typescript,vulnerable,CWE-1336,CWE-80,True,True,False,0.677,847.42,49.96,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-80""
+}"
+HW-CWE-1336-typescript-ssti-function-ts__safe,handwritten,typescript,safe,SAFE,CWE-78,False,True,False,0.774,634.45,48.82,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-1336-typescript-ssti-function-ts__vuln,handwritten,typescript,vulnerable,CWE-1336,CWE-89,True,True,False,0.68,755.15,49.27,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-typescript-ssti-handlebars-ts__safe,handwritten,typescript,safe,SAFE,CWE-89,False,True,False,0.703,692.69,49.37,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-typescript-ssti-handlebars-ts__vuln,handwritten,typescript,vulnerable,CWE-1336,CWE-89,True,True,False,0.605,1206.88,49.79,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-typescript-ssti-nunjucks-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.549,799.96,50.97,5014.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-1336-typescript-ssti-nunjucks-ts__vuln,handwritten,typescript,vulnerable,CWE-1336,CWE-89,True,True,False,0.676,751.5,49.96,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-1336-typescript-ssti-pug-ts__safe,handwritten,typescript,safe,SAFE,CWE-78,False,True,False,0.761,635.51,49.93,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-1336-typescript-ssti-pug-ts__vuln,handwritten,typescript,vulnerable,CWE-1336,CWE-89,True,True,False,0.676,818.17,49.97,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-200-javascript-info-debug-route__safe,handwritten,javascript,safe,SAFE,CWE-862,False,True,False,0.779,582.71,49.85,5014.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-862""
+}"
+HW-CWE-200-javascript-info-debug-route__vuln,handwritten,javascript,vulnerable,CWE-200,CWE-862,True,True,False,0.623,1179.2,49.93,5014.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-862""
+}"
+HW-CWE-200-javascript-info-dir-listing__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.549,754.55,50.92,5014.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-200-javascript-info-dir-listing__vuln,handwritten,javascript,vulnerable,CWE-200,CWE-275,True,True,False,0.697,684.37,49.91,5014.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-275""
+}"
+HW-CWE-200-javascript-info-exists-oracle__safe,handwritten,javascript,safe,SAFE,CWE-200,False,True,False,0.699,808.25,49.88,5014.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+HW-CWE-200-javascript-info-exists-oracle__vuln,handwritten,javascript,vulnerable,CWE-200,CWE-358,True,True,False,0.622,1436.92,49.9,5014.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-358""
+}"
+HW-CWE-200-javascript-info-server-header__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.477,1148.94,50.94,5014.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-200-javascript-info-server-header__vuln,handwritten,javascript,vulnerable,CWE-200,CWE-477,True,True,False,0.695,824.52,49.88,5014.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-477""
+}"
+HW-CWE-200-javascript-info-user-dump__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.551,840.1,50.87,5014.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-200-javascript-info-user-dump__vuln,handwritten,javascript,vulnerable,CWE-200,CWE-89,True,True,False,0.603,1252.51,50.02,5014.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-209-typescript-err-debug-handler__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.633,597.99,50.88,5014.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-209-typescript-err-debug-handler__vuln,handwritten,typescript,vulnerable,CWE-209,CWE-200,True,True,False,0.624,1516.24,49.91,5014.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+HW-CWE-209-typescript-err-dump-env__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.474,1041.03,50.93,5014.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-209-typescript-err-dump-env__vuln,handwritten,typescript,vulnerable,CWE-209,,True,False,False,0.547,757.76,51.05,5014.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-209-typescript-err-path-reveal__safe,handwritten,typescript,safe,SAFE,CWE-270,False,True,False,0.697,775.47,49.95,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-270""
+}"
+HW-CWE-209-typescript-err-path-reveal__vuln,handwritten,typescript,vulnerable,CWE-209,CWE-270,True,True,False,0.627,1317.91,49.9,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-270""
+}"
+HW-CWE-209-typescript-err-sql-detail__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.548,683.63,50.85,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-209-typescript-err-sql-detail__vuln,handwritten,typescript,vulnerable,CWE-209,,True,False,False,0.476,1146.98,50.92,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-209-typescript-err-stack-send__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.549,798.21,50.93,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-209-typescript-err-stack-send__vuln,handwritten,typescript,vulnerable,CWE-209,CWE-200,True,True,False,0.624,1269.58,49.92,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+HW-CWE-22-typescript-path-concat__safe,handwritten,typescript,safe,SAFE,CWE-23,False,True,False,0.758,588.49,49.95,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-23""
+}"
+HW-CWE-22-typescript-path-concat__vuln,handwritten,typescript,vulnerable,CWE-22,CWE-22,True,True,True,0.604,1150.99,50.01,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-22""
+}"
+HW-CWE-22-typescript-path-join__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.633,621.18,50.84,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-22-typescript-path-join__vuln,handwritten,typescript,vulnerable,CWE-22,CWE-22,True,True,True,0.601,1309.57,50.03,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-22""
+}"
+HW-CWE-22-typescript-path-sendfile__safe,handwritten,typescript,safe,SAFE,CWE-22,False,True,False,0.677,828.23,50.03,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-22""
+}"
+HW-CWE-22-typescript-path-sendfile__vuln,handwritten,typescript,vulnerable,CWE-22,CWE-22,True,True,True,0.602,1214.14,49.97,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-22""
+}"
+HW-CWE-22-typescript-path-static__safe,handwritten,typescript,safe,SAFE,CWE-22,False,True,False,0.759,664.81,49.94,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-22""
+}"
+HW-CWE-22-typescript-path-static__vuln,handwritten,typescript,vulnerable,CWE-22,CWE-22,True,True,True,0.675,792.93,49.98,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-22""
+}"
+HW-CWE-22-typescript-path-unzip__safe,handwritten,typescript,safe,SAFE,CWE-78,False,True,False,0.759,621.1,49.96,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-22-typescript-path-unzip__vuln,handwritten,typescript,vulnerable,CWE-22,CWE-78,True,True,False,0.601,1314.79,50.01,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-338-javascript-prng-api-key-js__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.549,657.21,50.79,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-javascript-prng-api-key-js__vuln,handwritten,javascript,vulnerable,CWE-338,,True,False,False,0.632,578.0,50.81,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-javascript-prng-math-random-session__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.547,800.74,50.89,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-javascript-prng-math-random-session__vuln,handwritten,javascript,vulnerable,CWE-338,CWE-401,True,True,False,0.697,752.54,49.88,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-401""
+}"
+HW-CWE-338-javascript-prng-otp__safe,handwritten,javascript,safe,SAFE,CWE-327,False,True,False,0.696,737.89,49.87,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-javascript-prng-otp__vuln,handwritten,javascript,vulnerable,CWE-338,CWE-327,True,True,False,0.694,692.64,49.87,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-javascript-prng-reset-date__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.549,806.59,50.89,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-javascript-prng-reset-date__vuln,handwritten,javascript,vulnerable,CWE-338,CWE-327,True,True,False,0.624,1216.88,49.88,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-javascript-prng-uuid-math__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.476,1047.25,50.89,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-javascript-prng-uuid-math__vuln,handwritten,javascript,vulnerable,CWE-338,CWE-338,True,True,True,0.695,671.37,49.89,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-338""
+}"
+HW-CWE-338-python-prng-api-key__safe,handwritten,python,safe,SAFE,,False,False,False,0.476,1045.24,50.91,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-python-prng-api-key__vuln,handwritten,python,vulnerable,CWE-338,,True,False,False,0.548,727.29,50.85,5014.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-python-prng-filename__safe,handwritten,python,safe,SAFE,CWE-78,False,True,False,1.038,802.67,48.95,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+HW-CWE-338-python-prng-filename__vuln,handwritten,python,vulnerable,CWE-338,CWE-78,True,True,False,1.037,796.71,48.91,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+HW-CWE-338-python-prng-otp-randint__safe,handwritten,python,safe,SAFE,CWE-327,False,True,False,0.697,749.01,49.85,5014.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-python-prng-otp-randint__vuln,handwritten,python,vulnerable,CWE-338,CWE-327,True,True,False,0.697,742.07,49.83,5014.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-python-prng-reset-md5-time__safe,handwritten,python,safe,SAFE,,False,False,False,0.55,774.09,50.86,5014.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-python-prng-reset-md5-time__vuln,handwritten,python,vulnerable,CWE-338,CWE-327,True,True,False,0.697,692.38,49.88,5014.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-python-prng-token-random__safe,handwritten,python,safe,SAFE,,False,False,False,0.548,699.07,50.97,5014.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-python-prng-token-random__vuln,handwritten,python,vulnerable,CWE-338,CWE-327,True,True,False,0.694,674.64,49.86,5014.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-typescript-prng-key-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.547,680.28,50.87,5014.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-typescript-prng-key-ts__vuln,handwritten,typescript,vulnerable,CWE-338,CWE-327,True,True,False,0.778,590.88,49.86,5014.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-typescript-prng-math-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.548,703.59,50.92,5014.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-typescript-prng-math-ts__vuln,handwritten,typescript,vulnerable,CWE-338,CWE-327,True,True,False,0.624,1114.96,49.86,5014.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-typescript-prng-otp-ts__safe,handwritten,typescript,safe,SAFE,CWE-327,False,True,False,0.696,764.94,49.88,5014.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-typescript-prng-otp-ts__vuln,handwritten,typescript,vulnerable,CWE-338,CWE-327,True,True,False,0.696,721.33,49.88,5014.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-typescript-prng-reset-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.631,591.9,50.82,5015.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-typescript-prng-reset-ts__vuln,handwritten,typescript,vulnerable,CWE-338,CWE-327,True,True,False,0.697,738.94,49.86,5015.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-338-typescript-prng-uuid-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.475,1107.16,50.9,5015.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-338-typescript-prng-uuid-ts__vuln,handwritten,typescript,vulnerable,CWE-338,CWE-338,True,True,True,0.626,1150.31,49.82,5015.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-338""
+}"
+HW-CWE-347-javascript-jwt-alg-from-header__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.547,701.53,50.88,5015.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-javascript-jwt-alg-from-header__vuln,handwritten,javascript,vulnerable,CWE-347,,True,False,False,0.55,785.33,50.85,5015.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-javascript-jwt-decode-no-verify__safe,handwritten,javascript,safe,SAFE,CWE-319,False,True,False,0.699,827.57,49.79,5015.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+HW-CWE-347-javascript-jwt-decode-no-verify__vuln,handwritten,javascript,vulnerable,CWE-347,CWE-327,True,True,False,0.626,1299.75,49.81,5015.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-347-javascript-jwt-empty-secret-js__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.548,757.12,50.84,5015.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-javascript-jwt-empty-secret-js__vuln,handwritten,javascript,vulnerable,CWE-347,CWE-312,True,True,False,0.626,1178.0,49.75,5015.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+HW-CWE-347-javascript-jwt-hs-pubkey-js__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.546,736.14,50.83,5015.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-javascript-jwt-hs-pubkey-js__vuln,handwritten,javascript,vulnerable,CWE-347,CWE-319,True,True,False,0.624,1343.11,49.75,5015.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+HW-CWE-347-javascript-jwt-none-js__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.477,1226.98,50.73,5015.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-javascript-jwt-none-js__vuln,handwritten,javascript,vulnerable,CWE-347,CWE-319,True,True,False,0.625,1264.5,49.76,5015.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+HW-CWE-347-python-jwt-accept-none__safe,handwritten,python,safe,SAFE,,False,False,False,0.558,711.32,50.79,5015.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-python-jwt-accept-none__vuln,handwritten,python,vulnerable,CWE-347,CWE-319,True,True,False,0.696,773.17,49.73,5016.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+HW-CWE-347-python-jwt-alg-none__safe,handwritten,python,safe,SAFE,CWE-319,False,True,False,0.875,769.36,48.72,5018.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319: Use of Insufficiently Random Values""
+}"
+HW-CWE-347-python-jwt-alg-none__vuln,handwritten,python,vulnerable,CWE-347,CWE-327,True,True,False,0.698,726.54,49.76,5020.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-347-python-jwt-empty-secret__safe,handwritten,python,safe,SAFE,CWE-312,False,True,False,0.696,707.26,49.76,5022.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+HW-CWE-347-python-jwt-empty-secret__vuln,handwritten,python,vulnerable,CWE-347,CWE-327,True,True,False,0.626,1144.33,49.72,5024.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-347-python-jwt-hs-with-public__safe,handwritten,python,safe,SAFE,,False,False,False,0.476,1182.14,50.77,5025.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-python-jwt-hs-with-public__vuln,handwritten,python,vulnerable,CWE-347,CWE-319,True,True,False,0.626,1221.43,49.7,5027.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+HW-CWE-347-python-jwt-no-exp__safe,handwritten,python,safe,SAFE,CWE-327,False,True,False,0.783,635.66,49.7,5029.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-347-python-jwt-no-exp__vuln,handwritten,python,vulnerable,CWE-347,CWE-312,True,True,False,0.698,737.57,49.74,5031.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+HW-CWE-347-typescript-jwt-decode-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.55,735.0,50.73,5032.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-typescript-jwt-decode-ts__vuln,handwritten,typescript,vulnerable,CWE-347,CWE-327,True,True,False,0.624,1115.15,49.79,5034.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-347-typescript-jwt-empty-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.55,784.13,50.75,5036.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-typescript-jwt-empty-ts__vuln,handwritten,typescript,vulnerable,CWE-347,CWE-312,True,True,False,0.628,1212.28,49.68,5038.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+HW-CWE-347-typescript-jwt-header-alg-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.548,736.56,50.81,5039.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-typescript-jwt-header-alg-ts__vuln,handwritten,typescript,vulnerable,CWE-347,,True,False,False,0.549,870.84,50.71,5041.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-typescript-jwt-hs-pubkey-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.55,762.85,50.69,5043.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-347-typescript-jwt-hs-pubkey-ts__vuln,handwritten,typescript,vulnerable,CWE-347,CWE-319,True,True,False,0.625,1401.05,49.68,5043.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+HW-CWE-347-typescript-jwt-none-ts__vuln,handwritten,typescript,vulnerable,CWE-347,CWE-319,True,True,False,0.699,751.24,49.56,5043.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+HW-CWE-611-javascript-xxe-libxml-parsehtml__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.55,770.25,50.71,5043.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-611-javascript-xxe-libxml-parsehtml__vuln,handwritten,javascript,vulnerable,CWE-611,,True,False,False,0.477,1232.38,50.68,5043.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-611-javascript-xxe-libxmljs__safe,handwritten,javascript,safe,SAFE,CWE-89,False,True,False,0.679,881.09,49.82,5043.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-611-javascript-xxe-libxmljs__vuln,handwritten,javascript,vulnerable,CWE-611,CWE-89,True,True,False,0.607,1494.08,49.78,5043.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-611-javascript-xxe-node-expat__safe,handwritten,javascript,safe,SAFE,CWE-829,False,True,False,0.698,731.78,49.73,5043.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-829""
+}"
+HW-CWE-611-javascript-xxe-node-expat__vuln,handwritten,javascript,vulnerable,CWE-611,,True,False,False,0.551,741.64,50.47,5043.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-611-javascript-xxe-xml2js__safe,handwritten,javascript,safe,SAFE,CWE-829,False,True,False,0.703,764.82,49.29,5043.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-829""
+}"
+HW-CWE-611-javascript-xxe-xml2js__vuln,handwritten,javascript,vulnerable,CWE-611,,True,False,False,0.552,700.24,50.39,5043.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-611-javascript-xxe-xmldom__safe,handwritten,javascript,safe,SAFE,CWE-80,False,True,False,0.677,704.39,49.84,5043.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-80""
+}"
+HW-CWE-611-javascript-xxe-xmldom__vuln,handwritten,javascript,vulnerable,CWE-611,CWE-80,True,True,False,0.677,770.05,49.85,5043.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-80""
+}"
+HW-CWE-611-typescript-xxe-expat-ts__safe,handwritten,typescript,safe,SAFE,CWE-829,False,True,False,0.698,719.47,49.77,5043.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-829""
+}"
+HW-CWE-611-typescript-xxe-expat-ts__vuln,handwritten,typescript,vulnerable,CWE-611,,True,False,False,0.55,742.75,50.7,5043.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-611-typescript-xxe-libxml-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.55,764.16,50.71,5044.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-611-typescript-xxe-libxml-ts__vuln,handwritten,typescript,vulnerable,CWE-611,CWE-89,True,True,False,0.606,1271.44,49.81,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-611-typescript-xxe-parsehtml-ts__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.548,795.67,50.72,5044.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-611-typescript-xxe-parsehtml-ts__vuln,handwritten,typescript,vulnerable,CWE-611,,True,False,False,0.478,1260.12,50.74,5044.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-611-typescript-xxe-xml2js-ts__safe,handwritten,typescript,safe,SAFE,CWE-829,False,True,False,0.697,722.66,49.7,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-829""
+}"
+HW-CWE-611-typescript-xxe-xml2js-ts__vuln,handwritten,typescript,vulnerable,CWE-611,CWE-78,True,True,False,0.675,687.76,49.82,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-611-typescript-xxe-xmldom-ts__vuln,handwritten,typescript,vulnerable,CWE-611,CWE-829,True,True,False,0.698,736.97,49.69,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-829""
+}"
+HW-CWE-78-javascript-cmd-backtick-zip__safe,handwritten,javascript,safe,SAFE,CWE-78,False,True,False,0.843,583.12,49.79,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-javascript-cmd-backtick-zip__vuln,handwritten,javascript,vulnerable,CWE-78,CWE-78,True,True,True,0.679,794.2,49.77,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-javascript-cmd-exec-host__safe,handwritten,javascript,safe,SAFE,CWE-78,False,True,False,0.762,647.05,49.73,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-javascript-cmd-exec-host__vuln,handwritten,javascript,vulnerable,CWE-78,CWE-78,True,True,True,0.677,775.15,49.77,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-javascript-cmd-execsync-convert__safe,handwritten,javascript,safe,SAFE,CWE-78,False,True,False,0.763,637.72,49.79,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-javascript-cmd-execsync-convert__vuln,handwritten,javascript,vulnerable,CWE-78,CWE-78,True,True,True,0.677,693.62,49.81,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-javascript-cmd-git-clone__safe,handwritten,javascript,safe,SAFE,CWE-78,False,True,False,0.765,668.44,49.73,5044.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-javascript-cmd-git-clone__vuln,handwritten,javascript,vulnerable,CWE-78,CWE-78,True,True,True,0.678,737.3,49.76,5044.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-javascript-cmd-shell-true__safe,handwritten,javascript,safe,SAFE,CWE-78,False,True,False,0.678,822.24,49.81,5044.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-javascript-cmd-shell-true__vuln,handwritten,javascript,vulnerable,CWE-78,CWE-78,True,True,True,0.603,1202.49,49.82,5044.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-typescript-cmd-exec-ts__safe,handwritten,typescript,safe,SAFE,CWE-78,False,True,False,0.84,523.8,49.7,5044.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-typescript-cmd-exec-ts__vuln,handwritten,typescript,vulnerable,CWE-78,CWE-78,True,True,True,0.683,826.49,49.56,5044.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-typescript-cmd-execsync-ts__safe,handwritten,typescript,safe,SAFE,CWE-88,False,True,False,0.763,622.52,49.76,5044.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-88""
+}"
+HW-CWE-78-typescript-cmd-execsync-ts__vuln,handwritten,typescript,vulnerable,CWE-78,CWE-78,True,True,True,0.676,711.38,49.83,5044.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-typescript-cmd-git-ts__safe,handwritten,typescript,safe,SAFE,CWE-78,False,True,False,0.766,680.18,49.75,5044.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-typescript-cmd-git-ts__vuln,handwritten,typescript,vulnerable,CWE-78,CWE-78,True,True,True,0.678,752.56,49.65,5044.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-typescript-cmd-shell-ts__safe,handwritten,typescript,safe,SAFE,CWE-78,False,True,False,0.68,836.69,49.73,5044.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-typescript-cmd-shell-ts__vuln,handwritten,typescript,vulnerable,CWE-78,CWE-78,True,True,True,0.603,1229.52,49.77,5044.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-typescript-cmd-zip-ts__safe,handwritten,typescript,safe,SAFE,CWE-78,False,True,False,0.681,861.22,49.75,5044.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-78-typescript-cmd-zip-ts__vuln,handwritten,typescript,vulnerable,CWE-78,CWE-78,True,True,True,0.676,704.74,49.79,5046.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-798-javascript-secret-aws__safe,handwritten,javascript,safe,SAFE,CWE-798,False,True,False,0.699,746.51,49.72,5046.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-798""
+}"
+HW-CWE-798-javascript-secret-aws__vuln,handwritten,javascript,vulnerable,CWE-798,CWE-200,True,True,False,0.698,859.85,49.64,5046.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+HW-CWE-798-javascript-secret-basic-auth__safe,handwritten,javascript,safe,SAFE,CWE-327,False,True,False,0.862,597.07,49.58,5046.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-798-javascript-secret-basic-auth__vuln,handwritten,javascript,vulnerable,CWE-798,CWE-284,True,True,False,0.783,586.48,49.63,5046.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+HW-CWE-798-javascript-secret-db-url__safe,handwritten,javascript,safe,SAFE,CWE-89,False,True,False,0.606,1107.08,49.83,5046.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-798-javascript-secret-db-url__vuln,handwritten,javascript,vulnerable,CWE-798,CWE-798,True,True,True,0.626,1208.93,49.69,5046.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-798""
+}"
+HW-CWE-798-javascript-secret-jwt__safe,handwritten,javascript,safe,SAFE,CWE-327,False,True,False,0.627,1130.3,49.7,5046.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-798-javascript-secret-jwt__vuln,handwritten,javascript,vulnerable,CWE-798,CWE-327,True,True,False,0.627,1182.78,49.69,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-798-javascript-secret-slack__safe,handwritten,javascript,safe,SAFE,CWE-89,False,True,False,0.677,731.78,49.8,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-798-javascript-secret-slack__vuln,handwritten,javascript,vulnerable,CWE-798,CWE-835,True,True,False,0.699,794.62,49.71,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-835""
+}"
+HW-CWE-798-typescript-secret-aws-ts__safe,handwritten,typescript,safe,SAFE,CWE-798,False,True,False,0.698,751.06,49.7,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-798""
+}"
+HW-CWE-798-typescript-secret-aws-ts__vuln,handwritten,typescript,vulnerable,CWE-798,CWE-200,True,True,False,0.702,865.67,49.5,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+HW-CWE-798-typescript-secret-basic-ts__safe,handwritten,typescript,safe,SAFE,CWE-312,False,True,False,1.052,591.23,49.0,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+HW-CWE-798-typescript-secret-basic-ts__vuln,handwritten,typescript,vulnerable,CWE-798,CWE-287,True,True,False,0.782,642.02,49.68,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-287""
+}"
+HW-CWE-798-typescript-secret-db-ts__safe,handwritten,typescript,safe,SAFE,CWE-798,False,True,False,0.625,1124.59,49.69,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-798""
+}"
+HW-CWE-798-typescript-secret-db-ts__vuln,handwritten,typescript,vulnerable,CWE-798,CWE-798,True,True,True,0.624,1222.73,49.71,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-798""
+}"
+HW-CWE-798-typescript-secret-jwt-ts__safe,handwritten,typescript,safe,SAFE,CWE-327,False,True,False,0.697,687.17,49.67,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-798-typescript-secret-jwt-ts__vuln,handwritten,typescript,vulnerable,CWE-798,CWE-327,True,True,False,0.697,711.0,49.7,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+HW-CWE-798-typescript-secret-slack-ts__safe,handwritten,typescript,safe,SAFE,CWE-89,False,True,False,0.679,762.24,49.8,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-798-typescript-secret-slack-ts__vuln,handwritten,typescript,vulnerable,CWE-798,CWE-835,True,True,False,0.698,818.5,49.74,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-835""
+}"
+HW-CWE-915-typescript-mass-assign-body__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.634,641.88,50.73,5046.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-915-typescript-mass-assign-body__vuln,handwritten,typescript,vulnerable,CWE-915,CWE-78,True,True,False,0.606,1239.73,49.83,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-915-typescript-mass-assign-loop__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.631,595.2,50.7,5046.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-915-typescript-mass-assign-loop__vuln,handwritten,typescript,vulnerable,CWE-915,CWE-94,True,True,False,0.677,748.38,49.83,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94""
+}"
+HW-CWE-915-typescript-mass-assign-mongoose__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.633,612.62,50.69,5046.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-915-typescript-mass-assign-mongoose__vuln,handwritten,typescript,vulnerable,CWE-915,,True,False,False,0.551,779.44,50.73,5046.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-915-typescript-mass-assign-query__safe,handwritten,typescript,safe,SAFE,CWE-89,False,True,False,0.676,715.05,49.85,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-915-typescript-mass-assign-query__vuln,handwritten,typescript,vulnerable,CWE-915,CWE-89,True,True,False,0.604,1191.99,49.82,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-915-typescript-mass-assign-spread__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.55,786.87,50.72,5046.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-915-typescript-mass-assign-spread__vuln,handwritten,typescript,vulnerable,CWE-915,,True,False,False,0.476,1173.15,50.71,5046.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-94-typescript-codeinj-eval__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.631,605.54,50.69,5046.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-94-typescript-codeinj-eval__vuln,handwritten,typescript,vulnerable,CWE-94,CWE-478,True,True,False,0.623,1049.43,49.78,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-478""
+}"
+HW-CWE-94-typescript-codeinj-function__safe,handwritten,typescript,safe,SAFE,CWE-78,False,True,False,0.761,610.47,49.75,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-94-typescript-codeinj-function__vuln,handwritten,typescript,vulnerable,CWE-94,CWE-88,True,True,False,0.604,1077.58,49.87,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-88""
+}"
+HW-CWE-94-typescript-codeinj-settimeout-str__safe,handwritten,typescript,safe,SAFE,CWE-789,False,True,False,0.624,1084.9,49.74,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-789""
+}"
+HW-CWE-94-typescript-codeinj-settimeout-str__vuln,handwritten,typescript,vulnerable,CWE-94,CWE-88,True,True,False,0.603,1071.92,49.85,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-88""
+}"
+HW-CWE-94-typescript-codeinj-ts-transpile__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.552,754.36,50.7,5046.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-94-typescript-codeinj-ts-transpile__vuln,handwritten,typescript,vulnerable,CWE-94,CWE-489,True,True,False,0.699,795.32,49.72,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-489""
+}"
+HW-CWE-94-typescript-codeinj-vm__safe,handwritten,typescript,safe,SAFE,CWE-78,False,True,False,0.68,821.56,49.78,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-94-typescript-codeinj-vm__vuln,handwritten,typescript,vulnerable,CWE-94,CWE-88,True,True,False,0.677,682.79,49.83,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-88""
+}"
+HW-CWE-943-typescript-nosql-gt-id__safe,handwritten,typescript,safe,SAFE,CWE-78,False,True,False,0.761,586.5,49.84,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-943-typescript-nosql-gt-id__vuln,handwritten,typescript,vulnerable,CWE-943,CWE-209,True,True,False,0.627,1176.03,49.71,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-209""
+}"
+HW-CWE-943-typescript-nosql-json-query__safe,handwritten,typescript,safe,SAFE,CWE-89,False,True,False,0.677,794.97,49.85,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-943-typescript-nosql-json-query__vuln,handwritten,typescript,vulnerable,CWE-943,CWE-78,True,True,False,0.605,1299.81,49.82,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-CWE-943-typescript-nosql-merge-body__safe,handwritten,typescript,safe,SAFE,CWE-89,False,True,False,0.677,784.43,49.8,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-CWE-943-typescript-nosql-merge-body__vuln,handwritten,typescript,vulnerable,CWE-943,CWE-209,True,True,False,0.628,1162.77,49.74,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-209""
+}"
+HW-CWE-943-typescript-nosql-or-password__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.549,754.72,50.73,5046.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-943-typescript-nosql-or-password__vuln,handwritten,typescript,vulnerable,CWE-943,CWE-602,True,True,False,0.626,1155.16,49.73,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-602""
+}"
+HW-CWE-943-typescript-nosql-where-string__safe,handwritten,typescript,safe,SAFE,,False,False,False,0.473,1100.63,50.77,5046.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-CWE-943-typescript-nosql-where-string__vuln,handwritten,typescript,vulnerable,CWE-943,CWE-89,True,True,False,0.645,1119.2,49.62,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89 SQL Injection""
+}"
+HW-LLM02-javascript-llm-echo-docs__safe,handwritten,javascript,safe,SAFE,CWE-200,False,True,False,0.782,569.2,49.72,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+HW-LLM02-javascript-llm-echo-docs__vuln,handwritten,javascript,vulnerable,LLM02,CWE-89,True,True,False,0.605,1199.52,49.82,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-LLM02-javascript-llm-log-prompt__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.552,796.29,50.68,5046.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-LLM02-javascript-llm-log-prompt__vuln,handwritten,javascript,vulnerable,LLM02,CWE-312,True,True,False,0.699,821.46,49.7,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+HW-LLM02-javascript-llm-memory-store__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.549,711.66,50.72,5046.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-LLM02-javascript-llm-memory-store__vuln,handwritten,javascript,vulnerable,LLM02,CWE-312,True,True,False,0.698,728.41,49.74,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+HW-LLM02-javascript-llm-send-history__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.632,579.35,50.77,5046.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-LLM02-javascript-llm-send-history__vuln,handwritten,javascript,vulnerable,LLM02,CWE-78,True,True,False,0.675,707.37,49.83,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-LLM02-javascript-llm-unscoped-retrieve__safe,handwritten,javascript,safe,SAFE,CWE-89,False,True,False,0.68,826.99,49.8,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-LLM02-javascript-llm-unscoped-retrieve__vuln,handwritten,javascript,vulnerable,LLM02,CWE-89,True,True,False,0.677,756.96,49.78,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-LLM07-javascript-llm-concat-history__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.55,724.69,50.7,5046.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-LLM07-javascript-llm-concat-history__vuln,handwritten,javascript,vulnerable,LLM07,,True,False,False,0.477,1141.9,50.75,5046.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-LLM07-javascript-llm-debug-dump__safe,handwritten,javascript,safe,SAFE,,False,False,False,0.55,748.98,50.74,5046.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+HW-LLM07-javascript-llm-debug-dump__vuln,handwritten,javascript,vulnerable,LLM07,CWE-86,True,True,False,0.677,709.17,49.81,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-86""
+}"
+HW-LLM07-javascript-llm-include-system__safe,handwritten,javascript,safe,SAFE,CWE-78,False,True,False,0.678,758.85,49.72,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+HW-LLM07-javascript-llm-include-system__vuln,handwritten,javascript,vulnerable,LLM07,CWE-270,True,True,False,0.624,1350.62,49.72,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-270""
+}"
+HW-LLM07-javascript-llm-prompt-in-error__safe,handwritten,javascript,safe,SAFE,CWE-89,False,True,False,0.759,584.15,49.8,5046.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-LLM07-javascript-llm-prompt-in-error__vuln,handwritten,javascript,vulnerable,LLM07,CWE-312,True,True,False,0.781,610.56,49.68,5037.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+HW-LLM07-javascript-llm-tool-echo__safe,handwritten,javascript,safe,SAFE,CWE-89,False,True,False,0.68,795.7,49.78,5037.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+HW-LLM07-javascript-llm-tool-echo__vuln,handwritten,javascript,vulnerable,LLM07,CWE-89,True,True,False,0.678,778.18,49.89,5037.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001437__safe,securecode-web-test,python,safe,SAFE,CWE-319,False,True,False,1.61,449.8,49.2,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+scw-001437__vuln,securecode-web-test,python,vulnerable,CWE-306,CWE-502,True,True,False,1.108,473.5,49.43,5046.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-502""
+}"
+scw-001438__safe,securecode-web-test,python,safe,SAFE,,False,False,False,2.399,419.1,49.86,5050.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001438__vuln,securecode-web-test,python,vulnerable,CWE-502,CWE-89,True,True,False,0.84,613.33,49.69,5050.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001442__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,4.044,391.26,49.33,5053.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001442__vuln,securecode-web-test,javascript,vulnerable,CWE-1021,CWE-312,True,True,False,3.693,412.63,48.48,5053.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+scw-001444__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,2.488,418.69,49.81,5053.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001444__vuln,securecode-web-test,javascript,vulnerable,CWE-319,,True,False,False,1.053,472.01,48.29,5053.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001447__safe,securecode-web-test,python,safe,SAFE,,False,False,False,2.56,408.09,49.83,5053.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001447__vuln,securecode-web-test,python,vulnerable,CWE-367,,True,False,False,1.375,452.66,50.18,5053.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001450__safe,securecode-web-test,typescript,safe,SAFE,,False,False,False,1.627,421.64,50.07,5053.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001450__vuln,securecode-web-test,typescript,vulnerable,CWE-327,CWE-327,True,True,True,1.528,477.37,49.17,5053.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+scw-001453__safe,securecode-web-test,python,safe,SAFE,,False,False,False,1.163,469.58,47.63,5053.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001453__vuln,securecode-web-test,python,vulnerable,CWE-502,CWE-78,True,True,False,1.455,627.78,48.38,5053.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+scw-001454__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,2.827,375.66,48.03,5053.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001454__vuln,securecode-web-test,javascript,vulnerable,CWE-915,,True,False,False,1.053,1246.26,49.88,5054.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001455__safe,securecode-web-test,python,safe,SAFE,,False,False,False,2.97,400.9,49.59,5054.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001455__vuln,securecode-web-test,python,vulnerable,CWE-916,CWE-327,True,True,False,2.539,421.46,48.93,5054.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+scw-001459__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,3.603,375.88,49.52,5054.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001459__vuln,securecode-web-test,javascript,vulnerable,CWE-778,,True,False,False,1.145,1308.92,49.75,5054.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001463__safe,securecode-web-test,typescript,safe,SAFE,,False,False,False,5.03,377.19,47.84,5056.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001463__vuln,securecode-web-test,typescript,vulnerable,CWE-287,,True,False,False,1.426,1690.22,49.05,5056.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001465__safe,securecode-web-test,python,safe,SAFE,,False,False,False,0.796,550.13,50.6,5056.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001465__vuln,securecode-web-test,python,vulnerable,CWE-1395,CWE-78,True,True,False,1.123,737.3,48.69,5056.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+scw-001466__safe,securecode-web-test,typescript,safe,SAFE,CWE-89,False,True,False,2.127,404.93,47.01,5056.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001466__vuln,securecode-web-test,typescript,vulnerable,CWE-79,CWE-79,True,True,True,1.106,544.81,48.07,5056.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001467__safe,securecode-web-test,python,safe,SAFE,,False,False,False,1.517,430.54,47.44,5056.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001467__vuln,securecode-web-test,python,vulnerable,CWE-502,CWE-78,True,True,False,1.026,497.83,48.18,5056.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+scw-001471__safe,securecode-web-test,javascript,safe,SAFE,CWE-78,False,True,False,3.861,370.17,47.36,5048.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+scw-001471__vuln,securecode-web-test,javascript,vulnerable,CWE-307,,True,False,False,1.839,438.53,48.48,5048.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001472__safe,securecode-web-test,python,safe,SAFE,,False,False,False,7.233,365.9,39.88,5050.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001472__vuln,securecode-web-test,python,vulnerable,CWE-778,CWE-78,True,True,False,3.957,395.05,46.65,5051.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+scw-001476__safe,securecode-web-test,python,safe,SAFE,,False,False,False,1.782,418.56,46.63,5051.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001476__vuln,securecode-web-test,python,vulnerable,CWE-502,CWE-70,True,True,False,1.242,562.14,47.22,5051.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-70: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+scw-001481__safe,securecode-web-test,javascript,safe,SAFE,CWE-89,False,True,False,2.859,381.19,46.61,5051.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001481__vuln,securecode-web-test,javascript,vulnerable,CWE-494,CWE-89,True,True,False,2.294,407.63,46.9,5051.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001484__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,3.9,376.94,47.38,5051.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001484__vuln,securecode-web-test,javascript,vulnerable,CWE-922,,True,False,False,3.48,416.5,47.54,5051.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001487__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,3.232,384.56,47.19,5051.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001487__vuln,securecode-web-test,javascript,vulnerable,CWE-327,,True,False,False,1.709,880.68,47.25,5051.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001492__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,1.171,458.79,47.8,5051.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001492__vuln,securecode-web-test,javascript,vulnerable,CWE-1321,CWE-89,True,True,False,1.125,465.57,47.56,5051.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001499__safe,securecode-web-test,python,safe,SAFE,,False,False,False,2.287,390.65,45.49,5051.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001499__vuln,securecode-web-test,python,vulnerable,CWE-212,CWE-200,True,True,False,1.646,725.17,46.29,5051.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+scw-001501__safe,securecode-web-test,python,safe,SAFE,,False,False,False,2.226,378.92,46.84,5051.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001501__vuln,securecode-web-test,python,vulnerable,CWE-1021,CWE-759,True,True,False,1.415,458.78,47.08,5051.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-759""
+}"
+scw-001504__safe,securecode-web-test,javascript,safe,SAFE,CWE-476,False,True,False,1.427,450.52,46.15,5051.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-476""
+}"
+scw-001504__vuln,securecode-web-test,javascript,vulnerable,CWE-78,CWE-78,True,True,True,1.511,455.6,46.21,5051.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: OS Command Injection""
+}"
+scw-001507__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,3.656,363.64,47.11,5051.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001507__vuln,securecode-web-test,javascript,vulnerable,CWE-327,CWE-327,True,True,True,3.159,395.19,46.0,5051.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+scw-001510__safe,securecode-web-test,typescript,safe,SAFE,CWE-312,False,True,False,2.649,391.62,45.83,5051.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+scw-001510__vuln,securecode-web-test,typescript,vulnerable,CWE-862,CWE-312,True,True,False,0.717,3876.03,48.52,5051.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+scw-001511__safe,securecode-web-test,python,safe,SAFE,,False,False,False,5.982,348.06,46.49,5051.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001511__vuln,securecode-web-test,python,vulnerable,CWE-640,,True,False,False,4.019,539.31,45.85,5051.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001513__safe,securecode-web-test,typescript,safe,SAFE,,False,False,False,1.912,402.56,47.11,5051.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001513__vuln,securecode-web-test,typescript,vulnerable,CWE-532,CWE-494,True,True,False,1.61,457.05,46.42,5051.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-494: Insecure Deserialization""
+}"
+scw-001514__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,4.064,354.72,47.17,5051.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001514__vuln,securecode-web-test,javascript,vulnerable,CWE-778,,True,False,False,1.564,1087.67,46.15,5051.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001516__safe,securecode-web-test,javascript,safe,SAFE,CWE-89,False,True,False,3.393,374.08,46.31,5051.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001516__vuln,securecode-web-test,javascript,vulnerable,CWE-918,CWE-94,True,True,False,1.309,488.68,46.32,5051.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94""
+}"
+scw-001517__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,2.351,375.64,45.96,5051.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001517__vuln,securecode-web-test,javascript,vulnerable,CWE-327,,True,False,False,1.571,431.83,45.85,5051.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001519__safe,securecode-web-test,typescript,safe,SAFE,CWE-89,False,True,False,2.458,374.89,46.07,5051.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001519__vuln,securecode-web-test,typescript,vulnerable,CWE-494,CWE-470,True,True,False,1.722,418.87,45.74,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-470""
+}"
+scw-001521__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,2.353,378.16,46.08,5051.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001521__vuln,securecode-web-test,javascript,vulnerable,CWE-942,CWE-79,True,True,False,1.98,410.93,45.76,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001522__safe,securecode-web-test,python,safe,SAFE,,False,False,False,1.097,462.07,46.82,5051.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001522__vuln,securecode-web-test,python,vulnerable,CWE-704,CWE-78,True,True,False,1.056,566.73,46.98,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+scw-001524__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,1.486,406.24,45.17,5051.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001524__vuln,securecode-web-test,javascript,vulnerable,CWE-20,,True,False,False,0.932,513.76,46.89,5051.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001526__safe,securecode-web-test,python,safe,SAFE,CWE-78,False,True,False,2.18,382.72,45.53,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+scw-001526__vuln,securecode-web-test,python,vulnerable,CWE-502,CWE-78,True,True,False,1.157,469.0,46.06,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+scw-001529__safe,securecode-web-test,typescript,safe,SAFE,CWE-89,False,True,False,2.261,379.58,44.78,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001529__vuln,securecode-web-test,typescript,vulnerable,CWE-89,CWE-89,True,True,True,1.176,918.14,45.77,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001534__safe,securecode-web-test,javascript,safe,SAFE,CWE-79,False,True,False,1.783,397.27,44.32,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001534__vuln,securecode-web-test,javascript,vulnerable,CWE-502,CWE-502,True,True,True,1.589,408.34,44.38,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-502""
+}"
+scw-001535__safe,securecode-web-test,typescript,safe,SAFE,,False,False,False,2.198,374.87,47.51,5051.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001535__vuln,securecode-web-test,typescript,vulnerable,CWE-327,,True,False,False,1.766,420.02,45.21,5051.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001537__safe,securecode-web-test,typescript,safe,SAFE,,False,False,False,3.224,367.7,46.05,5051.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001537__vuln,securecode-web-test,typescript,vulnerable,CWE-639,,True,False,False,0.942,1877.19,47.04,5051.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001538__safe,securecode-web-test,javascript,safe,SAFE,CWE-79,False,True,False,1.833,387.27,44.24,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001538__vuln,securecode-web-test,javascript,vulnerable,CWE-942,CWE-79,True,True,False,1.778,485.73,44.39,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001539__safe,securecode-web-test,typescript,safe,SAFE,CWE-284,False,True,False,3.223,364.63,45.27,5051.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+scw-001539__vuln,securecode-web-test,typescript,vulnerable,CWE-327,CWE-319,True,True,False,2.842,421.88,45.45,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+scw-001545__safe,securecode-web-test,python,safe,SAFE,,False,False,False,3.464,366.18,45.7,5051.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001545__vuln,securecode-web-test,python,vulnerable,CWE-307,,True,False,False,2.968,383.66,45.78,5051.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001547__safe,securecode-web-test,javascript,safe,SAFE,CWE-327,False,True,False,5.289,351.83,47.09,5051.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+scw-001547__vuln,securecode-web-test,javascript,vulnerable,CWE-502,CWE-502,True,True,True,3.001,375.41,45.69,5051.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-502""
+}"
+scw-001553__safe,securecode-web-test,javascript,safe,SAFE,CWE-89,False,True,False,3.86,355.31,45.95,5013.8,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001553__vuln,securecode-web-test,javascript,vulnerable,CWE-209,CWE-89,True,True,False,1.885,421.52,45.13,5014.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001554__safe,securecode-web-test,javascript,safe,SAFE,CWE-284,False,True,False,1.844,409.82,44.75,5014.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+scw-001554__vuln,securecode-web-test,javascript,vulnerable,CWE-942,CWE-284,True,True,False,2.597,380.25,45.23,5014.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+scw-001556__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,2.95,363.29,45.95,5014.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001556__vuln,securecode-web-test,javascript,vulnerable,CWE-89,CWE-89,True,True,True,2.382,382.79,45.86,5014.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001557__safe,securecode-web-test,typescript,safe,SAFE,,False,False,False,3.979,353.38,45.5,5014.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001557__vuln,securecode-web-test,typescript,vulnerable,CWE-79,CWE-79,True,True,True,3.411,380.84,46.0,5014.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001559__safe,securecode-web-test,python,safe,SAFE,CWE-312,False,True,False,5.13,347.87,45.95,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+scw-001559__vuln,securecode-web-test,python,vulnerable,CWE-915,CWE-312,True,True,False,3.88,365.53,46.0,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+scw-001562__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,2.391,373.57,44.19,5014.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001562__vuln,securecode-web-test,javascript,vulnerable,CWE-79,CWE-78,True,True,False,1.961,415.52,44.13,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+scw-001564__safe,securecode-web-test,javascript,safe,SAFE,CWE-79,False,True,False,1.937,392.91,44.63,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001564__vuln,securecode-web-test,javascript,vulnerable,CWE-79,CWE-79,True,True,True,1.451,460.75,45.8,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001566__safe,securecode-web-test,javascript,safe,SAFE,CWE-78,False,True,False,2.638,365.62,45.57,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+scw-001566__vuln,securecode-web-test,javascript,vulnerable,CWE-611,CWE-78,True,True,False,1.618,425.51,44.99,5014.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+scw-001567__safe,securecode-web-test,javascript,safe,SAFE,CWE-312,False,True,False,2.833,360.82,46.49,5016.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+scw-001567__vuln,securecode-web-test,javascript,vulnerable,CWE-915,,True,False,False,3.643,368.71,46.67,5016.6,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001569__safe,securecode-web-test,python,safe,SAFE,CWE-327,False,True,False,4.483,362.71,45.56,5016.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+scw-001569__vuln,securecode-web-test,python,vulnerable,CWE-639,CWE-312,True,True,False,2.469,395.1,44.44,5016.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+scw-001572__safe,securecode-web-test,typescript,safe,SAFE,CWE-284,False,True,False,3.494,350.94,45.6,5016.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+scw-001572__vuln,securecode-web-test,typescript,vulnerable,CWE-639,CWE-284,True,True,False,3.748,372.07,46.47,5016.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+scw-001573__safe,securecode-web-test,python,safe,SAFE,,False,False,False,1.854,390.5,44.67,5016.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001573__vuln,securecode-web-test,python,vulnerable,CWE-79,,True,False,False,1.498,500.18,45.18,5016.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001579__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,2.003,387.73,45.28,5016.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001579__vuln,securecode-web-test,javascript,vulnerable,CWE-79,,True,False,False,1.301,428.84,46.05,5016.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001580__safe,securecode-web-test,typescript,safe,SAFE,,False,False,False,7.02,343.86,45.06,5016.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001580__vuln,securecode-web-test,typescript,vulnerable,CWE-1021,CWE-284,True,True,False,6.381,349.71,45.67,5016.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284: Improper Access Control""
+}"
+scw-001584__safe,securecode-web-test,python,safe,SAFE,CWE-79,False,True,False,2.228,393.59,45.82,5016.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001584__vuln,securecode-web-test,python,vulnerable,CWE-601,CWE-79,True,True,False,1.267,868.61,45.25,5016.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001586__safe,securecode-web-test,python,safe,SAFE,,False,False,False,1.725,404.92,44.23,5016.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001586__vuln,securecode-web-test,python,vulnerable,CWE-1021,,True,False,False,1.031,465.28,46.34,5016.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001591__safe,securecode-web-test,python,safe,SAFE,CWE-312,False,True,False,3.075,357.54,45.92,5016.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+scw-001591__vuln,securecode-web-test,python,vulnerable,CWE-89,CWE-79,True,True,False,1.911,397.46,45.11,5016.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001593__safe,securecode-web-test,python,safe,SAFE,,False,False,False,4.147,348.0,46.13,5017.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001593__vuln,securecode-web-test,python,vulnerable,CWE-915,,True,False,False,1.559,1189.24,45.57,5017.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001594__safe,securecode-web-test,python,safe,SAFE,,False,False,False,2.41,374.35,45.28,5017.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001594__vuln,securecode-web-test,python,vulnerable,CWE-639,,True,False,False,0.568,4149.95,49.21,5017.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001595__safe,securecode-web-test,python,safe,SAFE,CWE-89,False,True,False,4.24,350.85,47.2,5017.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001595__vuln,securecode-web-test,python,vulnerable,CWE-918,CWE-79,True,True,False,2.013,405.91,44.7,5017.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001597__safe,securecode-web-test,python,safe,SAFE,,False,False,False,1.525,404.38,45.71,5017.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001597__vuln,securecode-web-test,python,vulnerable,CWE-798,CWE-327,True,True,False,1.569,414.96,45.33,5017.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+scw-001598__safe,securecode-web-test,python,safe,SAFE,,False,False,False,2.865,370.65,45.38,5017.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001598__vuln,securecode-web-test,python,vulnerable,CWE-287,CWE-259,True,True,False,1.66,883.07,45.32,5017.6,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-259""
+}"
+scw-001600__safe,securecode-web-test,javascript,safe,SAFE,CWE-89,False,True,False,1.762,394.24,44.72,5017.7,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001600__vuln,securecode-web-test,javascript,vulnerable,CWE-506,,True,False,False,1.229,459.65,44.66,5017.7,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001608__safe,securecode-web-test,python,safe,SAFE,,False,False,False,3.923,340.37,46.08,5017.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001608__vuln,securecode-web-test,python,vulnerable,CWE-287,,True,False,False,2.305,628.66,44.93,5017.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001609__safe,securecode-web-test,python,safe,SAFE,,False,False,False,5.109,347.36,46.48,5017.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001609__vuln,securecode-web-test,python,vulnerable,CWE-352,CWE-312,True,True,False,4.768,362.76,45.59,5017.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+scw-001611__safe,securecode-web-test,javascript,safe,SAFE,CWE-79,False,True,False,7.988,333.44,45.04,5017.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001611__vuln,securecode-web-test,javascript,vulnerable,CWE-522,CWE-79,True,True,False,3.553,391.89,46.06,5017.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+scw-001612__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,5.445,346.14,45.39,5017.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001612__vuln,securecode-web-test,javascript,vulnerable,CWE-922,CWE-284,True,True,False,3.556,372.99,45.83,5017.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+scw-001613__safe,securecode-web-test,typescript,safe,SAFE,,False,False,False,0.795,521.68,49.89,5017.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001613__vuln,securecode-web-test,typescript,vulnerable,CWE-863,CWE-284,True,True,False,0.797,675.16,48.42,5017.9,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+scw-001615__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,3.334,337.69,44.32,5017.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001615__vuln,securecode-web-test,javascript,vulnerable,CWE-639,,True,False,False,0.924,1852.85,48.31,5017.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001616__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,1.66,415.35,44.19,5017.9,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001616__vuln,securecode-web-test,javascript,vulnerable,CWE-287,,True,False,False,1.155,422.32,44.44,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001617__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,2.374,363.66,44.67,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001617__vuln,securecode-web-test,javascript,vulnerable,CWE-916,,True,False,False,2.01,409.1,46.12,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001618__safe,securecode-web-test,javascript,safe,SAFE,CWE-89,False,True,False,2.201,377.24,46.36,5018.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001618__vuln,securecode-web-test,javascript,vulnerable,CWE-89,CWE-89,True,True,True,1.029,901.99,47.69,5018.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+scw-001619__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,3.76,344.25,45.96,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001619__vuln,securecode-web-test,javascript,vulnerable,CWE-943,CWE-284,True,True,False,2.851,399.63,46.19,5018.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284: Improper Access Control""
+}"
+scw-001620__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,1.93,377.42,42.7,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001620__vuln,securecode-web-test,javascript,vulnerable,CWE-1321,,True,False,False,1.049,507.51,46.18,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001621__safe,securecode-web-test,javascript,safe,SAFE,CWE-190,False,True,False,1.694,399.87,43.51,5018.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-190""
+}"
+scw-001621__vuln,securecode-web-test,javascript,vulnerable,CWE-1333,CWE-78,True,True,False,1.174,966.59,46.67,5018.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+scw-001622__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,0.867,479.59,45.24,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001622__vuln,securecode-web-test,javascript,vulnerable,CWE-1104,,True,False,False,1.097,456.05,43.56,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001623__safe,securecode-web-test,javascript,safe,SAFE,CWE-327,False,True,False,2.196,364.45,43.05,5018.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+scw-001623__vuln,securecode-web-test,javascript,vulnerable,CWE-347,CWE-327,True,True,False,1.904,404.81,44.51,5018.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+scw-001624__safe,securecode-web-test,javascript,safe,SAFE,,False,False,False,2.784,367.13,44.1,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001624__vuln,securecode-web-test,javascript,vulnerable,CWE-942,,True,False,False,2.103,489.94,46.07,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+scw-001625__safe,securecode-web-test,javascript,safe,SAFE,CWE-256,False,True,False,1.666,400.84,44.51,5018.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-256""
+}"
+scw-001625__vuln,securecode-web-test,javascript,vulnerable,CWE-20,,True,False,False,1.74,412.65,42.99,5018.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+llm02-anthropic-websocket-conversation-interception-ts__safe,securecode-aiml,typescript,safe,SAFE,CWE-259,False,True,False,6.506,337.53,45.98,5018.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-259""
+}"
+llm02-anthropic-websocket-conversation-interception-ts__vuln,securecode-aiml,typescript,vulnerable,LLM02,CWE-78,True,True,False,1.103,528.88,47.71,5018.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+llm02-financial-ai-advisor-account-data-exposure-ts__safe,securecode-aiml,typescript,safe,SAFE,CWE-284,False,True,False,9.137,332.54,44.22,5020.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+llm02-financial-ai-advisor-account-data-exposure-ts__vuln,securecode-aiml,typescript,vulnerable,LLM02,CWE-89,True,True,False,2.471,374.16,44.93,5020.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+llm02-langchain-streaming-callback-data-exposure__safe,securecode-aiml,typescript,safe,SAFE,CWE-200,False,True,False,2.754,371.62,45.32,5020.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+llm02-langchain-streaming-callback-data-exposure__vuln,securecode-aiml,typescript,vulnerable,LLM02,CWE-259,True,True,False,3.309,391.77,43.6,5020.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-259""
+}"
+llm02-openai-client-side-api-key-exposure-react-js__safe,securecode-aiml,javascript,safe,SAFE,CWE-284,False,True,False,5.541,343.01,45.27,5020.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+llm02-openai-client-side-api-key-exposure-react-js__vuln,securecode-aiml,javascript,vulnerable,LLM02,CWE-259,True,True,False,1.134,521.17,46.87,5022.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-259""
+}"
+llm02-openai-realtime-api-audio-transcript-leak__safe,securecode-aiml,typescript,safe,SAFE,CWE-312,False,True,False,9.165,328.19,44.67,5022.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+llm02-openai-realtime-api-audio-transcript-leak__vuln,securecode-aiml,typescript,vulnerable,LLM02,CWE-312,True,True,False,3.635,357.83,45.13,5022.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+llm02-supabase-edge-function-ai-response-logging__safe,securecode-aiml,typescript,safe,SAFE,,False,False,False,7.81,336.88,35.16,5020.8,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+llm02-supabase-edge-function-ai-response-logging__vuln,securecode-aiml,typescript,vulnerable,LLM02,CWE-200,True,True,False,2.628,355.35,45.43,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+llm07-nextjs-ai-chatbot-system-prompt-ssr-leak-ts__safe,securecode-aiml,typescript,safe,SAFE,,False,False,False,3.361,365.6,44.35,5023.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+llm07-nextjs-ai-chatbot-system-prompt-ssr-leak-ts__vuln,securecode-aiml,typescript,vulnerable,LLM07,CWE-312,True,True,False,2.124,426.49,45.06,5023.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+llm07-nextjs-system-prompt-exposure-via-api-route-js__safe,securecode-aiml,javascript,safe,SAFE,,False,False,False,3.838,342.89,46.88,5023.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+llm07-nextjs-system-prompt-exposure-via-api-route-js__vuln,securecode-aiml,javascript,vulnerable,LLM07,CWE-218,True,True,False,1.837,438.62,45.02,5023.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-218""
+}"
+llm07-openai-realtime-api-system-prompt-via-audio-ts__safe,securecode-aiml,typescript,safe,SAFE,CWE-312,False,True,False,6.489,341.5,43.61,5023.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312""
+}"
+llm07-openai-realtime-api-system-prompt-via-audio-ts__vuln,securecode-aiml,typescript,vulnerable,LLM07,CWE-319,True,True,False,1.378,468.45,45.31,5023.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319""
+}"
+llm07-openai-token-probability-side-channel-ts__safe,securecode-aiml,typescript,safe,SAFE,CWE-312,False,True,False,3.953,350.18,45.31,5023.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+llm07-openai-token-probability-side-channel-ts__vuln,securecode-aiml,typescript,vulnerable,LLM07,,True,False,False,1.698,406.09,44.91,5023.0,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+llm07-system-prompt-extraction-via-streaming-js__safe,securecode-aiml,typescript,safe,SAFE,CWE-400,False,True,False,2.001,366.95,38.71,5023.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-400""
+}"
+llm07-system-prompt-extraction-via-streaming-js__vuln,securecode-aiml,typescript,vulnerable,LLM07,CWE-284,True,True,False,1.254,459.68,47.37,5023.0,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284""
+}"
+llm07-vercel-ai-sdk-system-message-exposure-ts__safe,securecode-aiml,typescript,safe,SAFE,CWE-200,False,True,False,2.451,374.44,44.05,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+llm07-vercel-ai-sdk-system-message-exposure-ts__vuln,securecode-aiml,typescript,vulnerable,LLM07,,True,False,False,1.224,508.5,45.71,5023.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000017__safe,appsecbench-test,javascript,safe,SAFE,CWE-22,False,True,False,0.827,507.81,45.43,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-22""
+}"
+ASB-000017__vuln,appsecbench-test,javascript,vulnerable,CWE-22,CWE-78,True,True,False,1.008,1099.3,46.93,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+ASB-000036__safe,appsecbench-test,python,safe,SAFE,CWE-22,False,True,False,0.724,651.2,46.0,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-22""
+}"
+ASB-000036__vuln,appsecbench-test,python,vulnerable,CWE-918,CWE-78,True,True,False,0.664,1019.65,44.68,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000082__safe,appsecbench-test,javascript,safe,SAFE,CWE-94,False,True,False,0.881,515.64,42.93,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94""
+}"
+ASB-000082__vuln,appsecbench-test,javascript,vulnerable,CWE-918,CWE-94,True,True,False,0.684,1109.25,43.4,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94""
+}"
+ASB-000091__safe,appsecbench-test,javascript,safe,SAFE,CWE-78,False,True,False,0.753,610.38,44.58,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000091__vuln,appsecbench-test,javascript,vulnerable,CWE-287,CWE-78,True,True,False,1.028,966.27,45.73,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+ASB-000136__safe,appsecbench-test,javascript,safe,SAFE,CWE-190,False,True,False,0.758,618.46,45.42,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-190""
+}"
+ASB-000136__vuln,appsecbench-test,javascript,vulnerable,CWE-840,CWE-401,True,True,False,1.061,883.9,44.23,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-401: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')""
+}"
+ASB-000145__safe,appsecbench-test,python,safe,SAFE,CWE-89,False,True,False,0.781,596.86,42.82,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000145__vuln,appsecbench-test,python,vulnerable,CWE-89,CWE-89,True,True,True,0.781,614.9,43.14,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000167__safe,appsecbench-test,javascript,safe,SAFE,CWE-89,False,True,False,0.771,615.27,43.85,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000167__vuln,appsecbench-test,javascript,vulnerable,CWE-639,CWE-89,True,True,False,0.71,938.27,44.87,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89 SQL Injection""
+}"
+ASB-000206__safe,appsecbench-test,javascript,safe,SAFE,,False,False,False,0.707,511.16,45.06,5023.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000206__vuln,appsecbench-test,javascript,vulnerable,CWE-79,CWE-80,True,True,False,0.646,1078.88,46.87,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-80""
+}"
+ASB-000216__safe,appsecbench-test,python,safe,SAFE,,False,False,False,0.576,713.93,48.14,5023.1,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000216__vuln,appsecbench-test,python,vulnerable,CWE-79,CWE-79,True,True,True,0.738,642.29,45.08,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+ASB-000225__safe,appsecbench-test,typescript,safe,SAFE,CWE-78,False,True,False,0.75,666.31,44.92,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000225__vuln,appsecbench-test,typescript,vulnerable,CWE-611,CWE-78,True,True,False,0.654,1129.75,45.62,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000233__safe,appsecbench-test,typescript,safe,SAFE,CWE-78,False,True,False,0.75,614.82,44.68,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000233__vuln,appsecbench-test,typescript,vulnerable,CWE-1427,CWE-89,True,True,False,0.74,614.42,45.61,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000236__safe,appsecbench-test,typescript,safe,SAFE,CWE-78,False,True,False,0.73,620.94,46.31,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000236__vuln,appsecbench-test,typescript,vulnerable,CWE-1427,CWE-89,True,True,False,0.735,624.03,45.58,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000261__safe,appsecbench-test,python,safe,SAFE,CWE-89,False,True,False,1.133,680.1,43.68,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')""
+}"
+ASB-000261__vuln,appsecbench-test,python,vulnerable,CWE-1427,CWE-78,True,True,False,0.756,581.07,44.28,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000284__safe,appsecbench-test,python,safe,SAFE,CWE-94,False,True,False,0.857,585.83,44.33,5023.1,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94""
+}"
+ASB-000284__vuln,appsecbench-test,python,vulnerable,CWE-918,CWE-94,True,True,False,0.908,1106.63,45.08,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94: Improper Control of Generation of Code ('Code Injection')""
+}"
+ASB-000300__safe,appsecbench-test,javascript,safe,SAFE,CWE-23,False,True,False,0.744,585.75,44.86,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-23""
+}"
+ASB-000300__vuln,appsecbench-test,javascript,vulnerable,CWE-918,CWE-78,True,True,False,0.664,959.4,44.75,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000312__safe,appsecbench-test,typescript,safe,SAFE,CWE-284,False,True,False,0.877,658.23,45.39,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284: Improper Access Control""
+}"
+ASB-000312__vuln,appsecbench-test,typescript,vulnerable,CWE-639,CWE-89,True,True,False,0.69,985.16,46.27,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89 SQL Injection""
+}"
+ASB-000318__safe,appsecbench-test,python,safe,SAFE,CWE-78,False,True,False,1.337,538.86,40.18,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+ASB-000318__vuln,appsecbench-test,python,vulnerable,CWE-840,CWE-78,True,True,False,1.05,1038.3,44.85,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')""
+}"
+ASB-000322__safe,appsecbench-test,typescript,safe,SAFE,CWE-22,False,True,False,0.854,504.28,43.85,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-22""
+}"
+ASB-000322__vuln,appsecbench-test,typescript,vulnerable,CWE-22,CWE-78,True,True,False,0.659,1067.95,45.72,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000336__safe,appsecbench-test,python,safe,SAFE,CWE-319,False,True,False,0.958,631.91,44.21,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319: Use of Insufficiently Random Values""
+}"
+ASB-000336__vuln,appsecbench-test,python,vulnerable,CWE-345,CWE-327,True,True,False,0.682,1000.63,45.22,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+ASB-000347__safe,appsecbench-test,typescript,safe,SAFE,,False,False,False,0.616,629.68,44.89,5023.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000347__vuln,appsecbench-test,typescript,vulnerable,CWE-285,,True,False,False,0.525,986.19,45.71,5023.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000356__safe,appsecbench-test,python,safe,SAFE,CWE-78,False,True,False,0.739,606.33,45.74,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000356__vuln,appsecbench-test,python,vulnerable,CWE-352,CWE-78,True,True,False,0.652,1081.26,45.58,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000364__safe,appsecbench-test,typescript,safe,SAFE,CWE-94,False,True,False,1.1,560.3,44.15,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94: Improper Control of Generation of Code ('Code Injection')""
+}"
+ASB-000364__vuln,appsecbench-test,typescript,vulnerable,CWE-918,CWE-94,True,True,False,0.65,1184.07,45.97,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94""
+}"
+ASB-000390__safe,appsecbench-test,python,safe,SAFE,CWE-94,False,True,False,1.241,456.69,41.61,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94: Improper Control of Generation of Code ('Code Injection')""
+}"
+ASB-000390__vuln,appsecbench-test,python,vulnerable,CWE-918,CWE-94,True,True,False,0.651,1096.41,46.09,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-94""
+}"
+ASB-000419__safe,appsecbench-test,javascript,safe,SAFE,CWE-89,False,True,False,0.724,696.65,46.25,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000419__vuln,appsecbench-test,javascript,vulnerable,CWE-362,CWE-78,True,True,False,0.652,1021.21,46.02,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000427__safe,appsecbench-test,typescript,safe,SAFE,CWE-352,False,True,False,0.757,636.13,45.65,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-352""
+}"
+ASB-000427__vuln,appsecbench-test,typescript,vulnerable,CWE-352,CWE-89,True,True,False,0.645,944.0,46.45,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000442__safe,appsecbench-test,typescript,safe,SAFE,,False,False,False,0.6,728.88,46.21,5023.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000442__vuln,appsecbench-test,typescript,vulnerable,CWE-639,CWE-89,True,True,False,0.642,1118.52,46.83,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000467__safe,appsecbench-test,typescript,safe,SAFE,CWE-78,False,True,False,0.72,657.12,46.74,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000467__vuln,appsecbench-test,typescript,vulnerable,CWE-113,CWE-79,True,True,False,0.643,1014.29,46.48,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-79""
+}"
+ASB-000487__safe,appsecbench-test,typescript,safe,SAFE,CWE-78,False,True,False,0.736,696.35,45.1,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000487__vuln,appsecbench-test,typescript,vulnerable,CWE-434,CWE-78,True,True,False,0.672,964.42,44.39,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000492__safe,appsecbench-test,javascript,safe,SAFE,CWE-78,False,True,False,0.649,898.64,46.26,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000492__vuln,appsecbench-test,javascript,vulnerable,CWE-502,CWE-89,True,True,False,0.628,973.34,47.88,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000497__safe,appsecbench-test,typescript,safe,SAFE,CWE-89,False,True,False,0.736,695.64,45.64,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000497__vuln,appsecbench-test,typescript,vulnerable,CWE-611,CWE-78,True,True,False,0.668,1099.47,44.78,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000506__safe,appsecbench-test,javascript,safe,SAFE,CWE-352,False,True,False,0.775,608.32,44.68,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-352""
+}"
+ASB-000506__vuln,appsecbench-test,javascript,vulnerable,CWE-352,CWE-89,True,True,False,0.646,919.13,46.54,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000528__safe,appsecbench-test,python,safe,SAFE,CWE-86,False,True,False,0.72,623.53,47.05,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-86""
+}"
+ASB-000528__vuln,appsecbench-test,python,vulnerable,CWE-285,CWE-312,True,True,False,0.857,1074.35,46.57,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+ASB-000552__safe,appsecbench-test,typescript,safe,SAFE,CWE-78,False,True,False,0.867,522.93,43.25,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000552__vuln,appsecbench-test,typescript,vulnerable,CWE-77,CWE-78,True,True,False,0.725,1191.52,40.28,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000558__safe,appsecbench-test,python,safe,SAFE,CWE-89,False,True,False,0.825,640.42,39.8,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000558__vuln,appsecbench-test,python,vulnerable,CWE-1427,CWE-78,True,True,False,0.642,1027.45,46.96,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000563__safe,appsecbench-test,typescript,safe,SAFE,CWE-23,False,True,False,0.703,627.92,47.51,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-23""
+}"
+ASB-000563__vuln,appsecbench-test,typescript,vulnerable,CWE-918,CWE-78,True,True,False,0.629,985.95,47.85,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000517__vuln,appsecbench-test-all,typescript,vulnerable,CWE-1427,CWE-89,True,True,False,0.714,652.34,46.97,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000517__safe,appsecbench-test-all,typescript,safe,SAFE,CWE-89,False,True,False,0.74,624.82,45.35,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000326__vuln,appsecbench-test-all,bash,vulnerable,CWE-1188,CWE-78,True,True,False,0.661,882.1,45.34,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000326__safe,appsecbench-test-all,bash,safe,SAFE,,False,False,False,0.512,1044.91,46.81,5023.2,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000333__vuln,appsecbench-test-all,go,vulnerable,CWE-77,CWE-78,True,True,False,0.842,485.21,44.9,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000333__safe,appsecbench-test-all,go,safe,SAFE,CWE-78,False,True,False,0.848,581.89,44.89,5023.2,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000459__vuln,appsecbench-test-all,c#,vulnerable,CWE-502,CWE-89,True,True,False,0.728,584.84,46.25,5023.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000459__safe,appsecbench-test-all,c#,safe,SAFE,,False,False,False,0.497,1026.64,48.53,5023.3,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000240__vuln,appsecbench-test-all,java,vulnerable,CWE-307,CWE-489,True,True,False,0.823,968.45,47.26,5023.3,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-489: Failure to Verify Vectors of Trust""
+}"
+ASB-000240__safe,appsecbench-test-all,java,safe,SAFE,CWE-401,False,True,False,0.8,1022.47,45.86,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-401: Missing Authentication for Critical Function""
+}"
+ASB-000024__vuln,appsecbench-test-all,go,vulnerable,CWE-345,CWE-312,True,True,False,0.989,545.56,44.18,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+ASB-000024__safe,appsecbench-test-all,go,safe,SAFE,CWE-319,False,True,False,0.978,624.85,44.61,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319: Cleartext Transmission of Sensitive Information""
+}"
+ASB-000289__vuln,appsecbench-test-all,go,vulnerable,CWE-798,CWE-312,True,True,False,0.985,608.06,44.02,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+ASB-000289__safe,appsecbench-test-all,go,safe,SAFE,CWE-312,False,True,False,0.88,857.56,45.54,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+ASB-000499__vuln,appsecbench-test-all,scala,vulnerable,CWE-434,CWE-78,True,True,False,0.749,589.73,44.52,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000499__safe,appsecbench-test-all,scala,safe,SAFE,CWE-89,False,True,False,0.751,744.77,44.73,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000413__vuln,appsecbench-test-all,dockerfile,vulnerable,CWE-250,CWE-78,True,True,False,0.738,634.41,45.53,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000413__safe,appsecbench-test-all,dockerfile,safe,SAFE,,False,False,False,0.592,677.68,46.8,5023.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000194__vuln,appsecbench-test-all,swift,vulnerable,CWE-287,CWE-200,True,True,False,0.734,676.77,47.41,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+ASB-000194__safe,appsecbench-test-all,swift,safe,SAFE,CWE-200,False,True,False,0.742,740.78,46.36,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+ASB-000071__vuln,appsecbench-test-all,java,vulnerable,CWE-502,CWE-78,True,True,False,0.729,628.08,46.09,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000071__safe,appsecbench-test-all,java,safe,SAFE,CWE-89,False,True,False,0.622,1134.05,48.33,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000253__vuln,appsecbench-test-all,c#,vulnerable,CWE-307,CWE-78,True,True,False,0.625,996.28,48.28,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000253__safe,appsecbench-test-all,c#,safe,SAFE,CWE-78,False,True,False,0.654,1090.99,45.17,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000550__vuln,appsecbench-test-all,yaml,vulnerable,CWE-250,CWE-200,True,True,False,0.787,576.87,43.67,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-200""
+}"
+ASB-000550__safe,appsecbench-test-all,yaml,safe,SAFE,,False,False,False,0.722,548.39,44.53,5023.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000255__vuln,appsecbench-test-all,c#,vulnerable,CWE-434,CWE-78,True,True,False,0.732,609.65,46.5,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000255__safe,appsecbench-test-all,c#,safe,SAFE,CWE-78,False,True,False,0.717,753.45,46.82,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000183__vuln,appsecbench-test-all,go,vulnerable,CWE-345,CWE-312,True,True,False,0.935,590.33,46.65,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+ASB-000183__safe,appsecbench-test-all,go,safe,SAFE,CWE-319,False,True,False,0.931,676.6,46.8,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319: Cleartext Transmission of Sensitive Information""
+}"
+ASB-000010__vuln,appsecbench-test-all,go,vulnerable,CWE-639,CWE-89,True,True,False,0.714,728.85,47.17,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000010__safe,appsecbench-test-all,go,safe,SAFE,CWE-89,False,True,False,0.732,752.68,45.8,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000188__vuln,appsecbench-test-all,go,vulnerable,CWE-915,,True,False,False,0.613,586.11,45.02,5023.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000188__safe,appsecbench-test-all,go,safe,SAFE,,False,False,False,0.517,959.87,46.54,5023.4,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000001__vuln,appsecbench-test-all,kotlin,vulnerable,CWE-434,CWE-86,True,True,False,0.637,990.15,47.14,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-86""
+}"
+ASB-000001__safe,appsecbench-test-all,kotlin,safe,SAFE,CWE-78,False,True,False,0.723,651.61,46.65,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000030__vuln,appsecbench-test-all,kotlin,vulnerable,CWE-601,CWE-601,True,True,True,0.886,939.5,47.52,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-601: URL Redirection to Untrusted Site ('Open Redirect')""
+}"
+ASB-000030__safe,appsecbench-test-all,kotlin,safe,SAFE,CWE-89,False,True,False,1.007,1036.91,45.47,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')""
+}"
+ASB-000182__vuln,appsecbench-test-all,php,vulnerable,CWE-327,CWE-327,True,True,True,0.678,942.86,45.55,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+ASB-000182__safe,appsecbench-test-all,php,safe,SAFE,CWE-327,False,True,False,0.687,989.31,44.96,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-327""
+}"
+ASB-000330__vuln,appsecbench-test-all,go,vulnerable,CWE-345,CWE-312,True,True,False,0.997,569.12,43.16,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-312: Cleartext Transmission of Sensitive Information""
+}"
+ASB-000330__safe,appsecbench-test-all,go,safe,SAFE,CWE-319,False,True,False,0.987,599.71,44.6,5023.4,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-319: Cleartext Transmission of Sensitive Information""
+}"
+ASB-000420__vuln,appsecbench-test-all,kotlin,vulnerable,CWE-532,CWE-561,True,True,False,0.898,585.66,44.76,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-561 - Function Call Without Argument Validation""
+}"
+ASB-000420__safe,appsecbench-test-all,kotlin,safe,SAFE,CWE-521,False,True,False,0.658,1007.0,47.04,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-521""
+}"
+ASB-000536__vuln,appsecbench-test-all,typescript,vulnerable,CWE-840,CWE-401,True,True,False,1.005,962.51,46.7,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-401: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')""
+}"
+ASB-000536__safe,appsecbench-test-all,typescript,safe,SAFE,CWE-190,False,True,False,0.756,625.63,45.48,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-190""
+}"
+ASB-000457__vuln,appsecbench-test-all,java,vulnerable,CWE-362,CWE-401,True,True,False,0.929,587.06,43.23,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-401: Missing Authentication and Session Management""
+}"
+ASB-000457__safe,appsecbench-test-all,java,safe,SAFE,,False,False,False,0.513,1004.17,46.98,5023.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000537__vuln,appsecbench-test-all,dockerfile,vulnerable,CWE-250,CWE-78,True,True,False,0.722,656.59,46.5,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000537__safe,appsecbench-test-all,dockerfile,safe,SAFE,,False,False,False,0.588,686.89,47.13,5023.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000571__vuln,appsecbench-test-all,go,vulnerable,CWE-862,CWE-78,True,True,False,0.709,653.75,47.24,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000571__safe,appsecbench-test-all,go,safe,SAFE,,False,False,False,0.585,769.66,47.57,5023.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000471__vuln,appsecbench-test-all,typescript,vulnerable,CWE-639,CWE-89,True,True,False,0.724,642.39,46.37,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000471__safe,appsecbench-test-all,typescript,safe,SAFE,,False,False,False,0.583,759.49,47.53,5023.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000286__vuln,appsecbench-test-all,go,vulnerable,CWE-362,,True,False,False,0.588,591.27,47.39,5023.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000286__safe,appsecbench-test-all,go,safe,SAFE,CWE-87,False,True,False,0.728,762.73,46.44,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-87""
+}"
+ASB-000515__vuln,appsecbench-test-all,ruby,vulnerable,CWE-639,CWE-89,True,True,False,0.626,953.22,47.92,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"
+ASB-000515__safe,appsecbench-test-all,ruby,safe,SAFE,CWE-284,False,True,False,0.753,1044.95,47.66,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-284: Improper Access Control""
+}"
+ASB-000089__vuln,appsecbench-test-all,dockerfile,vulnerable,CWE-250,CWE-782,True,True,False,0.728,627.27,47.52,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-782""
+}"
+ASB-000089__safe,appsecbench-test-all,dockerfile,safe,SAFE,,False,False,False,0.587,740.51,47.23,5023.5,"{
+  ""vulnerable"": false,
+  ""cwe"": """"
+}"
+ASB-000458__vuln,appsecbench-test-all,swift,vulnerable,CWE-77,CWE-78,True,True,False,0.734,596.11,45.38,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-78""
+}"
+ASB-000458__safe,appsecbench-test-all,swift,safe,SAFE,CWE-89,False,True,False,0.64,1003.73,46.7,5023.5,"{
+  ""vulnerable"": true,
+  ""cwe"": ""CWE-89""
+}"

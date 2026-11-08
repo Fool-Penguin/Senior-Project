@@ -1,0 +1,2 @@
+model,n,detection_accuracy,detection_recall,detection_specificity,cwe_accuracy,appsecbench-test_acc,appsecbench-test-all_acc,handwritten_acc,securecode-aiml_acc,securecode-web-test_acc,appsecbench-test_cwe,appsecbench-test-all_cwe,handwritten_cwe,securecode-aiml_cwe,securecode-web-test_cwe,latency_mean_s,wall_s,ram_peak_mb,gen_tps_mean
+qwen2.5-coder:7b,590,0.6373,0.8007,0.4728,0.1115,0.5429,0.629,0.6754,0.5417,0.6325,0.0571,0.0645,0.1333,0.0,0.1325,1.287,786.65,5056.7,47.8115

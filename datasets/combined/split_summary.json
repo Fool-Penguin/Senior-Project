@@ -1,0 +1,39 @@
+{
+  "dataset_n": 1208,
+  "dataset_by_reason": {
+    "ghsa": 74,
+    "appsec_test": 36,
+    "appsec_validation": 36,
+    "appsec_train": 149,
+    "scp_test": 14,
+    "scp_benchmark": 11,
+    "scp_validation": 11,
+    "scp_train": 44,
+    "gift": 833
+  },
+  "dataset_by_language": {
+    "python": 443,
+    "typescript": 233,
+    "javascript": 532
+  },
+  "knowledge_base_n": 83,
+  "knowledge_base_with_example": 67,
+  "knowledge_base_definition_only": 16,
+  "overlap_dataset_vs_kb_examples": 0,
+  "catalogue_cells_with_zero_test": [
+    "VULN-INJ-006:javascript",
+    "VULN-CRYPTO-001:typescript",
+    "VULN-CRYPTO-002:python",
+    "VULN-CRYPTO-002:typescript",
+    "VULN-CRYPTO-003:python",
+    "VULN-CRYPTO-003:javascript",
+    "VULN-CRYPTO-003:typescript",
+    "VULN-CONFIG-001:javascript"
+  ],
+  "excluded_kb_examples": 67,
+  "excluded_exact_duplicates": 102,
+  "how_to_use": {
+    "dataset": "Score the model on original_code (vuln). Optionally score fixed_code as SAFE. Do not put these rows in the prompt.",
+    "knowledge_base": "YAML catalogue (all 28 types for language L). Do not inject only the gold CWE. Example fields are optional few-shot, never from this dataset."
+  }
+}
