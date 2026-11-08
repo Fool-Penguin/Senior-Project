@@ -27,12 +27,10 @@ after deleting measurements. Both `measure.py` and `derive.py` take `--dataset=N
 
 ### Security snippets (`security/`)
 
-The input `codedee_combined_pairs.jsonl` lives on the `security_analysis` branch (Git LFS). Check that branch out
-as a worktree next to this repo first, then measure:
+The input `../datasets/combined/codedee_combined_pairs.jsonl` is stored in Git LFS. Pull it first, then measure:
 
 ```bash
-git worktree add ../../Senior-security security_analysis
-git -C ../../Senior-security lfs pull --include "datasets/combined/codedee_combined_pairs.jsonl"
+git lfs pull --include "datasets/combined/codedee_combined_pairs.jsonl"
 python -I security/measure_snippets.py   # -> security/results/snippets.csv, functions.csv
 ```
 

@@ -1,9 +1,8 @@
 """Measure the vulnerable (original_code) and fixed (fixed_code) snippets of the combined security dataset.
 
 Usage: python -I 05_derive_threshold/security/measure_snippets.py [path/to/codedee_combined_pairs.jsonl]
-Default input: the security_analysis branch checked out next to this repo:
-    git worktree add ../Senior-security security_analysis
-    git -C ../Senior-security lfs pull --include "datasets/combined/codedee_combined_pairs.jsonl"
+Default input: datasets/combined/codedee_combined_pairs.jsonl of this repo (Git LFS):
+    git lfs pull --include "datasets/combined/codedee_combined_pairs.jsonl"
 Writes results/snippets.csv (one row per snippet) and results/functions.csv (one row per function).
 
 - Exact duplicates removed with the key of split_dataset_kb.py (language + whitespace-collapsed original_code);
@@ -32,7 +31,7 @@ sys.path.insert(0, str(HERE.parent / "scripts"))
 from measure import MAX_BYTES, content_reason  # noqa: E402
 from metrics import duplicated_blocks, measure_snippet  # noqa: E402
 
-DEFAULT_DATA = HERE.parents[2] / "Senior-security" / "datasets" / "combined" / "codedee_combined_pairs.jsonl"
+DEFAULT_DATA = HERE.parents[1] / "datasets" / "combined" / "codedee_combined_pairs.jsonl"
 RESULTS = HERE / "results"
 EXT = {"python": ".py", "javascript": ".js", "typescript": ".ts"}
 # ponytail: regex, not the parser; a string literal holding "// VULNERABLE" would also be cut (none seen)
