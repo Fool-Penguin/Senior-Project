@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDEE - Senior Project I Defense Rehearsal & Teleprompter</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #1e293b;
+            --accent-cyan: #06b6d4;
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 320px;
+            background: #0f172a;
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            padding: 18px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-header h1 {
+            font-size: 1.25rem;
+            color: var(--accent-cyan);
+            font-weight: 700;
+        }
+
+        .sidebar-header p {
+            font-size: 0.75rem;
+            color: var(--text-sub);
+            margin-top: 4px;
+        }
+
+        .timer-card {
+            background: #1e293b;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid var(--border-color);
+        }
+
+        .timer-display {
+            font-size: 1.5rem;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--accent-green);
+        }
+
+        .timer-ctrls button {
+            background: var(--accent-cyan);
+            color: #000;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .timer-ctrls button:hover {
+            opacity: 0.9;
+        }
+
+        .slide-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px 12px;
+        }
+
+        .slide-item {
+            padding: 10px 12px;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+            font-size: 0.85rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .slide-item:hover {
+            background: #1e293b;
+        }
+
+        .slide-item.active {
+            background: rgba(6, 182, 212, 0.15);
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        .speaker-badge {
+            font-size: 0.7rem;
+            font-weight: bold;
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            width: fit-content;
+        }
+
+        .badge-ongsa { background: #0369a1; color: #fff; }
+        .badge-peem { background: #047857; color: #fff; }
+        .badge-brook { background: #b45309; color: #fff; }
+
+        /* Main Stage View */
+        .main-stage {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .topbar {
+            height: 60px;
+            background: #0f172a;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+        }
+
+        .topbar .info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .topbar .title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .topbar .actions button {
+            background: #334155;
+            color: var(--text-main);
+            border: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            margin-left: 8px;
+        }
+
+        .topbar .actions button.active {
+            background: var(--accent-cyan);
+            color: #000;
+            font-weight: bold;
+        }
+
+        .content-area {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* Slide Preview Area */
+        .slide-preview-pane {
+            flex: 1.2;
+            padding: 24px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .slide-card-screen {
+            width: 100%;
+            max-width: 900px;
+            aspect-ratio: 16 / 9;
+            background: #020617;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 36px 44px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            position: relative;
+        }
+
+        .slide-tag {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-cyan);
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .slide-main-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            line-height: 1.3;
+            color: #ffffff;
+            margin-bottom: 24px;
+        }
+
+        .slide-body-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            align-content: start;
+        }
+
+        .slide-card-item {
+            background: #0f172a;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .slide-card-item h4 {
+            color: var(--accent-cyan);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .slide-card-item ul {
+            list-style: none;
+            padding-left: 0;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            line-height: 1.5;
+        }
+
+        .slide-card-item li {
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 14px;
+        }
+
+        .slide-card-item li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-cyan);
+            font-weight: bold;
+        }
+
+        .slide-footer-bar {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-sub);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 12px;
+            margin-top: 16px;
+        }
+
+        /* Teleprompter / Script Pane */
+        .script-pane {
+            flex: 0.8;
+            background: #0f172a;
+            border-left: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .script-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .script-header h3 {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .script-body {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #f1f5f9;
+        }
+
+        .script-body p {
+            margin-bottom: 16px;
+        }
+
+        .script-body strong {
+            color: var(--accent-cyan);
+        }
+
+        .nav-controls {
+            padding: 14px 20px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            background: #090d16;
+        }
+
+        .nav-controls button {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 8px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .nav-controls button:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        /* Q&A Modal / Drawer */
+        .qa-drawer {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 480px;
+            height: 100vh;
+            background: #0f172a;
+            border-left: 2px solid var(--accent-cyan);
+            box-shadow: -10px 0 30px rgba(0,0,0,0.7);
+            z-index: 100;
+            flex-direction: column;
+        }
+
+        .qa-drawer.open {
+            display: flex;
+        }
+
+        .qa-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .qa-header h3 {
+            color: var(--accent-cyan);
+            font-size: 1rem;
+        }
+
+        .qa-close {
+            background: transparent;
+            border: none;
+            color: var(--text-sub);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .qa-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+        }
+
+        .qa-item {
+            background: #1e293b;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .qa-q {
+            padding: 12px 14px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            cursor: pointer;
+            background: #243248;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .qa-a {
+            padding: 14px;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+            border-top: 1px solid var(--border-color);
+            display: none;
+        }
+
+        .qa-a.visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1>CodeDEE</h1>
+            <p>Senior Project I Proposal Defense</p>
+        </div>
+
+        <div class="timer-card">
+            <div>
+                <div style="font-size:0.7rem; color:var(--text-sub);">PRACTICE TIMER</div>
+                <div class="timer-display" id="timer">15:00</div>
+            </div>
+            <div class="timer-ctrls">
+                <button id="timerToggle" onclick="toggleTimer()">START</button>
+                <button onclick="resetTimer()" style="background:#475569; color:#fff; margin-left:4px;">RESET</button>
+            </div>
+        </div>
+
+        <div class="slide-list" id="slideList"></div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-stage">
+        <div class="topbar">
+            <div class="info">
+                <span id="currentSpeakerBadge" class="speaker-badge badge-ongsa">ONGSA</span>
+                <span class="title" id="topSlideTitle">Slide 1: Title & Introduction</span>
+            </div>
+            <div class="actions">
+                <button onclick="toggleQADrawer()" id="qaBtn">🛡️ Defense Q&A Matrix (12)</button>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <!-- Left: Visual Slide Preview Screen -->
+            <div class="slide-preview-pane">
+                <div class="slide-card-screen" id="slideScreen">
+                    <div>
+                        <div class="slide-tag" id="slideTag">INTRODUCTION</div>
+                        <div class="slide-main-title" id="slideMainTitle">CodeDEE: An In-Editor Dual-Lens Engine</div>
+                    </div>
+                    <div class="slide-body-grid" id="slideBodyGrid"></div>
+                    <div class="slide-footer-bar">
+                        <span>Mahidol University Faculty of ICT (2026)</span>
+                        <span id="slidePageNum">Slide 1 / 16</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Spoken Script Teleprompter -->
+            <div class="script-pane">
+                <div class="script-header">
+                    <h3>🎙️ Spoken Teleprompter Script</h3>
+                    <span style="font-size: 0.75rem; color: var(--accent-cyan);" id="timeAllocation">00:00 - 01:00</span>
+                </div>
+                <div class="script-body" id="scriptBody"></div>
+                <div class="nav-controls">
+                    <button onclick="prevSlide()">◀ Previous Slide</button>
+                    <button onclick="nextSlide()" style="background:var(--accent-cyan); color:#000;">Next Slide ▶</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q&A Defense Drawer -->
+    <div class="qa-drawer" id="qaDrawer">
+        <div class="qa-header">
+            <h3>🛡️ Committee Defense Q&A Matrix</h3>
+            <button class="qa-close" onclick="toggleQADrawer()">✕</button>
+        </div>
+        <div class="qa-list" id="qaList"></div>
+    </div>
+
+    <script>
+        const SLIDES = [
+            {
+                id: 1,
+                speaker: "Ongsa",
+                badgeClass: "badge-ongsa",
+                time: "00:00 - 01:00 (1.0 min)",
+                tag: "TITLE & OPENING",
+                title: "CodeDEE: An In-Editor Dual-Lens Engine for Continuous Maintainability and Neuro-Symbolic Security Program Repair",
+                cards: [
+                    { title: "Senior Project I Proposal", items: ["Faculty of Information and Communication Technology", "Mahidol University (Academic Year 2026)"] },
+                    { title: "Investigators & Advisor", items: ["Student Investigators: Ongsa, Thanadon, Brook", "Advisor: Assoc. Prof. Dr. Kookaip"] },
+                    { title: "Core Innovations", items: ["Multi-Paradigm Concrete Syntax Tree (CST) Parsing", "ISO/IEC 25010 8-Metric Maintainability Suite", "Privacy-Preserving On-Device RAG + Local SLMs", "Closed-Loop 4-Gate Automated Program Repair (APR)"] }
+                ],
+                script: `Good morning, respected committee members and advisor. Today, my team members—Thanadon, Brook, and I—are proud to present our capstone project: <strong>'CodeDEE: An In-Editor Dual-Lens Engine for Continuous Maintainability and Neuro-Symbolic Security Program Repair.'</strong><br><br>In modern web development across Python, JavaScript, and TypeScript, development speed often compromises software quality. Developers are caught between legacy static analysis tools that overwhelm them with false alarms and emerging AI assistants that generate hallucinated, unverifiable code. CodeDEE solves this by unifying symbolic concrete syntax tree parsing with local retrieval-augmented language models right inside the code editor. Let's begin by examining why today's developer workflow is fundamentally broken.`
+            },
+            {
+                id: 2,
+                speaker: "Ongsa",
+                badgeClass: "badge-ongsa",
+                time: "01:00 - 02:00 (1.0 min)",
+                tag: "PROBLEM MOTIVATION",
+                title: "The Developer's Dilemma: The Dual Crisis in Modern Web Engineering",
+                cards: [
+                    { title: "1. Pre-Commit Visibility Gap", items: ["Technical debt accumulates invisibly during active typing.", "CI/CD checks evaluate code hours or days later.", "Cost of refactoring increases 10x once merged."] },
+                    { title: "2. SAST Alert Fatigue", items: ["Traditional SAST tools suffer 30%+ false positive rates.", "No actionable, contextual repairs provided.", "Developers ignore up to 80% of static analysis alerts (Johnson et al., ICSE)."] },
+                    { title: "3. The AI Hallucination Trap", items: ["Commercial AI tools (Copilot, Cursor) operate without formal semantic grounding.", "Up to 40% of LLM-generated code contains latent security flaws (Pearce et al., S&P).", "Fixes frequently break syntax or introduce subtler bugs."] }
+                ],
+                script: `Developers face three interconnected crises. First, the <strong>'Pre-Commit Visibility Gap'</strong>: maintainability metrics like Cyclomatic Complexity and Module Coupling are typically computed late in CI/CD pipelines. By the time a developer sees a SonarQube report, their mental context has shifted, making refactoring ten times more expensive.<br><br>Second, <strong>'Alert Fatigue'</strong>: empirical studies by Johnson et al. at ICSE prove that developers ignore up to 80% of static analysis alerts because of high false positive rates and the total lack of actionable fix suggestions.<br><br>Third, when developers turn to modern LLM assistants like GitHub Copilot, they fall into the <strong>'Hallucination Trap'</strong>. Unconstrained LLMs frequently generate code that looks convincing but fails syntax checks or introduces subtle security regressions. Developers need a tool that bridges deterministic analysis with intelligent repair right inside their editor.`
+            },
+            {
+                id: 3,
+                speaker: "Ongsa",
+                badgeClass: "badge-ongsa",
+                time: "02:00 - 03:00 (1.0 min)",
+                tag: "STATE OF THE ART",
+                title: "Competitive Positioning: Where Existing Tools Fall Short",
+                cards: [
+                    { title: "Existing Tool Paradigms", items: ["SonarQube / SQALE: Comprehensive metrics, but operates strictly as a delayed CI gate with zero automated repair.", "Semgrep / CodeQL: Powerful pattern matching, but high alert fatigue and no multi-gate patch verification.", "GitHub Copilot Autofix: Cloud-dependent closed source; leaks private intellectual property to external servers."] },
+                    { title: "The CodeDEE Breakthrough", items: ["In-Editor & Sub-Second: Concrete Syntax Tree parsing executes continuously as the developer types.", "Dual-Lens Synthesis: Combines ISO/IEC 25010 maintainability with CWE security auditing.", "Air-Gapped Privacy: On-device quantized SLMs run locally via Ollama.", "Closed-Loop Multi-Gate Verification: Candidate patches are verified against syntax, taint, and regression gates."] }
+                ],
+                script: `When we survey the state of the art, we observe a polarized ecosystem. On the left, enterprise SAST engines like SonarQube and CodeQL excel at deterministic rule enforcement, but they remain isolated in CI pipelines and offer no automated fix synthesis. On the other extreme, cloud-based AI tools like GitHub Copilot Autofix offer remediation, but they violate enterprise privacy by sending proprietary code to third-party cloud servers, and they lack local deterministic verification.<br><br>CodeDEE occupies the vacant, high-value intersection: continuous, in-editor execution; dual-lens maintainability and security; local privacy-preserving SLM reasoning; and closed-loop multi-gate patch validation. Let us examine how CodeDEE's architecture accomplishes this.`
+            },
+            {
+                id: 4,
+                speaker: "Ongsa",
+                badgeClass: "badge-ongsa",
+                time: "03:00 - 04:00 (1.0 min)",
+                tag: "PROPOSED ARCHITECTURE",
+                title: "The CodeDEE Architecture: Unified Dual-Lens In-Editor Engine",
+                cards: [
+                    { title: "Core Multi-Language Parser", items: ["Tree-sitter Concrete Syntax Tree (CST) engine.", "Multi-language: Python, JavaScript, TypeScript.", "Incremental, error-tolerant parsing of incomplete code.", "Constructs CFG, DFG, and Call Graph via NetworkX in memory."] },
+                    { title: "Lens 1: Maintainability Engine", items: ["Standardized under ISO/IEC 25010 Quality Model.", "Evaluates 8 distinct structural metrics in real time.", "Instant visual feedback on Cyclomatic & Cognitive Complexity.", "Computes Efferent & Afferent Module Coupling to catch architectural rot."] },
+                    { title: "Lens 2: Neuro-Symbolic Security", items: ["Symbolic Taint Analysis tracks sources and sinks across 26 CWEs.", "Dense ChromaDB Vector Store with 84 verified CWE remediation records.", "Local Small Language Models (SLMs) generate grounded, context-aware patches.", "4-Gate Sandbox Verifier validates syntax, taint removal, and maintainability."] }
+                ],
+                script: `CodeDEE is architectured as an in-editor dual-lens engine built on top of a multi-language parsing foundation. At its core, Tree-sitter incrementally parses code into a Concrete Syntax Tree, meaning it maintains full source fidelity and parses incomplete, in-progress code without crashing.<br><br>From this parsed representation, CodeDEE activates two complementary lenses. Lens 1 is our Maintainability Engine: it evaluates eight structural metrics mapped to ISO/IEC 25010 to provide instantaneous pre-commit quality analytics. Lens 2 is our Neuro-Symbolic Security Engine: it uses symbolic taint walking to identify vulnerable flows across 26 CWE classes, grounds a local Small Language Model with verified ChromaDB RAG remediation patterns, and validates candidate fixes through a 4-gate verification pipeline. Let's inspect our project objectives and scope.`
+            },
+            {
+                id: 5,
+                speaker: "Ongsa",
+                badgeClass: "badge-ongsa",
+                time: "04:00 - 05:00 (1.0 min)",
+                tag: "PROJECT OBJECTIVES & SCOPE",
+                title: "Target Deliverables for Semester 1 & Semester 2",
+                cards: [
+                    { title: "Primary Project Objectives", items: ["1. In-Editor Dual-Lens Engine: Continuous analysis within sub-second response latency inside VS Code.", "2. Standardize Maintainability Suite: Implement 8 ISO/IEC 25010 metrics across Python, JS, and TS.", "3. Privacy-Preserving Security Pipeline: Symbolic taint walking + ChromaDB RAG + local SLMs via Ollama.", "4. Multi-Gate Verifier: Reject hallucinated or regressive fixes using syntax, taint, and complexity gates.", "5. Empirical Benchmark & SLM Evaluation: 957 cleansed vulnerability samples evaluated across 9 models."] },
+                    { title: "Defined Project Scope", items: ["Target Languages: Python, JavaScript, TypeScript (>60% of modern web apps).", "Hardware Constraint: Consumer-grade hardware (NVIDIA RTX GPUs <=16 GB VRAM).", "Vulnerability Coverage: 26 CWE classifications spanning OWASP Top 10 Web and LLM Applications.", "Air-Gapped Privacy: 100% on-device local execution; zero proprietary code transmitted to cloud."] }
+                ],
+                script: `Our project objectives are tightly scoped and measurable. In Semester 1, our primary milestones were curating an authentic multi-language vulnerability benchmark, implementing the core parsing and maintainability suite, designing the ChromaDB RAG architecture, and systematically evaluating nine local SLMs to discover the optimal deployment model under strict consumer hardware constraints.<br><br>Our project strictly focuses on Python, JavaScript, and TypeScript, and guarantees 100% air-gapped local execution without transmitting a single token of code to the cloud. I will now hand the floor to Thanadon to dive into the theoretical background and methodology of our two lenses.`
+            },
+            {
+                id: 6,
+                speaker: "Thanadon",
+                badgeClass: "badge-peem",
+                time: "05:00 - 06:15 (1.25 min)",
+                tag: "THEORETICAL FOUNDATIONS",
+                title: "Concrete Syntax Trees vs. AST & Intermediate Graph Modeling",
+                cards: [
+                    { title: "CST vs. Traditional AST (Tree-sitter)", items: ["AST Fragility: Standard compilers (Python ast, Babel) discard comments, whitespace, and punctuation; fail completely on syntax errors during active typing.", "Concrete Syntax Tree (CST): Preserves 100% of concrete tokens, byte offsets, and trivia necessary for non-destructive code refactoring.", "Incremental GLR Parsing: Reparses only modified subtrees in sub-millisecond time ($O(\\log N)$ vs $O(N)$ reparse).", "Polyglot Query Language: Unified S-expression queries work uniformly across Python, JS, and TS."] },
+                    { title: "Intermediate Graphs (NetworkX)", items: ["Control-Flow Graph (CFG): Directed graph $G_{CFG} = (V, E)$ modeling execution branch points (if, while, for, catch) for McCabe Complexity.", "Data-Flow Graph (DFG): Models variable definition-use chains ($def \\to use$) essential for tracing untrusted inputs into sinks.", "Call Graph (CG): Directed inter-procedural graph linking function invocations to declarations across modules."] }
+                ],
+                script: `Thank you, Ongsa. To understand why CodeDEE operates so effectively inside the code editor, we must look at how we represent code. Traditional linters rely on Abstract Syntax Trees. But ASTs have a fatal flaw for interactive development: they discard whitespace and comments, and if the developer has a temporary syntax error—such as an unclosed parenthesis—the entire parser crashes.<br><br>CodeDEE solves this by using Tree-sitter's Concrete Syntax Tree (CST) paradigm. CSTs retain every single byte, comment, and token, and utilize generalized LR error-recovery to parse incomplete code without crashing. Furthermore, Tree-sitter performs incremental parsing in sub-millisecond time. From this CST, we synthesize three in-memory graph structures via NetworkX: the Control-Flow Graph for decision logic, the Data-Flow Graph for def-use tracing, and the Call Graph for inter-procedural mapping. Let's see how Lens 1 uses this to compute maintainability.`
+            },
+            {
+                id: 7,
+                speaker: "Thanadon",
+                badgeClass: "badge-peem",
+                time: "06:15 - 07:30 (1.25 min)",
+                tag: "METHODOLOGY - LENS 1",
+                title: "Lens 1: Standardized Multi-Paradigm Maintainability Engine",
+                cards: [
+                    { title: "Cognitive & Branch Complexity", items: ["McCabe Cyclomatic Complexity (CC): $M = E - N + 2P$, measuring linearly independent execution paths.", "Campbell's Cognitive Complexity: Penalizes nested conditionals, breaks in linear flow, and recursive loops.", "Visual In-Editor Highlighting: Flags high-complexity functions before commit."] },
+                    { title: "Volume & Sizing Metrics", items: ["Source Lines of Code (SLOC): Filtered logical executable lines excluding comments and blanks.", "Halstead Volume ($V$): Information-theoretic size based on distinct operators and operands.", "Maintainability Index (MI): Standard composite: $171 - 5.2\\ln V - 0.23 CC - 16.2\\ln SLOC$."] },
+                    { title: "Modularity & Coupling Metrics", items: ["Efferent Coupling ($C_e$): Number of outgoing external module dependencies.", "Afferent Coupling ($C_a$): Number of incoming dependent modules.", "Instability Factor ($I$): $I = C_e / (C_a + C_e)$, detecting fragile, tightly coupled modules."] }
+                ],
+                script: `Lens 1 is our Maintainability Engine, formally mapped to the ISO/IEC 25010 Quality Model. Rather than reporting a single arbitrary score, CodeDEE computes an eight-metric maintainability suite grouped into three critical dimensions.<br><br>First, Cognitive and Branch Complexity: we compute both McCabe Cyclomatic Complexity from the CFG and Campbell Cognitive Complexity, which specifically penalizes deep nesting that exhausts human working memory. Second, Volume and Sizing: we measure executable SLOC, Halstead Volume, and the composite Maintainability Index. Third, Modularity and Coupling: by traversing import declarations across the project, we compute Efferent and Afferent coupling to identify architectural instability. All eight metrics execute in under 15 milliseconds per file, giving developers instantaneous feedback. Now let's explore Lens 2: our security audit pipeline.`
+            },
+            {
+                id: 8,
+                speaker: "Thanadon",
+                badgeClass: "badge-peem",
+                time: "07:30 - 08:45 (1.25 min)",
+                tag: "METHODOLOGY - LENS 2",
+                title: "Lens 2: Neuro-Symbolic Security Audit & Local RAG Knowledge Base",
+                cards: [
+                    { title: "1. Symbolic Taint Walker", items: ["Deterministic AST queries search for known sources and sinks.", "Covers 26 CWE classes (SQLi, XSS, Command Injection, SSRF, Deserialization).", "Extracts untrusted parameter flows without heuristic guesswork.", "Reduces candidate triage space before engaging the neural model."] },
+                    { title: "2. Dense ChromaDB RAG", items: ["Local vector knowledge base containing 84 verified CWE remediation records.", "Embedded via Sentence-T5 dense representations.", "Retrieves top-$k$ contextual exemplars with secure coding patterns and mitigation rules.", "Prevents out-of-distribution hallucinations."] },
+                    { title: "3. Neural SLM Oracle", items: ["Quantized local models (Qwen2.5-Coder, DeepSeek-Coder, Llama 3.1).", "Operates completely on-device via Ollama.", "Strict structured JSON output format with reasoning and exact CWE classification.", "Zero cloud latency or data privacy risk."] }
+                ],
+                script: `Lens 2 introduces our Neuro-Symbolic Security Audit Engine. Purely symbolic tools suffer from high false positives because they lack contextual understanding, while purely neural tools hallucinate. CodeDEE combines the best of both paradigms.<br><br>First, our Symbolic Taint Walker statically extracts source-to-sink candidate flows using Tree-sitter queries. Second, when a candidate flaw is detected, CodeDEE queries an on-device ChromaDB vector database populated with 84 curated CWE remediation entries. This retrieves authentic mitigation strategies and safe coding patterns. Third, this retrieved context is injected into a specialized prompt fed to a local Small Language Model running via Ollama. The model performs deep contextual triage and synthesizes a candidate patch without any code ever leaving the developer's laptop.`
+            },
+            {
+                id: 9,
+                speaker: "Thanadon",
+                badgeClass: "badge-peem",
+                time: "08:45 - 10:00 (1.25 min)",
+                tag: "METHODOLOGY - STAGE 4",
+                title: "Stage 4: Closed-Loop Multi-Gate Auto-Fix Verifier",
+                cards: [
+                    { title: "Gate 1: AST Validity", items: ["Tree-sitter error check.", "Ensures patch is syntactically valid in target language.", "Rejects malformed tokens or incomplete statements.", "Pass Condition: `ERROR_NODES == 0`."] },
+                    { title: "Gate 2: Taint Removal", items: ["Symbolic Taint Walker re-evaluates patched AST.", "Confirms that original source-to-sink flow is severed or sanitized.", "Pass Condition: Original CWE flow eliminated."] },
+                    { title: "Gate 3: Regression Guard", items: ["Simulated unit test execution in an isolated sandbox.", "Ensures functional behavior is preserved without side effects.", "Pass Condition: Zero existing test suite failures."] },
+                    { title: "Gate 4: Maintainability", items: ["Lens 1 recalculates Cyclomatic Complexity on patch.", "Guarantees the fix does not introduce architectural debt.", "Pass Condition: $\\Delta CC \\le 0$ (Complexity does not increase)."] }
+                ],
+                script: `The cornerstone of CodeDEE's reliability is Stage 4: our Closed-Loop Multi-Gate Verifier. When an LLM proposes a patch, CodeDEE does NOT immediately present it to the developer. Instead, the patch must clear four automated verification gates in an isolated sandbox.<br><br>Gate 1 verifies AST Syntax: if the patch contains malformed syntax, it is instantly rejected. Gate 2 re-runs the Symbolic Taint Walker to prove that the vulnerability has actually been neutralized. Gate 3 executes automated regression tests to verify that normal functionality isn't broken. And Gate 4 re-runs Lens 1 to ensure Cyclomatic Complexity has not worsened. Only candidate patches that pass all four gates are presented as in-editor 1-click diffs. I will now hand over to Brook to present our empirical evaluation and benchmark findings.`
+            },
+            {
+                id: 10,
+                speaker: "Brook",
+                badgeClass: "badge-brook",
+                time: "10:00 - 11:15 (1.25 min)",
+                tag: "DATASET & BENCHMARK",
+                title: "Empirical Foundation: Dataset & Knowledge Base Construction",
+                cards: [
+                    { title: "Curating the 957-Sample Benchmark", items: ["Sourced from CVEfixes, CyberSecEval, and genuine open-source repositories.", "Rigorous Cleansing Protocol: Filtered extreme outliers (>4,000 characters up to 17M chars) that crashed context windows.", "Micro-Flaw Preservation: Restored 29 valid 1-line security flaws (<30 chars, e.g. `eval(val)`).", "Language Distribution: JavaScript (423 / 44.2%), Python (355 / 37.1%), TypeScript (179 / 18.7%).", "Coverage: 26 distinct CWE classes reflecting OWASP Top 10 web vulnerabilities."] },
+                    { title: "ChromaDB Knowledge Base", items: ["84 Verified CWE Remediation Exemplars.", "Dense vector index embedded using Sentence-T5.", "Provides few-shot secure mitigation patterns for SLM prompt grounding."] }
+                ],
+                script: `Thank you, Thanadon. To empirically validate CodeDEE, we established a rigorous benchmark dataset and vector knowledge base. We mined vulnerability instances from CVEfixes and CyberSecEval across Python, JavaScript, and TypeScript.<br><br>During data preparation, we observed extreme context-poisoning outliers in raw datasets—some minified single-line files exceeded 17 million characters! We established an automated cleaning pipeline capping samples at 4,000 characters while carefully inspecting and preserving valid one-line micro-flaws under 30 characters, such as insecure deserialization calls. The final benchmark consists of exactly 957 verified samples across 26 CWE classes: 423 in JavaScript, 355 in Python, and 179 in TypeScript. In parallel, we built a dense ChromaDB knowledge base containing 84 verified CWE remediation records. Let's look at our evaluation framework.`
+            },
+            {
+                id: 11,
+                speaker: "Brook",
+                badgeClass: "badge-brook",
+                time: "11:15 - 12:30 (1.25 min)",
+                tag: "EVALUATION SETUP",
+                title: "Experimental Setup: Hardware, Models, & Dual Evaluation Regimes",
+                cards: [
+                    { title: "Hardware Infrastructure", items: ["Host Machine: NVIDIA GeForce RTX 5080 Laptop GPU (16 GB GDDR7 VRAM).", "Compute Host: 32 GB DDR5 RAM, Intel Core Ultra 9 / AMD Ryzen 9.", "Inference Runtime: Ollama on-device runtime with Flash Attention.", "Quantization: 4-bit and 8-bit quantized weights."] },
+                    { title: "9 Model Candidates Evaluated", items: ["Qwen2.5-Coder Family: 1.5B, 7B, 14B, 32B.", "DeepSeek-Coder: 6.7B Instruct.", "Llama 3.1: 8B Instruct.", "CodeLlama: 7B Instruct.", "General-Purpose SLMs: Qwen2.5-1.5B, GPT-OSS-20B.", "Enables parameter scaling analysis from 1.5B to 32B."] },
+                    { title: "Dual Evaluation Regimes", items: ["1. Forced-CWE Classification: Model MUST select the most applicable CWE from the 26-class taxonomy. Tests upper-bound semantic classification capacity.", "2. Standard Triage: Model is permitted to output CWE-NONE if taint context is ambiguous. Tests real-world conservative triage behavior."] }
+                ],
+                script: `To identify the optimal Small Language Model for in-editor deployment, we designed a comprehensive evaluation suite executed on consumer hardware: an NVIDIA GeForce RTX 5080 Laptop GPU with 16 GB of VRAM. We evaluated nine open-weights model candidates ranging from 1.5 billion to 32 billion parameters.<br><br>Crucially, we evaluated each model under two distinct regimes. Under Regime 1, 'Forced-CWE Classification', the model is forced to map the code snippet to one of the 26 catalogue CWEs, measuring its theoretical discriminative capacity. Under Regime 2, 'Standard Triage', the model can report CWE-NONE if single-file taint evidence is incomplete, mimicking real-world production triage. Let's look at the results.`
+            },
+            {
+                id: 12,
+                speaker: "Brook",
+                badgeClass: "badge-brook",
+                time: "12:30 - 13:45 (1.25 min)",
+                tag: "RESULTS & LEADERBOARD",
+                title: "Empirical Findings: Master Leaderboard & Deployment Trade-Offs",
+                cards: [
+                    { title: "Master Evaluation Leaderboard (N = 957)", items: ["Qwen2.5-Coder-14B: 59.27% Forced Acc | 39.50% Standard Acc | 4.64s Latency (TOP SWEET SPOT)", "Qwen2.5-Coder-32B: 59.27% Forced Acc | 47.09% Standard Acc | 17.51s Latency (Highest Acc, High Latency)", "GPT-OSS-20B: 58.51% Forced Acc | 43.20% Standard Acc | 11.20s Latency", "Llama-3.1-8B: 55.40% Forced Acc | 46.12% Standard Acc | 2.80s Latency", "Qwen2.5-Coder-7B: 53.80% Forced Acc | 39.76% Standard Acc | 2.50s Latency", "DeepSeek-Coder-6.7B: 52.10% Forced Acc | 37.40% Standard Acc | 2.30s Latency", "Qwen2.5-Coder-1.5B: 41.20% Forced Acc | 28.10% Standard Acc | 0.85s Latency"] },
+                    { title: "Key Empirical Takeaways", items: ["1. The 14B Sweet Spot: Qwen2.5-Coder-14B matches the 32B model's top accuracy (59.27%) while being nearly 4x faster (4.64s vs 17.51s) and comfortably fitting in 16 GB VRAM.", "2. Parameter Scaling Law: Accuracy scales predictably with parameter count: 1.5B (41%) -> 7B (53%) -> 14B (59%).", "3. Standard Triage Conservatism: In Standard Triage, top models output CWE-NONE in 32-37% of cases because taint sources originate across file boundaries. This empirically justifies our Semester 2 Call Graph plan!", "4. Language Disparity: Models achieve ~64% accuracy in Python, ~58% in JavaScript, and ~52% in TypeScript."] }
+                ],
+                script: `Here are the headline results from our 9-model full-scale benchmark. Under Forced-CWE classification, Qwen2.5-Coder-14B achieved 59.27% accuracy, matching the massive 32-billion parameter model identically, but executing nearly four times faster—4.64 seconds per sample compared to 17.51 seconds. It fits comfortably within 10 gigabytes of VRAM, making it our designated deployment model for CodeDEE.<br><br>Notice also the drop from Forced-CWE to Standard Triage: top models drop by 12 to 19 percentage points because they conservatively predict CWE-NONE. When we audited these cases, we discovered that in modern web frameworks like Express or FastAPI, the taint source originates in a routing or middleware file outside the inspected snippet! This is a pivotal empirical insight: it proves that single-file SLM analysis requires the inter-procedural Call Graph we are building in Semester 2. Let's look at the confusion matrix.`
+            },
+            {
+                id: 13,
+                speaker: "Brook",
+                badgeClass: "badge-brook",
+                time: "13:45 - 15:00 (1.25 min)",
+                tag: "DIAGNOSTIC DEEP DIVE",
+                title: "Confusion Matrix Analysis: Diagnostics on Qwen2.5-Coder-14B",
+                cards: [
+                    { title: "Diagnostic Confusion Matrix Insights", items: ["High Precision Vulnerabilities: Near-perfect diagonal precision on syntactically distinct flaws: CWE-79 (XSS, >85% F1), CWE-89 (SQLi, >82% F1), CWE-78 (OS Command Injection, >80% F1).", "Primary Source of False Negatives: The vertical CWE-NONE column accounts for >80% of misclassifications, confirming model conservatism rather than hallucination.", "Semantic Confusion Pairs: Minor cross-classification between CWE-22 (Path Traversal) and CWE-78 (Command Injection) due to shared shell path arguments.", "In-Context Grounding Impact: ChromaDB RAG examples improved low-resource CWEs (CWE-502 Deserialization, CWE-918 SSRF) by +18.4%."] },
+                    { title: "Verification Conclusion", items: ["Strong diagonal clustering across top 10 CWE classes.", "Dense concentration in CWE-NONE column confirms semantic conservatism.", "Validates that models do not invent false vulnerability classes."] }
+                ],
+                script: `This slide illustrates the multiclass confusion matrix for our primary deployment model, Qwen2.5-Coder-14B across all 26 classes. Notice the dense, sharp diagonal concentration along primary web vulnerabilities: Cross-Site Scripting (CWE-79), SQL Injection (CWE-89), and Command Injection (CWE-78) all exhibit precision exceeding 80%.<br><br>Critically, observe that errors are NOT scattered randomly across other CWE classes: the errors are overwhelmingly concentrated in the vertical CWE-NONE column. In other words, when the model makes an error, it almost never hallucinates a false vulnerability type—it simply chooses not to alert when cross-file context is truncated. This confirms that our neuro-symbolic design inherently suppresses false alarms. I now return the presentation to Ongsa to conclude with our project boundary and Semester 2 roadmap.`
+            },
+            {
+                id: 14,
+                speaker: "Ongsa",
+                badgeClass: "badge-ongsa",
+                time: "15:00 - 16:00 (1.0 min)",
+                tag: "STATUS & BOUNDARIES",
+                title: "Implementation Status: Semester 1 Completed vs. Semester 2 Scope",
+                cards: [
+                    { title: "Completed in Semester 1 (Senior Project I)", items: ["✅ Stage 1 & 2: Tree-sitter CST parsing across Python, JS, and TS.", "✅ Stage 2: Control-Flow and Data-Flow Graph generation (NetworkX).", "✅ Stage 3A: Complete 8-metric maintainability engine (ISO/IEC 25010).", "✅ Stage 3B: Symbolic Taint Walker covering 26 CWE classes.", "✅ Stage 3B: ChromaDB Vector Store with 84 verified CWE remediation records.", "✅ Stage 3B: Full-scale benchmark evaluation of 9 local SLMs on 957 samples."] },
+                    { title: "Scheduled for Semester 2 (Senior Project II)", items: ["⏳ Inter-procedural Call Graph: Project-wide symbol resolution to link cross-file taint flows.", "⏳ Stage 4 APR Sandbox: Full automated implementation of Gates 1-4 for patch synthesis and regression testing.", "⏳ Stage 5 & 6 VS Code Extension: Interactive language server protocol (LSP) UI and in-editor diff webviews.", "⏳ Developer User Study: Controlled human evaluation ($N = 24$) measuring task completion speed and alert fatigue reduction."] }
+                ],
+                script: `Thank you, Brook. To ensure complete academic clarity, this slide establishes the boundary between what has been completed in Senior Project I and our plan for Senior Project II. In Semester 1, we have built the entire analytical engine: the Tree-sitter CST parser, the CFG and DFG graph generators, the complete 8-metric maintainability engine, the 26-class taint walker, the ChromaDB knowledge base, and the complete 9-model empirical benchmark.<br><br>In Semester 2, we will complete the remaining stages: building the inter-procedural Call Graph to resolve cross-file taints, formalizing the 4-gate automated patch verification sandbox, packaging the system into a high-performance VS Code extension, and conducting a controlled developer user study with 24 programmers. Let's inspect our 16-week execution plan.`
+            },
+            {
+                id: 15,
+                speaker: "Ongsa",
+                badgeClass: "badge-ongsa",
+                time: "16:00 - 17:00 (1.0 min)",
+                tag: "PROJECT TIMELINE & RISKS",
+                title: "Semester 2 Work Plan & Risk Mitigation Strategies",
+                cards: [
+                    { title: "Semester 2 Milestone Schedule (16 Weeks)", items: ["Weeks 1-4 (Phase 1): Inter-procedural Call Graph construction and project-wide symbol resolution.", "Weeks 5-8 (Phase 2): Automated Program Repair (APR) Multi-Gate Verification Sandbox (Gates 1-4).", "Weeks 9-12 (Phase 3): VS Code Extension development, LSP integration, and inline decoration UI.", "Weeks 13-16 (Phase 4): Empirical repair benchmarking, developer user study (N=24), and final thesis defense."] },
+                    { title: "Technical Risks & Proactive Mitigations", items: ["Risk 1: Project-Wide Call Graph Scalability (High). Mitigation: Depth-limited traversal (max_depth=4) and incremental graph caching.", "Risk 2: Multi-Gate Patch Rejection Rate (Med). Mitigation: 2-stage multi-sample decoding (sample 3-4 candidates) with few-shot exemplars.", "Risk 3: Local GPU Resource Constraints (Med). Mitigation: Strict 4-bit AWQ quantization and asynchronous worker execution."] }
+                ],
+                script: `Our work plan for Semester 2 is structured into four sequential, four-week phases. Phase 1 focuses on the Call Graph engine. Phase 2 develops the 4-gate sandbox verifier. Phase 3 builds the user-facing VS Code extension. And Phase 4 conducts our rigorous empirical user study.<br><br>We have also mapped out proactive mitigation strategies for all technical risks. For example, to ensure project-wide Call Graph generation remains sub-second, we implement incremental caching and depth-limited traversal. To handle patch rejections at Gate 4, we generate multiple candidate samples and select the optimal complexity-reducing patch. Let us conclude.`
+            },
+            {
+                id: 16,
+                speaker: "Ongsa",
+                badgeClass: "badge-ongsa",
+                time: "17:00 - 18:00 (1.0 min)",
+                tag: "CONCLUSION & DEFENSE",
+                title: "CodeDEE: Conclusion & Summary",
+                cards: [
+                    { title: "Core Summary", items: ["Dual-Lens Synthesis: Unifies ISO/IEC 25010 maintainability with neuro-symbolic security auditing.", "Privacy-Preserving AI: Leverages local quantized SLMs (Qwen2.5-Coder-14B) on consumer GPUs without cloud leakage.", "Grounded & Verifiable: Dense ChromaDB RAG + 4-Gate automated verification eliminates alert fatigue and hallucinations.", "Empirically Validated: 957 cleaned samples across 26 CWE classes prove 59.3% accuracy at sub-5s latency."] },
+                    { title: "Open Floor for Questions", items: ["Thank you for your attention.", "We welcome questions, critiques, and guidance from the committee."] }
+                ],
+                script: `In conclusion, CodeDEE bridges the critical gap between static analysis and automated program repair. By pairing Tree-sitter's concrete syntax tree with local retrieval-augmented language models, CodeDEE delivers continuous, private, and verifiable code quality intelligence right inside the developer's pre-commit workflow.<br><br>Our Senior Project I accomplishments prove the technical feasibility and empirical advantage of this approach. We thank our advisor, Assoc. Prof. Dr. Kookaip, and the committee members for your time and guidance. We are now open and eager to answer your questions.`
+            }
+        ];
+
+        const QA_ITEMS = [
+            {
+                q: "1. 100% Vulnerable Dataset vs. False Positive Rates",
+                a: "In Semester 1, our goal was to measure discriminative classification capacity across 26 CWEs. The drop under Standard Triage to 32-37% CWE-NONE proves models are conservative and do not hallucinate false alarms on ambiguous code. Furthermore, for Semester 2, we have curated dataset_v4 (1,911 samples) pairing vulnerable code with safe patches to compute classical FPR/FDR."
+            },
+            {
+                q: "2. Call Graph Scalability vs. In-Editor Sub-Second Latency",
+                a: "We do NOT perform full whole-program analysis on every keystroke. Traversal is strictly demand-driven: it triggers only when a known sink is touched, performing a backward slice with depth-limit max_depth <= 4. In addition, Tree-sitter's incremental re-parsing updates only modified subtrees in <1ms."
+            },
+            {
+                q: "3. Gate 4 Delta CC <= 0 vs. Sanitization Guard Branches",
+                a: "Secure refactoring prioritizes safe parameterized APIs (like prepared statements in SQLi) where Delta CC = 0. Furthermore, Cognitive Complexity does not penalize linear guard returns, and Gate 4 allows controlled slack (Delta CC <= +1) strictly when Gate 2 confirms the branch is an approved schema validator."
+            },
+            {
+                q: "4. Local 14B SLM vs. Cloud Frontier Models (Claude/GPT-4o)",
+                a: "Enterprise software teams have strict legal IP policies against cloud transmission of proprietary code. CodeDEE guarantees 100% air-gapped data sovereignty with zero marginal inference cost. The 4.6s latency occurs only during on-demand fix generation, while continuous keystroke checks take <15ms."
+            },
+            {
+                q: "5. Concrete Syntax Tree (CST) Overhead vs. Standard AST",
+                a: "Standard compiler ASTs crash on syntax errors during active typing. Tree-sitter's CST uses Generalized LR (GLR) error recovery to parse incomplete code. Furthermore, CSTs preserve 100% of formatting, byte offsets, and trivia, enabling non-destructive surgical patch application without wiping git history."
+            },
+            {
+                q: "6. RAG Knowledge Base & Prompt Injection Attacks (OWASP LLM01)",
+                a: "Code is sandboxed inside strict XML delimiters and processed purely as data with structured JSON grammar sampling. More importantly, Gate 2 (Symbolic Taint Walker) is a deterministic AST evaluator; comments cannot alter data-flow graphs, ensuring prompt injections cannot fool verification."
+            },
+            {
+                q: "7. Why TypeScript (~52%) Performed Worse Than Python (~64%)",
+                a: "Two factors: pre-training corpora (The Stack v2) contain far more plain JS/Python than TypeScript, and TypeScript's verbose type annotations expand token lengths by 40-60%, diluting attention. In Semester 2, we implement an AST type-stripping pre-pass to resolve this."
+            },
+            {
+                q: "8. McCabe & Halstead vs. Raw SLOC Correlation",
+                a: "We included Campbell's Cognitive Complexity specifically because it measures architectural understandability (nesting and recursion) rather than lines of code. We also include Efferent/Afferent Coupling, which measures modularity independently of intra-function line counts."
+            },
+            {
+                q: "9. Developer User Study (N=24) Protocol & Confounding Variables",
+                a: "We use a Within-Subjects Latin Square design where developers solve tasks with and without CodeDEE in counterbalanced order. We stratify by years of experience, measure Time-to-Remediation (TTR) and Patch Acceptance Rate, and apply paired Wilcoxon signed-rank significance testing (p < 0.05)."
+            },
+            {
+                q: "10. Business Logic Flaws & IDOR (CWE-639) without Explicit Sinks",
+                a: "Data-flow flaws (SQLi, Command Injection) have dangerous sinks. Business logic flaws represent missing authorization checks between identity and resource. In Semester 1, CodeDEE flags controller endpoints accessing persistence layers without auth middleware. In Semester 2, RAG exemplars ground SLMs with RBAC/ABAC authorization schemas to flag missing tenant checks."
+            },
+            {
+                q: "11. Fallback Strategy for Low-End Laptops (8GB RAM / Integrated GPUs)",
+                a: "CodeDEE uses a multi-tier execution strategy: Lens 1 Maintainability and the Symbolic Taint Walker run purely on CPU in <5ms with zero GPU required. For low-RAM hardware, CodeDEE supports Tier 2 (Qwen2.5-Coder-7B in 4.5GB) and Tier 3 (Qwen2.5-Coder-1.5B running on CPU in <1GB). Alternatively, the VS Code client can connect over LAN to a shared departmental workstation."
+            },
+            {
+                q: "12. Preventing Test-Suite Overfitting in Gate 3 APR Verification",
+                a: "Traditional APR relies purely on test pass/fail, enabling 'plausible' patches that delete logic or hardcode returns. CodeDEE prevents this via cross-verification: Gate 4 (Lens 1) flags severe drops in Halstead Volume and SLOC, or spikes in Cognitive Complexity. In Semester 2 Phase 2, we introduce automated synthetic mutation testing to ensure assertions genuinely kill mutants."
+            }
+        ];
+
+        let currentSlideIdx = 0;
+        let timerSeconds = 15 * 60;
+        let timerInterval = null;
+
+        function renderSlideList() {
+            const listEl = document.getElementById("slideList");
+            listEl.innerHTML = "";
+            SLIDES.forEach((s, idx) => {
+                const item = document.createElement("div");
+                item.className = `slide-item ${idx === currentSlideIdx ? "active" : ""}`;
+                item.onclick = () => goToSlide(idx);
+
+                item.innerHTML = `
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span class="speaker-badge ${s.badgeClass}">${s.speaker.toUpperCase()}</span>
+                        <span style="font-size:0.7rem; color:var(--text-sub);">Slide ${s.id}</span>
+                    </div>
+                    <div style="font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+                        ${s.title}
+                    </div>
+                `;
+                listEl.appendChild(item);
+            });
+        }
+
+        function renderCurrentSlide() {
+            const s = SLIDES[currentSlideIdx];
+
+            // Update Topbar
+            const badge = document.getElementById("currentSpeakerBadge");
+            badge.className = `speaker-badge ${s.badgeClass}`;
+            badge.innerText = s.speaker.toUpperCase();
+            document.getElementById("topSlideTitle").innerText = `Slide ${s.id}: ${s.title}`;
+            document.getElementById("timeAllocation").innerText = s.time;
+
+            // Update Visual Screen
+            document.getElementById("slideTag").innerText = s.tag;
+            document.getElementById("slideMainTitle").innerText = s.title;
+            document.getElementById("slidePageNum").innerText = `Slide ${s.id} / ${SLIDES.length}`;
+
+            const grid = document.getElementById("slideBodyGrid");
+            grid.innerHTML = "";
+            s.cards.forEach(c => {
+                const cardEl = document.createElement("div");
+                cardEl.className = "slide-card-item";
+                let itemsHtml = c.items.map(item => `<li>${item}</li>`).join("");
+                cardEl.innerHTML = `<h4>${c.title}</h4><ul>${itemsHtml}</ul>`;
+                grid.appendChild(cardEl);
+            });
+
+            // Update Script
+            document.getElementById("scriptBody").innerHTML = `<p>${s.script}</p>`;
+
+            renderSlideList();
+        }
+
+        function goToSlide(idx) {
+            currentSlideIdx = Math.max(0, Math.min(idx, SLIDES.length - 1));
+            renderCurrentSlide();
+        }
+
+        function nextSlide() {
+            if (currentSlideIdx < SLIDES.length - 1) {
+                goToSlide(currentSlideIdx + 1);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlideIdx > 0) {
+                goToSlide(currentSlideIdx - 1);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowRight" || e.key === "PageDown" || e.key === " ") {
+                nextSlide();
+            } else if (e.key === "ArrowLeft" || e.key === "PageUp") {
+                prevSlide();
+            }
+        });
+
+        // Timer Logic
+        function updateTimerDisplay() {
+            const m = Math.floor(timerSeconds / 60);
+            const s = timerSeconds % 60;
+            const el = document.getElementById("timer");
+            el.innerText = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+            if (timerSeconds <= 120) {
+                el.style.color = "var(--accent-red)";
+            } else if (timerSeconds <= 300) {
+                el.style.color = "#f59e0b";
+            } else {
+                el.style.color = "var(--accent-green)";
+            }
+        }
+
+        function toggleTimer() {
+            const btn = document.getElementById("timerToggle");
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+                btn.innerText = "START";
+                btn.style.background = "var(--accent-cyan)";
+            } else {
+                timerInterval = setInterval(() => {
+                    if (timerSeconds > 0) {
+                        timerSeconds--;
+                        updateTimerDisplay();
+                    } else {
+                        clearInterval(timerInterval);
+                        timerInterval = null;
+                        alert("Time is up! 15 minutes elapsed.");
+                    }
+                }, 1000);
+                btn.innerText = "PAUSE";
+                btn.style.background = "#f59e0b";
+            }
+        }
+
+        function resetTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+                document.getElementById("timerToggle").innerText = "START";
+                document.getElementById("timerToggle").style.background = "var(--accent-cyan)";
+            }
+            timerSeconds = 15 * 60;
+            updateTimerDisplay();
+        }
+
+        // Q&A Drawer Logic
+        function toggleQADrawer() {
+            const drawer = document.getElementById("qaDrawer");
+            const btn = document.getElementById("qaBtn");
+            drawer.classList.toggle("open");
+            btn.classList.toggle("active");
+        }
+
+        function renderQAList() {
+            const listEl = document.getElementById("qaList");
+            listEl.innerHTML = "";
+            QA_ITEMS.forEach((item, idx) => {
+                const qaEl = document.createElement("div");
+                qaEl.className = "qa-item";
+                qaEl.innerHTML = `
+                    <div class="qa-q" onclick="toggleQAAnswer(${idx})">
+                        <span>${item.q}</span>
+                        <span id="qa-arrow-${idx}">▼</span>
+                    </div>
+                    <div class="qa-a" id="qa-a-${idx}">
+                        ${item.a}
+                    </div>
+                `;
+                listEl.appendChild(qaEl);
+            });
+        }
+
+        function toggleQAAnswer(idx) {
+            const aEl = document.getElementById(`qa-a-${idx}`);
+            const arrowEl = document.getElementById(`qa-arrow-${idx}`);
+            if (aEl.classList.contains("visible")) {
+                aEl.classList.remove("visible");
+                arrowEl.innerText = "▼";
+            } else {
+                aEl.classList.add("visible");
+                arrowEl.innerText = "▲";
+            }
+        }
+
+        // Initial setup
+        renderCurrentSlide();
+        renderQAList();
+        updateTimerDisplay();
+    </script>
+</body>
+</html>

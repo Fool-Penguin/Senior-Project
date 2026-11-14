@@ -1,0 +1,68 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "prompt_mode": "few-shot",
+  "checkpoint_tag": "test_usability_dryrun",
+  "total_samples": 1,
+  "correct_predictions": 0,
+  "overall_accuracy": 0.0,
+  "overall_accuracy_percent": "0.00%",
+  "macro_f1": 0.0,
+  "macro_f1_percent": "0.00%",
+  "binary_precision_percent": "100.00%",
+  "binary_recall_percent": "100.00%",
+  "binary_f1": 1.0,
+  "binary_f1_percent": "100.00%",
+  "specificity_percent": "N/A (Vuln-Only)",
+  "false_positive_rate_percent": "N/A (Vuln-Only)",
+  "avg_latency_sec": 3.3,
+  "p95_latency_sec": 3.3,
+  "total_elapsed_sec": 3.36,
+  "tokens_per_sec": 99.45,
+  "prompt_tokens_per_sec": 7197.12,
+  "avg_prompt_tokens": 3202.0,
+  "avg_output_tokens": 67.0,
+  "strict_json_rate_percent": "100.00%",
+  "parse_fallback_rate_percent": "0.00%",
+  "python_accuracy": "0.00%",
+  "javascript_accuracy": "0.00%",
+  "typescript_accuracy": "0.00%",
+  "results": [
+    {
+      "sample_id": "GHSA-2ww6-868g-2c56",
+      "language": "python",
+      "prompt_mode": "few-shot",
+      "true_cwe": "CWE-79",
+      "predicted_cwe": "CWE-918",
+      "is_correct": false,
+      "vulnerability_detected": true,
+      "cwe_name": "Server-Side Request Forgery ('SSRF')",
+      "risk_level": "High",
+      "cvss_v31_base": 8.6,
+      "reason": "Untrusted parameter 'url' (Source) flows directly into 'urllib.request.urlopen(url)' (Sink) without any validation or sanitization, matching CWE-918.",
+      "cot_steps": null,
+      "parse_tier": "strict_json",
+      "latency_sec": 3.2990427017211914,
+      "prompt_tokens": 3202,
+      "tokens_generated": 67,
+      "eval_duration_sec": 0.6737,
+      "prompt_eval_duration_sec": 0.4449,
+      "sample_tok_per_sec": 99.45
+    }
+  ],
+  "confusion_matrix": {
+    "labels": [
+      "CWE-79",
+      "CWE-918"
+    ],
+    "matrix": {
+      "CWE-79": {
+        "CWE-79": 0,
+        "CWE-918": 1
+      },
+      "CWE-918": {
+        "CWE-79": 0,
+        "CWE-918": 0
+      }
+    }
+  }
+}

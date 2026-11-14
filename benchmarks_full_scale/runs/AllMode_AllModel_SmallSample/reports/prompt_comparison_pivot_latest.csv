@@ -1,0 +1,5 @@
+Model,zero-shot_CWE_Acc,zero-shot_Macro_F1,zero-shot_Binary_F1,zero-shot_Latency_s,zero-shot_Tok_s,one-shot_CWE_Acc,one-shot_Macro_F1,one-shot_Binary_F1,one-shot_Latency_s,one-shot_Tok_s,few-shot_CWE_Acc,few-shot_Macro_F1,few-shot_Binary_F1,few-shot_Latency_s,few-shot_Tok_s,cot_CWE_Acc,cot_Macro_F1,cot_Binary_F1,cot_Latency_s,cot_Tok_s
+Foundation-Sec-8B-Instruct,14.29%,14.99%,40.70%,4.76,66.07,27.42%,27.34%,66.99%,3.9,65.94,26.79%,25.73%,66.55%,3.99,63.03,29.51%,29.52%,66.10%,6.24,67.34
+IHA089/drana-infinity-3b:3b,26.69%,26.23%,63.58%,2.87,183.58,27.16%,26.06%,65.93%,2.89,181.25,26.95%,26.34%,66.24%,2.94,180.09,22.14%,26.71%,64.58%,3.64,191.11
+llama3.1:8b,27.73%,25.74%,65.24%,3.43,101.47,26.43%,25.38%,67.20%,3.34,100.52,26.43%,25.44%,67.06%,3.36,99.98,24.86%,25.72%,66.60%,4.5,101.41
+qwen2.5-coder:7b,40.50%,35.14%,50.93%,3.25,110.36,39.30%,35.77%,52.84%,3.28,109.37,38.78%,33.89%,53.41%,3.31,108.42,34.75%,33.28%,63.74%,4.92,108.4

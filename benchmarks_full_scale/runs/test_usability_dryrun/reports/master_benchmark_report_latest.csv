@@ -1,0 +1,9 @@
+Model,Prompt Mode,Total Samples,Correct Predictions,Exact CWE Accuracy,Macro-F1,Binary Precision,Binary Recall,Binary F1,Specificity,False Positive Rate (FPR),Python Accuracy,JavaScript Accuracy,TypeScript Accuracy,Avg Latency (s),P95 Latency (s),Output Gen Speed (tok/s),Prompt Eval Speed (tok/s),Avg Input Prompt Tokens,Avg Output Tokens,Strict JSON Rate,Parse Fallback Rate
+qwen2.5-coder:7b,zero-shot,1,0,0.00%,0.00%,100.00%,100.00%,100.00%,N/A (Vuln-Only),N/A (Vuln-Only),0.00%,0.00%,0.00%,9.47,9.47,97.6,3788.14,2682.0,85.0,100.00%,0.00%
+qwen2.5-coder:7b,one-shot,1,0,0.00%,0.00%,100.00%,100.00%,100.00%,N/A (Vuln-Only),N/A (Vuln-Only),0.00%,0.00%,0.00%,3.26,3.26,99.83,7590.11,2885.0,71.0,100.00%,0.00%
+qwen2.5-coder:7b,few-shot,1,0,0.00%,0.00%,100.00%,100.00%,100.00%,N/A (Vuln-Only),N/A (Vuln-Only),0.00%,0.00%,0.00%,3.3,3.3,99.45,7197.12,3202.0,67.0,100.00%,0.00%
+qwen2.5-coder:7b,cot,1,0,0.00%,0.00%,100.00%,100.00%,100.00%,N/A (Vuln-Only),N/A (Vuln-Only),0.00%,0.00%,0.00%,4.81,4.81,100.22,5012.16,3091.0,196.0,100.00%,0.00%
+IHA089/drana-infinity-3b:3b,zero-shot,1,0,0.00%,0.00%,100.00%,100.00%,100.00%,N/A (Vuln-Only),N/A (Vuln-Only),0.00%,0.00%,0.00%,5.6,5.6,160.68,7028.3,2682.0,64.0,100.00%,0.00%
+IHA089/drana-infinity-3b:3b,one-shot,1,0,0.00%,0.00%,100.00%,100.00%,100.00%,N/A (Vuln-Only),N/A (Vuln-Only),0.00%,0.00%,0.00%,2.65,2.65,198.16,14940.45,2885.0,69.0,100.00%,0.00%
+IHA089/drana-infinity-3b:3b,few-shot,1,0,0.00%,0.00%,100.00%,100.00%,100.00%,N/A (Vuln-Only),N/A (Vuln-Only),0.00%,0.00%,0.00%,2.73,2.73,188.52,12869.77,3202.0,65.0,100.00%,0.00%
+IHA089/drana-infinity-3b:3b,cot,1,0,0.00%,0.00%,100.00%,100.00%,100.00%,N/A (Vuln-Only),N/A (Vuln-Only),0.00%,0.00%,0.00%,3.71,3.71,180.35,9540.12,3091.0,225.0,100.00%,0.00%

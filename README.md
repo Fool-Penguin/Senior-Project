@@ -140,3 +140,17 @@ python 04_commit_classification/scripts/build_5000_commit_dataset.py
 ```powershell
 python 04_commit_classification/scripts/validate_multimodal_criteria.py
 ```
+
+---
+
+## 🤖 AI Usage Acknowledgment Statement
+*(Mandatory compliance disclosure pursuant to Faculty of ICT, Mahidol University Level 4: AI Collaboration Policy)*
+
+We acknowledge that we have utilized Generative Artificial Intelligence (Generative AI) tools in preparing this project:
+- **Google DeepMind Antigravity / Gemini:** Employed as an interactive research assistant, technical outlining coach, and documentation synthesizer.
+- **GitHub Copilot / Cursor:** Employed for in-editor code completions, boilerplate test generation, and syntax formatting during development.
+- **Local Small Language Models (via Ollama: Qwen2.5-Coder, DeepSeek-Coder, LLaMA-3.1):** Utilized as integral subject matter components in the empirical benchmark experiments evaluating local vulnerability triage and program repair.
+
+**Activities Supported by AI:** Idea development, research scoping, literature synthesis, benchmark log summarization, section drafting, English grammar refinement, unit test automation, and local SLM integration in the CodeDEE prototype.
+
+**Student Verification Statement:** All AI-generated code, outputs, and text were critically evaluated, tested, and modified by the student authors, who retain full intellectual ownership and responsibility for the project.

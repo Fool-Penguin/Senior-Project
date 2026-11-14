@@ -1,0 +1,19 @@
+{
+  "model": "IHA089/drana-infinity-3b:3b",
+  "prompt_mode": "one-shot",
+  "checkpoint_tag": "test_usability_dryrun",
+  "labels": [
+    "CWE-79",
+    "CWE-918"
+  ],
+  "matrix": {
+    "CWE-79": {
+      "CWE-79": 0,
+      "CWE-918": 1
+    },
+    "CWE-918": {
+      "CWE-79": 0,
+      "CWE-918": 0
+    }
+  }
+}

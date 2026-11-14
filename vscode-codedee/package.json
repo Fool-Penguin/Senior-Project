@@ -1,0 +1,44 @@
+{
+  "name": "codedee-vscode",
+  "displayName": "CodeDEE: Continuous Code Quality & Automated Program Repair",
+  "description": "Neuro-Symbolic SAST, Maintainability Inspector, and Multi-Gate Automated Security Fixes",
+  "version": "1.0.0",
+  "publisher": "codedee",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Linters",
+    "Programming Languages",
+    "Security"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:python",
+    "onLanguage:javascript",
+    "onLanguage:typescript"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "codedee.scanCurrentFile",
+        "title": "CodeDEE: Scan Current File for Vulnerabilities & Maintainability",
+        "category": "CodeDEE"
+      },
+      {
+        "command": "codedee.openDashboard",
+        "title": "CodeDEE: Open Security & Quality Dashboard",
+        "category": "CodeDEE"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "codedee.scanCurrentFile",
+          "group": "codedee@1",
+          "when": "editorLangId in python,javascript,typescript"
+        }
+      ]
+    }
+  }
+}

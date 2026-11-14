@@ -1,0 +1,30 @@
+{
+  "model": "IHA089/drana-infinity-3b:3b",
+  "prompt_mode": "few-shot",
+  "tag": "test_usability_dryrun",
+  "timestamp": 1794322693,
+  "total_completed": 1,
+  "completed_results": {
+    "GHSA-2ww6-868g-2c56": {
+      "sample_id": "GHSA-2ww6-868g-2c56",
+      "language": "python",
+      "prompt_mode": "few-shot",
+      "true_cwe": "CWE-79",
+      "predicted_cwe": "CWE-918",
+      "is_correct": false,
+      "vulnerability_detected": true,
+      "cwe_name": "Server-Side Request Forgery ('SSRF')",
+      "risk_level": "High",
+      "cvss_v31_base": 8.6,
+      "reason": "Untrusted parameter 'url' (Source) is directly passed to 'requests.get(url)' (Sink) without validation or sanitization, matching CWE-918.",
+      "cot_steps": null,
+      "parse_tier": "strict_json",
+      "latency_sec": 2.7318077087402344,
+      "prompt_tokens": 3202,
+      "tokens_generated": 65,
+      "eval_duration_sec": 0.3448,
+      "prompt_eval_duration_sec": 0.2488,
+      "sample_tok_per_sec": 188.53
+    }
+  }
+}

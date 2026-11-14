@@ -1,0 +1,294 @@
+{
+  "per_run": {
+    "qwen2.5-coder:7b|zero-shot": {
+      "n": 1911,
+      "exact_acc": 0.4050235478806907,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.4491525423728814,
+      "vuln_flag_recall": 0.5253360910031024,
+      "vuln_exact_recall": 0.3619441571871768,
+      "unknown_or_error": 0,
+      "placeholder_labels": 0,
+      "avg_latency": 3.2517407946035166
+    },
+    "qwen2.5-coder:7b|one-shot": {
+      "n": 1911,
+      "exact_acc": 0.39298796441653583,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.3781779661016949,
+      "vuln_flag_recall": 0.5770423991726991,
+      "vuln_exact_recall": 0.4074457083764219,
+      "unknown_or_error": 0,
+      "placeholder_labels": 0,
+      "avg_latency": 3.284083761263118
+    },
+    "qwen2.5-coder:7b|few-shot": {
+      "n": 1911,
+      "exact_acc": 0.3877551020408163,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.3760593220338983,
+      "vuln_flag_recall": 0.5863495346432265,
+      "vuln_exact_recall": 0.39917269906928643,
+      "unknown_or_error": 0,
+      "placeholder_labels": 0,
+      "avg_latency": 3.305932099129254
+    },
+    "qwen2.5-coder:7b|cot": {
+      "n": 1911,
+      "exact_acc": 0.34746206174777605,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.19915254237288135,
+      "vuln_flag_recall": 0.8335056876938987,
+      "vuln_exact_recall": 0.4922440537745605,
+      "unknown_or_error": 61,
+      "placeholder_labels": 2,
+      "avg_latency": 4.91586572583716
+    },
+    "Foundation-Sec-8B-Instruct|zero-shot": {
+      "n": 1911,
+      "exact_acc": 0.14285714285714285,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.013771186440677966,
+      "vuln_flag_recall": 0.5015511892450879,
+      "vuln_exact_recall": 0.2688728024819028,
+      "unknown_or_error": 948,
+      "placeholder_labels": 0,
+      "avg_latency": 4.761038952382805
+    },
+    "Foundation-Sec-8B-Instruct|one-shot": {
+      "n": 1911,
+      "exact_acc": 0.2742019884877028,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.0031779661016949155,
+      "vuln_flag_recall": 0.9937952430196484,
+      "vuln_exact_recall": 0.5387797311271976,
+      "unknown_or_error": 2,
+      "placeholder_labels": 13,
+      "avg_latency": 3.902686668652505
+    },
+    "Foundation-Sec-8B-Instruct|few-shot": {
+      "n": 1911,
+      "exact_acc": 0.26792255363683937,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.0,
+      "vuln_flag_recall": 0.9855222337125129,
+      "vuln_exact_recall": 0.5294725956566702,
+      "unknown_or_error": 39,
+      "placeholder_labels": 16,
+      "avg_latency": 3.9860623290812014
+    },
+    "Foundation-Sec-8B-Instruct|cot": {
+      "n": 1911,
+      "exact_acc": 0.29513343799058084,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.028601694915254237,
+      "vuln_flag_recall": 0.9617373319544984,
+      "vuln_exact_recall": 0.5553257497414684,
+      "unknown_or_error": 22,
+      "placeholder_labels": 2,
+      "avg_latency": 6.242109245807322
+    },
+    "llama3.1:8b|zero-shot": {
+      "n": 1911,
+      "exact_acc": 0.2773417059131345,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.057203389830508475,
+      "vuln_flag_recall": 0.9296794208893485,
+      "vuln_exact_recall": 0.4922440537745605,
+      "unknown_or_error": 0,
+      "placeholder_labels": 0,
+      "avg_latency": 3.427204057597665
+    },
+    "llama3.1:8b|one-shot": {
+      "n": 1911,
+      "exact_acc": 0.26425954997383566,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.00211864406779661,
+      "vuln_flag_recall": 0.9989658738366081,
+      "vuln_exact_recall": 0.5201654601861427,
+      "unknown_or_error": 0,
+      "placeholder_labels": 0,
+      "avg_latency": 3.3425140775104643
+    },
+    "llama3.1:8b|few-shot": {
+      "n": 1911,
+      "exact_acc": 0.26425954997383566,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.0,
+      "vuln_flag_recall": 0.9968976215098242,
+      "vuln_exact_recall": 0.5222337125129266,
+      "unknown_or_error": 0,
+      "placeholder_labels": 0,
+      "avg_latency": 3.3641336375914714
+    },
+    "llama3.1:8b|cot": {
+      "n": 1911,
+      "exact_acc": 0.24856096284667714,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.01059322033898305,
+      "vuln_flag_recall": 0.9813857290589452,
+      "vuln_exact_recall": 0.4808686659772492,
+      "unknown_or_error": 20,
+      "placeholder_labels": 1,
+      "avg_latency": 4.496461597180129
+    },
+    "drana-infinity-3b|zero-shot": {
+      "n": 1911,
+      "exact_acc": 0.2668759811616955,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.04025423728813559,
+      "vuln_flag_recall": 0.9027921406411582,
+      "vuln_exact_recall": 0.48810754912099275,
+      "unknown_or_error": 0,
+      "placeholder_labels": 0,
+      "avg_latency": 2.865472756649798
+    },
+    "drana-infinity-3b|one-shot": {
+      "n": 1911,
+      "exact_acc": 0.271585557299843,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.025423728813559324,
+      "vuln_flag_recall": 0.9596690796277145,
+      "vuln_exact_recall": 0.5118924508790073,
+      "unknown_or_error": 0,
+      "placeholder_labels": 1,
+      "avg_latency": 2.8866917359648046
+    },
+    "drana-infinity-3b|few-shot": {
+      "n": 1911,
+      "exact_acc": 0.26949241234955523,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.015889830508474576,
+      "vuln_flag_recall": 0.9710444674250258,
+      "vuln_exact_recall": 0.5170630816959669,
+      "unknown_or_error": 0,
+      "placeholder_labels": 0,
+      "avg_latency": 2.9432708815340596
+    },
+    "drana-infinity-3b|cot": {
+      "n": 1911,
+      "exact_acc": 0.22135007849293564,
+      "n_safe": 944,
+      "n_vuln": 967,
+      "safe_specificity": 0.05614406779661017,
+      "vuln_flag_recall": 0.9162357807652534,
+      "vuln_exact_recall": 0.3826266804550155,
+      "unknown_or_error": 85,
+      "placeholder_labels": 294,
+      "avg_latency": 3.637970331387642
+    }
+  },
+  "paired_vs_zero_shot": {
+    "qwen2.5-coder:7b|one-shot": {
+      "delta_pp": -1.2035583464154893,
+      "better": 78,
+      "worse": 101,
+      "n": 1911,
+      "t_p": 0.08559782437073163,
+      "wilcoxon_p": 0.08559603494641616
+    },
+    "qwen2.5-coder:7b|few-shot": {
+      "delta_pp": -1.726844583987441,
+      "better": 87,
+      "worse": 120,
+      "n": 1911,
+      "t_p": 0.02177105583668045,
+      "wilcoxon_p": 0.02181011914372237
+    },
+    "qwen2.5-coder:7b|cot": {
+      "delta_pp": -5.7561486132914705,
+      "better": 259,
+      "worse": 369,
+      "n": 1911,
+      "t_p": 1.088129784143716e-05,
+      "wilcoxon_p": 1.1362314275974172e-05
+    },
+    "Foundation-Sec-8B-Instruct|one-shot": {
+      "delta_pp": 13.134484563055992,
+      "better": 285,
+      "worse": 34,
+      "n": 1911,
+      "t_p": 3.226825767396551e-47,
+      "wilcoxon_p": 7.352428593609329e-45
+    },
+    "Foundation-Sec-8B-Instruct|few-shot": {
+      "delta_pp": 12.506541077969649,
+      "better": 275,
+      "worse": 36,
+      "n": 1911,
+      "t_p": 7.204847222984302e-44,
+      "wilcoxon_p": 7.663263382123595e-42
+    },
+    "Foundation-Sec-8B-Instruct|cot": {
+      "delta_pp": 15.2276295133438,
+      "better": 341,
+      "worse": 50,
+      "n": 1911,
+      "t_p": 6.99378087203967e-52,
+      "wilcoxon_p": 5.05116912731158e-49
+    },
+    "llama3.1:8b|one-shot": {
+      "delta_pp": -1.3082155939298796,
+      "better": 67,
+      "worse": 92,
+      "n": 1911,
+      "t_p": 0.04738183472426368,
+      "wilcoxon_p": 0.047408889589709166
+    },
+    "llama3.1:8b|few-shot": {
+      "delta_pp": -1.3082155939298796,
+      "better": 69,
+      "worse": 94,
+      "n": 1911,
+      "t_p": 0.05018714361676766,
+      "wilcoxon_p": 0.0502122822028783
+    },
+    "llama3.1:8b|cot": {
+      "delta_pp": -2.8780743066457353,
+      "better": 94,
+      "worse": 149,
+      "n": 1911,
+      "t_p": 0.0004114463672479393,
+      "wilcoxon_p": 0.00041831427777782194
+    },
+    "drana-infinity-3b|one-shot": {
+      "delta_pp": 0.47095761381475665,
+      "better": 73,
+      "worse": 64,
+      "n": 1911,
+      "t_p": 0.44208357722796976,
+      "wilcoxon_p": 0.44193968047119325
+    },
+    "drana-infinity-3b|few-shot": {
+      "delta_pp": 0.2616431187859759,
+      "better": 72,
+      "worse": 67,
+      "n": 1911,
+      "t_p": 0.6716110498262859,
+      "wilcoxon_p": 0.6714969220979272
+    },
+    "drana-infinity-3b|cot": {
+      "delta_pp": -4.552590266875981,
+      "better": 114,
+      "worse": 201,
+      "n": 1911,
+      "t_p": 8.856524565171713e-07,
+      "wilcoxon_p": 9.491672398804045e-07
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "prompt_mode": "cot",
+  "tag": "test_usability_dryrun",
+  "timestamp": 1794322681,
+  "total_completed": 1,
+  "completed_results": {
+    "GHSA-2ww6-868g-2c56": {
+      "sample_id": "GHSA-2ww6-868g-2c56",
+      "language": "python",
+      "prompt_mode": "cot",
+      "true_cwe": "CWE-79",
+      "predicted_cwe": "CWE-918",
+      "is_correct": false,
+      "vulnerability_detected": true,
+      "cwe_name": "Server-Side Request Forgery ('SSRF')",
+      "risk_level": "High",
+      "cvss_v31_base": 8.6,
+      "reason": "Untrusted parameter 'url' flows directly into 'urllib.request.urlopen(url)' without sanitization, matching CWE-918.",
+      "cot_steps": {
+        "step1_sources": "Function parameter 'url' is an untrusted caller-controlled input.",
+        "step2_propagation_and_sinks": "'url' is passed directly to 'urllib.request.urlopen(url)' in the 'generate_images' function.",
+        "step3_sanitizer_audit": "No allowlist check, type validation, or context-specific escaping is applied to 'url' before reaching the sink.",
+        "step4_verdict_derivation": "Unvalidated taint reaches 'urllib.request.urlopen(url)', which corresponds to the sink pattern of CWE-918 (Server-Side Request Forgery ('SSRF'))."
+      },
+      "parse_tier": "strict_json",
+      "latency_sec": 4.806589365005493,
+      "prompt_tokens": 3091,
+      "tokens_generated": 196,
+      "eval_duration_sec": 1.9556,
+      "prompt_eval_duration_sec": 0.6167,
+      "sample_tok_per_sec": 100.23
+    }
+  }
+}

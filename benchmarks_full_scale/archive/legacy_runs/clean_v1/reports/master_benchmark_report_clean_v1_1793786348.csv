@@ -1,0 +1,2 @@
+Model,Total Samples,Correct,Overall Accuracy,Python Accuracy,JavaScript Accuracy,TypeScript Accuracy,Avg Latency (s),Tokens Per Sec
+qwen2.5-coder:7b,50,20,40.00%,23.53%,0.00%,51.61%,3.6,31.94

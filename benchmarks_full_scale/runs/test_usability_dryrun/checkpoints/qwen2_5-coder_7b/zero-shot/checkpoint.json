@@ -1,0 +1,30 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "prompt_mode": "zero-shot",
+  "tag": "test_usability_dryrun",
+  "timestamp": 1794322668,
+  "total_completed": 1,
+  "completed_results": {
+    "GHSA-2ww6-868g-2c56": {
+      "sample_id": "GHSA-2ww6-868g-2c56",
+      "language": "python",
+      "prompt_mode": "zero-shot",
+      "true_cwe": "CWE-79",
+      "predicted_cwe": "CWE-918",
+      "is_correct": false,
+      "vulnerability_detected": true,
+      "cwe_name": "Server-Side Request Forgery ('SSRF')",
+      "risk_level": "High",
+      "cvss_v31_base": 8.6,
+      "reason": "The function `main` accepts a `url` parameter from the command line arguments, which is then used in the `urllib.request.urlopen` call without any sanitization or validation. This makes the code vulnerable to Server-Side Request Forgery (SSRF).",
+      "cot_steps": null,
+      "parse_tier": "strict_json",
+      "latency_sec": 9.465987205505371,
+      "prompt_tokens": 2682,
+      "tokens_generated": 85,
+      "eval_duration_sec": 0.8709,
+      "prompt_eval_duration_sec": 0.708,
+      "sample_tok_per_sec": 97.6
+    }
+  }
+}

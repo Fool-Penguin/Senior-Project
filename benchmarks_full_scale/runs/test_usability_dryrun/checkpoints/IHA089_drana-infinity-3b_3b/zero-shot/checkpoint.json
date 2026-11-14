@@ -1,0 +1,30 @@
+{
+  "model": "IHA089/drana-infinity-3b:3b",
+  "prompt_mode": "zero-shot",
+  "tag": "test_usability_dryrun",
+  "timestamp": 1794322687,
+  "total_completed": 1,
+  "completed_results": {
+    "GHSA-2ww6-868g-2c56": {
+      "sample_id": "GHSA-2ww6-868g-2c56",
+      "language": "python",
+      "prompt_mode": "zero-shot",
+      "true_cwe": "CWE-79",
+      "predicted_cwe": "CWE-918",
+      "is_correct": false,
+      "vulnerability_detected": true,
+      "cwe_name": "Server-Side Request Forgery ('SSRF')",
+      "risk_level": "High",
+      "cvss_v31_base": 8.6,
+      "reason": "The code uses `urllib.request.Request` to make a POST request to the OpenAI Images API. The `url` parameter is directly derived from `args[",
+      "cot_steps": null,
+      "parse_tier": "strict_json",
+      "latency_sec": 5.599233150482178,
+      "prompt_tokens": 2682,
+      "tokens_generated": 64,
+      "eval_duration_sec": 0.3983,
+      "prompt_eval_duration_sec": 0.3816,
+      "sample_tok_per_sec": 160.7
+    }
+  }
+}

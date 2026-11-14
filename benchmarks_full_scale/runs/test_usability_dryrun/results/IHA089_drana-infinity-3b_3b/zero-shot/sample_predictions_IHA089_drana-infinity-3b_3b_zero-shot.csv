@@ -1,0 +1,2 @@
+sample_id,language,prompt_mode,true_cwe,predicted_cwe,is_correct,vulnerability_detected,risk_level,cvss_v31_base,parse_tier,latency_sec,prompt_tokens,tokens_generated,tokens_per_sec,reason
+GHSA-2ww6-868g-2c56,python,zero-shot,CWE-79,CWE-918,False,True,High,8.6,strict_json,5.599,2682,64,160.7,The code uses `urllib.request.Request` to make a POST request to the OpenAI Images API. The `url` parameter is directly derived from `args[

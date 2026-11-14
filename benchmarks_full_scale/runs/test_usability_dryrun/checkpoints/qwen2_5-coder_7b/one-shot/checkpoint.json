@@ -1,0 +1,30 @@
+{
+  "model": "qwen2.5-coder:7b",
+  "prompt_mode": "one-shot",
+  "tag": "test_usability_dryrun",
+  "timestamp": 1794322673,
+  "total_completed": 1,
+  "completed_results": {
+    "GHSA-2ww6-868g-2c56": {
+      "sample_id": "GHSA-2ww6-868g-2c56",
+      "language": "python",
+      "prompt_mode": "one-shot",
+      "true_cwe": "CWE-79",
+      "predicted_cwe": "CWE-918",
+      "is_correct": false,
+      "vulnerability_detected": true,
+      "cwe_name": "Server-Side Request Forgery ('SSRF')",
+      "risk_level": "High",
+      "cvss_v31_base": 8.6,
+      "reason": "Untrusted parameter 'url' (Source) is passed directly to 'urllib.request.urlopen(url)' (Sink) without validation or sanitization, matching the sink pattern for CWE-918.",
+      "cot_steps": null,
+      "parse_tier": "strict_json",
+      "latency_sec": 3.260375499725342,
+      "prompt_tokens": 2885,
+      "tokens_generated": 71,
+      "eval_duration_sec": 0.7112,
+      "prompt_eval_duration_sec": 0.3801,
+      "sample_tok_per_sec": 99.83
+    }
+  }
+}
